@@ -1,0 +1,30 @@
+﻿Nós do mapa neural
+,
+"Cada nó é uma entidade analítica com identidade, histórico e relações rastreáveis."
+,
+ID,Camada,Nó,Definição de negócio,Chave primária,Granularidade,Atributos mínimos,Origem,Sensibilidade,Atualização,Contribuição para valor
+N01,Identidade,Pessoa,"Indivíduo que participa, trabalha, aprende ou se conecta.",person_id,1 pessoa,"status, perfil, localização, consentimentos",Cadastro / HRIS,Alta,Diária,"Base para capacidade, retenção, produtividade e matching"
+N02,Identidade,Empresa,"Organização cliente, compradora, empregadora ou parceira.",company_id,1 empresa,"setor, porte, região, carteira, contrato",CRM / ERP,Média,Diária,"Receita, expansão, benchmark e valor por cliente"
+N03,Identidade,Entidade,"Federação, associação, rede ou instituição que organiza um ecossistema.",entity_id,1 entidade,"tipo, território, associados, programas",CRM,Média,Semanal,"Valor do ecossistema, adesão e retenção de associados"
+N04,Identidade,Fornecedor / solução,Organização ou profissional capaz de entregar uma solução.,supplier_id,1 fornecedor,"categorias, capacidade, homologação, desempenho",Compras / Marketplace,Média,Diária,"Eficiência de compras, saving, risco e receita de marketplace"
+N05,Estrutura,Vínculo,"Relação temporal entre pessoa, empresa, entidade e programa.",relationship_id,1 vínculo por período,"papel, início, fim, status",HRIS / CRM,Alta,Diária,"Cohorts, elegibilidade e atribuição"
+N06,Demanda,Oportunidade,"Demanda de trabalho, negócio, compra, desenvolvimento ou conexão.",opportunity_id,1 oportunidade,"tipo, requisitos, valor, prazo, estágio",ATS / CRM / Compras,Média,Tempo real,"Pipeline, contratação, GMV e receita influenciada"
+N07,Capacidade,Competência,"Conhecimento, habilidade, repertório ou capacidade organizacional.",skill_id,1 competência,"taxonomia, nível, evidência, validade",Diagnóstico / LMS,Média,Mensal,"Gap, prontidão, mobilidade e produtividade"
+N08,Capacidade,Evidência de competência,Prova observável que sustenta um nível de capacidade.,evidence_id,1 evidência,"tipo, emissor, data, score, validade",Upload / avaliação,Alta,Evento,Confiança do matching e redução de risco
+N09,Sinal,Diagnóstico,"Medição estruturada de maturidade, prontidão, necessidade ou risco.",assessment_id,1 resposta/rodada,"instrumento, dimensão, score, versão",Plataforma,Alta,Evento,"Baseline, priorização e benchmark"
+N10,Sinal,Interação,Ação executada por um usuário em qualquer canal.,event_id,1 evento,"evento, timestamp, contexto, objeto, sessão",Tracking,Média,Tempo real,"Adoção, conversão e propensão"
+N11,Ação,Jornada,Sequência recomendada de experiências para mudar um resultado.,journey_id,1 jornada,"objetivo, etapas, início, conclusão",Plataforma / LMS,Média,Diária,"Desenvolvimento, ativação e time-to-value"
+N12,Ação,Recomendação,"Ação sugerida por regra, analista ou modelo.",recommendation_id,1 recomendação,"tipo, score, explicação, versão, status",Motor de inteligência,Média,Tempo real,"Uplift, aceitação e valor das decisões"
+N13,Ação,Match,Compatibilidade calculada entre demanda e oferta.,match_id,1 par oportunidade-oferta,"score, critérios, posição, decisão",Motor de matching,Média,Tempo real,"Conversão, ciclo, contratação e conexão"
+N14,Execução,Participação,"Exposição de pessoa ou empresa a programa, evento ou ação.",participation_id,1 participante por ação,"convite, presença, dose, conclusão",Eventos / LMS,Alta,Evento,Atribuição e análise de efeito
+N15,Execução,Programa / projeto,"Unidade organizada de intervenção, serviço ou campanha.",program_id,1 programa,"escopo, público, custo, metas, owner",PMO / CRM,Média,Semanal,Custo por resultado e portfólio
+N16,Negócio,Contrato,"Acordo comercial da HUB, cliente ou fornecedor.",contract_id,1 contrato,"valor, margem, vigência, origem, estágio",CRM / ERP,Alta,Diária,"ARR, MRR, margem e receita influenciada"
+N17,Negócio,Transação,"Movimento financeiro associado a contrato, compra ou marketplace.",transaction_id,1 lançamento,"valor, moeda, data, natureza, centro de custo",ERP / Financeiro,Alta,Diária,"Receita, custo, saving, GMV e margem"
+N18,Resultado,Indicador de negócio,Medição de resultado da empresa ou entidade.,business_metric_id,1 indicador por período,"nome, valor, período, unidade, baseline",BI / ERP,Alta,Mensal,"Produtividade, retenção, receita, custo e risco"
+N19,Resultado,Outcome individual,Mudança observada na pessoa após uma ação.,outcome_id,1 pessoa-resultado-período,"dimensão, antes, depois, confiança",Pesquisa / HRIS,Alta,Mensal,"Efeito em capacidade, mobilidade e retenção"
+N20,Contexto,Cohort,Grupo comparável usado para mensuração e benchmark.,cohort_id,1 definição de grupo,"critérios, janela, tamanho, versão",Camada analítica,Média,Mensal,"Atribuição, controle e fairness"
+N21,Contexto,Benchmark,Referência agregada interna ou do ecossistema.,benchmark_id,1 métrica-segmento-período,"percentis, amostra, regras de anonimização",Data mart,Média,Mensal,"Prioridade, comparação e serviços de inteligência"
+N22,Risco,Risco / controle,"Evento potencial, exposição e mecanismo de mitigação.",risk_id,1 risco por contexto,"probabilidade, impacto, controle, residual",GRC / Jurídico,Alta,Mensal,Perda esperada e risco evitado
+N23,Comunicação,Conteúdo / campanha,"Ativo de mídia usado para gerar atenção, demanda ou ação.",content_id,1 ativo/campanha,"canal, audiência, custo, objetivo, criativo",Marketing,Baixa,Diária,"CAC, pipeline, ROAS e conversão"
+N24,Qualidade,Consentimento,"Permissão, finalidade e base legal aplicável ao tratamento.",consent_id,1 finalidade por titular,"base legal, versão, data, revogação",CMP / cadastro,Crítica,Tempo real,Uso legítimo e auditável dos dados
+N25,Qualidade,Versão de modelo,"Configuração do algoritmo, regra ou score em produção.",model_version_id,1 versão,"features, pesos, data, performance, fairness",MLOps,Média,Release,Reprodutibilidade e confiança

@@ -1,0 +1,16 @@
+sheet_name,corrected_csv_path,source_csv_path,rows,columns,nonempty_rows,copy_status
+00_Leia-me,00_Leia-me/00_Leia-me.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/00_Leia-me/00_Leia-me.csv,45,3,33,copied-verbatim
+01_Mapa_Visual,01_Mapa_Visual/01_Mapa_Visual.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/01_Mapa_Visual/01_Mapa_Visual.csv,25,18,15,copied-verbatim
+02_Nos_de_Dados,02_Nos_de_Dados/02_Nos_de_Dados.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/02_Nos_de_Dados/02_Nos_de_Dados.csv,30,11,28,copied-verbatim
+03_Conexoes,03_Conexoes/03_Conexoes.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/03_Conexoes/03_Conexoes.csv,25,11,23,copied-verbatim
+04_Indicadores_Master,04_Indicadores_Master/04_Indicadores_Master.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/04_Indicadores_Master/04_Indicadores_Master.csv,78,20,76,copied-verbatim
+05_Arvore_de_Valor,05_Arvore_de_Valor/05_Arvore_de_Valor.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/05_Arvore_de_Valor/05_Arvore_de_Valor.csv,17,10,15,copied-verbatim
+06_Simulador_ROI,06_Simulador_ROI/06_Simulador_ROI.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/06_Simulador_ROI/06_Simulador_ROI.csv,43,12,38,copied-verbatim
+07_Visoes_Dashboard,07_Visoes_Dashboard/07_Visoes_Dashboard.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/07_Visoes_Dashboard/07_Visoes_Dashboard.csv,15,10,13,copied-verbatim
+08_Dicionario_Dados,08_Dicionario_Dados/08_Dicionario_Dados.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/08_Dicionario_Dados/08_Dicionario_Dados.csv,46,12,44,copied-verbatim
+09_Eventos_Produto,09_Eventos_Produto/09_Eventos_Produto.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/09_Eventos_Produto/09_Eventos_Produto.csv,32,11,30,copied-verbatim
+10_Integracoes,10_Integracoes/10_Integracoes.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/10_Integracoes/10_Integracoes.csv,20,12,18,copied-verbatim
+11_Governanca_LGPD,11_Governanca_LGPD/11_Governanca_LGPD.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/11_Governanca_LGPD/11_Governanca_LGPD.csv,28,10,26,copied-verbatim
+12_Roadmap,12_Roadmap/12_Roadmap.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/12_Roadmap/12_Roadmap.csv,10,10,8,copied-verbatim
+13_Matriz_Integracao,13_Matriz_Integracao/13_Matriz_Integracao.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/13_Matriz_Integracao/13_Matriz_Integracao.csv,17,12,15,copied-verbatim
+14_RACI,14_RACI/14_RACI.csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/14_RACI/14_RACI.csv,18,12,16,copied-verbatim

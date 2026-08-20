@@ -1,0 +1,10 @@
+﻿Roadmap de metrificação
+,
+O primeiro ativo não é o software: é a evidência de que a decisão melhora.
+,
+Fase,Horizonte,Objetivo,Entregas,Indicadores habilitados,Dados / integrações,Critério de saída,Riscos,Owner,Prioridade
+M0 — Organizar,0–8 semanas,Criar linguagem comum e instrumentação mínima.,"taxonomia, IDs, eventos, catálogo, dashboards operacionais","cadastro, completude, ativação, eventos, ARR","CRM, plataforma, consentimento, warehouse",eventos críticos >95% e métricas certificadas,identidade fragmentada; falta de owner,Produto + Data,Imediata
+M1 — Conectar,2–5 meses,"Relacionar ações, oportunidades e resultados.","grafo de relações, cohorts, integrações RH/compras/marketing","matching, conversão, ciclo, adoção, churn, pipeline","ATS, LMS, SRM, mídia, contratos",origem e outcome rastreáveis ponta a ponta,chaves inconsistentes; baixa adesão,Data + Operações,Alta
+M2 — Provar,5–9 meses,Monetizar efeito com baseline e atribuição.,"value mart, simulador, estudos quase-experimentais, sign-off","produtividade, retenção, saving, risco, ROI, payback","BI/financeiro cliente, GRC, controladoria",>70% do valor com evidência quase-experimental,baseline tardio; dupla contagem,Inteligência + Financeiro,Alta
+M3 — Prever,9–14 meses,"Antecipar riscos, capacidades e oportunidades.","modelos preditivos, propensão, alertas, model cards","precisão, calibração, uplift, drift, fairness",MLOps e histórico de outcomes,modelo supera regra e passa fairness,viés; pouca amostra; drift,Data Science,Média
+M4 — Escalar,14–24 meses,Benchmark e inteligência de ecossistema.,"benchmarks anônimos, marketplace, serviços por segmento","valor por associado, densidade, NRR, impacto econômico","entidades, data shares e contratos",unit economics sustentável e confiança alta,governança multiempresa,HUB + Entidades,Média

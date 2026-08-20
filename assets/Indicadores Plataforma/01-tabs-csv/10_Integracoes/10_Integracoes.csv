@@ -1,0 +1,20 @@
+﻿Mapa de integrações
+,
+"Integrações devem preservar identidade, consentimento, linhagem e SLA de decisão."
+,
+Sistema / fonte,Domínio,Direção,Método,Frequência,Dados principais,Chave de integração,Autenticação,SLA,Tratamento de erro,Owner,Fase
+HRIS / folha,Pessoas,Entrada,API / arquivo seguro,Diária,"vínculo, função, custo, status",person_external_id + company_id,OAuth2 / SFTP,D+1,quarentena + reconciliação,Data cliente,M1
+ATS,Recrutamento,Bidirecional,API / webhook,Tempo real,"vaga, candidato, estágio, contratação",opportunity_id / person_id,OAuth2,15 min,retry idempotente,Talent Acquisition,M1
+LMS,Desenvolvimento,Bidirecional,API / xAPI,Tempo real,"trilha, inscrição, conclusão, avaliação",person_id + journey_id,OAuth2,1 h,dead-letter queue,L&D,M1
+CRM HUB,Comercial,Bidirecional,API / webhook,Tempo real,"empresa, oportunidade, contrato, touchpoint",company_id / opportunity_id,OAuth2,15 min,retry + conciliação,RevOps,M0
+ERP / financeiro HUB,Financeiro,Entrada,API / arquivo,Diária,"receita, custo, margem, competência",contract_id / transaction_id,OAuth2 / SFTP,D+1,conciliação contábil,Financeiro HUB,M1
+ERP / financeiro cliente,Impacto,Entrada,data share / API,Mensal,"KPI financeiro, custo, saving, margem",company_id + metric_id + period,Private link,D+5,aprovação da controladoria,Financeiro cliente,M2
+Compras / SRM,Fornecedores,Bidirecional,API / arquivo,Diária,"categoria, homologação, desempenho, contrato",supplier_id / category_id,OAuth2 / SFTP,D+1,quarentena por categoria,Compras,M1
+GRC / riscos,Risco,Entrada,API / arquivo,Mensal,"risco, probabilidade, impacto, controle",risk_id,OAuth2 / SFTP,D+3,revisão de especialista,Riscos,M2
+BI cliente,Indicadores,Entrada,data share / arquivo,Mensal,"produtividade, retenção, receita, custo",metric_id + period + cohort,Private link,D+5,validação semântica,People Analytics / BI,M2
+Plataforma HUB,Produto,Saída,event stream,Tempo real,"eventos, jornadas, recomendações",event_id / person_id,token / mTLS,<5 min,fila + replay,Produto,M0
+Motor de inteligência,IA,Bidirecional,API,Tempo real,"features, score, explicação, versão",model_version + object_id,mTLS,<2 s,fallback por regra,Data Science,M1
+CMP / consentimento,Privacidade,Bidirecional,API / webhook,Tempo real,"finalidade, status, versão, revogação",person_id + purpose,OAuth2,<5 min,bloqueio preventivo,DPO,M0
+Mídia / analytics,Marketing,Entrada,API,Diária,"campanha, custo, impressão, clique, conversão",campaign_id / UTM,OAuth2,D+1,deduplicação cross-channel,Marketing,M1
+Entidade / associados,Ecossistema,Bidirecional,API / arquivo,Diária,"associado, vínculo, tier, renovação",entity_id + company_id,OAuth2 / SFTP,D+1,reconciliação de vigência,Entidade,M0
+Data warehouse / lakehouse,Todos,Bidirecional,ELT / data share,Horária/diária,"dimensões, fatos, marts",surrogate keys + business keys,IAM / private link,1 h,observabilidade e rollback,Data Engineering,M0
