@@ -1,5 +1,5 @@
 ---
-title: "HUB Brand and Market Blueprint"
+title: "Blueprint de Marca e Mercado do HUB"
 blueprint_id: BP-007
 status: draft
 layer: blueprint
@@ -10,176 +10,176 @@ updated: 2026-08-21
 gap_ids: [STR-004, STR-005, STR-006, GTM-001, GTM-002, GTM-003, GTM-004, GTM-005, GTM-006, BRD-001, BRD-002, BRD-003]
 ---
 
-# HUB Brand and Market Blueprint
+# Blueprint de Marca e Mercado do HUB
 
-> [!info] Maturity boundary
-> This is a brand and market blueprint, not a launch approval or evidence-certified business case. Statements below are positioning hypotheses and design rules unless explicitly marked as evidence or validation required. It preserves the complete HUB system described in [[01-blueprint/strategy/HUB_Project_Blueprint_Foundation]].
+> [!info] Fronteira de maturidade
+> Este é um blueprint de marca e mercado, não uma aprovação de lançamento nem um caso de negócio certificado por evidências. As declarações abaixo são hipóteses de posicionamento e regras de design, salvo marcação explícita como evidência ou validação necessária. Ele preserva o sistema HUB completo descrito em [[01-blueprint/strategy/HUB_Project_Blueprint_Foundation]].
 
-## 1. Brand architecture, promise, language, naming and relationships
+## 1. Arquitetura de marca, promessa, linguagem, nomenclatura e relacionamentos
 
-### Architecture
+### Arquitetura
 
-HUB is the **endorsing group brand and strategic operating idea**. It supplies the shared promise, C.A.O.S. method, standards, semantic vocabulary, trust rules and direction across the system. The four conceptual units and six modules are related but should not be presented as interchangeable products:
+HUB é a **marca endossante do grupo e a ideia operacional estratégica**. Ela fornece a promessa compartilhada, o método C.A.O.S., os padrões, o vocabulário semântico, as regras de confiança e a direção em todo o sistema. As quatro unidades conceituais e os seis módulos são relacionados, mas não devem ser apresentados como produtos intercambiáveis:
 
-| Layer | Name | Brand role | Relationship rule |
+| Camada | Nome | Papel da marca | Regra de relacionamento |
 |---|---|---|---|
-| Group / endorsement | HUB | Holds the system narrative, principles and quality bar. | Endorses units and modules without implying that every activity is a single legal entity. |
-| Commercial unit | HUB Negócios | Sells and delivers commercial services, implementation and business relationships. | Owns commercial contracts unless another approved structure is documented. |
-| Mission-oriented unit | Instituto HUB | Hosts restricted impact, education or mission-oriented activity. | Must remain visibly and financially distinct from commercial activity; no implied subsidy or endorsement without approval. |
-| Platform unit | Plataforma HUB | Provides software, data, workflows and intelligence infrastructure. | May be supplied to HUB Negócios, Instituto HUB or external customers under defined product and data terms. |
-| Business fronts | Mídia e Experiências; Impacto Financiável; Ecossistemas Empresariais | Express customer problems and routes to value, not necessarily legal entities. | Each front must map to a buyer, offer owner, delivery boundary and evidence state. |
-| Platform modules | HUB Intelligence, Journey, Solutions, Connections, Academy, Recognition | Capability names inside Plataforma HUB and the broader service system. | Modules can be configured or delivered with services, but their boundaries and claims remain controlled. |
+| Grupo / endosso | HUB | Sustenta a narrativa do sistema, os princípios e o padrão de qualidade. | Endossa unidades e módulos sem implicar que toda atividade seja uma única entidade legal. |
+| Unidade comercial | HUB Negócios | Vende e entrega serviços comerciais, implementação e relações de negócio. | Detém os contratos comerciais, salvo se outra estrutura aprovada estiver documentada. |
+| Unidade orientada à missão | Instituto HUB | Abriga atividade restrita de impacto, educação ou orientação à missão. | Deve permanecer visível e financeiramente distinta da atividade comercial; sem subsídio ou endosso implícitos sem aprovação. |
+| Unidade de plataforma | Plataforma HUB | Fornece software, dados, fluxos de trabalho e infraestrutura de inteligência. | Pode ser fornecida ao HUB Negócios, ao Instituto HUB ou a clientes externos sob termos de produto e dados definidos. |
+| Frentes de negócio | Mídia e Experiências; Impacto Financiável; Ecossistemas Empresariais | Expressam problemas dos clientes e rotas para valor, não necessariamente entidades legais. | Cada frente deve mapear-se a um comprador, um dono da oferta, um limite de entrega e um estado de evidência. |
+| Módulos de plataforma | HUB Intelligence, Journey, Solutions, Connections, Academy, Recognition | Nomes de capacidades dentro da Plataforma HUB e do sistema mais amplo de serviços. | Os módulos podem ser configurados ou entregues com serviços, mas seus limites e afirmações permanecem controlados. |
 
-The proposed relationship is **endorsed architecture**: HUB is the parent narrative; units carry accountability; fronts describe demand; modules describe capability. This prevents category collapse while allowing a customer to experience a connected journey from `diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir`.
+O relacionamento proposto é a **arquitetura endossada**: HUB é a narrativa-mãe; as unidades carregam a responsabilização; as frentes descrevem demanda; os módulos descrevem capacidade. Isso evita o colapso de categorias, permitindo que um cliente vivencie uma jornada conectada de `diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir`.
 
-This architecture addresses [[00-project-control/gap-register/gaps/BRD-001|BRD-001]] and remains subject to brand-governance approval. Legal separation, ownership and intercompany relationships are not inferred here.
+Esta arquitetura trata [[00-project-control/gap-register/gaps/BRD-001|BRD-001]] e permanece sujeita à aprovação da governança de marca. Separação legal, propriedade e relações entre empresas não são inferidas aqui.
 
-### Promise and proof posture
+### Promessa e postura de prova
 
-The core promise is **“Diferenças que movimentam negócios.”** It should be interpreted operationally as: HUB helps organizations turn differences, capabilities, relationships and ecosystem activity into better decisions, qualified connections, implementation and measurable business value. It is a strategic promise, not a guarantee of financial impact.
+A promessa central é **“Diferenças que movimentam negócios.”** Deve ser interpretada operacionalmente assim: HUB ajuda organizações a transformar diferenças, capacidades, relacionamentos e atividade de ecossistema em melhores decisões, conexões qualificadas, implementação e valor de negócio mensurável. É uma promessa estratégica, não uma garantia de impacto financeiro.
 
-Three narrative pillars make the promise usable without reducing HUB to one category:
+Três pilares narrativos tornam a promessa utilizável sem reduzir o HUB a uma única categoria:
 
-1. **See clearly** — make context, identities, capabilities, gaps and signals usable.
-2. **Move deliberately** — turn insight into journeys, connections, interventions and follow-through.
-3. **Prove and improve** — measure outcomes, preserve evidence, recognize progress and evolve.
+1. **Ver com clareza** — tornar contexto, identidades, capacidades, gaps e sinais utilizáveis.
+2. **Movimentar com intenção** — transformar insight em jornadas, conexões, intervenções e execução até o fim.
+3. **Provar e melhorar** — medir resultados, preservar evidências, reconhecer progressos e evoluir.
 
-**Claim:** HUB can connect intelligence, implementation and recognition in one governed system. **Evidence currently available:** a conceptual method, module map, indicator architecture and end-to-end journey in the foundation. **Validation required:** buyer interviews, controlled delivery results, reproducible metric lineage and approved claims-to-evidence mapping under [[00-project-control/gap-register/gaps/BRD-002|BRD-002]].
+**Afirmação:** HUB pode conectar inteligência, implementação e reconhecimento em um único sistema governado. **Evidência disponível hoje:** um método conceitual, um mapa de módulos, uma arquitetura de indicadores e uma jornada ponta a ponta na fundação. **Validação necessária:** entrevistas com compradores, resultados de entregas controladas, linhagem reproduzível de métricas e um mapeamento aprovado de afirmações-evidências sob [[00-project-control/gap-register/gaps/BRD-002|BRD-002]].
 
-### Language system
+### Sistema de linguagem
 
-The voice is practical, plural, evidence-aware and action-oriented: confident about the problem and method, careful about outcomes. Prefer verbs and observable nouns: diagnose, qualify, connect, implement, measure, evidence, outcome, responsibility, consent, learning. Avoid language that implies guaranteed transformation, automatic fairness, universal inclusion, causal financial return, or certification merely through participation.
+A voz é prática, plural, consciente de evidências e orientada à ação: confiante quanto ao problema e ao método, cuidadosa quanto aos resultados. Prefira verbos e substantivos observáveis: diagnosticar, qualificar, conectar, implementar, medir, evidenciar, resultado, responsabilidade, consentimento, aprendizado. Evite linguagem que implique transformação garantida, justiça automática, inclusão universal, retorno financeiro causal ou certificação pelo simples fato de participar.
 
-Use Portuguese proper nouns exactly as established: **HUB Negócios, Instituto HUB, Plataforma HUB, Selo HUB, C.A.O.S. and LGPD**. English materials may translate explanatory descriptors, but proper names and module names remain controlled terms. A bilingual glossary must govern translations, capitalization, accents, abbreviations and terms that should not be translated (the refinement action for BRD-004, outside this task's gap set).
+Use os nomes próprios em português exatamente como estabelecidos: **HUB Negócios, Instituto HUB, Plataforma HUB, Selo HUB, C.A.O.S. e LGPD**. Materiais em inglês podem traduzir descritores explicativos, mas nomes próprios e nomes de módulos permanecem termos controlados. Um glossário bilíngue deve governar traduções, capitalização, acentuação, abreviações e termos que não devem ser traduzidos (ação de refinamento do BRD-004, fora do conjunto de gaps desta tarefa).
 
-The language should distinguish maturity:
+A linguagem deve distinguir maturidade:
 
-- **Blueprint language:** “proposed,” “designed to,” “intended,” “hypothesis.”
-- **Evidence language:** “observed,” “documented,” “measured,” with source, period, denominator and owner.
-- **Approved language:** only after the relevant legal, governance, product and evidence gates pass.
+- **Linguagem de blueprint:** “proposto”, “projetado para”, “pretendido”, “hipótese”.
+- **Linguagem de evidência:** “observado”, “documentado”, “medido”, com fonte, período, denominador e responsável.
+- **Linguagem aprovada:** somente após a aprovação nos gates legais, de governança, de produto e de evidência aplicáveis.
 
-### Naming rules
+### Regras de nomenclatura
 
-Use `HUB` as the stable prefix where the name describes a shared system capability. Use unit names only where accountability, contract, funding or audience requires the distinction. Module names should be nouns with a clear job and should not promise an outcome: *HUB Intelligence* is preferable to a name such as “Guaranteed Impact.” New names require a short definition, owner, audience, relationship to the architecture, language review, collision/trademark review and claims review.
+Use `HUB` como prefixo estável quando o nome descreve uma capacidade compartilhada do sistema. Use nomes de unidades apenas onde responsabilização, contrato, financiamento ou público exigirem a distinção. Nomes de módulos devem ser substantivos com função clara e não devem prometer um resultado: *HUB Intelligence* é preferível a um nome como “Impacto Garantido”. Novos nomes exigem definição curta, responsável, público, relação com a arquitetura, revisão de linguagem, revisão de colisão/marca registrada e revisão de afirmações.
 
-Do not create a new sub-brand to solve a temporary campaign or partner request. Fronts may receive descriptive offer names, but the offer-to-buyer vocabulary depends on [[04-project-management/tasks/BP-001_HUB_Offer_and_Revenue_Blueprint|BP-001]] and the product vocabulary depends on [[04-project-management/tasks/BP-002_HUB_Product_and_Platform_Blueprint|BP-002]]: **coordination point, do not invent final offer or product names here**.
+Não crie uma nova submarca para resolver uma campanha temporária ou pedido de parceiro. Frentes podem receber nomes descritivos de oferta, mas o vocabulário oferta-comprador depende de [[04-project-management/tasks/BP-001_HUB_Offer_and_Revenue_Blueprint|BP-001]] e o vocabulário de produto depende de [[04-project-management/tasks/BP-002_HUB_Product_and_Platform_Blueprint|BP-002]]: **ponto de coordenação; não invente aqui nomes finais de ofertas ou produtos**.
 
-## 2. Market categories, audiences, buyers, budgets, alternatives and opportunity spaces
+## 2. Categorias de mercado, públicos, compradores, orçamentos, alternativas e espaços de oportunidade
 
-HUB should operate as a **portfolio across adjacent market categories**, not as one category. Category descriptions are buying-context labels, not claims that a recognized market category already exists.
+HUB deve operar como um **portfólio entre categorias de mercado adjacentes**, não como uma única categoria. As descrições de categoria são rótulos de contexto de compra, não afirmações de que uma categoria de mercado reconhecida já existe.
 
-| Market context | Primary audience / user | Economic buyer and budget hypothesis | Alternatives today | Opportunity space |
+| Contexto de mercado | Público/usuário principal | Comprador econômico e hipótese de orçamento | Alternativas atuais | Espaço de oportunidade |
 |---|---|---|---|---|
-| Ecosystem intelligence and coordination | Institutions, associations, federations and ecosystem owners | Executive, strategy, innovation, member-services or ecosystem-program budget. | Spreadsheets, surveys, fragmented consultants, CRM/BI and internal coordination. | Governed shared context, identity, signals, priorities and action across organizations. |
-| Enterprise capability, people and supplier outcomes | Companies, RH/procurement leaders, business units and suppliers | HR, procurement, transformation, ESG/impact, risk or business-unit budget. | Point consultancies, HR/procurement suites, training vendors, manual programs. | Connect diagnosis to qualified solutions, implementation and measurable outcomes. |
-| Implementation and strategic programs | Organizations needing change, capability or ecosystem interventions | Consulting, transformation, program, communications or operating budget. | Traditional advisory, agencies, systems integrators and internal teams. | C.A.O.S.-led delivery with reusable evidence and follow-through. |
-| Mídia e Experiências | Marketing, communications, community and event owners | Marketing, brand, communications or event budget. | Agencies, event producers, media buys and content studios. | Experiences connected to participation, learning, relationships and outcome evidence. |
-| Impacto Financiável | Funders, institutions, program owners and beneficiaries | Restricted funding, philanthropy, public or impact-program budget. | Grants, NGO delivery, monitoring/reporting vendors and ad hoc programs. | Fundable interventions with governed measurement and implementation traceability. |
-| Learning and recognition | Participants, specialists, evaluators, employers and institutions | Learning, capability, talent, supplier-development or recognition budget. | LMS, credentials, awards, audits and informal reputation signals. | Evidence-linked learning and independent recognition, subject to Selo HUB controls. |
+| Inteligência e coordenação de ecossistema | Instituições, associações, federações e donos de ecossistemas | Orçamento executivo, de estratégia, inovação, serviços a associados ou programa de ecossistema. | Planilhas, pesquisas, consultores fragmentados, CRM/BI e coordenação interna. | Contexto, identidade, sinais, prioridades e ação compartilhados e governados entre organizações. |
+| Capacidade empresarial, resultados de pessoas e fornecedores | Empresas, líderes de RH/compras, unidades de negócio e fornecedores | Orçamento de RH, compras, transformação, ESG/impacto, risco ou unidade de negócio. | Consultorias pontuais, suítes de RH/compras, fornecedores de treinamento, programas manuais. | Conectar diagnóstico a soluções qualificadas, implementação e resultados mensuráveis. |
+| Implementação e programas estratégicos | Organizações que precisam de intervenções de mudança, capacidade ou ecossistema | Orçamento de consultoria, transformação, programa, comunicação ou operação. | Consultoria tradicional, agências, integradores de sistemas e equipes internas. | Entrega conduzida pelo C.A.O.S. com evidência reutilizável e execução até o fim. |
+| Mídia e Experiências | Donos de marketing, comunicação, comunidade e eventos | Orçamento de marketing, marca, comunicação ou eventos. | Agências, produtoras de eventos, compra de mídia e estúdios de conteúdo. | Experiências conectadas a participação, aprendizado, relacionamentos e evidência de resultados. |
+| Impacto Financiável | Financiadores, instituições, donos de programas e beneficiários | Funding restrito, filantropia, orçamento público ou de programa de impacto. | Editais, entrega por ONGs, fornecedores de monitoramento/relatórios e programas ad hoc. | Intervenções financiáveis com medição governada e rastreabilidade de implementação. |
+| Aprendizado e reconhecimento | Participantes, especialistas, avaliadores, empregadores e instituições | Orçamento de aprendizado, capacidade, talento, desenvolvimento de fornecedores ou reconhecimento. | LMS, credenciais, prêmios, auditorias e sinais informais de reputação. | Aprendizado vinculado a evidências e reconhecimento independente, sujeito aos controles do Selo HUB. |
 
-Segments must be defined by job, authority and buying process rather than demographics alone. At minimum, distinguish sponsor (owns the problem and budget), economic buyer (approves spend), operational buyer (runs the workflow), participant (contributes data or receives intervention), evaluator (reviews evidence), and beneficiary/customer of the outcome. One account may hold multiple roles; the role map must be explicit.
+Segmentos devem ser definidos pela função, autoridade e processo de compra, e não apenas por demografia. No mínimo, distinga patrocinador (dono do problema e do orçamento), comprador econômico (aprova gastos), comprador operacional (executa o fluxo de trabalho), participante (contribui com dados ou recebe a intervenção), avaliador (revisa evidências) e beneficiário/cliente do resultado. Uma conta pode acumular múltiplos papéis; o mapa de papéis deve ser explícito.
 
-**Buyer and budget hypothesis:** institutions may fund coordination and shared intelligence; enterprises may fund measurable capability, procurement, people or transformation outcomes; marketing and program owners may fund experiences; funders may fund restricted impact delivery; participants may not be direct payers. These are hypotheses, not demand evidence. [[00-project-control/gap-register/gaps/GTM-001|GTM-001]] requires approved segmentation, buyer roles, budgets and buying processes.
+**Hipótese de comprador e orçamento:** instituições podem financiar coordenação e inteligência compartilhada; empresas podem financiar capacidade mensurável, resultados de compras, pessoas ou transformação; donos de marketing e programas podem financiar experiências; financiadores podem financiar entrega de impacto restrito; participantes podem não ser pagadores diretos. Estas são hipóteses, não evidência de demanda. [[00-project-control/gap-register/gaps/GTM-001|GTM-001]] exige segmentação aprovada, papéis de comprador, orçamentos e processos de compra.
 
-For each target route, the evidence log must record account universe, buyer authority, problem trigger, budget line, procurement route, incumbent alternative, switching cost, contract value, activation effort, renewal path and reason to change. [[00-project-control/gap-register/gaps/GTM-002|GTM-002]] remains open until documented demand and access exist.
+Para cada rota-alvo, o registro de evidências deve documentar universo de contas, autoridade do comprador, gatilho do problema, linha de orçamento, rota de procurement, alternativa incumbente, custo de troca, valor de contrato, esforço de ativação, caminho de renovação e motivo para mudar. [[00-project-control/gap-register/gaps/GTM-002|GTM-002]] permanece aberto até existirem demanda e acesso documentados.
 
-### Category and alternative discipline
+### Disciplina de categoria e alternativas
 
-Positioning comparisons should be buyer-ranked, not competitor-name theater. Compare the status quo and alternatives on time to insight, coordination burden, implementation support, evidence quality, integration effort, governance risk, switching cost and total cost. Pricing or market-size figures are not supplied by this blueprint; they depend on [[00-project-control/gap-register/gaps/GTM-004|GTM-004]] and [[00-project-control/gap-register/gaps/GTM-005|GTM-005]].
+Comparações de posicionamento devem ser classificadas pelos compradores, não teatro de nomes de concorrentes. Compare o status quo e as alternativas em tempo até o insight, carga de coordenação, suporte à implementação, qualidade de evidência, esforço de integração, risco de governança, custo de troca e custo total. Este blueprint não fornece números de precificação ou tamanho de mercado; eles dependem de [[00-project-control/gap-register/gaps/GTM-004|GTM-004]] e [[00-project-control/gap-register/gaps/GTM-005|GTM-005]].
 
-Opportunity spaces are promising where fragmented actors share a consequential problem and no single tool owns the full loop from context to outcome. The initial beachhead must nevertheless be selected by reachable accounts, authority, budget, repeatability and evidence access—not by the breadth of the vision. This is the required refinement for [[00-project-control/gap-register/gaps/STR-006|STR-006]].
+Espaços de oportunidade são promissores onde atores fragmentados compartilham um problema consequente e nenhuma ferramenta isolada domina o ciclo completo do contexto ao resultado. O beachhead inicial ainda assim deve ser selecionado por contas alcançáveis, autoridade, orçamento, repetibilidade e acesso a evidências — não pela amplitude da visão. Este é o refinamento exigido para [[00-project-control/gap-register/gaps/STR-006|STR-006]].
 
-## 3. Direct, institutional, partner and content-led distribution routes
+## 3. Rotas de distribuição direta, institucional, por parceiros e por conteúdo
 
-Distribution is a portfolio of routes with explicit sequencing and fallbacks. A possible partner, named institution or strategic relationship is **not a commitment, traction or dependency** until access, authority, terms and evidence are documented.
+Distribuição é um portfólio de rotas com sequenciamento e fallbacks explícitos. Um possível parceiro, instituição citada ou relacionamento estratégico **não é compromisso, tração ou dependência** até que acesso, autoridade, termos e evidências estejam documentados.
 
-### Direct route
+### Rota direta
 
-Founder- or operator-led account development can validate the earliest problem, buyer, offer and proof loop. The sequence is: problem conversation → scoped diagnostic or design engagement → controlled implementation → evidence review → renewal/expansion conversation. Direct selling is useful for learning, but concentration in one founder, account or relationship must be tracked. It should transition to repeatable account qualification, case evidence, sales materials and accountable ownership.
+Desenvolvimento de contas conduzido por fundadores ou operadores pode validar o problema, comprador, oferta e ciclo de prova mais iniciais. A sequência é: conversa sobre o problema → diagnóstico escopado ou engajamento de design → implementação controlada → revisão de evidências → conversa de renovação/expansão. Venda direta é útil para aprender, mas concentração em um fundador, conta ou relacionamento deve ser monitorada. Deve transitar para qualificação de contas repetível, evidências de caso, materiais de venda e titularidade responsável.
 
-### Institutional route
+### Rota institucional
 
-Associations, federations, institutions and ecosystem owners may provide access to multiple organizations or participants through a sponsored program, membership service, shared infrastructure or institutional contract. The route hypothesis is compounding reach and shared context, but it also introduces procurement, governance, consent, participant-authority and reputation dependencies. Every institutional route needs an owner, paid value exchange, participant obligations, data boundaries, renewal logic and a non-institutional fallback. This directly addresses [[00-project-control/gap-register/gaps/GTM-003|GTM-003]].
+Associações, federações, instituições e donos de ecossistemas podem dar acesso a múltiplas organizações ou participantes por meio de programa patrocinado, serviço de associação, infraestrutura compartilhada ou contrato institucional. A hipótese da rota é alcance composto e contexto compartilhado, mas ela também introduz dependências de procurement, governança, consentimento, autoridade do participante e reputação. Toda rota institucional precisa de um responsável, troca de valor remunerada, obrigações dos participantes, limites de dados, lógica de renovação e um fallback não institucional. Isso trata diretamente [[00-project-control/gap-register/gaps/GTM-003|GTM-003]].
 
-### Partner route
+### Rota de parceiros
 
-Potential partners may contribute distribution, data access, implementation capacity, specialist capability, technology integration, funding or credibility. The partner portfolio should classify each possibility as **access**, **delivery**, **technology**, **capital**, **content** or **recognition**, then document the proposed role, route to revenue or value, obligations, exclusivity, data/IP boundaries, service levels, concentration exposure and fallback. No partner is assumed signed, available or strategically aligned. [[00-project-control/gap-register/gaps/STR-005|STR-005]] remains open until that model is approved; [[00-project-control/gap-register/gaps/GTM-006|GTM-006]] requires numeric exposure limits.
+Parceiros potenciais podem contribuir com distribuição, acesso a dados, capacidade de implementação, capacidade especializada, integração tecnológica, funding ou credibilidade. O portfólio de parceiros deve classificar cada possibilidade como **acesso**, **entrega**, **tecnologia**, **capital**, **conteúdo** ou **reconhecimento**, e então documentar o papel proposto, rota para receita ou valor, obrigações, exclusividade, limites de dados/IP, níveis de serviço, exposição de concentração e fallback. Nenhum parceiro é presumido assinado, disponível ou estrategicamente alinhado. [[00-project-control/gap-register/gaps/STR-005|STR-005]] permanece aberto até esse modelo ser aprovado; [[00-project-control/gap-register/gaps/GTM-006|GTM-006]] exige limites numéricos de exposição.
 
-### Content-led route
+### Rota liderada por conteúdo
 
-Research, practical guides, diagnostic explainers, events, case narratives and learning content can create informed demand and lower education costs. Content must show the problem, method, decision criteria and evidence boundary—not imply that a conceptual dashboard or illustrative ROI is an achieved result. Calls to action should lead to a qualified conversation, scoped assessment, learning experience or institutional discussion, with consent and attribution captured. Content performance is a signal of attention, not proof of willingness to buy.
+Pesquisas, guias práticos, explicações sobre diagnóstico, eventos, narrativas de caso e conteúdo de aprendizado podem criar demanda informada e reduzir custos de educação. O conteúdo deve mostrar o problema, o método, os critérios de decisão e o limite de evidência — não insinuar que um dashboard conceitual ou um ROI ilustrativo é um resultado alcançado. Chamadas para ação devem levar a uma conversa qualificada, avaliação escopada, experiência de aprendizado ou discussão institucional, capturando consentimento e atribuição. Desempenho de conteúdo é sinal de atenção, não prova de disposição para comprar.
 
-### Route sequence and measures
+### Sequência e métricas das rotas
 
-The initial route mix should prioritize learning and evidence, then scale the routes that show repeatable conversion and delivery economics. Track reachable account universe, qualified conversations, authorized access, procurement progression, activation, time-to-value, implementation completion, renewal/expansion, route cost and concentration. Define explicit fallback paths before a route becomes critical. No route is “traction” without the evidence log required by GTM-002; no channel mix is approved until capacity and dependency modeling pass GTM-003.
+O mix inicial de rotas deve priorizar aprendizado e evidência, e então escalar as rotas que mostrarem conversão repetível e economia de entrega. Acompanhe universo de contas alcançáveis, conversas qualificadas, acesso autorizado, progressão de procurement, ativação, tempo até valor, conclusão de implementação, renovação/expansão, custo da rota e concentração. Defina caminhos de fallback explícitos antes que uma rota se torne crítica. Nenhuma rota é “tração” sem o registro de evidências exigido pelo GTM-002; nenhum mix de canais é aprovado até que a modelagem de capacidade e dependências passe no GTM-003.
 
-## 4. Moat hypotheses and evidence required
+## 4. Hipóteses de fosso competitivo e evidências necessárias
 
-The following are **hypotheses**, not established advantages:
+Os itens abaixo são **hipóteses**, não vantagens estabelecidas:
 
-1. **Institutional distribution compounds.** A trusted institution may provide repeat access, shared context and lower acquisition cost across an ecosystem.
-2. **Verified implementation evidence compounds.** Repeated, permissioned evidence linking intervention to outcomes may improve decisions and become difficult to recreate.
-3. **Shared semantic and measurement infrastructure compounds.** Canonical identities, events, indicators and lineage may allow multiple offers to learn from a common foundation.
-4. **C.A.O.S. plus human judgment compounds.** A consistent method and accountable curation may create implementation quality beyond a standalone tool or report.
-5. **Cross-ecosystem relationships compound.** Qualified connections and follow-through may create network value while preserving consent and participant agency.
+1. **Distribuição institucional se compõe.** Uma instituição confiável pode oferecer acesso recorrente, contexto compartilhado e menor custo de aquisição em um ecossistema.
+2. **Evidência verificada de implementação se compõe.** Evidência repetida e permissionada ligando intervenção a resultados pode melhorar decisões e tornar-se difícil de recriar.
+3. **Infraestrutura semântica e de medição compartilhada se compõe.** Identidades, eventos, indicadores e linhagem canônicos podem permitir que múltiplas ofertas aprendam de uma base comum.
+4. **C.A.O.S. mais julgamento humano se compõe.** Um método consistente e curadoria responsável podem criar qualidade de implementação além de uma ferramenta ou relatório isolados.
+5. **Relacionamentos entre ecossistemas se compõem.** Conexões qualificadas e execução até o fim podem criar valor de rede preservando consentimento e agência do participante.
 
-For each hypothesis, the refinement evidence packet should include baseline and alternative, owner, time period, sample/denominator, permission status, cost to reproduce, observed outcome, counterfactual or comparison where possible, and a decision to support, narrow or downgrade the claim. The test should ask whether the advantage is actually difficult to replace, whether it compounds with use, and whether governance requirements make it durable rather than merely proprietary.
+Para cada hipótese, o pacote de evidências de refinamento deve incluir linha de base e alternativa, responsável, período, amostra/denominador, status de permissão, custo de reprodução, resultado observado, contrafactual ou comparação quando possível, e uma decisão de sustentar, estreitar ou rebaixar a afirmação. O teste deve perguntar se a vantagem é realmente difícil de substituir, se ela se compõe com o uso e se os requisitos de governança a tornam durável, e não meramente proprietária.
 
-Evidence must be separated into: **observed evidence** (traceable records and completed delivery), **validation evidence** (structured tests, buyer-ranked comparison, retention or repeatability), and **future evidence needed** (uncollected data, controlled experiments, independent review or scale tests). The foundation explicitly warns that the architecture does not yet prove causal or realized financial impact; the same standard applies to moat language. This closes conceptually toward [[00-project-control/gap-register/gaps/STR-004|STR-004]], whose approval condition is support or explicit downgrade of the moat claim.
+As evidências devem ser separadas em: **evidência observada** (registros rastreáveis e entrega concluída), **evidência de validação** (testes estruturados, comparação classificada por compradores, retenção ou repetibilidade) e **evidência futura necessária** (dados não coletados, experimentos controlados, revisão independente ou testes de escala). A fundação alerta explicitamente que a arquitetura ainda não prova impacto financeiro causal ou realizado; o mesmo padrão vale para a linguagem de fosso competitivo. Isso converge conceitualmente para [[00-project-control/gap-register/gaps/STR-004|STR-004]], cuja condição de aprovação é sustentar ou rebaixar explicitamente a afirmação de fosso competitivo.
 
-## 5. White-label, attribution, claims and localization principles
+## 5. Princípios de white-label, atribuição, afirmações e localização
 
-### White-label boundaries
+### Limites do white-label
 
-White-label deployment may change customer-facing color, logo, domain, navigation emphasis, selected terminology and approved content modules. It may not silently change C.A.O.S. definitions, evidence status, consent behavior, audit events, safety controls, measurement formulas, evaluator independence, data rights or the meaning of a recognition outcome. A deployment must state whether it is “powered by HUB,” co-endorsed or fully private-label under an approved exception.
+Implantações white-label podem alterar cor voltada ao cliente, logo, domínio, ênfase de navegação, terminologia selecionada e módulos de conteúdo aprovados. Não podem alterar silenciosamente definições do C.A.O.S., status de evidência, comportamento de consentimento, eventos de auditoria, controles de segurança, fórmulas de medição, independência dos avaliadores, direitos de dados ou o significado de um resultado de reconhecimento. Uma implantação deve declarar se é “powered by HUB”, co-endossada ou totalmente private-label sob exceção aprovada.
 
-Required controls are: written attribution and visibility choice; immutable methodology/version identifier; owner for configuration; tenant and data-visibility rules; approved customization register; prohibited-customization list; review/rollback process; and end-user disclosure where HUB operates, evaluates or processes data. [[00-project-control/gap-register/gaps/BRD-003|BRD-003]] remains open until product, brand and legal approve the standards and exceptions.
+Controles exigidos são: atribuição escrita e escolha de visibilidade; identificador imutável de metodologia/versão; responsável pela configuração; regras de tenant e visibilidade de dados; registro de customizações aprovado; lista de customizações proibidas; processo de revisão/rollback; e divulgação ao usuário final onde o HUB opera, avalia ou processa dados. [[00-project-control/gap-register/gaps/BRD-003|BRD-003]] permanece aberto até produto, marca e jurídico aprovarem padrões e exceções.
 
-### Attribution and recognition
+### Atribuição e reconhecimento
 
-Attribution must match actual contribution. HUB, a unit, an institution, a partner, an implementer and a customer should not claim sole authorship of a shared outcome without documented basis. A white-label customer may receive visibility appropriate to its contract, but cannot relabel HUB methodology or turn participation into an independent Selo HUB result. The Selo HUB requires separate governance, evaluator independence, conflicts and appeals; commercial participation must never guarantee recognition.
+Atribuição deve corresponder à contribuição real. HUB, uma unidade, uma instituição, um parceiro, um implementador e um cliente não devem reivindicar autoria exclusiva de um resultado compartilhado sem base documentada. Um cliente white-label pode receber visibilidade adequada ao seu contrato, mas não pode renomear a metodologia HUB nem converter participação em resultado independente do Selo HUB. O Selo HUB exige governança separada, independência dos avaliadores, conflitos e recursos; participação comercial nunca deve garantir reconhecimento.
 
-### Claims governance
+### Governança de afirmações
 
-Every material verbal, visual, financial, product, impact or recognition claim needs a claims-to-evidence record: exact wording, audience, source, period, denominator, evidence state, owner, approval authority, expiry/review date and withdrawal mechanism. Claims must be classified as:
+Toda afirmação material verbal, visual, financeira, de produto, de impacto ou de reconhecimento precisa de um registro afirmação-evidência: redação exata, público, fonte, período, denominador, estado de evidência, responsável, autoridade de aprovação, data de expiração/revisão e mecanismo de retirada. As afirmações devem ser classificadas como:
 
-- **Conceptual:** describes intended architecture or hypothesis; use “proposed,” “designed to” or equivalent.
-- **Demonstrated:** supported by a reproducible controlled demonstration or completed scoped delivery; state scope and limits.
-- **Validated:** independently or systematically reviewed against defined criteria and comparison; state methodology.
-- **Approved for external use:** passed applicable product, legal, governance, finance and brand gates.
+- **Conceitual:** descreve arquitetura pretendida ou hipótese; use “proposto”, “projetado para” ou equivalente.
+- **Demonstrada:** apoiada por demonstração controlada reproduzível ou entrega escopada concluída; declare escopo e limites.
+- **Validada:** revisada de forma independente ou sistemática contra critérios e comparação definidos; declare a metodologia.
+- **Aprovada para uso externo:** passou pelos gates aplicáveis de produto, jurídico, governança, finanças e marca.
 
-Illustrative economics (including ROI examples) are not external proof. Avoid guaranteed outcome, causal, “certified,” “bias-free,” “fully automated,” “compliant,” or “secure” language unless the specific evidence and approval exist. This implements the intent of [[00-project-control/gap-register/gaps/BRD-002|BRD-002]].
+Economias ilustrativas (incluindo exemplos de ROI) não são prova externa. Evite linguagem de resultado garantido, causal, “certificado”, “sem viés”, “totalmente automatizado”, “em conformidade” ou “seguro”, a menos que a evidência específica e a aprovação existam. Isso implementa a intenção do [[00-project-control/gap-register/gaps/BRD-002|BRD-002]].
 
-### Localization
+### Localização
 
-Localize examples, buyer terminology, procurement assumptions, legal notices, consent language, accessibility and channel norms by market. Do not localize away methodology, evidence qualifiers, privacy obligations or attribution. Portuguese and English are current working languages; a controlled glossary and reviewer in each market must approve translations. LGPD terminology and rights must remain accurate in Portuguese contexts, with other jurisdictions reviewed separately rather than assumed equivalent.
+Localize exemplos, terminologia de comprador, premissas de procurement, avisos legais, linguagem de consentimento, acessibilidade e normas de canal por mercado. Não localize a ponto de remover metodologia, qualificadores de evidência, obrigações de privacidade ou atribuição. Português e inglês são os idiomas de trabalho atuais; um glossário controlado e um revisor em cada mercado devem aprovar traduções. Terminologia e direitos da LGPD devem permanecer precisos em contextos em português, com outras jurisdições revisadas separadamente, e não assumidas como equivalentes.
 
-## Open Assumptions and Unresolved Decisions
+## Premissas em aberto e decisões não resolvidas
 
-| Assumption / decision | Affected gap IDs | Refinement action |
+| Premissa/decisão | IDs de gap afetados | Ação de refinamento |
 |---|---|---|
-| The endorsed architecture (HUB → units → fronts → modules) is the right hierarchy. | STR-006, BRD-001 | Test naming comprehension with buyers and obtain brand-governance approval; reconcile with BP-001 and BP-002. |
-| “Diferenças que movimentam negócios.” resonates across institutional, enterprise, impact and platform contexts. | STR-006, BRD-002 | Run message testing by segment; record comprehension, credibility and conversion evidence. |
-| Institutions will pay for coordinated ecosystem intelligence and implementation. | GTM-001, GTM-002, GTM-005 | Build bottom-up account universe and document budget owner, procurement, demand and renewal evidence. |
-| A shared semantic and measurement layer is valuable across offers. | STR-004, STR-006, BRD-002 | Validate repeated use cases, switching cost and outcome lineage across at least contrasting contexts. |
-| Institutional or partner distribution can compound without unacceptable concentration. | STR-004, STR-005, GTM-003, GTM-006 | Create partner/channel portfolio, fallback routes and numeric revenue, capacity, data, roadmap and reputation thresholds. |
-| Candidate partners can provide access, delivery, technology, capital, content or recognition value. | STR-005, GTM-002, GTM-006 | Treat each as a possibility; document authority, terms, obligations, evidence and fallback before dependency. |
-| Buyers will prefer an integrated HUB system to point tools, agencies or internal coordination. | GTM-004, STR-006 | Conduct buyer-ranked alternative analysis including pricing, switching costs and differentiated proof. |
-| Content-led education will produce qualified demand rather than only attention. | GTM-002, GTM-003, BRD-002 | Instrument source, consent, qualification, conversion and renewal; separate engagement from traction. |
-| Verified implementation evidence can become a durable moat. | STR-004, BRD-002 | Define evidence lineage, comparison design, permission model, cost-to-reproduce and independent review. |
-| White-label flexibility will not dilute methodology, attribution or trust. | BRD-001, BRD-002, BRD-003 | Approve customization tiers, mandatory disclosures, prohibited changes, version identifiers and rollback controls. |
-| Selo HUB can be visible in the portfolio while remaining independent. | BRD-002, BRD-003 | Align brand rules with evaluator charter, conflicts, appeals, withdrawal and commercial-separation controls. |
-| Portuguese/English localization can preserve meaning and legal accuracy. | BRD-002, BRD-003 | Create controlled glossary, translation review and market-specific claims/privacy checklist. |
-| Offer and product vocabulary will align with the other blueprints. | GTM-001, BRD-001, BRD-003 | **Depends on BP-001:** reconcile offer names, buyers and revenue routes. **Depends on BP-002:** reconcile module names, surfaces and white-label behavior. |
+| A arquitetura endossada (HUB → unidades → frentes → módulos) é a hierarquia correta. | STR-006, BRD-001 | Testar compreensão da nomenclatura com compradores e obter aprovação da governança de marca; reconciliar com BP-001 e BP-002. |
+| “Diferenças que movimentam negócios.” ressoa em contextos institucional, empresarial, de impacto e de plataforma. | STR-006, BRD-002 | Executar teste de mensagem por segmento; registrar evidências de compreensão, credibilidade e conversão. |
+| Instituições pagarão por inteligência e implementação coordenadas de ecossistema. | GTM-001, GTM-002, GTM-005 | Construir universo de contas bottom-up e documentar dono do orçamento, procurement, demanda e evidências de renovação. |
+| Uma camada semântica e de medição compartilhada é valiosa entre ofertas. | STR-004, STR-006, BRD-002 | Validar casos de uso repetidos, custo de troca e linhagem de resultados em pelo menos contextos contrastantes. |
+| Distribuição institucional ou por parceiros pode se compor sem concentração inaceitável. | STR-004, STR-005, GTM-003, GTM-006 | Criar portfólio de parceiros/canais, rotas de fallback e limiares numéricos de receita, capacidade, dados, roadmap e reputação. |
+| Parceiros candidatos podem fornecer valor de acesso, entrega, tecnologia, capital, conteúdo ou reconhecimento. | STR-005, GTM-002, GTM-006 | Tratar cada um como possibilidade; documentar autoridade, termos, obrigações, evidências e fallback antes da dependência. |
+| Compradores preferirão um sistema HUB integrado a ferramentas pontuais, agências ou coordenação interna. | GTM-004, STR-006 | Conduzir análise de alternativas classificada por compradores, incluindo precificação, custos de troca e prova diferenciada. |
+| Educação liderada por conteúdo produzirá demanda qualificada, e não apenas atenção. | GTM-002, GTM-003, BRD-002 | Instrumentar origem, consentimento, qualificação, conversão e renovação; separar engajamento de tração. |
+| Evidência verificada de implementação pode tornar-se um fosso competitivo durável. | STR-004, BRD-002 | Definir linhagem de evidência, desenho de comparação, modelo de permissão, custo de reprodução e revisão independente. |
+| Flexibilidade white-label não diluirá metodologia, atribuição ou confiança. | BRD-001, BRD-002, BRD-003 | Aprovar níveis de customização, divulgações obrigatórias, mudanças proibidas, identificadores de versão e controles de rollback. |
+| Selo HUB pode estar visível no portfólio permanecendo independente. | BRD-002, BRD-003 | Alinhar regras de marca com carta dos avaliadores, conflitos, recursos, retirada e controles de separação comercial. |
+| Localização português/inglês pode preservar significado e precisão legal. | BRD-002, BRD-003 | Criar glossário controlado, revisão de tradução e checklist de afirmações/privacidade por mercado. |
+| Vocabulário de oferta e produto se alinhará aos demais blueprints. | GTM-001, BRD-001, BRD-003 | **Depende do BP-001:** reconciliar nomes de ofertas, compradores e rotas de receita. **Depende do BP-002:** reconciliar nomes de módulos, superfícies e comportamento white-label. |
 
-## Cross-Blueprint Dependencies
+## Dependências entre blueprints
 
-- **Depends on BP-001:** final offer architecture, offer-to-buyer mapping, revenue routes, commercial ownership and launch segment choices. This blueprint supplies market and narrative constraints but does not pre-empt BP-001 decisions.
-- **Depends on BP-002:** product boundary, module contracts, user surfaces, configuration model, evidence workflows and white-label capabilities. Brand promises must not exceed implemented product behavior.
-- **Coordinates with BP-003:** data, identity, metric lineage, attribution and evidence states are prerequisites for moat and claims validation.
-- **Coordinates with BP-004:** platform, integration, tenant and security boundaries constrain what can be promised across institutional or partner routes.
-- **Coordinates with BP-005:** delivery capacity, role ownership, partner operations, support and fallback routes determine whether distribution is repeatable.
-- **Coordinates with BP-006:** legal entities, IP, LGPD, contracts, claims approval, Selo independence and white-label exceptions are approval gates, not brand assumptions.
-- **Coordinates with BP-008:** launch sequencing, experiments, route metrics, market learning and evolution gates should turn the assumptions here into dated validation work.
+- **Depende do BP-001:** arquitetura final de ofertas, mapeamento oferta-comprador, rotas de receita, titularidade comercial e escolhas de segmento de lançamento. Este blueprint fornece restrições de mercado e narrativa, mas não antecipa decisões do BP-001.
+- **Depende do BP-002:** fronteira de produto, contratos de módulos, superfícies de usuário, modelo de configuração, fluxos de trabalho de evidência e capacidades white-label. Promessas de marca não devem exceder o comportamento implementado do produto.
+- **Coordena com BP-003:** dados, identidade, linhagem de métricas, atribuição e estados de evidência são pré-requisitos para validação de fosso competitivo e afirmações.
+- **Coordena com BP-004:** fronteiras de plataforma, integração, tenant e segurança restringem o que pode ser prometido nas rotas institucionais ou de parceiros.
+- **Coordena com BP-005:** capacidade de entrega, titularidade de papéis, operações de parceiros, suporte e rotas de fallback determinam se a distribuição é repetível.
+- **Coordena com BP-006:** entidades legais, PI, LGPD, contratos, aprovação de afirmações, independência do Selo e exceções white-label são gates de aprovação, não premissas de marca.
+- **Coordena com BP-008:** sequenciamento de lançamento, experimentos, métricas de rota, aprendizado de mercado e gates de evolução devem transformar as premissas aqui em trabalho de validação com datas.
 
-The blueprint is complete only when the portfolio remains legible as one connected HUB system while each unit, front, module and route has a distinct buyer, accountable owner, evidence boundary and approved claim posture.
+O blueprint está completo apenas quando o portfólio permanece legível como um único sistema HUB conectado, enquanto cada unidade, frente, módulo e rota tem um comprador distinto, responsável prestável de contas, limite de evidência e postura de afirmação aprovada.

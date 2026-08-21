@@ -1,5 +1,5 @@
 ---
-title: "BP-005 — HUB Operating Model Blueprint"
+title: "BP-005 — Blueprint do Modelo Operacional do HUB"
 task_id: BP-005
 task_type: blueprint-document
 status: completed
@@ -26,24 +26,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-005 — HUB Operating Model Blueprint
+# BP-005 — Blueprint do Modelo Operacional do HUB
 
-## Objective
+## Objetivo
 
-Define how HUB work is delivered, governed, supported and improved across the group units, platform, operators, specialists, partners, evaluators and customers.
+Definir como o trabalho do HUB é entregue, governado, suportado e aprimorado entre as unidades do grupo, a plataforma, operadores, especialistas, parceiros, avaliadores e clientes.
 
-## Required content
+## Conteúdo exigido
 
-1. Map C.A.O.S. stages to operating roles, activities, artifacts and decisions.
-2. Define responsibilities for sales, onboarding, diagnosis, curation, matching, implementation, measurement, support and escalation.
-3. Describe founder responsibilities versus delegated capabilities.
-4. Define service levels, exception paths, incident responsibilities and operational evidence.
-5. Connect operating work to product capabilities, data events, financial assumptions and governance controls.
-6. Record all operating assumptions and unresolved capacity questions.
+1. Mapear os estágios C.A.O.S. para papéis operacionais, atividades, artefatos e decisões.
+2. Definir responsabilidades de vendas, onboarding, diagnóstico, curadoria, matching, implementação, medição, suporte e escalonamento.
+3. Descrever responsabilidades dos fundadores versus capacidades delegadas.
+4. Definir níveis de serviço, caminhos de exceção, responsabilidades por incidentes e evidências operacionais.
+5. Conectar o trabalho operacional às capacidades do produto, eventos de dados, premissas financeiras e controles de governança.
+6. Registrar todas as premissas operacionais e questões de capacidade não resolvidas.
 
-## Completion criteria
+## Critérios de conclusão
 
-- The model shows how the complete system operates beyond a conceptual user journey.
-- Critical responsibilities and handoffs are visible.
-- Manual work, partner work and future automation are distinguished.
-- Operating readiness remains a blueprint target, not a claim of current capability.
+- O modelo mostra como o sistema completo opera além de uma jornada conceitual de usuário.
+- Responsabilidades críticas e transições (handoffs) são visíveis.
+- Trabalho manual, trabalho de parceiros e automação futura são distinguidos.
+- A prontidão operacional permanece um alvo de blueprint, não uma alegação de capacidade atual.

@@ -1,18 +1,18 @@
-# Gap Register Architecture
+# Arquitetura do Registro de Lacunas
 
-The consolidated source register is [`HUB_Project_Gap_Register.md`](HUB_Project_Gap_Register.md).
+O registro de origem consolidado é [`HUB_Project_Gap_Register.md`](HUB_Project_Gap_Register.md).
 
-The individual YAML-backed gap records live in [`gaps/`](gaps/), one Markdown note per gap ID. The centralized Obsidian Bases index is [`HUB_Project_Gaps.base`](HUB_Project_Gaps.base).
+Os registros individuais de lacunas com suporte em YAML vivem em [`gaps/`](gaps/), uma nota Markdown por ID de lacuna. O índice centralizado do Obsidian Bases é [`HUB_Project_Gaps.base`](HUB_Project_Gaps.base).
 
-Each gap note preserves:
+Cada nota de lacuna preserva:
 
-- gap ID and type;
-- priority and status;
-- domain and current/next layer;
-- current state;
-- missing element;
-- refinement action;
-- approval condition;
-- related blueprint task IDs.
+- ID e tipo da lacuna;
+- prioridade e status;
+- domínio e camada atual/próxima;
+- estado atual;
+- elemento faltante;
+- ação de refinamento;
+- condição de aprovação;
+- IDs das tarefas de blueprint relacionadas.
 
-The table in the source register remains the human-readable consolidated record. The note records are the property-level operational layer used by Bases.
+A tabela no registro de origem permanece como o registro consolidado legível por humanos. As notas são a camada operacional de nível de propriedade usada pelo Bases.

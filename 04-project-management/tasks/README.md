@@ -1,21 +1,21 @@
-# Blueprint Task Architecture
+# Arquitetura de Tarefas do Blueprint
 
-The [`HUB_Blueprint_Tasks.base`](HUB_Blueprint_Tasks.base) file is the centralized Obsidian Bases view for the blueprint-document task notes in this folder.
+O arquivo [`HUB_Blueprint_Tasks.base`](HUB_Blueprint_Tasks.base) é a visualização centralizada do Obsidian Bases para as notas de tarefas blueprint-document desta pasta.
 
-Each task is a Markdown note with YAML frontmatter. The frontmatter is the task's structured metadata; the body contains the task objective, required content and completion criteria.
+Cada tarefa é uma nota Markdown com frontmatter YAML. O frontmatter são os metadados estruturados da tarefa; o corpo contém o objetivo da tarefa, o conteúdo exigido e os critérios de conclusão.
 
-## Current task set
+## Conjunto atual de tarefas
 
-- `BP-001` — Offer and Revenue Architecture
-- `BP-002` — Product and Capability Blueprint
-- `BP-003` — Data and Intelligence Blueprint
-- `BP-004` — Technology Architecture Blueprint
-- `BP-005` — Operating Model Blueprint
-- `BP-006` — Governance and Legal Blueprint
-- `BP-007` — Brand and Market Blueprint
-- `BP-008` — Launch and Evolution Blueprint
+- `BP-001` — Arquitetura de Ofertas e Receita
+- `BP-002` — Blueprint de Produto e Capacidades
+- `BP-003` — Blueprint de Dados e Inteligência
+- `BP-004` — Blueprint de Arquitetura de Tecnologia
+- `BP-005` — Blueprint de Modelo Operacional
+- `BP-006` — Blueprint de Governança e Jurídico
+- `BP-007` — Blueprint de Marca e Mercado
+- `BP-008` — Blueprint de Lançamento e Evolução
 
-## Required task-note properties
+## Propriedades exigidas das notas de tarefa
 
 - `task_id`
 - `task_type`
@@ -30,4 +30,4 @@ Each task is a Markdown note with YAML frontmatter. The frontmatter is the task'
 - `gap_ids`
 - `related_notes`
 
-Blueprint tasks must define concepts and assumptions without presenting them as validated, approved or launch-ready. Relevant gap IDs must be updated as the task evolves.
+As tarefas do Blueprint devem definir conceitos e premissas sem apresentá-los como validados, aprovados ou prontos para lançamento. Os IDs de gap relevantes devem ser atualizados conforme a tarefa evolui.

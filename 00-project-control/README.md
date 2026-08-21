@@ -1,12 +1,12 @@
-# Project Control
+# Controle do Projeto
 
-This folder contains the rules and shared control records for the entire HUB project.
+Esta pasta contém as regras e os registros de controle compartilhados de todo o projeto HUB.
 
-- `framework/` — development framework and governing method.
-- `scope/` — current complete project scope.
-- `decisions/` — recorded decisions and their rationale.
-- `assumptions/` — assumptions requiring refinement or evidence.
-- `risks/` — risks, mitigations and owners.
-- `dependencies/` — internal and external dependencies.
-- `change-log/` — material changes to scope, structure or decisions.
-- `indexes/` — navigation and cross-layer indexes.
+- `framework/` — framework de desenvolvimento e método regente.
+- `scope/` — escopo completo e atual do projeto.
+- `decisions/` — decisões registradas e sua justificativa.
+- `assumptions/` — premissas que exigem refinamento ou evidência.
+- `risks/` — riscos, mitigações e responsáveis.
+- `dependencies/` — dependências internas e externas.
+- `change-log/` — mudanças materiais de escopo, estrutura ou decisões.
+- `indexes/` — índices de navegação e entre camadas.

@@ -1,9 +1,9 @@
 ---
-title: "HUB — Strategic Master Document v2"
-subtitle: "Focused investor thesis for validation"
+title: "HUB — Documento Estratégico Mestre v2"
+subtitle: "Tese focada para validação com investidores"
 version: "2.0-draft"
 date: 2026-08-13
-status: "investor-ready draft — validation required"
+status: "rascunho pronto para investidores — validação necessária"
 tagline: "Diferenças que movimentam negócios."
 type: documento-mãe
 source_documents:
@@ -22,358 +22,358 @@ tags:
   - validation-required
 ---
 
-# HUB — Strategic Master Document v2
+# HUB — Documento Estratégico Mestre v2
 
-> **Investor-readiness status:** This is a focused strategy draft, not proof of investor readiness. It becomes circulation-ready only when the evidence checklist and decision gates in this document are satisfied.
+> **Status de prontidão para investidores:** Este é um rascunho estratégico focado, não uma prova de prontidão para investidores. Ele só estará pronto para circulação quando a lista de evidências e os portões de decisão deste documento forem atendidos.
 
-## How to read this document
+## Como ler este documento
 
-Every material statement uses one of five labels:
+Cada afirmação material usa um de cinco rótulos:
 
-- **Proven:** supported by a signed agreement, measured result, or reliable cited source.
-- **Observed:** supported by research or operational observation, but not yet validated as repeatable demand.
-- **Hypothesis:** plausible and testable; not evidence of traction, willingness to pay, or outcome.
-- **Decision:** the working direction selected for focused validation.
-- **Option:** retained possibility outside the current operating plan.
+- **Comprovado:** respaldado por um acordo assinado, um resultado medido ou uma fonte citada confiável.
+- **Observado:** respaldado por pesquisa ou observação operacional, mas ainda não validado como demanda repetível.
+- **Hipótese:** plausível e testável; não é evidência de tração, disposição para pagar ou resultado.
+- **Decisão:** direção de trabalho selecionada para validação focada.
+- **Opção:** possibilidade mantida fora do plano operacional atual.
 
-No named institution is treated as a customer, partner, endorsement, or commitment without written evidence. No market size, price, traction, outcome, funding amount, capacity, or legal conclusion is presented unless evidenced.
+Nenhuma instituição nomeada é tratada como cliente, parceira, endosso ou compromisso sem evidência escrita. Nenhum tamanho de mercado, preço, tração, resultado, valor de financiamento, capacidade ou conclusão jurídica é apresentado sem evidências.
 
-## 1. Executive Investment Thesis
+## 1. Tese Executiva de Investimento
 
-### The promise
+### A promessa
 
-**Proven as source-defined promise and method:** HUB’s promise is **“Diferenças que movimentam negócios.”** The commercial claim that HUB transforms differences into business results remains unvalidated. Its stated method is the complete journey: diagnose → plan → connect → implement → measure → recognize → evolve. The C.A.O.S. method means **Contexto → Arquitetura → Operação → Sustentação**.
+**Comprovado como promessa e método definidos pelas fontes:** A promessa do HUB é **“Diferenças que movimentam negócios.”** A afirmação comercial de que o HUB transforma diferenças em resultados de negócio continua não validada. Seu método declarado é a jornada completa: diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir. O método C.A.O.S. significa **Contexto → Arquitetura → Operação → Sustentação**.
 
-### The focused thesis
+### A tese focada
 
-**Decision/Hypothesis:** HUB will first test a software-supported, human-operated workflow sold to one accountable institutional buyer. The workflow helps a defined cohort of small businesses prepare for one real buyer opportunity or procurement pathway, then records readiness, intervention, connection, follow-through, and outcome.
+**Decisão/Hipótese:** O HUB primeiro testará um fluxo de trabalho apoiado por software e operado por pessoas, vendido a um único comprador institucional responsável. O fluxo ajuda uma coorte definida de pequenas empresas a se preparar para uma oportunidade real de comprador ou caminho de contratação e, em seguida, registra prontidão, intervenção, conexão, acompanhamento e resultado.
 
-### Pilot-first operating thesis
+### Tese operacional orientada primeiro ao piloto
 
-**Decision:** The immediate business is a founder-led, manually delivered institutional pilot. Software supports the work, while founders own discovery, setup, review, curation, matching, follow-through, and outcome reporting until evidence shows which steps should be productized. The broad platform vision remains conditional future scope, not an operating assumption.
+**Decisão:** O negócio imediato é um piloto institucional conduzido pelos fundadores e entregue manualmente. O software apoia o trabalho, enquanto os fundadores são responsáveis por descoberta, configuração, revisão, curadoria, correspondência, acompanhamento e relato de resultados até que as evidências mostrem quais etapas devem virar produto. A visão de uma plataforma ampla permanece como escopo futuro condicional, não como premissa operacional.
 
-### Active scope: one of each
+### Escopo ativo: um de cada
 
-For the first operating cycle, scope is exactly **one buyer type, one buyer, one opportunity, one pilot, one workflow, and one measurable outcome**:
+Para o primeiro ciclo operacional, o escopo é exatamente **um tipo de comprador, um comprador, uma oportunidade, um piloto, um fluxo de trabalho e um resultado mensurável**:
 
-1. One accountable institutional buyer type.
-2. One named buyer with sponsor, owner, access, and paid/funded route.
-3. One named opportunity or documented pathway.
-4. One bounded pilot and cohort.
-5. One workflow from diagnosis through human-assisted intervention and follow-through.
-6. One pre-registered, buyer-agreed measurable outcome.
+1. Um tipo de comprador institucional responsável.
+2. Um comprador nomeado com patrocinador, responsável operacional, acesso e caminho pago/financiado.
+3. Uma oportunidade nomeada ou caminho documentado.
+4. Um piloto e uma coorte delimitados.
+5. Um fluxo de trabalho do diagnóstico à intervenção assistida por pessoas e ao acompanhamento.
+6. Um resultado mensurável pré-registrado e acordado com o comprador.
 
-No second buyer, opportunity, pilot, workflow variant, or outcome metric enters active scope until the expansion gate is passed.
+Nenhum segundo comprador, oportunidade, piloto, variante de fluxo ou métrica de resultado entra no escopo ativo até que o portão de expansão seja aprovado.
 
-### Deferred / not active
+### Adiado / não ativo
 
-Explicitly deferred and not active for the pilot: **marketplace, Selo, Institute, media/events, Academy, broad platform, multiple cohorts, deep integrations, and autonomous recommendations**. These remain historical or strategic options, not current commitments or evidence of demand.
+Explicitamente adiados e não ativos para o piloto: **marketplace, Selo, Institute, mídia/eventos, Academy, plataforma ampla, múltiplas coortes, integrações profundas e recomendações autônomas**. Eles permanecem como opções históricas ou estratégicas, não como compromissos atuais ou evidências de demanda.
 
-The initial commercial logic is **implementation-led pilot → repeatable program → annual ecosystem license**, subject to buyer, price, cost-to-serve, and renewal evidence. This is not yet a forecast or proof of a recurring business.
+A lógica comercial inicial é **piloto conduzido pela implementação → programa repetível → licença anual de ecossistema**, sujeita a evidências sobre comprador, preço, custo de atendimento e renovação. Isso ainda não é uma previsão nem prova de um negócio recorrente.
 
-### Why this wedge
+### Por que este ponto de entrada
 
-**Observed inference:** Candidate A best fits the source architecture because one institutional sale may provide cohort distribution, the workflow can prove the complete HUB loop in bounded scope, and the opportunity trigger is more concrete than a general-purpose platform promise. The recommendation is a strategic judgment, not market validation.
+**Inferência observada:** A Candidate A se encaixa melhor na arquitetura das fontes porque uma venda institucional pode fornecer distribuição para a coorte, o fluxo pode comprovar o ciclo completo do HUB em escopo delimitado e o gatilho da oportunidade é mais concreto que uma promessa de plataforma de uso geral. A recomendação é um julgamento estratégico, não uma validação de mercado.
 
-### What is not claimed
+### O que não está sendo afirmado
 
-HUB has no proven customer traction, signed partner commitment, validated pricing, measured outcomes, quantified TAM, established moat, confirmed legal structure, or demonstrated engineering capacity in the reviewed artifacts. Sebrae and Firjan remain strategic possibilities only.
+Os artefatos analisados não comprovam tração de clientes, compromisso assinado de parceiros, preços validados, resultados medidos, TAM quantificado, vantagem defensável estabelecida, estrutura jurídica confirmada ou capacidade de engenharia demonstrada do HUB. Sebrae e Firjan permanecem apenas como possibilidades estratégicas.
 
-## 2. Specific Problem and Why Now
+## 2. Problema Específico e Por Que Agora
 
-**Proven as v1’s stated diagnosis, not as market validation:** The v1 document describes organizations and institutions as having fragmented diagnosis, training, relationship, supplier, talent, and reporting activities. A directory, event, spreadsheet, report, or isolated seal does not necessarily connect a real need to an intervention, implementation evidence, and an outcome. Market prevalence, cost, urgency, and willingness to pay remain unvalidated.
+**Comprovado como diagnóstico declarado da v1, não como validação de mercado:** O documento v1 descreve organizações e instituições como tendo atividades fragmentadas de diagnóstico, treinamento, relacionamento, fornecedores, talentos e relatórios. Um diretório, evento, planilha, relatório ou selo isolado não necessariamente conecta uma necessidade real a uma intervenção, evidência de implementação e um resultado. A prevalência, o custo, a urgência e a disposição para pagar no mercado continuam não validados.
 
-**Observed / Hypothesis:** An institutional buyer may need to convert member businesses from visibility or participation into readiness for a defined market opportunity. Current alternatives may include internal teams and spreadsheets, one-off consulting, training or events, association platforms, supplier directories, procurement software, and custom projects. The actual costly failure, budget owner, and urgency must be established through interviews.
+**Observado / Hipótese:** Um comprador institucional pode precisar transformar a visibilidade ou participação de empresas associadas em prontidão para uma oportunidade de mercado definida. As alternativas atuais podem incluir equipes internas e planilhas, consultoria pontual, treinamentos ou eventos, plataformas de associações, diretórios de fornecedores, software de contratação e projetos personalizados. A falha efetivamente custosa, o responsável pelo orçamento e a urgência devem ser estabelecidos por meio de entrevistas.
 
-**Why now, as a validation frame rather than a claim:** A real procurement deadline, buyer demand, strategic member-value program, or funded opportunity could make a bounded readiness workflow urgent. Phase 1 must identify the trigger and reject the thesis if urgency is absent.
+**Por que agora, como estrutura de validação e não como afirmação:** Um prazo real de contratação, uma demanda de comprador, um programa estratégico de valor para associados ou uma oportunidade financiada pode tornar urgente um fluxo delimitado de prontidão. A Fase 1 deve identificar o gatilho e rejeitar a tese se não houver urgência.
 
-## 3. Beachhead Customer and Use Case
+## 3. Cliente de Entrada e Caso de Uso
 
-### Working beachhead: Candidate A
+### Ponto de entrada em trabalho: Candidate A
 
-**Decision:** Select Candidate A as the working wedge, subject to the Phase 1 gate.
+**Decisão:** Selecionar a Candidate A como ponto de entrada em trabalho, sujeita ao portão da Fase 1.
 
-**Buyer hypothesis:** An association, federation, or business-support entity executive who owns member services, competitiveness, procurement access, or business-development outcomes. The exact buyer role and entity type are unresolved.
+**Hipótese de comprador:** Um executivo de associação, federação ou entidade de apoio empresarial responsável por serviços aos associados, competitividade, acesso a contratações ou resultados de desenvolvimento empresarial. O cargo exato do comprador e o tipo de entidade ainda não foram definidos.
 
-**Participant:** A defined cohort of member small businesses selected against an explicit readiness or opportunity criterion.
+**Participante:** Uma coorte definida de pequenas empresas associadas, selecionadas segundo um critério explícito de prontidão ou oportunidade.
 
-**Demand side:** One named buyer opportunity, procurement category, or documented opportunity pathway. A generic marketplace listing is insufficient.
+**Lado da demanda:** Uma oportunidade de comprador nomeada, categoria de contratação ou caminho de oportunidade documentado. Um anúncio genérico em marketplace é insuficiente.
 
-**Use case:** Diagnose each participant’s readiness, collect basic evidence, prescribe the smallest gap-closing action, provide a curated intervention or human-assisted connection, track follow-through, and report conversion or other pre-agreed outcome signals.
+**Caso de uso:** Diagnosticar a prontidão de cada participante, coletar evidências básicas, prescrever a menor ação capaz de fechar a lacuna, fornecer uma intervenção curada ou conexão assistida por pessoas, acompanhar a execução e relatar conversão ou outros sinais de resultado previamente acordados.
 
-### Phase 1 validation gate
+### Portão de validação da Fase 1
 
-Proceed only if interviews and a written proposal show:
+Prosseguir somente se as entrevistas e uma proposta escrita demonstrarem:
 
-1. A recurring, painful problem described by the buyer in its own words.
-2. An accessible decision-maker and budget path.
-3. A named sponsor and operational owner.
-4. A documented opportunity or procurement pathway.
-5. A feasible participant cohort and data permission path.
-6. A paid or explicitly funded pilot path with scope, dates, and success criteria.
+1. Um problema recorrente e doloroso, descrito pelo comprador com suas próprias palavras.
+2. Um tomador de decisão acessível e um caminho orçamentário.
+3. Um patrocinador nomeado e um responsável operacional.
+4. Uma oportunidade ou caminho de contratação documentado.
+5. Uma coorte de participantes viável e um caminho de autorização de dados.
+6. Um caminho de piloto pago ou explicitamente financiado, com escopo, datas e critérios de sucesso.
 
-If the gate fails, do not build Candidate A by assumption. Revisit the buyer/use-case pair; Candidate C, an enterprise evidence-based evolution journey, is the principal fallback option to test.
+Se o portão falhar, não desenvolva a Candidate A por suposição. Reavalie o par comprador/caso de uso; a Candidate C, uma jornada empresarial de evolução baseada em evidências, é a principal opção de contingência a testar.
 
-## 4. HUB Solution and Pilot Workflow
+## 4. Solução HUB e Fluxo do Piloto
 
-The pilot is a **software-supported service**, with manual operations deliberately exposed and measured.
+O piloto é um **serviço apoiado por software**, com operações manuais deliberadamente expostas e medidas.
 
-1. **Program setup:** configure one institution, opportunity theme, cohort, reporting cycle, roles, consent language, and baseline/endline definitions.
-2. **Onboarding:** register businesses and collect only fields required for the opportunity.
-3. **Diagnosis:** complete a versioned, configurable readiness questionnaire and attach basic evidence.
-4. **Review:** calculate a transparent rule-based readiness result, identify missing evidence, and retain human review.
-5. **Architecture:** create a short prioritized plan with actions, owners, due dates, and evidence.
-6. **Operation:** curate a specific content item, specialist, supplier, preparation activity, or buyer introduction.
-7. **Connection:** perform human-assisted matching after checking fit, consent, availability, and requirements.
-8. **Follow-through:** record actions, meetings, proposals, blockers, support, and operator effort.
-9. **Sustentation:** compare baseline and endline signals, document attribution limits, and make a renewal/expansion decision.
+1. **Configuração do programa:** configurar uma instituição, tema da oportunidade, coorte, ciclo de relatórios, papéis, texto de consentimento e definições de linha de base e linha final.
+2. **Onboarding:** cadastrar empresas e coletar apenas os campos necessários para a oportunidade.
+3. **Diagnóstico:** preencher um questionário de prontidão versionado e configurável e anexar evidências básicas.
+4. **Revisão:** calcular um resultado transparente de prontidão baseado em regras, identificar evidências ausentes e manter a revisão humana.
+5. **Arquitetura:** criar um plano curto e priorizado com ações, responsáveis, prazos e evidências.
+6. **Operação:** fazer a curadoria de um conteúdo específico, especialista, fornecedor, atividade de preparação ou apresentação a um comprador.
+7. **Conexão:** realizar a correspondência assistida por pessoas após verificar aderência, consentimento, disponibilidade e requisitos.
+8. **Acompanhamento:** registrar ações, reuniões, propostas, bloqueios, suporte e esforço do operador.
+9. **Sustentação:** comparar sinais da linha de base e da linha final, documentar limites de atribuição e tomar uma decisão de renovação/expansão.
 
-**Proven design constraint:** The pilot proves the journey, not a national marketplace, autonomous AI adviser, fully automated audit, or complete Selo HUB product.
+**Restrição de design comprovada:** O piloto comprova a jornada, não um marketplace nacional, um consultor autônomo de IA, uma auditoria totalmente automatizada ou um produto Selo HUB completo.
 
-## 5. Evidence and Traction Status
+## 5. Status de Evidências e Tração
 
-### Current status
+### Status atual
 
-| Evidence item | Status | What is required |
+| Item de evidência | Status | O que é necessário |
 |---|---|---|
-| Conceptual HUB promise and C.A.O.S. method | Proven as source-defined | Preserve, then validate commercial relevance |
-| Candidate A selection | Decision/Hypothesis | Buyer interviews and Phase 1 gate |
-| Customer interviews | Unknown | Structured evidence log with workflow, pain, budget, alternatives, data objections, price reaction, renewal condition |
-| Paid or funded pilot | Unknown | Written agreement with sponsor, cohort, scope, dates, terms, permissions, and thresholds |
-| Participant activation/completion | Unknown | Baseline, pre-registered threshold, and cohort data |
-| Opportunity connections and outcomes | Unknown | Qualified demand, introductions, meetings/proposals, conversion definition, and endline evidence |
-| Renewal or expansion | Unknown | Written continuation or comparable second buyer |
-| Pricing, CAC, margins, payback | Unknown/TBD | Account-level delivery model and price tests |
-| Market size | Unknown/TBD | Named-account bottom-up model; no top-down TAM claim |
-| Partner commitments | None evidenced | Written sponsor, mandate, procurement, funding, access, and rights |
-| Selo independence | Not operationally proven | Approved charter, evaluator controls, payment separation, appeals, and audit trail |
+| Promessa conceitual do HUB e método C.A.O.S. | Comprovado como definido pelas fontes | Preservar e depois validar a relevância comercial |
+| Seleção da Candidate A | Decisão/Hipótese | Entrevistas com compradores e portão da Fase 1 |
+| Entrevistas com clientes | Desconhecido | Registro estruturado de evidências com fluxo, dor, orçamento, alternativas, objeções sobre dados, reação ao preço e condição de renovação |
+| Piloto pago ou financiado | Desconhecido | Acordo escrito com patrocinador, coorte, escopo, datas, termos, permissões e limiares |
+| Ativação/conclusão dos participantes | Desconhecido | Linha de base, limiar pré-registrado e dados da coorte |
+| Conexões e resultados de oportunidades | Desconhecido | Demanda qualificada, apresentações, reuniões/propostas, definição de conversão e evidências da linha final |
+| Renovação ou expansão | Desconhecido | Continuidade escrita ou segundo comprador comparável |
+| Preços, CAC, margens, payback | Desconhecido/TBD | Modelo de entrega por conta e testes de preço |
+| Tamanho de mercado | Desconhecido/TBD | Modelo bottom-up por contas nomeadas; nenhuma afirmação de TAM top-down |
+| Compromissos de parceiros | Nenhum comprovado | Patrocinador, mandato, contratação, financiamento, acesso e direitos por escrito |
+| Independência do Selo | Não comprovada operacionalmente | Estatuto aprovado, controles de avaliadores, separação de pagamentos, recursos e trilha de auditoria |
 
-Positive comments, introductions, event attendance, logo placement, or “interesting” are not traction. A proposal is not a pilot until accepted in writing. A pilot is not recurring revenue until renewal or expansion is committed.
+Comentários positivos, apresentações, participação em eventos, colocação de logotipo ou “interessante” não são tração. Uma proposta não é um piloto até ser aceita por escrito. Um piloto não é receita recorrente até que a renovação ou expansão esteja comprometida.
 
-## 6. Alternatives, Competition, and Differentiation
+## 6. Alternativas, Concorrência e Diferenciação
 
-The relevant comparison is the buyer’s actual alternative, not an abstract category claim.
+A comparação relevante é a alternativa real do comprador, não uma afirmação abstrata de categoria.
 
-| Alternative | Strength | HUB proof required |
+| Alternativa | Força | Evidência exigida do HUB |
 |---|---|---|
-| Doing nothing/defer | No cash outlay and low change burden | Quantify current failure or opportunity cost and prove low-friction value |
-| Internal team, spreadsheet, email, events | Familiar, controlled, already available | Show improved completion, qualified connections, outcome, or time saved |
-| Specialist consultancy | Expertise and change support | Show repeatability, workflow evidence, and cost-to-value without denying human work |
-| Certification/seal | Trust, framework, external signal | Demonstrate independent governance; do not claim superior credibility prematurely |
-| AMS/member platform or directory | Member identity, communications, visibility | Prove readiness, demand qualification, follow-through, and outcome conversion |
-| ESG/HR/procurement/learning software | Systems of record, data, reporting, workflow | Prove incremental value without assuming integrations or displacing incumbents |
-| Marketplace or supplier network | Existing traffic, supply, or discovery | Start with documented demand and human curation; do not claim liquidity |
-| Custom portal/project | Tailored fit | Quantify setup, maintenance, switching, and HUB reuse |
+| Não fazer/adiar | Nenhum desembolso de caixa e baixo esforço de mudança | Quantificar a falha atual ou o custo de oportunidade e comprovar valor com baixo atrito |
+| Equipe interna, planilha, e-mail, eventos | Familiar, controlado e já disponível | Demonstrar melhora na conclusão, conexões qualificadas, resultado ou tempo economizado |
+| Consultoria especializada | Expertise e apoio à mudança | Demonstrar repetibilidade, evidências do fluxo e relação custo-valor sem negar o trabalho humano |
+| Certificação/selo | Confiança, estrutura e sinal externo | Demonstrar governança independente; não alegar credibilidade superior prematuramente |
+| Plataforma ou diretório AMS/de associados | Identidade, comunicação e visibilidade dos associados | Comprovar prontidão, qualificação da demanda, acompanhamento e conversão em resultado |
+| Software de ESG/RH/contratações/aprendizagem | Sistemas de registro, dados, relatórios e fluxo | Comprovar valor incremental sem presumir integrações ou substituir sistemas existentes |
+| Marketplace ou rede de fornecedores | Tráfego, oferta ou descoberta existentes | Começar com demanda documentada e curadoria humana; não alegar liquidez |
+| Portal/projeto personalizado | Aderência sob medida | Quantificar configuração, manutenção, troca e reutilização pelo HUB |
 
-**Research inference:** HUB appears to sit at the intersection of maturity workflow, responsible-business evidence, supplier/talent discovery, member services, and recognition. This creates category-sprawl risk. HUB must win a single repeated workflow on three or four buyer-ranked criteria, not claim superiority across all categories.
+**Inferência de pesquisa:** O HUB parece estar na interseção entre fluxo de maturidade, evidências de negócios responsáveis, descoberta de fornecedores/talentos, serviços a associados e reconhecimento. Isso cria risco de dispersão de categoria. O HUB deve vencer em um único fluxo repetido, segundo três ou quatro critérios priorizados pelo comprador, e não alegar superioridade em todas as categorias.
 
-Named research examples include B Corp, GRI, Supplier.io, and WEConnect International. Vendor descriptions are not independent proof of outcomes or market share; further product and buyer verification is required before direct positioning.
+Os exemplos de pesquisa nomeados incluem B Corp, GRI, Supplier.io e WEConnect International. As descrições dos fornecedores não são prova independente de resultados ou participação de mercado; é necessária verificação adicional do produto e dos compradores antes de um posicionamento direto.
 
-## 7. Moat Hypothesis
+## 7. Hipótese de Vantagem Defensável
 
-**Hypothesis:** The primary compounding advantage is **institutional distribution plus verified implementation evidence**, not a generic marketplace, generic AI, feature breadth, or the seal alone.
+**Hipótese:** A principal vantagem cumulativa é **distribuição institucional mais evidências verificadas de implementação**, não um marketplace genérico, IA genérica, amplitude de funcionalidades ou o selo isoladamente.
 
-The proposed compounding loop is:
+O ciclo cumulativo proposto é:
 
-1. A trusted channel provides a concentrated cohort.
-2. HUB applies a consistent, versioned diagnosis and evidence schema.
-3. Curated interventions and human-assisted connections produce observable actions.
-4. Follow-through, supplier/talent performance, and outcomes accumulate over time.
-5. Permissioned aggregate learning improves prioritization and buyer reporting.
-6. Embedded plans, evidence, and renewal history make replacement less attractive than a static directory or one-off project.
+1. Um canal confiável fornece uma coorte concentrada.
+2. O HUB aplica um diagnóstico e um esquema de evidências consistentes e versionados.
+3. Intervenções curadas e conexões assistidas por pessoas produzem ações observáveis.
+4. Acompanhamento, desempenho de fornecedores/talentos e resultados se acumulam ao longo do tempo.
+5. O aprendizado agregado, com as devidas permissões, melhora a priorização e os relatórios para compradores.
+6. Planos incorporados, evidências e histórico de renovação tornam a substituição menos atraente que um diretório estático ou um projeto pontual.
 
-This becomes a moat only if data rights are explicit, outcomes are trusted, comparable customers repeat the workflow, and delivery does not remain proportionally manual. A white-label skin, badge, directory, broad feature list, or unexplainable AI is not a moat.
+Isso só se torna uma vantagem defensável se os direitos sobre os dados forem explícitos, os resultados forem confiáveis, clientes comparáveis repetirem o fluxo e a entrega não permanecer proporcionalmente manual. Uma camada white-label, um distintivo, um diretório, uma lista ampla de funcionalidades ou uma IA inexplicável não constituem uma vantagem defensável.
 
-## 8. Business Model and Unit Economics
+## 8. Modelo de Negócio e Economia Unitária
 
-### Primary engine for validation
+### Motor principal de validação
 
-**Decision/Hypothesis:** Test implementation-led platform adoption: a paid pilot or explicitly subsidized program, followed by a repeatable package and annual ecosystem license if value and renewal are demonstrated.
+**Decisão/Hipótese:** Testar a adoção da plataforma conduzida pela implementação: um piloto pago ou programa explicitamente subsidiado, seguido de um pacote repetível e uma licença anual de ecossistema caso valor e renovação sejam demonstrados.
 
-**Commercial revenue must remain separate from restricted impact funding.** Commercial revenue includes implementation, platform/license, subscription, evaluation, marketplace, media, and experience contracts only when a commercial payer and contract mechanism exist. Institute grants, incentive-law resources, public funds, donations, and social investment are restricted/project funding with eligibility, permitted costs, reporting, and beneficiary outcomes. They must not be counted as commercial ARR, commercial willingness to pay, or ordinary CAC recovery.
+**A receita comercial deve permanecer separada do financiamento restrito de impacto.** Receita comercial inclui contratos de implementação, plataforma/licença, assinatura, avaliação, marketplace, mídia e experiências somente quando existir um pagador comercial e um mecanismo contratual. Subvenções do Institute, recursos de leis de incentivo, fundos públicos, doações e investimento social são financiamentos restritos/de projeto, com elegibilidade, custos permitidos, prestação de contas e resultados para beneficiários. Eles não devem ser contabilizados como ARR comercial, disposição comercial para pagar ou recuperação normal de CAC.
 
-### Packages to test, not prices to claim
+### Pacotes a testar, não preços a afirmar
 
-| Package | Payer and value unit | Status |
+| Pacote | Pagador e unidade de valor | Status |
 |---|---|---|
-| Discovery/diagnostic | Institutional buyer; defined opportunity/readiness baseline | Option/Hypothesis; price TBD |
-| Pilot | Named buyer; one cohort, one opportunity, one report | Decision/Hypothesis; paid or explicitly subsidized terms TBD |
-| Repeatable program | Institutional buyer; recurring cohort/reporting workflow | Hypothesis; requires outcome and renewal evidence |
-| Annual ecosystem license | Partner environment, bounded cohort/configuration, support | Expansion hypothesis; price and cost TBD |
-| Enterprise subscription | Single organization journey | Fallback/expansion option |
-| Marketplace/connection fee | Qualified demand and completed outcome | Deferred until liquidity and legal thresholds |
-| Selo evaluation/renewal | Independent evaluation | Deferred until independence operates in practice |
+| Descoberta/diagnóstico | Comprador institucional; linha de base definida de oportunidade/prontidão | Opção/Hipótese; preço TBD |
+| Piloto | Comprador nomeado; uma coorte, uma oportunidade, um relatório | Decisão/Hipótese; termos pagos ou explicitamente subsidiados TBD |
+| Programa repetível | Comprador institucional; fluxo recorrente de coorte/relatórios | Hipótese; requer evidências de resultado e renovação |
+| Licença anual de ecossistema | Ambiente do parceiro, coorte/configuração delimitada, suporte | Hipótese de expansão; preço e custo TBD |
+| Assinatura empresarial | Jornada de uma única organização | Opção de contingência/expansão |
+| Taxa de marketplace/conexão | Demanda qualificada e resultado concluído | Adiada até os limiares de liquidez e jurídicos |
+| Avaliação/renovação do Selo | Avaliação independente | Adiada até que a independência opere na prática |
 
-The model must separately calculate recognized revenue, direct cost, contribution margin, ARR/MRR, implementation hours, software cost per account, curation/support, CAC, sales cycle, payback, activation, renewal, expansion, and cost to serve one additional organization. All inputs require source, date, confidence class, owner, and next evidence action. Unknown values remain `TBD`.
+O modelo deve calcular separadamente receita reconhecida, custo direto, margem de contribuição, ARR/MRR, horas de implementação, custo de software por conta, curadoria/suporte, CAC, ciclo de vendas, payback, ativação, renovação, expansão e custo de atender uma organização adicional. Todas as entradas exigem fonte, data, classe de confiança, responsável e próxima ação de evidência. Valores desconhecidos permanecem `TBD`.
 
-## 9. Go-to-Market and Sales Motion
+## 9. Go-to-Market e Movimento de Vendas
 
-**Working route decision:** Test founder-led, warm-introduction direct sales to one accountable institutional buyer for the first pilot. This is a route hypothesis, not traction or proof of founder access. A partner channel becomes a later multiplier only after repeatability and reference evidence.
+**Decisão de rota em trabalho:** Testar vendas diretas conduzidas pelos fundadores, com introduções qualificadas, para um comprador institucional responsável no primeiro piloto. Esta é uma hipótese de rota, não tração nem prova de acesso dos fundadores. Um canal de parceiros só se torna um multiplicador posterior após evidências de repetibilidade e referências.
 
-1. **Target account:** recurring problem, reachable sponsor, plausible cohort access, and trigger.
-2. **Sponsor discovery:** secure executive sponsor and operational owner.
-3. **Problem discovery:** document current workflow, cost/effort, alternative, urgency, data constraints, budget path, and success measure.
-4. **Pilot proposal:** submit scope, terms or subsidy basis, dates, cohort, RACI, baseline, thresholds, and renewal decision.
-5. **Legal/data review:** approve contract, purpose, access, retention, IP, security, and liability terms.
-6. **Implementation:** operate the 6–12 week hypothesis window only after scope and access are accepted; exact duration remains to be validated.
-7. **Outcome review:** report baseline/endline, effort, caveats, and decision.
-8. **Renewal:** sell an annual continuation or next cohort only on ongoing value, evidence, and predictable cost-to-serve.
+1. **Conta-alvo:** problema recorrente, patrocinador acessível, acesso plausível à coorte e gatilho.
+2. **Descoberta do patrocinador:** garantir um patrocinador executivo e um responsável operacional.
+3. **Descoberta do problema:** documentar o fluxo atual, custo/esforço, alternativa, urgência, restrições de dados, caminho orçamentário e medida de sucesso.
+4. **Proposta do piloto:** apresentar escopo, termos ou base do subsídio, datas, coorte, RACI, linha de base, limiares e decisão de renovação.
+5. **Revisão jurídica/de dados:** aprovar contrato, finalidade, acesso, retenção, PI, segurança e termos de responsabilidade.
+6. **Implementação:** operar a janela de hipótese de 6–12 semanas somente após a aceitação do escopo e do acesso; a duração exata ainda precisa ser validada.
+7. **Revisão de resultados:** relatar linha de base/linha final, esforço, ressalvas e decisão.
+8. **Renovação:** vender uma continuidade anual ou a próxima coorte somente com base em valor contínuo, evidências e custo de atendimento previsível.
 
-Sebrae (“Hub de Oportunidades”), Firjan (“Laboratório do Futuro”), ABTD, Amcham, federations, and associations are **options/hypotheses**, not current customers or committed partners. Any approach must request confirmation of sponsor, mandate, procurement route, funded scope, participant access, data rights, and public-reference permission. Pre-register a partner concentration limit before pilot results.
+Sebrae (“Hub de Oportunidades”), Firjan (“Laboratório do Futuro”), ABTD, Amcham, federações e associações são **opções/hipóteses**, não clientes atuais ou parceiros comprometidos. Qualquer abordagem deve solicitar confirmação de patrocinador, mandato, rota de contratação, escopo financiado, acesso aos participantes, direitos sobre os dados e permissão para referência pública. Pré-registrar um limite de concentração de parceiros antes dos resultados do piloto.
 
-## 10. Product Roadmap and Platform Sequencing
+## 10. Roadmap de Produto e Sequenciamento da Plataforma
 
-### Pilot MVP
+### MVP do piloto
 
-Build only: basic roles and cohort access; one opportunity configuration; versioned questionnaire and evidence; transparent rule-based result; prioritized journey; small curated catalog; operator-managed connections; progress views; aggregate outcome report; audit trail; support notes; export/delete workflow.
+Construir apenas: papéis básicos e acesso à coorte; uma configuração de oportunidade; questionário e evidências versionados; resultado transparente baseado em regras; jornada priorizada; pequeno catálogo curado; conexões gerenciadas pelo operador; visões de progresso; relatório agregado de resultados; trilha de auditoria; notas de suporte; fluxo de exportação/exclusão.
 
-Keep opportunity qualification, evidence review, curation, matching, recruitment, interpretation, white-label approval, and any recognition decision manual. Log elapsed operator effort by activity.
+Manter manuais a qualificação de oportunidades, a revisão de evidências, a curadoria, a correspondência, o recrutamento, a interpretação, a aprovação white-label e qualquer decisão de reconhecimento. Registrar o esforço decorrido do operador por atividade.
 
-### Gated expansion
+### Expansão com portões
 
-- Automate only repeated, low-risk transitions with stable rules and measured burden reduction.
-- Add Academy, broader Solutions, matching assistance, benchmarks, marketplace transactions, and white-label scale only after module-specific usage, demand, outcomes, reuse, revenue contribution or strategic rationale, and acceptable data/support burden.
-- Do not build autonomous AI recommendations, open national marketplace, payment split, deep integrations, public benchmarks, native mobile, internationalization, or automated Selo decisions in the first pilot.
+- Automatizar apenas transições repetidas e de baixo risco, com regras estáveis e redução mensurada da carga de trabalho.
+- Adicionar Academy, Solutions mais amplas, assistência de correspondência, benchmarks, transações de marketplace e escala white-label somente após uso específico do módulo, demanda, resultados, reutilização, contribuição de receita ou justificativa estratégica, além de carga aceitável de dados/suporte.
+- Não construir recomendações autônomas de IA, marketplace nacional aberto, divisão de pagamentos, integrações profundas, benchmarks públicos, aplicativo móvel nativo, internacionalização ou decisões automatizadas do Selo no primeiro piloto.
 
-### Expansion gate
+### Portão de expansão
 
-No platform build, additional business front, second buyer, or additional cohort is authorized until there is evidence of: **a paid/funded pilot; founder workload; delivery economics; outcome evidence; and renewal/repeat-purchase evidence**. Missing evidence means remain manual, narrow scope, pause, or reject expansion.
+Nenhum desenvolvimento de plataforma, nova frente de negócio, segundo comprador ou coorte adicional é autorizado até que haja evidência de: **um piloto pago/financiado; carga de trabalho dos fundadores; economia da entrega; evidências de resultados; e evidências de renovação/recompra**. A ausência de evidências significa permanecer manual, manter o escopo estreito, pausar ou rejeitar a expansão.
 
-White-label policy: **standard** core data, access, consent, versioning, audit, reporting, security, and methodology; **configurable** language, identity, dates, opportunity questions, content, approved local catalog, and dashboard filters; **prohibited** removal of “powered by HUB,” opaque partner scoring, cross-ecosystem exposure, commercial recognition guarantees, incompatible forks, or unsupported service promises.
+Política white-label: dados essenciais, acesso, consentimento, versionamento, auditoria, relatórios, segurança e metodologia **padronizados**; linguagem, identidade, datas, perguntas da oportunidade, conteúdo, catálogo local aprovado e filtros do dashboard **configuráveis**; é **proibida** a remoção de “powered by HUB”, a pontuação opaca de parceiros, a exposição entre ecossistemas, garantias comerciais de reconhecimento, ramificações incompatíveis ou promessas de serviço sem suporte.
 
-## 11. Team and Capability Gaps
+## 11. Equipe e Lacunas de Capacidade
 
-The artifacts do not evidence current team capacity. Required capabilities are:
+Os artefatos não comprovam a capacidade atual da equipe. As capacidades necessárias são:
 
-| Capability | Current status | Fill path to decide |
+| Capacidade | Status atual | Caminho de preenchimento a decidir |
 |---|---|---|
-| Institutional sales and sponsorship | Unknown | Founder, hire, or advisor; prove budget access |
-| Product management and software delivery | Unknown | Hire, contractor, or technology provider; prove MVP capacity |
-| Methodology and evidence quality | Core requirement; operating capacity unknown | Existing leader plus independent review |
-| Implementation and customer success | Unknown | Named operator and support capacity before pilot |
-| Data governance, security, and privacy | Gap requiring counsel/technical design | Specialist, provider, or hire |
-| Finance, tax, and legal structure | Not finalized | Qualified Brazilian counsel and accounting |
-| Curation and matching | Manual pilot requirement; scale capacity unknown | Time-box and measure effort |
-| Selo evaluation and independence | Not operational | Independent evaluators/committee; no sales control |
-| Impact measurement | Required for Institute work; capacity unknown | Specialist or partner with segregated scope |
+| Vendas e patrocínio institucionais | Desconhecido | Fundador, contratação ou consultor; comprovar acesso ao orçamento |
+| Gestão de produto e entrega de software | Desconhecido | Contratação, prestador ou fornecedor de tecnologia; comprovar capacidade para o MVP |
+| Metodologia e qualidade das evidências | Requisito essencial; capacidade operacional desconhecida | Líder atual mais revisão independente |
+| Implementação e sucesso do cliente | Desconhecido | Operador nomeado e capacidade de suporte antes do piloto |
+| Governança de dados, segurança e privacidade | Lacuna que exige orientação jurídica/projeto técnico | Especialista, fornecedor ou contratação |
+| Finanças, tributação e estrutura jurídica | Não finalizado | Assessoria jurídica e contábil brasileira qualificada |
+| Curadoria e correspondência | Requisito do piloto manual; capacidade de escala desconhecida | Limitar no tempo e medir o esforço |
+| Avaliação e independência do Selo | Não operacional | Avaliadores/comitê independentes; sem controle de vendas |
+| Mensuração de impacto | Necessária para o trabalho do Institute; capacidade desconhecida | Especialista ou parceiro com escopo segregado |
 
-Founder/key-person dependency is a material risk. Delegated authority, documented IP, credential control, succession, and independent decision forums are required before scale claims.
+A dependência do fundador/pessoa-chave é um risco material. Autoridade delegada, PI documentada, controle de credenciais, sucessão e fóruns independentes de decisão são necessários antes de alegações de escala.
 
-## 12. Governance, Selo Independence, Legal, Data, and IP
+## 12. Governança, Independência do Selo, Aspectos Jurídicos, Dados e PI
 
-### Group boundaries
+### Limites do grupo
 
-**Decision from v1, subject to legal validation:** one HUB brand, vision, and methodology with operational, revenue, and responsibility separation among HUB/strategy, HUB Negócios, Instituto HUB, and Plataforma HUB. This is not yet evidence of incorporation, tax treatment, intercompany controls, or liability separation.
+**Decisão da v1, sujeita à validação jurídica:** uma marca, visão e metodologia HUB, com separação operacional, de receitas e de responsabilidades entre HUB/strategy, HUB Negócios, Instituto HUB e Plataforma HUB. Isso ainda não é evidência de constituição societária, tratamento tributário, controles entre empresas ou separação de responsabilidades.
 
-Before the first multi-party pilot, counsel must define entity roles, contracts, accounts, ledgers, intercompany licenses/services, restricted-fund controls, authority matrix, liabilities, insurance, and related-party allocation.
+Antes do primeiro piloto com múltiplas partes, a assessoria jurídica deve definir papéis das entidades, contratos, contas, livros contábeis, licenças/serviços entre empresas, controles de fundos restritos, matriz de autoridade, responsabilidades, seguros e alocação entre partes relacionadas.
 
-### Selo HUB independence
+### Independência do Selo HUB
 
-The Selo HUB is deferred from the pilot’s success claim. It may be marketed as an evidence-based recognition concept only when the following operate in practice:
+O Selo HUB está excluído da alegação de sucesso do piloto. Ele só poderá ser divulgado como um conceito de reconhecimento baseado em evidências quando os itens a seguir operarem na prática:
 
-- independent evaluator appointment/removal and fixed or transparent payment with no success fee;
-- commercial/evaluation segregation, recusal, conflict register, protected evidence access, and reasoned decisions;
-- published criteria, evidence burden, validity, renewal, complaints, appeals, suspension, withdrawal, and public communication rules;
-- evaluator cannot be controlled by sales, implementation, a partner, or a funder;
-- a commercial implementation client can be evaluated only under a disclosed, credible conflict policy, or through a separate evaluator pool;
-- counsel has reviewed the charter and it does not misrepresent regulatory certification.
+- nomeação/destituição independente de avaliadores e pagamento fixo ou transparente, sem taxa de sucesso;
+- segregação entre atividades comerciais e de avaliação, impedimento, registro de conflitos, acesso protegido às evidências e decisões fundamentadas;
+- critérios publicados, exigência de evidências, validade, renovação, reclamações, recursos, suspensão, retirada e regras de comunicação pública;
+- o avaliador não pode ser controlado por vendas, implementação, um parceiro ou um financiador;
+- um cliente comercial de implementação só pode ser avaliado segundo uma política de conflitos divulgada e crível, ou por meio de um grupo separado de avaliadores;
+- a assessoria jurídica revisou o estatuto e ele não representa de forma enganosa uma certificação regulatória.
 
-If independence cannot be protected, separate, redesign, or suspend the recognition line.
+Se a independência não puder ser protegida, separar, redesenhar ou suspender a linha de reconhecimento.
 
-### Legal/data/IP questions, not conclusions
+### Questões jurídicas/de dados/PI, não conclusões
 
-Counsel must resolve controller/processor roles per data flow; necessary fields and sensitive-data basis; cross-ecosystem permissions; retention/deletion and evidence legal holds; ownership/licensing of submissions, configurations, scores, methodology improvements, aggregate/derived data, content, code, and model outputs; partner exit and portability; brand and “Powered by HUB” rights; liability and insurance for recommendations, matching, suppliers, incidents, and claims; and AI/high-impact decision controls.
+A assessoria jurídica deve resolver os papéis de controlador/operador em cada fluxo de dados; campos necessários e base para dados sensíveis; permissões entre ecossistemas; retenção/exclusão e preservação legal de evidências; titularidade/licenciamento de envios, configurações, pontuações, melhorias da metodologia, dados agregados/derivados, conteúdo, código e saídas de modelos; saída e portabilidade de parceiros; direitos sobre a marca e “Powered by HUB”; responsabilidade e seguros para recomendações, correspondência, fornecedores, incidentes e alegações; e controles de IA/decisões de alto impacto.
 
-The pilot must use data minimization, purpose limitation, role-based access, tenant isolation, provenance, versioning, audit logs, retention schedules, export/delete workflow, and human review.
+O piloto deve usar minimização de dados, limitação de finalidade, acesso baseado em papéis, isolamento de tenants, proveniência, versionamento, logs de auditoria, cronogramas de retenção, fluxo de exportação/exclusão e revisão humana.
 
-## 13. Capital and Use of Funds
+## 13. Capital e Uso dos Recursos
 
-No amount or funding source is asserted in this draft. The capital plan must be built from a monthly operating model and separately show unrestricted commercial cash and restricted Institute/project funding.
+Nenhum valor ou fonte de financiamento é afirmado neste rascunho. O plano de capital deve ser construído a partir de um modelo operacional mensal e mostrar separadamente o caixa comercial irrestrito e o financiamento restrito do Institute/projeto.
 
-Capital categories to model:
+Categorias de capital a modelar:
 
-- customer discovery, sales, pilot delivery, and reference-case work;
-- product and technology delivery, hosting, security, and vendors;
-- methodology, data, privacy, legal, IP, tax, insurance, and Selo governance;
-- implementation, curation, support, and customer success capacity;
-- operating reserve, working capital, receivables, and payment delays.
+- descoberta de clientes, vendas, entrega do piloto e trabalho de caso de referência;
+- entrega de produto e tecnologia, hospedagem, segurança e fornecedores;
+- metodologia, dados, privacidade, aspectos jurídicos, PI, tributos, seguros e governança do Selo;
+- capacidade de implementação, curadoria, suporte e sucesso do cliente;
+- reserva operacional, capital de giro, recebíveis e atrasos de pagamento.
 
-Each tranche must unlock a milestone: validated buyer/use case; written pilot; measurable outcome; repeatable package; renewal or comparable second buyer; unit-economic evidence; controlled expansion. If external funding is delayed, preserve the smallest pilot, defer hiring and non-core modules, and identify formally funded impact work without treating it as commercial demand.
+Cada tranche deve liberar um marco: comprador/caso de uso validado; piloto por escrito; resultado mensurável; pacote repetível; renovação ou segundo comprador comparável; evidências de economia unitária; expansão controlada. Se o financiamento externo atrasar, preservar o menor piloto, adiar contratações e módulos não essenciais e identificar trabalho de impacto formalmente financiado sem tratá-lo como demanda comercial.
 
-## 14. Milestones, Gates, and Kill Criteria
+## 14. Marcos, Portões e Critérios de Interrupção
 
-### Evidence Stage 1 — Operating constraints
+### Etapa de Evidências 1 — Restrições operacionais
 
-Define the one-of-each active scope, manual workflow, founder roles, constraints, baseline/endline, and measurable outcome.
+Definir o escopo ativo de um de cada, o fluxo manual, os papéis dos fundadores, as restrições, a linha de base/linha final e o resultado mensurável.
 
-**Gate:** the operating boundary is explicit enough to run one bounded pilot.
+**Portão:** o limite operacional é suficientemente explícito para executar um piloto delimitado.
 
-### Evidence Stage 2 — Buyer validation
+### Etapa de Evidências 2 — Validação do comprador
 
-Deliver buyer/use-case decision, structured evidence log, alternative map, named opportunity, pilot design, data/legal review, and pre-registered scorecard.
+Entregar a decisão sobre comprador/caso de uso, o registro estruturado de evidências, o mapa de alternativas, a oportunidade nomeada, o desenho do piloto, a revisão de dados/aspectos jurídicos e o scorecard pré-registrado.
 
-**Gate:** buyer confirms pain, sponsor, budget path, access, opportunity, and paid or formally funded pilot route.
+**Portão:** o comprador confirma dor, patrocinador, caminho orçamentário, acesso, oportunidade e rota de piloto paga ou formalmente financiada.
 
-### Evidence Stage 3 — Paid/funded pilot
+### Etapa de Evidências 3 — Piloto pago/financiado
 
-Deliver written agreement, baseline, MVP, implementation playbook, outcome report, effort ledger, and renewal/expansion proposal.
+Entregar acordo escrito, linha de base, MVP, playbook de implementação, relatório de resultados, registro de esforço e proposta de renovação/expansão.
 
-**Gate:** measurable value is shown and delivery effort can be estimated.
+**Portão:** valor mensurável é demonstrado e o esforço de entrega pode ser estimado.
 
-### Evidence Stage 4 — Repeatability / expansion decision
+### Etapa de Evidências 4 — Decisão de repetibilidade/expansão
 
-Deliver standard package, pricing/cost model, reusable components, sales playbook, case-study permissions, and first renewal or comparable second buyer.
+Entregar pacote padronizado, modelo de preço/custo, componentes reutilizáveis, playbook de vendas, permissões para estudo de caso e a primeira renovação ou um segundo comprador comparável.
 
-**Gate:** outcome repeats without custom work growing proportionally to revenue.
+**Portão:** o resultado se repete sem que o trabalho personalizado cresça proporcionalmente à receita.
 
-**Gate:** only after paid/funded evidence, founder workload, delivery economics, outcome evidence, and renewal/repeat-purchase evidence, decide whether to build the platform or activate any deferred front.
+**Portão:** somente após evidências pagas/financiadas, da carga de trabalho dos fundadores, da economia da entrega, dos resultados e da renovação/recompra, decidir se a plataforma será construída ou se alguma frente adiada será ativada.
 
-### Kill or pause responses
+### Respostas de interrupção ou pausa
 
-- Praise without funding: revisit buyer, problem, or value proof; build no more technology.
-- Low diagnosis completion: simplify journey and reassess participant incentive.
-- No documented demand: stop matching expansion.
-- Excessive manual effort: narrow scope, redesign operations, or reject scale.
-- No measurable outcome: stop expansion and revise intervention hypothesis.
-- Weak renewal: treat offer as non-recurring until ongoing value is proven.
-- Marketplace below its pre-registered qualified-demand, completed-match, and repeat-demand threshold: defer marketplace investment.
-- Repeated customization: enforce boundaries or reject the deal.
-- Selo independence not credible: separate, redesign, or suspend recognition.
-- Partner concentration above its pre-registered revenue, organization, pipeline, or capacity limit: diversify before expanding that channel.
+- Elogios sem financiamento: reavaliar comprador, problema ou prova de valor; não construir mais tecnologia.
+- Baixa conclusão do diagnóstico: simplificar a jornada e reavaliar o incentivo dos participantes.
+- Nenhuma demanda documentada: interromper a expansão da correspondência.
+- Esforço manual excessivo: estreitar o escopo, redesenhar as operações ou rejeitar a escala.
+- Nenhum resultado mensurável: interromper a expansão e revisar a hipótese de intervenção.
+- Renovação fraca: tratar a oferta como não recorrente até que o valor contínuo seja comprovado.
+- Marketplace abaixo do limiar pré-registrado de demanda qualificada, correspondências concluídas e demanda repetida: adiar o investimento no marketplace.
+- Personalização recorrente: impor limites ou rejeitar o negócio.
+- Independência do Selo não crível: separar, redesenhar ou suspender o reconhecimento.
+- Concentração de parceiros acima do limite pré-registrado de receita, organizações, pipeline ou capacidade: diversificar antes de expandir esse canal.
 
-Numeric thresholds must be written before pilot results and cannot be changed to avoid a negative decision.
+Os limiares numéricos devem ser escritos antes dos resultados do piloto e não podem ser alterados para evitar uma decisão negativa.
 
-## 15. Deferred Ecosystem Vision
+## 15. Visão de Ecossistema Adiada
 
-**Option, preserved from v1:** HUB may become a broader infrastructure for ecosystems, with HUB Intelligence, Journey, Solutions, Connections, Academy, Recognition, DiverseMatch, Festivalzinho, observatories, media/experiences, enterprise subscriptions, marketplace transactions, and customized “Powered by HUB” environments.
+**Opção, preservada da v1:** O HUB pode se tornar uma infraestrutura mais ampla para ecossistemas, com HUB Intelligence, Journey, Solutions, Connections, Academy, Recognition, DiverseMatch, Festivalzinho, observatórios, mídia/experiências, assinaturas empresariais, transações de marketplace e ambientes personalizados “Powered by HUB”.
 
-This vision is not the first 12–18 month operating plan. It is deferred until the Candidate A workflow proves buyer pain, measurable participant value, delivery economics, renewal, data governance, and reusable product primitives. Sebrae and Firjan applications remain illustrative options, not commitments. Impact programs operated by Instituto HUB remain separate from commercial revenue and require their own restricted-funding governance.
+Esta visão não é o plano operacional dos primeiros 12–18 meses. Ela está adiada até que o fluxo da Candidate A comprove a dor do comprador, o valor mensurável para participantes, a economia da entrega, a renovação, a governança de dados e primitivas de produto reutilizáveis. As candidaturas ao Sebrae e à Firjan permanecem opções ilustrativas, não compromissos. Os programas de impacto operados pelo Instituto HUB permanecem separados da receita comercial e exigem sua própria governança de financiamento restrito.
 
-## 16. Investor-Readiness Checklist
+## 16. Lista de Verificação de Prontidão para Investidores
 
-- [ ] One buyer role and one use case confirmed by documented evidence.
-- [ ] Paid or explicitly funded pilot accepted in writing.
-- [ ] Baseline, cohort, opportunity, permissions, outcomes, and renewal criteria defined.
-- [ ] Bottom-up named-account model completed with conservative/base/upside scenarios.
-- [ ] Alternatives validated with buyer evidence and current cost/effort.
-- [ ] One primary commercial engine selected; expansion lines separated.
-- [ ] Pricing, cost-to-serve, margin, sales cycle, CAC, payback, activation, renewal, and concentration modeled.
-- [ ] Manual work ledger and repeatability evidence completed.
-- [ ] Capability gaps, owners, fill paths, and capacity constraints documented.
-- [ ] Entity, finance, data, IP, liability, and partner-rights map reviewed by qualified counsel.
-- [ ] Selo HUB independence charter and controls operating in practice, or recognition explicitly deferred.
-- [ ] Capital request reconciled to milestones, runway, use of funds, restrictions, and delayed-funding plan.
-- [ ] Kill criteria and numeric thresholds locked before results.
+- [ ] Um cargo de comprador e um caso de uso confirmados por evidências documentadas.
+- [ ] Piloto pago ou explicitamente financiado aceito por escrito.
+- [ ] Linha de base, coorte, oportunidade, permissões, resultados e critérios de renovação definidos.
+- [ ] Modelo bottom-up por contas nomeadas concluído com cenários conservador/base/otimista.
+- [ ] Alternativas validadas com evidências do comprador e custo/esforço atuais.
+- [ ] Um motor comercial principal selecionado; linhas de expansão separadas.
+- [ ] Preço, custo de atendimento, margem, ciclo de vendas, CAC, payback, ativação, renovação e concentração modelados.
+- [ ] Registro do trabalho manual e evidências de repetibilidade concluídos.
+- [ ] Lacunas de capacidade, responsáveis, caminhos de preenchimento e restrições de capacidade documentados.
+- [ ] Mapa de entidade, finanças, dados, PI, responsabilidades e direitos de parceiros revisado por assessoria qualificada.
+- [ ] Estatuto e controles de independência do Selo HUB operando na prática, ou reconhecimento explicitamente adiado.
+- [ ] Solicitação de capital reconciliada com marcos, runway, uso de recursos, restrições e plano para financiamento atrasado.
+- [ ] Critérios de interrupção e limiares numéricos definidos antes dos resultados.
 
-Until these items are evidenced, this document must be described as an investor-ready **draft requiring validation**, not as an investor-ready company.
+Até que esses itens tenham evidências, este documento deve ser descrito como um **rascunho pronto para investidores que requer validação**, e não como uma empresa pronta para investidores.
 
-## Source References
+## Referências das Fontes
 
-- **HUB master v1:** `HUB_Escopo_Estrategico_Documento_Mae_v1.md`, especially sections 1–2 (promise and architecture), 5–6 (platform and Selo), 7–10 (applications, revenue, governance, MVP), 13–15 (roadmap, risks, decisions).
-- **Approved investor-readiness plan:** `HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Readiness_Plan.md`, especially sections 2–3, 5–13, 15–16.
-- **Beachhead research:** `HUB_v2_beachhead_research.md`, Candidate A recommendation, pilot shape, evidence gates, and fallback Candidate C.
-- **Market and competitive research:** `HUB_v2_market_competitive_research.md`, category-sprawl warning, bottom-up sizing framework, alternatives, and moat hypothesis.
-- **Financial model requirements:** `HUB_v2_financial_model_requirements.md`, primary-engine selection, revenue separation, unit economics, scenarios, capital, and gates.
-- **GTM and partnerships research:** `HUB_v2_gtm_partnerships_research.md`, founder-led route, sales stages, renewal logic, partner status, and concentration controls.
-- **Governance/legal research:** `HUB_v2_governance_legal_research.md`, entity boundaries, data/IP questions, liability, and Selo independence controls.
-- **Product/MVP research:** `HUB_v2_product_mvp_research.md`, pilot object model, MVP boundary, manual operations, module gates, scalability path, and compounding-advantage plan.
+- **HUB master v1:** `HUB_Escopo_Estrategico_Documento_Mae_v1.md`, especialmente as seções 1–2 (promessa e arquitetura), 5–6 (plataforma e Selo), 7–10 (aplicações, receita, governança, MVP), 13–15 (roadmap, riscos, decisões).
+- **Plano aprovado de prontidão para investidores:** `HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Readiness_Plan.md`, especialmente as seções 2–3, 5–13, 15–16.
+- **Pesquisa do ponto de entrada:** `HUB_v2_beachhead_research.md`, recomendação da Candidate A, formato do piloto, portões de evidências e Candidate C de contingência.
+- **Pesquisa de mercado e concorrência:** `HUB_v2_market_competitive_research.md`, alerta de dispersão de categoria, estrutura de dimensionamento bottom-up, alternativas e hipótese de vantagem defensável.
+- **Requisitos do modelo financeiro:** `HUB_v2_financial_model_requirements.md`, seleção do motor principal, separação de receitas, economia unitária, cenários, capital e portões.
+- **Pesquisa de GTM e parcerias:** `HUB_v2_gtm_partnerships_research.md`, rota conduzida pelos fundadores, etapas de vendas, lógica de renovação, status de parceiros e controles de concentração.
+- **Pesquisa de governança/aspectos jurídicos:** `HUB_v2_governance_legal_research.md`, limites das entidades, questões de dados/PI, responsabilidades e controles de independência do Selo.
+- **Pesquisa de produto/MVP:** `HUB_v2_product_mvp_research.md`, modelo de objetos do piloto, limite do MVP, operações manuais, portões de módulos, caminho de escalabilidade e plano de vantagem cumulativa.

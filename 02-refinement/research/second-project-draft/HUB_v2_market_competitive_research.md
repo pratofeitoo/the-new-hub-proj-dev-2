@@ -1,5 +1,5 @@
 ---
-title: "HUB v2 — Market and competitive research"
+title: "HUB v2 — Pesquisa de mercado e competitiva"
 date: 2026-08-13
 status: research input; not a final market claim
 source_documents:
@@ -12,59 +12,59 @@ tags:
   - competition
 ---
 
-# HUB v2 — Market and competitive research
+# HUB v2 — Pesquisa de mercado e competitiva
 
-> **Purpose.** Provide an evidence-disciplined market, alternative, and moat workstream for the investor-readiness plan. This note does not select the beachhead buyer, assert traction, or replace the v2 master document.
+> **Propósito.** Fornecer uma linha de trabalho disciplinada por evidências sobre mercado, alternativas e moat para o plano de prontidão para investidores. Esta nota não seleciona o comprador beachhead, não afirma tração nem substitui o documento mestre v2.
 
-## 1. Scope and evidence discipline
+## 1. Escopo e disciplina de evidências
 
-The v1 document describes HUB as infrastructure for diagnosing organizations, creating evolution plans, connecting them to solutions/talents/suppliers, teaching, measuring, and recognizing evidence-backed progress. The approved v2 plan requires one beachhead buyer and use case, a bottom-up market model, an alternative map, and a defensibility thesis.
+O documento v1 descreve o HUB como infraestrutura para diagnosticar organizações, criar planos de evolução, conectá-las a soluções/talentos/fornecedores, ensinar, medir e reconhecer progresso respaldado por evidências. O plano v2 aprovado exige um único comprador beachhead e caso de uso, um modelo de mercado bottom-up, um mapa de alternativas e uma tese de defensibilidade.
 
-Claims in this artifact use three labels:
+As afirmações neste artefato usam três rótulos:
 
-- **Source-backed fact:** directly supported by a linked primary source or by the supplied v1/approved plan.
-- **Reasonable inference:** an interpretation of a fact or of HUB's described architecture; requires customer validation.
-- **Unknown / validation required:** not established by the available evidence and must not be presented to investors as traction, TAM, or proof of willingness to pay.
+- **Fato respaldado por fonte:** diretamente suportado por uma fonte primária vinculada ou pelo plano v1/aprovado fornecido.
+- **Inferência razoável:** uma interpretação de um fato ou da arquitetura descrita do HUB; requer validação com clientes.
+- **Desconhecido / validação necessária:** não estabelecido pelas evidências disponíveis e não deve ser apresentado a investidores como tração, TAM ou prova de disposição a pagar.
 
-External pages were checked on **2026-08-13**. Vendor descriptions are evidence of what vendors say they offer, not independent proof of outcomes, market share, or customer value.
+As páginas externas foram verificadas em **2026-08-13**. Descrições de fornecedores são evidências do que os fornecedores dizem oferecer, não prova independente de resultados, participação de mercado ou valor para clientes.
 
-## 2. Market category hypothesis
+## 2. Hipótese de categoria de mercado
 
-**Source-backed fact (HUB):** v1 combines six platform modules (Intelligence, Journey, Solutions, Connections, Academy, Recognition), a C.A.O.S. method, entity white-label environments, and an evidence-based Selo HUB. It names entities and companies as possible buyers, but does not select one.
+**Fato respaldado por fonte (HUB):** a v1 combina seis módulos de plataforma (Intelligence, Journey, Solutions, Connections, Academy, Recognition), um método C.A.O.S., ambientes white-label para entidades e um Selo HUB baseado em evidências. Ela cita entidades e empresas como possíveis compradores, mas não seleciona nenhum.
 
-**Reasonable inference:** HUB is not competing in one established software category. It sits at the intersection of:
+**Inferência razoável:** o HUB não está competindo em uma única categoria estabelecida de software. Ele está na interseção de:
 
-1. organizational maturity and implementation workflow;
-2. responsible-business / ESG evidence and reporting;
-3. supplier and talent discovery;
-4. association or ecosystem member services; and
-5. certification / recognition.
+1. maturidade organizacional e fluxo de trabalho de implementação;
+2. evidências e relatórios de negócio responsável / ESG;
+3. descoberta de fornecedores e talentos;
+4. serviços para associados de associações ou ecossistemas; e
+5. certificação / reconhecimento.
 
-The investor risk is category sprawl: each adjacent category has an incumbent with deeper data, distribution, or trust. The first commercial thesis should therefore sell one repeated workflow, not “the whole ecosystem.”
+O risco para investidores é a dispersão de categorias: cada categoria adjacente tem um incumbente com dados, distribuição ou confiança mais profundos. A primeira tese comercial deve, portanto, vender um fluxo de trabalho repetido, não “todo o ecossistema”.
 
-**Unknown / validation required:** whether the initial buyer experiences this intersection as one budgeted problem, or as several unrelated budgets. Interviews must identify the budget owner, trigger, existing workflow, measurable failure, and funded pilot path.
+**Desconhecido / validação necessária:** se o comprador inicial vivencia essa interseção como um único problema orçado ou como vários orçamentos não relacionados. As entrevistas devem identificar o dono do orçamento, o gatilho, o fluxo de trabalho existente, a falha mensurável e o caminho de piloto financiado.
 
-## 3. Bottom-up sizing framework
+## 3. Framework de dimensionamento bottom-up
 
-Do not use a top-down global “DEI,” ESG, HR-tech, or marketplace market number as HUB's TAM. Build the model from reachable accounts and a priced offer after the beachhead is selected.
+Não use um número de mercado global top-down de “DEI”, ESG, HR-tech ou marketplace como TAM do HUB. Construa o modelo a partir de contas alcançáveis e de uma oferta precificada depois que o beachhead for selecionado.
 
-### 3.1 Variables
+### 3.1 Variáveis
 
-| Variable | Definition | Evidence required | Current status |
+| Variável | Definição | Evidência necessária | Situação atual |
 |---|---|---|---|
-| `B` | Reachable buyers in the first serviceable geography and channel (e.g., qualified associations, federations, or enterprise accounts) | Named-account list; inclusion criteria; channel access | Unknown |
-| `O` | Eligible participating organizations per buyer | Buyer roster or defensible average from sampled buyers | Unknown |
-| `p` | Annual buyer license / platform contract value | Paid proposal, price test, or comparable signed contract | Unknown |
-| `i` | One-time implementation revenue per buyer | Delivery plan, hours, vendor costs, pilot quote | Unknown |
-| `a` | Year-one activation/adoption rate among eligible organizations | Pilot funnel and cohort data | Unknown |
-| `r` | Annual renewal rate | Renewal evidence; no assumption should be treated as fact | Unknown |
-| `e` | Optional annual organization subscription or evaluation revenue | Packaging and price discovery | Unknown |
-| `m` | Net marketplace or connection revenue per completed qualified outcome | Demand, conversion, take-rate, and cost-to-serve data | Unknown |
-| `c` | Cost to serve (implementation, support, curation, evaluation) | Time sheets, invoices, and account-level cost model | Unknown |
+| `B` | Compradores alcançáveis na primeira geografia e canal atendíveis (ex.: associações qualificadas, federações ou contas enterprise) | Lista de contas nomeadas; critérios de inclusão; acesso ao canal | Desconhecido |
+| `O` | Organizações participantes elegíveis por comprador | Lista de organizações do comprador ou média defensável a partir de compradores amostrados | Desconhecido |
+| `p` | Valor anual da licença do comprador / contrato de plataforma | Proposta paga, teste de preço ou contrato assinado comparável | Desconhecido |
+| `i` | Receita única de implementação por comprador | Plano de entrega, horas, custos de fornecedores, orçamento de piloto | Desconhecido |
+| `a` | Taxa de ativação/adoção no primeiro ano entre as organizações elegíveis | Funil de piloto e dados de coorte | Desconhecido |
+| `r` | Taxa anual de renovação | Evidência de renovação; nenhuma suposição deve ser tratada como fato | Desconhecido |
+| `e` | Receita opcional anual de assinatura ou avaliação das organizações | Empacotamento e descoberta de preço | Desconhecido |
+| `m` | Receita líquida de marketplace ou conexão por resultado qualificado concluído | Dados de demanda, conversão, take-rate e custo de atendimento | Desconhecido |
+| `c` | Custo de atendimento (implementação, suporte, curadoria, avaliação) | Folhas de hora, faturas e modelo de custo por conta | Desconhecido |
 
-### 3.2 Formulas
+### 3.2 Fórmulas
 
-For a partner-led beachhead:
+Para um beachhead liderado por parceiro:
 
 ```text
 Serviceable annual contract opportunity = B × p
@@ -76,186 +76,186 @@ Three-year reachable revenue (conservative/base/upside) =
   + separately modeled, evidence-backed connection revenue
 ```
 
-For an enterprise beachhead, replace `B × O` with the number of business units/sites/suppliers covered by each account. Do not mix partner license revenue and participant revenue without stating who pays and what is included.
+Para um beachhead enterprise, substitua `B × O` pelo número de unidades de negócio/unidades/fornecedores cobertos por cada conta. Não misture receita de licença de parceiro e receita de participantes sem declarar quem paga e o que está incluído.
 
-### 3.3 Scenario construction (no invented amounts)
+### 3.3 Construção de cenários (sem valores inventados)
 
-Create three scenarios only after the named-account and pricing evidence exist:
+Crie três cenários somente depois que existirem evidências de contas nomeadas e de precificação:
 
-| Scenario | Account reach | Price | Adoption | Renewal | Cost-to-serve | Purpose |
+| Cenário | Alcance de contas | Preço | Adoção | Renovação | Custo de atendimento | Finalidade |
 |---|---|---|---|---|---|---|
-| Conservative | Only accounts with confirmed access and a defined trigger | Lowest tested package | Lower bound from pilot funnel | Renewal not assumed until observed | High/manual delivery case | Downside planning |
-| Base | Qualified reachable accounts by channel capacity | Median tested package | Pilot-derived cohort rate | Explicit early renewal assumption | Measured delivery baseline | Operating plan |
-| Upside | Additional comparable accounts only | Higher package with proven expansion | Repeatable activation | Renewal and expansion supported by evidence | Standardized delivery | Expansion case |
+| Conservador | Somente contas com acesso confirmado e um gatilho definido | Pacote testado mais baixo | Limite inferior do funil de piloto | Renovação não assumida até ser observada | Caso de entrega manual e de alto custo | Planejamento para o pior caso |
+| Base | Contas alcançáveis qualificadas conforme a capacidade do canal | Pacote testado mediano | Taxa de coorte derivada do piloto | Suposição explícita de renovação precoce | Linha de base medida de entrega | Plano operacional |
+| Otimista | Somente contas comparáveis adicionais | Pacote mais alto com expansão comprovada | Ativação repetível | Renovação e expansão respaldadas por evidências | Entrega padronizada | Caso de expansão |
 
-**Unknown / validation required:** `B`, `O`, `p`, `i`, `a`, `r`, `e`, `m`, and `c`. Until populated from evidence, report the model as a sizing framework, not TAM/SAM/SOM.
+**Desconhecido / validação necessária:** `B`, `O`, `p`, `i`, `a`, `r`, `e`, `m` e `c`. Até serem preenchidos com evidências, reporte o modelo como um framework de dimensionamento, não como TAM/SAM/SOM.
 
-## 4. Direct competitors and adjacent alternatives
+## 4. Concorrentes diretos e alternativas adjacentes
 
-The following map is organized around the job a prospective customer may hire HUB to do. It is not a claim that all listed vendors are direct competitors for the eventual beachhead.
+O mapa a seguir é organizado em torno da tarefa que um cliente potencial pode contratar o HUB para realizar. Não é uma afirmação de que todos os fornecedores listados são concorrentes diretos do eventual beachhead.
 
-### 4.1 Certification, seals, and reporting
+### 4.1 Certificação, selos e relatórios
 
-| Alternative | Source-backed capability | Likely strength | Likely gap versus HUB (inference) |
+| Alternativa | Capacidade respaldada por fonte | Força provável | Lacuna provável versus HUB (inferência) |
 |---|---|---|---|
-| B Corp Certification / B Lab | B Lab says certification assesses and verifies social, environmental, and governance impact against B Lab Standards; it describes independent third-party audit/verification and a community of certified businesses. [1] | Recognized framework, external verification, stakeholder signal, network | A certification process is not necessarily a buyer-specific implementation marketplace or longitudinal workflow. HUB must not claim stronger credibility without an independent governance design and validated outcomes. |
-| GRI Standards | GRI says its modular standards let organizations understand and report impacts on economy, environment, and people, with universal, sector, and topic standards. [2] | Reporting structure, broad applicability, comparability | Reporting guidance does not itself supply a diagnosis-to-intervention-to-connection workflow. HUB must prove that its workflow creates operational value rather than another reporting burden. |
-| EcoVadis | EcoVadis's fetched landing page was too short to substantiate product details beyond a 2026 sustainable procurement barometer announcement. [3] | **Unknown from fetched source; research required** | Do not make comparative claims until a product page, buyer interview, or independent source is collected. |
+| B Corp Certification / B Lab | A B Lab diz que a certificação avalia e verifica impacto social, ambiental e de governança contra os Padrões B Lab; descreve auditoria/verificação independente por terceiros e uma comunidade de empresas certificadas. [1] | Framework reconhecido, verificação externa, sinal para stakeholders, rede | Um processo de certificação não é necessariamente um marketplace de implementação específico por comprador ou um fluxo de trabalho longitudinal. O HUB não deve alegar credibilidade superior sem um desenho de governança independente e resultados validados. |
+| GRI Standards | A GRI diz que seus padrões modulares permitem que organizações entendam e reportem impactos na economia, no meio ambiente e nas pessoas, com padrões universais, setoriais e temáticos. [2] | Estrutura de relatórios, ampla aplicabilidade, comparabilidade | A orientação de relatórios, por si só, não fornece um fluxo de diagnóstico-intervenção-conexão. O HUB precisa provar que seu fluxo de trabalho cria valor operacional, e não mais um fardo de relatórios. |
+| EcoVadis | A landing page obtida da EcoVadis era curta demais para substanciar detalhes de produto além de um anúncio de barômetro de procurement sustentável de 2026. [3] | **Desconhecido na fonte obtida; pesquisa necessária** | Não faça afirmações comparativas até coletar uma página de produto, entrevista com comprador ou fonte independente. |
 
-### 4.2 ESG, HR, procurement, and learning software
+### 4.2 Softwares de ESG, RH, procurement e aprendizagem
 
-| Alternative class | Typical job | Strength | Likely gap versus HUB (inference) |
+| Classe de alternativa | Tarefa típica | Força | Lacuna provável versus HUB (inferência) |
 |---|---|---|---|
-| ESG / reporting platforms | Collect evidence, report metrics, manage disclosures | Data and reporting workflows; may integrate with enterprise systems | Often optimized for reporting/compliance rather than curated interventions, supplier/talent connections, or association-level distribution. Verify per named competitor. |
-| HR / people analytics suites | Manage workforce, learning, engagement, and HR data | Existing system of record, enterprise procurement approval, integrations | May not cover supplier access, external ecosystem orchestration, or independent recognition. HUB cannot assume integration or data access. |
-| Procurement / supplier-diversity intelligence | Find, classify, vet, track, and report suppliers | Deep supplier data, spend analytics, procurement workflow | May not provide a cross-functional organizational maturity journey, Academy, or evidence-backed recognition. The overlap is material if HUB's first use case is supplier access. |
-| Learning / academy platforms | Deliver courses and track completion | Mature content delivery and learning administration | Completion is not implementation or business outcome. HUB needs proof that recommendations lead to measurable change. |
+| Plataformas de ESG / relatórios | Coletar evidências, reportar métricas, gerenciar divulgações | Fluxos de dados e relatórios; podem integrar-se a sistemas corporativos | Frequentemente otimizadas para relatórios/conformidade em vez de intervenções curadas, conexões de fornecedores/talentos ou distribuição em nível de associação. Verificar por concorrente nomeado. |
+| Suítes de RH / people analytics | Gerenciar força de trabalho, aprendizagem, engajamento e dados de RH | Sistema de registro existente, aprovação em procurement corporativo, integrações | Podem não cobrir acesso de fornecedores, orquestração de ecossistema externo ou reconhecimento independente. O HUB não pode presumir integração ou acesso a dados. |
+| Inteligência de procurement / diversidade de fornecedores | Encontrar, classificar, verificar, acompanhar e reportar fornecedores | Dados profundos de fornecedores, spend analytics, fluxo de procurement | Podem não oferecer uma jornada transversal de maturidade organizacional, Academy ou reconhecimento respaldado por evidências. A sobreposição é material se o primeiro caso de uso do HUB for acesso a fornecedores. |
+| Plataformas de aprendizagem / academy | Entregar cursos e acompanhar conclusão | Entrega de conteúdo madura e administração de aprendizagem | Conclusão não é implementação nem resultado de negócio. O HUB precisa de prova de que as recomendações levam a mudança mensurável. |
 
-**Supplier.io is a concrete procurement-adjacent competitor.** Its site positions its product as a supplier diversity and intelligence platform covering supplier data, sourcing, impact measurement, supplier discovery/vetting, spend analytics, and carbon analytics. It claims a database of 20 million suppliers, 450+ sources, 820 million supplier insights, and $12+ trillion historical spend data; these are vendor claims, not independently verified facts. [4]
+**Supplier.io é um concorrente concreto adjacente ao procurement.** Seu site posiciona o produto como uma plataforma de diversidade e inteligência de fornecedores cobrindo dados de fornecedores, sourcing, medição de impacto, descoberta/verificação de fornecedores, spend analytics e carbon analytics. Reivindica um banco de dados de 20 milhões de fornecedores, 450+ fontes, 820 milhões de insights de fornecedores e US$ 12+ trilhões em dados históricos de gastos; essas são afirmações do fornecedor, não fatos verificados de forma independente. [4]
 
-**Competitive implication:** If HUB chooses supplier access as the beachhead, Supplier.io-like data depth and procurement integration are the benchmark. HUB should narrow its wedge to a differentiated workflow such as local/underserved supplier readiness plus diagnosis, capability-building, demand-led matching, and measured conversion, rather than compete on database scale.
+**Implicação competitiva:** se o HUB escolher acesso a fornecedores como beachhead, profundidade de dados ao estilo Supplier.io e integração com procurement são o benchmark. O HUB deve estreitar sua cunha para um fluxo de trabalho diferenciado, como prontidão de fornecedores locais/subatendidos mais diagnóstico, desenvolvimento de capacidades, matching orientado pela demanda e conversão medida, em vez de competir em escala de banco de dados.
 
-### 4.3 Association and member platforms
+### 4.3 Plataformas de associações e membros
 
-| Alternative | Job | Strength | Likely gap versus HUB (inference) |
+| Alternativa | Tarefa | Força | Lacuna provável versus HUB (inferência) |
 |---|---|---|---|
-| Association management system (AMS) | Membership records, dues, events, communications, portals | Existing member identity and recurring relationship | Usually a system of engagement/administration, not a maturity diagnostic, curated intervention engine, or evidence-based recognition layer. Validate against the specific AMS selected by each buyer. |
-| Association marketplace / directory | Expose member businesses and offers | Fast visibility and low friction | Directories can lack demand qualification, readiness, outcome tracking, and verified evidence. HUB must prove conversion rather than merely add listings. |
-| Institutional partner program | Deliver training, events, or referrals to a base | Trusted distribution and convening power | Can be project-based and difficult to measure or renew. HUB's opportunity is a repeatable operating layer, not a generic partnership label. |
+| Sistema de gestão de associação (AMS) | Registros de associados, mensalidades, eventos, comunicações, portais | Identidade de membro existente e relação recorrente | Geralmente um sistema de engajamento/administração, não um diagnóstico de maturidade, motor de intervenções curadas ou camada de reconhecimento baseada em evidências. Validar contra o AMS específico escolhido por cada comprador. |
+| Marketplace / diretório de associação | Expor negócios e ofertas de membros | Visibilidade rápida e baixa fricção | Diretórios podem carecer de qualificação de demanda, prontidão, acompanhamento de resultados e evidências verificadas. O HUB deve provar conversão, não apenas adicionar listagens. |
+| Programa de parceiro institucional | Entregar treinamento, eventos ou indicações a uma base | Distribuição confiável e poder de convocação | Pode ser baseado em projetos e difícil de medir ou renovar. A oportunidade do HUB é uma camada operacional repetível, não um rótulo genérico de parceria. |
 
-The v1 names Sebrae, Firjan, ABTD, Amcham, federations, and associations as applications or strategic possibilities. **Source status:** these are v1 hypotheses, not evidence of a signed partnership, accessible buyer, or channel agreement.
+A v1 cita Sebrae, Firjan, ABTD, Amcham, federações e associações como aplicações ou possibilidades estratégicas. **Situação da fonte:** essas são hipóteses da v1, não evidências de parceria assinada, comprador acessível ou acordo de canal.
 
-### 4.4 Marketplaces, directories, and talent platforms
+### 4.4 Marketplaces, diretórios e plataformas de talentos
 
-| Alternative | Strength | Likely gap versus HUB (inference) |
+| Alternativa | Força | Lacuna provável versus HUB (inferência) |
 |---|---|---|
-| General B2B marketplace | Existing demand/supply traffic and transaction mechanics | Little context on organizational maturity, evidence, accessibility, or intervention fit. |
-| Diverse supplier directory/certification network | Identity and visibility for a target supplier group | May optimize discovery or certification rather than buyer readiness, capability-building, and completed contracts. |
-| General talent marketplace / job board | Liquidity and search | Does not necessarily connect inclusion/workforce diagnosis to retention, development, accessibility, or measured business outcomes. |
-| Curated expert network | Access to specialists | Often expert-led and project-specific; may not generate longitudinal organization-level data. |
+| Marketplace B2B geral | Tráfego de demanda/oferta existente e mecânicas de transação | Pouco contexto sobre maturidade organizacional, evidências, acessibilidade ou adequação da intervenção. |
+| Diretório/rede de certificação de fornecedores diversos | Identidade e visibilidade para um grupo-alvo de fornecedores | Pode otimizar descoberta ou certificação em vez de prontidão do comprador, desenvolvimento de capacidades e contratos concluídos. |
+| Marketplace de talentos geral / site de vagas | Liquidez e busca | Não necessariamente conecta diagnóstico de inclusão/força de trabalho a retenção, desenvolvimento, acessibilidade ou resultados de negócio medidos. |
+| Rede de especialistas curada | Acesso a especialistas | Frequentemente liderada por especialistas e específica de projeto; pode não gerar dados longitudinais em nível de organização. |
 
-WEConnect International is an example of a network/certification alternative: its public site presents women-owned business participation, buyer membership, and a fully funded certification program announcement. [5] The page alone does not establish its full product scope, economics, or Brazil relevance; conduct a buyer-side comparison before positioning HUB against it.
+WEConnect International é um exemplo de alternativa de rede/certificação: seu site público apresenta participação de empresas pertencentes a mulheres, adesão de compradores e um anúncio de programa de certificação totalmente financiado. [5] A página, por si só, não estabelece seu escopo completo de produto, economia ou relevância para o Brasil; conduza uma comparação pelo lado do comprador antes de posicionar o HUB contra ela.
 
-### 4.5 Consulting and custom technology
+### 4.5 Consultoria e tecnologia sob medida
 
-| Alternative | Strength | Likely gap versus HUB (inference) |
+| Alternativa | Força | Lacuna provável versus HUB (inferência) |
 |---|---|---|
-| Specialist DEI/ESG/HR/procurement consultancy | Trusted expertise, bespoke diagnosis, change management | Non-recurring or labor-scaled delivery; insight and evidence may remain in slide decks. HUB must show repeatability and not pretend software removes required human work. |
-| Big-four / strategy consultancy | Executive access, transformation capacity, procurement trust | High cost and long projects; HUB may win on focused workflow, time-to-value, and ecosystem distribution, but this is unproven. |
-| Custom internal portal or data project | Tailored fit and control | High build/maintenance burden; buyer owns implementation risk. HUB must quantify setup, integration, and switching costs before claiming advantage. |
+| Consultoria especializada em DEI/ESG/RH/procurement | Expertise confiável, diagnóstico sob medida, gestão de mudança | Entrega não recorrente ou escalada por mão de obra; insights e evidências podem permanecer em apresentações. O HUB deve mostrar repetibilidade e não fingir que o software elimina o trabalho humano necessário. |
+| Consultoria big four / de estratégia | Acesso a executivos, capacidade de transformação, confiança em procurement | Alto custo e projetos longos; o HUB pode vencer em fluxo de trabalho focado, time-to-value e distribuição via ecossistema, mas isso não está provado. |
+| Portal interno sob medida ou projeto de dados | Adequação personalizada e controle | Alto ônus de construção/manutenção; o comprador assume o risco de implementação. O HUB deve quantificar custos de configuração, integração e troca antes de alegar vantagem. |
 
-### 4.6 Internal alternatives and doing nothing
+### 4.6 Alternativas internas e não fazer nada
 
-| Alternative | Customer cost | Why it persists | HUB proof needed |
+| Alternativa | Custo para o cliente | Por que persiste | Prova exigida do HUB |
 |---|---|---|---|
-| Spreadsheet + email + event/relationship management | Staff time, fragmented data, low visibility | Familiar, cheap cash outlay, no procurement cycle | Time saved, better completion, more qualified matches, and measurable outcomes. |
-| Internal HR/procurement/ESG team | Existing salaries and systems | Control, privacy, institutional knowledge | Show incremental value without displacing systems of record; define integration and data boundaries. |
-| One-off training, event, or report | Project fee and participant time | Easy to approve; visible deliverable | Evidence that a continuous journey improves an outcome beyond attendance or report delivery. |
-| Do nothing / defer | Opportunity cost and risk of no improvement | Competing priorities, unclear ROI, fear of complexity | Quantified cost of current failure and a low-friction paid pilot. |
+| Planilha + e-mail + gestão de eventos/relacionamento | Tempo da equipe, dados fragmentados, baixa visibilidade | Familiar, desembolso de caixa barato, sem ciclo de procurement | Tempo economizado, melhor conclusão, mais matches qualificados e resultados mensuráveis. |
+| Equipe interna de RH/procurement/ESG | Salários e sistemas existentes | Controle, privacidade, conhecimento institucional | Mostrar valor incremental sem deslocar sistemas de registro; definir limites de integração e de dados. |
+| Treinamento, evento ou relatório pontual | Taxa de projeto e tempo dos participantes | Fácil de aprovar; entregável visível | Evidência de que uma jornada contínua melhora um resultado além da presença ou entrega de relatório. |
+| Não fazer nada / adiar | Custo de oportunidade e risco de nenhuma melhoria | Prioridades concorrentes, ROI incerto, medo de complexidade | Custo quantificado da falha atual e um piloto pago de baixa fricção. |
 
-## 5. Competitive comparison for the eventual beachhead
+## 5. Comparação competitiva para o eventual beachhead
 
-Score named alternatives only after interviews and product verification. Use a 1–5 score with a URL or interview citation in each cell; blank means unknown, not zero.
+Pontue alternativas nomeadas somente após entrevistas e verificação de produto. Use nota de 1–5 com URL ou citação de entrevista em cada célula; em branco significa desconhecido, não zero.
 
-| Capability / buying criterion | HUB hypothesis | Consultancy | Certification / seal | AMS / member platform | ESG / HR / procurement software | Marketplace / directory | Internal tools |
+| Capacidade / critério de compra | Hipótese do HUB | Consultoria | Certificação / selo | AMS / plataforma de membros | Software de ESG / RH / procurement | Marketplace / diretório | Ferramentas internas |
 |---|---|---|---|---|---|---|---|
-| Diagnose current state | Configurable, evidence-based | High bespoke | Framework-specific | Usually low/unknown | Varies by domain | Usually low | Depends on staff |
-| Convert diagnosis to prioritized plan | Core Journey hypothesis | High but labor-intensive | Usually outside scope | Usually outside scope | Varies | Low | Manual |
-| Curated intervention and human support | Core Solutions/curation hypothesis | High | Limited | Varies | Varies | Variable | Internal knowledge |
-| Demand-led supplier/talent connection | Core Connections hypothesis | Project-specific | Usually not core | Directory-like | Domain-specific | Core for marketplace | Manual |
-| Longitudinal evidence of implementation | Intended moat; unproven | Often fragmented | Evidence for renewal/certification | Membership activity | Domain-specific | Transaction data | Fragmented |
-| Independent recognition | Intended Selo HUB; governance unproven | No or client-specific | Core strength | Usually no | Usually no | Usually no | No |
-| Multi-organization / white-label distribution | Intended partner model | Possible, custom | Network-dependent | Core strength | Enterprise account model | Network-dependent | Limited |
-| Switching friction | Intended workflow/data history; unproven | Relationship | Recognition history | Member records | System integration | Network/liquidity | Low technical, high change |
+| Diagnosticar estado atual | Configurável, baseado em evidências | Alto, sob medida | Específico de framework | Geralmente baixo/desconhecido | Varia por domínio | Geralmente baixo | Depende da equipe |
+| Converter diagnóstico em plano priorizado | Hipótese central do Journey | Alto, mas intensivo em mão de obra | Geralmente fora do escopo | Geralmente fora do escopo | Varia | Baixo | Manual |
+| Intervenção curada e apoio humano | Hipótese central de Solutions/curadoria | Alto | Limitado | Varia | Varia | Variável | Conhecimento interno |
+| Conexão de fornecedores/talentos orientada pela demanda | Hipótese central de Connections | Específico de projeto | Geralmente não é central | Tipo diretório | Específico de domínio | Central para marketplace | Manual |
+| Evidência longitudinal de implementação | Moat pretendido; não provado | Frequentemente fragmentado | Evidência para renovação/certificação | Atividade de associação | Específico de domínio | Dados de transações | Fragmentado |
+| Reconhecimento independente | Selo HUB pretendido; governança não provada | Não ou específico por cliente | Força central | Geralmente não | Geralmente não | Geralmente não | Não |
+| Distribuição multiorganização / white-label | Modelo de parceiro pretendido | Possível, sob medida | Dependente de rede | Força central | Modelo de conta enterprise | Dependente de rede | Limitado |
+| Fricção de troca | Histórico de fluxo de trabalho/dados pretendido; não provado | Relacionamento | Histórico de reconhecimento | Registros de membros | Integração de sistemas | Rede/liquidez | Baixa técnica, alta mudança |
 
-**Decision rule:** HUB should not claim superiority across the whole table. Pick the 3–4 criteria that the beachhead buyer ranks highest, then test whether HUB wins on those criteria at an acceptable cost-to-serve.
+**Regra de decisão:** o HUB não deve alegar superioridade em toda a tabela. Escolha os 3–4 critérios que o comprador beachhead classifica como mais altos e teste se o HUB vence neles a um custo de atendimento aceitável.
 
-## 6. Moat implications
+## 6. Implicações de moat
 
-### 6.1 Most credible primary moat hypothesis
+### 6.1 Hipótese de moat primário mais crível
 
-**Reasonable inference:** The strongest initial moat is a combination of **institutional distribution + verified implementation evidence**, not a generic marketplace, generic AI, or the seal alone.
+**Inferência razoável:** o moat inicial mais forte é uma combinação de **distribuição institucional + evidência de implementação verificada**, não um marketplace genérico, IA genérica ou o selo sozinho.
 
-Mechanism:
+Mecanismo:
 
-1. A trusted entity or channel supplies a concentrated cohort of organizations.
-2. HUB applies a consistent diagnosis and evidence schema.
-3. Recommendations and human-assisted connections produce observable actions.
-4. Outcomes, supplier/talent performance, and intervention completion are recorded over time.
-5. Aggregated, permissioned learning improves prioritization and buyer reporting.
-6. The workflow and historical evidence make replacement less attractive than a static directory or one-off consultancy.
+1. Uma entidade ou canal confiável fornece uma coorte concentrada de organizações.
+2. O HUB aplica um esquema consistente de diagnóstico e evidências.
+3. Recomendações e conexões assistidas por humanos produzem ações observáveis.
+4. Resultados, desempenho de fornecedores/talentos e conclusão de intervenções são registrados ao longo do tempo.
+5. Aprendizado agregado e com permissões melhora a priorização e os relatórios para o comprador.
+6. O fluxo de trabalho e as evidências históricas tornam a substituição menos atraente do que um diretório estático ou uma consultoria pontual.
 
-This is a **hypothesis**, not an existing moat. It only compounds if the same workflow is repeated across comparable customers, data rights are explicit, and outcome quality is trusted.
+Isto é uma **hipótese**, não um moat existente. Só compõe se o mesmo fluxo de trabalho for repetido entre clientes comparáveis, os direitos sobre dados forem explícitos e a qualidade dos resultados for confiável.
 
-### 6.2 Secondary moat candidates
+### 6.2 Candidatas a moats secundários
 
-- **Proprietary diagnostic methodology:** defensible if it predicts action/outcomes better than generic assessments; test inter-rater reliability, completion, and outcome correlation.
-- **Verified implementation evidence:** defensible if evidence is independently reviewed, time-stamped, and useful for decisions; avoid unverifiable self-report.
-- **Curated supplier/talent performance data:** valuable only with consent, enough volume, and non-discriminatory governance; do not imply ownership before legal review.
-- **Embedded evolution workflow:** increases switching cost when plans, owners, evidence, and renewal records are actively used; measure weekly/monthly active use and renewal drivers.
-- **Independent recognition:** trust asset only if evaluator appointment, payment, conflicts, appeals, and suspension are separated from commercial implementation. The plan explicitly requires this safeguard.
+- **Metodologia proprietária de diagnóstico:** defensível se prever ação/resultados melhor que avaliações genéricas; testar confiabilidade interavaliador, conclusão e correlação com resultados.
+- **Evidência de implementação verificada:** defensível se as evidências forem revisadas de forma independente, com carimbo de tempo e úteis para decisões; evitar autorrelato inverificável.
+- **Dados curados de desempenho de fornecedores/talentos:** valiosos apenas com consentimento, volume suficiente e governança não discriminatória; não implicar propriedade antes de revisão jurídica.
+- **Fluxo de evolução incorporado:** aumenta o custo de troca quando planos, responsáveis, evidências e registros de renovação são ativamente usados; medir uso ativo semanal/mensal e direcionadores de renovação.
+- **Reconhecimento independente:** ativo de confiança apenas se nomeação de avaliadores, pagamento, conflitos, recursos e suspensão forem separados da implementação comercial. O plano exige explicitamente essa salvaguarda.
 
-### 6.3 Weak or non-moats
+### 6.3 Moats fracos ou inexistentes
 
-- A broad feature list across six modules.
-- A white-label skin without repeatable core product.
-- A directory with no demand or transaction evidence.
-- A badge or seal whose criteria and independence are unclear.
-- AI recommendations without proprietary data, explainability, or measured lift.
-- A single partner relationship that cannot be replicated.
+- Uma lista ampla de funcionalidades em seis módulos.
+- Uma skin white-label sem produto central repetível.
+- Um diretório sem demanda nem evidência de transações.
+- Um distintivo ou selo cujos critérios e independência são pouco claros.
+- Recomendações de IA sem dados proprietários, explicabilidade ou ganho medido.
+- Uma relação única com parceiro que não pode ser replicada.
 
-## 7. Evidence still required before investor circulation
+## 7. Evidências ainda exigidas antes da circulação a investidores
 
-### Market and buyer
+### Mercado e comprador
 
-- Named beachhead buyer and initial use case selected using the approved plan's scoring criteria.
-- Reachable-account list with geography, segment, buyer role, and channel access.
-- Number of eligible organizations per buyer, supported by actual rosters or samples.
-- At least 15–20 structured interviews across buyers and participating organizations, with current workflow, cost, pain, alternatives, budget owner, and renewal condition recorded. The exact sample is a research recommendation, not a completed fact.
-- Evidence of urgency: deadline, compliance requirement, procurement target, strategic initiative, or funded program.
+- Comprador beachhead nomeado e caso de uso inicial selecionados usando os critérios de pontuação do plano aprovado.
+- Lista de contas alcançáveis com geografia, segmento, papel do comprador e acesso ao canal.
+- Número de organizações elegíveis por comprador, sustentado por listas reais ou amostras.
+- Ao menos 15–20 entrevistas estruturadas entre compradores e organizações participantes, com fluxo de trabalho atual, custo, dor, alternativas, dono do orçamento e condição de renovação registrados. A amostra exata é uma recomendação de pesquisa, não um fato concluído.
+- Evidência de urgência: prazo, requisito de conformidade, meta de procurement, iniciativa estratégica ou programa financiado.
 
-### Commercial and economics
+### Comercial e economia
 
-- Paid or formally funded pilot proposal with scope, price, executive sponsor, participant cohort, baseline, and success thresholds.
-- Price testing for diagnosis, pilot, annual license/subscription, implementation, modules, and recognition.
-- Delivery time by activity, vendor/tool costs, support burden, curation effort, and evaluator cost.
-- Sales-cycle duration, conversion by stage, acquisition source, and concentration risk.
-- Activation, diagnosis completion, action completion, qualified matches, outcome lift, renewal, and expansion data.
+- Proposta de piloto paga ou formalmente financiada com escopo, preço, patrocinador executivo, coorte de participantes, linha de base e limiares de sucesso.
+- Testes de preço para diagnóstico, piloto, licença/assinatura anual, implementação, módulos e reconhecimento.
+- Tempo de entrega por atividade, custos de fornecedores/ferramentas, ônus de suporte, esforço de curadoria e custo de avaliadores.
+- Duração do ciclo de vendas, conversão por etapa, fonte de aquisição e risco de concentração.
+- Dados de ativação, conclusão de diagnóstico, conclusão de ações, matches qualificados, ganho de resultado, renovação e expansão.
 
-### Competition and alternatives
+### Concorrência e alternativas
 
-- Five named alternatives from interviews, not only desk research.
-- Current spend or staff effort for each alternative.
-- Buyer-rated scorecard on the criteria above.
-- Switching friction, procurement/security review, integration requirements, and data portability.
-- Product verification for EcoVadis, named AMS vendors, local certification bodies, and Brazilian supplier/talent networks before making direct claims.
+- Cinco alternativas nomeadas vindas de entrevistas, não apenas pesquisa de mesa.
+- Gasto atual ou esforço de equipe para cada alternativa.
+- Scorecard avaliado pelos compradores nos critérios acima.
+- Fricção de troca, revisão de procurement/segurança, requisitos de integração e portabilidade de dados.
+- Verificação de produto para EcoVadis, fornecedores de AMS nomeados, organismos de certificação locais e redes brasileiras de fornecedores/talentos antes de fazer afirmações diretas.
 
-### Moat and governance
+### Moat e governança
 
-- Demonstration that HUB recommendations or connections improve a chosen outcome.
-- Permissioned data model and rights to aggregated/derived data.
-- Methodology versioning and evidence quality controls.
-- Independent Selo HUB charter operating in practice, including conflicts, appeals, evaluator payment, and withdrawal.
-- Proof that the workflow can be delivered repeatedly without custom labor increasing in proportion to revenue.
+- Demonstração de que recomendações ou conexões do HUB melhoram um resultado escolhido.
+- Modelo de dados com permissões e direitos sobre dados agregados/derivados.
+- Versionamento de metodologia e controles de qualidade de evidências.
+- Carta do Selo HUB independente operando na prática, incluindo conflitos, recursos, pagamento de avaliadores e retirada.
+- Prova de que o fluxo de trabalho pode ser entregue repetidamente sem que mão de obra sob medida cresça proporcionalmente à receita.
 
-## 8. Recommended research sequence and decision gates
+## 8. Sequência de pesquisa recomendada e portões de decisão
 
-1. **Before build:** choose beachhead and collect interview evidence; stop if no buyer confirms pain, budget access, and a funded pilot path.
-2. **Before pilot:** produce bottom-up model with conservative/base/upside assumptions and a written price; stop if economics depend on unverified marketplace liquidity.
-3. **During pilot:** instrument diagnosis completion, intervention uptake, human-assisted matches, delivery hours, and outcome baseline/endline.
-4. **After pilot:** compare against the buyer's actual alternative, not an abstract competitor list; proceed only with measurable value and estimable delivery effort.
-5. **Before expansion:** require one renewal or second comparable customer, a repeatable package, and a concentration limit for any institutional channel.
-6. **Before seal commercialization:** activate independence controls; suspend the recognition line if commercial incentives compromise credible evaluation.
+1. **Antes de construir:** escolher o beachhead e coletar evidências de entrevistas; parar se nenhum comprador confirmar dor, acesso a orçamento e caminho de piloto financiado.
+2. **Antes do piloto:** produzir modelo bottom-up com premissas conservadora/base/otimista e um preço escrito; parar se a economia depender de liquidez de marketplace não verificada.
+3. **Durante o piloto:** instrumentar conclusão de diagnóstico, adesão a intervenções, matches assistidos por humanos, horas de entrega e linha de base/final de resultado.
+4. **Após o piloto:** comparar contra a alternativa real do comprador, não uma lista abstrata de concorrentes; prosseguir apenas com valor mensurável e esforço de entrega estimável.
+5. **Antes da expansão:** exigir uma renovação ou segundo cliente comparável, um pacote repetível e um limite de concentração para qualquer canal institucional.
+6. **Antes da comercialização do selo:** ativar controles de independência; suspender a linha de reconhecimento se incentivos comerciais comprometerem a avaliação crível.
 
-## 9. Source register
+## 9. Registro de fontes
 
-1. B Lab, “About B Corp Certification,” https://www.bcorporation.net/en-us/certification/ (accessed 2026-08-13). States that B Corp Certification assesses and verifies social, environmental, and governance impact against B Lab Standards and describes third-party audit/verification.
-2. Global Reporting Initiative, “GRI Standards,” https://www.globalreporting.org/standards/ (accessed 2026-08-13). Describes modular universal, sector, and topic standards for understanding and reporting impacts.
-3. EcoVadis, “Solutions,” https://ecovadis.com/solutions/ (accessed 2026-08-13). Fetched page was insufficiently detailed for product comparison; only a sustainable procurement barometer announcement was extractable.
-4. Supplier.io, “Supplier Intelligence Software,” https://supplier.io/ (accessed 2026-08-13). Vendor-described supplier data, sourcing, impact measurement, and supplier-diversity capabilities; vendor-reported database and spend figures are not independently verified here.
-5. WEConnect International, https://weconnectinternational.org/ (accessed 2026-08-13). Public page presents women-owned business participation, buyer membership, and certification-program announcements; full scope and economics require further research.
-6. SHRM, “HR & Workplace Topics & Tools,” https://www.shrm.org/topics-tools (accessed 2026-08-13). Illustrates the breadth of incumbent HR information, research, compliance, and tools; not used as a quantified market claim.
+1. B Lab, “About B Corp Certification,” https://www.bcorporation.net/en-us/certification/ (acessado em 2026-08-13). Afirma que a Certificação B Corp avalia e verifica impacto social, ambiental e de governança contra os Padrões B Lab e descreve auditoria/verificação por terceiros.
+2. Global Reporting Initiative, “GRI Standards,” https://www.globalreporting.org/standards/ (acessado em 2026-08-13). Descreve padrões modulares universais, setoriais e temáticos para entender e reportar impactos.
+3. EcoVadis, “Solutions,” https://ecovadis.com/solutions/ (acessado em 2026-08-13). A página obtida era insuficientemente detalhada para comparação de produtos; apenas um anúncio de barômetro de procurement sustentável era extraível.
+4. Supplier.io, “Supplier Intelligence Software,” https://supplier.io/ (acessado em 2026-08-13). Dados de fornecedores, sourcing, medição de impacto e capacidades de diversidade de fornecedores descritos pelo próprio fornecedor; números de banco de dados e gastos relatados pelo fornecedor não são verificados de forma independente aqui.
+5. WEConnect International, https://weconnectinternational.org/ (acessado em 2026-08-13). A página pública apresenta participação de empresas pertencentes a mulheres, adesão de compradores e anúncios de programas de certificação; escopo completo e economia exigem mais pesquisa.
+6. SHRM, “HR & Workplace Topics & Tools,” https://www.shrm.org/topics-tools (acessado em 2026-08-13). Ilustra a amplitude de informação, pesquisa, conformidade e ferramentas de RH dos incumbentes; não usado como afirmação quantificada de mercado.
 
-## 10. Critical conclusion
+## 10. Conclusão crítica
 
-HUB's opportunity is credible as a **workflow thesis** but not yet as a quantified market or defensible category claim. The most promising differentiation is to make a concentrated institutional channel convert fragmented diagnosis, capability-building, and connection activity into measured organizational outcomes. The immediate investor risk is trying to monetize six modules, several buyer types, a marketplace, and a seal before proving one paid repeatable workflow. The next artifact should therefore insert one buyer/use case, observed interview evidence, pilot economics, and a named-account bottom-up model; until then, all market sizes, partner relationships, traction, and moat claims remain unknown or hypotheses.
+A oportunidade do HUB é crível como **tese de fluxo de trabalho**, mas ainda não como afirmação quantificada de mercado ou categoria defensável. A diferenciação mais promissora é fazer um canal institucional concentrado converter atividade fragmentada de diagnóstico, desenvolvimento de capacidades e conexão em resultados organizacionais medidos. O risco imediato para investidores é tentar monetizar seis módulos, vários tipos de comprador, um marketplace e um selo antes de provar um fluxo de trabalho pago e repetível. O próximo artefato deve, portanto, inserir um comprador/caso de uso, evidências observadas de entrevistas, economia do piloto e um modelo bottom-up de contas nomeadas; até lá, todos os tamanhos de mercado, relações com parceiros, tração e alegações de moat permanecem desconhecidos ou hipóteses.

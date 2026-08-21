@@ -1,32 +1,32 @@
-# Correction approval gate — Phase 6
+# Portão de aprovação de correções — Fase 6
 
-**Outcome: REJECTED.** Metadata remediation is complete, but the corrected CSV layer is not approved for workbook rebuild until operational evidence and explicit approvals are recorded.
+**Resultado: REJEITADO.** A remediação de metadados está completa, mas a camada de CSV corrigido não está aprovada para reconstrução do workbook até que evidências operacionais e aprovações explícitas sejam registradas.
 
-## Evidence reviewed
+## Evidências revisadas
 
-- Counts and headers: `06-validation-reports/corrected-csv-validation.md` and `.json`.
-- Source provenance: `03-corrected-csv/00-manifest/manifest.csv` and `source-fingerprints.csv`.
-- Canonical/key evidence: `entity-key-crosswalk.csv`, `event-integration-crosswalk.csv`, `indicator-crosswalk.csv`.
-- Governance and roadmap evidence: `governance-control-register.csv`, `roadmap-raci-register.csv`.
-- ROI assumptions: `roi-assumption-register.csv` (24 assumptions, all `illustrative`).
+- Contagens e cabeçalhos: `06-validation-reports/corrected-csv-validation.md` e `.json`.
+- Proveniência da origem: `03-corrected-csv/00-manifest/manifest.csv` e `source-fingerprints.csv`.
+- Evidências canônicas/de chaves: `entity-key-crosswalk.csv`, `event-integration-crosswalk.csv`, `indicator-crosswalk.csv`.
+- Evidências de governança e roadmap: `governance-control-register.csv`, `roadmap-raci-register.csv`.
+- Premissas de ROI: `roi-assumption-register.csv` (24 premissas, todas `illustrative`).
 
-## Required gate assertions
+## Afirmações obrigatórias do portão
 
-| Requirement | Decision |
+| Requisito | Decisão |
 |---|---|
-| Evidence for high/critical corrections | **Partially satisfied.** `corrections.csv` contains 10 row-level/consolidated records with contract evidence pointers; operational execution evidence and approvals remain pending. |
-| Key crosswalk | **Satisfied for current crosswalk** (45 entity and 42 event/integration rows verified), but no approved issue links exist for the changed tabs. |
-| MVP indicators | **Satisfied as catalog disposition**: 47 MVP and 26 deferred in `indicator-crosswalk.csv`; rebuild remains blocked by other failures. |
-| Illustrative ROI assumptions | **Not approval-ready.** 24 assumptions remain explicitly illustrative and require client evidence owner sign-off before financial claims are published. |
-| Governance owners/artifacts | **Partially satisfied.** Retention is 41/41 and threshold/window/test contracts are 23/23; deletion/access execution evidence and governance approvals remain pending. |
-| Rebuild scope | **Not authorized.** Rebuild is limited to corrected CSVs only after all critical issues are approved; no XLSX was created or modified in Phase 6. |
+| Evidências para correções altas/críticas | **Parcialmente satisfeito.** `corrections.csv` contém 10 registros em nível de linha/consolidados com ponteiros de evidência contratual; evidências de execução operacional e aprovações permanecem pendentes. |
+| Cruzamento de chaves | **Satisfeito para o cruzamento atual** (45 linhas de entidades e 42 de eventos/integrações verificadas), mas não existem links de issues aprovados para as abas alteradas. |
+| Indicadores MVP | **Satisfeito como disposição de catálogo**: 47 MVP e 26 adiados em `indicator-crosswalk.csv`; a reconstrução permanece bloqueada por outras falhas. |
+| Premissas ilustrativas de ROI | **Não pronto para aprovação.** As 24 premissas permanecem explicitamente ilustrativas e exigem aprovação do responsável pelas evidências do cliente antes da publicação de alegações financeiras. |
+| Responsáveis/artefatos de governança | **Parcialmente satisfeito.** Retenção está 41/41 e os contratos de limiar/janela/teste estão 23/23; evidências de execução de exclusão/acesso e aprovações de governança permanecem pendentes. |
+| Escopo de reconstrução | **Não autorizado.** A reconstrução é limitada apenas aos CSVs corrigidos depois que todos os problemas críticos forem aprovados; nenhum XLSX foi criado ou modificado na Fase 6. |
 
-## Blockers
+## Bloqueadores
 
-1. `CORR-REG-001`: row-level entries now cover all six changed tabs; pending validator confirmation and evidence execution.
-2. `CORR-REG-002`: event metadata is complete 27/27 and integration dependency/publication contracts 15/15; operational schema/readiness evidence is still pending.
-3. `CORR-REG-003`: retention is complete 41/41 and governance threshold/window/test fields 23/23; deletion/access evidence and approval are still pending.
-4. `CORR-REG-004`: 24/24 ROI assumptions remain illustrative with 0 evidence-certified; client sign-off is required before publication.
-5. `CORR-REG-005`: 12 roadmap/RACI correction records remain proposed (6 critical, 6 high); do not approve without evidence-backed status.
+1. `CORR-REG-001`: as entradas em nível de linha agora cobrem todas as seis abas alteradas; aguardando confirmação do validador e execução de evidências.
+2. `CORR-REG-002`: os metadados de eventos estão completos 27/27 e os contratos de dependência/publicação de integrações 15/15; evidências operacionais de schema/prontidão ainda estão pendentes.
+3. `CORR-REG-003`: retenção completa 41/41 e campos de limiar/janela/teste de governança 23/23; evidências de exclusão/acesso e aprovação ainda estão pendentes.
+4. `CORR-REG-004`: 24/24 premissas de ROI permanecem ilustrativas com 0 certificadas por evidência; aprovação do cliente é exigida antes da publicação.
+5. `CORR-REG-005`: 12 registros de correção de roadmap/RACI permanecem propostos (6 críticos, 6 altos); não aprovar sem status respaldado por evidência.
 
-Until blockers are resolved and approved (or an explicitly documented exception is approved), the next step is correction-register completion and rerun of Phase 6 validation—not workbook rebuild.
+Até que os bloqueadores sejam resolvidos e aprovados (ou uma exceção explicitamente documentada seja aprovada), o próximo passo é completar o registro de correções e reexecutar a validação da Fase 6 — não a reconstrução do workbook.

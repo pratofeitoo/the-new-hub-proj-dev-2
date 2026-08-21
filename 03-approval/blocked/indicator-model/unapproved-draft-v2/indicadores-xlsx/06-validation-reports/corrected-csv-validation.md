@@ -1,37 +1,37 @@
-# Corrected CSV validation — Phase 6
+# Validação do CSV corrigido — Fase 6
 
-**Run:** `run-02-execution`  
-**Scope:** `03-corrected-csv/` and correction registers; source layer was read-only.  
-**Decision:** **REJECTED — rebuild gate remains closed pending evidence execution and approvals.**
+**Execução:** `run-02-execution`
+**Escopo:** `03-corrected-csv/` e registros de correção; a camada de origem foi somente leitura.
+**Decisão:** **REJEITADO — o portão de reconstrução permanece fechado aguardando execução de evidências e aprovações.**
 
-## Deterministic inventory
+## Inventário determinístico
 
-- 15 source tabs and 15 corrected tabs were found.
-- Corrected row counts (data rows after the title/header preamble): nodes 25, indicators 73, dictionary 41, events 27, integrations 15, governance 23, roadmap 5, RACI 20.
-- The corrected layer is byte-identical to source for 00–07 and 13. Tabs 08, 09, 10, 11, 12 and 14 differ from source and are therefore treated as corrected artifacts, not verbatim copies.
-- `corrections.csv` has 10 issue rows covering all six differing tabs plus consolidated blocker records. Each changed value has source CSV/row/column, evidence pointer, severity, and status.
+- Foram encontradas 15 abas de origem e 15 abas corrigidas.
+- Contagens de linhas corrigidas (linhas de dados após o preâmbulo de título/cabeçalho): nós 25, indicadores 73, dicionário 41, eventos 27, integrações 15, governança 23, roadmap 5, RACI 20.
+- A camada corrigida é byte-idêntica à origem para 00–07 e 13. As abas 08, 09, 10, 11, 12 e 14 diferem da origem e são, portanto, tratadas como artefatos corrigidos, não cópias literais.
+- `corrections.csv` tem 10 linhas de problemas cobrindo todas as seis abas divergentes mais registros consolidados de bloqueadores. Cada valor alterado possui CSV/linha/coluna de origem, ponteiro de evidência, severidade e status.
 
-## Checks
+## Verificações
 
-| Check | Result | Evidence / issue link |
+| Verificação | Resultado | Evidência / link do problema |
 |---|---:|---|
-| Source/corrected tab inventory and counts | PASS (15/15 tabs present; 8/15 identical) | `03-corrected-csv/00-manifest/manifest.csv`; deviations require `CORR-REG-001` (missing row-level register) |
-| Required headers | PASS for core and operational metadata | Event metadata complete 27/27; integration dependency/publication metadata complete 15/15; governance threshold/window/test fields complete 23/23. Contract evidence is registered; execution artifacts remain pending. |
-| Duplicate/missing IDs | PASS | Nodes: 25 IDs, 0 blank, 0 duplicate. Indicators: 73 IDs, 0 blank, 0 duplicate. |
-| Foreign keys / entity references | PASS with coverage exception | Entity crosswalk: 45/45 verified, 0 unresolved. Relational references are syntactically populated; event/integration operational metadata remains incomplete (`CORR-REG-002`). |
-| Canonical names and key crosswalk | PASS | `entity-key-crosswalk.csv`: 45 rows, 45 `verified`, 45 `unchanged`, 0 missing canonical keys/status. `event-integration-crosswalk.csv`: 42 rows, 42 `verified`, 0 unresolved. |
-| Event-property coverage | PASS with evidence exception | 27 event rows; schema/version, ingestion, idempotency and provenance complete 27/27. JSON schema and end-to-end execution evidence remain pending under `CORR-REG-002`. |
-| Integration-key coverage | PASS with evidence exception | 15 integration rows have keys and dependency/publication contracts complete 15/15. Readiness/reconciliation execution evidence remains pending under `CORR-REG-002`. |
-| Owner coverage | PASS | Indicators 73/73; integrations 15/15; governance 23/23; roadmap 5/5; RACI 20/20 have owner/primary-A values. |
-| Sensitivity/legal-basis/retention coverage | PASS with evidence exception | Dictionary has 41/41 sensitivity, legal-basis, and retention values. Governance controls have explicit threshold/window/test contracts 23/23; deletion/access execution evidence and approvals remain pending under `CORR-REG-003`. |
-| Formula input coverage | PASS | Indicators 73/73 have non-empty formula and source minimum; crosswalk 73/73 has definition/source/formula fields. |
-| Duplicate financial benefits | PASS with governance caveat | No duplicate indicator IDs or duplicate crosswalk IDs (73/73). ROI register has 24 illustrative assumptions; no assumption is evidence-certified. `CORR-REG-004` must remain open until client evidence owner signs off. |
-| Roadmap dependencies | PASS with approval exception | Roadmap has 5 rows with measurable dependency/exit evidence contracts. `roadmap-raci-register.csv` retains 12 proposed rows (6 critical, 6 high) pending evidence-backed approval under `CORR-REG-005`. |
+| Inventário e contagens das abas de origem/corrigidas | APROVADO (15/15 abas presentes; 8/15 idênticas) | `03-corrected-csv/00-manifest/manifest.csv`; desvios exigem `CORR-REG-001` (registro em nível de linha ausente) |
+| Cabeçalhos obrigatórios | APROVADO para metadados centrais e operacionais | Metadados de eventos completos 27/27; metadados de dependência/publicação de integrações completos 15/15; campos de limiar/janela/teste de governança completos 23/23. Evidência contratual registrada; artefatos de execução permanecem pendentes. |
+| IDs duplicados/ausentes | APROVADO | Nós: 25 IDs, 0 em branco, 0 duplicados. Indicadores: 73 IDs, 0 em branco, 0 duplicados. |
+| Chaves estrangeiras / referências de entidade | APROVADO com exceção de cobertura | Cruzamento de entidades: 45/45 verificados, 0 não resolvidos. Referências relacionais estão sintaticamente populadas; metadados operacionais de eventos/integrações permanecem incompletos (`CORR-REG-002`). |
+| Nomes canônicos e cruzamento de chaves | APROVADO | `entity-key-crosswalk.csv`: 45 linhas, 45 `verified`, 45 `unchanged`, 0 sem chave/status canônico. `event-integration-crosswalk.csv`: 42 linhas, 42 `verified`, 0 não resolvidos. |
+| Cobertura de propriedades de eventos | APROVADO com exceção de evidência | 27 linhas de eventos; schema/versão, ingestão, idempotência e proveniência completos 27/27. Evidência de schema JSON e de execução ponta a ponta permanece pendente sob `CORR-REG-002`. |
+| Cobertura de chaves de integração | APROVADO com exceção de evidência | 15 linhas de integrações têm chaves e contratos de dependência/publicação completos 15/15. Evidência de execução de prontidão/reconciliação permanece pendente sob `CORR-REG-002`. |
+| Cobertura de responsáveis | APROVADO | Indicadores 73/73; integrações 15/15; governança 23/23; roadmap 5/5; RACI 20/20 possuem valores de owner/primário-A. |
+| Cobertura de sensibilidade/base legal/retenção | APROVADO com exceção de evidência | O dicionário tem 41/41 valores de sensibilidade, base legal e retenção. Os controles de governança têm contratos explícitos de limiar/janela/teste 23/23; evidência de execução de exclusão/acesso e aprovações permanecem pendentes sob `CORR-REG-003`. |
+| Cobertura de entradas de fórmulas | APROVADO | Indicadores 73/73 têm fórmula não vazia e mínimo de origem; cruzamento 73/73 tem campos de definição/origem/fórmula. |
+| Benefícios financeiros duplicados | APROVADO com ressalva de governança | Sem IDs de indicadores duplicados ou IDs de cruzamento duplicados (73/73). O registro de ROI tem 24 premissas ilustrativas; nenhuma premissa é certificada por evidência. `CORR-REG-004` deve permanecer aberto até que o responsável pelas evidências do cliente aprove. |
+| Dependências do roadmap | APROVADO com exceção de aprovação | O roadmap tem 5 linhas com contratos mensuráveis de evidência de dependência/saída. `roadmap-raci-register.csv` mantém 12 linhas propostas (6 críticas, 6 altas) aguardando aprovação respaldada por evidência sob `CORR-REG-005`. |
 
-## Gate rule
+## Regra do portão
 
-No failed check remains for required metadata, but evidence execution and approval status are not complete. `CORR-REG-001` metadata remediation is complete with pending validation; `CORR-REG-002` and `CORR-REG-003` require operational evidence; `CORR-REG-004` remains explicitly illustrative pending client sign-off; and `CORR-REG-005` remains proposed pending evidence-backed approval. Approval is consequently rejected. No workbook rebuild may start.
+Nenhuma verificação reprovada permanece para metadados obrigatórios, mas a execução de evidências e o status de aprovação não estão completos. A remediação de metadados de `CORR-REG-001` está completa com validação pendente; `CORR-REG-002` e `CORR-REG-003` exigem evidências operacionais; `CORR-REG-004` permanece explicitamente ilustrativo aguardando aprovação do cliente; e `CORR-REG-005` permanece proposto aguardando aprovação respaldada por evidência. Consequentemente, a aprovação é rejeitada. Nenhuma reconstrução de workbook pode começar.
 
-## Reproduction
+## Reprodução
 
-Read each CSV with UTF-8 BOM support; identify the first row whose first cell is the table header; count following non-empty records; count duplicate/blank IDs; compare corrected/source SHA-256 using the paths in `00-manifest/manifest.csv`; and count blank required metadata cells. The resulting machine-readable record is `corrected-csv-validation.json`.
+Leia cada CSV com suporte a BOM UTF-8; identifique a primeira linha cuja primeira célula é o cabeçalho da tabela; conte os registros não vazios seguintes; conte IDs duplicados/em branco; compare SHA-256 entre corrigido/origem usando os caminhos em `00-manifest/manifest.csv`; e conte células de metadados obrigatórios em branco. O registro legível por máquina resultante é `corrected-csv-validation.json`.

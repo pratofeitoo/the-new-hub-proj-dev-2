@@ -1,5 +1,5 @@
 ---
-title: "BP-007 — HUB Brand and Market Blueprint"
+title: "BP-007 — Blueprint de Marca e Mercado do HUB"
 task_id: BP-007
 task_type: blueprint-document
 status: completed
@@ -32,24 +32,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-007 — HUB Brand and Market Blueprint
+# BP-007 — Blueprint de Marca e Mercado do HUB
 
-## Objective
+## Objetivo
 
-Define how HUB is positioned, narrated, segmented, distributed and represented across the group, platform, partners, offers and white-label contexts.
+Definir como o HUB é posicionado, narrado, segmentado, distribuído e representado em todo o grupo, a plataforma, os parceiros, as ofertas e os contextos white-label.
 
-## Required content
+## Conteúdo exigido
 
-1. Define brand architecture, promise, language, naming and relationships between units and modules.
-2. Map market categories, audiences, buyers, budgets, alternatives and opportunity spaces.
-3. Describe direct, institutional, partner and content-led distribution routes.
-4. Define the moat hypotheses and the evidence needed to support them.
-5. Establish white-label, attribution, claims and localization principles.
-6. Connect all market and communication assumptions to the gap register.
+1. Definir arquitetura de marca, promessa, linguagem, nomenclatura e relações entre unidades e módulos.
+2. Mapear categorias de mercado, públicos, compradores, orçamentos, alternativas e espaços de oportunidade.
+3. Descrever rotas de distribuição direta, institucional, por parceiros e orientada a conteúdo.
+4. Definir as hipóteses de moat e as evidências necessárias para sustentá-las.
+5. Estabelecer princípios de white-label, atribuição, alegações (claims) e localização.
+6. Conectar todas as premissas de mercado e comunicação ao registro de gaps.
 
-## Completion criteria
+## Critérios de conclusão
 
-- Brand and market logic are coherent with the offer and product blueprints.
-- Claims are separated from evidence and future validation.
-- Partner possibilities are not presented as commitments.
-- The blueprint supports the full project without collapsing it into one market category.
+- A lógica de marca e mercado é coerente com os blueprints de ofertas e produto.
+- Alegações são separadas de evidências e validação futura.
+- Possibilidades de parceiros não são apresentadas como compromissos.
+- O blueprint suporta o projeto completo sem reduzi-lo a uma única categoria de mercado.

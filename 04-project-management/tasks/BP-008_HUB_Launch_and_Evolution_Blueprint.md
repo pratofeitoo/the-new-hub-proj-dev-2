@@ -1,5 +1,5 @@
 ---
-title: "BP-008 — HUB Launch and Evolution Blueprint"
+title: "BP-008 — Blueprint de Lançamento e Evolução do HUB"
 task_id: BP-008
 task_type: blueprint-document
 status: completed
@@ -33,24 +33,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-008 — HUB Launch and Evolution Blueprint
+# BP-008 — Blueprint de Lançamento e Evolução do HUB
 
-## Objective
+## Objetivo
 
-Define how the complete HUB system moves from Blueprint through refinement, approval, market launch, controlled expansion and continuous evolution.
+Definir como o sistema HUB completo avança do Blueprint por meio de refinamento, aprovação, lançamento no mercado, expansão controlada e evolução contínua.
 
-## Required content
+## Conteúdo exigido
 
-1. Define launch scope, release units, supported offers, markets, users and operating conditions.
-2. Connect the three-layer framework to roadmap stages, evidence packages and approval gates.
-3. Define launch dependencies across business, product, data, technology, operations, governance, finance and communications.
-4. Describe promotion rules from Blueprint to Refinement to Approval and the handling of blocked artifacts.
-5. Define the long-term evolution path without treating future-state capabilities as currently available.
-6. Identify unresolved launch assumptions and link them to all relevant gap IDs.
+1. Definir escopo de lançamento, unidades de release, ofertas suportadas, mercados, usuários e condições operacionais.
+2. Conectar o framework de três camadas a estágios do roadmap, pacotes de evidências e portões de aprovação.
+3. Definir dependências de lançamento entre negócio, produto, dados, tecnologia, operações, governança, finanças e comunicações.
+4. Descrever as regras de promoção de Blueprint para Refinamento para Aprovação e o tratamento de artefatos bloqueados.
+5. Definir o caminho de evolução de longo prazo sem tratar capacidades de estado futuro como atualmente disponíveis.
+6. Identificar premissas de lançamento não resolvidas e vinculá-las a todos os IDs de gap relevantes.
 
-## Completion criteria
+## Critérios de conclusão
 
-- Launch readiness is defined as a whole-system condition rather than a feature checklist.
-- Every launch-critical dependency has an owner, evidence requirement and approval path.
-- Expansion stages preserve the complete project architecture.
-- The document clearly distinguishes vision, sequencing, readiness and final approval.
+- A prontidão para lançamento é definida como uma condição de sistema inteiro, em vez de uma checklist de funcionalidades.
+- Toda dependência crítica de lançamento tem um responsável, requisito de evidência e caminho de aprovação.
+- Os estágios de expansão preservam a arquitetura completa do projeto.
+- O documento distingue claramente visão, sequenciamento, prontidão e aprovação final.

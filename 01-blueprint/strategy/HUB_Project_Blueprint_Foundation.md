@@ -1,5 +1,5 @@
 ---
-title: HUB Project Blueprint Foundation
+title: Fundação do Blueprint do Projeto HUB
 aliases:
   - HUB Blueprint Foundation
   - HUB Project Foundation
@@ -13,122 +13,122 @@ status: blueprint
 layer: blueprint
 ---
 
-# HUB Project Blueprint Foundation
+# Fundação do Blueprint do Projeto HUB
 
-> [!info] Purpose
-> This note consolidates the project knowledge currently distributed across the strategy drafts, research notes, indicator architecture, workbooks, pitch materials and interface sketches. It is the starting point for shaping the complete HUB blueprint.
+> [!info] Propósito
+> Esta nota consolida o conhecimento do projeto atualmente distribuído entre os rascunhos de estratégia, notas de pesquisa, arquitetura de indicadores, workbooks, materiais de pitch e esboços de interface. É o ponto de partida para moldar o blueprint completo do HUB.
 
-> [!warning] Maturity boundary
-> This is a blueprint foundation, not a final business case, production specification or launch approval. Concepts, assumptions, illustrative figures and unvalidated options are intentionally preserved, but must remain clearly labeled as they move through [[00-project-control/framework/HUB_Three-Layer_Project_Development_Framework|the three-layer framework]].
+> [!warning] Limite de maturidade
+> Esta é uma fundação de blueprint, não um caso de negócio final, especificação de produção ou aprovação de lançamento. Conceitos, premissas, valores ilustrativos e opções não validadas são intencionalmente preservados, mas devem permanecer claramente rotulados enquanto atravessam [[00-project-control/framework/HUB_Three-Layer_Project_Development_Framework|o framework de três camadas]].
 
-## 1. Project identity
+## 1. Identidade do projeto
 
-### Working name
+### Nome de trabalho
 
-**HUB** is being developed as a business group and an intelligence-enabled platform for organizing relationships, opportunities, capabilities, interventions and measurable outcomes across business ecosystems.
+O **HUB** está sendo desenvolvido como um grupo de negócios e uma plataforma habilitada por inteligência para organizar relacionamentos, oportunidades, capacidades, intervenções e resultados mensuráveis em ecossistemas empresariais.
 
-### Core promise
+### Promessa central
 
 > **Diferenças que movimentam negócios.**
 
-The project aims to convert diversity, capability, relationships and ecosystem activity into better decisions, qualified connections, implementation and measurable business value.
+O projeto visa converter diversidade, capacidade, relacionamentos e atividade de ecossistema em melhores decisões, conexões qualificadas, implementação e valor de negócio mensurável.
 
-### Foundational transformation
+### Transformação fundadora
 
-The original project evolves DiverCidade from a thematic consultancy into an impact-oriented business group with reusable methods, platform infrastructure and measurable ecosystem outcomes.
+O projeto original evolui a DiverCidade de uma consultoria temática para um grupo de negócios orientado a impacto, com métodos reutilizáveis, infraestrutura de plataforma e resultados de ecossistema mensuráveis.
 
-The central operating chain is:
+A cadeia operacional central é:
 
 ```text
 diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir
 ```
 
-The data and value chain is:
+A cadeia de dados e valor é:
 
 ```text
 fontes → identidades → sinais → inteligência → ação → resultado → valor financeiro
 ```
 
-## 2. Whole-project scope
+## 2. Escopo do projeto completo
 
-The project is one connected system. The following components are not independent products; they are parts of the full intended business and product architecture:
+O projeto é um sistema conectado. Os componentes a seguir não são produtos independentes; são partes da arquitetura completa pretendida de negócios e produto:
 
-1. Strategic positioning and brand.
-2. Business-group and legal-entity architecture.
-3. C.A.O.S. methodology and operating model.
-4. Platform product and user experiences.
-5. Data, intelligence, measurement and evidence systems.
-6. Commercial model, revenue engines and financial logic.
-7. Ecosystem relationships, partnerships and distribution.
-8. Governance, LGPD, legal, IP, liability and recognition independence.
-9. Delivery operations, accountability and support.
-10. Launch, adoption, scale and continuous evolution.
+1. Posicionamento estratégico e marca.
+2. Arquitetura de grupo de negócios e entidades legais.
+3. Metodologia C.A.O.S. e modelo operacional.
+4. Produto de plataforma e experiências de usuário.
+5. Sistemas de dados, inteligência, medição e evidências.
+6. Modelo comercial, motores de receita e lógica financeira.
+7. Relacionamentos de ecossistema, parcerias e distribuição.
+8. Governança, LGPD, jurídico, PI, responsabilidade e independência de reconhecimento.
+9. Operações de entrega, responsabilização e suporte.
+10. Lançamento, adoção, escala e evolução contínua.
 
-The first usable workflow may be narrower than the total system, but it must be designed as a connected part of this whole rather than as a replacement for it.
+O primeiro fluxo de trabalho utilizável pode ser mais estreito que o sistema total, mas deve ser projetado como uma parte conectada deste todo, e não como sua substituição.
 
-## 3. Business architecture
+## 3. Arquitetura de negócios
 
-### Four conceptual units
+### Quatro unidades conceituais
 
-| Unit | Intended role | Current maturity |
+| Unidade | Papel pretendido | Maturidade atual |
 |---|---|---|
-| **HUB brand and strategy** | Positioning, method, standards, narrative and group direction. | Blueprint concept. |
-| **HUB Negócios** | Commercial services, implementation, relationships and business value. | Blueprint concept; legal separation unconfirmed. |
-| **Instituto HUB** | Restricted impact, education or mission-oriented activity. | Blueprint concept; funding and separation unresolved. |
-| **Plataforma HUB** | Software, data, workflows, intelligence and ecosystem infrastructure. | Architectural blueprint; no production implementation evidenced. |
+| **HUB marca e estratégia** | Posicionamento, método, padrões, narrativa e direção do grupo. | Conceito em blueprint. |
+| **HUB Negócios** | Serviços comerciais, implementação, relacionamentos e valor de negócio. | Conceito em blueprint; separação jurídica não confirmada. |
+| **Instituto HUB** | Atividade restrita de impacto, educação ou missão. | Conceito em blueprint; financiamento e separação não resolvidos. |
+| **Plataforma HUB** | Software, dados, fluxos de trabalho, inteligência e infraestrutura de ecossistema. | Blueprint arquitetural; nenhuma implementação de produção comprovada. |
 
-### Three business fronts
+### Três frentes de negócio
 
-- **Mídia e Experiências** — content, communications, events and experiences.
-- **Impacto Financiável** — impact programs, funding and measurable outcomes.
-- **Ecossistemas Empresariais** — relationships, opportunities, suppliers, talent and institutional networks.
+- **Mídia e Experiências** — conteúdo, comunicações, eventos e experiências.
+- **Impacto Financiável** — programas de impacto, financiamento e resultados mensuráveis.
+- **Ecossistemas Empresariais** — relacionamentos, oportunidades, fornecedores, talentos e redes institucionais.
 
-These fronts may become distinct offers, but the blueprint treats them as connected expressions of one HUB system.
+Essas frentes podem se tornar ofertas distintas, mas o blueprint as trata como expressões conectadas de um único sistema HUB.
 
-## 4. Method and operating model
+## 4. Método e modelo operacional
 
 ### C.A.O.S.
 
-The C.A.O.S. method is the proposed operating backbone:
+O método C.A.O.S. é a espinha dorsal operacional proposta:
 
-- **Contexto** — understand the organization, ecosystem, opportunity and constraints.
-- **Arquitetura** — design the target state, relationships, responsibilities and measures.
-- **Operação** — execute interventions, connections, journeys and workflows.
-- **Sustentação** — measure, govern, recognize, learn and evolve.
+- **Contexto** — entender a organização, o ecossistema, a oportunidade e as restrições.
+- **Arquitetura** — desenhar o estado-alvo, relacionamentos, responsabilidades e medidas.
+- **Operação** — executar intervenções, conexões, jornadas e fluxos de trabalho.
+- **Sustentação** — medir, governar, reconhecer, aprender e evoluir.
 
-### Intended value creation
+### Criação de valor pretendida
 
-HUB is intended to help participants and institutions:
+O HUB destina-se a ajudar participantes e instituições a:
 
-- identify capabilities, gaps and opportunities;
-- make fragmented information usable;
-- qualify people, companies, suppliers and solutions;
-- connect demand with capacity;
-- guide implementation rather than only diagnosis;
-- measure adoption, conversion, outcomes and value;
-- create trusted evidence for decisions and recognition.
+- identificar capacidades, lacunas e oportunidades;
+- tornar utilizável informação fragmentada;
+- qualificar pessoas, empresas, fornecedores e soluções;
+- conectar demanda com capacidade;
+- guiar a implementação, e não apenas o diagnóstico;
+- medir adoção, conversão, resultados e valor;
+- criar evidências confiáveis para decisões e reconhecimento.
 
-## 5. Platform blueprint
+## 5. Blueprint da plataforma
 
-### Six conceptual modules
+### Seis módulos conceituais
 
-1. **HUB Intelligence** — diagnosis, evidence, indicators, maturity and insights.
-2. **HUB Journey** — plans, recommendations, stages, actions and progress.
-3. **HUB Solutions** — curated suppliers, specialists, content and interventions.
-4. **HUB Connections** — opportunities, matching, introductions and follow-through.
-5. **HUB Academy** — learning, capability development and enablement.
-6. **HUB Recognition** — evidence-based recognition and the Selo HUB.
+1. **HUB Intelligence** — diagnóstico, evidências, indicadores, maturidade e insights.
+2. **HUB Journey** — planos, recomendações, etapas, ações e progresso.
+3. **HUB Solutions** — fornecedores curados, especialistas, conteúdo e intervenções.
+4. **HUB Connections** — oportunidades, pareamento, apresentações e acompanhamento.
+5. **HUB Academy** — aprendizado, desenvolvimento de capacidades e habilitação.
+6. **HUB Recognition** — reconhecimento baseado em evidências e o Selo HUB.
 
-### Principal actors
+### Atores principais
 
-- Institutions, associations, federations and ecosystem owners.
-- Companies and participating organizations.
-- Small businesses, suppliers and solution providers.
-- People, talent, specialists and evaluators.
-- Buyers, opportunity owners and partners.
-- HUB operators, analysts, implementers and governance roles.
+- Instituições, associações, federações e proprietários de ecossistemas.
+- Empresas e organizações participantes.
+- Pequenas empresas, fornecedores e provedores de soluções.
+- Pessoas, talentos, especialistas e avaliadores.
+- Compradores, donos de oportunidades e parceiros.
+- Operadores, analistas, implementadores e papéis de governança do HUB.
 
-### Intended end-to-end journey
+### Jornada ponta a ponta pretendida
 
 ```mermaid
 flowchart LR
@@ -142,237 +142,237 @@ flowchart LR
     H --> I[Recognize, learn and evolve]
 ```
 
-The blueprint deliberately keeps high-impact interpretation, curation, matching and recognition under human responsibility until the relevant evidence, controls and approval gates exist.
+O blueprint mantém deliberadamente a interpretação de alto impacto, curadoria, pareamento e reconhecimento sob responsabilidade humana até que as evidências, controles e portões de aprovação relevantes existam.
 
-## 6. Data and intelligence foundation
+## 6. Fundação de dados e inteligência
 
-### Conceptual data model
+### Modelo de dados conceitual
 
-The current indicator architecture describes approximately 25 conceptual nodes, including:
+A arquitetura atual de indicadores descreve aproximadamente 25 nós conceituais, incluindo:
 
-- person, company, entity, supplier and relationship;
-- opportunity, skill, skill evidence, assessment and interaction;
-- journey, recommendation, match, participation and program/project;
-- contract, transaction, business metric and individual outcome;
-- cohort, benchmark, risk/control, content/campaign;
-- consent and model version.
+- pessoa, empresa, entidade, fornecedor e relacionamento;
+- oportunidade, habilidade, evidência de habilidade, avaliação e interação;
+- jornada, recomendação, match, participação e programa/projeto;
+- contrato, transação, métrica de negócio e resultado individual;
+- coorte, benchmark, risco/controle, conteúdo/campanha;
+- consentimento e versão de modelo.
 
-The relationship model contains approximately 20 conceptual edges covering identity, skills, opportunities, recommendations, journeys, programs, outcomes, suppliers, matches, contracts, transactions, diagnosis, risks, metrics, cohorts, models and consent.
+O modelo de relacionamentos contém aproximadamente 20 arestas conceituais cobrindo identidade, habilidades, oportunidades, recomendações, jornadas, programas, resultados, fornecedores, matches, contratos, transações, diagnóstico, riscos, métricas, coortes, modelos e consentimento.
 
-The physical dictionary currently defines approximately 41 fields across 16 tables, including dimensions for people, companies, entities, skills, cohorts and model versions, plus facts for skills, assessments, events, opportunities, matches, participation, contracts, transactions and business/financial metrics.
+O dicionário físico atualmente define aproximadamente 41 campos em 16 tabelas, incluindo dimensões para pessoas, empresas, entidades, habilidades, coortes e versões de modelo, além de fatos para habilidades, avaliações, eventos, oportunidades, matches, participação, contratos, transações e métricas de negócio/financeiras.
 
-### Data principles to preserve
+### Princípios de dados a preservar
 
-- Canonical identities and cross-system resolution.
-- Stable keys, explicit object types and temporal relationships.
-- Versioned events, indicators, taxonomies, formulas and models.
-- Consent and purpose limitation by data flow.
-- Evidence lineage from source record to metric, action, outcome and value.
-- Auditability, replay, reconciliation, deletion and portability.
-- Separation of potential, influenced, validated and realized value.
+- Identidades canônicas e resolução entre sistemas.
+- Chaves estáveis, tipos de objeto explícitos e relacionamentos temporais.
+- Eventos, indicadores, taxonomias, fórmulas e modelos versionados.
+- Consentimento e limitação de propósito por fluxo de dados.
+- Linhagem de evidências do registro de origem até métrica, ação, resultado e valor.
+- Auditabilidade, replay, reconciliação, exclusão e portabilidade.
+- Separação de valor potencial, influenciado, validado e realizado.
 
-### Indicators and value tree
+### Indicadores e árvore de valor
 
-The current catalog contains approximately 73 indicators across people, companies/RH, procurement/suppliers, entities/ecosystem, marketing/media, product/platform, finance/impact and intelligence/data.
+O catálogo atual contém aproximadamente 73 indicadores nas áreas de pessoas, empresas/RH, compras/fornecedores, entidades/ecossistema, marketing/mídia, produto/plataforma, finanças/impacto e inteligência/dados.
 
-The value tree identifies 12 financial levers:
+A árvore de valor identifica 12 alavancas financeiras:
 
-1. Productivity
+1. Produtividade
 2. Time-to-productivity
-3. Retention
-4. Recruitment
-5. Procurement
-6. Risk
-7. Incremental revenue
-8. HUB recurring revenue
-9. Marketplace value
-10. Entity or association value
-11. Marketing value
-12. Innovation and new markets
+3. Retenção
+4. Recrutamento
+5. Compras/procurement
+6. Risco
+7. Receita incremental
+8. Receita recorrente do HUB
+9. Valor de marketplace
+10. Valor de entidade ou associação
+11. Valor de marketing
+12. Inovação e novos mercados
 
-The current architecture is a measurement blueprint. It does not yet prove that leading indicators, pipeline, activity, adoption, matches or influenced revenue equal realized cash, margin or causal impact.
+A arquitetura atual é um blueprint de medição. Ela ainda não prova que indicadores antecedentes, pipeline, atividade, adoção, matches ou receita influenciada equivalem a caixa realizada, margem ou impacto causal.
 
-## 7. Technology and integration blueprint
+## 7. Blueprint de tecnologia e integração
 
-The proposed integration landscape includes HRIS/payroll, ATS, LMS, CRM, ERP/finance, procurement/SRM, GRC/risk, BI, the HUB platform, intelligence services, consent management, media analytics, associations and a warehouse/lakehouse.
+O cenário de integração proposto inclui HRIS/folha de pagamento, ATS, LMS, CRM, ERP/finanças, procurement/SRM, GRC/risco, BI, a plataforma HUB, serviços de inteligência, gestão de consentimento, analytics de mídia, associações e um warehouse/lakehouse.
 
-The current sequencing proposes:
+O sequenciamento atual propõe:
 
-- **M0:** CRM, platform, consent, entity and warehouse backbone.
-- **M1:** HRIS, ATS, LMS, finance, procurement, intelligence and marketing.
-- **M2:** client finance, client BI and risk/control systems.
+- **M0:** CRM, plataforma, consentimento, entidade e espinha dorsal de warehouse.
+- **M1:** HRIS, ATS, LMS, finanças, procurement, inteligência e marketing.
+- **M2:** finanças do cliente, BI do cliente e sistemas de risco/controle.
 
-Proposed technical behaviors include APIs, webhooks, xAPI, event streams, SFTP, private links, ELT, retries, dead-letter queues, replay, quarantine, reconciliation, fallback and rollback.
+Comportamentos técnicos propostos incluem APIs, webhooks, xAPI, streams de eventos, SFTP, links privados, ELT, retries, dead-letter queues, replay, quarentena, reconciliação, fallback e rollback.
 
-These remain architectural requirements. Payload contracts, owners, volumes, SLAs, tenant isolation, secret rotation, identity resolution and on-call responsibilities are not yet established.
+Estes permanecem requisitos arquiteturais. Contratos de payload, responsáveis, volumes, SLAs, isolamento de tenant, rotação de segredos, resolução de identidade e responsabilidades de on-call ainda não estão estabelecidos.
 
-## 8. Commercial and financial blueprint
+## 8. Blueprint comercial e financeiro
 
-### Potential revenue engines
+### Potenciais motores de receita
 
-- Ecosystem licensing.
-- Enterprise subscription.
-- Implementation-led adoption.
-- Diagnostic and evolution programs.
-- Marketplace fees.
-- Media and experience projects.
-- Impact financing or restricted Institute funding.
-- Recognition and Selo-related services, subject to independence.
+- Licenciamento de ecossistema.
+- Assinatura empresarial.
+- Adoção conduzida por implementação.
+- Programas de diagnóstico e evolução.
+- Taxas de marketplace.
+- Projetos de mídia e experiências.
+- Financiamento de impacto ou funding restrito do Instituto.
+- Serviços de reconhecimento e relacionados ao Selo, sujeitos à independência.
 
-The project must distinguish commercial revenue, implementation revenue, recurring revenue, marketplace revenue, project revenue and restricted impact funding. No single engine is yet confirmed as the final commercial model.
+O projeto deve distinguir receita comercial, receita de implementação, receita recorrente, receita de marketplace, receita de projetos e funding restrito de impacto. Nenhum motor único está ainda confirmado como o modelo comercial final.
 
-### Illustrative economics
+### Economia ilustrativa
 
-The existing ROI simulator uses illustrative assumptions including:
+O simulador de ROI existente usa premissas ilustrativas incluindo:
 
-- R$600,000 annual license;
-- R$250,000 implementation/services;
-- R$100,000 internal cost;
-- R$950,000 total investment;
-- R$1,220,000 gross annual benefit;
-- R$270,000 net benefit;
-- 28.42% displayed simple ROI.
+- R$600.000 de licença anual;
+- R$250.000 de implementação/serviços;
+- R$100.000 de custo interno;
+- R$950.000 de investimento total;
+- R$1.220.000 de benefício bruto anual;
+- R$270.000 de benefício líquido;
+- 28,42% de ROI simples exibido.
 
-These values are not evidence-certified. The model contains timing, attribution, double-counting and payback inconsistencies that must be resolved before any external financial claim or approval.
+Esses valores não são certificados por evidências. O modelo contém inconsistências de timing, atribuição, dupla contagem e payback que devem ser resolvidas antes de qualquer alegação financeira externa ou aprovação.
 
-## 9. Governance, legal and trust foundation
+## 9. Fundação de governança, jurídico e confiança
 
-The blueprint requires:
+O blueprint exige:
 
-- clear entity responsibilities and intercompany agreements;
-- brand, method, content, software and data chain of title;
-- controller/processor definitions for each data flow;
-- purpose, legal basis, minimization, retention and deletion rules;
-- participant, partner, supplier, evaluator and institution terms;
-- liability, insurance, indemnity and incident responsibilities;
-- data isolation, portability and exit procedures;
-- explainability, fairness, drift and human review controls;
-- publication gates for indicators, models, dashboards and financial claims.
+- responsabilidades claras das entidades e acordos entre empresas;
+- cadeia de titularidade de marca, método, conteúdo, software e dados;
+- definições de controlador/operador para cada fluxo de dados;
+- regras de finalidade, base legal, minimização, retenção e exclusão;
+- termos de participante, parceiro, fornecedor, avaliador e instituição;
+- responsabilidades de responsabilidade civil, seguros, indenização e incidentes;
+- isolamento de dados, portabilidade e procedimentos de saída;
+- controles de explicabilidade, justiça, drift e revisão humana;
+- portões de publicação para indicadores, modelos, dashboards e alegações financeiras.
 
-### Selo HUB independence
+### Independência do Selo HUB
 
-The Selo HUB is strategically important but legally and operationally sensitive. Its future design must separate commercial implementation from evaluation, define evaluator appointment and payment, manage conflicts and recusals, establish appeals and withdrawals, control public claims and prevent commercial revenue from guaranteeing recognition.
+O Selo HUB é estrategicamente importante, mas sensível do ponto de vista jurídico e operacional. Seu design futuro deve separar implementação comercial de avaliação, definir nomeação e pagamento de avaliadores, gerenciar conflitos e suspeições, estabelecer recursos e desistências, controlar alegações públicas e impedir que receita comercial garanta reconhecimento.
 
-The Selo is therefore a blueprint component that requires dedicated refinement and approval; it is not yet a cleared commercial capability.
+O Selo é, portanto, um componente de blueprint que exige refinamento e aprovação dedicados; ainda não é uma capacidade comercial liberada.
 
-## 10. Roadmap logic
+## 10. Lógica do roadmap
 
-The current architecture describes a staged evolution:
+A arquitetura atual descreve uma evolução em estágios:
 
-| Stage | Intended development |
+| Estágio | Desenvolvimento pretendido |
 |---|---|
-| **M0** | IDs, taxonomy, event catalog, indicator catalog and operational dashboards. |
-| **M1** | Source connections, graph, cohorts and matching. |
-| **M2** | Value mart, experiments, attribution and financial sign-off. |
-| **M3** | Predictive models, uplift, fairness, drift and model cards. |
-| **M4** | Anonymous benchmarks, marketplace and multi-ecosystem scale. |
+| **M0** | IDs, taxonomia, catálogo de eventos, catálogo de indicadores e dashboards operacionais. |
+| **M1** | Conexões de fontes, grafo, coortes e pareamento. |
+| **M2** | Value mart, experimentos, atribuição e sign-off financeiro. |
+| **M3** | Modelos preditivos, uplift, justiça, drift e model cards. |
+| **M4** | Benchmarks anônimos, marketplace e escala multi-ecossistema. |
 
-These stages are sequencing logic, not final dates. Each requires explicit exit criteria, owners, denominators, evidence and approval decisions.
+Esses estágios são lógica de sequenciamento, não datas finais. Cada um exige critérios de saída explícitos, responsáveis, denominadores, evidências e decisões de aprovação.
 
-## 11. What exists today
+## 11. O que existe hoje
 
-### Substantive assets
+### Ativos substantivos
 
-- First strategic master document in Markdown and DOCX.
-- Second strategy draft and investor-readiness plan in English and Portuguese.
-- Six research themes in English and Portuguese: beachhead, finance, governance/legal, GTM/partnerships, market/competition and product/MVP.
-- Indicator source tabs, data dictionary, events, integrations, governance, roadmap, RACI and value-tree files.
-- Cross-sheet syntheses, correction registers and validation reports.
-- Original, enhanced and explicitly unapproved indicator workbooks.
-- Pitch decks and UI sketches showing the intended narrative and experience.
+- Primeiro documento-mestre estratégico em Markdown e DOCX.
+- Segundo rascunho de estratégia e plano de prontidão para investidores em inglês e português.
+- Seis temas de pesquisa em inglês e português: beachhead, finanças, governança/jurídico, GTM/parcerias, mercado/concorrência e produto/MVP.
+- Abas-fonte de indicadores, dicionário de dados, eventos, integrações, governança, roadmap, RACI e arquivos de árvore de valor.
+- Sínteses entre abas, registros de correção e relatórios de validação.
+- Workbooks de indicadores original, aprimorado e explicitamente não aprovado.
+- Pitch decks e esboços de UI mostrando a narrativa e a experiência pretendidas.
 
-### Current evidence state
+### Estado atual das evidências
 
-| Area | Current state |
+| Área | Estado atual |
 |---|---|
-| Strategy | Rich conceptual architecture; material assumptions remain open. |
-| Product | Detailed journey and module blueprint; no production implementation evidenced. |
-| Data | Strong semantic model; physical keys, schemas and operating contracts incomplete. |
-| Financials | Illustrative model and value tree; not evidence-certified. |
-| Governance | Extensive control design; operational/legal proof incomplete. |
-| Market | Alternatives and hypotheses mapped; customer and competitive validation incomplete. |
-| Launch | Long-term roadmap exists; final launch criteria and approvals do not yet exist. |
+| Estratégia | Arquitetura conceitual rica; premissas materiais permanecem abertas. |
+| Produto | Blueprint detalhado de jornada e módulos; nenhuma implementação de produção comprovada. |
+| Dados | Modelo semântico forte; chaves físicas, schemas e contratos operacionais incompletos. |
+| Financeiro | Modelo ilustrativo e árvore de valor; não certificado por evidências. |
+| Governança | Design de controles extenso; prova operacional/jurídica incompleta. |
+| Mercado | Alternativas e hipóteses mapeadas; validação de clientes e concorrência incompleta. |
+| Lançamento | Roadmap de longo prazo existe; critérios finais de lançamento e aprovações ainda não existem. |
 
-## 12. Core assumptions to refine
+## 12. Premissas centrais a refinar
 
-1. Institutions will pay for coordinated ecosystem intelligence and implementation.
-2. A trusted method plus evidence can improve business and ecosystem outcomes.
-3. Institutional distribution can compound the value of the platform.
-4. Verified implementation evidence can become a defensible asset.
-5. A shared semantic and measurement layer can support multiple HUB offers.
-6. Human-led operations can reveal what should become productized.
-7. The four-unit group architecture can be made legally and operationally coherent.
-8. Recognition can remain independent while connected to the broader HUB ecosystem.
-9. Data permissions, identity resolution and outcome attribution can be governed at scale.
-10. The commercial model can support both delivery economics and long-term platform development.
+1. Instituições pagarão por inteligência de ecossistema coordenada e implementação.
+2. Um método confiável mais evidências pode melhorar resultados de negócios e de ecossistema.
+3. Distribuição institucional pode compor o valor da plataforma.
+4. Evidências verificadas de implementação podem se tornar um ativo defensável.
+5. Uma camada semântica e de medição compartilhada pode suportar múltiplas ofertas do HUB.
+6. Operações conduzidas por humanos podem revelar o que deve ser transformado em produto.
+7. A arquitetura de grupo de quatro unidades pode se tornar coerente jurídica e operacionalmente.
+8. O reconhecimento pode permanecer independente enquanto conectado ao ecossistema HUB mais amplo.
+9. Permissões de dados, resolução de identidade e atribuição de resultados podem ser governadas em escala.
+10. O modelo comercial pode suportar tanto a economia de entrega quanto o desenvolvimento de longo prazo da plataforma.
 
-## 13. Major tensions to resolve in refinement
+## 13. Principais tensões a resolver no refinamento
 
-- Broad ecosystem vision versus focused sequencing.
-- Platform subscription versus implementation-led adoption.
-- Commercial business versus restricted impact activity.
-- Selo strategic importance versus evaluator independence.
-- Illustrative ROI versus evidence-certified financial claims.
-- Conceptual nodes versus physical data structures.
-- White-label flexibility versus brand and methodology integrity.
-- Founder-led coordination versus scalable accountability.
-- Rich indicator catalog versus a manageable operational measurement system.
-- Named strategic partners as possibilities versus demonstrated commitments.
+- Visão ampla de ecossistema versus sequenciamento focado.
+- Assinatura de plataforma versus adoção conduzida por implementação.
+- Negócio comercial versus atividade de impacto restrita.
+- Importância estratégica do Selo versus independência dos avaliadores.
+- ROI ilustrativo versus alegações financeiras certificadas por evidências.
+- Nós conceituais versus estruturas de dados físicas.
+- Flexibilidade white-label versus integridade de marca e metodologia.
+- Coordenação conduzida pelo fundador versus responsabilização escalável.
+- Catálogo rico de indicadores versus um sistema operacional de medição gerenciável.
+- Parceiros estratégicos nomeados como possibilidades versus compromissos demonstrados.
 
-## 14. Blueprint questions
+## 14. Perguntas do blueprint
 
-### Business and market
+### Negócios e mercado
 
-- What exact transformation does HUB own for each primary customer type?
-- Which budgets, buying processes and recurring workflows can support the complete model?
-- How do the three business fronts reinforce one another without creating category confusion?
-- What is the relationship between institutional value, participant value and HUB revenue?
+- Que transformação exata o HUB possui para cada tipo de cliente primário?
+- Quais orçamentos, processos de compra e fluxos de trabalho recorrentes podem suportar o modelo completo?
+- Como as três frentes de negócio se reforçam mutuamente sem criar confusão de categoria?
+- Qual é a relação entre valor institucional, valor do participante e receita do HUB?
 
-### Product and operations
+### Produto e operações
 
-- Which capabilities are shared platform primitives and which are offer-specific?
-- What is always human-led, what is assisted and what may become automated?
-- What is the minimum complete operating system needed to support the full project direction?
-- How are operators, partners, evaluators and customers accountable across the journey?
+- Quais capacidades são primitivas compartilhadas da plataforma e quais são específicas de cada oferta?
+- O que é sempre conduzido por humanos, o que é assistido e o que pode se tornar automatizado?
+- Qual é o sistema operacional mínimo completo necessário para suportar a direção completa do projeto?
+- Como operadores, parceiros, avaliadores e clientes são responsabilizados ao longo da jornada?
 
-### Data and intelligence
+### Dados e inteligência
 
-- What are the canonical entities, keys, event contracts and systems of record?
-- How are recommendations, matches, interactions and outcomes defined and separated?
-- How is value attributed without double counting or overstating causality?
-- Which metrics are descriptive, leading, operational, experimental or financial?
+- Quais são as entidades canônicas, chaves, contratos de eventos e sistemas de registro?
+- Como recomendações, matches, interações e resultados são definidos e separados?
+- Como o valor é atribuído sem dupla contagem ou superestimação de causalidade?
+- Quais métricas são descritivas, antecedentes, operacionais, experimentais ou financeiras?
 
-### Governance and launch
+### Governança e lançamento
 
-- Which legal entities, contracts and IP boundaries are required?
-- What evidence is required for each approval state?
-- What blocks public claims, financial claims, model release or Selo use?
-- What conditions must the complete system satisfy before launch?
+- Quais entidades legais, contratos e fronteiras de PI são necessários?
+- Que evidências são exigidas para cada estado de aprovação?
+- O que bloqueia alegações públicas, alegações financeiras, lançamento de modelos ou uso do Selo?
+- Que condições o sistema completo deve satisfazer antes do lançamento?
 
-## 15. Blueprint shaping principles
+## 15. Princípios de moldagem do blueprint
 
-1. Treat the project as one complete system from concept to launch.
-2. Preserve the full ambition while sequencing work deliberately.
-3. Label every material statement by maturity and evidence state.
-4. Prefer connected foundations over isolated features.
-5. Allow refinement to replace any blueprint assumption.
-6. Keep potential, influenced, validated and realized value distinct.
-7. Make human responsibility, governance and accountability explicit.
-8. Design data, product, business and legal structures together.
-9. Use tests to strengthen the blueprint, not to shrink the project by default.
-10. Require rigorous approval before treating a component as launch-ready.
+1. Tratar o projeto como um sistema completo, do conceito ao lançamento.
+2. Preservar a ambição total enquanto sequencia o trabalho deliberadamente.
+3. Rotular cada declaração material por maturidade e estado de evidência.
+4. Preferir fundações conectadas a funcionalidades isoladas.
+5. Permitir que o refinamento substitua qualquer premissa do blueprint.
+6. Manter distintos os valores potencial, influenciado, validado e realizado.
+7. Tornar explícitas a responsabilidade humana, a governança e a responsabilização.
+8. Projetar estruturas de dados, produto, negócios e jurídicas em conjunto.
+9. Usar testes para fortalecer o blueprint, não para encolher o projeto por padrão.
+10. Exigir aprovação rigorosa antes de tratar um componente como pronto para lançamento.
 
-## 16. Starting point for the next planning cycle
+## 16. Ponto de partida para o próximo ciclo de planejamento
 
-This note should become the reference point for building the next layer of project management:
+Esta nota deve se tornar o ponto de referência para construir a próxima camada de gerenciamento do projeto:
 
-- create a complete scope baseline;
-- decompose the blueprint into connected workstreams;
-- register assumptions, decisions, risks and dependencies;
-- classify existing artifacts by Blueprint, Refinement or Approval status;
-- define the evidence and approval criteria for each major subsystem;
-- create the master roadmap and task system;
-- identify contradictions that require deliberate resolution;
-- keep the full project model visible while individual components mature.
+- criar uma linha de base completa de escopo;
+- decompor o blueprint em workstreams conectados;
+- registrar premissas, decisões, riscos e dependências;
+- classificar artefatos existentes por status de Blueprint, Refinamento ou Aprovação;
+- definir os critérios de evidência e aprovação para cada subsistema principal;
+- criar o roadmap mestre e o sistema de tarefas;
+- identificar contradições que exigem resolução deliberada;
+- manter o modelo completo do projeto visível enquanto componentes individuais amadurecem.
 
-This foundation is intentionally open to improvement. Its role is to give every future plan, task, test, decision and approval a shared place in the complete HUB project.
+Esta fundação é intencionalmente aberta a melhorias. Seu papel é dar a todo plano, tarefa, teste, decisão e aprovação futuros um lugar compartilhado no projeto HUB completo.

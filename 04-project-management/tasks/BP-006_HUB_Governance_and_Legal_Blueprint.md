@@ -1,5 +1,5 @@
 ---
-title: "BP-006 — HUB Governance and Legal Blueprint"
+title: "BP-006 — Blueprint de Governança e Jurídico do HUB"
 task_id: BP-006
 task_type: blueprint-document
 status: completed
@@ -31,24 +31,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-006 — HUB Governance and Legal Blueprint
+# BP-006 — Blueprint de Governança e Jurídico do HUB
 
-## Objective
+## Objetivo
 
-Define the governance, legal, data-protection, IP, liability and trust architecture required for the complete HUB system.
+Definir a arquitetura de governança, jurídica, proteção de dados, PI, responsabilidade civil e confiança exigida para o sistema HUB completo.
 
-## Required content
+## Conteúdo exigido
 
-1. Define responsibilities and boundaries for the four conceptual units.
-2. Map contracts, IP, data rights, controller/processor roles, retention and portability.
-3. Define accountability, decision rights, RACI, escalation and incident governance.
-4. Establish the conceptual independence requirements for Selo HUB.
-5. Define publication, claims, fairness, explainability, human review and model-control principles.
-6. Identify legal assumptions requiring professional review and connect each to gap IDs.
+1. Definir responsabilidades e fronteiras das quatro unidades conceituais.
+2. Mapear contratos, PI, direitos sobre dados, papéis de controlador/operador, retenção e portabilidade.
+3. Definir prestação de contas, direitos de decisão, RACI, escalonamento e governança de incidentes.
+4. Estabelecer os requisitos de independência conceitual do Selo HUB.
+5. Definir princípios de publicação, alegações (claims), justiça, explicabilidade, revisão humana e controle de modelos.
+6. Identificar premissas jurídicas que exigem revisão profissional e conectar cada uma aos IDs de gap.
 
-## Completion criteria
+## Critérios de conclusão
 
-- Governance boundaries are connected to business, product, data and operations.
-- Selo independence is treated as a dedicated controlled capability.
-- Unresolved legal questions are visible and not converted into implied facts.
-- The document clearly states that Blueprint content is not legal approval.
+- As fronteiras de governança estão conectadas a negócio, produto, dados e operações.
+- A independência do Selo é tratada como uma capacidade controlada dedicada.
+- Questões jurídicas não resolvidas são visíveis e não convertidas em fatos implícitos.
+- O documento declara claramente que o conteúdo do Blueprint não é aprovação legal.

@@ -1,5 +1,5 @@
 ---
-title: "HUB Product and Capability Blueprint"
+title: "HUB Blueprint de Produto e Capacidades"
 blueprint_id: BP-002
 status: draft
 layer: blueprint
@@ -10,58 +10,58 @@ updated: 2026-08-21
 gap_ids: [PRD-001, PRD-002, PRD-003, PRD-004, PRD-005, PRD-007]
 ---
 
-# BP-002 — HUB Product and Capability Blueprint
+# BP-002 — HUB Blueprint de Produto e Capacidades
 
-> [!warning] Maturity and accountability boundary
-> This is a product blueprint, not evidence of a production implementation. Existing sketches, dashboards and workflows are design references only. Any high-impact interpretation, recommendation, match, eligibility decision, assessment, public claim or recognition decision remains the responsibility of an identified human reviewer until approved controls and evidence exist.
+> [!warning] Fronteira de maturidade e responsabilização
+> Este é um blueprint de produto, não uma evidência de implementação em produção. Esboços, dashboards e fluxos de trabalho existentes são apenas referências de design. Qualquer interpretação, recomendação, match, decisão de elegibilidade, avaliação, declaração pública ou decisão de reconhecimento de alto impacto permanece sob a responsabilidade de um revisor humano identificado até que existam controles aprovados e evidências.
 
-This blueprint defines [[Plataforma HUB]] as a connected capability system supporting [[HUB Negócios]], [[Instituto HUB]] and the wider HUB ecosystem. It preserves the chain `diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir` and the C.A.O.S. method while keeping offer boundaries, data permissions, and service delivery explicit. **Depends on BP-001:** offer names, commercial packaging, buyer commitments and revenue mechanics must be reconciled with the offer architecture when BP-001 is approved; this document does not invent them.
+Este blueprint define a [[Plataforma HUB]] como um sistema conectado de capacidades que apoia o [[HUB Negócios]], o [[Instituto HUB]] e o ecossistema HUB mais amplo. Ele preserva a cadeia `diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir` e o método C.A.O.S., mantendo explícitas as fronteiras de oferta, as permissões de dados e a entrega de serviços. **Depende do BP-001:** nomes de ofertas, empacotamento comercial, compromissos de compra e mecânicas de receita devem ser reconciliados com a arquitetura de ofertas quando o BP-001 for aprovado; este documento não os inventa.
 
-## 1. Shared platform core and module boundaries
+## 1. Núcleo compartilhado da plataforma e fronteiras dos módulos
 
-### 1.1 Shared platform core
+### 1.1 Núcleo compartilhado da plataforma
 
-The core is the reusable operating substrate, not a seventh customer-facing module. Its capabilities are:
+O núcleo é o substrato operacional reutilizável, não um sétimo módulo voltado ao cliente. Suas capacidades são:
 
-| Core capability | Actors | Inputs | Outputs | Dependencies | Unresolved assumption |
+| Capacidade do núcleo | Atores | Entradas | Saídas | Dependências | Premissa não resolvida |
 |---|---|---|---|---|---|
-| Tenant and workspace management | HUB platform administrator; institution administrator | Contracted workspace, legal entity, brand, region, policy | Isolated tenant/workspace, configuration, lifecycle state | Identity, legal/entity model, billing/offer decisions | Whether an institution can own multiple sub-tenants and how white-label boundaries work (`PRD-001`, `PRD-003`). |
-| Identity and entity registry | Operators; participants; integration owners | Person, company, entity, supplier and relationship records; consent | Canonical IDs, aliases, links, merge/correction history | Canonical data model, source systems, LGPD controls | Which system is authoritative for each identity and who approves merges (`PRD-003`). |
-| Taxonomy, configuration and versioning | Method owner; product owner; analysts | C.A.O.S. definitions, questionnaires, skills, indicators, stages, policies | Versioned configurations with effective dates | Governance, data contracts, BP-001 offer configuration | Whether configurations are global, tenant-specific or forkable without method drift (`PRD-001`, `PRD-004`). |
-| Workflow and case orchestration | Operators; implementers; support | Journey cases, tasks, approvals, deadlines, events | State transitions, queues, notifications, escalations and audit events | Journey modules, support model, event catalog | Whether one case may span legal units and who owns cross-tenant cases (`PRD-002`, `PRD-005`). |
-| Evidence, consent and audit ledger | Participants; reviewers; governance; support | Submissions, files, sources, consent, decisions and corrections | Provenance, evidence status, access history, retention/deletion actions | LGPD, storage, data governance, human review | Retention periods and derivative-data treatment remain to be approved (`PRD-004`, `PRD-007`). |
-| Search, notifications and reporting primitives | All authorized users; operators | Authorized entities, events, measures and preferences | Search results, alerts, exports and operational views | Permissions, metric definitions, integrations | Which channels and service levels are launch-supported (`PRD-002`, `PRD-005`). |
+| Gestão de tenants e workspaces | Administrador da plataforma HUB; administrador da instituição | Workspace contratado, entidade legal, marca, região, política | Tenant/workspace isolado, configuração, estado do ciclo de vida | Identidade, modelo jurídico/entidade, decisões de cobrança/oferta | Se uma instituição pode possuir múltiplos sub-tenants e como funcionam as fronteiras white-label (`PRD-001`, `PRD-003`). |
+| Registro de identidades e entidades | Operadores; participantes; responsáveis por integrações | Registros de pessoas, empresas, entidades, fornecedores e relacionamentos; consentimento | IDs canônicos, aliases, vínculos, histórico de mesclagem/correção | Modelo de dados canônico, sistemas de origem, controles LGPD | Qual sistema é autoritativo para cada identidade e quem aprova mesclagens (`PRD-003`). |
+| Taxonomia, configuração e versionamento | Responsável pelo método; product owner; analistas | Definições do C.A.O.S., questionários, habilidades, indicadores, etapas, políticas | Configurações versionadas com datas de vigência | Governança, contratos de dados, configuração de ofertas do BP-001 | Se as configurações são globais, específicas por tenant ou bifurcáveis sem deriva do método (`PRD-001`, `PRD-004`). |
+| Orquestração de fluxos de trabalho e casos | Operadores; implementadores; suporte | Casos de jornada, tarefas, aprovações, prazos, eventos | Transições de estado, filas, notificações, escalonamentos e eventos de auditoria | Módulos de jornada, modelo de suporte, catálogo de eventos | Se um caso pode abranger unidades legais distintas e quem é responsável por casos entre tenants (`PRD-002`, `PRD-005`). |
+| Ledger de evidências, consentimento e auditoria | Participantes; revisores; governança; suporte | Submissões, arquivos, fontes, consentimento, decisões e correções | Proveniência, status das evidências, histórico de acesso, ações de retenção/exclusão | LGPD, armazenamento, governança de dados, revisão humana | Períodos de retenção e tratamento de dados derivados ainda precisam ser aprovados (`PRD-004`, `PRD-007`). |
+| Primitivas de busca, notificações e relatórios | Todos os usuários autorizados; operadores | Entidades, eventos, medidas e preferências autorizados | Resultados de busca, alertas, exportações e visões operacionais | Permissões, definições de métricas, integrações | Quais canais e níveis de serviço são suportados no lançamento (`PRD-002`, `PRD-005`). |
 
-The core establishes stable IDs, tenant isolation, purpose limitation, versioned definitions, event history, evidence lineage, reversible corrections and role-aware views. It does not decide what a customer buys, certify an outcome, autonomously select a supplier, or issue the [[Selo HUB]]. Those are configured or operated through bounded capabilities and accountable service processes.
+O núcleo estabelece IDs estáveis, isolamento de tenants, limitação de finalidade, definições versionadas, histórico de eventos, linhagem de evidências, correções reversíveis e visões sensíveis a papéis. Ele não decide o que um cliente compra, não certifica um resultado, não seleciona fornecedores autonomamente nem emite o [[Selo HUB]]. Isso é configurado ou operado por meio de capacidades delimitadas e processos de serviço com responsáveis definidos.
 
-### 1.2 Module contracts
+### 1.2 Contratos dos módulos
 
-Each module owns a distinct capability contract. A module may consume another module's published output but must not silently mutate its source of truth or conceal a dependency.
+Cada módulo possui um contrato de capacidade distinto. Um módulo pode consumir a saída publicada de outro módulo, mas não deve alterar silenciosamente sua fonte da verdade nem ocultar uma dependência.
 
-| Module and boundary | Primary actors | Inputs | Outputs | Dependencies | Unresolved assumptions |
+| Módulo e fronteira | Atores principais | Entradas | Saídas | Dependências | Premissas não resolvidas |
 |---|---|---|---|---|---|
-| **HUB Intelligence** — context, diagnosis, evidence, indicators, maturity and insights. It interprets authorized evidence; it does not make unreviewed high-impact decisions. | Analyst, institution lead, participant, reviewer | Context, questionnaire responses, evidence, events, benchmarks, definitions | Diagnosis, maturity view, evidence status, indicator views, explainable insight | Core registry, consent, metric catalog, human review | Which maturity scales and benchmarks are valid by cohort and which results can be published (`PRD-004`, `PRD-007`). |
-| **HUB Journey** — plans, stages, recommendations, actions, progress and outcome follow-through. It coordinates work; it does not guarantee delivery. | Journey owner, implementer, participant, support operator | Approved diagnosis, goals, actions, milestones, dependencies, decisions | Journey plan, tasks, status, reminders, exception queue, progress and outcome record | Intelligence, Solutions, Connections, support workflows | Whether a journey is customer-owned, HUB-owned or shared, and the minimum service commitment (`PRD-001`, `PRD-005`). |
-| **HUB Solutions** — curated suppliers, specialists, content and interventions. It presents candidates; curation and suitability stay accountable to humans. | Curator, supplier, specialist, buyer, participant | Need, capability gap, supplier profile, evidence, availability, conflicts | Curated solution set, rationale, terms, suitability status, feedback | Registry, Academy, governance, commercial rules | Curation criteria, commercial conflicts, supplier liability and whether marketplace behavior is in scope (`PRD-001`, `PRD-004`, `PRD-007`). |
-| **HUB Connections** — opportunities, matching, introductions and follow-through. It facilitates a relationship; it does not promise fit, procurement or revenue. | Opportunity owner, buyer, participant, match reviewer, partner | Opportunity brief, eligibility, skills, consent, relationship constraints | Candidate matches, rationale, introduction, acceptance, interaction and outcome status | Intelligence, Solutions, registry, permissions, support | Match explainability threshold, opt-in rules, conflict handling and owner of failed introductions (`PRD-003`, `PRD-004`, `PRD-007`). |
-| **HUB Academy** — learning, capability development and enablement. It records learning activity and evidence; it does not equate completion with business impact. | Learner, facilitator, content owner, evaluator, operator | Capability gap, curriculum, content, enrollment, activity and assessment | Learning plan, completion, assessment evidence, capability signal | Journey, Intelligence, content governance, identity | Which credentials are meaningful and how learning evidence can be used in recognition or recommendations (`PRD-004`, `PRD-007`). |
-| **HUB Recognition** — evidence-based recognition and [[Selo HUB]]. It administers an independent review process, not a sales entitlement. | Applicant, evaluator, independent governance, institution, public audience | Eligibility, evidence package, review criteria, conflict declarations, appeals | Decision, rationale, validity period, public/private claim, withdrawal/appeal record | Intelligence evidence, governance, audit, legal independence | Evaluator appointment/payment, separation from commercial delivery, appeal authority and public claims (`PRD-004`, `PRD-007`). |
+| **HUB Intelligence** — contexto, diagnóstico, evidências, indicadores, maturidade e insights. Interpreta evidências autorizadas; não toma decisões de alto impacto sem revisão. | Analista, líder da instituição, participante, revisor | Contexto, respostas de questionários, evidências, eventos, benchmarks, definições | Diagnóstico, visão de maturidade, status das evidências, visões de indicadores, insight explicável | Registro do núcleo, consentimento, catálogo de métricas, revisão humana | Quais escalas de maturidade e benchmarks são válidos por coorte e quais resultados podem ser publicados (`PRD-004`, `PRD-007`). |
+| **HUB Journey** — planos, etapas, recomendações, ações, progresso e acompanhamento de resultados. Coordena o trabalho; não garante a entrega. | Responsável pela jornada, implementador, participante, operador de suporte | Diagnóstico aprovado, metas, ações, marcos, dependências, decisões | Plano de jornada, tarefas, status, lembretes, fila de exceções, registro de progresso e resultados | Intelligence, Solutions, Connections, fluxos de suporte | Se uma jornada é de propriedade do cliente, do HUB ou compartilhada, e qual é o compromisso mínimo de serviço (`PRD-001`, `PRD-005`). |
+| **HUB Solutions** — fornecedores, especialistas, conteúdos e intervenções curados. Apresenta candidatos; a curadoria e a adequação permanecem sob responsabilidade humana. | Curador, fornecedor, especialista, comprador, participante | Necessidade, lacuna de capacidade, perfil do fornecedor, evidências, disponibilidade, conflitos | Conjunto de soluções curadas, justificativa, termos, status de adequação, feedback | Registry, Academy, governança, regras comerciais | Critérios de curadoria, conflitos comerciais, responsabilidade do fornecedor e se comportamento de marketplace está no escopo (`PRD-001`, `PRD-004`, `PRD-007`). |
+| **HUB Connections** — oportunidades, matching, apresentações e acompanhamento. Facilita um relacionamento; não promete aderência, compra ou receita. | Responsável pela oportunidade, comprador, participante, revisor de matches, parceiro | Briefing da oportunidade, elegibilidade, habilidades, consentimento, restrições de relacionamento | Matches candidatos, justificativa, apresentação, aceitação, interação e status do resultado | Intelligence, Solutions, registro, permissões, suporte | Limiar de explicabilidade de matches, regras de opt-in, tratamento de conflitos e responsável por apresentações malsucedidas (`PRD-003`, `PRD-004`, `PRD-007`). |
+| **HUB Academy** — aprendizagem, desenvolvimento de capacidades e habilitação. Registra atividade e evidências de aprendizagem; não equipara conclusão a impacto de negócio. | Aprendiz, facilitador, responsável por conteúdo, avaliador, operador | Lacuna de capacidade, currículo, conteúdo, inscrição, atividade e avaliação | Plano de aprendizagem, conclusão, evidências de avaliação, sinal de capacidade | Journey, Intelligence, governança de conteúdo, identidade | Quais credenciais são significativas e como evidências de aprendizagem podem ser usadas em reconhecimento ou recomendações (`PRD-004`, `PRD-007`). |
+| **HUB Recognition** — reconhecimento baseado em evidências e [[Selo HUB]]. Administra um processo de revisão independente, não um direito decorrente de vendas. | Candidato, avaliador, governança independente, instituição, público | Elegibilidade, pacote de evidências, critérios de revisão, declarações de conflito, recursos | Decisão, justificativa, período de validade, alegação pública/privada, registro de retirada/recurso | Evidências do Intelligence, governança, auditoria, independência jurídica | Nomeação/pagamento de avaliadores, separação da entrega comercial, autoridade de recurso e alegações públicas (`PRD-004`, `PRD-007`). |
 
-### 1.3 Boundary rules and sequencing
+### 1.3 Regras de fronteira e sequenciamento
 
-1. A module may be launched as a human-led service using the core ledger before its complete software experience exists, but the service boundary must be documented and auditable.
-2. A recommendation, match or insight is a proposed output with provenance and confidence, never an entitlement or guarantee.
-3. A Journey action must reference an approved source need, owner, due date and success measure; free-floating tasks are operational notes, not product outcomes.
-4. Recognition consumes evidence and independent review; commercial implementation cannot automatically create recognition eligibility.
-5. Each module publishes versioned contracts for inputs, outputs, states, permissions and audit events. Refinement must turn these contracts into acceptance criteria before implementation claims are made.
+1. Um módulo pode ser lançado como um serviço conduzido por humanos usando o ledger do núcleo antes que sua experiência completa de software exista, mas a fronteira do serviço deve estar documentada e ser auditável.
+2. Uma recomendação, match ou insight é uma saída proposta com proveniência e nível de confiança, nunca um direito garantido ou uma promessa.
+3. Uma ação do Journey deve referenciar uma necessidade de origem aprovada, responsável, prazo e medida de sucesso; tarefas soltas são notas operacionais, não resultados de produto.
+4. O Recognition consome evidências e revisão independente; a implementação comercial não pode criar automaticamente elegibilidade para reconhecimento.
+5. Cada módulo publica contratos versionados para entradas, saídas, estados, permissões e eventos de auditoria. O refinement deve transformar esses contratos em critérios de aceite antes de qualquer alegação de implementação.
 
-## 2. Actors, roles, tenants, entities, permissions and data visibility
+## 2. Atores, papéis, tenants, entidades, permissões e visibilidade de dados
 
-### 2.1 Tenant and entity model
+### 2.1 Modelo de tenants e entidades
 
-The product distinguishes **tenant**, **workspace**, **legal entity**, and **person**. A tenant is an isolation and policy boundary. A workspace is a program, account, ecosystem or deployment context inside a tenant. A legal entity is a governed organization with contractual and data responsibilities. A person may participate in several workspaces only through explicit relationships and permissions. A company, supplier, association, program, project, opportunity, journey, assessment, recommendation, match, contract, transaction, metric and recognition case are separate entities with stable IDs and temporal history.
+O produto distingue **tenant**, **workspace**, **entidade legal** e **pessoa**. Um tenant é uma fronteira de isolamento e política. Um workspace é um programa, conta, ecossistema ou contexto de implantação dentro de um tenant. Uma entidade legal é uma organização governada com responsabilidades contratuais e de dados. Uma pessoa pode participar de vários workspaces somente por meio de relacionamentos e permissões explícitos. Empresa, fornecedor, associação, programa, projeto, oportunidade, jornada, avaliação, recomendação, match, contrato, transação, métrica e caso de reconhecimento são entidades separadas com IDs estáveis e histórico temporal.
 
-Proposed tenancy hierarchy:
+Hierarquia de tenancy proposta:
 
 ```text
 HUB platform operator
@@ -72,159 +72,159 @@ HUB platform operator
     └── journeys, opportunities, evidence, measures and cases
 ```
 
-HUB may operate an internal tenant for platform administration and a separate recognition workspace where independence controls require it. [[HUB Negócios]] and [[Instituto HUB]] must not be presumed to share unrestricted data. Cross-tenant exchange requires a declared purpose, lawful basis/consent where applicable, a receiving owner, minimum fields, expiry and audit trail.
+O HUB pode operar um tenant interno para administração da plataforma e um workspace de reconhecimento separado quando os controles de independência exigirem. Não se deve presumir que [[HUB Negócios]] e [[Instituto HUB]] compartilhem dados sem restrições. A troca entre tenants exige finalidade declarada, base legal/consentimento quando aplicável, um responsável receptor, campos mínimos, expiração e trilha de auditoria.
 
-### 2.2 Actor and role matrix
+### 2.2 Matriz de atores e papéis
 
-| Actor / role | Typical permissions | Data visibility | Accountability and limits |
+| Ator / papel | Permissões típicas | Visibilidade de dados | Responsabilização e limites |
 |---|---|---|---|
-| HUB platform administrator | Configure tenants, integrations, support impersonation with approval, manage technical access | Metadata and support diagnostics; no default access to sensitive participant content | Maintains availability and access controls; cannot approve recognition or alter evidence silently. |
-| Tenant / institution administrator | Manage workspace members, policies, programs, forms and local configuration | Tenant-scoped records; aggregated participant views according to purpose | Owns local administration and lawful use; cannot view another tenant or override independent decisions. |
-| Executive / decision sponsor | View approved dashboards, decisions, outcomes and risks | Aggregated or purpose-limited workspace data | Decides investment/priorities; does not receive unnecessary personal-level data. |
-| Journey owner / implementer | Create and manage plans, tasks, milestones, follow-through and escalations | Assigned cases and minimum necessary evidence | Accountable for delivery action and status quality; cannot certify another party's impact without review. |
-| Analyst / evaluator | Review evidence, run approved analyses, draft insights and assessments | Evidence needed for assigned case/cohort; protected fields masked where possible | Produces reproducible, explainable work; high-impact output requires second-level approval. |
-| Curator / match reviewer | Review solution and match candidates, record rationale and conflicts | Candidate profiles and relevant constraints, not unrelated private data | Human accountability for curation/matching, recusals and reversibility. |
-| Participant / learner | Submit profile, evidence, consent, goals, progress and feedback; request correction/appeal | Own records plus explicitly shared opportunity/journey information | Controls consent and accuracy; does not gain access to peers' confidential data. |
-| Supplier / specialist / partner | Maintain approved profile, respond to opportunities, deliver assigned work and submit evidence | Own profile, assigned requests and accepted relationship data | Responsible for truthful submissions and delivery terms; no access to client-wide diagnostics. |
-| Support operator | Triage tickets, inspect audit metadata, execute approved corrections and escalations | Minimum necessary case data; sensitive content gated | Restores service and records actions; cannot change decisions or suppress audit history. |
-| Governance / privacy / legal reviewer | Review access, consent, incidents, claims, appeals and control evidence | Full access only when justified, logged and time-bound | Approves controls and resolves conflicts; preserves independence from commercial pressure. |
-| Recognition evaluator / Selo governance | Review eligibility and evidence, issue/withdraw recognition under charter | Recognition case only, with conflict and independence controls | Solely accountable for recognition decision; must recuse, explain, hear appeals and retain trail. |
+| Administrador da plataforma HUB | Configurar tenants, integrações, impersonação de suporte com aprovação, gerenciar acesso técnico | Metadados e diagnósticos de suporte; sem acesso padrão a conteúdo sensível de participantes | Mantém disponibilidade e controles de acesso; não pode aprovar reconhecimento nem alterar evidências silenciosamente. |
+| Administrador de tenant / instituição | Gerenciar membros de workspaces, políticas, programas, formulários e configuração local | Registros no escopo do tenant; visões agregadas de participantes conforme a finalidade | É responsável pela administração local e pelo uso lícito; não pode visualizar outro tenant nem sobrepor decisões independentes. |
+| Patrocinador executivo / de decisões | Visualizar dashboards aprovados, decisões, resultados e riscos | Dados agregados ou limitados por finalidade do workspace | Decide investimentos/prioridades; não recebe dados pessoais desnecessários. |
+| Responsável pela jornada / implementador | Criar e gerenciar planos, tarefas, marcos, acompanhamentos e escalonamentos | Casos atribuídos e evidências mínimas necessárias | Responsável pela qualidade das ações de entrega e dos status; não pode certificar o impacto de terceiros sem revisão. |
+| Analista / avaliador | Revisar evidências, executar análises aprovadas, elaborar insights e avaliações | Evidências necessárias para o caso/coorte atribuído; campos protegidos mascarados sempre que possível | Produz trabalho reproduzível e explicável; saída de alto impacto exige aprovação de segundo nível. |
+| Curador / revisor de matches | Revisar candidatos de soluções e matches, registrar justificativas e conflitos | Perfis de candidatos e restrições relevantes, não dados privados não relacionados | Responsabilização humana por curadoria/matching, recusas e reversibilidade. |
+| Participante / aprendiz | Enviar perfil, evidências, consentimento, metas, progresso e feedback; solicitar correção/recurso | Próprios registros mais informações de oportunidade/jornada explicitamente compartilhadas | Controla consentimento e exatidão; não obtém acesso a dados confidenciais de pares. |
+| Fornecedor / especialista / parceiro | Manter perfil aprovado, responder a oportunidades, entregar trabalho atribuído e submeter evidências | Próprio perfil, solicitações atribuídas e dados de relacionamentos aceitos | Responsável por submissões verídicas e termos de entrega; sem acesso a diagnósticos de todo o cliente. |
+| Operador de suporte | Triar tickets, inspecionar metadados de auditoria, executar correções e escalonamentos aprovados | Dados mínimos necessários do caso; conteúdo sensível restrito | Restaura o serviço e registra ações; não pode alterar decisões nem suprimir histórico de auditoria. |
+| Revisor de governança / privacidade / jurídico | Revisar acessos, consentimentos, incidentes, alegações, recursos e evidências de controles | Acesso completo apenas quando justificado, registrado e com prazo determinado | Aprova controles e resolve conflitos; preserva independência de pressões comerciais. |
+| Avaliador de reconhecimento / governança do Selo | Revisar elegibilidade e evidências, conceder/retirar reconhecimento conforme carta de princípios | Somente o caso de reconhecimento, com controles de conflito e independência | Único responsável pela decisão de reconhecimento; deve declarar impedimento, explicar, ouvir recursos e manter a trilha. |
 
-Roles are assignable at tenant, workspace, case and entity scope. A user's job title is not permission. Every privileged action requires actor, scope, reason, timestamp, before/after state and applicable policy version.
+Os papéis são atribuíveis nos escopos de tenant, workspace, caso e entidade. O cargo de um usuário não é permissão. Toda ação privilegiada exige ator, escopo, motivo, carimbo de data/hora, estado anterior/posterior e versão aplicável da política.
 
-### 2.3 Permission and visibility principles
+### 2.3 Princípios de permissão e visibilidade
 
-- **Default deny:** access begins with no visibility and is granted by role, tenant, workspace, entity relationship, purpose and time.
-- **Least privilege:** expose the minimum fields needed for the task; use aggregation, masking and pseudonymization for analysis.
-- **Purpose binding:** consent or lawful basis follows the data through recommendations, matches, measurement, recognition and derivatives; a new purpose requires a new decision.
-- **Separation of duties:** submitter, reviewer, approver, evaluator and publisher should not be the same person for high-impact outputs.
-- **Tenant isolation:** search, exports, notifications, caches and support tools must enforce tenant boundaries, including indirect relationship paths.
-- **Participant rights:** participants can view relevant records, request correction, withdraw where applicable, appeal decisions and obtain portable outputs subject to legal constraints.
-- **Audit and reversibility:** deletion, correction, access grants, overrides, publications and withdrawals are append-only events; derived outputs are re-evaluated rather than silently rewritten.
+- **Negação por padrão:** o acesso começa sem visibilidade e é concedido por papel, tenant, workspace, relacionamento com a entidade, finalidade e tempo.
+- **Menor privilégio:** expor os campos mínimos necessários para a tarefa; usar agregação, mascaramento e pseudonimização para análises.
+- **Vinculação à finalidade:** o consentimento ou a base legal acompanha os dados por recomendações, matches, medições, reconhecimento e derivados; uma nova finalidade exige uma nova decisão.
+- **Separação de funções:** quem submete, revisa, aprova, avalia e publica não deve ser a mesma pessoa para saídas de alto impacto.
+- **Isolamento de tenants:** busca, exportações, notificações, caches e ferramentas de suporte devem fazer cumprir as fronteiras de tenant, inclusive caminhos indiretos de relacionamento.
+- **Direitos dos participantes:** participantes podem visualizar registros relevantes, solicitar correção, retirar-se quando aplicável, recorrer de decisões e obter saídas portáveis, sujeitas a restrições legais.
+- **Auditoria e reversibilidade:** exclusão, correção, concessão de acesso, sobreposições, publicações e retiradas são eventos append-only; saídas derivadas são reavaliadas em vez de silenciosamente reescritas.
 
-The authorization matrix remains a refinement deliverable. The blueprint specifies the decision dimensions but does not claim that enforcement exists. This directly addresses [[PRD-003]] and [[PRD-002]].
+A matriz de autorização permanece como entregável de refinement. O blueprint especifica as dimensões de decisão, mas não afirma que a aplicação existe. Isso trata diretamente de [[PRD-003]] e [[PRD-002]].
 
-## 3. End-to-end journey: context, diagnosis, action, measurement, recognition and evolution
+## 3. Jornada ponta a ponta: contexto, diagnóstico, ação, medição, reconhecimento e evolução
 
-The journey is a governed case lifecycle, not merely a screen sequence. It may start with an institution, company, ecosystem owner, participant or opportunity owner, and can return to earlier stages when evidence changes.
+A jornada é um ciclo de vida de caso governado, não meramente uma sequência de telas. Pode começar com uma instituição, empresa, dono de ecossistema, participante ou dono de oportunidade, e pode retornar a etapas anteriores quando as evidências mudam.
 
-| Stage | Human-accountable activity | Product capability | Inputs | Outputs / exit criteria | Dependencies and unresolved assumptions |
+| Etapa | Atividade sob responsabilidade humana | Capacidade do produto | Entradas | Saídas / critérios de saída | Dependências e premissas não resolvidas |
 |---|---|---|---|---|---|
-| **Context** | Sponsor and journey owner define purpose, scope, stakeholders, constraints, legal basis, success hypothesis and decision rights. | Create tenant/workspace/case; configure context; consent and scope checklist. | Organization/context brief, opportunity, participants, contracts, purpose. | Approved case charter with owner, scope, privacy status and baseline plan. | Depends on BP-001: exact offer trigger and buyer commitment. Tenancy and lawful basis unresolved (`PRD-001`, `PRD-003`). |
-| **Onboarding** | Operator verifies identities, invitations, roles, accessibility and expectations. | Identity resolution, invitations, profile, consent, support route. | Identity attributes, relationship assertions, permissions, language/preferences. | Reconciled identities, active participants and recorded consent. | Canonical identity, merge and support process unresolved (`PRD-002`, `PRD-003`). |
-| **Diagnosis** | Analyst selects/version-approves instrument, reviews context, interprets responses and flags limitations. | Versioned questionnaires, evidence intake, completeness/status and draft diagnosis. | Responses, documents, source data, skill/capability taxonomy, baseline metrics. | Reproducible diagnosis with evidence references, confidence, gaps and reviewer assignment. | Versioning, evidence standards, protected attributes and reviewer thresholds unresolved (`PRD-004`, `PRD-007`). |
-| **Prioritization / Architecture** | Sponsor and journey owner choose goals, sequence, owners, measures and risk treatment. | Prioritization workspace and journey plan. | Approved diagnosis, constraints, budget/capacity, target outcomes. | Signed-off plan with milestones, dependencies, decision log and escalation rules. | Offer packaging and service levels depend on BP-001; no automated prioritization of high-impact matters (`PRD-001`, `PRD-005`, `PRD-007`). |
-| **Action / Operation** | Implementers deliver interventions, recruit participants, curate solutions, make introductions and record decisions. | Tasks, solution catalog, opportunity/match workflow, communications and case notes. | Plan, candidate set, availability, terms, consent, rationale and approvals. | Accepted action, assigned owner, due date, delivery evidence and unresolved exceptions. | Curation, matching, supplier liability and operational SOPs unresolved (`PRD-004`, `PRD-005`, `PRD-007`). |
-| **Follow-through** | Journey owner checks participation, removes blockers, escalates and records non-delivery or changed context. | Progress, reminders, exception queue, escalation and change-control. | Activity events, feedback, milestone status, incidents and updated context. | Current status, decision/exception record, revised plan or closure recommendation. | Escalation authority and support SLAs unresolved (`PRD-002`, `PRD-005`). |
-| **Measurement** | Analyst and sponsor agree denominators, compare baseline, review attribution and qualify outcome evidence. | Indicator catalog, outcome capture, evidence lineage and reports. | Baseline, events, business metrics, cohort/benchmark, intervention exposure. | Descriptive/leading/operational/experimental/financial result with evidence state; no automatic causal claim. | Metric definitions, source of truth, attribution and value states depend on data/finance blueprints; product must not overclaim (`PRD-004`, `PRD-007`). |
-| **Recognition** | Independent evaluator reviews eligibility, conflicts, evidence, appeals and public/private claim. | Recognition case, review queue, decision, validity and withdrawal trail. | Approved evidence package, criteria version, evaluator declaration. | Recognition decision or reasoned non-recognition, appeal route and controlled claim. | [[Selo HUB]] independence and governance are unresolved; commercial delivery cannot guarantee recognition (`PRD-007`). |
-| **Evolution** | Sponsor, participant and HUB review learning, update method/content, renew/close journey and decide next experiment. | Retrospective, feedback, version release, renewal/closure and learning loop. | Outcomes, feedback, incidents, costs, adoption, recognition and open risks. | Decision record, updated configuration, new baseline or safely closed case. | Automation/module expansion gates and offer renewal model depend on BP-001 and PRD-005; preserve old versions for audit. |
+| **Contexto** | Patrocinador e responsável pela jornada definem propósito, escopo, stakeholders, restrições, base legal, hipótese de sucesso e direitos de decisão. | Criar tenant/workspace/caso; configurar contexto; checklist de consentimento e escopo. | Briefing da organização/contexto, oportunidade, participantes, contratos, finalidade. | Carta de caso aprovada com responsável, escopo, status de privacidade e plano de linha de base. | Depende do BP-001: gatilho exato da oferta e compromisso do comprador. Tenancy e base legal não resolvidos (`PRD-001`, `PRD-003`). |
+| **Onboarding** | Operador verifica identidades, convites, papéis, acessibilidade e expectativas. | Resolução de identidade, convites, perfil, consentimento, rota de suporte. | Atributos de identidade, declarações de relacionamento, permissões, idioma/preferências. | Identidades reconciliadas, participantes ativos e consentimento registrado. | Identidade canônica, mesclagem e processo de suporte não resolvidos (`PRD-002`, `PRD-003`). |
+| **Diagnóstico** | Analista seleciona/aprova versão do instrumento, revisa o contexto, interpreta respostas e sinaliza limitações. | Questionários versionados, entrada de evidências, completude/status e diagnóstico preliminar. | Respostas, documentos, dados de origem, taxonomia de habilidades/capacidades, métricas de linha de base. | Diagnóstico reproduzível com referências às evidências, confiança, lacunas e revisor designado. | Versionamento, padrões de evidência, atributos protegidos e limiares de revisor não resolvidos (`PRD-004`, `PRD-007`). |
+| **Priorização / Arquitetura** | Patrocinador e responsável pela jornada escolhem metas, sequência, responsáveis, medidas e tratamento de riscos. | Workspace de priorização e plano de jornada. | Diagnóstico aprovado, restrições, orçamento/capacidade, resultados-alvo. | Plano formalmente aprovado com marcos, dependências, registro de decisões e regras de escalonamento. | Empacotamento de oferta e níveis de serviço dependem do BP-001; sem priorização automatizada de questões de alto impacto (`PRD-001`, `PRD-005`, `PRD-007`). |
+| **Ação / Operação** | Implementadores entregam intervenções, recrutam participantes, curam soluções, fazem apresentações e registram decisões. | Tarefas, catálogo de soluções, fluxo de oportunidade/match, comunicações e notas do caso. | Plano, conjunto de candidatos, disponibilidade, termos, consentimento, justificativa e aprovações. | Ação aceita, responsável designado, prazo, evidência de entrega e exceções não resolvidas. | Curadoria, matching, responsabilidade do fornecedor e SOPs operacionais não resolvidos (`PRD-004`, `PRD-005`, `PRD-007`). |
+| **Acompanhamento** | O responsável pela jornada verifica participação, remove bloqueios, escala e registra não entrega ou contexto alterado. | Progresso, lembretes, fila de exceções, escalonamento e controle de mudanças. | Eventos de atividade, feedback, status dos marcos, incidentes e contexto atualizado. | Status atual, registro de decisão/exceção, plano revisado ou recomendação de encerramento. | Autoridade de escalonamento e SLAs de suporte não resolvidos (`PRD-002`, `PRD-005`). |
+| **Medição** | Analista e patrocinador acordam denominadores, comparam a linha de base, revisam atribuição e qualificam evidências de resultado. | Catálogo de indicadores, captura de resultados, linhagem de evidências e relatórios. | Linha de base, eventos, métricas de negócio, coorte/benchmark, exposição à intervenção. | Resultado descritivo/antecipatório/operacional/experimental/financeiro com estado das evidências; sem alegação causal automática. | Definições de métricas, fonte da verdade, atribuição e estados de valor dependem dos blueprints de dados/finanças; o produto não pode superestimar alegações (`PRD-004`, `PRD-007`). |
+| **Reconhecimento** | Avaliador independente revisa elegibilidade, conflitos, evidências, recursos e alegação pública/privada. | Caso de reconhecimento, fila de revisão, decisão, validade e trilha de retirada. | Pacote de evidências aprovado, versão dos critérios, declaração do avaliador. | Decisão de reconhecimento ou não reconhecimento fundamentada, rota de recurso e alegação controlada. | Independência e governança do [[Selo HUB]] não resolvidas; a entrega comercial não pode garantir reconhecimento (`PRD-007`). |
+| **Evolução** | Patrocinador, participante e HUB revisam aprendizados, atualizam método/conteúdo, renovam/encerram a jornada e decidem o próximo experimento. | Retrospectiva, feedback, liberação de versão, renovação/encerramento e ciclo de aprendizagem. | Resultados, feedback, incidentes, custos, adoção, reconhecimento e riscos abertos. | Registro de decisão, configuração atualizada, nova linha de base ou caso encerrado com segurança. | Portões de expansão de automação/módulos e modelo de renovação de oferta dependem do BP-001 e PRD-005; preservar versões antigas para auditoria. |
 
-At every stage, a state transition is valid only when required fields, permissions, evidence status and approvals are present. A failed transition creates a visible queue item rather than silently advancing. A participant may pause, correct or appeal without losing the full history. A journey may be closed as incomplete; closure is not equivalent to success.
+Em cada etapa, uma transição de estado só é válida quando campos obrigatórios, permissões, status das evidências e aprovações estão presentes. Uma transição falha cria um item visível na fila em vez de avançar silenciosamente. Um participante pode pausar, corrigir ou recorrer sem perder o histórico completo. Uma jornada pode ser encerrada como incompleta; encerramento não equivale a sucesso.
 
-## 4. Operator console, participant experiences, support workflows and exception handling
+## 4. Console do operador, experiências de participantes, fluxos de suporte e tratamento de exceções
 
-### 4.1 Operator console
+### 4.1 Console do operador
 
-The operator console is the control plane for human delivery. Its minimum conceptual areas are:
+O console do operador é o plano de controle para entrega humana. Suas áreas conceituais mínimas são:
 
-1. **Work queue:** cases by stage, priority, SLA, risk, missing evidence and owner; filters must respect tenant and purpose.
-2. **Case timeline:** context, submissions, decisions, actions, communications, exceptions and immutable audit events.
-3. **Evidence review:** versioned instrument, source references, completeness, reviewer comments, confidence, conflicts and approval controls.
-4. **Curation and matching:** candidate comparison, rationale, exclusions, consent, conflicts, human override and follow-through state.
-5. **Journey operations:** milestones, dependencies, blockers, escalations, change requests and outcome capture.
-6. **Measurement and publication:** metric definitions, denominator, evidence state, reviewer sign-off and claims gate.
-7. **Access and support:** role grants, impersonation approval, ticket links, correction requests, DSAR/deletion state and incident handling.
+1. **Fila de trabalho:** casos por etapa, prioridade, SLA, risco, evidências faltantes e responsável; os filtros devem respeitar tenant e finalidade.
+2. **Linha do tempo do caso:** contexto, submissões, decisões, ações, comunicações, exceções e eventos de auditoria imutáveis.
+3. **Revisão de evidências:** instrumento versionado, referências de origem, completude, comentários do revisor, confiança, conflitos e controles de aprovação.
+4. **Curadoria e matching:** comparação de candidatos, justificativa, exclusões, consentimento, conflitos, sobreposição humana e estado do acompanhamento.
+5. **Operações de jornada:** marcos, dependências, bloqueios, escalonamentos, solicitações de mudança e captura de resultados.
+6. **Medição e publicação:** definições de métricas, denominador, estado das evidências, validação do revisor e portão de alegações.
+7. **Acesso e suporte:** concessão de papéis, aprovação de impersonação, links de tickets, solicitações de correção, estado de DSAR/exclusão e tratamento de incidentes.
 
-These are capability areas, not an implemented interface. A dashboard sketch or mobile concept cannot be used as evidence that any workflow, permission, or integration exists. [[PRD-002]] requires the console to be converted into system behavior and acceptance criteria.
+Estas são áreas de capacidade, não uma interface implementada. Um esboço de dashboard ou um conceito mobile não pode ser usado como evidência de que qualquer fluxo de trabalho, permissão ou integração existe. [[PRD-002]] exige que o console seja convertido em comportamento de sistema e critérios de aceite.
 
-### 4.2 Participant and partner experiences
+### 4.2 Experiências de participantes e parceiros
 
-Participants need a low-friction, accessible experience to understand purpose, consent, profile, requests, actions, progress, evidence, feedback and rights. Suppliers and specialists need a separate experience for profile verification, opportunities, response, terms, delivery and payment/contract status where in scope. Sponsors need a decision-oriented view of approved progress and risks, not unrestricted raw personal data. Evaluators need a segregated recognition workspace.
+Participantes precisam de uma experiência acessível e de baixa fricção para entender propósito, consentimento, perfil, solicitações, ações, progresso, evidências, feedback e direitos. Fornecedores e especialistas precisam de uma experiência separada para verificação de perfil, oportunidades, resposta, termos, entrega e status de pagamento/contrato quando no escopo. Patrocinadores precisam de uma visão orientada a decisões do progresso e riscos aprovados, não de dados pessoais brutos sem restrições. Avaliadores precisam de um workspace de reconhecimento segregado.
 
-All experiences must show status and next action in plain language, distinguish draft from approved outputs, identify who is accountable, and provide correction/appeal/support paths. White-label configuration may change presentation and tenant terminology but cannot remove HUB methodology integrity, evidence labels, auditability, privacy notices or independent recognition safeguards.
+Todas as experiências devem mostrar status e próxima ação em linguagem simples, distinguir rascunhos de saídas aprovadas, identificar quem é o responsável e oferecer caminhos de correção/recurso/suporte. A configuração white-label pode mudar a apresentação e a terminologia do tenant, mas não pode remover a integridade metodológica do HUB, os rótulos de evidência, a auditabilidade, os avisos de privacidade nem as salvaguardas de reconhecimento independente.
 
-### 4.3 Support workflow
+### 4.3 Fluxo de suporte
 
-Support follows a severity-based service blueprint:
+O suporte segue um blueprint de serviço baseado em severidade:
 
-1. **Intake:** authenticate requester, classify tenant/case, capture impact, urgency, sensitive-data flag and consent to investigate.
-2. **Triage:** determine how-to, access, data correction, workflow blockage, safety/fairness, privacy, security or service incident.
-3. **Containment:** preserve evidence, suspend unsafe publication/access, prevent duplicate actions and notify accountable owner.
-4. **Resolution:** provide documented response, correction, reprocessing, rollback, appeal routing or legal/privacy escalation.
-5. **Closure:** obtain confirmation where appropriate, record root cause, update status and retain audit evidence.
-6. **Learning:** convert recurring issues into product defects, SOP updates, taxonomy changes or a decision to not automate.
+1. **Abertura:** autenticar o solicitante, classificar tenant/caso, capturar impacto, urgência, sinalização de dados sensíveis e consentimento para investigar.
+2. **Triagem:** determinar se é dúvida de uso, acesso, correção de dados, bloqueio de fluxo de trabalho, segurança/equidade, privacidade, segurança da informação ou incidente de serviço.
+3. **Contenção:** preservar evidências, suspender publicação/acesso inseguros, prevenir ações duplicadas e notificar o responsável.
+4. **Resolução:** fornecer resposta documentada, correção, reprocessamento, rollback, encaminhamento de recurso ou escalonamento jurídico/privacidade.
+5. **Encerramento:** obter confirmação quando apropriado, registrar causa raiz, atualizar status e reter evidências de auditoria.
+6. **Aprendizado:** converter problemas recorrentes em defeitos de produto, atualizações de SOP, mudanças de taxonomia ou uma decisão de não automatizar.
 
-Support operators may inspect only minimum necessary data. Impersonation is time-bound, reason-coded, approved and fully logged. No support action may erase an audit event or override an evaluator/approval decision without the designated authority.
+Operadores de suporte podem inspecionar apenas os dados mínimos necessários. A impersonação tem prazo determinado, código de motivo, aprovação e registro completo. Nenhuma ação de suporte pode apagar um evento de auditoria ou sobrepor uma decisão de avaliador/aprovação sem a autoridade designada.
 
-### 4.4 Exceptions and escalation
+### 4.4 Exceções e escalonamento
 
-| Exception | Immediate control | Escalation owner | Required record / outcome |
+| Exceção | Controle imediato | Responsável pelo escalonamento | Registro exigido / resultado |
 |---|---|---|---|
-| Missing, conflicting or low-quality evidence | Mark incomplete; prevent approval/publication; request correction | Analyst lead / journey owner | Source, impact, request, resolution and evidence version. |
-| Identity collision or suspected duplicate | Quarantine merge; preserve both records | Identity/data steward | Match rationale, decision, affected derivatives and reversal path. |
-| Inappropriate access or tenant leakage | Revoke session/permission; preserve logs; assess incident | Security/privacy owner | Scope, containment, notification and remediation. |
-| Unsafe, unfair or unexplained recommendation/match | Pause release; human review; offer alternative | Responsible-intelligence reviewer | Inputs, rationale, protected-impact check, override and appeal. |
-| Supplier/participant complaint or failed introduction | Pause next action; collect both accounts; avoid retaliation | Relationship/journey owner | Complaint, conflict check, response, remedy and learning. |
-| Missed milestone or delivery blocker | Flag at-risk; replan or escalate, do not silently close | Journey owner / sponsor | Cause, revised commitment, owner and decision. |
-| Recognition conflict, challenge or withdrawal request | Recuse evaluator; freeze claim; open appeal | Independent Selo governance | Conflict declaration, review panel, decision and public-claim action. |
-| Metric anomaly or disputed value claim | Freeze publication; mark provisional; reconcile lineage | Measurement/finance reviewer | Definition, source, denominator, correction and approval status. |
+| Evidência ausente, conflitante ou de baixa qualidade | Marcar como incompleta; impedir aprovação/publicação; solicitar correção | Líder de analistas / responsável pela jornada | Origem, impacto, solicitação, resolução e versão da evidência. |
+| Colisão de identidade ou duplicata suspeita | Colocar mesclagem em quarentena; preservar ambos os registros | Guardião de identidade/dados | Justificativa do match, decisão, derivados afetados e caminho de reversão. |
+| Acesso indevido ou vazamento entre tenants | Revogar sessão/permissão; preservar logs; avaliar incidente | Responsável por segurança/privacidade | Escopo, contenção, notificação e remediação. |
+| Recomendação/match inseguro, injusto ou inexplicável | Pausar liberação; revisão humana; oferecer alternativa | Revisor de inteligência responsável | Entradas, justificativa, verificação de impacto sobre grupos protegidos, sobreposição e recurso. |
+| Reclamação de fornecedor/participante ou apresentação malsucedida | Pausar próxima ação; coletar ambas as versões; evitar retaliação | Responsável por relacionamento/jornada | Reclamação, verificação de conflito, resposta, reparação e aprendizado. |
+| Marco perdido ou bloqueio de entrega | Sinalizar em risco; replanejar ou escalar, não encerrar silenciosamente | Responsável pela jornada / patrocinador | Causa, compromisso revisado, responsável e decisão. |
+| Conflito de reconhecimento, contestação ou pedido de retirada | Declarar impedimento do avaliador; congelar alegação; abrir recurso | Governança independente do Selo | Declaração de conflito, painel de revisão, decisão e ação sobre alegação pública. |
+| Anomalia de métrica ou alegação de valor disputada | Congelar publicação; marcar como provisória; reconciliar linhagem | Revisor de medição/finanças | Definição, origem, denominador, correção e status de aprovação. |
 
-Exception handling is a core operating requirement, not an edge-only feature. The complete SOP, queue ownership and service levels remain open under [[PRD-005]].
+O tratamento de exceções é um requisito operacional central, não um recurso apenas para casos raros. O SOP completo, a titularidade das filas e os níveis de serviço permanecem em aberto sob [[PRD-005]].
 
-## 5. Human-led, assisted and future-automation activities
+## 5. Atividades conduzidas por humanos, assistidas e de automação futura
 
-Automation classification is a governance boundary. “Assisted” means a system may propose, summarize, prioritize or detect, but a qualified human verifies the result and owns the decision. “Future candidate” means no automation should be released until evidence, fairness, explainability, reversibility, security, legal basis and operating capacity are approved.
+A classificação de automação é uma fronteira de governança. “Assistida” significa que um sistema pode propor, resumir, priorizar ou detectar, mas um humano qualificado verifica o resultado e detém a decisão. “Candidato futuro” significa que nenhuma automação deve ser liberada até que evidência, equidade, explicabilidade, reversibilidade, segurança, base legal e capacidade operacional estejam aprovadas.
 
-| Activity | Current blueprint boundary | Inputs / outputs | Human accountability | Dependencies / gate |
+| Atividade | Fronteira atual do blueprint | Entradas / saídas | Responsabilização humana | Dependências / portão |
 |---|---|---|---|---|
-| Tenant setup, role assignment and consent | Human-led; assisted validation may flag missing fields | Contract/context → tenant, roles, consent | Administrator and privacy owner approve | Authorization and LGPD review (`PRD-002`, `PRD-003`). |
-| Identity resolution and deduplication | Assisted candidate suggestions; human merge approval | Identity records → proposed link/merge | Data steward owns merge and reversal | Test resolution, provenance and correction (`PRD-003`). |
-| Questionnaire selection and diagnosis interpretation | Human-led; assisted completeness and comparison | Context/evidence → diagnosis draft | Analyst signs evidence interpretation | Versioned instruments and reproducibility (`PRD-004`). |
-| Evidence extraction and summarization | Assisted only; source links and uncertainty required | Documents/events → draft facts | Reviewer verifies every material fact | Evidence lineage, privacy, model/version audit (`PRD-004`, `PRD-007`). |
-| Prioritization and journey planning | Human-led; assisted sequencing suggestions | Diagnosis/goals → proposed plan | Sponsor and journey owner approve priorities | Offer/service boundary and impact review (`PRD-001`, `PRD-007`). |
-| Solution curation | Human-led; assisted search/filter | Need/catalog → candidate set | Curator decides inclusion and conflict/fit | Supplier governance, explainability and liability (`PRD-004`, `PRD-007`). |
-| Matching and introductions | Human-led; assisted ranking allowed only as draft | Opportunity/profiles → rationale and candidates | Match reviewer approves, participant opts in | Fairness, consent, appeals and reversible release (`PRD-003`, `PRD-007`). |
-| Reminders, task routing and SLA alerts | Assisted operational automation | Events/status → notifications/queues | Journey/support owner handles exceptions | Notification preferences, escalation SOP (`PRD-002`, `PRD-005`). |
-| Progress aggregation and descriptive reporting | Assisted/automated after metric approval | Events → status and descriptive indicators | Analyst validates anomalies and publication | Metric catalog and data lineage (`PRD-004`). |
-| Outcome attribution, financial value and public claims | Human-led; no autonomous causal or financial claims | Measures/evidence → reviewed result/claim | Measurement, finance and claims approvers sign off | Evidence-certified methodology; related finance/governance controls. |
-| Recognition eligibility and Selo decision | Human-led and independent | Evidence/criteria → decision and claim | Independent evaluator/governance decides | Independence, conflicts, appeal and withdrawal (`PRD-007`). |
-| Support classification and suggested replies | Assisted; safety/privacy cases always escalated | Ticket → suggested category/response | Support operator validates and sends | Incident, privacy and exception SOP (`PRD-002`, `PRD-005`, `PRD-007`). |
-| Predictive recommendations, uplift or autonomous action | Future candidate only | Approved historical/context data → proposal | Named accountable reviewer; no silent execution | Baselines, fairness, drift, rollback, model cards and approval. |
+| Configuração de tenant, atribuição de papéis e consentimento | Conduzida por humanos; validação assistida pode sinalizar campos faltantes | Contrato/contexto → tenant, papéis, consentimento | Administrador e responsável por privacidade aprovam | Revisão de autorização e LGPD (`PRD-002`, `PRD-003`). |
+| Resolução de identidade e deduplicação | Sugestões assistidas de candidatos; aprovação humana da mesclagem | Registros de identidade → vínculo/mesclagem propostos | Guardião de dados detém a mesclagem e a reversão | Testar resolução, proveniência e correção (`PRD-003`). |
+| Seleção de questionário e interpretação do diagnóstico | Conduzida por humanos; completude e comparação assistidas | Contexto/evidência → rascunho do diagnóstico | Analista assina a interpretação das evidências | Instrumentos versionados e reprodutibilidade (`PRD-004`). |
+| Extração e sumarização de evidências | Somente assistida; links de origem e incerteza obrigatórios | Documentos/eventos → fatos preliminares | Revisor verifica cada fato material | Linhagem de evidências, privacidade, auditoria de modelo/versão (`PRD-004`, `PRD-007`). |
+| Priorização e planejamento da jornada | Conduzida por humanos; sugestões assistidas de sequenciamento | Diagnóstico/metas → plano proposto | Patrocinador e responsável pela jornada aprovam prioridades | Fronteira oferta/serviço e revisão de impacto (`PRD-001`, `PRD-007`). |
+| Curadoria de soluções | Conduzida por humanos; busca/filtro assistidos | Necessidade/catálogo → conjunto de candidatos | Curador decide inclusão e conflito/aderência | Governança de fornecedores, explicabilidade e responsabilidade (`PRD-004`, `PRD-007`). |
+| Matching e apresentações | Conduzido por humanos; ranking assistido permitido apenas como rascunho | Oportunidade/perfis → justificativa e candidatos | Revisor de matches aprova, participante dá opt-in | Equidade, consentimento, recursos e liberação reversível (`PRD-003`, `PRD-007`). |
+| Lembretes, roteamento de tarefas e alertas de SLA | Automação operacional assistida | Eventos/status → notificações/filas | Responsável pela jornada/suporte trata exceções | Preferências de notificação, SOP de escalonamento (`PRD-002`, `PRD-005`). |
+| Agregação de progresso e relatórios descritivos | Assistida/automatizada após aprovação das métricas | Eventos → status e indicadores descritivos | Analista valida anomalias e publicação | Catálogo de métricas e linhagem de dados (`PRD-004`). |
+| Atribuição de resultados, valor financeiro e alegações públicas | Conduzida por humanos; sem alegações causais ou financeiras autônomas | Medidas/evidências → resultado/alegação revisados | Responsáveis por medição, finanças e alegações validam | Metodologia certificada por evidências; controles relacionados de finanças/governança. |
+| Elegibilidade de reconhecimento e decisão do Selo | Conduzida por humanos e independente | Evidências/critérios → decisão e alegação | Avaliador/governança independente decide | Independência, conflitos, recurso e retirada (`PRD-007`). |
+| Classificação de suporte e respostas sugeridas | Assistida; casos de segurança/privacidade sempre escalados | Ticket → categoria/resposta sugerida | Operador de suporte valida e envia | SOP de incidente, privacidade e exceção (`PRD-002`, `PRD-005`, `PRD-007`). |
+| Recomendações preditivas, uplift ou ação autônoma | Somente candidato futuro | Dados históricos/contextuais aprovados → proposta | Revisor responsável nomeado; sem execução silenciosa | Linhas de base, equidade, drift, rollback, model cards e aprovação. |
 
-Future automation must earn scope through measured performance against human baselines, subgroup checks, clear uncertainty, versioning, kill switch, rollback, appeals, incident response and an approval record. Founder convenience is not an automation gate. High-impact decisions remain human-led even if a model performs well.
+A automação futura precisa conquistar escopo por meio de desempenho medido contra linhas de base humanas, verificações por subgrupo, incerteza clara, versionamento, kill switch, rollback, recursos, resposta a incidentes e um registro de aprovação. Conveniência do fundador não é um portão de automação. Decisões de alto impacto permanecem conduzidas por humanos mesmo que um modelo tenha bom desempenho.
 
-## 6. Assumptions, unresolved product decisions and gap traceability
+## 6. Premissas, decisões de produto não resolvidas e rastreabilidade de gaps
 
-The following assumptions are deliberately open. Each is linked to one or more registered gaps and must be converted into a refinement decision, evidence package or explicit scope exclusion.
+As seguintes premissas estão deliberadamente em aberto. Cada uma está vinculada a um ou mais gaps registrados e deve ser convertida em uma decisão de refinement, pacote de evidências ou exclusão explícita de escopo.
 
-## Open Assumptions and Unresolved Decisions
+## Premissas Abertas e Decisões Não Resolvidas
 
-| Assumption / unresolved decision | Affected gap IDs | Refinement action |
+| Premissa / decisão não resolvida | IDs de gaps afetados | Ação de refinement |
 |---|---|---|
-| Shared core capabilities can serve [[HUB Negócios]], [[Instituto HUB]] and [[Plataforma HUB]] without violating legal, financial, data or independence boundaries. | PRD-001, PRD-003, PRD-007 | Produce unit-to-capability and data-flow matrix; obtain legal, governance and offer architecture review. |
-| BP-001 will define a coherent buyer, offer, activation and service boundary for each first release; BP-002 must not imply an unapproved commercial package. | PRD-001, PRD-005 | Reconcile module contracts with BP-001; record any capability as platform primitive, configured offer or human service. |
-| A tenant/workspace hierarchy can support institutional, client, program and white-label deployments while preserving isolation. | PRD-002, PRD-003 | Test authorization/tenancy matrix across direct, delegated and cross-tenant relationships; approve export and exit behavior. |
-| Canonical identities, entities and relationships can be resolved with acceptable accuracy and reversible corrections. | PRD-003, PRD-004 | Define identity steward, keys, merge thresholds, quarantine, survivorship and test dataset. |
-| Versioned questionnaires, taxonomies, indicators and criteria can make results reproducible across tenants and time. | PRD-001, PRD-004 | Specify schema/version lifecycle, effective dates, migration rules and acceptance tests. |
-| Participants will provide evidence and consent when purpose, benefit, visibility, retention and withdrawal are clear. | PRD-002, PRD-003, PRD-004 | Validate onboarding, consent language, data minimization, correction and withdrawal journeys. |
-| Assisted diagnosis, curation and matching can improve operator throughput without displacing accountable judgment or creating unfair outcomes. | PRD-004, PRD-007 | Establish human baseline, explanation standard, fairness review, override and incident protocol before release. |
-| Operational delivery can run through documented queues and SOPs without undocumented founder intervention. | PRD-002, PRD-005 | Service-blueprint each stage, assign one accountable owner, run controlled pilot and record exceptions. |
-| Progress and outcome measures can remain distinct from causal impact, realized cash, margin and recognition. | PRD-004, PRD-007 | Connect metric/value semantics to data and finance blueprints; enforce evidence labels and publication gates. |
-| [[Selo HUB]] can remain independent while using evidence produced in the wider HUB ecosystem. | PRD-004, PRD-007 | Draft evaluator charter, conflict rules, payment separation, appeals, withdrawal and public-claim controls. |
-| Support, correction, appeal and incident workflows can preserve user trust without exposing unrelated confidential data. | PRD-002, PRD-003, PRD-005, PRD-007 | Define severity/SLA matrix, minimum-necessary access, escalation tree, audit and test cases. |
-| Future module expansion or automation will be gated by evidence rather than roadmap pressure. | PRD-001, PRD-004, PRD-005, PRD-007 | Create expansion decision record with performance, safety, fairness, capacity, cost and reversibility thresholds. |
+| As capacidades do núcleo compartilhado podem atender [[HUB Negócios]], [[Instituto HUB]] e [[Plataforma HUB]] sem violar fronteiras legais, financeiras, de dados ou de independência. | PRD-001, PRD-003, PRD-007 | Produzir matriz unidade-capacidade e de fluxos de dados; obter revisão jurídica, de governança e da arquitetura de ofertas. |
+| O BP-001 definirá um comprador, oferta, ativação e fronteira de serviço coerentes para cada primeira release; o BP-002 não deve implicar um pacote comercial não aprovado. | PRD-001, PRD-005 | Reconciliar contratos de módulos com o BP-001; registrar cada capacidade como primitiva de plataforma, oferta configurada ou serviço humano. |
+| Uma hierarquia de tenant/workspace pode suportar implantações institucionais, de clientes, de programas e white-label preservando o isolamento. | PRD-002, PRD-003 | Testar a matriz de autorização/tenancy em relacionamentos diretos, delegados e entre tenants; aprovar comportamento de exportação e saída. |
+| Identidades, entidades e relacionamentos canônicos podem ser resolvidos com precisão aceitável e correções reversíveis. | PRD-003, PRD-004 | Definir guardião de identidade, chaves, limiares de mesclagem, quarentena, survivorship e dataset de teste. |
+| Questionários, taxonomias, indicadores e critérios versionados podem tornar os resultados reproduzíveis entre tenants e ao longo do tempo. | PRD-001, PRD-004 | Especificar ciclo de vida de schema/versão, datas de vigência, regras de migração e testes de aceite. |
+| Participantes fornecerão evidências e consentimento quando finalidade, benefício, visibilidade, retenção e retirada estiverem claros. | PRD-002, PRD-003, PRD-004 | Validar onboarding, linguagem de consentimento, minimização de dados, jornadas de correção e retirada. |
+| Diagnóstico, curadoria e matching assistidos podem melhorar o throughput dos operadores sem deslocar julgamento responsável nem criar resultados injustos. | PRD-004, PRD-007 | Estabelecer linha de base humana, padrão de explicação, revisão de equidade, sobreposição e protocolo de incidentes antes da liberação. |
+| A entrega operacional pode funcionar por meio de filas e SOPs documentados sem intervenção não documentada do fundador. | PRD-002, PRD-005 | Elaborar service blueprint de cada etapa, atribuir um único responsável, executar piloto controlado e registrar exceções. |
+| Medidas de progresso e resultado podem permanecer distintas de impacto causal, caixa realizado, margem e reconhecimento. | PRD-004, PRD-007 | Conectar semântica de métrica/valor aos blueprints de dados e finanças; fazer cumprir rótulos de evidência e portões de publicação. |
+| O [[Selo HUB]] pode permanecer independente enquanto usa evidências produzidas no ecossistema HUB mais amplo. | PRD-004, PRD-007 | Redigir carta do avaliador, regras de conflito, separação de pagamentos, recursos, retirada e controles de alegação pública. |
+| Fluxos de suporte, correção, recurso e incidentes podem preservar a confiança do usuário sem expor dados confidenciais não relacionados. | PRD-002, PRD-003, PRD-005, PRD-007 | Definir matriz de severidade/SLA, acesso mínimo necessário, árvore de escalonamento, auditoria e casos de teste. |
+| Expansão futura de módulos ou automação será condicionada por evidências, e não por pressão de roadmap. | PRD-001, PRD-004, PRD-005, PRD-007 | Criar registro de decisão de expansão com limiares de desempenho, segurança, equidade, capacidade, custo e reversibilidade. |
 
-## Cross-Blueprint Dependencies
+## Dependências Entre Blueprints
 
-| Dependency | Product impact | Coordination rule |
+| Dependência | Impacto no produto | Regra de coordenação |
 |---|---|---|
-| **BP-001 — HUB offer/revenue architecture** | Determines who buys which journey, required service levels, packaging, commercial owner and renewal motion. | Depends on BP-001: reconcile before approving module scope or claiming a launch offer; do not invent BP-001 content. |
-| **BP-003 — data/intelligence blueprint** | Defines canonical entities, event and metric contracts, lineage, identity resolution, measurement and model controls. | Product contracts must consume approved semantics; no product result may imply a data contract that is not approved. |
-| **BP-004 — technology/architecture blueprint** | Defines environments, integrations, IAM, tenancy enforcement, reliability, observability, release and support tooling. | Treat all technical behaviors here as requirements, not implementation evidence; bind acceptance criteria to BP-004. |
-| **BP-005 — operating model** | Defines accountable owners, service blueprints, staffing, RACI, queues, escalation and delivery capacity. | Product workflows must have named human owners and SOPs; PRD-005 remains open until operational proof exists. |
-| **BP-006 — governance/legal/trust** | Determines entity separation, LGPD roles, IP, liability, claims, Selo independence, appeals and audit obligations. | No high-impact or public-facing capability clears product approval without governance sign-off. |
-| **BP-007 — brand/market** | Determines naming, white-label rules, target contexts, approved claims, audience language and category boundaries. | Visuals and copy must match evidence maturity; no interface sketch or narrative implies implemented functionality. |
-| **BP-008 — launch/evolution** | Defines sequencing, release gates, adoption evidence, change control and evolution reviews. | Product capability is launch-ready only when integrated gates, support and rollback criteria pass. |
+| **BP-001 — arquitetura de ofertas/receita do HUB** | Determina quem compra qual jornada, níveis de serviço exigidos, empacotamento, responsável comercial e movimento de renovação. | Depende do BP-001: reconciliar antes de aprovar escopo de módulo ou alegar uma oferta de lançamento; não inventar conteúdo do BP-001. |
+| **BP-003 — blueprint de dados/inteligência** | Define entidades canônicas, contratos de eventos e métricas, linhagem, resolução de identidade, medição e controles de modelo. | Os contratos de produto devem consumir semântica aprovada; nenhum resultado de produto pode implicar um contrato de dados não aprovado. |
+| **BP-004 — blueprint de tecnologia/arquitetura** | Define ambientes, integrações, IAM, aplicação de tenancy, confiabilidade, observabilidade, release e ferramentas de suporte. | Tratar todos os comportamentos técnicos aqui como requisitos, não evidências de implementação; vincular critérios de aceite ao BP-004. |
+| **BP-005 — modelo operacional** | Define responsáveis, service blueprints, pessoal, RACI, filas, escalonamento e capacidade de entrega. | Fluxos de trabalho de produto devem ter responsáveis humanos nomeados e SOPs; o PRD-005 permanece aberto até que exista prova operacional. |
+| **BP-006 — governança/jurídico/confiança** | Determina separação de entidades, papéis LGPD, PI, responsabilidade, alegações, independência do Selo, recursos e obrigações de auditoria. | Nenhuma capacidade de alto impacto ou voltada ao público passa pela aprovação de produto sem validação da governança. |
+| **BP-007 — marca/mercado** | Determina nomenclatura, regras white-label, contextos-alvo, alegações aprovadas, linguagem do público e fronteiras de categoria. | Visuais e textos devem corresponder à maturidade das evidências; nenhum esboço de interface ou narrativa implica funcionalidade implementada. |
+| **BP-008 — lançamento/evolução** | Define sequenciamento, portões de release, evidências de adoção, controle de mudanças e revisões de evolução. | A capacidade de produto está pronta para lançamento somente quando portões integrados, suporte e critérios de rollback passarem. |
 
-The product boundary is therefore coherent only as a connected system: offer intent → product capability → data evidence → technical enforcement → operating accountability → governance approval → launch and learning. Any contradiction discovered downstream reopens the affected product assumption rather than being hidden in a local module.
+A fronteira do produto, portanto, só é coerente como um sistema conectado: intenção de oferta → capacidade de produto → evidência de dados → aplicação técnica → responsabilização operacional → aprovação de governança → lançamento e aprendizado. Qualquer contradição descoberta a jusante reabre a premissa de produto afetada em vez de ficar oculta em um módulo local.

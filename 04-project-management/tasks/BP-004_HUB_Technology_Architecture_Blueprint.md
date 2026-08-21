@@ -1,5 +1,5 @@
 ---
-title: "BP-004 — HUB Technology Architecture Blueprint"
+title: "BP-004 — Blueprint de Arquitetura de Tecnologia do HUB"
 task_id: BP-004
 task_type: blueprint-document
 status: completed
@@ -27,24 +27,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-004 — HUB Technology Architecture Blueprint
+# BP-004 — Blueprint de Arquitetura de Tecnologia do HUB
 
-## Objective
+## Objetivo
 
-Define the target technology architecture that can support the HUB platform, data foundation, integrations, security, reliability and future scale.
+Definir a arquitetura de tecnologia alvo capaz de suportar a plataforma HUB, a fundação de dados, integrações, segurança, confiabilidade e escala futura.
 
-## Required content
+## Conteúdo exigido
 
-1. Describe platform, warehouse/lakehouse, intelligence, consent and integration boundaries.
-2. Map systems of record, producers, consumers, interfaces and ownership.
-3. Define conceptual requirements for APIs, events, webhooks, ELT, replay, reconciliation and rollback.
-4. State tenant isolation, IAM, secrets, environments, observability and security assumptions.
-5. Connect architecture choices to product, data, operations, finance and launch dependencies.
-6. Separate target architecture from implemented technology and approved nonfunctional requirements.
+1. Descrever as fronteiras de plataforma, warehouse/lakehouse, inteligência, consentimento e integrações.
+2. Mapear sistemas de registro, produtores, consumidores, interfaces e propriedade.
+3. Definir requisitos conceituais para APIs, eventos, webhooks, ELT, replay, reconciliação e rollback.
+4. Declarar premissas de isolamento de tenants, IAM, segredos, ambientes, observabilidade e segurança.
+5. Conectar as escolhas de arquitetura às dependências de produto, dados, operações, finanças e lançamento.
+6. Separar a arquitetura alvo da tecnologia implementada e dos requisitos não funcionais aprovados.
 
-## Completion criteria
+## Critérios de conclusão
 
-- The architecture is traceable to product capabilities and data contracts.
-- Integration priorities and unresolved technical assumptions are explicit.
-- Reliability and security expectations have named future approval conditions.
-- No proposed architecture is represented as deployed or production-ready.
+- A arquitetura é rastreável às capacidades do produto e aos contratos de dados.
+- Prioridades de integração e premissas técnicas não resolvidas são explícitas.
+- As expectativas de confiabilidade e segurança têm condições futuras de aprovação nomeadas.
+- Nenhuma arquitetura proposta é representada como implantada ou pronta para produção.

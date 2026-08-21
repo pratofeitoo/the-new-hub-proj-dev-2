@@ -1,5 +1,5 @@
 ---
-title: "BP-002 — HUB Product and Capability Blueprint"
+title: "BP-002 — Blueprint de Produto e Capacidades do HUB"
 task_id: BP-002
 task_type: blueprint-document
 status: completed
@@ -25,24 +25,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-002 — HUB Product and Capability Blueprint
+# BP-002 — Blueprint de Produto e Capacidades do HUB
 
-## Objective
+## Objetivo
 
-Define the complete HUB product as a connected capability system spanning the six conceptual modules, user roles, journeys, operator workflows and human/automated boundaries.
+Definir o produto HUB completo como um sistema de capacidades conectadas abrangendo os seis módulos conceituais, papéis de usuário, jornadas, fluxos de trabalho do operador e fronteiras humano/automatizado.
 
-## Required content
+## Conteúdo exigido
 
-1. Define the shared platform core and the boundaries of each module.
-2. Map actors, roles, tenants, entities, permissions and data visibility.
-3. Describe the end-to-end journey from context and diagnosis through action, measurement, recognition and evolution.
-4. Define the operator console, participant experiences, support workflows and exception handling.
-5. State which activities are human-led, assisted or candidates for future automation.
-6. Connect assumptions and unresolved product decisions to relevant gap IDs.
+1. Definir o núcleo compartilhado da plataforma e as fronteiras de cada módulo.
+2. Mapear atores, papéis, tenants, entidades, permissões e visibilidade de dados.
+3. Descrever a jornada ponta a ponta, desde contexto e diagnóstico até ação, medição, reconhecimento e evolução.
+4. Definir o console do operador, as experiências dos participantes, os fluxos de suporte e o tratamento de exceções.
+5. Declarar quais atividades são conduzidas por humanos, assistidas ou candidatas à automação futura.
+6. Conectar premissas e decisões de produto não resolvidas aos IDs de gap relevantes.
 
-## Completion criteria
+## Critérios de conclusão
 
-- The product boundary is coherent with the offer architecture.
-- Every major capability has actors, inputs, outputs, dependencies and unresolved assumptions.
-- No interface sketch is treated as implemented functionality.
-- The blueprint explicitly preserves human accountability for high-impact decisions.
+- A fronteira do produto é coerente com a arquitetura de ofertas.
+- Toda capacidade principal tem atores, entradas, saídas, dependências e premissas não resolvidas.
+- Nenhum esboço de interface é tratado como funcionalidade implementada.
+- O blueprint preserva explicitamente a responsabilização humana para decisões de alto impacto.

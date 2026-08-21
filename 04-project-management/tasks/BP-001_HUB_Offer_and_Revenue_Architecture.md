@@ -1,5 +1,5 @@
 ---
-title: "BP-001 — HUB Offer and Revenue Architecture"
+title: "BP-001 — Arquitetura de Ofertas e Receita do HUB"
 task_id: BP-001
 task_type: blueprint-document
 status: completed
@@ -23,24 +23,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-001 — HUB Offer and Revenue Architecture
+# BP-001 — Arquitetura de Ofertas e Receita do HUB
 
-## Objective
+## Objetivo
 
-Define how the complete HUB business architecture becomes a coherent portfolio of offers, buyers, value exchanges, revenue engines and group-unit responsibilities.
+Definir como a arquitetura de negócio completa do HUB se torna um portfólio coerente de ofertas, compradores, trocas de valor, motores de receita e responsabilidades por unidade do grupo.
 
-## Required content
+## Conteúdo exigido
 
-1. Define the relationship between HUB brand, HUB Negócios, Instituto HUB and Plataforma HUB.
-2. Map the three business fronts to offers, customer types, partners and delivery responsibilities.
-3. Describe primary, secondary and expansion revenue engines.
-4. Separate commercial, implementation, recurring, marketplace, project and restricted-impact revenue.
-5. Identify assumptions, unresolved decisions and dependencies on product, finance, governance and market work.
-6. Connect every offer to the complete project blueprint without presenting it as validated or approved.
+1. Definir a relação entre a marca HUB, HUB Negócios, Instituto HUB e Plataforma HUB.
+2. Mapear as três frentes de negócio para ofertas, tipos de clientes, parceiros e responsabilidades de entrega.
+3. Descrever os motores de receita primários, secundários e de expansão.
+4. Separar receitas comerciais, de implementação, recorrentes, de marketplace, de projetos e de impacto restrito.
+5. Identificar premissas, decisões não resolvidas e dependências dos trabalhos de produto, finanças, governança e mercado.
+6. Conectar cada oferta ao blueprint completo do projeto sem apresentá-la como validada ou aprovada.
 
-## Completion criteria
+## Critérios de conclusão
 
-- The offer architecture has one consistent vocabulary and no unresolved category collisions.
-- Revenue classifications and ownership boundaries are explicit.
-- Open assumptions reference the gap register and are ready for refinement.
-- The output remains a Blueprint artifact and does not claim validated demand or financial approval.
+- A arquitetura de ofertas tem um vocabulário consistente e nenhuma colisão de categorias não resolvida.
+- As classificações de receita e os limites de propriedade são explícitos.
+- As premissas em aberto referenciam o registro de gaps e estão prontas para refinamento.
+- O resultado permanece um artefato de Blueprint e não reivindica demanda validada ou aprovação financeira.

@@ -1,39 +1,39 @@
-# ROI recalculation and evidence rules
+# Recálculo de ROI e regras de evidência
 
-All current numeric values are illustrative placeholders from corrected sheet 06; no unsupported value is presented as observed fact.
+Todos os valores numéricos atuais são placeholders ilustrativos da aba corrigida 06; nenhum valor sem suporte é apresentado como fato observado.
 
-## Canonical separation
-- Theoretical capacity: `pessoas × custo_anual × ganho_prod`; it is not realized output until an outcome measure confirms it.
-- Realized output: measured post-period output minus comparable baseline, with cohort timing and attribution.
-- Avoided cost: baseline cost minus realized cost minus change cost; do not call it revenue.
-- Contribution margin: incremental realized revenue × contribution-margin rate; never substitute gross revenue.
-- Pipeline values: raw (CRM amount), probability-weighted (amount × probability), and realized (closed/revenue-recognized) are separate measures. Pipeline is not added to closed revenue.
+## Separação canônica
+- Capacidade teórica: `pessoas × custo_anual × ganho_prod`; não é output realizado até que uma medida de resultado o confirme.
+- Output realizado: output medido pós-período menos baseline comparável, com timing de coorte e atribuição.
+- Custo evitado: custo do baseline menos custo realizado menos custo da mudança; não chame isso de receita.
+- Margem de contribuição: receita realizada incremental × taxa de margem de contribuição; nunca substitua pela receita bruta.
+- Valores de pipeline: bruto (valor do CRM), ponderado por probabilidade (valor × probabilidade) e realizado (fechado/receita reconhecida) são medidas separadas. O pipeline não é somado à receita fechada.
 
-## Baseline, cohort, control, timing, attribution, and deduplication
-1. Define eligible population and index date before exposure; retain a comparable unexposed/control cohort where feasible.
-2. Compare the same outcome window and cohort definition; use pre/post plus matched control or difference-in-differences for quasi-experimental claims.
-3. Apply attribution only after evidence is accepted; attribution is a haircut, not an observed fact.
-4. Deduplicate by `entity_id + outcome_type + period + primary_lever`; one realized outcome has one primary financial owner.
-5. Do not sum overlapping productivity/time-to-productivity, saving/margin, risk expected loss/realized loss, or ARR/MRR effects.
-6. Unsupported assumptions remain illustrative and are excluded from recognized business-case value until evidence is attached.
+## Baseline, coorte, controle, timing, atribuição e deduplicação
+1. Defina a população elegível e a data-índice antes da exposição; retenha uma coorte de controle/não exposta comparável quando viável.
+2. Compare a mesma janela de resultado e definição de coorte; use pré/pós com controle pareado ou diferenças-em-diferenças para alegações quase experimentais.
+3. Aplique atribuição somente depois que a evidência for aceita; atribuição é um desconto, não um fato observado.
+4. Deduplicação por `entity_id + outcome_type + period + primary_lever`; um resultado realizado tem um único dono financeiro primário.
+5. Não some efeitos sobrepostos de produtividade/tempo-até-produtividade, economia/margem, perda esperada/perda realizada de risco, ou ARR/MRR.
+6. Premissas sem suporte permanecem ilustrativas e são excluídas do valor reconhecido do business case até que evidências sejam anexadas.
 
-## Reproducible scenario arithmetic
+## Aritmética reproduzível de cenários
 
-- productivity: 360,000.00 R$ annual gross contribution before scenario multiplier
-- vacancy: 160,000.00 R$ annual gross contribution before scenario multiplier
-- retention: 360,000.00 R$ annual gross contribution before scenario multiplier
-- purchases: 125,000.00 R$ annual gross contribution before scenario multiplier
-- risk: 40,000.00 R$ annual gross contribution before scenario multiplier
-- margin: 175,000.00 R$ annual gross contribution before scenario multiplier
-- Base gross benefit: `1,220,000.00` R$
-- Investment total: `950,000.00` R$
-- Base net benefit = gross benefit − investment; Base ROI = net benefit / investment; Base payback = investment / (gross benefit / 12).
+- produtividade: R$ 360.000,00 de contribuição bruta anual antes do multiplicador de cenário
+- vaga: R$ 160.000,00 de contribuição bruta anual antes do multiplicador de cenário
+- retenção: R$ 360.000,00 de contribuição bruta anual antes do multiplicador de cenário
+- compras: R$ 125.000,00 de contribuição bruta anual antes do multiplicador de cenário
+- risco: R$ 40.000,00 de contribuição bruta anual antes do multiplicador de cenário
+- margem: R$ 175.000,00 de contribuição bruta anual antes do multiplicador de cenário
+- Benefício bruto base: R$ `1,220,000.00`
+- Investimento total: R$ `950,000.00`
+- Benefício líquido base = benefício bruto − investimento; ROI base = benefício líquido / investimento; payback base = investimento / (benefício bruto / 12).
 
-| Scenario | Multiplier | Gross benefit (R$) | Investment (R$) | Net benefit (R$) | ROI | Payback (months) |
+| Cenário | Multiplicador | Benefício bruto (R$) | Investimento (R$) | Benefício líquido (R$) | ROI | Payback (meses) |
 |---|---:|---:|---:|---:|---:|---:|
-| Conservative | 0.7 | 854,000.00 | 950,000.00 | -96,000.00 | -0.1011 | 13.3489 |
+| Conservador | 0.7 | 854,000.00 | 950,000.00 | -96,000.00 | -0.1011 | 13.3489 |
 | Base | 1.0 | 1,220,000.00 | 950,000.00 | 270,000.00 | 0.2842 | 9.3443 |
-| Ambitious | 1.3 | 1,586,000.00 | 950,000.00 | 636,000.00 | 0.6695 | 7.1879 |
+| Ambicioso | 1.3 | 1,586,000.00 | 950,000.00 | 636,000.00 | 0.6695 | 7.1879 |
 
-## Deterministic check
-Using corrected sheet 06 inputs, benefits are 360,000 + 160,000 + 360,000 + 125,000 + 40,000 + 175,000 = 1,220,000 R$; investment is 950,000 R$. Expected base ROI is 0.2842105263 and payback is 9.3442622951 months. Any workbook rebuild must reproduce these values or register a correction first.
+## Verificação determinística
+Usando os insumos da aba corrigida 06, os benefícios são 360.000 + 160.000 + 360.000 + 125.000 + 40.000 + 175.000 = 1.220.000 R$; o investimento é 950.000 R$. O ROI base esperado é 0.2842105263 e o payback é 9.3442622951 meses. Qualquer reconstrução do workbook deve reproduzir esses valores ou registrar uma correção primeiro.

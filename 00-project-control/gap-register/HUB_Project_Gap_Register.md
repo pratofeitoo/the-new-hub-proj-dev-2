@@ -1,5 +1,5 @@
 ---
-title: HUB Project Gap Register
+title: Registro de Lacunas do Projeto HUB
 aliases:
   - HUB Gap Register
   - HUB Project Missing Elements Register
@@ -13,19 +13,19 @@ status: active
 layer: cross-cutting
 ---
 
-# HUB Project Gap Register
+# Registro de Lacunas do Projeto HUB
 
-> [!info] Purpose
-> This register traces what the complete HUB project still needs before its business, product, operating system and launch can be considered coherent and approved.
+> [!info] Propósito
+> Este registro mapeia o que o projeto HUB completo ainda precisa antes que seus negócios, produto, sistema de operação e lançamento possam ser considerados coerentes e aprovados.
 
-> [!warning] Scope rule
-> A gap is not limited to customer validation. It may be a missing definition, missing connection, missing evidence, missing implementation, missing governance, missing validation or missing launch-readiness condition.
+> [!warning] Regra de escopo
+> Uma lacuna não se limita à validação com clientes. Pode ser uma definição ausente, uma conexão ausente, uma evidência ausente, uma implementação ausente, uma governança ausente, uma validação ausente ou uma condição de prontidão para lançamento ausente.
 
-## 1. How to use this register
+## 1. Como usar este registro
 
-Each gap connects the whole-project blueprint to the work required in refinement and the condition required for final approval.
+Cada lacuna conecta o blueprint do projeto completo ao trabalho exigido no refinamento e à condição necessária para a aprovação final.
 
-The individual YAML-backed gap notes are centralized in [[HUB_Project_Gaps.base]]. The original tables remain the consolidated source register; the notes provide property-level records for filtering, grouping and task linkage in Obsidian Bases.
+As notas individuais de lacunas baseadas em YAML estão centralizadas em [[HUB_Project_Gaps.base]]. As tabelas originais permanecem como o registro-fonte consolidado; as notas fornecem registros no nível de propriedades para filtragem, agrupamento e vinculação a tarefas no Obsidian Bases.
 
 ```text
 project component
@@ -37,161 +37,161 @@ project component
 → launch impact
 ```
 
-### Gap types
+### Tipos de lacuna
 
-| Type | Meaning |
+| Tipo | Significado |
 |---|---|
-| `definition` | The intended behavior, scope or boundary is not specified. |
-| `connection` | The element exists but is disconnected from related project components. |
-| `evidence` | A claim, assumption, calculation or outcome lacks sufficient support. |
-| `implementation` | The design exists but no operational or technical capability exists. |
-| `governance` | Ownership, rules, controls, legal treatment or accountability are incomplete. |
-| `validation` | Testing, review, comparison or approval has not occurred. |
-| `launch` | A required condition for market release is not ready. |
+| `definition` | O comportamento, escopo ou limite pretendido não está especificado. |
+| `connection` | O elemento existe, mas está desconectado dos componentes relacionados do projeto. |
+| `evidence` | Uma afirmação, premissa, cálculo ou resultado carece de suporte suficiente. |
+| `implementation` | O design existe, mas não há capacidade operacional ou técnica. |
+| `governance` | Propriedade, regras, controles, tratamento jurídico ou responsabilização estão incompletos. |
+| `validation` | Testes, revisão, comparação ou aprovação ainda não ocorreram. |
+| `launch` | Uma condição necessária para o lançamento no mercado não está pronta. |
 
-### Priority
+### Prioridade
 
-- **Critical** — blocks a fundamental decision, claim, subsystem or launch path.
-- **High** — materially weakens coherence, trust, economics or execution.
-- **Medium** — important for completeness, scale or quality but not an immediate blocker.
+- **Crítica** — bloqueia uma decisão, afirmação, subsistema ou caminho de lançamento fundamental.
+- **Alta** — enfraquece materialmente a coerência, a confiança, a economia ou a execução.
+- **Média** — importante para a completude, a escala ou a qualidade, mas não é um bloqueador imediato.
 
-### Status vocabulary
+### Vocabulário de status
 
-Use the project framework statuses: `blueprint`, `refining`, `conditionally-approved`, `approved`, `blocked` and `superseded`.
+Use os status do framework do projeto: `blueprint`, `refining`, `conditionally-approved`, `approved`, `blocked` e `superseded`.
 
-## 2. Gap summary
+## 2. Resumo de lacunas
 
-| Domain | Critical | High | Medium | Main risk |
+| Domínio | Críticas | Altas | Médias | Principal risco |
 |---|---:|---:|---:|---|
-| Strategy and business model | 3 | 4 | 1 | The full vision has no single coherent commercial and operating spine yet. |
-| Product and operations | 2 | 5 | 1 | The platform journey is specified conceptually but not operationally bounded. |
-| Data and intelligence | 4 | 5 | 1 | Semantic architecture is ahead of physical data contracts and lineage. |
-| Technology and integrations | 2 | 4 | 1 | Integration and security requirements are not executable specifications. |
-| Finance and value | 3 | 3 | 1 | Illustrative economics could be mistaken for evidence-certified value. |
-| Governance, legal and trust | 5 | 4 | 1 | Entity separation, data rights and Selo independence remain unresolved. |
-| Market, GTM and partnerships | 2 | 4 | 1 | Distribution and category hypotheses are not connected to a repeatable route. |
-| Brand and communications | 0 | 3 | 1 | External narrative is ahead of evidence and approved claims. |
-| Launch and readiness | 3 | 4 | 1 | No integrated final release gate exists for the complete system. |
-| **Total** | **24** | **35** | **9** | **68 registered gaps** |
+| Estratégia e modelo de negócios | 3 | 4 | 1 | A visão completa ainda não tem uma espinha dorsal comercial e operacional única e coerente. |
+| Produto e operações | 2 | 5 | 1 | A jornada da plataforma é especificada conceitualmente, mas sem limites operacionais. |
+| Dados e inteligência | 4 | 5 | 1 | A arquitetura semântica está à frente dos contratos físicos de dados e da linhagem. |
+| Tecnologia e integrações | 2 | 4 | 1 | Os requisitos de integração e segurança não são especificações executáveis. |
+| Finanças e valor | 3 | 3 | 1 | A economia ilustrativa pode ser confundida com valor certificado por evidências. |
+| Governança, jurídico e confiança | 5 | 4 | 1 | A separação de entidades, os direitos sobre dados e a independência do Selo permanecem sem resolução. |
+| Mercado, GTM e parcerias | 2 | 4 | 1 | As hipóteses de distribuição e categoria não estão conectadas a uma rota repetível. |
+| Marca e comunicações | 0 | 3 | 1 | A narrativa externa está à frente das evidências e das afirmações aprovadas. |
+| Lançamento e prontidão | 3 | 4 | 1 | Não existe um portão final integrado de liberação para o sistema completo. |
+| **Total** | **24** | **35** | **9** | **68 lacunas registradas** |
 
-Priorities are initial blueprint triage, not final decisions. They must be reviewed as dependencies change.
+As prioridades são uma triagem inicial do blueprint, não decisões finais. Devem ser revisadas conforme as dependências mudam.
 
-## 3. Strategy and business model
+## 3. Estratégia e modelo de negócios
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| STR-001 | Critical | definition | Broad ecosystem vision and four conceptual units exist. | One coherent relationship between group units, offers, customers, operations and platform primitives. | Produce a whole-project operating model showing shared and unit-specific capabilities. | Strategy, operations, legal and finance approve one consistent system model. |
-| STR-002 | Critical | definition | Multiple business fronts and revenue engines are proposed. | Offer architecture: who buys what, when, why, through which unit and with which recurring motion. | Build the offer-to-buyer-to-capability matrix. | Every launch offer has a defined buyer, value exchange, owner and economics. |
-| STR-003 | Critical | connection | Long-term vision and near-term sequencing are both described. | A roadmap that preserves the full system while showing how components mature without contradicting one another. | Connect product, business, data, governance and launch roadmaps. | Dependencies and phase exit criteria are approved across domains. |
-| STR-004 | High | evidence | Institutional distribution and verified implementation evidence are moat hypotheses. | Evidence that the proposed advantage is difficult to replace and can compound. | Define evidence sources, learning loops and defensibility tests. | The moat claim is supported or explicitly downgraded. |
-| STR-005 | High | definition | Strategic partner applications are described as possibilities. | Partner role, commercial route, access, obligations, concentration limits and fallback paths. | Create a partner portfolio and dependency model. | No critical launch path depends on an unconfirmed partner. |
-| STR-006 | High | validation | Category-sprawl risk is recognized. | Buyer-budget and category architecture across the full portfolio. | Map alternatives, budgets, buying triggers and overlaps by offer. | Positioning and target categories are accepted for each launch offer. |
-| STR-007 | High | governance | Founder-led coordination is assumed. | Delegated authority, succession, capability ownership and decision forums. | Build a capability and authority map. | Critical decisions have non-founder owners and escalation paths. |
-| STR-008 | Medium | connection | C.A.O.S. is the proposed operating backbone. | Explicit mapping from C.A.O.S. stages to platform modules, data, roles, deliverables and approvals. | Create a method-to-system traceability map. | The method is consistently represented across strategy, product and operations. |
+| STR-001 | Crítica | definition | Visão ampla de ecossistema e quatro unidades conceituais existem. | Uma relação coerente entre unidades do grupo, ofertas, clientes, operações e primitivas da plataforma. | Produzir um modelo operacional de todo o projeto mostrando capacidades compartilhadas e específicas por unidade. | Estratégia, operações, jurídico e finanças aprovam um modelo de sistema consistente. |
+| STR-002 | Crítica | definition | Múltiplas frentes de negócio e motores de receita são propostos. | Arquitetura de ofertas: quem compra o quê, quando, por quê, por qual unidade e com qual movimento recorrente. | Construir a matriz oferta–comprador–capacidade. | Toda oferta de lançamento tem comprador definido, troca de valor, responsável e economia. |
+| STR-003 | Crítica | connection | Visão de longo prazo e sequenciamento de curto prazo estão ambos descritos. | Um roadmap que preserve o sistema completo enquanto mostra como os componentes amadurecem sem se contradizer. | Conectar os roadmaps de produto, negócio, dados, governança e lançamento. | Dependências e critérios de saída de fase são aprovados em todos os domínios. |
+| STR-004 | Alta | evidence | Distribuição institucional e evidências verificadas de implementação são hipóteses de moat. | Evidências de que a vantagem proposta é difícil de substituir e pode se acumular. | Definir fontes de evidência, ciclos de aprendizado e testes de defensibilidade. | A alegação de moat é sustentada ou explicitamente rebaixada. |
+| STR-005 | Alta | definition | Aplicações de parceiros estratégicos são descritas como possibilidades. | Papel do parceiro, rota comercial, acesso, obrigações, limites de concentração e caminhos alternativos. | Criar um portfólio de parceiros e um modelo de dependências. | Nenhum caminho crítico de lançamento depende de um parceiro não confirmado. |
+| STR-006 | Alta | validation | O risco de dispersão de categorias é reconhecido. | Arquitetura de orçamentos de compradores e categorias em todo o portfólio. | Mapear alternativas, orçamentos, gatilhos de compra e sobreposições por oferta. | Posicionamento e categorias-alvo são aceitos para cada oferta de lançamento. |
+| STR-007 | Alta | governance | Coordenação liderada pelos fundadores é presumida. | Autoridade delegada, sucessão, propriedade de capacidades e fóruns de decisão. | Construir um mapa de capacidades e autoridades. | Decisões críticas têm responsáveis que não são fundadores e caminhos de escalonamento. |
+| STR-008 | Média | connection | C.A.O.S. é a espinha dorsal operacional proposta. | Mapeamento explícito das etapas do C.A.O.S. para módulos da plataforma, dados, papéis, entregáveis e aprovações. | Criar um mapa de rastreabilidade do método para o sistema. | O método é representado de forma consistente em estratégia, produto e operações. |
 
-## 4. Product and operations
+## 4. Produto e operações
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| PRD-001 | Critical | definition | Six modules and an end-to-end journey are described. | Product boundary: shared platform core, offer configuration and service operations. | Define capability taxonomy and module contracts. | Product scope is coherent and no module has hidden dependencies. |
-| PRD-002 | Critical | implementation | UX sketches and workflow concepts exist. | Working product, operator console, permissions, tenant boundaries and support processes. | Convert the journey into system behavior, roles and acceptance criteria. | End-to-end workflow operates under controlled conditions. |
-| PRD-003 | High | definition | Multiple actor types and white-label use are proposed. | Complete role, permission, tenant, entity and data-visibility model. | Build an authorization and tenancy matrix. | Security and governance approve access behavior for every actor. |
-| PRD-004 | High | implementation | Diagnosis, evidence review, recommendation and matching are conceptually specified. | Versioned questionnaires, evidence workflows, explainable results and operator controls. | Specify state transitions, audit events and manual/automated boundaries. | Results are reproducible, reviewable and reversible. |
-| PRD-005 | High | implementation | Journey, progress and outcome reporting are proposed. | Operational workflows for recruitment, curation, follow-through, exceptions and escalation. | Map service blueprints and standard operating procedures. | Operations can deliver the workflow without undocumented founder intervention. |
-| PRD-006 | High | validation | Broad MVP exclusions are documented. | Evidence-based criteria for adding or removing modules and automation. | Create module expansion gates and decision records. | Every scope expansion has passed its gate. |
-| PRD-007 | High | governance | Human review is preferred for high-impact decisions. | Human-in-the-loop responsibilities, overrides, appeals and audit trail. | Define review queues, decision rights and incident handling. | No high-impact decision is released without accountable review. |
-| PRD-008 | Medium | launch | UI concepts show dashboards, mobile and SSO experiences. | Approved experience hierarchy and launch-supported surfaces. | Classify visuals as blueprint, prototype or deliverable. | External experience claims match the implemented and supported product. |
+| PRD-001 | Crítica | definition | Seis módulos e uma jornada ponta a ponta são descritos. | Fronteira do produto: núcleo compartilhado da plataforma, configuração de ofertas e operações de serviço. | Definir taxonomia de capacidades e contratos de módulos. | O escopo do produto é coerente e nenhum módulo tem dependências ocultas. |
+| PRD-002 | Crítica | implementation | Esboços de UX e conceitos de fluxo de trabalho existem. | Produto funcional, console do operador, permissões, limites de tenant e processos de suporte. | Converter a jornada em comportamento de sistema, papéis e critérios de aceite. | O fluxo de trabalho ponta a ponta opera sob condições controladas. |
+| PRD-003 | Alta | definition | Múltiplos tipos de atores e uso white-label são propostos. | Modelo completo de papéis, permissões, tenants, entidades e visibilidade de dados. | Construir uma matriz de autorização e tenancy. | Segurança e governança aprovam o comportamento de acesso para cada ator. |
+| PRD-004 | Alta | implementation | Diagnóstico, revisão de evidências, recomendação e matching são especificados conceitualmente. | Questionários versionados, fluxos de evidências, resultados explicáveis e controles do operador. | Especificar transições de estado, eventos de auditoria e fronteiras manual/automatizado. | Os resultados são reproduzíveis, revisáveis e reversíveis. |
+| PRD-005 | Alta | implementation | Relatórios de jornada, progresso e resultados são propostos. | Fluxos operacionais para recrutamento, curadoria, acompanhamento, exceções e escalonamento. | Mapear blueprints de serviço e procedimentos operacionais padrão. | As operações conseguem entregar o fluxo de trabalho sem intervenção indocumentada dos fundadores. |
+| PRD-006 | Alta | validation | Exclusões amplas do MVP estão documentadas. | Critérios baseados em evidências para adicionar ou remover módulos e automação. | Criar portões de expansão de módulos e registros de decisão. | Toda expansão de escopo passou pelo seu portão. |
+| PRD-007 | Alta | governance | Revisão humana é preferida para decisões de alto impacto. | Responsabilidades human-in-the-loop, overrides, recursos e trilha de auditoria. | Definir filas de revisão, direitos de decisão e tratamento de incidentes. | Nenhuma decisão de alto impacto é liberada sem revisão com responsável definido. |
+| PRD-008 | Média | launch | Conceitos de UI mostram dashboards, experiências móveis e SSO. | Hierarquia de experiências aprovada e superfícies suportadas no lançamento. | Classificar visuais como blueprint, protótipo ou entregável. | As afirmações externas de experiência correspondem ao produto implementado e suportado. |
 
-## 5. Data and intelligence
+## 5. Dados e inteligência
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| DAT-001 | Critical | definition | Conceptual nodes, edges and tables are mapped. | Canonical entity model with primary keys, foreign keys, cardinalities and object types. | Produce an approved logical and physical data model. | Data architecture signs off on identity and relationship semantics. |
-| DAT-002 | Critical | implementation | Identity resolution is recognized as necessary. | Identity matching, merge, alias, survivorship and correction process across source systems. | Define identity service and reconciliation rules. | Test datasets demonstrate acceptable resolution and reversibility. |
-| DAT-003 | Critical | definition | Events and indicators are cataloged. | Canonical event envelope, schema registry, versioning, idempotency and temporal rules. | Specify event contracts and lifecycle governance. | Producers and consumers pass contract and replay tests. |
-| DAT-004 | Critical | evidence | Value tree and financial indicators are designed. | Traceable lineage from source data through metric, action, outcome and financial value. | Build metric lineage and evidence-register templates. | Every published claim has reproducible lineage and evidence status. |
-| DAT-005 | High | connection | Indicator catalog, dashboards and value tree exist separately. | One semantic layer connecting definitions, formulas, dimensions, dashboards and decisions. | Create a canonical metric catalog and dependency graph. | No critical dashboard metric has an undocumented alternative definition. |
-| DAT-006 | High | definition | Potential, influenced and realized value are recognized as distinct. | Formal attribution, deduplication, counterfactual and temporal rules. | Define value-state taxonomy and calculation policies. | Finance and data governance approve value classification. |
-| DAT-007 | High | validation | M2/M3 indicators and model controls are proposed. | Baselines, comparison groups, sample rules, confidence, fairness and drift thresholds. | Create measurement and model validation protocols. | Indicator/model release gates have measurable thresholds and owners. |
-| DAT-008 | High | governance | Consent and governance controls are listed. | Purpose-to-field map, consent propagation, retention/deletion behavior and derivative-data rules. | Build a data-purpose and lifecycle matrix. | LGPD and governance review confirms end-to-end propagation. |
-| DAT-009 | High | implementation | Auditability, replay, reconciliation and export/delete are required. | Executable lineage, correction, replay, DSAR and portability workflows. | Prototype operational controls with test cases. | Control tests pass and evidence is retained. |
-| DAT-010 | Medium | validation | Corrected data layer and source layer coexist. | Authoritative source-of-truth and change-control policy for source, corrected and derived artifacts. | Resolve correction-register contradictions and provenance status. | Approved artifact lineage is unambiguous. |
+| DAT-001 | Crítica | definition | Nós, arestas e tabelas conceituais estão mapeados. | Modelo canônico de entidades com chaves primárias, chaves estrangeiras, cardinalidades e tipos de objetos. | Produzir um modelo de dados lógico e físico aprovado. | A arquitetura de dados valida a semântica de identidade e relacionamentos. |
+| DAT-002 | Crítica | implementation | A resolução de identidade é reconhecida como necessária. | Processo de matching de identidade, merge, alias, survivorship e correção entre sistemas de origem. | Definir serviço de identidade e regras de reconciliação. | Datasets de teste demonstram resolução e reversibilidade aceitáveis. |
+| DAT-003 | Crítica | definition | Eventos e indicadores estão catalogados. | Envelope canônico de eventos, schema registry, versionamento, idempotência e regras temporais. | Especificar contratos de eventos e governança de ciclo de vida. | Produtores e consumidores passam nos testes de contrato e replay. |
+| DAT-004 | Crítica | evidence | Árvore de valor e indicadores financeiros estão desenhados. | Linhagem rastreável desde os dados de origem até métrica, ação, resultado e valor financeiro. | Construir templates de linhagem de métricas e registro de evidências. | Toda afirmação publicada tem linhagem reproduzível e status de evidência. |
+| DAT-005 | Alta | connection | Catálogo de indicadores, dashboards e árvore de valor existem separadamente. | Uma camada semântica conectando definições, fórmulas, dimensões, dashboards e decisões. | Criar um catálogo canônico de métricas e um grafo de dependências. | Nenhuma métrica crítica de dashboard tem definição alternativa não documentada. |
+| DAT-006 | Alta | definition | Valor potencial, influenciado e realizado são reconhecidos como distintos. | Regras formais de atribuição, deduplicação, contrafactual e temporais. | Definir taxonomia de estados de valor e políticas de cálculo. | Finanças e governança de dados aprovam a classificação de valor. |
+| DAT-007 | Alta | validation | Indicadores M2/M3 e controles de modelo são propostos. | Linhas de base, grupos de comparação, regras de amostragem, confiança, fairness e limiares de drift. | Criar protocolos de medição e validação de modelos. | Portões de liberação de indicadores/modelos têm limiares mensuráveis e responsáveis. |
+| DAT-008 | Alta | governance | Controles de consentimento e governança estão listados. | Mapa finalidade-campo, propagação de consentimento, comportamento de retenção/exclusão e regras de dados derivados. | Construir uma matriz de dados-finalidade e ciclo de vida. | A revisão de LGPD e governança confirma a propagação ponta a ponta. |
+| DAT-009 | Alta | implementation | Auditabilidade, replay, reconciliação e exportação/exclusão são exigidos. | Fluxos executáveis de linhagem, correção, replay, DSAR e portabilidade. | Prototipar controles operacionais com casos de teste. | Os testes de controle passam e as evidências são retidas. |
+| DAT-010 | Média | validation | Camada de dados corrigidos e camada de origem coexistem. | Fonte da verdade autoritativa e política de controle de mudanças para artefatos de origem, corrigidos e derivados. | Resolver contradições do registro de correções e status de proveniência. | A linhagem dos artefatos aprovados é inequívoca. |
 
-## 6. Technology and integrations
+## 6. Tecnologia e integrações
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| TEC-001 | Critical | implementation | Integration landscape and protocols are proposed. | Executable interface specifications: payloads, endpoints, authentication, ownership and versions. | Create integration contracts and a system-of-record matrix. | Each launch integration passes contract and security review. |
-| TEC-002 | Critical | governance | Retry, DLQ, replay, quarantine and rollback are listed. | Reliability targets, failure ownership, runbooks, alerting and recovery tests. | Define SLOs, on-call ownership and recovery procedures. | Recovery drills meet approved service and data-integrity thresholds. |
-| TEC-003 | High | definition | HUB platform, warehouse and intelligence engine are conceptual. | Target architecture, deployment boundaries, environments and nonfunctional requirements. | Produce solution architecture and environment strategy. | Architecture review approves scalability, security and maintainability. |
-| TEC-004 | High | governance | Data isolation and secret rotation are implied. | Tenant isolation, IAM, secret management, audit logging and security incident process. | Complete threat model and security control matrix. | Security approval and remediation evidence exist. |
-| TEC-005 | High | validation | Integrations are prioritized M0–M2. | Cost, latency, volume, rate-limit and availability assumptions for each priority. | Establish technical baselines and capacity model. | Technical economics support the business and launch plan. |
-| TEC-006 | High | connection | Identity and integration maps are separate artifacts. | Cross-system identity and ownership map that drives integration behavior. | Connect integration keys to canonical data model. | Integration tests demonstrate correct entity resolution. |
-| TEC-007 | Medium | launch | No software implementation or deployment configuration is present. | Release process, environment controls, support model and operational ownership. | Define delivery lifecycle and launch runbook. | Release, rollback and support readiness are approved. |
+| TEC-001 | Crítica | implementation | Panorama de integrações e protocolos são propostos. | Especificações de interface executáveis: payloads, endpoints, autenticação, propriedade e versões. | Criar contratos de integração e uma matriz de system-of-record. | Cada integração de lançamento passa na revisão de contrato e segurança. |
+| TEC-002 | Crítica | governance | Retry, DLQ, replay, quarentena e rollback estão listados. | Metas de confiabilidade, propriedade de falhas, runbooks, alertas e testes de recuperação. | Definir SLOs, propriedade do on-call e procedimentos de recuperação. | Exercícios de recuperação atendem aos limiares aprovados de serviço e integridade de dados. |
+| TEC-003 | Alta | definition | Plataforma HUB, warehouse e motor de inteligência são conceituais. | Arquitetura-alvo, limites de deployment, ambientes e requisitos não funcionais. | Produzir arquitetura de solução e estratégia de ambientes. | A revisão de arquitetura aprova escalabilidade, segurança e manutenibilidade. |
+| TEC-004 | Alta | governance | Isolamento de dados e rotação de segredos são implícitos. | Isolamento de tenants, IAM, gestão de segredos, logs de auditoria e processo de incidentes de segurança. | Completar modelo de ameaças e matriz de controles de segurança. | Aprovação de segurança e evidências de remediação existem. |
+| TEC-005 | Alta | validation | As integrações são priorizadas em M0–M2. | Premissas de custo, latência, volume, rate-limit e disponibilidade para cada prioridade. | Estabelecer linhas de base técnicas e modelo de capacidade. | A economia técnica sustenta o plano de negócio e de lançamento. |
+| TEC-006 | Alta | connection | Mapas de identidade e integração são artefatos separados. | Mapa de identidade e propriedade entre sistemas que direciona o comportamento das integrações. | Conectar chaves de integração ao modelo canônico de dados. | Testes de integração demonstram resolução correta de entidades. |
+| TEC-007 | Média | launch | Não há implementação de software nem configuração de deployment presentes. | Processo de release, controles de ambiente, modelo de suporte e propriedade operacional. | Definir ciclo de vida de entrega e runbook de lançamento. | Prontidão de release, rollback e suporte são aprovadas. |
 
-## 7. Finance and value
+## 7. Finanças e valor
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| FIN-001 | Critical | evidence | ROI simulator contains illustrative assumptions. | Evidence-backed assumptions, sources, approvals and confidence levels. | Create an assumption register with provenance and owner. | No illustrative assumption is presented as a validated claim. |
-| FIN-002 | Critical | definition | Several revenue engines are proposed. | Primary, secondary and expansion revenue architecture with recognition rules. | Build integrated revenue taxonomy and scenarios. | Finance approves revenue classification and reporting logic. |
-| FIN-003 | Critical | validation | ROI, payback and benefit figures are reproducible but inconsistent. | Approved timing, ramp, net-benefit payback, attribution and double-counting methodology. | Rebuild the financial model with conservative, base and upside cases. | Financial model passes reconciliation and review. |
-| FIN-004 | High | connection | Value tree and product indicators are separate. | Causal and commercial bridge from product activity to customer value and HUB revenue. | Link metrics to value levers and value-state rules. | Every claimed value path has an accepted evidence standard. |
-| FIN-005 | High | governance | Commercial and restricted Institute economics should be separated. | Entity-level allocation, transfer pricing, restricted-fund controls and reporting. | Define financial separation and intercompany policies. | Legal, finance and governance approve separation. |
-| FIN-006 | High | validation | Capital planning is required but amounts are unresolved. | Funding need, use of funds, tranches, runway, instrument and downside plan. | Build a connected capital and operating model. | Capital plan matches roadmap, hiring and delivery capacity. |
-| FIN-007 | Medium | launch | Financial indicators include ARR/MRR/NRR and marketplace measures. | Definitions, denominators, cohorts, timing and source-of-truth ledger. | Approve financial KPI dictionary. | Finance certifies the KPI release process. |
+| FIN-001 | Crítica | evidence | O simulador de ROI contém premissas ilustrativas. | Premissas respaldadas por evidências, fontes, aprovações e níveis de confiança. | Criar um registro de premissas com proveniência e responsável. | Nenhuma premissa ilustrativa é apresentada como afirmação validada. |
+| FIN-002 | Crítica | definition | Vários motores de receita são propostos. | Arquitetura de receita primária, secundária e de expansão com regras de reconhecimento. | Construir taxonomia de receita integrada e cenários. | Finanças aprovam a classificação de receita e a lógica de relatórios. |
+| FIN-003 | Crítica | validation | Figuras de ROI, payback e benefício são reproduzíveis, mas inconsistentes. | Metodologia aprovada de timing, ramp, payback de benefício líquido, atribuição e dupla contagem. | Reconstruir o modelo financeiro com cenários conservador, base e otimista. | O modelo financeiro passa por reconciliação e revisão. |
+| FIN-004 | Alta | connection | Árvore de valor e indicadores de produto são separados. | Ponte causal e comercial da atividade do produto ao valor do cliente e à receita do HUB. | Vincular métricas a alavancas de valor e regras de estado de valor. | Todo caminho de valor alegado tem um padrão de evidência aceito. |
+| FIN-005 | Alta | governance | A economia comercial e a do Instituto restrito devem ser separadas. | Alocação no nível de entidade, transfer pricing, controles de fundos restritos e relatórios. | Definir separação financeira e políticas intragrupo. | Jurídico, finanças e governança aprovam a separação. |
+| FIN-006 | Alta | validation | Planejamento de capital é necessário, mas os valores estão indefinidos. | Necessidade de captação, uso dos recursos, tranches, runway, instrumento e plano de downside. | Construir um modelo de capital e operacional conectado. | O plano de capital corresponde ao roadmap, contratações e capacidade de entrega. |
+| FIN-007 | Média | launch | Indicadores financeiros incluem ARR/MRR/NRR e medidas de marketplace. | Definições, denominadores, coortes, timing e ledger fonte da verdade. | Aprovar dicionário de KPIs financeiros. | Finanças certificam o processo de liberação de KPIs. |
 
-## 8. Governance, legal and trust
+## 8. Governança, jurídico e confiança
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| GOV-001 | Critical | governance | Four-unit legal structure is conceptual. | Incorporation, ownership, accounts, authority, tax and intercompany evidence. | Commission legal/entity architecture and responsibility matrix. | Legal and finance approve the operating structure. |
-| GOV-002 | Critical | governance | Data roles and rights are unresolved. | Controller/processor roles, lawful basis, permissions, derived-data rights and exit behavior. | Complete flow-by-flow data governance map. | Data protection review clears all launch flows. |
-| GOV-003 | Critical | governance | Selo independence is identified as a blocker. | Independent governance charter, evaluator rules, conflicts, appeals and withdrawal process. | Draft Selo independence architecture and operating controls. | Independent review approves the Selo model. |
-| GOV-004 | Critical | governance | Liability risks are cataloged. | Contractual allocation for recommendations, matches, suppliers, data incidents and public claims. | Build liability, insurance and indemnity matrix. | Legal and risk owners approve residual exposure. |
-| GOV-005 | Critical | evidence | Governance controls and publication blocks are listed. | Executable evidence that controls operate across data, models, metrics and releases. | Define control tests, evidence retention and sign-off workflow. | Governance gate passes with no critical control gap. |
-| GOV-006 | High | definition | IP chain of title is required. | Ownership and licensing of brand, C.A.O.S., content, software, schemas, data and derivatives. | Create IP register and contributor agreements. | Chain of title is complete and enforceable. |
-| GOV-007 | High | implementation | Retention, DSAR, deletion and portability are required. | Operational workflows across derivatives, backups, caches, suppliers and partner exits. | Run lifecycle and deletion propagation tests. | Data rights tests pass within approved SLAs. |
-| GOV-008 | High | governance | RACI exists but has multiple accountables and missing owners. | One accountable owner for each critical activity, including source stewardship and incident response. | Rebuild RACI and decision-rights matrix. | No critical process has ambiguous accountability. |
-| GOV-009 | High | validation | Fairness, explainability, drift and human review are proposed. | Protected groups, thresholds, sample rules, model cards and rollback evidence. | Establish responsible-intelligence review process. | Model and recommendation controls are approved before release. |
-| GOV-010 | Medium | launch | Public claims and Selo use require controls. | Approved claims library, evidence references, approval authority and withdrawal procedure. | Create communications and claims governance register. | Every external claim is traceable and approved. |
+| GOV-001 | Crítica | governance | A estrutura jurídica de quatro unidades é conceitual. | Evidências de constituição, propriedade, contas, autoridade, tributos e operações intragrupo. | Contratar arquitetura jurídica/entidades e matriz de responsabilidades. | Jurídico e finanças aprovam a estrutura operacional. |
+| GOV-002 | Crítica | governance | Papéis e direitos sobre dados estão indefinidos. | Papéis de controller/processor, base legal, permissões, direitos sobre dados derivados e comportamento de saída. | Completar mapa de governança de dados fluxo a fluxo. | A revisão de proteção de dados libera todos os fluxos de lançamento. |
+| GOV-003 | Crítica | governance | A independência do Selo é identificada como bloqueador. | Carta de governança independente, regras de avaliadores, conflitos, recursos e processo de desligamento. | Elaborar arquitetura de independência do Selo e controles operacionais. | Revisão independente aprova o modelo do Selo. |
+| GOV-004 | Crítica | governance | Riscos de responsabilidade civil estão catalogados. | Alocação contratual para recomendações, matchings, fornecedores, incidentes de dados e afirmações públicas. | Construir matriz de responsabilidade, seguros e indenizações. | Jurídico e responsáveis por risco aprovam a exposição residual. |
+| GOV-005 | Crítica | evidence | Controles de governança e bloqueios de publicação estão listados. | Evidências executáveis de que os controles operam em dados, modelos, métricas e releases. | Definir testes de controle, retenção de evidências e fluxo de aprovação (sign-off). | O portão de governança passa sem lacuna crítica de controle. |
+| GOV-006 | Alta | definition | A cadeia de titularidade de PI é necessária. | Propriedade e licenciamento de marca, C.A.O.S., conteúdo, software, schemas, dados e derivados. | Criar registro de PI e acordos de contribuidores. | A cadeia de titularidade está completa e é exigível. |
+| GOV-007 | Alta | implementation | Retenção, DSAR, exclusão e portabilidade são exigidos. | Fluxos operacionais abrangendo derivados, backups, caches, fornecedores e saídas de parceiros. | Executar testes de ciclo de vida e propagação de exclusão. | Testes de direitos sobre dados passam dentro dos SLAs aprovados. |
+| GOV-008 | Alta | governance | RACI existe, mas tem múltiplos accountable e responsáveis ausentes. | Um único responsável (accountable) para cada atividade crítica, incluindo stewardship das fontes e resposta a incidentes. | Reconstruir RACI e matriz de direitos de decisão. | Nenhum processo crítico tem responsabilização ambígua. |
+| GOV-009 | Alta | validation | Fairness, explicabilidade, drift e revisão humana são propostos. | Grupos protegidos, limiares, regras de amostragem, model cards e evidências de rollback. | Estabelecer processo de revisão de inteligência responsável. | Controles de modelos e recomendações são aprovados antes do release. |
+| GOV-010 | Média | launch | Afirmações públicas e uso do Selo exigem controles. | Biblioteca de afirmações aprovadas, referências de evidências, autoridade de aprovação e procedimento de retirada. | Criar registro de governança de comunicações e afirmações. | Toda afirmação externa é rastreável e aprovada. |
 
-## 9. Market, GTM and partnerships
+## 9. Mercado, GTM e parcerias
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| GTM-001 | Critical | definition | Multiple audiences and institutional routes are described. | Portfolio-level segmentation, buyer roles, budgets and buying processes. | Build buyer and offer architecture. | Launch segments and ownership are approved. |
-| GTM-002 | Critical | evidence | Candidate opportunities and partner applications are hypotheses. | Documented demand, access, procurement route, participant authority and renewal path. | Create evidence log for each target route. | No route is treated as traction without evidence. |
-| GTM-003 | High | connection | Founder-led, direct and partner channels are proposed. | Sequenced channel strategy and fallback that does not create concentration risk. | Model channel capacity, conversion and dependency. | GTM plan has diversified and measurable routes. |
-| GTM-004 | High | validation | Competitor and alternative categories are mapped. | Buyer-ranked comparison, pricing, switching costs and differentiated proof. | Conduct structured alternative analysis. | Positioning claims survive comparison review. |
-| GTM-005 | High | evidence | Market sizing variables are defined. | Bottom-up account universe, reachability, contract value, activation and renewal assumptions. | Build a source-backed market model. | Market model is transparent and scenario-tested. |
-| GTM-006 | High | governance | Partner concentration limits are required. | Numeric thresholds for revenue, roadmap, capacity, data and reputation concentration. | Define concentration metrics and escalation policy. | Governance approves partner exposure limits. |
-| GTM-007 | Medium | launch | Pitch materials present a broad value narrative. | External sales materials aligned to evidence state and approved claims. | Reconcile decks with the blueprint and claims register. | GTM materials pass evidence and legal review. |
+| GTM-001 | Crítica | definition | Múltiplos públicos e rotas institucionais são descritos. | Segmentação no nível de portfólio, papéis de compradores, orçamentos e processos de compra. | Construir arquitetura de compradores e ofertas. | Segmentos de lançamento e propriedade são aprovados. |
+| GTM-002 | Crítica | evidence | Oportunidades candidatas e aplicações de parceiros são hipóteses. | Demanda documentada, acesso, rota de procurement, autoridade dos participantes e caminho de renovação. | Criar log de evidências para cada rota-alvo. | Nenhuma rota é tratada como tração sem evidências. |
+| GTM-003 | Alta | connection | Canais liderados por fundadores, diretos e de parceiros são propostos. | Estratégia de canais sequenciada e fallback que não crie risco de concentração. | Modelar capacidade de canais, conversão e dependência. | O plano de GTM tem rotas diversificadas e mensuráveis. |
+| GTM-004 | Alta | validation | Concorrentes e categorias alternativas estão mapeados. | Comparação ranqueada pelo comprador, precificação, custos de troca e prova diferenciada. | Conduzir análise estruturada de alternativas. | As afirmações de posicionamento sobrevivem à revisão comparativa. |
+| GTM-005 | Alta | evidence | Variáveis de dimensionamento de mercado estão definidas. | Universo de contas bottom-up, alcançabilidade, valor de contrato, premissas de ativação e renovação. | Construir um modelo de mercado respaldado por fontes. | O modelo de mercado é transparente e testado por cenários. |
+| GTM-006 | Alta | governance | Limites de concentração de parceiros são necessários. | Limiares numéricos para concentração de receita, roadmap, capacidade, dados e reputação. | Definir métricas de concentração e política de escalonamento. | Governança aprova limites de exposição a parceiros. |
+| GTM-007 | Média | launch | Materiais de pitch apresentam narrativa ampla de valor. | Materiais de vendas externos alinhados ao estado de evidências e às afirmações aprovadas. | Reconciliar decks com o blueprint e o registro de afirmações. | Materiais de GTM passam pela revisão de evidências e jurídica. |
 
-## 10. Brand and communications
+## 10. Marca e comunicações
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| BRD-001 | High | connection | Brand promise, platform visuals and business fronts exist. | One coherent brand architecture across group units, products, partners and white-label contexts. | Create brand hierarchy and naming rules. | Brand governance approves the architecture. |
-| BRD-002 | High | evidence | Decks and UI concepts show readiness, impact and value. | Claim-level evidence classification and approval status. | Build a claims-to-evidence matrix. | No visual or verbal claim exceeds its evidence state. |
-| BRD-003 | High | definition | White-label is described as configurable. | Boundaries for attribution, visibility, methodology integrity and prohibited customization. | Define white-label standards and exceptions. | Product, brand and legal approve deployment rules. |
-| BRD-004 | Medium | launch | Portuguese and English materials exist. | Language, localization and terminology governance for launch markets. | Create controlled glossary and translation process. | Launch materials are consistent and approved in each language. |
+| BRD-001 | Alta | connection | Promessa de marca, visuais da plataforma e frentes de negócio existem. | Uma arquitetura de marca coerente entre unidades do grupo, produtos, parceiros e contextos white-label. | Criar hierarquia de marca e regras de naming. | Governança de marca aprova a arquitetura. |
+| BRD-002 | Alta | evidence | Decks e conceitos de UI mostram prontidão, impacto e valor. | Classificação de evidências no nível de afirmação e status de aprovação. | Construir uma matriz afirmação-evidência. | Nenhuma afirmação visual ou verbal excede seu estado de evidência. |
+| BRD-003 | Alta | definition | White-label é descrito como configurável. | Limites para atribuição, visibilidade, integridade metodológica e customização proibida. | Definir padrões white-label e exceções. | Produto, marca e jurídico aprovam as regras de deployment. |
+| BRD-004 | Média | launch | Materiais em português e inglês existem. | Governança de idioma, localização e terminologia para mercados de lançamento. | Criar glossário controlado e processo de tradução. | Materiais de lançamento são consistentes e aprovados em cada idioma. |
 
-## 11. Launch and readiness
+## 11. Lançamento e prontidão
 
-| ID | Priority | Type | Current state | Missing element | Refinement action | Approval condition |
+| ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
 |---|---|---|---|---|---|---|
-| LCH-001 | Critical | launch | Roadmaps and module gates exist separately. | One integrated launch-readiness checklist covering business, product, data, technology, legal, finance, operations and communications. | Build the master launch gate and dependency graph. | All critical gates are approved or explicitly conditionally approved. |
-| LCH-002 | Critical | launch | No production implementation, support model or release system is evidenced. | Deployable product, environments, monitoring, support, incident response and rollback. | Create launch operations plan and release runbook. | Operational readiness review passes. |
-| LCH-003 | Critical | validation | Approval states are defined conceptually. | Approval authority, evidence package, review cadence, blockers and re-entry rules. | Create approval workflow and review packet templates. | Final approval can be independently audited. |
-| LCH-004 | High | connection | Project assets are now organized by layer. | Complete traceability from blueprint requirement to refinement artifact, evidence and deliverable. | Build a requirements-to-evidence traceability matrix. | No launch-critical requirement is orphaned. |
-| LCH-005 | High | governance | Risks, assumptions and dependencies are identified in principle. | Owners, dates, thresholds, escalation and decision records. | Seed the project-control registers and connect them to tasks. | Critical risks have accepted treatment or block launch. |
-| LCH-006 | High | launch | Market launch is the final objective. | Readiness definition for customer onboarding, contracts, pricing, privacy notice, support and claims. | Define launch package by offer and market. | Commercial and operational launch checklist passes. |
-| LCH-007 | Medium | validation | Existing approval artifacts include rejected/unapproved indicator material. | Clear promotion path from blocked/refining artifacts to approved deliverables. | Define artifact lifecycle and promotion rules. | Every launch artifact has a valid status and provenance. |
+| LCH-001 | Crítica | launch | Roadmaps e portões de módulos existem separadamente. | Um checklist integrado de prontidão para lançamento cobrindo negócios, produto, dados, tecnologia, jurídico, finanças, operações e comunicações. | Construir o portão mestre de lançamento e o grafo de dependências. | Todos os portões críticos estão aprovados ou explicitamente aprovados condicionalmente. |
+| LCH-002 | Crítica | launch | Nenhuma implementação de produção, modelo de suporte ou sistema de release está evidenciado. | Produto implantável, ambientes, monitoramento, suporte, resposta a incidentes e rollback. | Criar plano de operações de lançamento e runbook de release. | A revisão de prontidão operacional passa. |
+| LCH-003 | Crítica | validation | Estados de aprovação são definidos conceitualmente. | Autoridade de aprovação, pacote de evidências, cadência de revisão, bloqueadores e regras de reentrada. | Criar workflow de aprovação e templates de pacote de revisão. | A aprovação final pode ser auditada independentemente. |
+| LCH-004 | Alta | connection | Os ativos do projeto agora estão organizados por camada. | Rastreabilidade completa do requisito do blueprint ao artefato de refinamento, evidência e entregável. | Construir uma matriz de rastreabilidade requisitos-evidências. | Nenhum requisito crítico para o lançamento fica órfão. |
+| LCH-005 | Alta | governance | Riscos, premissas e dependências são identificados em princípio. | Responsáveis, datas, limiares, escalonamento e registros de decisão. | Popular os registros de controle do projeto e conectá-los às tarefas. | Riscos críticos têm tratamento aceito ou bloqueiam o lançamento. |
+| LCH-006 | Alta | launch | O lançamento no mercado é o objetivo final. | Definição de prontidão para onboarding de clientes, contratos, precificação, aviso de privacidade, suporte e afirmações. | Definir pacote de lançamento por oferta e mercado. | O checklist de lançamento comercial e operacional passa. |
+| LCH-007 | Média | validation | Artefatos de aprovação existentes incluem material de indicadores rejeitado/não aprovado. | Caminho claro de promoção de artefatos blocked/refining para entregáveis aprovados. | Definir ciclo de vida de artefatos e regras de promoção. | Todo artefato de lançamento tem status válido e proveniência. |
 
-## 12. Dependency spine
+## 12. Espinha dorsal de dependências
 
-The gaps are not independent. The most important dependency chain is:
+As lacunas não são independentes. A cadeia de dependências mais importante é:
 
 ```mermaid
 flowchart TD
@@ -209,39 +209,39 @@ flowchart TD
     A --> L[Integrated launch gate]
 ```
 
-### Suggested dependency order
+### Ordem de dependências sugerida
 
-1. Resolve whole-project strategy, offer and unit relationships (`STR-001`–`STR-003`).
-2. Establish product capability boundaries and operating responsibilities (`PRD-001`–`PRD-005`).
-3. Approve canonical data, event, metric and value semantics (`DAT-001`–`DAT-006`).
-4. Define legal, data, IP, Selo and accountability controls (`GOV-001`–`GOV-008`).
-5. Convert architecture into executable technology and operating specifications (`TEC-001`–`TEC-007`).
-6. Rebuild financial, market and claims logic from approved definitions (`FIN-*`, `GTM-*`, `BRD-*`).
-7. Assemble evidence packets and apply the integrated launch gate (`LCH-*`).
+1. Resolver estratégia de todo o projeto, ofertas e relações entre unidades (`STR-001`–`STR-003`).
+2. Estabelecer limites de capacidades do produto e responsabilidades operacionais (`PRD-001`–`PRD-005`).
+3. Aprovar semântica canônica de dados, eventos, métricas e valor (`DAT-001`–`DAT-006`).
+4. Definir controles jurídicos, de dados, PI, Selo e responsabilização (`GOV-001`–`GOV-008`).
+5. Converter arquitetura em especificações tecnológicas e operacionais executáveis (`TEC-001`–`TEC-007`).
+6. Reconstruir lógica financeira, de mercado e de afirmações a partir das definições aprovadas (`FIN-*`, `GTM-*`, `BRD-*`).
+7. Montar pacotes de evidências e aplicar o portão integrado de lançamento (`LCH-*`).
 
-This is a dependency order, not a replacement for the full project roadmap. Multiple workstreams can refine in parallel when their interfaces are explicit.
+Esta é uma ordem de dependências, não um substituto para o roadmap completo do projeto. Múltiplos fluxos de trabalho podem refinar em paralelo quando suas interfaces forem explícitas.
 
-## 13. Immediate register actions
+## 13. Ações imediatas do registro
 
-The next project-management actions are:
+As próximas ações de gestão do projeto são:
 
-- assign an owner and target layer to every Critical gap;
-- convert each Critical gap into a tracked task or decision;
-- create an assumptions register and decision register linked to gap IDs;
-- define evidence required for each Critical approval condition;
-- identify contradictions that must be resolved before downstream work is approved;
-- establish a regular gap-review cycle;
-- update each gap status as artifacts move from Blueprint to Refinement to Approval.
+- atribuir um responsável e uma camada-alvo a cada lacuna Crítica;
+- converter cada lacuna Crítica em uma tarefa rastreada ou decisão;
+- criar um registro de premissas e um registro de decisões vinculados aos IDs das lacunas;
+- definir as evidências exigidas para cada condição crítica de aprovação;
+- identificar contradições que devem ser resolvidas antes que o trabalho downstream seja aprovado;
+- estabelecer um ciclo regular de revisão de lacunas;
+- atualizar o status de cada lacuna conforme os artefatos passam de Blueprint para Refinamento e Aprovação.
 
-## 14. Definition of gap closure
+## 14. Definição de fechamento de lacuna
 
-A gap is closed only when:
+Uma lacuna só é fechada quando:
 
-1. the missing element is defined or implemented;
-2. its dependencies are connected;
-3. required evidence exists and is traceable;
-4. an accountable owner has accepted the result;
-5. the relevant approval condition has passed; and
-6. the result does not create an unresolved contradiction elsewhere in the complete project.
+1. o elemento faltante é definido ou implementado;
+2. suas dependências estão conectadas;
+3. as evidências exigidas existem e são rastreáveis;
+4. um responsável (accountable) aceitou o resultado;
+5. a condição de aprovação pertinente foi atendida; e
+6. o resultado não cria uma contradição não resolvida em outro lugar do projeto completo.
 
-Closing a gap does not mean the surrounding subsystem is automatically launch-ready. It means that the registered missing element has reached an accepted maturity state and can be referenced by downstream work.
+Fechar uma lacuna não significa que o subsistema envolvente esteja automaticamente pronto para lançamento. Significa que o elemento faltante registrado atingiu um estado de maturidade aceito e pode ser referenciado pelo trabalho downstream.

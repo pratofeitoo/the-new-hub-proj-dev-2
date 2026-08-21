@@ -1,5 +1,5 @@
 ---
-title: "HUB v2 GTM, partnerships, and renewal research"
+title: "Pesquisa de GTM, parcerias e renovação do HUB v2"
 date: 2026-08
 status: research input for v2
 language: en
@@ -8,175 +8,175 @@ source_documents:
   - "HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Readiness_Plan.md"
 ---
 
-# HUB v2 GTM, Partnerships, and Renewal Research
+# Pesquisa de GTM, Parcerias e Renovação do HUB v2
 
-## 1. Recommendation
+## 1. Recomendação
 
-**Recommended first distribution route:** founder-led, warm-introduction direct sales to one accountable institutional buyer, followed by one paid or explicitly subsidized pilot with a defined participant cohort. The first buyer should be the organization that owns the relevant member, supplier, talent, or business-development outcome, not the end participant who merely uses the journey.
+**Rota de distribuição inicial recomendada:** vendas diretas conduzidas pelo fundador, por meio de apresentações calorosas, a um comprador institucional único e responsável, seguidas de um piloto pago ou explicitamente subsidiado com uma coorte de participantes definida. O primeiro comprador deve ser a organização que detém o resultado relevante de membros, fornecedores, talentos ou desenvolvimento de negócios, não o participante final que apenas utiliza a jornada.
 
-This route is preferable to launching through a named partner because it preserves learning about the real buyer, budget owner, legal process, participant incentive, and measurable outcome. A partner channel can become the second route after HUB has a repeatable pilot package and referenceable results.
+Essa rota é preferível a lançar por meio de um parceiro nomeado porque preserva o aprendizado sobre o comprador real, o dono do orçamento, o processo jurídico, o incentivo dos participantes e o resultado mensurável. Um canal de parceiros pode se tornar a segunda rota depois que o HUB tiver um pacote de piloto repetível e resultados referenciáveis.
 
-This is a **decision**, not evidence of traction. No signed relationship, active pipeline, paid pilot, or buying commitment is established by the source documents.
+Esta é uma **decisão**, não evidência de tração. Nenhum relacionamento assinado, pipeline ativo, piloto pago ou compromisso de compra é estabelecido pelos documentos-fonte.
 
-## 2. Evidence boundary
+## 2. Limite de evidências
 
-### Source-backed observations
+### Observações respaldadas pelas fontes
 
-- v1 describes a hybrid model: a national HUB network plus customized licensed environments.
-- v1 names Sebrae's “Hub de Oportunidades” and Firjan's “Laboratório do Futuro” as possible ecosystem applications.
-- v1 also lists ABTD, Amcham, federations, and associations as possible applications.
-- v1's proposed journey is diagnosis, plan, connection, implementation, measurement, and recognition.
-- v1 assigns ecosystem implementation and retention to an “Ecosystems and Success” function and identifies recurring indicators such as activation, diagnosis completion, matches, proposals, contracts, renewal, and satisfaction.
-- The approved investor-readiness plan requires one initial buyer and use case, a written pilot, evidence classification, a repeatable sales path, and explicit concentration limits.
+- A v1 descreve um modelo híbrido: uma rede nacional de HUBs mais ambientes licenciados personalizados.
+- A v1 cita o “Hub de Oportunidades” do Sebrae e o “Laboratório do Futuro” da Firjan como possíveis aplicações de ecossistema.
+- A v1 também lista ABTD, Amcham, federações e associações como possíveis aplicações.
+- A jornada proposta na v1 é diagnóstico, plano, conexão, implementação, medição e reconhecimento.
+- A v1 atribui a implementação e a retenção de ecossistemas a uma função de “Ecossistemas e Sucesso” e identifica indicadores recorrentes como ativação, conclusão de diagnósticos, matches, propostas, contratos, renovação e satisfação.
+- O plano aprovado de prontidão para investidores exige um comprador inicial e um caso de uso, um piloto por escrito, classificação de evidências, um caminho de vendas repetível e limites explícitos de concentração.
 
-### Not verified
+### Não verificado
 
-- No source reviewed here verifies a Sebrae relationship, endorsement, procurement process, pilot, or revenue.
-- No source reviewed here verifies a Firjan relationship, endorsement, procurement process, pilot, or revenue.
-- No source reviewed here verifies any ABTD, Amcham, federation, association, buyer, supplier, or enterprise commitment.
-- The proposed partner names are **options/hypotheses**, not traction.
+- Nenhuma fonte revisada aqui verifica relacionamento com o Sebrae, endosso, processo de compras, piloto ou receita.
+- Nenhuma fonte revisada aqui verifica relacionamento com a Firjan, endosso, processo de compras, piloto ou receita.
+- Nenhuma fonte revisada aqui verifica qualquer compromisso de ABTD, Amcham, federação, associação, comprador, fornecedor ou empresa.
+- Os nomes de parceiros propostos são **opções/hipóteses**, não tração.
 
-## 3. Channel options
+## 3. Opções de canal
 
-| Channel | Why it could work | Main risk | Evidence required before scaling | Initial role |
+| Canal | Por que poderia funcionar | Principal risco | Evidência exigida antes de escalar | Papel inicial |
 |---|---|---|---|---|
-| Founder network and warm introductions | Fastest access to senior problem owners; enables qualitative learning and a tailored paid pilot | Relationship-dependent; can produce polite interest without budget | Named sponsor, budget owner, written problem, next step, and pilot proposal | **Primary route** |
-| Direct enterprise sales | Clear budget and measurable operational outcome; potential annual subscription or implementation revenue | Longer procurement, security, legal, and stakeholder cycle | Discovery with economic buyer, procurement path, baseline, and price reaction | Secondary test |
-| Institutional/association channel | One contract can reach many participating organizations and creates distribution leverage | Concentration, slow governance, customization pressure, unclear member activation | Written channel owner, participant access, co-marketing rights, pilot scope, and concentration cap | Post-pilot route |
-| Named ecosystem partner (Sebrae/Firjan) | Strategic fit with v1's ecosystem concepts and potentially broad reach | Unverified status; public-sector or institutional procurement may be slow; partner dependency | Confirmed sponsor, formal permission, procurement route, data terms, and funded scope | Option, not current traction |
-| Specialist implementation partners | Adds delivery capacity and domain credibility | Margin dilution, inconsistent method, conflict with Selo independence | Partner qualification, delivery QA, conflict policy, and repeatable economics | Later capacity layer |
-| Events, content, and challenge-led entry | Low-friction awareness and demand discovery | Vanity engagement; attendance is not buying intent | Qualified account meetings, diagnostic conversion, and paid follow-up | Supporting demand generation |
-| Open marketplace or self-serve acquisition | Long-term network effects and broad reach | Requires liquidity, trust, curation, and support before value appears | Defined liquidity threshold, repeat demand, low manual effort | Explicitly deferred |
+| Rede do fundador e apresentações calorosas | Acesso mais rápido aos donos seniores do problema; permite aprendizado qualitativo e um piloto pago sob medida | Dependente de relacionamento; pode gerar interesse educado sem orçamento | Patrocinador nomeado, dono do orçamento, problema por escrito, próximo passo e proposta de piloto | **Rota primária** |
+| Vendas diretas para empresas | Orçamento claro e resultado operacional mensurável; potencial de receita com assinatura anual ou implementação | Ciclo mais longo de compras, segurança, jurídico e stakeholders | Descoberta com o comprador econômico, caminho de compras, linha de base e reação ao preço | Teste secundário |
+| Canal institucional/de associações | Um único contrato pode alcançar muitas organizações participantes e cria alavancagem de distribuição | Concentração, governança lenta, pressão de customização, ativação de membros incerta | Dono do canal por escrito, acesso aos participantes, direitos de comarketing, escopo do piloto e teto de concentração | Rota pós-piloto |
+| Parceiro de ecossistema nomeado (Sebrae/Firjan) | Encaixe estratégico com os conceitos de ecossistema da v1 e alcance potencialmente amplo | Situação não verificada; compras no setor público ou institucional podem ser lentas; dependência do parceiro | Patrocinador confirmado, permissão formal, rota de compras, termos de dados e escopo financiado | Opção, não tração atual |
+| Parceiros especializados em implementação | Agrega capacidade de entrega e credibilidade de domínio | Diluição de margem, método inconsistente, conflito com a independência do Selo | Qualificação de parceiros, QA de entrega, política de conflitos e economia repetível | Camada de capacidade posterior |
+| Entrada por eventos, conteúdo e desafios | Consciência de baixo atrito e descoberta de demanda | Engajamento de vaidade; presença não é intenção de compra | Reuniões com contas qualificadas, conversão de diagnósticos e follow-up pago | Geração de demanda de apoio |
+| Marketplace aberto ou aquisição self-service | Efeitos de rede de longo prazo e alcance amplo | Exige liquidez, confiança, curadoria e suporte antes que valor apareça | Limiar de liquidez definido, demanda recorrente, baixo esforço manual | Explicitamente adiado |
 
-## 4. Initial sales motion and stage ownership
+## 4. Movimento de vendas inicial e atribuição de etapas
 
-The owner labels below are operating assignments to validate, not claims that the roles already exist. They follow v1's minimum structure and the approved plan's required stages.
+Os rótulos de responsável abaixo são atribuições operacionais a validar, não afirmações de que os papéis já existem. Eles seguem a estrutura mínima da v1 e as etapas exigidas pelo plano aprovado.
 
-| Stage | Owner | Expected duration | Conversion gate | Required evidence | Common objection and response asset |
+| Etapa | Responsável | Duração esperada | Critério de conversão | Evidência exigida | Objeção comum e ativo de resposta |
 |---|---|---:|---|---|---|
-| 1. Target account selection | Founder/Direction | 1 week | Account has a recurring problem, reachable sponsor, and plausible participant access | Account hypothesis, trigger, budget-owner hypothesis, and disqualifiers | “This is too broad.” Use a one-page beachhead/use-case brief. |
-| 2. Warm access and sponsor discovery | Founder/Direction | 1–3 weeks | Named executive sponsor agrees to a problem interview with the operational owner | Contact source, role, problem language, current workflow, urgency | “Send information first.” Send a short problem brief and request a working session, not a generic deck. |
-| 3. Problem and buying-process discovery | Founder + Methodology/Selo lead | 1–2 weeks | Problem, budget owner, decision process, data constraints, and success measure are documented | Interview log; current alternative; cost/effort proxy; approval path; renewal condition | “We already use consultants/spreadsheets.” Alternative map and baseline measurement plan. |
-| 4. Paid diagnostic or pilot proposal | Founder + Finance/Operations | 1–2 weeks | Buyer accepts scope, price or subsidy basis, dates, cohort, owner, and success criteria | Written proposal, commercial terms, implementation RACI, data permissions | “Interesting, but no budget.” Ask whether the problem is funded elsewhere; do not build without a sponsor and explicit commercial decision. |
-| 5. Legal and data review | Operations/Legal + Product/Data | 1–4 weeks | Contract, data purpose, access, retention, IP, and liability are approved | Signed order or agreement, data map, security checklist, privacy terms | “We cannot share sensitive data.” Minimize fields, separate identifiable and aggregated data, and offer human-reviewed evidence handling. |
-| 6. Pilot implementation | Ecosystems and Success lead | 6–12 weeks | Cohort activates and completes enough of diagnosis to support an intervention | Onboarding log, activation, completion, support hours, baseline, intervention record | “Participants will not engage.” Named participant owner, communications plan, time-boxed journey, and escalation path. |
-| 7. Outcome review | Methodology/Selo lead + buyer sponsor | 1–2 weeks | Predefined outcome threshold met or a documented learning decision is made | Baseline-to-endline report, evidence quality, qualitative feedback, cost-to-serve | “Results are hard to attribute.” Use agreed leading indicators and state attribution limits explicitly. |
-| 8. Renewal or expansion | Founder + Ecosystems and Success | 2–6 weeks before end | Buyer signs annual continuation, extension, or paid next cohort based on ongoing value | Renewal proposal, utilization, outcomes, unresolved risks, next-scope economics | “Pilot was one-off.” Tie renewal to a recurring workflow, reporting cadence, cohort refresh, or expansion only where value was demonstrated. |
+| 1. Seleção de contas-alvo | Fundador/Direção | 1 semana | A conta tem um problema recorrente, patrocinador acessível e acesso plausível aos participantes | Hipótese de conta, gatilho, hipótese de dono do orçamento e desqualificadores | “É amplo demais.” Use um brief de uma página de beachhead/caso de uso. |
+| 2. Acesso caloroso e descoberta de patrocinador | Fundador/Direção | 1–3 semanas | Patrocinador executivo nomeado concorda com uma entrevista de problema com o responsável operacional | Fonte do contato, cargo, linguagem do problema, fluxo de trabalho atual, urgência | “Envie informações primeiro.” Envie um breve resumo do problema e solicite uma sessão de trabalho, não um deck genérico. |
+| 3. Descoberta do problema e do processo de compra | Fundador + líder de Metodologia/Selo | 1–2 semanas | Problema, dono do orçamento, processo de decisão, restrições de dados e medida de sucesso documentados | Registro de entrevistas; alternativa atual; proxy de custo/esforço; caminho de aprovação; condição de renovação | “Já usamos consultores/planilhas.” Mapa de alternativas e plano de medição de linha de base. |
+| 4. Proposta de diagnóstico ou piloto pago | Fundador + Finanças/Operações | 1–2 semanas | Comprador aceita escopo, preço ou base de subsídio, datas, coorte, responsável e critérios de sucesso | Proposta escrita, termos comerciais, RACI de implementação, permissões de dados | “Interessante, mas não há orçamento.” Pergunte se o problema está financiado em outra verba; não construa sem um patrocinador e uma decisão comercial explícita. |
+| 5. Revisão jurídica e de dados | Operações/Jurídico + Produto/Dados | 1–4 semanas | Contrato, finalidade dos dados, acesso, retenção, PI e responsabilidade aprovados | Pedido ou acordo assinado, mapa de dados, checklist de segurança, termos de privacidade | “Não podemos compartilhar dados sensíveis.” Minimize campos, separe dados identificáveis e agregados e ofereça tratamento de evidências com revisão humana. |
+| 6. Implementação do piloto | Líder de Ecossistemas e Sucesso | 6–12 semanas | Coorte ativa e completa o suficiente do diagnóstico para sustentar uma intervenção | Registro de onboarding, ativação, conclusão, horas de suporte, linha de base, registro de intervenções | “Os participantes não vão engajar.” Responsável nomeado pelos participantes, plano de comunicação, jornada com prazo limitado e caminho de escalonamento. |
+| 7. Revisão de resultados | Líder de Metodologia/Selo + patrocinador do comprador | 1–2 semanas | Limiar de resultado predefinido atingido ou decisão de aprendizado documentada tomada | Relatório de linha de base a linha final, qualidade das evidências, feedback qualitativo, custo de atendimento | “É difícil atribuir os resultados.” Use indicadores antecedentes acordados e declare explicitamente os limites de atribuição. |
+| 8. Renovação ou expansão | Fundador + Ecossistemas e Sucesso | 2–6 semanas antes do fim | Comprador assina continuação anual, extensão ou próxima coorte paga com base no valor contínuo | Proposta de renovação, utilização, resultados, riscos não resolvidos, economia do próximo escopo | “O piloto foi algo pontual.” Vincule a renovação a um fluxo de trabalho recorrente, cadência de relatórios, renovação da coorte ou expansão apenas onde o valor foi demonstrado. |
 
-### Funnel evidence rules
+### Regras de evidência do funil
 
-- A conversation is not a qualified opportunity until a problem owner, budget path, and next meeting are recorded.
-- “Interesting,” “let's talk,” an event attendance, or an introduction is not traction.
-- A proposal is not a pilot until scope, commercial terms, dates, owner, cohort, data permissions, and success criteria are accepted in writing.
-- A pilot is not traction until activation and outcome evidence are captured.
-- A successful pilot is not recurring revenue until a renewal or expansion commitment is signed.
+- Uma conversa não é uma oportunidade qualificada até que um dono do problema, um caminho de orçamento e uma próxima reunião estejam registrados.
+- “Interessante”, “vamos conversar”, presença em evento ou uma apresentação não é tração.
+- Uma proposta não é um piloto até que escopo, termos comerciais, datas, responsável, coorte, permissões de dados e critérios de sucesso sejam aceitos por escrito.
+- Um piloto não é tração até que evidências de ativação e de resultado sejam capturadas.
+- Um piloto bem-sucedido não é receita recorrente até que um compromisso de renovação ou expansão seja assinado.
 
-## 5. Pilot funnel design
+## 5. Desenho do funil de piloto
 
-The first pilot should prove the complete HUB journey without trying to create a national marketplace. The smallest useful scope is: organization onboarding, configurable diagnosis, evidence submission, maturity result, evolution plan, curated recommendation, human-assisted connection, progress tracking, and outcome report.
+O primeiro piloto deve provar a jornada completa do HUB sem tentar criar um marketplace nacional. O menor escopo útil é: onboarding da organização, diagnóstico configurável, envio de evidências, resultado de maturidade, plano de evolução, recomendação curada, conexão com auxílio humano, acompanhamento de progresso e relatório de resultado.
 
-### Funnel gates
+### Critérios de passagem do funil
 
-1. **Account gate:** target buyer and use case fit the selected beachhead; otherwise disqualify.
-2. **Sponsor gate:** a named senior sponsor and an operational owner both agree the problem matters.
-3. **Funding gate:** paid pilot is preferred. If explicitly subsidized, document who funds it, why, and what commercial decision follows.
-4. **Access gate:** participant cohort, data permissions, and implementation responsibilities are feasible.
-5. **Activation gate:** participants start and complete the minimum diagnostic journey at a predeclared threshold.
-6. **Intervention gate:** each material gap produces a documented recommendation or human-assisted connection.
-7. **Outcome gate:** baseline and endline evidence support a result, learning, or a justified stop decision.
-8. **Renewal gate:** the buyer accepts a recurring value case, price range, next scope, and owner before the pilot closes.
+1. **Critério de conta:** o comprador-alvo e o caso de uso se encaixam no beachhead selecionado; caso contrário, desqualificar.
+2. **Critério de patrocinador:** um patrocinador sênior nomeado e um responsável operacional concordam que o problema importa.
+3. **Critério de financiamento:** piloto pago é o preferível. Se explicitamente subsidiado, documente quem financia, por quê e qual decisão comercial se segue.
+4. **Critério de acesso:** coorte de participantes, permissões de dados e responsabilidades de implementação são viáveis.
+5. **Critério de ativação:** os participantes iniciam e completam a jornada mínima de diagnóstico em um limiar pré-declarado.
+6. **Critério de intervenção:** cada lacuna material produz uma recomendação documentada ou uma conexão com auxílio humano.
+7. **Critério de resultado:** evidências de linha de base e de fim sustentam um resultado, um aprendizado ou uma decisão justificada de parada.
+8. **Critério de renovação:** o comprador aceita um caso de valor recorrente, faixa de preço, próximo escopo e responsável antes do encerramento do piloto.
 
-### What must be learned
+### O que precisa ser aprendido
 
-- Which role feels the pain and which role pays.
-- Whether the buyer needs diagnosis, implementation, connections, reporting, recognition, or a combination.
-- The minimum participant incentive and completion burden.
-- Whether evidence can be collected without sensitive or excessive data.
-- Which outcome can be measured within one pilot cycle.
-- How much human curation and support are required per participating organization.
-- Whether the buyer's recurring workflow is strong enough to justify renewal.
-- Whether a partner can distribute without forcing bespoke features or weakening methodology.
+- Qual papel sente a dor e qual papel paga.
+- Se o comprador precisa de diagnóstico, implementação, conexões, relatórios, reconhecimento ou uma combinação.
+- O incentivo mínimo dos participantes e a carga de conclusão.
+- Se as evidências podem ser coletadas sem dados sensíveis ou excessivos.
+- Qual resultado pode ser medido dentro de um ciclo de piloto.
+- Quanta curadoria e suporte humanos são necessários por organização participante.
+- Se o fluxo de trabalho recorrente do comprador é forte o bastante para justificar a renovação.
+- Se um parceiro pode distribuir sem forçar recursos sob medida ou enfraquecer a metodologia.
 
-## 6. Objections and proof strategy
+## 6. Objeções e estratégia de prova
 
-| Objection | What it may mean | Proof to produce |
+| Objeção | O que pode significar | Prova a produzir |
 |---|---|---|
-| “We already have a consultant or internal spreadsheet.” | Switching friction or low perceived differentiation | Workflow comparison, baseline effort, and a narrow pilot that complements rather than replaces existing work. |
-| “This sounds like a marketplace before there is demand.” | Liquidity concern | Start with one demand-led workflow and human-assisted matching; defer open marketplace claims. |
-| “We cannot authorize participant data.” | Privacy, legal, or trust barrier | Data minimization, purpose limitation, role access, retention rules, and aggregate reporting. |
-| “We need a recognized institution behind it.” | Trust or procurement requirement | Referenceable pilot evidence and clearly labeled partner discussions; never imply endorsement without written proof. |
-| “We do not know the ROI yet.” | Outcome definition is missing | Agree a baseline and leading indicators before the pilot; report attribution limits. |
-| “Our program is unique.” | Fear of a generic product or partner customization | Configuration boundaries, standard core workflow, and a no-bespoke-feature rule unless demand repeats. |
-| “Recognition could be conflicted with implementation.” | Selo HUB independence concern | Separate implementation and evaluation roles, conflict declarations, evidence access rules, and independent decision governance. |
-| “We need a national rollout now.” | Scope pressure or political urgency | Stage-gated expansion: one cohort, one use case, one outcome report, then replicate only if economics and quality hold. |
+| “Já temos um consultor ou uma planilha interna.” | Fricção de troca ou baixa diferenciação percebida | Comparação de fluxos de trabalho, esforço de linha de base e um piloto estreito que complemente, e não substitua, o trabalho existente. |
+| “Isso soa como um marketplace antes de haver demanda.” | Preocupação com liquidez | Comece com um fluxo de trabalho orientado por demanda e matching com auxílio humano; adie alegações de marketplace aberto. |
+| “Não podemos autorizar dados dos participantes.” | Barreira de privacidade, jurídica ou de confiança | Minimização de dados, limitação de finalidade, acesso por papel, regras de retenção e relatórios agregados. |
+| “Precisamos de uma instituição reconhecida por trás disso.” | Exigência de confiança ou de compras | Evidências de piloto referenciáveis e discussões com parceiros claramente rotuladas; nunca implique endosso sem prova escrita. |
+| “Ainda não conhecemos o ROI.” | Definição de resultado ausente | Combine uma linha de base e indicadores antecedentes antes do piloto; relate os limites de atribuição. |
+| “Nosso programa é único.” | Medo de produto genérico ou de customização por parceiro | Limites de configuração, fluxo de trabalho central padrão e regra de nenhum recurso sob medida, a menos que a demanda se repita. |
+| “O reconhecimento pode entrar em conflito com a implementação.” | Preocupação com a independência do Selo HUB | Separação dos papéis de implementação e avaliação, declarações de conflito, regras de acesso a evidências e governança independente de decisões. |
+| “Precisamos de um rollout nacional agora.” | Pressão de escopo ou urgência política | Expansão por etapas: uma coorte, um caso de uso, um relatório de resultado; replique somente se a economia e a qualidade se mantiverem. |
 
-## 7. Pilot-to-renewal logic
+## 7. Lógica de piloto para renovação
 
-Renewal must be earned by recurring buyer value, not by the existence of a completed diagnosis. The renewal case should combine:
+A renovação deve ser conquistada pelo valor recorrente para o comprador, não pela existência de um diagnóstico concluído. O caso de renovação deve combinar:
 
-- A repeated workflow: new cohort, quarterly progress review, annual maturity cycle, supplier/talent demand, or recurring reporting.
-- Evidence of use: active organizations, completed actions, recommendations acted upon, meetings, proposals, or other agreed leading indicators.
-- Evidence of outcome: change against the baseline, with qualitative evidence and attribution limits stated.
-- Lower or predictable cost-to-serve: reusable configuration, content, reporting, and operating playbooks.
-- A next-scope decision: continue the same cohort, add a module, add organizations, or expand to another use case.
+- Um fluxo de trabalho repetido: nova coorte, revisão trimestral de progresso, ciclo anual de maturidade, demanda de fornecedores/talentos ou relatórios recorrentes.
+- Evidência de uso: organizações ativas, ações concluídas, recomendações postas em prática, reuniões, propostas ou outros indicadores antecedentes acordados.
+- Evidência de resultado: mudança em relação à linha de base, com evidências qualitativas e limites de atribuição declarados.
+- Custo de atendimento menor ou previsível: configuração, conteúdo, relatórios e playbooks operacionais reutilizáveis.
+- Uma decisão de próximo escopo: continuar a mesma coorte, adicionar um módulo, adicionar organizações ou expandir para outro caso de uso.
 
-### Renewal decision tree
+### Árvore de decisão de renovação
 
-- **Outcome met and cost-to-serve acceptable:** propose annual renewal with a controlled expansion option.
-- **Outcome met but manual effort too high:** renew only a narrow scope while redesigning operations; do not scale volume.
-- **Activation low:** do not interpret weak outcomes as market rejection until participant incentive and journey friction are tested; simplify or stop.
-- **Outcome unclear:** run no automatic expansion; revise measurement and decide whether a short extension is justified.
-- **Outcome absent and buyer unwilling to continue:** stop the use case or buyer motion and record the learning.
-- **Buyer wants recognition only:** maintain Selo independence; do not make implementation revenue contingent on a favorable evaluation.
+- **Resultado atingido e custo de atendimento aceitável:** propor renovação anual com opção controlada de expansão.
+- **Resultado atingido, mas esforço manual alto demais:** renovar apenas um escopo estreito enquanto redesenha as operações; não escalar volume.
+- **Ativação baixa:** não interpretar resultados fracos como rejeição de mercado até que o incentivo dos participantes e a fricção da jornada sejam testados; simplificar ou parar.
+- **Resultado incerto:** não executar expansão automática; revisar a medição e decidir se uma extensão curta é justificada.
+- **Resultado ausente e comprador indisposto a continuar:** encerrar o caso de uso ou a movimentação junto ao comprador e registrar o aprendizado.
+- **Comprador quer apenas reconhecimento:** manter a independência do Selo; não condicionar a receita de implementação a uma avaliação favorável.
 
-## 8. Partnerships and concentration risk
+## 8. Parcerias e risco de concentração
 
-### Partner map
+### Mapa de parceiros
 
-| Named possibility | Source status | What would need verification |
+| Possibilidade nomeada | Situação nas fontes | O que precisaria de verificação |
 |---|---|---|
-| Sebrae / “Hub de Oportunidades” | v1 strategic application hypothesis | Named sponsor, formal mandate, procurement route, funded scope, participant access, data rights, and written permission for any public association. |
-| Firjan / “Laboratório do Futuro” | v1 strategic application hypothesis | Same evidence, plus industrial member demand, implementation owner, and scope compatible with HUB's standard core. |
-| ABTD | v1 possible application | Member problem, buyer role, pilot owner, and economics. |
-| Amcham | v1 possible application | Member problem, buyer role, pilot owner, and economics. |
-| Federations/associations generally | v1 channel hypothesis | Base access, activation mechanism, renewal owner, and non-exclusive rights. |
+| Sebrae / “Hub de Oportunidades” | Hipótese de aplicação estratégica da v1 | Patrocinador nomeado, mandato formal, rota de compras, escopo financiado, acesso aos participantes, direitos sobre dados e permissão escrita para qualquer associação pública. |
+| Firjan / “Laboratório do Futuro” | Hipótese de aplicação estratégica da v1 | As mesmas evidências, mais demanda de membros industriais, responsável pela implementação e escopo compatível com o núcleo padrão do HUB. |
+| ABTD | Aplicação possível na v1 | Problema dos membros, papel do comprador, responsável pelo piloto e economia. |
+| Amcham | Aplicação possível na v1 | Problema dos membros, papel do comprador, responsável pelo piloto e economia. |
+| Federações/associações em geral | Hipótese de canal da v1 | Acesso à base, mecanismo de ativação, responsável pela renovação e direitos não exclusivos. |
 
-### Concentration controls
+### Controles de concentração
 
-The approved plan requires numeric thresholds to be written before pilot results. The v2 financial model should set and lock:
+O plano aprovado exige que limiares numéricos sejam definidos por escrito antes dos resultados do piloto. O modelo financeiro da v2 deve estabelecer e travar:
 
-- Maximum percentage of revenue from one partner.
-- Maximum percentage of active organizations from one partner.
-- Maximum percentage of qualified pipeline from one partner.
-- Maximum share of product roadmap or support capacity consumed by one partner.
-- Maximum exclusivity period and geography, if any.
+- Percentual máximo de receita proveniente de um único parceiro.
+- Percentual máximo de organizações ativas vindas de um único parceiro.
+- Percentual máximo de pipeline qualificado originado de um único parceiro.
+- Participação máxima do roadmap de produto ou da capacidade de suporte consumida por um único parceiro.
+- Período e geografia máximos de exclusividade, se houver.
 
-Until those thresholds are approved, HUB should avoid exclusivity, partner-specific product branches, and forecasts that depend on Sebrae, Firjan, or any other named institution. If one partner exceeds a threshold, diversify distribution before expanding that dependent channel.
+Até que esses limiares sejam aprovados, o HUB deve evitar exclusividade, ramificações de produto específicas de parceiros e previsões que dependam do Sebrae, da Firjan ou de qualquer outra instituição nomeada. Se um parceiro exceder um limiar, diversifique a distribuição antes de expandir esse canal dependente.
 
-## 9. Operating cadence and evidence ownership
+## 9. Cadência operacional e titularidade das evidências
 
-- **Weekly:** Founder reviews account stage, next action, blocker, and evidence quality.
-- **Biweekly during pilot:** Ecosystems and Success reviews activation, support load, participant risks, and implementation variance.
-- **Monthly:** Methodology/Selo lead reviews evidence quality, outcome progress, and conflicts of interest; Product/Data reviews data quality and manual effort.
-- **At pilot close:** Buyer sponsor and HUB jointly sign off on outcome report and renewal decision.
-- **Quarterly:** Direction reviews revenue concentration, channel conversion, renewal, gross margin, partner customization, and whether to maintain, improve, scale, pause, or stop the route.
+- **Semanal:** o fundador revisa etapa da conta, próxima ação, bloqueios e qualidade das evidências.
+- **Quinzenal durante o piloto:** Ecossistemas e Sucesso revisa ativação, carga de suporte, riscos dos participantes e variação de implementação.
+- **Mensal:** o líder de Metodologia/Selo revisa qualidade das evidências, progresso dos resultados e conflitos de interesse; Produto/Dados revisa qualidade dos dados e esforço manual.
+- **No encerramento do piloto:** o patrocinador do comprador e o HUB assinam conjuntamente o relatório de resultado e a decisão de renovação.
+- **Trimestral:** a Direção revisa concentração de receita, conversão de canais, renovação, margem bruta, customização de parceiros e se deve manter, melhorar, escalar, pausar ou parar a rota.
 
-## 10. Explicit exclusions for the first 12–18 months
+## 10. Exclusões explícitas para os primeiros 12–18 meses
 
-- Do not treat Sebrae, Firjan, ABTD, Amcham, or any other named institution as a customer or partner without written evidence.
-- Do not rely on a partner channel before a direct pilot establishes the problem, buyer, outcome, and cost-to-serve.
-- Do not launch a national open marketplace before qualified demand, completed matches, and repeat demand meet a predeclared liquidity threshold.
-- Do not build deep integrations, autonomous AI recommendations, or fully automated seal decisions without repeated demand and governance evidence.
-- Do not accept customization that creates a separate product, compromises data integrity, or undermines Selo independence.
-- Do not use event attendance, positive interviews, logo placement, or verbal enthusiasm as sales metrics.
+- Não tratar Sebrae, Firjan, ABTD, Amcham ou qualquer outra instituição nomeada como cliente ou parceiro sem evidência escrita.
+- Não depender de um canal de parceiros antes que um piloto direto estabeleça o problema, o comprador, o resultado e o custo de atendimento.
+- Não lançar um marketplace aberto nacional antes que demanda qualificada, matches concluídos e demanda recorrente atinjam um limiar de liquidez pré-declarado.
+- Não construir integrações profundas, recomendações autônomas de IA ou decisões de selo totalmente automatizadas sem evidências repetidas de demanda e governança.
+- Não aceitar customização que crie um produto separado, comprometa a integridade dos dados ou minere a independência do Selo.
+- Não usar presença em eventos, entrevistas positivas, colocação de logotipo ou entusiasmo verbal como métricas de vendas.
 
-## 11. Immediate validation agenda
+## 11. Agenda imediata de validação
 
-1. Select and document one beachhead buyer and one use case using the investor-readiness criteria.
-2. Conduct structured buyer and participant interviews, recording budget owner, current alternative, urgency, data objections, price reaction, and renewal condition.
-3. Build a one-page pilot proposal with scope, price or subsidy, dates, cohort, owner, data permissions, baseline, success thresholds, and renewal decision.
-4. Test the proposal through warm founder introductions before investing in partner-specific materials.
-5. Set numeric activation, outcome, cost-to-serve, renewal, marketplace-liquidity, and partner-concentration thresholds before results are known.
-6. Approach Sebrae and Firjan only as unverified strategic possibilities, requesting confirmation of sponsor, mandate, procurement, and pilot access rather than implying status.
+1. Selecionar e documentar um comprador beachhead e um caso de uso usando os critérios de prontidão para investidores.
+2. Conduzir entrevistas estruturadas com compradores e participantes, registrando dono do orçamento, alternativa atual, urgência, objeções de dados, reação ao preço e condição de renovação.
+3. Construir uma proposta de piloto de uma página com escopo, preço ou subsídio, datas, coorte, responsável, permissões de dados, linha de base, limiares de sucesso e decisão de renovação.
+4. Testar a proposta por meio de apresentações calorosas do fundador antes de investir em materiais específicos de parceiros.
+5. Definir limiares numéricos de ativação, resultado, custo de atendimento, renovação, liquidez de marketplace e concentração de parceiros antes que os resultados sejam conhecidos.
+6. Abordar Sebrae e Firjan apenas como possibilidades estratégicas não verificadas, solicitando confirmação de patrocinador, mandato, compras e acesso ao piloto, em vez de implicar status.
 
-**Bottom line:** use a warm founder network to win the first direct institutional pilot, learn the buying and renewal mechanics, and earn a reference. Treat institutional partners as a later distribution multiplier, not as current traction or the first assumption in the revenue plan.
+**Conclusão:** use a rede calorosa do fundador para conquistar o primeiro piloto institucional direto, aprender a mecânica de compra e renovação e ganhar uma referência. Trate parceiros institucionais como um multiplicador de distribuição futuro, não como tração atual ou a primeira suposição do plano de receita.

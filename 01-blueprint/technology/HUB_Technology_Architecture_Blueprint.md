@@ -1,5 +1,5 @@
 ---
-title: "HUB Technology Architecture Blueprint"
+title: "Blueprint de Arquitetura de Tecnologia do HUB"
 blueprint_id: BP-004
 status: draft
 layer: blueprint
@@ -10,202 +10,202 @@ updated: 2026-08-21
 gap_ids: [TEC-001, TEC-002, TEC-003, TEC-004, TEC-005, TEC-006, TEC-007]
 ---
 
-# BP-004 — HUB Technology Architecture Blueprint
+# BP-004 — Blueprint de Arquitetura de Tecnologia do HUB
 
-> [!warning] Maturity boundary
-> This is a target-architecture blueprint. It describes boundaries, responsibilities and requirements for refinement; it does not describe a deployed system, selected vendors, an implementation commitment or production readiness. The current evidence explicitly says that no production implementation is evidenced in [[01-blueprint/strategy/HUB_Project_Blueprint_Foundation]].
+> [!warning] Limite de maturidade
+> Este é um blueprint de arquitetura-alvo. Ele descreve fronteiras, responsabilidades e requisitos para refinamento; não descreve um sistema implantado, fornecedores selecionados, um compromisso de implementação ou prontidão para produção. A evidência atual afirma explicitamente que nenhuma implementação de produção está evidenciada em [[01-blueprint/strategy/HUB_Project_Blueprint_Foundation]].
 
-## 1. Platform, warehouse/lakehouse, intelligence, consent and integration boundaries
+## 1. Fronteiras de plataforma, warehouse/lakehouse, inteligência, consentimento e integração
 
-### Target platform boundary
+### Fronteira da plataforma-alvo
 
-The **Plataforma HUB** is the product and workflow boundary for tenant-aware configuration, onboarding, diagnosis, evidence review, journeys, recommendations, solutions, connections, learning and recognition workflows. It should expose stable domain services rather than make every offer a bespoke integration. The six conceptual modules are [[HUB Intelligence]], [[HUB Journey]], [[HUB Solutions]], [[HUB Connections]], [[HUB Academy]] and [[HUB Recognition]], with C.A.O.S. stages represented as traceable workflow states.
+A **Plataforma HUB** é a fronteira de produto e fluxo de trabalho para configuração multi-tenant, onboarding, diagnóstico, revisão de evidências, jornadas, recomendações, soluções, conexões, aprendizado e fluxos de reconhecimento. Ela deve expor serviços de domínio estáveis em vez de transformar cada oferta em uma integração sob medida. Os seis módulos conceituais são [[HUB Intelligence]], [[HUB Journey]], [[HUB Solutions]], [[HUB Connections]], [[HUB Academy]] e [[HUB Recognition]], com os estágios C.A.O.S. representados como estados de fluxo de trabalho rastreáveis.
 
-The platform owns operational commands and user-facing state: tenant/context configuration, actor and role assignment, questionnaire and evidence workflow state, journey actions, curated recommendations, match and introduction state, review decisions, audit events and operator queues. High-impact interpretation, matching, curation and recognition remain human-controlled until their evidence and approval gates exist. A platform record is not automatically a financial or causal claim.
+A plataforma é dona dos comandos operacionais e do estado voltado ao usuário: configuração de tenant/contexto, atribuição de atores e papéis, estado do fluxo de questionários e evidências, ações de jornada, recomendações curadas, estado de match e introdução, decisões de revisão, eventos de auditoria e filas de operadores. Interpretação, matching, curadoria e reconhecimento de alto impacto permanecem sob controle humano até que seus portões de evidência e aprovação existam. Um registro na plataforma não é automaticamente uma alegação financeira ou causal.
 
-The target platform is a modular application boundary, not a commitment to microservices. Refinement must choose the simplest deployable shape that preserves domain ownership, tenant isolation, auditability and independent evolution of integration-heavy workloads. Synchronous APIs serve interactive commands and queries; asynchronous processing serves imports, evidence processing, metric computation, notifications and downstream propagation.
+A plataforma-alvo é uma fronteira de aplicação modular, não um compromisso com microsserviços. O refinamento deve escolher a forma implantável mais simples que preserve a propriedade de domínio, o isolamento por tenant, a auditabilidade e a evolução independente das cargas de trabalho intensivas em integração. APIs síncronas atendem comandos e consultas interativas; processamento assíncrono atende importações, processamento de evidências, cálculo de métricas, notificações e propagação downstream.
 
-### Warehouse/lakehouse boundary
+### Fronteira warehouse/lakehouse
 
-The warehouse/lakehouse is the analytical and evidence boundary. It receives governed source extracts and platform events through ELT, preserves immutable landing/raw data, and produces standardized, curated and serving layers. It owns analytical history, cross-source joins, metric computation, lineage, reproducible snapshots and value/evidence marts; it does not become the operational source of truth for workflow state.
+O warehouse/lakehouse é a fronteira analítica e de evidências. Ele recebe extrações governadas das fontes e eventos da plataforma via ELT, preserva dados imutáveis de landing/raw e produz camadas padronizadas, curadas e de serving. Ele é dono do histórico analítico, joins entre fontes, cálculo de métricas, linhagem, snapshots reproduzíveis e marts de valor/evidência; ele não se torna a fonte operacional da verdade para o estado dos fluxos de trabalho.
 
-The target layers are:
+As camadas-alvo são:
 
-1. **Landing/raw** — source-faithful payloads, ingestion metadata, consent/purpose context and immutable arrival identifiers.
-2. **Standardized** — typed, normalized and deduplicated records with source keys, canonical keys, schema version and quality status.
-3. **Curated semantic** — canonical entities, relationships, events, indicators, cohorts, model versions and temporal validity aligned to [[HUB_Project_Blueprint_Foundation]].
-4. **Serving marts** — approved operational, product, finance and impact views, each with owner, denominator, lineage and evidence status.
+1. **Landing/raw** — payloads fiéis às fontes, metadados de ingestão, contexto de consentimento/finalidade e identificadores imutáveis de chegada.
+2. **Padronizada** — registros tipados, normalizados e deduplicados com chaves de origem, chaves canônicas, versão de schema e status de qualidade.
+3. **Semântica curada** — entidades canônicas, relacionamentos, eventos, indicadores, coortes, versões de modelo e validade temporal alinhados a [[HUB_Project_Blueprint_Foundation]].
+4. **Marts de serving** — visões aprovadas de operações, produto, finanças e impacto, cada uma com dono, denominador, linhagem e status de evidência.
 
-The physical design remains subject to [[DAT-001 — Canonical entity model]] and [[DAT-003 — Canonical event envelope]] refinement. Corrected records must retain source provenance; derived metrics must never overwrite source evidence. The lakehouse may support graph or feature-serving workloads, but those are downstream projections, not alternate authorities without an explicit ownership decision.
+O design físico permanece sujeito ao refinamento de [[DAT-001 — Canonical entity model]] e [[DAT-003 — Canonical event envelope]]. Registros corrigidos devem reter a proveniência da fonte; métricas derivadas nunca devem sobrescrever evidências da fonte. O lakehouse pode suportar cargas de trabalho de grafos ou feature serving, mas essas são projeções downstream, não autoridades alternativas sem uma decisão explícita de propriedade.
 
-### Intelligence boundary
+### Fronteira de inteligência
 
-HUB Intelligence is a governed capability across platform and data layers. Descriptive diagnostics, evidence quality checks, cohorting, recommendations and matching may be progressively automated; high-impact outcomes require accountable human review, explainability, override and appeal paths. Model or rules outputs must carry model/rule version, input snapshot, purpose, confidence or quality status, reviewer state and expiry/revalidation metadata.
+HUB Intelligence é uma capacidade governada através das camadas de plataforma e dados. Diagnósticos descritivos, checagens de qualidade de evidência, cohorting, recomendações e matching podem ser progressivamente automatizados; resultados de alto impacto exigem revisão humana responsável, explicabilidade, caminhos de override e apelação. Saídas de modelos ou regras devem carregar versão de modelo/regra, snapshot de entradas, finalidade, confiança ou status de qualidade, estado de revisão e metadados de expiração/reevalidação.
 
-The intelligence boundary separates potential, influenced, validated and realized value. It cannot claim realized financial impact merely from activity, adoption, pipeline or a match. The metric and model lineage required by [[DAT-004 — Traceable value lineage]] and [[DAT-007 — Measurement and model validation]] is a prerequisite for public or financial claims. Predictive, uplift and anonymous benchmark capabilities are target stages, not currently available capabilities.
+A fronteira de inteligência separa valor potencial, influenciado, validado e realizado. Ela não pode alegar impacto financeiro realizado apenas a partir de atividade, adoção, pipeline ou um match. A linhagem de métricas e modelos exigida por [[DAT-004 — Traceable value lineage]] e [[DAT-007 — Measurement and model validation]] é pré-requisito para alegações públicas ou financeiras. Capacidades preditivas, de uplift e benchmarks anônimos são estágios-alvo, não capacidades atualmente disponíveis.
 
-### Consent and privacy boundary
+### Fronteira de consentimento e privacidade
 
-Consent management is a policy and propagation boundary, not merely a checkbox in the platform. Every data flow must carry purpose, lawful-basis status, scope, actor/tenant, collection source, retention class and effective/revoked timestamps. Consent and purpose decisions must be enforced at ingestion, operational access, analytical transformation, model use, exports, notifications and partner delivery.
+Gestão de consentimento é uma fronteira de política e propagação, não meramente uma caixa de seleção na plataforma. Todo fluxo de dados deve carregar finalidade, status de base legal, escopo, ator/tenant, fonte de coleta, classe de retenção e timestamps de vigência/revogação. Decisões de consentimento e finalidade devem ser aplicadas na ingestão, acesso operacional, transformação analítica, uso de modelos, exportações, notificações e entrega a parceiros.
 
-The target design supports purpose limitation, minimization, DSAR/deletion, portability, correction, derivative-data treatment and exit propagation across platform, lakehouse, caches, backups and suppliers. Controller/processor roles and LGPD treatment remain governance decisions per flow. Instituto HUB restricted activity, HUB Negócios commercial activity and recognition-related evaluation must not be conflated by a shared data path without an approved legal and operational basis.
+O design-alvo suporta limitação de finalidade, minimização, DSAR/exclusão, portabilidade, correção, tratamento de dados derivados e propagação de saída através de plataforma, lakehouse, caches, backups e fornecedores. Papéis de controlador/operador e tratamento LGPD permanecem decisões de governança por fluxo. Atividade restrita do Instituto HUB, atividade comercial do HUB Negócios e avaliação relacionada a reconhecimento não devem ser conflacionadas por um caminho de dados compartilhado sem base legal e operacional aprovada.
 
-### Integration boundary and sequencing
+### Fronteira de integração e sequenciamento
 
-The integration boundary contains adapters, contract validation, identity mapping, consent enforcement, rate controls, retries, quarantine and delivery telemetry. It isolates external volatility from core domain logic. Candidate M0 integrations are CRM, platform, consent, entity/identity and warehouse backbone; M1 adds HRIS, ATS, LMS, finance, procurement, intelligence and marketing; M2 adds client finance, client BI and risk/control systems. This is sequencing logic, not a commitment to vendors or dates.
+A fronteira de integração contém adaptadores, validação de contratos, mapeamento de identidade, aplicação de consentimento, controles de taxa, retries, quarentena e telemetria de entrega. Ela isola a volatilidade externa da lógica central de domínio. Integrações candidatas de M0 são CRM, plataforma, consentimento, entidade/identidade e backbone do warehouse; M1 adiciona HRIS, ATS, LMS, finanças, procurement, inteligência e marketing; M2 adiciona finanças do cliente, BI do cliente e sistemas de risco/controle. Esta é lógica de sequenciamento, não um compromisso com fornecedores ou datas.
 
-Integration contracts must define payloads, endpoints/topics, authentication, ownership, versioning, idempotency, error semantics, rate limits, data classification and deprecation. No named partner or external system is assumed available. A critical launch path cannot depend on an unconfirmed partner; each adapter needs a fallback or an explicit launch exclusion.
+Contratos de integração devem definir payloads, endpoints/tópicos, autenticação, propriedade, versionamento, idempotência, semântica de erro, limites de taxa, classificação de dados e descontinuação. Nenhum parceiro nomeado ou sistema externo é assumido como disponível. Um caminho crítico de lançamento não pode depender de um parceiro não confirmado; cada adaptador precisa de um fallback ou de uma exclusão explícita do lançamento.
 
-## 2. Systems of record, producers, consumers, interfaces and ownership
+## 2. Sistemas de registro, produtores, consumidores, interfaces e propriedade
 
-The following is a target ownership map for refinement. “System of record” means the authoritative owner of a business fact, not necessarily the system where a copy is easiest to query. Owners are capability roles pending assignment to named teams or legal entities.
+O seguinte é um mapa-alvo de propriedade para refinamento. “Sistema de registro” significa o dono autoritativo de um fato de negócio, não necessariamente o sistema onde uma cópia é mais fácil de consultar. Os donos são papéis de capacidade pendentes de atribuição a equipes ou pessoas jurídicas nomeadas.
 
-| Domain fact | Target system of record | Producers | Consumers | Interface | Accountable owner (to assign) |
+| Fato de domínio | Sistema de registro-alvo | Produtores | Consumidores | Interface | Dono responsável (a atribuir) |
 |---|---|---|---|---|---|
-| Tenant, context, roles and workflow state | HUB platform | HUB operators, approved admins, platform services | Platform UI, operations, audit, analytics | Versioned API + domain events | Platform/product owner |
-| Canonical person, company, entity and relationship identity | Identity/master-data service with governed warehouse projection | Platform, CRM, HRIS/ATS, partner imports | All modules, integrations, analytics | Identity API + identity events + reconciliation files | Data owner |
-| Consent, purpose and privacy decisions | Consent/policy service | Participants, admins, privacy operations, integrations | Gateway, platform, ELT, exports, model services | Policy API + consent events | Privacy/data-governance owner |
-| Diagnostic answers and evidence | Platform evidence service; source evidence retained in landing | Participants, operators, document/import connectors | Intelligence, journey, recognition, audit | API + evidence events + object storage references | Product/operations owner |
-| Opportunities, solutions, matches and introductions | HUB platform | Buyers, curators, operators, partner feeds | Participants, CRM, journey, analytics | Command/query API + events/webhooks | Connections/solutions owner |
-| Learning content and completion | Academy/content service or approved LMS | HUB Academy, LMS connector, participants | Journey, intelligence, reporting | xAPI/event contract + API | Academy/product owner |
-| Contracts, invoices, transactions and financial ledger facts | ERP/finance system of each relevant entity | Finance staff, ERP, payment/provider connectors | Finance marts, platform summaries, reporting | Authenticated API + controlled ELT | Finance owner |
-| Procurement and supplier facts | Procurement/SRM system or approved platform module | Procurement, suppliers, client systems | Solutions, finance, risk, analytics | API/webhook + ELT | Procurement/business owner |
-| HR, recruitment and talent facts | Client HRIS/ATS; HUB retains permitted projections | Client HR/ATS, approved connectors | Academy, intelligence, journey, reporting | API/webhook/SFTP + ELT | Client/source steward |
-| Metrics, cohorts, models and lineage | Governed warehouse/lakehouse semantic layer | ELT jobs, metric pipelines, model services | Dashboards, platform, finance, claims review | Query API/exports + lineage metadata | Data/intelligence owner |
-| Audit, security and delivery telemetry | Central observability/audit store | Every service, gateway, IAM and pipeline | Security, operations, governance, incident response | Structured logs/events + restricted queries | Security/operations owner |
-| Recognition decisions and Selo evidence | Independent recognition workflow boundary | Evaluators, evidence service, operators | Approved public output, appeals, audit | Restricted API + immutable decision events | Independent recognition governance |
+| Tenant, contexto, papéis e estado de fluxo de trabalho | Plataforma HUB | Operadores HUB, admins aprovados, serviços da plataforma | UI da plataforma, operações, auditoria, analytics | API versionada + eventos de domínio | Dono de plataforma/produto |
+| Identidade canônica de pessoa, empresa, entidade e relacionamento | Serviço de identidade/master data com projeção governada no warehouse | Plataforma, CRM, HRIS/ATS, importações de parceiros | Todos os módulos, integrações, analytics | API de identidade + eventos de identidade + arquivos de reconciliação | Dono de dados |
+| Consentimento, finalidade e decisões de privacidade | Serviço de consentimento/política | Participantes, admins, operações de privacidade, integrações | Gateway, plataforma, ELT, exportações, serviços de modelo | API de política + eventos de consentimento | Dono de privacidade/governança de dados |
+| Respostas de diagnóstico e evidências | Serviço de evidências da plataforma; evidência de origem retida no landing | Participantes, operadores, conectores de documento/importação | Inteligência, jornada, reconhecimento, auditoria | API + eventos de evidência + referências de object storage | Dono de produto/operações |
+| Oportunidades, soluções, matches e introduções | Plataforma HUB | Compradores, curadores, operadores, feeds de parceiros | Participantes, CRM, jornada, analytics | API de comando/consulta + eventos/webhooks | Dono de conexões/soluções |
+| Conteúdo de aprendizado e conclusão | Serviço Academy/conteúdo ou LMS aprovado | HUB Academy, conector LMS, participantes | Jornada, inteligência, relatórios | Contrato xAPI/eventos + API | Dono de Academy/produto |
+| Contratos, faturas, transações e fatos de ledger financeiro | ERP/sistema financeiro de cada entidade relevante | Equipe financeira, ERP, conectores de pagamento/fornecedor | Marts financeiros, resumos da plataforma, relatórios | API autenticada + ELT controlado | Dono de finanças |
+| Fatos de procurement e fornecedores | Sistema de procurement/SRM ou módulo de plataforma aprovado | Procurement, fornecedores, sistemas do cliente | Soluções, finanças, risco, analytics | API/webhook + ELT | Dono de procurement/negócio |
+| Fatos de RH, recrutamento e talento | HRIS/ATS do cliente; o HUB retém projeções permitidas | RH/ATS do cliente, conectores aprovados | Academy, inteligência, jornada, relatórios | API/webhook/SFTP + ELT | Steward do cliente/fonte |
+| Métricas, coortes, modelos e linhagem | Camada semântica governada do warehouse/lakehouse | Jobs de ELT, pipelines de métricas, serviços de modelo | Dashboards, plataforma, finanças, revisão de alegações | API de consulta/exportações + metadados de linhagem | Dono de dados/inteligência |
+| Auditoria, segurança e telemetria de entrega | Store central de observabilidade/auditoria | Cada serviço, gateway, IAM e pipeline | Segurança, operações, governança, resposta a incidentes | Logs/eventos estruturados + consultas restritas | Dono de segurança/operações |
+| Decisões de reconhecimento e evidências do Selo | Fronteira independente de fluxo de reconhecimento | Avaliadores, serviço de evidências, operadores | Saída pública aprovada, apelações, auditoria | API restrita + eventos de decisão imutáveis | Governança independente de reconhecimento |
 
-Interfaces should be cataloged in one registry linked to canonical entity and event definitions. Each interface entry must identify producer, consumer, system-of-record fact, data classification, consent purpose, owner, contract version, support tier, test suite and retirement date. This directly addresses TEC-001 and TEC-006; the map is a blueprint artifact, not an assertion that these services exist.
+As interfaces devem ser catalogadas em um único registro vinculado às definições canônicas de entidades e eventos. Cada entrada de interface deve identificar produtor, consumidor, fato do sistema de registro, classificação de dados, finalidade de consentimento, dono, versão do contrato, nível de suporte, suíte de testes e data de descontinuação. Isso endereça diretamente TEC-001 e TEC-006; o mapa é um artefato de blueprint, não uma afirmação de que esses serviços existem.
 
-## 3. Conceptual requirements for APIs, events, webhooks, ELT, replay, reconciliation and rollback
+## 3. Requisitos conceituais para APIs, eventos, webhooks, ELT, replay, reconciliação e rollback
 
 ### APIs
 
-APIs should be contract-first and resource/domain-oriented. They require explicit authentication and authorization scopes, tenant/context scoping, stable identifiers, correlation/request IDs, schema version, idempotency keys for commands, pagination/filter limits, validation errors, audit metadata and documented timeout behavior. Reads must not silently cross tenant or purpose boundaries. Writes should return an operation/result status that distinguishes accepted, completed, rejected and pending review.
+APIs devem ser contract-first e orientadas a recursos/domínios. Elas exigem escopos explícitos de autenticação e autorização, escopo de tenant/contexto, identificadores estáveis, IDs de correlação/requisição, versão de schema, chaves de idempotência para comandos, limites de paginação/filtro, erros de validação, metadados de auditoria e comportamento de timeout documentado. Leituras não devem cruzar silenciosamente fronteiras de tenant ou finalidade. Escritas devem retornar um status de operação/resultado que distingue aceito, concluído, rejeitado e pendente de revisão.
 
-External APIs must be behind an integration gateway or adapter layer that applies secret handling, rate limiting, payload validation, consent checks, retries and telemetry. Breaking changes require a versioned contract, consumer notice and migration window. Interface approval requires contract tests, security review, ownership acceptance and evidence that the system-of-record direction is unambiguous (TEC-001).
+APIs externas devem estar atrás de um gateway de integração ou camada de adaptadores que aplique tratamento de segredos, limitação de taxa, validação de payload, checagens de consentimento, retries e telemetria. Mudanças disruptivas exigem contrato versionado, aviso aos consumidores e janela de migração. Aprovação de interface exige testes de contrato, revisão de segurança, aceite do dono e evidência de que a direção do sistema de registro é inequívoca (TEC-001).
 
-### Events
+### Eventos
 
-Events should use a canonical envelope containing event ID, event type, schema version, occurred-at and observed-at timestamps, producer, tenant/context, actor or service principal, subject/entity key, correlation/causation IDs, consent/purpose classification, payload, and lineage/source reference. Producers must publish only events they own; consumers must be idempotent and record processing outcome.
+Eventos devem usar um envelope canônico contendo ID do evento, tipo do evento, versão do schema, timestamps de ocorrência e observação, produtor, tenant/contexto, ator ou principal de serviço, chave de sujeito/entidade, IDs de correlação/causação, classificação de consentimento/finalidade, payload e referência de linhagem/fonte. Produtores devem publicar apenas eventos que possuem; consumidores devem ser idempotentes e registrar o resultado do processamento.
 
-The event catalog and schema registry must govern compatibility, retention, replay eligibility and sensitive-field handling. Events represent facts or state transitions, not unapproved assertions of value. Event versioning and replay tests depend on [[DAT-003 — Canonical event envelope]].
+O catálogo de eventos e o registry de schemas devem governar compatibilidade, retenção, elegibilidade de replay e tratamento de campos sensíveis. Eventos representam fatos ou transições de estado, não afirmações de valor não aprovadas. Versionamento de eventos e testes de replay dependem de [[DAT-003 — Canonical event envelope]].
 
-### Webhooks and external delivery
+### Webhooks e entrega externa
 
-Webhooks are delivery mechanisms, not systems of record. They require signed requests, timestamp/replay protection, endpoint ownership, allow-listing where appropriate, idempotency, bounded retries, exponential backoff, dead-letter handling and a delivery log. Consumers must acknowledge quickly and process asynchronously. A webhook receiver must tolerate duplicates, reordering and delayed delivery; the source event ID remains the deduplication key.
+Webhooks são mecanismos de entrega, não sistemas de registro. Eles exigem requisições assinadas, proteção contra timestamp/replay, propriedade do endpoint, allow-listing quando apropriado, idempotência, retries limitados, backoff exponencial, tratamento de dead-letter e um log de entrega. Consumidores devem reconhecer rapidamente e processar assincronamente. Um receptor de webhook deve tolerar duplicatas, reordenação e entrega atrasada; o ID do evento de origem permanece a chave de deduplicação.
 
-### ELT and data quality
+### ELT e qualidade de dados
 
-ELT pipelines must land source-faithful records before transformation, capture extraction watermark and source cursor, preserve raw payload and schema version, and make every transformation traceable to a job/version. Quality gates should cover completeness, freshness, uniqueness, referential integrity, validity, consent status and identity-match confidence. Failed records move to quarantine with reason, owner and remediation state rather than disappearing or contaminating curated marts.
+Pipelines de ELT devem aterrissar registros fiéis às fontes antes da transformação, capturar watermark de extração e cursor da fonte, preservar payload bruto e versão de schema, e tornar cada transformação rastreável a um job/versão. Portões de qualidade devem cobrir completude, frescor, unicidade, integridade referencial, validade, status de consentimento e confiança de match de identidade. Registros com falha vão para quarentena com motivo, dono e estado de remediação, em vez de desaparecerem ou contaminarem marts curados.
 
-Each pipeline needs an explicit load mode (snapshot, incremental, CDC or event-driven), late-arrival policy, deletion/correction policy, cost and volume baseline, rate-limit behavior and reconciliation cadence. Those requirements remain unvalidated until technical baselines exist (TEC-005).
+Cada pipeline precisa de um modo de carga explícito (snapshot, incremental, CDC ou orientado a eventos), política de chegada tardia, política de exclusão/correção, baseline de custo e volume, comportamento de limite de taxa e cadência de reconciliação. Esses requisitos permanecem não validados até que baselines técnicas existam (TEC-005).
 
-### Replay and reconciliation
+### Replay e reconciliação
 
-Replay must be bounded, authorized and observable. A replay request identifies source range/event IDs, reason, requester, target projection, consent policy, expected impact and rollback plan. Consumers must be idempotent; side effects such as notifications, external writes or recognition decisions require a replay-suppression or compensating-action policy.
+Replay deve ser delimitado, autorizado e observável. Uma solicitação de replay identifica faixa de fonte/IDs de eventos, motivo, solicitante, projeção-alvo, política de consentimento, impacto esperado e plano de rollback. Consumidores devem ser idempotentes; efeitos colaterais como notificações, escritas externas ou decisões de reconhecimento exigem uma política de supressão de replay ou ação compensatória.
 
-Reconciliation compares source counts, checksums or business totals, identity mappings, event offsets, failed/quarantined records and curated outputs. It produces a signed reconciliation result, variance classification, owner and disposition. Identity merges, corrections and survivorship must be reversible and preserve aliases and provenance, as required by [[DAT-002 — Identity resolution]].
+Reconciliação compara contagens da fonte, checksums ou totais de negócio, mapeamentos de identidade, offsets de eventos, registros com falha/em quarentena e saídas curadas. Ela produz um resultado de reconciliação assinado, classificação de variância, dono e disposição. Merges de identidade, correções e survivorship devem ser reversíveis e preservar aliases e proveniência, conforme exigido por [[DAT-002 — Identity resolution]].
 
-### Rollback and recovery
+### Rollback e recuperação
 
-Rollback is defined per change type: code release, schema, configuration, data correction, model/rule version and external delivery. Prefer forward-fix or compensating events for append-only facts; restore or projection rebuild is allowed only with evidence of consistency and approved data-loss boundaries. A rollback must not erase audit history or conceal a prior output.
+Rollback é definido por tipo de mudança: release de código, schema, configuração, correção de dados, versão de modelo/regra e entrega externa. Prefira forward-fix ou eventos compensatórios para fatos append-only; restauração ou rebuild de projeção é permitido apenas com evidência de consistência e fronteiras de perda de dados aprovadas. Um rollback não deve apagar histórico de auditoria nem ocultar uma saída anterior.
 
-Every critical flow needs a runbook for dependency outage, malformed payload, credential failure, queue backlog, data-quality breach, tenant-isolation suspicion and accidental disclosure. SLOs, RTO/RPO, alert thresholds, failure ownership, on-call coverage and recovery drills are future approval conditions, not approved NFRs today (TEC-002). Recovery approval requires drills meeting approved service and data-integrity thresholds.
+Todo fluxo crítico precisa de um runbook para indisponibilidade de dependência, payload malformado, falha de credencial, backlog de fila, violação de qualidade de dados, suspeita de vazamento entre tenants e divulgação acidental. SLOs, RTO/RPO, limiares de alerta, propriedade de falhas, cobertura de on-call e drills de recuperação são condições futuras de aprovação, não NFRs aprovados hoje (TEC-002). Aprovação de recuperação exige drills que atendam limiares aprovados de serviço e integridade de dados.
 
-## 4. Tenant isolation, IAM, secrets, environments, observability and security assumptions
+## 4. Isolamento por tenant, IAM, segredos, ambientes, observabilidade e premissas de segurança
 
-### Tenant isolation
+### Isolamento por tenant
 
-Tenant/context must be a mandatory security boundary in tokens, API requests, event envelopes, storage keys, query policies and analytical projections. The target model should use defense in depth: service authorization, row/object-level policy, tenant-aware encryption/key boundaries where warranted, isolated queues or namespaces for sensitive workloads, and automated cross-tenant access tests. Shared taxonomies may be global only when explicitly classified as non-tenant data; participant, evidence, contract and outcome data default to tenant-scoped.
+Tenant/contexto deve ser uma fronteira de segurança obrigatória em tokens, requisições de API, envelopes de eventos, chaves de armazenamento, políticas de consulta e projeções analíticas. O modelo-alvo deve usar defesa em profundidade: autorização de serviço, política em nível de linha/objeto, fronteiras de criptografia/chaves conscientes de tenant quando justificado, filas ou namespaces isolados para cargas sensíveis e testes automatizados de acesso entre tenants. Taxonomias compartilhadas podem ser globais apenas quando explicitamente classificadas como dados não pertencentes a tenant; dados de participante, evidência, contrato e resultado têm como padrão escopo de tenant.
 
-Cross-tenant aggregation requires approved purpose, anonymization or minimum-cell rules, suppression of re-identification risk and a defined owner. White-label configuration may alter presentation and branding, but cannot bypass identity, consent, methodology, audit or recognition controls.
+Agregação entre tenants requer finalidade aprovada, anonimização ou regras de célula mínima, supressão de risco de reidentificação e um dono definido. Configuração white-label pode alterar apresentação e branding, mas não pode contornar controles de identidade, consentimento, metodologia, auditoria ou reconhecimento.
 
-### IAM and privileged access
+### IAM e acesso privilegiado
 
-IAM should use centralized identity federation where available, least privilege, scoped service identities, role/attribute-based authorization, short-lived credentials, MFA for privileged and operator access, separation of duties and periodic access recertification. Roles must distinguish participant, client admin, operator, analyst, evaluator, integration service, support and security investigator. Break-glass access requires time-bound approval, enhanced logging and post-incident review.
+IAM deve usar federação centralizada de identidade quando disponível, privilégio mínimo, identidades de serviço com escopo, autorização baseada em papel/atributo, credenciais de vida curta, MFA para acesso privilegiado e de operadores, segregação de funções e recertificação periódica de acessos. Papéis devem distinguir participante, admin do cliente, operador, analista, avaliador, serviço de integração, suporte e investigador de segurança. Acesso break-glass exige aprovação com prazo, logging reforçado e revisão pós-incidente.
 
-Authorization decisions must be testable against the product role/tenant matrix from [[PRD-003 — Role, permission and tenancy model]]. No automated intelligence output can grant itself authority to publish, match, recognize, delete or change financial facts.
+Decisões de autorização devem ser testáveis contra a matriz de papel/tenant do produto de [[PRD-003 — Role, permission and tenancy model]]. Nenhuma saída automatizada de inteligência pode conceder a si mesma autoridade para publicar, dar match, reconhecer, excluir ou alterar fatos financeiros.
 
-### Secrets and cryptography
+### Segredos e criptografia
 
-Secrets belong in a managed secret store, never source code, logs, payloads or ordinary configuration. The refinement design must specify issuance, rotation, revocation, ownership, emergency replacement, partner credential boundaries and audit evidence. Encryption in transit and at rest is expected as a target control; key management, regionality and field-level encryption decisions require threat-model evidence. Secret rotation tests and incident procedures are part of TEC-004 approval.
+Segredos pertencem a um store gerenciado de segredos, nunca a código-fonte, logs, payloads ou configuração ordinária. O design de refinamento deve especificar emissão, rotação, revogação, propriedade, substituição de emergência, fronteiras de credenciais de parceiros e evidência de auditoria. Criptografia em trânsito e em repouso é esperada como controle-alvo; decisões de gestão de chaves, regionalidade e criptografia em nível de campo exigem evidência de threat model. Testes de rotação de segredos e procedimentos de incidente fazem parte da aprovação de TEC-004.
 
-### Environments and release controls
+### Ambientes e controles de release
 
-The target lifecycle separates local/development, test/contract, staging/UAT and production environments; production data is not copied into lower environments without approved masking and purpose. Environment configuration, schemas, feature flags, migrations and infrastructure are version-controlled and promoted through review. Production access and deployments are restricted, observable and reversible. No environment exists today merely because this blueprint names it.
+O ciclo de vida-alvo separa ambientes local/desenvolvimento, teste/contrato, staging/UAT e produção; dados de produção não são copiados para ambientes inferiores sem mascaramento e finalidade aprovados. Configuração de ambiente, schemas, feature flags, migrações e infraestrutura são versionados e promovidos através de revisão. Acesso à produção e deployments são restritos, observáveis e reversíveis. Nenhum ambiente existe hoje apenas porque este blueprint o nomeia.
 
-Release gates should include unit/integration/contract tests, migration rehearsal, security checks, data-quality checks, observability validation, backup/restore evidence, change owner and rollback plan. Release, support and operational ownership remain unresolved until the delivery lifecycle and launch runbook are approved (TEC-007).
+Portões de release devem incluir testes unitários/integração/contrato, ensaio de migração, checagens de segurança, checagens de qualidade de dados, validação de observabilidade, evidência de backup/restauração, dono da mudança e plano de rollback. Propriedade de release, suporte e operações permanecem não resolvidas até que o ciclo de vida de entrega e o runbook de lançamento sejam aprovados (TEC-007).
 
-### Observability and incident response
+### Observabilidade e resposta a incidentes
 
-Every request, event, pipeline run and model job should emit structured telemetry with correlation ID, tenant/context (protected), actor/service, version, latency, status, retry count and lineage reference. Metrics should cover availability, latency, error rate, queue lag, freshness, data-quality variance, identity-match outcomes, cost, rate-limit usage and security events. Traces must avoid sensitive payloads; logs require classification, retention and access controls.
+Toda requisição, evento, execução de pipeline e job de modelo deve emitir telemetria estruturada com ID de correlação, tenant/contexto (protegido), ator/serviço, versão, latência, status, contagem de retries e referência de linhagem. Métricas devem cobrir disponibilidade, latência, taxa de erro, lag de fila, frescor, variância de qualidade de dados, resultados de match de identidade, custo, uso de limite de taxa e eventos de segurança. Traces devem evitar payloads sensíveis; logs exigem classificação, retenção e controles de acesso.
 
-Alerts need thresholds, severity, owner, escalation and runbook links. Security incidents require triage, containment, evidence preservation, notification decision, remediation and lessons learned. Observability and security evidence must be retained sufficiently for LGPD, contractual and audit obligations, subject to approved retention. TEC-002 and TEC-004 remain open until operational tests and security remediation evidence exist.
+Alertas precisam de limiares, severidade, dono, escalonamento e links de runbook. Incidentes de segurança exigem triagem, contenção, preservação de evidências, decisão de notificação, remediação e lições aprendidas. Evidências de observabilidade e segurança devem ser retidas suficientemente para obrigações LGPD, contratuais e de auditoria, sujeitas à retenção aprovada. TEC-002 e TEC-004 permanecem abertos até que existam testes operacionais e evidência de remediação de segurança.
 
-### Approved nonfunctional requirements versus assumptions
+### Requisitos não funcionais aprovados versus premissas
 
-At blueprint maturity, the following are **expectations requiring approval**, not approved requirements: availability/SLO targets, latency budgets, throughput and volume ceilings, RTO/RPO, recovery point, cost envelope, rate limits, supported regions, retention periods, encryption/key standards, vulnerability remediation times and staffing/on-call coverage. Architecture review must approve these values with product, data, operations, finance, privacy and security evidence (TEC-003 and TEC-005).
+Na maturidade de blueprint, os seguintes itens são **expectativas que exigem aprovação**, não requisitos aprovados: metas de disponibilidade/SLO, orçamentos de latência, tetos de throughput e volume, RTO/RPO, ponto de recuperação, envelope de custo, limites de taxa, regiões suportadas, períodos de retenção, padrões de criptografia/chaves, tempos de remediação de vulnerabilidades e cobertura de staffing/on-call. A revisão de arquitetura deve aprovar esses valores com evidências de produto, dados, operações, finanças, privacidade e segurança (TEC-003 e TEC-005).
 
-## 5. Architecture choices connected to product, data, operations, finance and launch dependencies
+## 5. Escolhas de arquitetura conectadas a dependências de produto, dados, operações, finanças e lançamento
 
-Architecture follows the project chain `diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir` and the data chain `fontes → identidades → sinais → inteligência → ação → resultado → valor financeiro`. The choices above preserve a stable operational core, governed analytical history and explicit human controls rather than allowing integrations or models to define product behavior implicitly.
+A arquitetura segue a cadeia de projeto `diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir` e a cadeia de dados `fontes → identidades → sinais → inteligência → ação → resultado → valor financeiro`. As escolhas acima preservam um núcleo operacional estável, histórico analítico governado e controles humanos explícitos, em vez de permitir que integrações ou modelos definam implicitamente o comportamento do produto.
 
-| Dependency | Architecture consequence | Required coordination / gate |
+| Dependência | Consequência de arquitetura | Coordenação / portão necessário |
 |---|---|---|
-| Product modules and C.A.O.S. | Domain/workflow APIs must represent module boundaries, states, review queues and operator accountability. | Depends on BP-002: confirm capability taxonomy, MVP boundary, role/tenant matrix and human/automated decisions before interface contracts. |
-| Data contracts and intelligence | Canonical IDs, events, metrics, lineage and model versions are shared primitives; analytical projections cannot redefine operational facts. | Depends on BP-003: confirm logical/physical entities, keys, event envelope, metric definitions, identity rules and value-state semantics. |
-| Operations and support | Every integration and pipeline has an owner, runbook, alert, escalation and recovery path; automation is limited by operational capacity. | Product/operations must approve service blueprints, on-call coverage and exception handling before launch. |
-| Finance and value | Financial ledger facts remain authoritative in entity finance systems; value marts expose evidence status and never convert activity to realized value automatically. | Finance must approve cost envelope, KPI dictionary, attribution and evidence standards before financial claims. |
-| Governance, LGPD and Selo HUB | Consent, entity boundaries, audit, deletion, portability, evaluator independence and public-claim controls are enforced at interfaces and outputs. | Legal/privacy/independent recognition governance must clear each relevant flow; [[GOV-002 — Data roles and rights]] and [[GOV-003 — Selo independence]] remain dependencies. |
-| Partnerships and distribution | External systems are adapters with fallbacks; no hypothetical partner is treated as an available dependency. | Partner commitments, access, limits and data obligations must be evidenced before making an integration launch-critical. |
-| Launch and readiness | Release, monitoring, support, rollback, security and contract tests form one integrated gate, not separate technical checklists. | [[LCH-001 — Integrated launch gate]] and [[LCH-002 — Operational readiness]] must approve the complete evidence packet. |
+| Módulos de produto e C.A.O.S. | APIs de domínio/fluxo de trabalho devem representar fronteiras de módulos, estados, filas de revisão e responsabilidade de operadores. | Depende de BP-002: confirmar taxonomia de capacidades, fronteira de MVP, matriz de papel/tenant e decisões humanas/automatizadas antes dos contratos de interface. |
+| Contratos de dados e inteligência | IDs canônicos, eventos, métricas, linhagem e versões de modelo são primitivos compartilhados; projeções analíticas não podem redefinir fatos operacionais. | Depende de BP-003: confirmar entidades lógicas/físicas, chaves, envelope de eventos, definições de métricas, regras de identidade e semântica de estado de valor. |
+| Operações e suporte | Toda integração e pipeline tem dono, runbook, alerta, escalonamento e caminho de recuperação; automação é limitada pela capacidade operacional. | Produto/operações devem aprovar blueprints de serviço, cobertura de on-call e tratamento de exceções antes do lançamento. |
+| Finanças e valor | Fatos de ledger financeiro permanecem autoritativos nos sistemas financeiros das entidades; marts de valor expõem status de evidência e nunca convertem atividade em valor realizado automaticamente. | Finanças devem aprovar envelope de custo, dicionário de KPIs, atribuição e padrões de evidência antes de alegações financeiras. |
+| Governança, LGPD e Selo HUB | Consentimento, fronteiras de entidade, auditoria, exclusão, portabilidade, independência de avaliadores e controles de alegação pública são aplicados nas interfaces e saídas. | Governança jurídica/privacidade/reconhecimento independente deve liberar cada fluxo relevante; [[GOV-002 — Data roles and rights]] e [[GOV-003 — Selo independence]] permanecem dependências. |
+| Parcerias e distribuição | Sistemas externos são adaptadores com fallbacks; nenhum parceiro hipotético é tratado como dependência disponível. | Compromissos de parceiros, acesso, limites e obrigações de dados devem ser evidenciados antes de tornar uma integração crítica para o lançamento. |
+| Lançamento e prontidão | Release, monitoramento, suporte, rollback, segurança e testes de contrato formam um portão integrado único, não checklists técnicos separados. | [[LCH-001 — Integrated launch gate]] e [[LCH-002 — Operational readiness]] devem aprovar o pacote completo de evidências. |
 
-M0–M4 architecture stages are sequencing hypotheses: M0 establishes IDs, taxonomy, event/indicator catalogs and operational dashboards; M1 adds source connections, graph/cohorts/matching; M2 adds value mart and attribution; M3 adds controlled predictive intelligence; M4 adds anonymous benchmarks and multi-ecosystem scale. Exit criteria, owners, denominators, evidence and approval decisions must be defined before treating a stage as delivered.
+Estágios de arquitetura M0–M4 são hipóteses de sequenciamento: M0 estabelece IDs, taxonomia, catálogos de eventos/indicadores e dashboards operacionais; M1 adiciona conexões de fontes, grafos/coortes/matching; M2 adiciona mart de valor e atribuição; M3 adiciona inteligência preditiva controlada; M4 adiciona benchmarks anônimos e escala multi-ecossistema. Critérios de saída, donos, denominadores, evidências e decisões de aprovação devem ser definidos antes de tratar um estágio como entregue.
 
-## 6. Separation of target architecture, implemented technology and approved nonfunctional requirements
+## 6. Separação entre arquitetura-alvo, tecnologia implementada e requisitos não funcionais aprovados
 
-This document intentionally uses three maturity labels:
+Este documento usa intencionalmente três rótulos de maturidade:
 
-- **Target architecture** — the boundaries, responsibilities, flows and control intent described here. It is a design hypothesis for refinement.
-- **Implemented technology** — code, infrastructure, configuration, integrations, tests, runbooks and operational evidence that have actually been built and verified. No such production implementation is evidenced by the foundation; this blueprint does not claim one.
-- **Approved nonfunctional requirements** — numeric or enforceable commitments accepted by accountable product, operations, finance, security, privacy and governance owners. The blueprint proposes categories and approval conditions but does not approve values.
+- **Arquitetura-alvo** — as fronteiras, responsabilidades, fluxos e intenção de controle descritos aqui. É uma hipótese de design para refinamento.
+- **Tecnologia implementada** — código, infraestrutura, configuração, integrações, testes, runbooks e evidência operacional que foram de fato construídos e verificados. Nenhuma implementação de produção assim é evidenciada pela fundação; este blueprint não afirma que existe.
+- **Requisitos não funcionais aprovados** — compromissos numéricos ou aplicáveis aceitos por donos responsáveis de produto, operações, finanças, segurança, privacidade e governança. O blueprint propõe categorias e condições de aprovação, mas não aprova valores.
 
-Accordingly, “should” and “target” describe architecture intent; they do not mean deployed. A component becomes conditionally approved only when its contract, owner, evidence and dependencies are recorded. It becomes launch-ready only after release, security, recovery, support, data-rights and integrated launch gates pass. Vendor, cloud, framework and database selections are deliberately deferred until capacity, cost, privacy, maintainability and operating evidence are available.
+Consequentemente, “deve” e “alvo” descrevem intenção de arquitetura; eles não significam implantado. Um componente se torna condicionalmente aprovado apenas quando seu contrato, dono, evidência e dependências estão registrados. Ele se torna pronto para lançamento somente após passar pelos portões de release, segurança, recuperação, suporte, direitos de dados e lançamento integrado. Seleções de fornecedores, nuvem, frameworks e bancos de dados são deliberadamente adiadas até que evidências de capacidade, custo, privacidade, manutenibilidade e operação estejam disponíveis.
 
-## Open Assumptions and Unresolved Decisions
+## Premissas Abertas e Decisões Não Resolvidas
 
-| Assumption / unresolved decision | Affected gap IDs | Refinement action |
+| Premissa / decisão não resolvida | IDs de gaps afetados | Ação de refinamento |
 |---|---|---|
-| The product boundary between shared platform core, offer configuration and service operations is still unsettled. | TEC-003, TEC-007 | Depends on BP-002: approve capability taxonomy, module contracts, workflow states and operating ownership. |
-| Canonical entities, keys, event envelope and metric/value semantics can support all target modules without hidden alternate authorities. | TEC-001, TEC-003, TEC-006 | Depends on BP-003: approve logical/physical model, event registry, identity resolution and lineage contracts. |
-| CRM, consent, identity and warehouse are the correct M0 integration priorities and can be accessed under acceptable terms. | TEC-001, TEC-005, TEC-006 | Validate source access, partner commitments, payloads, volumes, rate limits, cost and fallback before sequencing. |
-| Required availability, latency, throughput, RTO/RPO, retention and cost targets are achievable with the intended operating model. | TEC-002, TEC-003, TEC-005 | Establish baselines, capacity model, SLO proposal and recovery drills; obtain architecture, finance and operations approval. |
-| A single identity/master-data boundary can resolve aliases, merges and survivorship across tenants and source systems reversibly. | TEC-001, TEC-005, TEC-006 | Define matching thresholds, stewardship, correction workflow and representative test datasets. |
-| Tenant isolation, cross-tenant aggregation and white-label boundaries can satisfy LGPD, contractual and methodology constraints. | TEC-003, TEC-004 | Complete threat model, authorization matrix, privacy flow map and isolation tests. |
-| Legal entity/controller-processor boundaries for HUB Negócios, Instituto HUB, Plataforma HUB and Selo HUB can be reflected in systems and data flows. | TEC-004, TEC-006 | Depends on governance/legal refinement: approve entity, data-role, IP, retention and exit decisions before shared services. |
-| Human review capacity and independent evaluator governance are sufficient for recommendations, matching and recognition before automation expands. | TEC-002, TEC-004, TEC-007 | Define review queues, SLAs, override/appeal controls, evaluator independence and incident escalation. |
-| External partner APIs, HRIS/ATS/LMS/ERP/procurement/risk systems will provide stable, supportable interfaces. | TEC-001, TEC-005, TEC-007 | Create partner/interface inventory, contract tests, deprecation policy and fallback path; do not treat hypotheses as dependencies. |
-| Replay, reconciliation and rollback can preserve auditability while compensating for side effects and late corrections. | TEC-002, TEC-003, TEC-006 | Prototype failure/recovery drills with event, ELT, identity and external-delivery test cases. |
-| Finance can distinguish ledger facts, potential/influenced/validated/realized value and HUB revenue without double counting. | TEC-003, TEC-005 | Depends on BP-003 and finance refinement: approve metric lineage, attribution, source-of-truth ledger and evidence status. |
-| A deployable environment strategy, support model and on-call ownership can be staffed before launch. | TEC-002, TEC-003, TEC-007 | Define environment controls, release runbook, support tiers, escalation and operational readiness evidence. |
+| A fronteira de produto entre núcleo de plataforma compartilhado, configuração de oferta e operações de serviço ainda não está assentada. | TEC-003, TEC-007 | Depende de BP-002: aprovar taxonomia de capacidades, contratos de módulos, estados de fluxo de trabalho e propriedade operacional. |
+| Entidades canônicas, chaves, envelope de eventos e semântica de métrica/valor podem suportar todos os módulos-alvo sem autoridades alternativas ocultas. | TEC-001, TEC-003, TEC-006 | Depende de BP-003: aprovar modelo lógico/físico, registry de eventos, resolução de identidade e contratos de linhagem. |
+| CRM, consentimento, identidade e warehouse são as prioridades corretas de integração de M0 e podem ser acessados em termos aceitáveis. | TEC-001, TEC-005, TEC-006 | Validar acesso às fontes, compromissos de parceiros, payloads, volumes, limites de taxa, custo e fallback antes do sequenciamento. |
+| Metas necessárias de disponibilidade, latência, throughput, RTO/RPO, retenção e custo são alcançáveis com o modelo operacional pretendido. | TEC-002, TEC-003, TEC-005 | Estabelecer baselines, modelo de capacidade, proposta de SLO e drills de recuperação; obter aprovação de arquitetura, finanças e operações. |
+| Uma única fronteira de identidade/master data pode resolver aliases, merges e survivorship entre tenants e sistemas de fonte de forma reversível. | TEC-001, TEC-005, TEC-006 | Definir limiares de matching, stewardship, fluxo de correção e datasets de teste representativos. |
+| Isolamento por tenant, agregação entre tenants e fronteiras white-label podem satisfazer restrições LGPD, contratuais e de metodologia. | TEC-003, TEC-004 | Completar threat model, matriz de autorização, mapa de fluxos de privacidade e testes de isolamento. |
+| Fronteiras de pessoa jurídica/controlador-operador para HUB Negócios, Instituto HUB, Plataforma HUB e Selo HUB podem ser refletidas em sistemas e fluxos de dados. | TEC-004, TEC-006 | Depende de refinamento jurídico/governança: aprovar decisões de entidade, papel de dados, PI, retenção e saída antes de serviços compartilhados. |
+| Capacidade de revisão humana e governança independente de avaliadores são suficientes para recomendações, matching e reconhecimento antes da expansão da automação. | TEC-002, TEC-004, TEC-007 | Definir filas de revisão, SLAs, controles de override/apelação, independência de avaliadores e escalonamento de incidentes. |
+| APIs de parceiros externos, sistemas de HRIS/ATS/LMS/ERP/procurement/risco fornecerão interfaces estáveis e suportáveis. | TEC-001, TEC-005, TEC-007 | Criar inventário de parceiros/interfaces, testes de contrato, política de descontinuação e caminho de fallback; não tratar hipóteses como dependências. |
+| Replay, reconciliação e rollback podem preservar auditabilidade enquanto compensam efeitos colaterais e correções tardias. | TEC-002, TEC-003, TEC-006 | Prototipar drills de falha/recuperação com casos de teste de eventos, ELT, identidade e entrega externa. |
+| Finanças podem distinguir fatos de ledger, valor potencial/influenciado/validado/realizado e receita do HUB sem dupla contagem. | TEC-003, TEC-005 | Depende de BP-003 e refinamento financeiro: aprovar linhagem de métricas, atribuição, ledger fonte-da-verdade e status de evidência. |
+| Uma estratégia de ambientes implantável, modelo de suporte e propriedade de on-call podem ser equipados antes do lançamento. | TEC-002, TEC-003, TEC-007 | Definir controles de ambiente, runbook de release, níveis de suporte, escalonamento e evidência de prontidão operacional. |
 
-All assumptions remain open until the linked gap’s missing element, dependency, evidence, accountable owner and approval condition are satisfied. This blueprint does not close TEC-001 through TEC-007.
+Todas as premissas permanecem abertas até que o elemento faltante, a dependência, a evidência, o dono responsável e a condição de aprovação do gap vinculado sejam satisfeitos. Este blueprint não fecha TEC-001 a TEC-007.
 
-## Cross-Blueprint Dependencies
+## Dependências Entre Blueprints
 
-- **Depends on BP-002:** product and operating blueprint must establish the capability taxonomy, MVP boundary, actor/role model, tenant behavior, C.A.O.S. traceability, human-in-the-loop decisions and service ownership. Until then, the platform boundaries and API surface remain coordination points.
-- **Depends on BP-003:** data and intelligence blueprint must establish canonical entities, keys, event contracts, metric/value semantics, identity resolution, lineage, consent propagation and model governance. Until then, this document cannot claim approved schemas or NFRs.
-- **Depends on governance/legal blueprint work:** controller/processor roles, entity separation, IP, retention/deletion, portability, liability and Selo HUB independence must constrain interfaces and storage before launch-critical integration approval.
-- **Depends on finance and offer architecture work:** revenue engine, cost envelope, financial ledger authority, attribution and technical economics must be approved before capacity or availability targets become commitments.
-- **Depends on operations and launch work:** named owners, support tiers, on-call, runbooks, incident response, release controls and the integrated launch gate must exist before any target component is represented as deployable or production-ready.
+- **Depende de BP-002:** o blueprint de produto e operação deve estabelecer a taxonomia de capacidades, fronteira de MVP, modelo de ator/papel, comportamento de tenant, rastreabilidade C.A.O.S., decisões human-in-the-loop e propriedade de serviços. Até lá, as fronteiras da plataforma e a superfície de API permanecem pontos de coordenação.
+- **Depende de BP-003:** o blueprint de dados e inteligência deve estabelecer entidades canônicas, chaves, contratos de eventos, semântica de métrica/valor, resolução de identidade, linhagem, propagação de consentimento e governança de modelos. Até lá, este documento não pode afirmar schemas ou NFRs aprovados.
+- **Depende do trabalho de blueprint de governança/jurídico:** papéis de controlador/operador, separação de entidades, PI, retenção/exclusão, portabilidade, responsabilidade e independência do Selo HUB devem restringir interfaces e armazenamento antes da aprovação de integração crítica para o lançamento.
+- **Depende do trabalho de finanças e arquitetura de oferta:** motor de receita, envelope de custo, autoridade do ledger financeiro, atribuição e economia técnica devem ser aprovados antes que metas de capacidade ou disponibilidade se tornem compromissos.
+- **Depende do trabalho de operações e lançamento:** donos nomeados, níveis de suporte, on-call, runbooks, resposta a incidentes, controles de release e o portão de lançamento integrado devem existir antes que qualquer componente-alvo seja representado como implantável ou pronto para produção.
 
-## Traceability to TEC gaps
+## Rastreabilidade aos Gaps TEC
 
-- [[TEC-001]] — addressed through interface registry, system-of-record matrix, contract-first APIs/events/webhooks and security review conditions.
-- [[TEC-002]] — addressed through SLO approval conditions, failure ownership, runbooks, alerting, replay/rollback and recovery drills.
-- [[TEC-003]] — addressed through target boundaries, environments and explicit separation from implemented technology and approved NFRs.
-- [[TEC-004]] — addressed through tenant isolation, IAM, secret management, observability, audit and incident process assumptions.
-- [[TEC-005]] — addressed through cost/latency/volume/rate-limit/availability baselines and capacity approval conditions.
-- [[TEC-006]] — addressed through cross-system identity, ownership and system-of-record mapping.
-- [[TEC-007]] — addressed through release lifecycle, environment controls, support model and operational readiness dependencies.
+- [[TEC-001]] — endereçado através de registro de interfaces, matriz de sistema de registro, APIs/eventos/webhooks contract-first e condições de revisão de segurança.
+- [[TEC-002]] — endereçado através de condições de aprovação de SLO, propriedade de falhas, runbooks, alertas, replay/rollback e drills de recuperação.
+- [[TEC-003]] — endereçado através de fronteiras-alvo, ambientes e separação explícita de tecnologia implementada e NFRs aprovados.
+- [[TEC-004]] — endereçado através de isolamento por tenant, IAM, gestão de segredos, observabilidade, auditoria e premissas de processo de incidentes.
+- [[TEC-005]] — endereçado através de baselines de custo/latência/volume/limite de taxa/disponibilidade e condições de aprovação de capacidade.
+- [[TEC-006]] — endereçado através de identidade entre sistemas, propriedade e mapeamento de sistema de registro.
+- [[TEC-007]] — endereçado através de ciclo de vida de release, controles de ambiente, modelo de suporte e dependências de prontidão operacional.

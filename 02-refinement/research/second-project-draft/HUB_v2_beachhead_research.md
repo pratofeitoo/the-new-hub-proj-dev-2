@@ -1,6 +1,6 @@
 ---
-title: "HUB v2 beachhead research"
-subtitle: "Buyer and initial use-case recommendation for investor readiness"
+title: "Pesquisa de beachhead do HUB v2"
+subtitle: "Recomendação de comprador e caso de uso inicial para prontidão para investidores"
 date: 2026-08
 status: research artifact
 source_documents:
@@ -13,134 +13,134 @@ tags:
   - customer-discovery
 ---
 
-# HUB v2 Beachhead Research
+# Pesquisa de Beachhead do HUB v2
 
-## Executive recommendation
+## Recomendação executiva
 
-**Recommended wedge: an institutional buyer (association, federation, or business-support entity) licensing a focused, demand-led supplier-readiness and buyer-connection program for its member small businesses.** The first use case should be a narrow version of the v1 **Sebrae “Hub de Oportunidades”** concept:
+**Wedge recomendado: um comprador institucional (associação, federação ou entidade de apoio empresarial) licenciando um programa focado, orientado pela demanda, de prontidão de fornecedores e conexão com compradores para suas pequenas empresas associadas.** O primeiro caso de uso deve ser uma versão estreita do conceito **“Hub de Oportunidades” do Sebrae** da v1:
 
-> Diagnose a participating small business’s readiness for a defined buyer opportunity, prescribe the smallest next intervention, connect it to a qualified buyer or procurement pathway, and report conversion and follow-through.
+> Diagnosticar a prontidão de uma pequena empresa participante para uma oportunidade de compra definida, prescrever a menor próxima intervenção, conectá-la a um comprador qualificado ou a um caminho de contratação e reportar conversão e acompanhamento.
 
-This is a **Decision/Hypothesis**, not evidence of customer demand. The recommendation follows the source documents because it can demonstrate the full HUB loop with a bounded cohort, gives the institution aggregate value, and creates a plausible path from a paid pilot to annual ecosystem licensing. It must not be presented as traction, a partner commitment, or validated willingness to pay until interviews and a funded pilot confirm those points.
+Esta é uma **Decisão/Hipótese**, não uma evidência de demanda de clientes. A recomendação decorre dos documentos-fonte porque pode demonstrar o ciclo completo do HUB com uma coorte delimitada, oferece valor agregado à instituição e cria um caminho plausível de um piloto pago para um licenciamento anual do ecossistema. Ela não deve ser apresentada como tração, compromisso de parceiro ou disposição validada a pagar até que entrevistas e um piloto financiado confirmem esses pontos.
 
-## What is known versus assumed
+## O que é conhecido versus presumido
 
-### Source-grounded facts and decisions
+### Fatos e decisões fundamentados nas fontes
 
-- v1 defines the audience broadly as entities, federations, associations, networks, and companies; it does not select a first buyer (v1, sections 1.3 and 15.2).
-- v1 explicitly describes a Sebrae application called “Hub de Oportunidades,” focused on small-business readiness, demand-led supplier–buyer matching, capability building, post-event follow-up, and opportunity conversion (v1, section 7.2).
-- v1 defines the platform journey as diagnose → plan → connect → implement → measure → recognize → evolve, and recommends proving one organization’s complete journey in the MVP (v1, sections 1.2 and 10.1).
-- v1 identifies ecosystem licensing as an annual contract paid by an entity, while also listing enterprise subscriptions, implementation, and transaction lines (v1, section 8.1).
-- v1 identifies marketplace liquidity, activation, renewal, cost-to-serve, and entity-pilot selection as assumptions or pending decisions (v1, sections 8.3, 9.3, 13.1, and 15.2).
-- The approved investor-readiness plan requires one buyer and one use case, documented problem evidence, a written paid or funded pilot, and explicit evidence gates before expansion. It states that positive interest is not traction (plan, sections 3, 5, and 12).
+- A v1 define o público amplamente como entidades, federações, associações, redes e empresas; ela não seleciona um primeiro comprador (v1, seções 1.3 e 15.2).
+- A v1 descreve explicitamente uma aplicação Sebrae chamada “Hub de Oportunidades”, focada em prontidão de pequenas empresas, pareamento fornecedor–comprador orientado pela demanda, desenvolvimento de capacidades, acompanhamento pós-evento e conversão de oportunidades (v1, seção 7.2).
+- A v1 define a jornada da plataforma como diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir, e recomenda provar a jornada completa de uma organização no MVP (v1, seções 1.2 e 10.1).
+- A v1 identifica o licenciamento de ecossistema como um contrato anual pago por uma entidade, ao mesmo tempo em que lista assinaturas empresariais, implementação e linhas de transação (v1, seção 8.1).
+- A v1 identifica liquidez de marketplace, ativação, renovação, custo de serviço e seleção de piloto com entidade como premissas ou decisões pendentes (v1, seções 8.3, 9.3, 13.1 e 15.2).
+- O plano aprovado de prontidão para investidores exige um comprador e um caso de uso, evidência documentada do problema, um piloto pago ou financiado por escrito e portões de evidência explícitos antes da expansão. Ele afirma que interesse positivo não é tração (plano, seções 3, 5 e 12).
 
-### Hypotheses requiring validation
+### Hipóteses que exigem validação
 
-- An institutional buyer has a current, budgeted problem around member business readiness and opportunity conversion.
-- One institutional sale can provide distribution to a reachable cohort without requiring HUB to acquire each participant independently.
-- A bounded readiness workflow is urgent enough to fund before a broad platform or marketplace is built.
-- The buyer will renew for recurring diagnostics, cohort programs, reporting, and expansion rather than treating the work as a one-off event.
-- Measured buyer connections and outcomes will produce a credible reference for similar institutions.
-- Human-assisted matching can deliver useful outcomes before national marketplace liquidity exists.
+- Um comprador institucional tem um problema atual, orçado, relacionado à prontidão das empresas associadas e à conversão de oportunidades.
+- Uma única venda institucional pode proporcionar distribuição para uma coorte alcançável sem exigir que o HUB adquira cada participante individualmente.
+- Um fluxo de trabalho de prontidão delimitado é urgente o suficiente para ser financiado antes da construção de uma plataforma ou marketplace amplo.
+- O comprador renovará para diagnósticos recorrentes, programas de coorte, relatórios e expansão, em vez de tratar o trabalho como um evento pontual.
+- Conexões e resultados de compradores mensurados produzirão uma referência crível para instituições similares.
+- O pareamento com assistência humana pode entregar resultados úteis antes que exista liquidez nacional de marketplace.
 
-## Candidate wedges
+## Wedges candidatos
 
-### Candidate A: Institutional license for demand-led small-business opportunity readiness
+### Candidato A: Licença institucional para prontidão de oportunidades de pequenas empresas orientada pela demanda
 
-**Buyer:** Business-support entity, association, or federation executive who owns member services, competitiveness, procurement access, or innovation programming. The initial participant is a defined cohort of member small businesses; the demand side is a named buyer opportunity or procurement pathway.
+**Comprador:** Executivo de entidade de apoio empresarial, associação ou federação responsável por serviços aos associados, competitividade, acesso a compras ou programação de inovação. O participante inicial é uma coorte definida de pequenas empresas associadas; o lado da demanda é uma oportunidade de compra nomeada ou um caminho de contratação.
 
-**Use case:** Cohort diagnosis, evidence collection, readiness plan, targeted academy/solution referral, human-assisted buyer connection, follow-up, and aggregate outcome report.
+**Caso de uso:** Diagnóstico de coorte, coleta de evidências, plano de prontidão, encaminhamento direcionado para academia/soluções, conexão humana com compradores, acompanhamento e relatório agregado de resultados.
 
-**Why it fits the source:** It directly operationalizes the v1 Sebrae concept while using the MVP primitives: configurable diagnosis, plan, curated solutions, human-assisted connection, progress tracking, and outcome report.
+**Por que se encaixa na fonte:** Operacionaliza diretamente o conceito Sebrae da v1 usando as primitivas do MVP: diagnóstico configurável, plano, soluções curadas, conexão com assistência humana, acompanhamento de progresso e relatório de resultados.
 
-**Primary economic engine hypothesis:** Implementation-led pilot converting to annual ecosystem licensing. Enterprise subscriptions and marketplace fees remain expansion options, not first-period priorities.
+**Hipótese de motor econômico primário:** Piloto conduzido por implementação convertendo-se em licenciamento anual de ecossistema. Assinaturas empresariais e taxas de marketplace permanecem opções de expansão, não prioridades do primeiro período.
 
-### Candidate B: Industrial competitiveness and future-of-work program for a federation ecosystem
+### Candidato B: Programa de competitividade industrial e futuro do trabalho para um ecossistema de federação
 
-**Buyer:** Industry federation or sector association executive responsible for competitiveness, workforce, innovation, or member value.
+**Comprador:** Executivo de federação industrial ou associação setorial responsável por competitividade, força de trabalho, inovação ou valor aos associados.
 
-**Use case:** A cohort of member companies completes a competitiveness/maturity diagnosis, receives a prioritized evolution plan and academy content, accesses curated talent/supplier/innovation connections, and reports progress.
+**Caso de uso:** Uma coorte de empresas associadas completa um diagnóstico de competitividade/maturidade, recebe um plano de evolução priorizado e conteúdo de academia, acessa conexões curadas de talentos/fornecedores/inovação e reporta progresso.
 
-**Why it fits the source:** It maps to v1’s Firjan “Laboratório do Futuro” application: competitiveness observatory, industrial leadership academy, AI/future of work, talent and supplier matching, open innovation, and a competitiveness seal.
+**Por que se encaixa na fonte:** Corresponde à aplicação “Laboratório do Futuro” da Firjan na v1: observatório de competitividade, academia de liderança industrial, IA/futuro do trabalho, pareamento de talentos e fornecedores, inovação aberta e um selo de competitividade.
 
-**Primary economic engine hypothesis:** Annual ecosystem license plus implementation. The seal and observatory are later-stage expansion products until independence, data governance, and repeatable measurement are proven.
+**Hipótese de motor econômico primário:** Licença anual de ecossistema mais implementação. O selo e o observatório são produtos de expansão de estágio posterior até que independência, governança de dados e medição repetível estejam provados.
 
-### Candidate C: Enterprise subscription for one company’s evidence-based evolution journey
+### Candidato C: Assinatura empresarial para a jornada de evolução baseada em evidências de uma empresa
 
-**Buyer:** Enterprise executive responsible for people, procurement, sustainability/impact, compliance, or business strategy.
+**Comprador:** Executivo corporativo responsável por pessoas, compras, sustentabilidade/impacto, compliance ou estratégia de negócios.
 
-**Use case:** One organization diagnoses gaps across the eight v1 dimensions, builds an evolution plan, implements selected interventions, submits evidence, and optionally enters an independent recognition process.
+**Caso de uso:** Uma organização diagnostica lacunas nas oito dimensões da v1, constrói um plano de evolução, implementa intervenções selecionadas, apresenta evidências e, opcionalmente, entra em um processo independente de reconhecimento.
 
-**Why it fits the source:** It is the clearest single-organization expression of the core journey and the v1 enterprise participant profile.
+**Por que se encaixa na fonte:** É a expressão mais clara da jornada central para uma única organização e do perfil de participante empresarial da v1.
 
-**Primary economic engine hypothesis:** Paid diagnostic or implementation project converting to annual enterprise subscription, with optional evaluation and solutions.
+**Hipótese de motor econômico primário:** Projeto de diagnóstico ou implementação pago convertendo-se em assinatura empresarial anual, com avaliação e soluções opcionais.
 
-## Scoring framework
+## Framework de pontuação
 
-Scores are directional judgments from the source architecture, not market measurements. Each criterion is scored 1 (weak), 3 (mixed), or 5 (strong). The score reflects strategic fit and validation feasibility; it does not prove demand.
+As pontuações são julgamentos direcionais derivados da arquitetura das fontes, não medições de mercado. Cada critério é pontuado como 1 (fraco), 3 (misto) ou 5 (forte). A pontuação reflete adequação estratégica e viabilidade de validação; ela não prova demanda.
 
-| Criterion | Weight | A: institutional readiness | B: industrial ecosystem | C: single enterprise |
+| Critério | Peso | A: prontidão institucional | B: ecossistema industrial | C: empresa única |
 |---|---:|---:|---:|---:|
-| Urgency / visible trigger | 20% | 4 | 3 | 3 |
-| Budget ownership clarity | 15% | 3 | 3 | 4 |
-| Distribution leverage | 20% | 5 | 5 | 1 |
-| Adoption feasibility | 15% | 4 | 3 | 3 |
-| Renewal potential | 15% | 4 | 4 | 3 |
-| Reference value | 15% | 5 | 5 | 3 |
-| **Weighted score** | **100%** | **4.25 / 5** | **3.80 / 5** | **2.85 / 5** |
+| Urgência / gatilho visível | 20% | 4 | 3 | 3 |
+| Clareza de titularidade do orçamento | 15% | 3 | 3 | 4 |
+| Alavancagem de distribuição | 20% | 5 | 5 | 1 |
+| Viabilidade de adoção | 15% | 4 | 3 | 3 |
+| Potencial de renovação | 15% | 4 | 4 | 3 |
+| Valor como referência | 15% | 5 | 5 | 3 |
+| **Pontuação ponderada** | **100%** | **4.25 / 5** | **3.80 / 5** | **2.85 / 5** |
 
-### Scoring rationale
+### Justificativa da pontuação
 
-- **Urgency:** A has an explicit demand/conversion trigger in the v1 concept; B has strategic competitiveness and future-of-work relevance but no documented deadline; C can be important but the source supplies no verified buying trigger.
-- **Budget ownership:** C has the most legible single-company budget hypothesis. A and B require identifying the institutional owner and whether member services, programs, or innovation budgets can fund a pilot.
-- **Distribution:** A and B can reach multiple organizations through one institution, matching the plan’s required distribution-leverage test. C requires separate enterprise acquisition.
-- **Adoption:** A can start with a bounded cohort and human-assisted operations. B may require broader institutional coordination, data, and sector customization. C has fewer participating entities but may face sensitive-data and internal approval friction.
-- **Renewal:** Institutional programs can recur through cohorts, reporting, and expansion if outcomes matter to the buyer. This is still unvalidated. C must prove recurring value after the initial diagnostic or implementation.
-- **Reference:** A successful opportunity-conversion result or B successful competitiveness cohort could be credible reference material for comparable institutions. No reference exists yet.
+- **Urgência:** A tem um gatilho explícito de demanda/conversão no conceito da v1; B tem relevância estratégica de competitividade e futuro do trabalho, mas nenhum prazo documentado; C pode ser importante, mas a fonte não fornece gatilho de compra verificado.
+- **Titularidade do orçamento:** C tem a hipótese de orçamento de empresa única mais legível. A e B exigem identificar o proprietário institucional e se orçamentos de serviços aos associados, programas ou inovação podem financiar um piloto.
+- **Distribuição:** A e B podem alcançar múltiplas organizações por meio de uma instituição, atendendo ao teste de alavancagem de distribuição exigido pelo plano. C exige aquisição empresarial separada.
+- **Adoção:** A pode começar com uma coorte delimitada e operações com assistência humana. B pode exigir coordenação institucional mais ampla, dados e customização setorial. C tem menos entidades participantes, mas pode enfrentar atrito de dados sensíveis e aprovação interna.
+- **Renovação:** Programas institucionais podem recorrer por meio de coortes, relatórios e expansão se os resultados importarem para o comprador. Isso ainda não está validado. C deve provar valor recorrente após o diagnóstico ou implementação inicial.
+- **Referência:** Um resultado bem-sucedido de conversão de oportunidades (A) ou uma coorte de competitividade bem-sucedida (B) poderia ser material de referência crível para instituições comparáveis. Nenhuma referência existe ainda.
 
-## Recommended pilot shape
+## Formato recomendado do piloto
 
-The pilot should be a **single institution, single opportunity theme, single cohort, and single reporting cycle**, not a general-purpose marketplace.
+O piloto deve ser uma **única instituição, único tema de oportunidade, única coorte e único ciclo de relatório**, não um marketplace de propósito geral.
 
-1. **Buyer:** Named institutional executive sponsor and named budget owner; entity type remains to be validated through interviews.
-2. **Participant:** A defined cohort of member small businesses selected against an explicit readiness or opportunity criterion.
-3. **Trigger:** One real buyer demand, procurement category, or opportunity pathway supplied by the institution or an identified buyer. Do not claim demand exists until documented.
-4. **Diagnostic input:** Configurable readiness questionnaire plus basic evidence relevant to the opportunity.
-5. **Intervention:** A prioritized plan with only the content, specialist, supplier, or preparation step required to close the observed gap.
-6. **Connection:** Human-assisted, rules-based matching to the identified demand; no claim of automated marketplace liquidity.
-7. **Outcome:** Baseline and endline measures such as qualified introductions, meetings, proposals, conversion, readiness completion, and participant/buyer satisfaction. Numeric thresholds must be set before the pilot, as required by the plan.
-8. **Renewal event:** A written decision on a second cohort, additional opportunity category, or annual ecosystem license after the outcome review.
+1. **Comprador:** Patrocinador executivo institucional nomeado e proprietário do orçamento nomeado; o tipo de entidade ainda precisa ser validado por meio de entrevistas.
+2. **Participante:** Uma coorte definida de pequenas empresas associadas selecionadas segundo um critério explícito de prontidão ou oportunidade.
+3. **Gatilho:** Uma demanda real de comprador, categoria de contratação ou caminho de oportunidade fornecido pela instituição ou por um comprador identificado. Não afirmar que a demanda existe até que esteja documentada.
+4. **Insumo de diagnóstico:** Questionário configurável de prontidão mais evidências básicas relevantes para a oportunidade.
+5. **Intervenção:** Um plano priorizado apenas com o conteúdo, especialista, fornecedor ou etapa de preparação necessários para fechar a lacuna observada.
+6. **Conexão:** Pareamento assistido por humanos e baseado em regras para a demanda identificada; nenhuma alegação de liquidez automatizada de marketplace.
+7. **Resultado:** Medidas de linha de base e de final, como apresentações qualificadas, reuniões, propostas, conversão, conclusão de prontidão e satisfação de participantes/compradores. Os limiares numéricos devem ser definidos antes do piloto, conforme exigido pelo plano.
+8. **Evento de renovação:** Uma decisão por escrito sobre uma segunda coorte, categoria adicional de oportunidade ou licença anual de ecossistema após a revisão de resultados.
 
-## Evidence gaps and validation gates
+## Lacunas de evidência e portões de validação
 
-| Gap | Validation action | Proceed threshold |
+| Lacuna | Ação de validação | Limiar para prosseguir |
 |---|---|---|
-| Actual institutional pain and trigger | Interview at least named budget owners and operational users; capture current workflow, cost/effort, failure point, and deadline | Buyer describes a specific recurring problem and agrees to test a defined remedy |
-| Budget ownership and willingness to pay | Present a priced pilot with scope, timeline, and responsibilities | Written paid or explicitly funded pilot path with executive sponsor |
-| Participant incentive and completion | Interview/recruit the proposed cohort; test diagnosis and evidence burden | Cohort can be recruited with acceptable completion target set in advance |
-| Real demand for matching | Secure a documented buyer opportunity or procurement pathway | Qualified demand exists before marketplace/connection build-out |
-| Outcome measurability | Establish baseline, endline, attribution limits, and reporting owner | Buyer accepts outcome definitions and review date |
-| Delivery effort and margin | Time-box a concierge pilot and record every implementation/curation hour | Cost-to-serve can be estimated and supports the chosen price hypothesis |
-| Renewal value | Include renewal criteria in pilot proposal and conduct outcome review | Buyer names a funded next step contingent on agreed results |
-| Data and legal permissions | Review participant, buyer, evidence, and cross-ecosystem data flows | Written permissions and a workable controller/processor arrangement |
-| Reference permission | Negotiate case-study/reference rights before pilot close | Buyer agrees what may be cited, without inventing outcomes |
+| Dor e gatilho institucional reais | Entrevistar pelo menos proprietários de orçamento e usuários operacionais nomeados; capturar fluxo de trabalho atual, custo/esforço, ponto de falha e prazo | O comprador descreve um problema recorrente específico e concorda em testar um remédio definido |
+| Titularidade do orçamento e disposição a pagar | Apresentar um piloto precificado com escopo, cronograma e responsabilidades | Caminho de piloto pago ou explicitamente financiado, por escrito, com patrocinador executivo |
+| Incentivo e conclusão dos participantes | Entrevistar/recrutar a coorte proposta; testar o ônus de diagnóstico e evidências | A coorte pode ser recrutada com meta de conclusão aceitável definida antecipadamente |
+| Demanda real por pareamento | Garantir uma oportunidade de comprador ou caminho de contratação documentado | Demanda qualificada existe antes da construção do marketplace/conexões |
+| Mensurabilidade dos resultados | Estabelecer linha de base, medida final, limites de atribuição e responsável pelo relatório | O comprador aceita as definições de resultados e a data de revisão |
+| Esforço de entrega e margem | Delimitar no tempo um piloto concierge e registrar cada hora de implementação/curadoria | O custo de serviço pode ser estimado e suporta a hipótese de preço escolhida |
+| Valor de renovação | Incluir critérios de renovação na proposta do piloto e conduzir a revisão de resultados | O comprador nomeia um próximo passo financiado condicionado a resultados acordados |
+| Permissões de dados e jurídicas | Revisar fluxos de dados de participantes, compradores, evidências e entre ecossistemas | Permissões por escrito e um arranjo viável de controlador/operador |
+| Permissão de referência | Negociar direitos de estudo de caso/referência antes do encerramento do piloto | O comprador concorda sobre o que pode ser citado, sem inventar resultados |
 
-## What not to infer
+## O que não inferir
 
-- No source document proves Sebrae, Firjan, any association, or any other institution is committed to pilot, purchase, distribution, or endorsement.
-- No source document provides customer interviews, signed contracts, pricing, conversion, renewal, market size, or measured outcomes.
-- The candidate scores are strategy judgments, not external market facts.
-- “Selo HUB,” a national marketplace, AI recommendations, and broad portfolio lines are not required to validate this wedge and should remain deferred unless pilot evidence proves need.
+- Nenhum documento-fonte prova que o Sebrae, a Firjan, qualquer associação ou qualquer outra instituição está comprometida com piloto, compra, distribuição ou endosso.
+- Nenhum documento-fonte fornece entrevistas com clientes, contratos assinados, preços, conversão, renovação, tamanho de mercado ou resultados medidos.
+- As pontuações dos candidatos são julgamentos de estratégia, não fatos externos de mercado.
+- “Selo HUB”, um marketplace nacional, recomendações de IA e linhas amplas de portfólio não são necessários para validar este wedge e devem permanecer adiados, a menos que evidências do piloto provem a necessidade.
 
-## First 12–18 month focus and exclusions
+## Foco e exclusões dos primeiros 12–18 meses
 
-Prioritize one institutional buyer type, one demand-led readiness workflow, one bounded cohort, and one repeatable pilot-to-renewal motion. Defer unrelated media/events, multiple independent buyer segments, fully automated recognition, national marketplace-liquidity goals, deep integrations without customer pull, and partner-specific features that do not improve the core workflow. This follows the approved plan’s explicit exclusion logic and protects the investor thesis from becoming a description of the entire v1 ambition.
+Priorizar um tipo de comprador institucional, um fluxo de trabalho de prontidão orientado pela demanda, uma coorte delimitada e uma movimentação repetível de piloto para renovação. Adiar mídia/eventos não relacionados, múltiplos segmentos independentes de compradores, reconhecimento totalmente automatizado, metas de liquidez nacional de marketplace, integrações profundas sem tração de clientes e funcionalidades específicas de parceiros que não melhoram o fluxo de trabalho central. Isso segue a lógica de exclusão explícita do plano aprovado e protege a tese de investimento de se tornar uma descrição de toda a ambição da v1.
 
-## Decision statement
+## Declaração de decisão
 
-**Select Candidate A as the working beachhead decision for v2, subject to Phase 1 evidence gate.** The buyer should be described narrowly after interviews as the institutional role that controls member-value or opportunity-conversion budget, not simply as “Sebrae” or “associations.” The first use case is the demand-led readiness-to-opportunity workflow above. If no institution confirms a painful problem, accessible budget owner, and paid or formally funded pilot path, HUB should not build this wedge by assumption; it should revisit the buyer/use-case pair, with Candidate C as the principal fallback to test.
+**Selecionar o Candidato A como a decisão de beachhead de trabalho para a v2, sujeita ao portão de evidências da Fase 1.** O comprador deve ser descrito de forma estreita após as entrevistas como o papel institucional que controla o orçamento de valor aos associados ou de conversão de oportunidades, e não simplesmente como “Sebrae” ou “associações”. O primeiro caso de uso é o fluxo de trabalho de prontidão-para-oportunidade orientado pela demanda descrito acima. Se nenhuma instituição confirmar um problema doloroso, um proprietário de orçamento acessível e um caminho de piloto pago ou formalmente financiado, o HUB não deve construir este wedge por suposição; deve revisitar o par comprador/caso de uso, com o Candidato C como o principal fallback a testar.
 
-## Source references
+## Referências das fontes
 
-- **HUB master document v1:** sections 1.1–1.4 (problem/category), 5.1–5.4 (platform and journey), 7.2–7.3 (Sebrae and Firjan applications), 8.1–8.3 (revenue and financial assumptions), 10.1–10.2 (MVP and exclusions), 13.1–13.3 (pilot and prioritization), 15.1–15.2 (decisions and pending items).
-- **HUB investor-readiness plan:** sections 2–5 (narrowing and evidence), 6 (market/alternative validation), 7 and 8 (economic engine and sales motion), 9 (pilot sequencing), 12–13 (gates and kill criteria), 16 (readiness checklist).
+- **Documento-mãe HUB v1:** seções 1.1–1.4 (problema/categoria), 5.1–5.4 (plataforma e jornada), 7.2–7.3 (aplicações Sebrae e Firjan), 8.1–8.3 (premissas de receita e financeiras), 10.1–10.2 (MVP e exclusões), 13.1–13.3 (piloto e priorização), 15.1–15.2 (decisões e itens pendentes).
+- **Plano de prontidão para investidores do HUB:** seções 2–5 (estreitamento e evidências), 6 (validação de mercado/alternativas), 7 e 8 (motor econômico e movimentação de vendas), 9 (sequenciamento do piloto), 12–13 (portões e critérios de eliminação), 16 (checklist de prontidão).

@@ -1,22 +1,22 @@
-# Unapproved Draft Workbook
+# Workbook de Rascunho Não Aprovado
 
-`HUB_Mapa_Inteligencia_Dados_Indicadores_UNAPPROVED_DRAFT_v0.xlsx` is a quarantined inspection draft generated from the current corrected CSV layer while the Phase 6 approval gate remains rejected.
+`HUB_Mapa_Inteligencia_Dados_Indicadores_UNAPPROVED_DRAFT_v0.xlsx` é um rascunho de inspeção em quarentena gerado a partir da camada atual de CSV corrigido enquanto o portão de aprovação da Fase 6 permanece rejeitado.
 
-## Explicit status
+## Status explícito
 
-- **Status:** UNAPPROVED DRAFT — NOT FOR PUBLICATION
-- **Purpose:** inspect the current corrected CSV content in workbook form
-- **Source:** `run-02-execution/30-models/indicadores-xlsx/03-corrected-csv/`
-- **Original workbook:** remains untouched under `run-01-source/`
-- **Approval:** rejected; Phase 6 and Phase 6R remain blocked
-- **Release:** this file must not replace, overwrite, or be presented as the final rebuilt workbook
+- **Status:** RASCUNHO NÃO APROVADO — NÃO PUBLICAR
+- **Propósito:** inspecionar o conteúdo atual do CSV corrigido em forma de workbook
+- **Origem:** `run-02-execution/30-models/indicadores-xlsx/03-corrected-csv/`
+- **Workbook original:** permanece intocado sob `run-01-source/`
+- **Aprovação:** rejeitada; Fase 6 e Fase 6R permanecem bloqueadas
+- **Publicação:** este arquivo não deve substituir, sobrescrever ou ser apresentado como o workbook final reconstruído
 
-## Verification
+## Verificação
 
-- 15 corrected CSV sheets loaded, plus `00_DRAFT_NOTICE`
-- `officecli view ... outline` reports all 16 sheets with populated data sheets
-- `officecli view ... issues` reports 0 issues
-- `officecli validate` passes with no errors
-- Formula-error queries for `#REF!`, `#DIV/0!`, `#VALUE!`, `#NAME?`, and `#N/A` return no results
-- HTML preview contains 16 sheets, 0 empty sheets, and no `###` or placeholder tokens
-- ROI formulas retain cached values from the corrected CSV workbook layer; this is not approval evidence
+- 15 abas de CSV corrigido carregadas, mais `00_DRAFT_NOTICE`
+- `officecli view ... outline` reporta todas as 16 abas com abas de dados populadas
+- `officecli view ... issues` reporta 0 problemas
+- `officecli validate` passa sem erros
+- Consultas de erro de fórmula para `#REF!`, `#DIV/0!`, `#VALUE!`, `#NAME?` e `#N/A` não retornam resultados
+- A pré-visualização HTML contém 16 abas, 0 abas vazias e nenhum token `###` ou placeholder
+- As fórmulas de ROI retêm valores em cache da camada do workbook de CSV corrigido; isso não é evidência de aprovação

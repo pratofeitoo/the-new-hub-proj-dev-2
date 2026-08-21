@@ -1,5 +1,5 @@
 ---
-title: "BP-003 — HUB Data and Intelligence Blueprint"
+title: "BP-003 — Blueprint de Dados e Inteligência do HUB"
 task_id: BP-003
 task_type: blueprint-document
 status: completed
@@ -28,24 +28,24 @@ created: 2026-08-20
 updated: 2026-08-21
 ---
 
-# BP-003 — HUB Data and Intelligence Blueprint
+# BP-003 — Blueprint de Dados e Inteligência do HUB
 
-## Objective
+## Objetivo
 
-Define the semantic, measurement and evidence foundation that connects HUB sources, identities, events, intelligence, actions, outcomes and financial value.
+Definir a fundação semântica, de medição e de evidências que conecta fontes, identidades, eventos, inteligência, ações, resultados e valor financeiro do HUB.
 
-## Required content
+## Conteúdo exigido
 
-1. Define canonical entities, nodes, relationships, keys, object types and temporal rules.
-2. Connect the source indicator architecture to product capabilities and business outcomes.
-3. Define event, indicator, taxonomy, formula, model and evidence versioning.
-4. Define the distinction between potential, influenced, validated and realized value.
-5. Describe identity resolution, lineage, consent, retention, deletion, replay and correction concepts.
-6. Identify unresolved data assumptions and link them to the gap register.
+1. Definir entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais.
+2. Conectar a arquitetura de indicadores de origem às capacidades do produto e aos resultados de negócio.
+3. Definir versionamento de eventos, indicadores, taxonomias, fórmulas, modelos e evidências.
+4. Definir a distinção entre valor potencial, influenciado, validado e realizado.
+5. Descrever conceitos de resolução de identidade, linhagem, consentimento, retenção, exclusão, replay e correção.
+6. Identificar premissas de dados não resolvidas e vinculá-las ao registro de gaps.
 
-## Completion criteria
+## Critérios de conclusão
 
-- The conceptual model is connected to the product and offer architecture.
-- The blueprint distinguishes semantic intent from future physical implementation.
-- Every major measurement claim has an intended evidence path.
-- No metric, ROI figure or model is presented as certified merely because it is cataloged.
+- O modelo conceitual está conectado à arquitetura de produto e ofertas.
+- O blueprint distingue intenção semântica de implementação física futura.
+- Toda alegação principal de medição tem um caminho de evidência pretendido.
+- Nenhuma métrica, número de ROI ou modelo é apresentado como certificado apenas por estar catalogado.

@@ -1,5 +1,5 @@
 ---
-title: HUB Three-Layer Project Development Framework
+title: Framework de Desenvolvimento de Projetos em Três Camadas do HUB
 aliases:
   - Three-Layer Project Framework
   - HUB Project Development Layers
@@ -10,66 +10,66 @@ tags:
   - governance
 ---
 
-# HUB Three-Layer Project Development Framework
+# Framework de Desenvolvimento de Projetos em Três Camadas do HUB
 
-## Purpose
+## Propósito
 
-This framework establishes how the HUB project is developed from its first conceptual draft through the final approval required for market launch.
+Este framework estabelece como o projeto HUB é desenvolvido, desde o seu primeiro rascunho conceitual até a aprovação final exigida para o lançamento no mercado.
 
-The project must always be treated as **one complete business and product system**. Individual documents, models, research files, interfaces, governance rules and operational components are pieces of the same final project. They must be connected, reviewed in context and evolved together.
+O projeto deve sempre ser tratado como **um sistema completo de negócios e produto**. Documentos individuais, modelos, arquivos de pesquisa, interfaces, regras de governança e componentes operacionais são peças do mesmo projeto final. Eles devem ser conectados, revisados em contexto e evoluídos juntos.
 
-This framework is not a pilot-only process. A pilot, test or validation may be used where useful, but it is not the definition of the project. The objective is to build and clear the complete scoped project for launch.
+Este framework não é um processo apenas para pilotos. Um piloto, teste ou validação pode ser usado onde for útil, mas não é a definição do projeto. O objetivo é construir e liberar o projeto completo, conforme escopado, para o lançamento.
 
-## The three layers
+## As três camadas
 
-### Layer 1 — Blueprint
+### Camada 1 — Blueprint
 
-The Blueprint layer contains the ideas, concepts, assumptions, hypotheses and broad architectural choices that define what the project may become.
+A camada de Blueprint contém as ideias, conceitos, premissas, hipóteses e escolhas arquiteturais amplas que definem o que o projeto pode vir a ser.
 
-At this stage:
+Nesta etapa:
 
-- Ideas do not need to be perfect.
-- Concepts may be incomplete or speculative.
-- Multiple alternatives may coexist.
-- Assumptions should be made visible rather than hidden.
-- The full scope and long-term relationships between components should be represented.
-- No concept should be treated as final merely because it appears in an early document.
+- As ideias não precisam ser perfeitas.
+- Os conceitos podem estar incompletos ou ser especulativos.
+- Múltiplas alternativas podem coexistir.
+- As premissas devem ser tornadas visíveis, e não escondidas.
+- O escopo completo e os relacionamentos de longo prazo entre os componentes devem ser representados.
+- Nenhum conceito deve ser tratado como final simplesmente por aparecer em um documento inicial.
 
-The purpose of this layer is to create a sufficiently complete map of the business and product, including its users, value proposition, operating model, data, technology, governance, economics, brand, distribution and launch requirements.
+O propósito desta camada é criar um mapa suficientemente completo do negócio e do produto, incluindo seus usuários, proposta de valor, modelo operacional, dados, tecnologia, governança, economia, marca, distribuição e requisitos de lançamento.
 
-### Layer 2 — Refinement
+### Camada 2 — Refinamento
 
-The Refinement layer strengthens the Blueprint through investigation, comparison, testing, simulation, prototyping and revision.
+A camada de Refinamento fortalece o Blueprint por meio de investigação, comparação, teste, simulação, prototipagem e revisão.
 
-At this stage:
+Nesta etapa:
 
-- Assumptions are examined and classified.
-- Concepts are improved, combined, narrowed or replaced.
-- Small tests and validations are used to generate learning.
-- Product, business, financial, data and governance components are refined together.
-- Weak or contradictory parts are exposed and corrected.
-- Nothing is considered permanently fixed.
+- As premissas são examinadas e classificadas.
+- Os conceitos são melhorados, combinados, estreitados ou substituídos.
+- Pequenos testes e validações são usados para gerar aprendizado.
+- Os componentes de produto, negócio, finanças, dados e governança são refinados em conjunto.
+- As partes fracas ou contraditórias são expostas e corrigidas.
+- Nada é considerado permanentemente fixado.
 
-The purpose of this layer is not to protect the original Blueprint. It is to make the whole project stronger by allowing evidence and learning to change any part of it.
+O propósito desta camada não é proteger o Blueprint original. É tornar o projeto como um todo mais forte, permitindo que evidências e aprendizado mudem qualquer parte dele.
 
-### Layer 3 — Approval
+### Camada 3 — Aprovação
 
-The Approval layer is the final filter before a component, subsystem or the complete project can be considered ready for launch.
+A camada de Aprovação é o filtro final antes que um componente, subsistema ou o projeto completo possa ser considerado pronto para o lançamento.
 
-At this stage:
+Nesta etapa:
 
-- Requirements are checked against the complete project scope.
-- Claims, calculations, workflows and controls require evidence.
-- Dependencies and consequences across the whole system are reviewed.
-- Components may be approved, conditionally approved, returned for refinement or blocked.
-- Unresolved risks must have an owner and an accepted treatment.
-- Launch approval must cover the complete business and product system, not only its most visible features.
+- Os requisitos são verificados contra o escopo completo do projeto.
+- Alegações, cálculos, fluxos de trabalho e controles exigem evidências.
+- As dependências e consequências em todo o sistema são revisadas.
+- Os componentes podem ser aprovados, aprovados condicionalmente, devolvidos para refinamento ou bloqueados.
+- Os riscos não resolvidos devem ter um responsável e um tratamento aceito.
+- A aprovação de lançamento deve cobrir o sistema completo de negócios e produto, e não apenas suas funcionalidades mais visíveis.
 
-Approval is therefore a governance decision, not a presumption that the Blueprint was correct from the beginning.
+A aprovação é, portanto, uma decisão de governança, e não uma presunção de que o Blueprint estava correto desde o início.
 
-## How the layers work together
+## Como as camadas funcionam juntas
 
-The layers are progressive but not strictly linear:
+As camadas são progressivas, mas não estritamente lineares:
 
 ```mermaid
 flowchart LR
@@ -81,17 +81,17 @@ flowchart LR
     C --> L[Complete launch readiness]
 ```
 
-A component may move backward when an approval reveals a weakness or when refinement exposes a missing concept. Moving backward is not failure; it is part of controlled project development.
+Um componente pode retroceder quando uma aprovação revela uma fraqueza ou quando o refinamento expõe um conceito ausente. Retroceder não é falha; é parte do desenvolvimento controlado do projeto.
 
-## Example workflow: connecting a business opportunity to the complete HUB system
+## Fluxo de trabalho exemplificado: conectando uma oportunidade de negócio ao sistema HUB completo
 
-The following is a concise example of how one capability can move through all three layers while remaining connected to the broader project.
+O exemplo a seguir ilustra, de forma concisa, como uma capacidade pode atravessar as três camadas permanecendo conectada ao projeto mais amplo.
 
-### 1. Blueprint — define the intended system
+### 1. Blueprint — definir o sistema pretendido
 
-The project proposes a capability that helps an institution configure an opportunity, assess participating businesses, recommend actions, connect qualified parties and report outcomes.
+O projeto propõe uma capacidade que ajuda uma instituição a configurar uma oportunidade, avaliar empresas participantes, recomendar ações, conectar partes qualificadas e reportar resultados.
 
-At this point, the team maps the complete chain:
+Neste ponto, a equipe mapeia a cadeia completa:
 
 ```mermaid
 flowchart LR
@@ -105,13 +105,13 @@ flowchart LR
     H --> I[Launch-ready capability]
 ```
 
-The blueprint records assumptions such as the actors involved, the data required, the expected value, the operating roles, the revenue logic, the governance controls and how the capability connects to the rest of the HUB platform.
+O blueprint registra premissas como os atores envolvidos, os dados necessários, o valor esperado, os papéis operacionais, a lógica de receita, os controles de governança e como a capacidade se conecta ao restante da plataforma HUB.
 
-### 2. Refinement — test and strengthen the design
+### 2. Refinamento — testar e fortalecer o design
 
-The team then examines the capability in smaller pieces. It may test the diagnosis questions, compare alternative readiness rules, prototype the dashboard, simulate the financial logic, review data permissions and measure the manual effort required to operate the workflow.
+A equipe então examina a capacidade em partes menores. Pode testar as perguntas de diagnóstico, comparar regras alternativas de prontidão, prototipar o dashboard, simular a lógica financeira, revisar permissões de dados e medir o esforço manual necessário para operar o fluxo de trabalho.
 
-The workflow is collaborative rather than linear:
+O fluxo de trabalho é colaborativo, e não linear:
 
 ```mermaid
 sequenceDiagram
@@ -130,11 +130,11 @@ sequenceDiagram
     P-->>O: Run the next refinement cycle
 ```
 
-Each cycle can improve, replace or remove part of the original design. The capability remains part of the whole project even when its local implementation changes.
+Cada ciclo pode melhorar, substituir ou remover parte do design original. A capacidade permanece parte do projeto como um todo mesmo quando sua implementação local muda.
 
-### 3. Approval — apply the final filter
+### 3. Aprovação — aplicar o filtro final
 
-When refinement is sufficiently mature, the capability is reviewed against explicit gates. A failure at any gate returns the capability to refinement rather than allowing an unresolved weakness into launch.
+Quando o refinamento está suficientemente maduro, a capacidade é revisada contra portões explícitos. Uma falha em qualquer portão devolve a capacidade ao refinamento, em vez de permitir que uma fraqueza não resolvida chegue ao lançamento.
 
 ```mermaid
 stateDiagram-v2
@@ -151,11 +151,11 @@ stateDiagram-v2
     LaunchApproved --> [*]
 ```
 
-The final decision may be **approved**, **conditionally approved**, **blocked** or **returned for refinement**. Approval applies to the defined capability and its dependencies; it does not automatically approve unrelated parts of the platform.
+A decisão final pode ser **aprovado**, **aprovado condicionalmente**, **bloqueado** ou **devolvido para refinamento**. A aprovação se aplica à capacidade definida e às suas dependências; ela não aprova automaticamente partes não relacionadas da plataforma.
 
-### Illustrative maturity view
+### Visão ilustrativa de maturidade
 
-The values below are illustrative only. They show how readiness can be visualized across the three layers; they are not project results or launch criteria.
+Os valores abaixo são meramente ilustrativos. Eles mostram como a prontidão pode ser visualizada nas três camadas; não são resultados do projeto nem critérios de lançamento.
 
 ```mermaid
 xychart-beta
@@ -166,36 +166,36 @@ xychart-beta
     line [20, 65, 100]
 ```
 
-The chart should never replace the underlying evidence. A high visual score is not approval unless the required scope, evidence, controls and operational gates have all been cleared.
+O gráfico nunca deve substituir as evidências subjacentes. Uma pontuação visual alta não é aprovação, a menos que o escopo, as evidências, os controles e os portões operacionais exigidos tenham todos sido liberados.
 
-## Rules for working under this framework
+## Regras para trabalhar sob este framework
 
-1. **Think in systems.** Every decision must be considered in relation to the full business and product scope.
-2. **Separate maturity from importance.** A component may be strategically important while still being an early Blueprint hypothesis.
-3. **Label the state of knowledge.** Distinguish ideas, assumptions, observations, tests, evidence, decisions and approvals.
-4. **Allow replacement.** Existing documents and concepts are working material, not protected commitments.
-5. **Connect the pieces.** New work must identify which existing components it affects and what dependencies it creates.
-6. **Do not confuse refinement with approval.** A promising test result does not automatically clear a component for launch.
-7. **Do not confuse documentation with completion.** A detailed specification is not evidence that the specified capability works.
-8. **Use the whole project as the context for trade-offs.** Local optimization must not create contradictions in the broader system.
-9. **Make blocking explicit.** If a component cannot safely or credibly proceed, record the reason, required evidence and path back to refinement.
-10. **Launch only after the final filter.** The project is ready when the required components have passed their applicable approvals and the system works as one coherent whole.
+1. **Pense em sistemas.** Toda decisão deve ser considerada em relação ao escopo completo de negócios e produto.
+2. **Separe maturidade de importância.** Um componente pode ser estrategicamente importante e ainda assim ser uma hipótese inicial de Blueprint.
+3. **Rotule o estado do conhecimento.** Distinga ideias, premissas, observações, testes, evidências, decisões e aprovações.
+4. **Permita a substituição.** Documentos e conceitos existentes são material de trabalho, não compromissos protegidos.
+5. **Conecte as peças.** Novos trabalhos devem identificar quais componentes existentes afetam e quais dependências criam.
+6. **Não confunda refinamento com aprovação.** Um resultado de teste promissor não libera automaticamente um componente para o lançamento.
+7. **Não confunda documentação com conclusão.** Uma especificação detalhada não é evidência de que a capacidade especificada funciona.
+8. **Use o projeto completo como contexto para trade-offs.** A otimização local não deve criar contradições no sistema mais amplo.
+9. **Torne o bloqueio explícito.** Se um componente não puder prosseguir com segurança ou credibilidade, registre o motivo, as evidências necessárias e o caminho de volta para o refinamento.
+10. **Lance somente após o filtro final.** O projeto está pronto quando os componentes exigidos passaram por suas aprovações aplicáveis e o sistema funciona como um todo coerente.
 
-## Working status vocabulary
+## Vocabulário de status de trabalho
 
-Suggested status labels for project artifacts and decisions:
+Rótulos de status sugeridos para artefatos e decisões do projeto:
 
-| Status | Meaning |
+| Status | Significado |
 |---|---|
-| `blueprint` | Early idea, concept, assumption or broad design direction. |
-| `refining` | Under investigation, testing, prototyping or revision. |
-| `conditionally-approved` | Acceptable with explicit conditions or remaining controls. |
-| `approved` | Cleared for its defined use and scope. |
-| `blocked` | Cannot proceed until identified issues are resolved. |
-| `superseded` | Replaced by a newer or stronger version. |
+| `blueprint` | Ideia, conceito, premissa ou direção ampla de design em estágio inicial. |
+| `refining` | Sob investigação, teste, prototipagem ou revisão. |
+| `conditionally-approved` | Aceitável com condições explícitas ou controles pendentes. |
+| `approved` | Liberado para seu uso e escopo definidos. |
+| `blocked` | Não pode prosseguir até que os problemas identificados sejam resolvidos. |
+| `superseded` | Substituído por uma versão mais recente ou mais forte. |
 
-## Definition of project completion
+## Definição de conclusão do projeto
 
-The HUB project is complete only when the full scoped system—not merely a pilot, a document, a prototype or a single module—has passed the required final validations.
+O projeto HUB só está completo quando o sistema completo, conforme escopado — e não meramente um piloto, um documento, um protótipo ou um único módulo — tiver passado pelas validações finais exigidas.
 
-Completion means that the business model, product experience, operating processes, data structures, financial logic, governance, legal position, technical implementation, launch materials and accountability model are coherent, connected and approved for market use.
+Conclusão significa que o modelo de negócios, a experiência do produto, os processos operacionais, as estruturas de dados, a lógica financeira, a governança, a posição jurídica, a implementação técnica, os materiais de lançamento e o modelo de responsabilização estão coerentes, conectados e aprovados para uso no mercado.

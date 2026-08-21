@@ -1,184 +1,184 @@
-# HUB v2 Governance, Legal, Data and Independence Research
+# Pesquisa de Governança, Aspectos Legais, Dados e Independência do HUB v2
 
-## Purpose and scope
+## Objetivo e escopo
 
-This is an investor-readiness risk and decision document, not legal advice. It translates the v1 architecture and the approved v2 transformation plan into questions and controls for qualified Brazilian legal, tax, privacy, accounting, and insurance counsel. No entity, approval, certification, or regulatory conclusion should be treated as final until counsel validates it against the actual operating model and contracts.
+Este é um documento de riscos e decisões para preparação para investidores, não um aconselhamento jurídico. Ele traduz a arquitetura v1 e o plano de transformação v2 aprovado em perguntas e controles para assessoria brasileira qualificada nas áreas jurídica, tributária, de privacidade, contábil e de seguros. Nenhuma entidade, aprovação, certificação ou conclusão regulatória deve ser tratada como definitiva até que a assessoria a valide em relação ao modelo operacional e aos contratos reais.
 
-## Source-grounded context
+## Contexto fundamentado nas fontes
 
-- v1 proposes one HUB brand, vision, and methodology, with operations, revenues, and responsibilities legally separated across HUB brand/strategy, HUB Negocios, Instituto HUB, and Plataforma HUB.
-- v1 requires separate contracts, accounts, reporting, formal instruments for joint projects, IP/data/brand policies, transparent allocations, and independent Institute governance.
-- The Selo HUB is intended to recognize demonstrated institutional capability through evidence, with published criteria, an independent decision instance, complaints, suspension/withdrawal, and no purchase-based entitlement.
-- The partner model allows a national network and customized partner ecosystems. The same organization may participate in both, subject to consent, data rules, and contracted benefits.
-- The MVP includes diagnostics, evidence, maturity results, evolution plans, curated solutions, assisted matching, aggregated dashboards, and a base for the seal. Autonomous AI decisions, public benchmarking without sufficient governance, and automated auditing are explicitly outside the MVP.
-- The v2 plan requires decisions on controller/processor roles, sensitive data, cross-ecosystem permissions, derived data, retention, evidence, methodology licensing, partner customizations, brand rights, and liability.
+- a v1 propõe uma única marca, visão e metodologia HUB, com operações, receitas e responsabilidades legalmente separadas entre HUB brand/strategy, HUB Negocios, Instituto HUB e Plataforma HUB.
+- a v1 exige contratos, contas e relatórios separados, instrumentos formais para projetos conjuntos, políticas de IP/dados/marca, alocações transparentes e governança independente do Instituto.
+- o Selo HUB pretende reconhecer capacidade institucional demonstrada por evidências, com critérios publicados, uma instância decisória independente, reclamações, suspensão/retirada e nenhum direito decorrente de compra.
+- o modelo de parceiros permite uma rede nacional e ecossistemas personalizados de parceiros. A mesma organização pode participar de ambos, sujeita a consentimento, regras de dados e benefícios contratados.
+- o MVP inclui diagnósticos, evidências, resultados de maturidade, planos de evolução, soluções selecionadas, matching assistido, dashboards agregados e uma base para o selo. Decisões autônomas de IA, benchmarking público sem governança suficiente e auditoria automatizada estão explicitamente fora do MVP.
+- o plano v2 exige decisões sobre papéis de controlador/operador, dados sensíveis, permissões entre ecossistemas, dados derivados, retenção, evidências, licenciamento da metodologia, customizações de parceiros, direitos sobre a marca e responsabilidade.
 
-## Executive risk view
+## Visão executiva dos riscos
 
-### Highest-priority blocker
+### Bloqueador de maior prioridade
 
-**Selo independence is not yet operationally enforceable.** The same group may sell implementation, diagnostics, marketplace access, and recognition. Until appointment/removal, payment, recusal, data access, appeals, evaluator liability, and commercial-client eligibility are documented and tested, an investor or partner could reasonably view the seal as a paid endorsement or conflicted assessment. Counsel and an independent governance designer should resolve this before marketing the seal as a trust asset.
+**A independência do Selo ainda não é operacionalmente exigível.** O mesmo grupo pode vender implementação, diagnósticos, acesso ao marketplace e reconhecimento. Até que nomeação/remoção, pagamento, impedimento, acesso a dados, recursos, responsabilidade do avaliador e elegibilidade de clientes comerciais estejam documentados e testados, um investidor ou parceiro poderia razoavelmente considerar o selo um endosso pago ou uma avaliação conflitada. A assessoria e um designer independente de governança devem resolver isso antes que o selo seja divulgado como um ativo de confiança.
 
-### Other material blockers before circulation
+### Outros bloqueadores relevantes antes da circulação
 
-1. The legal and economic boundaries between the four proposed units are conceptual, not yet evidenced by incorporation, intercompany agreements, accounting controls, tax analysis, and authority matrices.
-2. Data roles and permissions are undefined across HUB, partners, participating organizations, suppliers, talent, evaluators, and the Institute. A single blanket consent would not resolve purpose, access, sharing, retention, or deletion questions.
-3. Partner rights are under-specified: white-label customization, member data, content ownership, service levels, exit/portability, brand use, and restrictions on cross-ecosystem reuse need contract terms.
-4. Evidence and derived-data rules are not yet sufficient for defensible seal decisions, auditability, privacy requests, deletion conflicts, or future benchmarking.
-5. Liability is unallocated for recommendations, matching, implementation outcomes, data incidents, evaluator conduct, seal communications, and third-party solutions.
+1. Os limites jurídicos e econômicos entre as quatro unidades propostas são conceituais, ainda não comprovados por constituição, acordos intercompany, controles contábeis, análise tributária e matrizes de autoridade.
+2. Os papéis e as permissões relativos a dados não estão definidos entre HUB, parceiros, organizações participantes, fornecedores, talentos, avaliadores e o Instituto. Um único consentimento abrangente não resolveria as questões de finalidade, acesso, compartilhamento, retenção ou exclusão.
+3. Os direitos dos parceiros estão subespecificados: customização white-label, dados de membros, titularidade de conteúdo, níveis de serviço, saída/portabilidade, uso da marca e restrições à reutilização entre ecossistemas precisam de termos contratuais.
+4. As regras de evidências e dados derivados ainda não são suficientes para decisões de selo defensáveis, auditabilidade, solicitações de privacidade, conflitos de exclusão ou benchmarking futuro.
+5. A responsabilidade não está alocada para recomendações, matching, resultados de implementação, incidentes de dados, conduta de avaliadores, comunicações do selo e soluções de terceiros.
 
-## Critical risk register and required mechanisms
+## Registro de riscos críticos e mecanismos necessários
 
-| Risk | Why it matters to investors/partners | Required mechanism | Counsel-required decision |
+| Risco | Por que importa para investidores/parceiros | Mecanismo necessário | Decisão necessária da assessoria |
 |---|---|---|---|
-| Commercial/evaluation conflict | A client paying for implementation may be perceived to buy a favorable result. | Separate commercial and evaluation teams; mandatory recusal; independent evaluator appointment; published conflict register; seal decision record; no guarantee language. | Whether the seal activity requires a separate contracting entity, ring-fenced service, or other legal separation; permitted commercial relationships. |
-| Evaluation payment conflict | Evaluator compensation tied to approval, renewal, score, or client revenue undermines credibility. | Fixed or transparent fee schedule; no success fee; payer disclosed; evaluator independence attestation; budget controlled outside sales. | Payment structure, disclosure obligations, and enforceability of evaluator independence. |
-| Influence over evaluator | Group leadership, partner executives, funders, or sales staff may pressure decisions. | Appointment criteria; fixed terms; removal only for defined cause; quorum; documented votes/reasons; escalation and audit trail. | Valid governance form and removal rules; whether any external oversight is appropriate. |
-| Entity commingling | Shared staff, bank accounts, contracts, assets, or expenses can blur liability and undermine the stated separation. | Separate accounts and ledgers; intercompany service/licence agreements; cost-allocation policy; approval matrix; related-party register; monthly reconciliation. | Entity type, tax treatment, transfer pricing/related-party requirements, and liability consequences. |
-| Institute/commercial contamination | Public-interest funds, restricted grants, or beneficiary data may be diverted to commercial activity. | Purpose and eligibility controls; restricted-fund ledger; arm's-length procurement; separate board/oversight; conflict declarations; grant reporting. | Institute structure, permitted transactions, tax and grant restrictions, and governance duties. |
-| Brand and method ownership ambiguity | Founders, contractors, partners, and units may claim rights in the HUB name, C.A.O.S., diagnostics, content, software, or datasets. | IP register; chain-of-title assignments/licences; contributor agreements; trademark/domain ownership; versioned method repository; licence matrix. | Ownership and registration strategy; assignment language; moral rights and contractor/employee treatment. |
-| Partner customization drift | White-label changes can alter scoring, claims, or safeguards and make outcomes incomparable. | Core-method baseline; approved extension points; change control; versioning; partner-specific annex; no unilateral modification of core criteria. | Licence scope, derivative works, approval rights, and termination effects. |
-| Cross-ecosystem data leakage | An organization participating in multiple ecosystems may be exposed to unauthorized reuse or inference. | Tenant isolation; purpose-bound permissions; explicit sharing matrix; role-based access; export/delete workflow; access logs; no default cross-ecosystem sharing. | Controller/processor or other role allocation per flow; lawful basis and notice language for each use. |
-| Sensitive data over-collection | Diversity, health, disability, identity, or demographic attributes can create heightened privacy and discrimination exposure. | Necessity assessment; collect only what the use case needs; separate identifiable and analytical stores; restricted roles; field-level retention; human review; no hidden inference. | Which fields are sensitive in the actual design, lawful basis, consent/alternative basis, notices, DPIA-equivalent assessment, and rights handling. |
-| Derived data ownership dispute | Scores, benchmarks, matches, maturity indices, and aggregated insights may be claimed by partners or customers. | Data taxonomy: customer-provided, HUB-created, partner-owned, personal, aggregated, derived; licence and reuse terms; aggregation thresholds; no re-identification; model/input provenance. | Ownership/licensing and permitted commercialization of derived and aggregated outputs; limits after termination. |
-| Evidence retention versus deletion | Seal defensibility may require retaining evidence after a user requests deletion or a contract ends. | Evidence schedule by category; legal hold process; redacted decision record; retention owner; deletion exceptions documented; integrity hashes/version history where suitable. | Retention periods, deletion rights, legal holds, contractual promises, and acceptable evidence substitutes. |
-| Inaccurate or manipulated evidence | A false, stale, or selectively supplied record can lead to an unjustified recognition or partner decision. | Evidence provenance; source/date/owner; sampling and verification; correction workflow; evaluator notes; suspension triggers; post-decision monitoring. | Representations, audit rights, remedies, and standard of review in participant and evaluator terms. |
-| Recommendation/matching harm | A recommended provider or match may fail, discriminate, misuse data, or cause financial/reputational loss. | Human-in-the-loop; explainable criteria; provider due diligence; disclaimers that do not waive non-waivable duties; complaint and incident route; no guarantee of outcome. | Allocation of professional/product liability, consumer/business contract duties, indemnities, and insurance. |
-| AI/automation overreach | Future scoring or matching automation may create opaque or high-impact decisions. | MVP rule-based baseline; documented model cards when AI is introduced; human approval; bias/quality tests; override and appeal; change log. | Permitted automation, disclosure, auditability, and responsibility for automated decisions. |
-| Public claims and seal misuse | “Certified,” “approved,” or “Powered by HUB” claims can exceed the actual scope or validity. | Brand/seal usage guide; scope, level, date, conditions, and expiry on every public use; approval workflow; takedown/suspension procedure; monitoring. | Advertising/consumer-law review, trademark licence terms, and remedies for misuse. |
-| Third-party solution failure | Marketplace suppliers may cause loss while the platform appears to endorse them. | Supplier onboarding; defined status (listed, vetted, recommended); insurance/indemnity requirements where appropriate; SLA and incident notification; suspension. | Whether and how HUB can limit endorsement exposure; supplier contract and indemnity enforceability. |
-| Security incident | A breach across multiple ecosystems could trigger operational, contractual, and reputational damage. | Security baseline; least privilege; encryption and key management; backups; incident playbook; vendor due diligence; logging; tabletop exercise. | Notice obligations, contractual allocation, security commitments, insurance, and cross-border/vendor issues. |
-| Exit and portability failure | Partners need predictable return/deletion of data, content, and configurations; HUB needs to preserve independent evidence. | Exit runbook; export format; transition assistance boundaries; deletion certificate; archive of seal decisions; disablement of brand and access. | Post-termination licences, data return/deletion, escrow/continuity, and survival clauses. |
-| Founder/key-person dependency | Governance may exist on paper but collapse if one person controls sales, methodology, brand, and decisions. | Delegated authority; independent committee; succession/deadlock process; documented IP and credentials; board/advisor cadence. | Fiduciary/authority implications and investor protections appropriate to the eventual entity structure. |
+| Conflito comercial/de avaliação | Um cliente que paga pela implementação pode ser percebido como alguém que compra um resultado favorável. | Equipes comerciais e de avaliação separadas; impedimento obrigatório; nomeação de avaliador independente; registro de conflitos publicado; registro da decisão do selo; nenhuma linguagem de garantia. | Se a atividade do selo exige uma entidade contratante separada, um serviço segregado ou outra separação jurídica; relações comerciais permitidas. |
+| Conflito de pagamento da avaliação | A remuneração do avaliador vinculada à aprovação, renovação, pontuação ou receita do cliente enfraquece a credibilidade. | Tabela de honorários fixa ou transparente; nenhum success fee; pagador divulgado; declaração de independência do avaliador; orçamento controlado fora de vendas. | Estrutura de pagamento, obrigações de divulgação e exigibilidade da independência do avaliador. |
+| Influência sobre o avaliador | A liderança do grupo, executivos de parceiros, financiadores ou equipe de vendas podem pressionar decisões. | Critérios de nomeação; mandatos fixos; remoção apenas por causa definida; quórum; votos/motivos documentados; escalonamento e trilha de auditoria. | Forma válida de governança e regras de remoção; se alguma supervisão externa é apropriada. |
+| Mistura entre entidades | Equipe, contas bancárias, contratos, ativos ou despesas compartilhados podem confundir a responsabilidade e enfraquecer a separação declarada. | Contas e livros separados; acordos intercompany de serviços/licenças; política de alocação de custos; matriz de aprovação; registro de partes relacionadas; conciliação mensal. | Tipo societário, tratamento tributário, requisitos de preços de transferência/partes relacionadas e consequências de responsabilidade. |
+| Contaminação do Instituto por atividades comerciais | Recursos de interesse público, doações restritas ou dados de beneficiários podem ser desviados para atividade comercial. | Controles de finalidade e elegibilidade; livro de recursos restritos; contratação em condições de mercado; conselho/supervisão separados; declarações de conflito; prestação de contas de doações. | Estrutura do Instituto, transações permitidas, restrições tributárias e de doações e deveres de governança. |
+| Ambiguidade sobre titularidade da marca e do método | Fundadores, contratados, parceiros e unidades podem reivindicar direitos sobre o nome HUB, C.A.O.S., diagnósticos, conteúdo, software ou datasets. | Registro de IP; cessões/licenças com cadeia de titularidade; acordos com colaboradores; titularidade de marcas/domínios; repositório versionado do método; matriz de licenças. | Estratégia de titularidade e registro; linguagem de cessão; direitos morais e tratamento de contratados/empregados. |
+| Desvio na customização de parceiros | Alterações white-label podem mudar pontuação, alegações ou salvaguardas e tornar os resultados incomparáveis. | Linha de base do método central; pontos de extensão aprovados; controle de mudanças; versionamento; anexo específico do parceiro; nenhuma modificação unilateral dos critérios centrais. | Escopo da licença, obras derivadas, direitos de aprovação e efeitos da rescisão. |
+| Vazamento de dados entre ecossistemas | Uma organização que participa de vários ecossistemas pode ficar exposta a reutilização ou inferência não autorizada. | Isolamento de tenants; permissões vinculadas à finalidade; matriz explícita de compartilhamento; acesso baseado em papéis; fluxo de exportação/exclusão; logs de acesso; nenhum compartilhamento padrão entre ecossistemas. | Alocação do papel de controlador/operador ou outro papel por fluxo; base legal e linguagem de aviso para cada uso. |
+| Coleta excessiva de dados sensíveis | Atributos de diversidade, saúde, deficiência, identidade ou demografia podem gerar maior exposição a riscos de privacidade e discriminação. | Avaliação de necessidade; coletar apenas o que o caso de uso exige; armazenamentos identificável e analítico separados; papéis restritos; retenção no nível do campo; revisão humana; nenhuma inferência oculta. | Quais campos são sensíveis no desenho real, base legal, consentimento/base alternativa, avisos, avaliação equivalente a DPIA e tratamento de direitos. |
+| Disputa sobre titularidade de dados derivados | Pontuações, benchmarks, matches, índices de maturidade e insights agregados podem ser reivindicados por parceiros ou clientes. | Taxonomia de dados: fornecidos pelo cliente, criados pelo HUB, pertencentes ao parceiro, pessoais, agregados, derivados; termos de licença e reutilização; limiares de agregação; nenhuma reidentificação; proveniência do modelo/entrada. | Titularidade/licenciamento e comercialização permitida de resultados derivados e agregados; limites após a rescisão. |
+| Retenção de evidências versus exclusão | A defensabilidade do selo pode exigir a retenção de evidências após um usuário solicitar exclusão ou um contrato terminar. | Cronograma de evidências por categoria; processo de retenção legal; registro de decisão com redação; responsável pela retenção; exceções de exclusão documentadas; hashes de integridade/histórico de versões quando adequado. | Prazos de retenção, direitos de exclusão, retenções legais, promessas contratuais e substitutos de evidência aceitáveis. |
+| Evidência imprecisa ou manipulada | Um registro falso, desatualizado ou fornecido seletivamente pode levar a um reconhecimento ou decisão de parceiro injustificado. | Proveniência da evidência; fonte/data/responsável; amostragem e verificação; fluxo de correção; notas do avaliador; gatilhos de suspensão; monitoramento pós-decisão. | Declarações, direitos de auditoria, recursos e padrão de revisão nos termos de participantes e avaliadores. |
+| Dano por recomendação/matching | Um fornecedor ou match recomendado pode falhar, discriminar, fazer uso indevido de dados ou causar prejuízo financeiro/reputacional. | Human-in-the-loop; critérios explicáveis; due diligence do fornecedor; disclaimers que não renunciem a deveres irrenunciáveis; canal de reclamações e incidentes; nenhuma garantia de resultado. | Alocação da responsabilidade profissional/de produto, deveres contratuais de consumidor/empresa, indenizações e seguros. |
+| Excesso de alcance da IA/automação | A automação futura de pontuação ou matching pode criar decisões opacas ou de alto impacto. | Linha de base baseada em regras do MVP; model cards documentados quando a IA for introduzida; aprovação humana; testes de viés/qualidade; substituição e recurso; registro de mudanças. | Automação permitida, divulgação, auditabilidade e responsabilidade por decisões automatizadas. |
+| Alegações públicas e uso indevido do selo | Alegações como “Certified”, “approved” ou “Powered by HUB” podem exceder o escopo ou a validade reais. | Guia de uso da marca/selo; escopo, nível, data, condições e validade em todo uso público; fluxo de aprovação; procedimento de retirada/suspensão; monitoramento. | Revisão de publicidade/direito do consumidor, termos de licença de marca e recursos contra uso indevido. |
+| Falha de solução de terceiros | Fornecedores do marketplace podem causar prejuízo enquanto a plataforma aparenta endossá-los. | Integração de fornecedores; status definido (listado, avaliado, recomendado); requisitos de seguro/indenização quando apropriado; SLA e notificação de incidentes; suspensão. | Se e como o HUB pode limitar a exposição decorrente de endosso; contrato do fornecedor e exigibilidade da indenização. |
+| Incidente de segurança | Uma violação em vários ecossistemas pode provocar danos operacionais, contratuais e reputacionais. | Linha de base de segurança; privilégio mínimo; criptografia e gerenciamento de chaves; backups; playbook de incidentes; due diligence de fornecedores; logging; exercício de simulação. | Obrigações de notificação, alocação contratual, compromissos de segurança, seguros e questões transfronteiriças/de fornecedores. |
+| Falha de saída e portabilidade | Parceiros precisam de devolução/exclusão previsível de dados, conteúdo e configurações; o HUB precisa preservar evidências independentes. | Runbook de saída; formato de exportação; limites da assistência de transição; certificado de exclusão; arquivo das decisões de selo; desativação da marca e do acesso. | Licenças pós-rescisão, devolução/exclusão de dados, escrow/continuidade e cláusulas de sobrevivência. |
+| Dependência do fundador/pessoa-chave | A governança pode existir no papel, mas desmoronar se uma pessoa controlar vendas, metodologia, marca e decisões. | Autoridade delegada; comitê independente; processo de sucessão/impasse; IP e credenciais documentados; cadência de conselho/assessores. | Implicações fiduciárias/de autoridade e proteções de investidores adequadas à estrutura societária futura. |
 
-## Governance mechanisms required for v2
+## Mecanismos de governança necessários para a v2
 
-### Decision rights and segregation
+### Direitos de decisão e segregação
 
-- Maintain a responsibility matrix showing who may sell, configure, collect evidence, evaluate, approve, suspend, publish, access data, sign contracts, spend restricted funds, and handle incidents.
-- Prohibit one person from controlling the full chain of sale -> implementation -> evidence acceptance -> evaluation -> public recognition.
-- Record related-party transactions, conflicts, recusals, exceptions, and committee decisions in an auditable register.
-- Make the quarterly portfolio ritual a formal risk review for continued operation, not only a commercial prioritization meeting.
+- Mantenha uma matriz de responsabilidades mostrando quem pode vender, configurar, coletar evidências, avaliar, aprovar, suspender, publicar, acessar dados, assinar contratos, gastar recursos restritos e tratar incidentes.
+- Proíba que uma pessoa controle toda a cadeia venda -> implementação -> aceitação de evidências -> avaliação -> reconhecimento público.
+- Registre transações com partes relacionadas, conflitos, impedimentos, exceções e decisões de comitês em um registro auditável.
+- Torne o ritual trimestral do portfólio uma revisão formal de riscos para a continuidade da operação, não apenas uma reunião de priorização comercial.
 
-### Selo HUB control set
+### Conjunto de controles do Selo HUB
 
-- Public eligibility, criteria, scoring logic at an appropriate level, evidence requirements, validity, limitations, and renewal rules.
-- Evaluator code of conduct, competence criteria, training, confidentiality, conflict declaration, recusal, and independent removal process.
-- Separate evaluation data access from implementation access; implementation staff cannot alter or approve evidence.
-- Appeals and complaints with intake, time limits, reviewer independence, outcome reasons, and escalation.
-- Explicit conditions for suspension, withdrawal, correction, public notice, and restoration.
-- A client may be evaluated after buying implementation only if the conflict policy permits it, the evaluator is independent, the evidence boundary is clear, and the relationship is disclosed. Otherwise, offer an evaluation by a separate pool or prohibit the combination.
+- Elegibilidade pública, critérios, lógica de pontuação em nível apropriado, requisitos de evidência, validade, limitações e regras de renovação.
+- Código de conduta do avaliador, critérios de competência, treinamento, confidencialidade, declaração de conflitos, impedimento e processo independente de remoção.
+- Separe o acesso aos dados de avaliação do acesso de implementação; a equipe de implementação não pode alterar nem aprovar evidências.
+- Recursos e reclamações com recebimento, prazos, independência do revisor, motivos do resultado e escalonamento.
+- Condições explícitas para suspensão, retirada, correção, aviso público e restauração.
+- Um cliente pode ser avaliado após comprar implementação somente se a política de conflitos permitir, o avaliador for independente, o limite da evidência estiver claro e a relação for divulgada. Caso contrário, ofereça uma avaliação por um grupo separado ou proíba a combinação.
 
-### Entity and intercompany control set
+### Conjunto de controles das entidades e intercompany
 
-- Confirm the intended legal units before investor circulation; do not describe a separation as complete until counsel and accounting implement it.
-- Execute written agreements for brand, method, software, data processing, staff/services, content, facilities, and shared vendors.
-- Keep separate bank accounts, invoices, books, budgets, approvals, and tax records; document any shared-resource allocation method.
-- Define which entity contracts with a partner, participant, evaluator, supplier, and funder, and which entity bears each operational obligation.
-- Prohibit informal use of Institute assets, restricted funds, participant data, or seal authority by commercial units.
+- Confirme as unidades jurídicas pretendidas antes da circulação para investidores; não descreva uma separação como completa até que a assessoria e a contabilidade a implementem.
+- Celebre acordos escritos para marca, método, software, tratamento de dados, equipe/serviços, conteúdo, instalações e fornecedores compartilhados.
+- Mantenha contas bancárias, faturas, livros, orçamentos, aprovações e registros tributários separados; documente qualquer método de alocação de recursos compartilhados.
+- Defina qual entidade contrata com um parceiro, participante, avaliador, fornecedor e financiador, e qual entidade assume cada obrigação operacional.
+- Proíba o uso informal de ativos do Instituto, recursos restritos, dados de participantes ou autoridade do selo pelas unidades comerciais.
 
-## Data, IP, and evidence questions for counsel
+## Perguntas sobre dados, IP e evidências para a assessoria
 
-These are questions, not conclusions:
+Estas são perguntas, não conclusões:
 
-1. For each MVP data flow, who determines purpose and means, who acts on instructions, and where do joint or independent decisions arise? Produce a role matrix rather than one global label.
-2. Which diagnostic fields are necessary for the first use case, and which should never be collected? What notice, consent, contract, or other documented basis is appropriate for each purpose?
-3. Can a partner authorize use of member data for diagnosis, matching, aggregated reporting, benchmarking, or seal evaluation? What separate permissions and notices are required?
-4. Can HUB retain a de-identified decision record after personal data deletion? What safeguards and re-identification tests are required before calling a result anonymous or aggregated?
-5. Who owns raw submissions, evidence files, configurations, scores, methodology improvements, benchmark datasets, and model outputs? Which rights survive termination?
-6. May HUB use partner-specific learnings to improve the core method without exposing the partner or reusing confidential material? Define clean-room or aggregation boundaries if needed.
-7. What evidence must be retained to defend a seal decision, and for how long? How are corrections, objections, deletion requests, legal holds, and evaluator notes handled?
-8. Which content and customization rights does a partner receive, and can it sublicense or modify them? What happens to “Powered by HUB” language when the licence ends?
-9. What contractual language is needed for recommendations, matching, implementation support, supplier listings, and recognition to avoid implying a guarantee while preserving accountability for negligent or unauthorized conduct?
-10. What insurance, indemnity, limitation, incident cooperation, and vendor-flow-down terms are proportionate to each service?
+1. Para cada fluxo de dados do MVP, quem determina a finalidade e os meios, quem atua sob instruções e onde surgem decisões conjuntas ou independentes? Produza uma matriz de papéis em vez de um único rótulo global.
+2. Quais campos de diagnóstico são necessários para o primeiro caso de uso e quais nunca devem ser coletados? Qual aviso, consentimento, contrato ou outra base documentada é adequada para cada finalidade?
+3. Um parceiro pode autorizar o uso de dados de membros para diagnóstico, matching, relatórios agregados, benchmarking ou avaliação do selo? Quais permissões e avisos separados são necessários?
+4. O HUB pode reter um registro de decisão desidentificado após a exclusão dos dados pessoais? Quais salvaguardas e testes de reidentificação são necessários antes de chamar um resultado de anônimo ou agregado?
+5. Quem é titular das submissões brutas, arquivos de evidências, configurações, pontuações, melhorias da metodologia, datasets de benchmark e saídas de modelos? Quais direitos sobrevivem à rescisão?
+6. O HUB pode usar aprendizados específicos de parceiros para melhorar o método central sem expor o parceiro nem reutilizar material confidencial? Defina limites de clean-room ou agregação se necessário.
+7. Quais evidências devem ser retidas para defender uma decisão do selo e por quanto tempo? Como são tratadas correções, objeções, solicitações de exclusão, retenções legais e notas de avaliadores?
+8. Quais direitos de conteúdo e customização um parceiro recebe, e ele pode sublicenciá-los ou modificá-los? O que acontece com a expressão “Powered by HUB” quando a licença termina?
+9. Que linguagem contratual é necessária para recomendações, matching, suporte à implementação, listagens de fornecedores e reconhecimento, de modo a evitar a implicação de uma garantia e preservar a responsabilização por conduta negligente ou não autorizada?
+10. Quais termos de seguro, indenização, limitação, cooperação em incidentes e repasse a fornecedores são proporcionais a cada serviço?
 
-## Independence charter outline
+## Esboço da carta de independência
 
-The charter should be approved by the relevant governing body and incorporated by reference into seal rules and contracts.
+A carta deve ser aprovada pelo órgão de governança relevante e incorporada por referência às regras do selo e aos contratos.
 
-### 1. Purpose and scope
+### 1. Objetivo e escopo
 
-Define the seal as an evidence-based recognition process, not a purchase benefit, and identify which products, entities, evaluators, and partner ecosystems it covers.
+Defina o selo como um processo de reconhecimento baseado em evidências, não como um benefício de compra, e identifique quais produtos, entidades, avaliadores e ecossistemas de parceiros ele abrange.
 
-### 2. Protected principles
+### 2. Princípios protegidos
 
-Impartiality, evidence integrity, consistency, confidentiality, accessibility, explainability, proportionality, correction, and accountability.
+Imparcialidade, integridade das evidências, consistência, confidencialidade, acessibilidade, explicabilidade, proporcionalidade, correção e responsabilização.
 
-### 3. Institutional separation
+### 3. Separação institucional
 
-Describe the boundary between commercial sales/implementation and evaluation. Define protected evaluator access, prohibited influence, and minimum committee independence.
+Descreva o limite entre vendas/implementação comercial e avaliação. Defina o acesso protegido do avaliador, a influência proibida e a independência mínima do comitê.
 
-### 4. Appointment and removal
+### 4. Nomeação e remoção
 
-Set competence criteria, terms, appointment authority, conflict checks, removal grounds, vacancies, quorum, and emergency replacement without sales control.
+Estabeleça critérios de competência, mandatos, autoridade de nomeação, verificações de conflitos, fundamentos de remoção, vacâncias, quórum e substituição emergencial sem controle de vendas.
 
-### 5. Conflicts and recusal
+### 5. Conflitos e impedimento
 
-Require declarations before assignment and on material change. Define financial, family, employment, partner, founder, and prior-consulting conflicts. Log recusal and replacement.
+Exija declarações antes da designação e diante de mudança relevante. Defina conflitos financeiros, familiares, empregatícios, com parceiros, fundadores e consultorias anteriores. Registre o impedimento e a substituição.
 
-### 6. Evaluation process
+### 6. Processo de avaliação
 
-Set eligibility, evidence request, review, sampling, interviews, findings, scoring, decision, validity, renewal, and monitoring. Version criteria and preserve the applicable version.
+Estabeleça elegibilidade, solicitação de evidências, revisão, amostragem, entrevistas, constatações, pontuação, decisão, validade, renovação e monitoramento. Versione os critérios e preserve a versão aplicável.
 
-### 7. Data and evidence access
+### 7. Acesso a dados e evidências
 
-Define least-privilege access, participant notice, confidentiality, evidence provenance, retention, correction, deletion handling, audit logs, and approved disclosures.
+Defina acesso com privilégio mínimo, aviso ao participante, confidencialidade, proveniência da evidência, retenção, correção, tratamento de exclusões, logs de auditoria e divulgações aprovadas.
 
-### 8. Decisions, appeals, and complaints
+### 8. Decisões, recursos e reclamações
 
-Require reasoned decisions; provide a neutral appeal route; prohibit the original evaluator from being the sole appeal reviewer; define timelines and outcomes.
+Exija decisões fundamentadas; ofereça uma via neutra de recurso; proíba que o avaliador original seja o único revisor do recurso; defina prazos e resultados.
 
-### 9. Suspension, withdrawal, and public communication
+### 9. Suspensão, retirada e comunicação pública
 
-Set triggers, interim measures, decision authority, participant notice, public statement standards, seal takedown, restoration, and historical-record treatment.
+Estabeleça gatilhos, medidas provisórias, autoridade decisória, aviso ao participante, padrões para declarações públicas, retirada do selo, restauração e tratamento do registro histórico.
 
-### 10. Commercial relationship rule
+### 10. Regra de relacionamento comercial
 
-Publish when implementation clients may be evaluated, required safeguards, disclosure wording, and cases where evaluation is prohibited or must be performed by a separate evaluator pool.
+Publique quando clientes de implementação podem ser avaliados, as salvaguardas exigidas, a redação de divulgação e os casos em que a avaliação é proibida ou deve ser realizada por um grupo separado de avaliadores.
 
-### 11. Oversight and reporting
+### 11. Supervisão e relatórios
 
-Quarterly integrity review; annual methodology review; conflict, complaint, appeal, suspension, and withdrawal metrics; incident reporting; charter amendment log.
+Revisão trimestral de integridade; revisão anual da metodologia; métricas de conflitos, reclamações, recursos, suspensões e retiradas; relatórios de incidentes; registro de alterações da carta.
 
-### 12. Accountability
+### 12. Responsabilização
 
-Name the accountable officer/committee, escalation route, audit rights, training duties, breach response, and review date. State that the charter is subject to counsel review and does not itself establish regulatory certification.
+Nomeie o responsável/comitê responsável, a via de escalonamento, os direitos de auditoria, os deveres de treinamento, a resposta a violações e a data de revisão. Declare que a carta está sujeita à revisão da assessoria e não estabelece, por si só, uma certificação regulatória.
 
-## Investor diligence evidence pack
+## Pacote de evidências para diligência de investidores
 
-Before circulation, assemble:
+Antes da circulação, reúna:
 
-- Entity chart, authority matrix, and proposed incorporation/registration status.
-- Intercompany agreement index and sample arm's-length allocation calculation.
-- IP chain-of-title register for brand, method, software, content, data schema, and documentation.
-- Data-flow map, role matrix, retention schedule, access model, incident playbook, and vendor list.
-- Draft partner, participant, supplier, evaluator, and seal terms.
-- Selo independence charter, evaluator conflict register template, decision-record template, and appeal procedure.
-- Insurance and liability position paper prepared with counsel/broker.
-- Pilot evidence protocol identifying what is measured, who can access it, retention, and permitted public claims.
-- Open legal questions log with owner, counsel, decision date, and investor-facing consequence.
+- Organograma das entidades, matriz de autoridade e status proposto de constituição/registro.
+- Índice de acordos intercompany e exemplo de cálculo de alocação em condições de mercado.
+- Registro de cadeia de titularidade de IP para marca, método, software, conteúdo, esquema de dados e documentação.
+- Mapa de fluxo de dados, matriz de papéis, cronograma de retenção, modelo de acesso, playbook de incidentes e lista de fornecedores.
+- Minutas de termos para parceiros, participantes, fornecedores, avaliadores e selo.
+- Carta de independência do Selo, modelo de registro de conflitos de avaliadores, modelo de registro de decisão e procedimento de recurso.
+- Documento de posicionamento sobre seguros e responsabilidade preparado com a assessoria/corretor.
+- Protocolo de evidências do piloto identificando o que é medido, quem pode acessar, retenção e alegações públicas permitidas.
+- Registro de perguntas jurídicas em aberto com responsável, assessoria, data da decisão e consequência para investidores.
 
-## Go/no-go questions
+## Perguntas de avanço/bloqueio
 
-The leadership team should not claim investor-ready governance until it can answer yes, with evidence, to these questions:
+A equipe de liderança não deve afirmar que a governança está pronta para investidores até que consiga responder sim, com evidências, às seguintes perguntas:
 
-- Can a paying implementation client receive an evaluation that a reasonable outsider would regard as independent?
-- Can every data field in the pilot be traced to a purpose, permission, access role, retention rule, and deletion path?
-- Can HUB show who owns each material IP asset and what a partner is licensed to use?
-- Can each unit operate its contracts, finances, data access, and liabilities without informal commingling?
-- Can HUB suspend or withdraw a seal, correct a decision, and explain the action without sales approval?
-- Can HUB identify the responsible entity and contractual remedy for a bad match, unsafe recommendation, data incident, or misleading seal claim?
-- Can a partner exit with a usable data/configuration export while HUB preserves only what is justified for evidence and accountability?
+- Um cliente pagante de implementação pode receber uma avaliação que um terceiro razoável consideraria independente?
+- Cada campo de dados do piloto pode ser rastreado até uma finalidade, permissão, papel de acesso, regra de retenção e caminho de exclusão?
+- O HUB consegue demonstrar quem é titular de cada ativo material de IP e o que um parceiro está licenciado a usar?
+- Cada unidade consegue operar seus contratos, finanças, acesso a dados e responsabilidades sem mistura informal?
+- O HUB consegue suspender ou retirar um selo, corrigir uma decisão e explicar a ação sem aprovação de vendas?
+- O HUB consegue identificar a entidade responsável e o recurso contratual para um match inadequado, uma recomendação insegura, um incidente de dados ou uma alegação enganosa sobre o selo?
+- Um parceiro consegue sair com uma exportação utilizável de dados/configurações enquanto o HUB preserva apenas o que é justificável para evidência e responsabilização?
 
-## Highest-priority next actions
+## Próximas ações de maior prioridade
 
-1. Commission counsel to validate the four-unit structure and draft an entity/obligation map before signing the first multi-party pilot.
-2. Freeze any public promise that the Selo HUB is independent until the independence charter, evaluator model, conflict controls, and payment flow are approved.
-3. Build the pilot data-flow and evidence-retention matrix before collecting sensitive or cross-ecosystem data.
-4. Create the IP and licence register before contractors or partners contribute method, content, code, or customizations.
-5. Add liability, insurance, incident, exit, and brand/seal terms to the pilot contracting checklist.
+1. Contrate a assessoria para validar a estrutura de quatro unidades e elaborar um mapa de entidades/obrigações antes de assinar o primeiro piloto multipartes.
+2. Congele qualquer promessa pública de que o Selo HUB é independente até que a carta de independência, o modelo de avaliadores, os controles de conflitos e o fluxo de pagamentos sejam aprovados.
+3. Elabore a matriz de fluxo de dados e retenção de evidências do piloto antes de coletar dados sensíveis ou entre ecossistemas.
+4. Crie o registro de IP e licenças antes que contratados ou parceiros contribuam com método, conteúdo, código ou customizações.
+5. Adicione termos de responsabilidade, seguros, incidentes, saída e marca/selo à checklist de contratação do piloto.
 
-## References
+## Referências
 
-- `HUB_Escopo_Estrategico_Documento_Mae_v1.md`, sections 2, 6, 7, 9, 10, 14, and 15.
-- `HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Readiness_Plan.md`, sections 10 and 11, plus the investor-readiness and evidence requirements.
+- `HUB_Escopo_Estrategico_Documento_Mae_v1.md`, seções 2, 6, 7, 9, 10, 14 e 15.
+- `HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Readiness_Plan.md`, seções 10 e 11, além dos requisitos de preparação para investidores e de evidências.
