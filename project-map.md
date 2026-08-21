@@ -23,6 +23,10 @@ Cross-cutting project management, resources, deliverables and archive areas rema
 | `06-deliverables/` | Final outputs once approved for external use. |
 | `99-archive/` | Historical and superseded material. |
 
+Primary blueprint foundation: [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
+
+Cross-cutting gap register: [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md).
+
 ## Rules
 
 - Keep plans, tasks and logs centralized in `04-project-management/`.

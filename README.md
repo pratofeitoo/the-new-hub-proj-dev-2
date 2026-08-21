@@ -14,3 +14,7 @@ This repository contains the complete HUB business and product project, from the
 - [`99-archive/`](99-archive/) — superseded, rejected, deprecated and historical material.
 
 The governing process is documented in [`HUB_Three-Layer_Project_Development_Framework.md`](00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md).
+
+The consolidated starting point for shaping the project is [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
+
+The cross-cutting missing-work inventory is [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md).
