@@ -54,6 +54,7 @@ views:
     columnSize:
       file.name: 342
       note.priority: 107
+      note.gap_ids: 867
   - type: table
     name: Work Queue
     filters:

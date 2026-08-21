@@ -2,7 +2,7 @@
 title: "BP-005 — HUB Operating Model Blueprint"
 task_id: BP-005
 task_type: blueprint-document
-status: planned
+status: completed
 priority: high
 layer: blueprint
 area: operations
@@ -23,7 +23,7 @@ related_notes:
   - "[[01-blueprint/strategy/HUB_Project_Blueprint_Foundation]]"
   - "[[00-project-control/gap-register/HUB_Project_Gap_Register]]"
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-21
 ---
 
 # BP-005 — HUB Operating Model Blueprint

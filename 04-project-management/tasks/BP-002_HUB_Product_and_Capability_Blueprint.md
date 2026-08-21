@@ -2,7 +2,7 @@
 title: "BP-002 — HUB Product and Capability Blueprint"
 task_id: BP-002
 task_type: blueprint-document
-status: planned
+status: completed
 priority: critical
 layer: blueprint
 area: product
@@ -22,7 +22,7 @@ related_notes:
   - "[[01-blueprint/strategy/HUB_Project_Blueprint_Foundation]]"
   - "[[00-project-control/gap-register/HUB_Project_Gap_Register]]"
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-21
 ---
 
 # BP-002 — HUB Product and Capability Blueprint
