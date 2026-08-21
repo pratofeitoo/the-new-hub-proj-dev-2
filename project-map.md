@@ -27,6 +27,10 @@ Primary blueprint foundation: [`HUB_Project_Blueprint_Foundation.md`](01-bluepri
 
 Cross-cutting gap register: [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md).
 
+Gap Base: [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base).
+
+Blueprint task register: [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base).
+
 ## Rules
 
 - Keep plans, tasks and logs centralized in `04-project-management/`.

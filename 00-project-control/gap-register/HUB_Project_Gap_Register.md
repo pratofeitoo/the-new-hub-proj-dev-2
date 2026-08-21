@@ -25,6 +25,8 @@ layer: cross-cutting
 
 Each gap connects the whole-project blueprint to the work required in refinement and the condition required for final approval.
 
+The individual YAML-backed gap notes are centralized in [[HUB_Project_Gaps.base]]. The original tables remain the consolidated source register; the notes provide property-level records for filtering, grouping and task linkage in Obsidian Bases.
+
 ```text
 project component
 → current state/evidence
