@@ -9,7 +9,7 @@ Este repositório contém o projeto completo de negócios e produto do HUB, desd
 - [`02-refinement/`](02-refinement/) — pesquisas, testes, protótipos, modelos e revisões.
 - [`03-approval/`](03-approval/) — evidências, pacotes de revisão, aprovações e itens bloqueados.
 - [`04-project-management/`](04-project-management/) — planos, tarefas, marcos, logs e relatórios de status.
-- [`05-resources/`](05-resources/) — materiais de origem, datasets, mídia e referências reutilizáveis.
+- [`05-resources/`](05-resources/) — documentos estratégicos, plano de ação, imagens de referência, esboços de UI, apresentações, datasets, materiais de origem e templates.
 - [`06-deliverables/`](06-deliverables/) — entregas liberadas para uso de negócio, produto, investidores ou lançamento.
 - [`99-archive/`](99-archive/) — material substituído, rejeitado, descontinuado e histórico.
 
@@ -17,4 +17,6 @@ O processo norteador está documentado em [`HUB_Three-Layer_Project_Development_
 
 O ponto de partida consolidado para moldar o projeto é [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
 
-O inventário transversal de trabalhos pendentes é [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md).
+O inventário transversal de trabalhos pendentes é [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md), com a base de dados em [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base).
+
+O registro de tarefas do blueprint está em [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base).
