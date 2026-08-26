@@ -1,0 +1,91 @@
+{
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	},
+	"nodes":[
+		{"id":"f54cc82deac492da","type":"group","x":-760,"y":640,"width":4480,"height":520,"color":"5","label":"Blueprint"},
+		{"id":"e51be87c86503500","type":"group","x":-760,"y":-280,"width":2700,"height":720,"color":"4","label":"framework de 3 camadas"},
+		{
+			"id":"7d021fb47fc157d1",
+			"type":"text",
+			"text":"A camada de Blueprint contém as ideias, conceitos, premissas, hipóteses e escolhas arquiteturais amplas que definem o que o projeto pode vir a ser.\n\nNesta etapa:\n\n- As ideias não precisam ser perfeitas.\n- Os conceitos podem estar incompletos ou ser especulativos.\n- Múltiplas alternativas podem coexistir.\n- As premissas devem ser tornadas visíveis, e não escondidas.\n- O escopo completo e os relacionamentos de longo prazo entre os componentes devem ser representados.\n- Nenhum conceito deve ser tratado como final simplesmente por aparecer em um documento inicial.\n\nO propósito desta camada é criar um mapa suficientemente completo do negócio e do produto, incluindo seus usuários, proposta de valor, modelo operacional, dados, tecnologia, governança, economia, marca, distribuição e requisitos de lançamento.",
+			"styleAttributes":{},
+			"x":-20,
+			"y":-180,
+			"width":540,
+			"height":560
+		},
+		{
+			"id":"b98fba35cb1da16a",
+			"type":"text",
+			"text":"A camada de Refinamento fortalece o Blueprint por meio de investigação, comparação, teste, simulação, prototipagem e revisão.\n\nNesta etapa:\n\n- As premissas são examinadas e classificadas.\n- Os conceitos são melhorados, combinados, estreitados ou substituídos.\n- Pequenos testes e validações são usados para gerar aprendizado.\n- Os componentes de produto, negócio, finanças, dados e governança são refinados em conjunto.\n- As partes fracas ou contraditórias são expostas e corrigidas.\n- Nada é considerado permanentemente fixado.\n\nO propósito desta camada não é proteger o Blueprint original. É tornar o projeto como um todo mais forte, permitindo que evidências e aprendizado mudem qualquer parte dele.",
+			"styleAttributes":{},
+			"x":620,
+			"y":-180,
+			"width":540,
+			"height":560
+		},
+		{
+			"id":"131a4eb6749b00ad",
+			"type":"text",
+			"text":"A camada de Aprovação é o filtro final antes que um componente, subsistema ou o projeto completo possa ser considerado pronto para o lançamento.\n\nNesta etapa:\n\n- Os requisitos são verificados contra o escopo completo do projeto.\n- Alegações, cálculos, fluxos de trabalho e controles exigem evidências.\n- As dependências e consequências em todo o sistema são revisadas.\n- Os componentes podem ser aprovados, aprovados condicionalmente, devolvidos para refinamento ou bloqueados.\n- Os riscos não resolvidos devem ter um responsável e um tratamento aceito.\n- A aprovação de lançamento deve cobrir o sistema completo de negócios e produto, e não apenas suas funcionalidades mais visíveis.\n\nA aprovação é, portanto, uma decisão de governança, e não uma presunção de que o Blueprint estava correto desde o início.",
+			"styleAttributes":{},
+			"x":1260,
+			"y":-180,
+			"width":540,
+			"height":560
+		},
+		{"id":"ad9de25adefea53e","type":"file","file":"00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md","x":-620,"y":-160,"width":400,"height":540},
+		{"id":"aa41e696498dbf81","type":"file","file":"01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md","x":-620,"y":720,"width":400,"height":400},
+		{"id":"4b99eeca7f59b0a6","type":"file","file":"01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md","x":-150,"y":720,"width":400,"height":400},
+		{"id":"110ab80f8edff18d","type":"file","file":"01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md","x":320,"y":720,"width":400,"height":400},
+		{"id":"98e1d7fa48f12911","type":"file","file":"01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md","x":800,"y":720,"width":400,"height":400},
+		{"id":"e26efd43ccd5c816","type":"file","file":"01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md","x":1280,"y":720,"width":400,"height":400},
+		{"id":"dde820b9845b1c4d","type":"file","file":"01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md","x":1760,"y":720,"width":400,"height":400},
+		{"id":"9b8cfb16914c2f98","type":"file","file":"01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md","x":2240,"y":720,"width":400,"height":400},
+		{"id":"beed10262b55eafb","type":"file","file":"01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md","x":2720,"y":720,"width":400,"height":400},
+		{"id":"e5595ebfae184efe","type":"file","file":"01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md","x":3200,"y":720,"width":400,"height":400},
+		{
+			"id":"698020e80b023ee8",
+			"type":"text",
+			"text":"## Camada 1 — Blueprint",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-20,
+			"y":-260,
+			"width":540,
+			"height":60
+		},
+		{
+			"id":"25b6f9624967dcb7",
+			"type":"text",
+			"text":"##  Camada 2 — Refinamento",
+			"styleAttributes":{"textAlign":"center"},
+			"x":620,
+			"y":-260,
+			"width":540,
+			"height":60
+		},
+		{
+			"id":"04faed04f5be7f46",
+			"type":"text",
+			"text":"##  Camada 3 — Aprovação",
+			"styleAttributes":{"textAlign":"center"},
+			"x":1260,
+			"y":-260,
+			"width":540,
+			"height":60
+		},
+		{
+			"id":"188c80c2e4de92cd",
+			"type":"text",
+			"text":"# Framework de 3 Camadas",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-620,
+			"y":-260,
+			"width":400,
+			"height":60
+		}
+	],
+	"edges":[]
+}

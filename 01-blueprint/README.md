@@ -15,7 +15,7 @@ Use esta pasta quando quiser responder perguntas como:
 
 ```mermaid
 flowchart LR
-    A[README da pasta] --> B[HUB_Project_Blueprint_Foundation]
+    A[README da pasta] --> B[HUB_Fundacao_Blueprint_Projeto]
     B --> C[Blueprints por domínio]
     C --> D[Refinamento em 02-refinement]
     D --> E[Aprovação em 03-approval]
@@ -29,40 +29,40 @@ flowchart TB
     BP --> STR[strategy/]
     BP --> PRD[product/]
     BP --> TEC[technology/]
-    BP --> DAT[data-intelligence/]
-    BP --> BIZ[business-model/]
-    BP --> BRD[brand-market/]
-    BP --> GOV[governance-legal/]
-    BP --> LCH[launch-vision/]
+    BP --> DAT[dados-inteligencia/]
+    BP --> BIZ[modelo-negocio/]
+    BP --> BRD[marca-mercado/]
+    BP --> GOV[governanca-juridico/]
+    BP --> LCH[visao-lancamento/]
     BP --> OPS[operations/]
 ```
 
 ## O que existe aqui
 
-- [`strategy/`](strategy/) — direção geral, fundação do projeto e material-base do blueprint.
-- [`product/`](product/) — capacidades, experiência e forma do produto.
-- [`technology/`](technology/) — arquitetura técnica-alvo e fronteiras de plataforma.
-- [`data-intelligence/`](data-intelligence/) — modelo semântico, indicadores e inteligência do sistema.
-- [`business-model/`](business-model/) — oferta, receita e arquitetura comercial.
-- [`brand-market/`](brand-market/) — marca, posicionamento e mercado.
-- [`governance-legal/`](governance-legal/) — governança, responsabilidades e fundamentos jurídicos.
-- [`launch-vision/`](launch-vision/) — visão de lançamento, evolução e narrativa de entrada.
-- [`operations/`](operations/) — modelo operacional e execução do blueprint.
+- [`estrategia/`](estrategia/) — direção geral, fundação do projeto e material-base do blueprint.
+- [`produto/`](produto/) — capacidades, experiência e forma do produto.
+- [`tecnologia/`](tecnologia/) — arquitetura técnica-alvo e fronteiras de plataforma.
+- [`dados-inteligencia/`](dados-inteligencia/) — modelo semântico, indicadores e inteligência do sistema.
+- [`modelo-negocio/`](modelo-negocio/) — oferta, receita e arquitetura comercial.
+- [`marca-mercado/`](marca-mercado/) — marca, posicionamento e mercado.
+- [`governanca-juridico/`](governanca-juridico/) — governança, responsabilidades e fundamentos jurídicos.
+- [`visao-lancamento/`](visao-lancamento/) — visão de lançamento, evolução e narrativa de entrada.
+- [`operacoes/`](operacoes/) — modelo operacional e execução do blueprint.
 
 ## Arquivos-chave
 
-- [`HUB_Project_Blueprint_Foundation.md`](strategy/HUB_Project_Blueprint_Foundation.md) — ponto de partida consolidado do blueprint.
-- [`HUB_Product_and_Capability_Blueprint.md`](product/HUB_Product_and_Capability_Blueprint.md) — visão de produto e capacidades.
-- [`HUB_Technology_Architecture_Blueprint.md`](technology/HUB_Technology_Architecture_Blueprint.md) — arquitetura de tecnologia-alvo.
-- [`HUB_Data_and_Intelligence_Blueprint.md`](data-intelligence/HUB_Data_and_Intelligence_Blueprint.md) — dados, inteligência e indicadores.
+- [`HUB_Fundacao_Blueprint_Projeto.md`](estrategia/HUB_Fundacao_Blueprint_Projeto.md) — ponto de partida consolidado do blueprint.
+- [`HUB_Blueprint_Produto_e_Capacidades.md`](produto/HUB_Blueprint_Produto_e_Capacidades.md) — visão de produto e capacidades.
+- [`HUB_Blueprint_Arquitetura_Tecnologica.md`](tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md) — arquitetura de tecnologia-alvo.
+- [`HUB_Blueprint_Dados_e_Inteligencia.md`](dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md) — dados, inteligência e indicadores.
 
 ## Regra prática
 
-- Se a ideia ainda é ampla, comece em `strategy/`.
-- Se a ideia já virou produto, vá para `product/`.
-- Se a discussão é infraestrutura ou integrações, vá para `technology/`.
-- Se a discussão é métrica, evento ou modelo semântico, vá para `data-intelligence/`.
-- Se a discussão é oferta ou receita, vá para `business-model/`.
+- Se a ideia ainda é ampla, comece em `estrategia/`.
+- Se a ideia já virou produto, vá para `produto/`.
+- Se a discussão é infraestrutura ou integrações, vá para `tecnologia/`.
+- Se a discussão é métrica, evento ou modelo semântico, vá para `dados-inteligencia/`.
+- Se a discussão é oferta ou receita, vá para `modelo-negocio/`.
 
 ## Observação
 

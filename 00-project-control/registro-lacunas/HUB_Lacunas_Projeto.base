@@ -1,0 +1,102 @@
+filters:
+  and:
+    - file.inFolder("WORK/HUB/Projects/2026/The New HUB dev-2/00-project-control/registro-lacunas/lacunas")
+    - file.ext == "md"
+    - gap_id != ""
+formulas:
+  status_icon: if(status == "closed", "✅", if(status == "blocked", "⛔", if(status == "refining", "🔄", "⬜")))
+  priority_rank: if(priority == "critical", 1, if(priority == "high", 2, 3))
+  task_count: related_tasks.length
+properties:
+  gap_id:
+    displayName: Gap ID
+  gap_type:
+    displayName: Gap Type
+  status:
+    displayName: Status
+  priority:
+    displayName: Priority
+  domain:
+    displayName: Domain
+  current_layer:
+    displayName: Current Layer
+  next_layer:
+    displayName: Next Layer
+  owner:
+    displayName: Owner
+  related_tasks:
+    displayName: Related Tasks
+  formula.status_icon:
+    displayName: State
+  formula.priority_rank:
+    displayName: Priority Rank
+  formula.task_count:
+    displayName: Tasks (#)
+views:
+  - type: table
+    name: All Gaps
+    order:
+      - gap_id
+      - formula.status_icon
+      - file.name
+      - priority
+      - gap_type
+      - domain
+      - current_layer
+      - next_layer
+      - owner
+      - related_tasks
+    columnSize:
+      note.gap_id: 108
+      note.priority: 111
+      note.gap_type: 135
+      note.domain: 269
+      note.current_layer: 136
+      note.next_layer: 131
+      note.owner: 147
+  - type: table
+    name: Open Gaps
+    filters:
+      and:
+        - status != "closed"
+        - status != "superseded"
+    order:
+      - formula.priority_rank
+      - gap_id
+      - file.name
+      - priority
+      - gap_type
+      - domain
+      - related_tasks
+  - type: table
+    name: Critical Gaps
+    filters: priority == "critical"
+    order:
+      - gap_id
+      - formula.status_icon
+      - file.name
+      - status
+      - domain
+      - gap_type
+      - owner
+      - related_tasks
+  - type: table
+    name: By Gap Type
+    order:
+      - gap_id
+      - file.name
+      - gap_type
+      - priority
+      - status
+      - domain
+      - next_layer
+  - type: cards
+    name: Gap Portfolio
+    order:
+      - file.name
+      - formula.status_icon
+      - priority
+      - gap_type
+      - domain
+      - owner
+      - related_tasks

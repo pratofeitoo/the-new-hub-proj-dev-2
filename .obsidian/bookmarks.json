@@ -3,7 +3,7 @@
     {
       "type": "file",
       "ctime": 1787762512444,
-      "path": "00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md",
+      "path": "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md",
       "title": "3 Layer Development Framework"
     },
     {
@@ -13,12 +13,12 @@
         {
           "type": "file",
           "ctime": 1787774304486,
-          "path": "04-project-management/tasks/HUB_Project_Tasks.base"
+          "path": "04-project-management/tarefas/HUB_Tarefas_Projeto.base"
         },
         {
           "type": "file",
           "ctime": 1787762546562,
-          "path": "00-project-control/gap-register/HUB_Project_Gaps.base"
+          "path": "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base"
         },
         {
           "type": "file",
@@ -31,22 +31,22 @@
     {
       "type": "file",
       "ctime": 1787762571676,
-      "path": "00-project-control/gap-register/HUB_Project_Gap_Register.md"
+      "path": "00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md"
     },
     {
       "type": "file",
       "ctime": 1787762640266,
-      "path": "01-blueprint/brand-market/HUB_Brand_and_Market_Blueprint.md"
+      "path": "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md"
     },
     {
       "type": "file",
       "ctime": 1787762656319,
-      "path": "01-blueprint/business-model/HUB_Offer_and_Revenue_Architecture.md"
+      "path": "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md"
     },
     {
       "type": "file",
       "ctime": 1787762669265,
-      "path": "01-blueprint/data-intelligence/HUB_Data_and_Intelligence_Blueprint.md"
+      "path": "01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md"
     }
   ]
 }

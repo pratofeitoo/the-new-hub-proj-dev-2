@@ -32,32 +32,32 @@ flowchart TB
     R --> PR[prototypes/]
     R --> RV[reviews/]
     R --> RS[revisions/]
-    R --> DM[data-model-refinement/]
-    R --> FM[financial-models/]
-    R --> PD[product-refinement/]
+    R --> DM[refinamento-modelo-dados/]
+    R --> FM[modelos-financeiros/]
+    R --> PD[refinamento-produto/]
     R --> GR[governance-refinement/]
     R --> ST[strategy/]
 ```
 
 ## O que existe aqui
 
-- [`research/`](research/) — pesquisas, validações e leituras de suporte.
-- [`tests-experiments/`](tests-experiments/) — testes, provas de conceito e experimentos.
-- [`prototypes/`](prototypes/) — protótipos e simulações.
-- [`reviews/`](reviews/) — revisões e análises críticas.
-- [`revisions/`](revisions/) — versões reescritas ou ajustadas após feedback.
-- [`data-model-refinement/`](data-model-refinement/) — sínteses e ajustes do modelo de dados e indicadores.
-- [`financial-models/`](financial-models/) — refinamentos de lógica e requisitos financeiros.
-- [`product-refinement/`](product-refinement/) — ajustes de produto, fluxo e escopo.
-- [`governance-refinement/`](governance-refinement/) — LGPD, controles, papéis e governança.
-- [`strategy/`](strategy/) — refinamentos da estratégia-base e documento-mãe.
+- [`pesquisa/`](pesquisa/) — pesquisas, validações e leituras de suporte.
+- [`testes-experimentos/`](testes-experimentos/) — testes, provas de conceito e experimentos.
+- [`prototipos/`](prototipos/) — protótipos e simulações.
+- [`revisoes/`](revisoes/) — revisões e análises críticas.
+- [`revisoes-iteradas/`](revisoes-iteradas/) — versões reescritas ou ajustadas após feedback.
+- [`refinamento-modelo-dados/`](refinamento-modelo-dados/) — sínteses e ajustes do modelo de dados e indicadores.
+- [`modelos-financeiros/`](modelos-financeiros/) — refinamentos de lógica e requisitos financeiros.
+- [`refinamento-produto/`](refinamento-produto/) — ajustes de produto, fluxo e escopo.
+- [`refinamento-governanca/`](refinamento-governanca/) — LGPD, controles, papéis e governança.
+- [`estrategia/`](estrategia/) — refinamentos da estratégia-base e documento-mãe.
 
 ## Arquivos de referência
 
 - [`../01-blueprint/README.md`](../01-blueprint/README.md) — visão geral da camada anterior.
 - [`../README.md`](../README.md) — visão geral do repositório.
-- [`research/second-project-draft/pt-BR/HUB_v2_product_mvp_research-pt-BR.md`](research/second-project-draft/pt-BR/HUB_v2_product_mvp_research-pt-BR.md) — exemplo de pesquisa em pt-BR.
-- [`data-model-refinement/indicator-model/cross-sheet-synthesis/README.md`](data-model-refinement/indicator-model/cross-sheet-synthesis/README.md) — síntese dos indicadores.
+- [`pesquisa/segundo-rascunho-projeto/pt-BR/HUB_v2_product_mvp_research-pt-BR.md`](pesquisa/segundo-rascunho-projeto/pt-BR/HUB_v2_product_mvp_research-pt-BR.md) — exemplo de pesquisa em pt-BR.
+- [`refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/README.md`](refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/README.md) — síntese dos indicadores.
 
 ## Como trabalhar aqui
 

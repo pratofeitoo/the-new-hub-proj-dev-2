@@ -25,9 +25,9 @@ Se você chegou agora, siga esta ordem:
 
 1. Leia [`README.md`](README.md) para entender a estrutura geral.
 2. Abra o [`project-map.md`](project-map.md) para enxergar o mapa vivo do repositório.
-3. Vá para o framework em [`HUB_Three-Layer_Project_Development_Framework.md`](00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md).
-4. Depois revise a fundação do projeto em [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
-5. Se houver lacunas, consulte o gap register em [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md).
+3. Vá para o framework em [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md).
+4. Depois revise a fundação do projeto em [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
+5. Se houver lacunas, consulte o gap register em [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md).
 
 ## Visão geral das camadas
 
@@ -61,14 +61,14 @@ flowchart TB
     R --> SYS[System]
     R --> TYP[_types]
 
-    PC --> PCF[framework / scope / decisions / risks / dependencies / indexes]
-    BP --> BPF[strategy / product / business-model / technology / data / launch-vision / operations / brand-market / governance-legal]
-    RF --> RFF[research / tests-experiments / prototypes / reviews / revisions / strategy / product / data-model-refinement / financial-models]
-    AP --> APF[evidence / review-packets / approval-criteria / approved / blocked / conditionally-approved / launch-gate]
-    PM --> PMF[master-plans / phase-plans / tasks / milestones / schedules / work-logs / status-reports / meeting-notes / retrospectives]
-    RS --> RSF[documents / source-materials / external-references / images / presentations / datasets / spreadsheets / templates]
+    PC --> PCF[framework / escopo / decisoes / riscos / dependencias / indices]
+    BP --> BPF[estrategia / produto / modelo-negocio / tecnologia / dados / visao-lancamento / operacoes / marca-mercado / governanca-juridico]
+    RF --> RFF[pesquisa / testes-experimentos / prototipos / revisoes / revisoes-iteradas / estrategia / produto / refinamento-modelo-dados / modelos-financeiros]
+    AP --> APF[evidencias / pacotes-revisao / criterios-aprovacao / aprovado / bloqueado / aprovado-condicionalmente / portao-lancamento]
+    PM --> PMF[planos-diretores / planos-fase / tarefas / marcos / cronogramas / registros-trabalho / relatorios-status / atas-reuniao / retrospectivas]
+    RS --> RSF[documentos / materiais-origem / referencias-externas / imagens / apresentacoes / conjuntos-dados / planilhas / modelos]
     DL --> DLF[business / product / data / governance / investor / launch]
-    AR --> ARF[deprecated / rejected / superseded / historical-snapshots]
+    AR --> ARF[descontinuado / rejeitado / superado / instantaneos-historicos]
     TN --> TNF[Start Here / Views / bases de tarefas]
     SYS --> SYSF[documentação de plugins e ferramentas Obsidian]
     TYP --> TYPF[definições de tipos mdbase]
@@ -106,11 +106,11 @@ flowchart TB
 
 ## Arquivos-chave
 
-- [`HUB_Three-Layer_Project_Development_Framework.md`](00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md) — descreve o processo central do projeto.
-- [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md) — ponto de partida consolidado para a arquitetura do HUB.
-- [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md) — lista transversal de lacunas, riscos e pendências.
-- [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base) — base de dados dos gaps.
-- [`HUB_Blueprint_Tasks.base`](HUB_Project_Tasks.base) — base de tarefas do blueprint.
+- [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — descreve o processo central do projeto.
+- [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — ponto de partida consolidado para a arquitetura do HUB.
+- [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — lista transversal de lacunas, riscos e pendências.
+- [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados dos gaps.
+- [`HUB_Blueprint_Tasks.base`](HUB_Tarefas_Projeto.base) — base de tarefas do blueprint.
 - [`TaskNotes/Views/tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas.
 - [`_types/task.md`](%5Ftypes/task.md) — definição do tipo de tarefa.
 - [`System/Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas de Obsidian.
@@ -136,14 +136,14 @@ Fluxo recomendado:
 
 ## Como usar a camada de refinamento
 
-- Use `research/` para pesquisas e validações exploratórias.
-- Use `tests-experiments/` para testes, provas de conceito e experimentos.
-- Use `prototypes/` para protótipos e simulações.
-- Use `reviews/` e `revisions/` para feedback e versões iteradas.
-- Use `data-model-refinement/` para sínteses semânticas e ajustes de dados.
-- Use `financial-models/` para requisitos e refinamentos financeiros.
-- Use `product-refinement/` para ajustar escopo, fluxo e experiência.
-- Use `governance-refinement/` para LGPD, controle e responsabilidades.
+- Use `pesquisa/` para pesquisas e validações exploratórias.
+- Use `testes-experimentos/` para testes, provas de conceito e experimentos.
+- Use `prototipos/` para protótipos e simulações.
+- Use `revisoes/` e `revisoes-iteradas/` para feedback e versões iteradas.
+- Use `refinamento-modelo-dados/` para sínteses semânticas e ajustes de dados.
+- Use `modelos-financeiros/` para requisitos e refinamentos financeiros.
+- Use `refinamento-produto/` para ajustar escopo, fluxo e experiência.
+- Use `refinamento-governanca/` para LGPD, controle e responsabilidades.
 
 ## Contribuição nesta camada
 
@@ -182,10 +182,10 @@ Se você estiver **auditando o passado**, vá para `99-archive/`.
 
 - `blueprint` = hipótese ou direção base.
 - `refining` = material em evolução.
-- `conditionally-approved` = pode avançar com ressalvas.
-- `approved` = pronto para uso.
-- `blocked` = precisa de dependência ou decisão.
-- `superseded` = substituído por uma versão melhor.
+- `aprovado-condicionalmente` = pode avançar com ressalvas.
+- `aprovado` = pronto para uso.
+- `bloqueado` = precisa de dependência ou decisão.
+- `superado` = substituído por uma versão melhor.
 
 ## Observação
 
