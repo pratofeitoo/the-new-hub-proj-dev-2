@@ -1,3 +1,6 @@
+<!-- git-hash: 48eb410 -->
+<!-- last-synced: 2026-08-26T08:15:00-03:00 -->
+
 # Mapa do Projeto
 
 ## Modelo operacional
@@ -19,7 +22,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `02-refinement/` | Estratégia V2, pesquisa e síntese do modelo de dados. |
 | `03-approval/` | Material do modelo de indicadores não aprovado e futuros portões de aprovação. |
 | `04-project-management/` | Casa central de planos, tarefas, marcos, cronogramas, logs e status. |
-| `05-resources/` | Pitch decks, esboços de UI, materiais de origem e ativos reutilizáveis. |
+| `05-resources/` | Documentos estratégicos, plano de ação, imagens de referência, esboços de UI, apresentações, materiais de origem, datasets e templates. |
 | `06-deliverables/` | Saídas finais uma vez aprovadas para uso externo. |
 | `99-archive/` | Material histórico e superado. |
 
