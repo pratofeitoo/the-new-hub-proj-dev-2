@@ -4,6 +4,8 @@
 		"frontmatter":{}
 	},
 	"nodes":[
+		{"id":"e8f4d91684fc521b","type":"group","x":1420,"y":1380,"width":1920,"height":3440,"label":"Estruturações Operacionais Internas"},
+		{"id":"68e61ad94c5653be","type":"group","x":-780,"y":1380,"width":1800,"height":2320,"label":"Conceitos e Teorias"},
 		{"id":"f54cc82deac492da","type":"group","x":-760,"y":640,"width":4480,"height":540,"color":"5","label":"Blueprint"},
 		{"id":"e51be87c86503500","type":"group","x":-760,"y":-280,"width":2700,"height":720,"color":"4","label":"framework de 3 camadas"},
 		{
@@ -85,7 +87,60 @@
 		{"id":"dde820b9845b1c4d","type":"file","file":"01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md","x":1760,"y":720,"width":400,"height":400},
 		{"id":"9b8cfb16914c2f98","type":"file","file":"01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md","x":2240,"y":720,"width":400,"height":400},
 		{"id":"beed10262b55eafb","type":"file","file":"01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md","x":2720,"y":720,"width":400,"height":400},
-		{"id":"e5595ebfae184efe","type":"file","file":"01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md","x":3200,"y":720,"width":400,"height":400}
+		{"id":"e5595ebfae184efe","type":"file","file":"01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md","x":3200,"y":720,"width":400,"height":400},
+		{
+			"id":"4547ed58b6bb74a2",
+			"type":"text",
+			"text":"# Conceitos e Teorias",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-760,
+			"y":1400,
+			"width":1760,
+			"height":160,
+			"color":"#2ed818"
+		},
+		{"id":"d9c62bf888b5ad94","type":"file","file":"02-refinement/estrategia/segundo-rascunho-projeto/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor.md","x":-760,"y":1640,"width":810,"height":920},
+		{"id":"2e5a45740546b90a","type":"file","file":"01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md","x":200,"y":1640,"width":800,"height":920},
+		{
+			"id":"fd08c59686b1748c",
+			"type":"text",
+			"text":"# Estruturações Operacionais Internas",
+			"styleAttributes":{"textAlign":"center"},
+			"x":1440,
+			"y":1400,
+			"width":1880,
+			"height":160,
+			"color":"#2ed818"
+		},
+		{"id":"6a9a5892c0be42f9","type":"file","file":"01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md","x":-755,"y":2680,"width":1755,"height":1000},
+		{"id":"eed58c529c46e1a5","type":"file","file":"01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md","x":1440,"y":1640,"width":880,"height":1040},
+		{"id":"9575488c2ff95fe5","type":"file","file":"01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md","x":2440,"y":1640,"width":880,"height":1040},
+		{"id":"2f3c72d6dafc356a","type":"file","file":"01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md","x":1440,"y":2780,"width":880,"height":1020},
+		{"id":"91f6d4d646c384c9","type":"file","file":"01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md","x":2440,"y":2780,"width":880,"height":1020},
+		{"id":"aa5538b53b4def3c","type":"file","file":"01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md","x":1440,"y":3920,"width":880,"height":880},
+		{"id":"c538eb1ba0143f70","type":"file","file":"01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md","x":2440,"y":3920,"width":880,"height":880},
+		{
+			"id":"5385cef9d57c42ef",
+			"type":"text",
+			"text":"# Estruturações Operacionais Externas",
+			"styleAttributes":{"textAlign":"center"},
+			"x":3840,
+			"y":1400,
+			"width":1400,
+			"height":160,
+			"color":"#efc806"
+		},
+		{
+			"id":"52464f1cceee04f0",
+			"type":"text",
+			"text":"## Expandir nas diferentes pontes de conexão da plataforma com entidades externas",
+			"styleAttributes":{"textAlign":"center"},
+			"x":4040,
+			"y":1640,
+			"width":1000,
+			"height":120,
+			"color":"#ffbc05"
+		}
 	],
 	"edges":[]
 }

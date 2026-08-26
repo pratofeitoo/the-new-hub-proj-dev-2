@@ -8,32 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "651571ef81bf939b",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "TaskNotes/Views/kanban-default.base",
-                "viewName": "Kanban Board"
-              },
-              "icon": "tasknotes-simple",
-              "title": "kanban-default"
-            }
-          },
-          {
-            "id": "d7a57f3fd76f55a2",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
-                "viewName": "Blueprint Task Register"
-              },
-              "icon": "lucide-table",
-              "title": "HUB_Tarefas_Projeto"
-            }
-          },
-          {
             "id": "e9f86e5380992cfe",
             "type": "leaf",
             "state": {
@@ -41,9 +15,9 @@
               "state": {
                 "file": "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
                 "viewState": {
-                  "x": 2258.5129717111076,
-                  "y": 1069.6818556806265,
-                  "zoom": -0.7459739265847756
+                  "x": 972.098514677733,
+                  "y": 664.5619486719083,
+                  "zoom": -1.1347895052044155
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -51,7 +25,7 @@
             }
           },
           {
-            "id": "751853e2fe9e4f75",
+            "id": "554f426ca0814cf3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -65,7 +39,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -251,12 +225,31 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "e9f86e5380992cfe",
+  "active": "554f426ca0814cf3",
   "lastOpenFiles": [
+    "04-project-management/marcos/marcos-fases-v1.md",
+    "04-project-management/cronogramas/cronograma-fases-v1.base",
+    "04-project-management/planos-fase/P07_Portao_Lancamento.md",
+    "04-project-management/planos-fase/P06_Economia_GTM_Evidencia.md",
+    "04-project-management/planos-fase/P05_Tecnologia_Contratual.md",
+    "04-project-management/planos-fase/P04_Governanca_Confianca.md",
+    "04-project-management/planos-fase/P03_Dados_Canonicos.md",
+    "04-project-management/planos-fase/P02_Produto_Operacao.md",
+    "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
+    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
+    "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
+    "01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md",
+    "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
+    "01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md",
+    "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+    "01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md",
+    "project-map.md",
+    "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md",
+    "01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md",
+    "01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md",
+    "02-refinement/estrategia/segundo-rascunho-projeto/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor.md",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
     "TaskNotes/Views/kanban-default.base",
-    "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
-    "project-map.md",
     "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md",
     "README.md",
     "TaskNotes/Views/tasks-default.base",
@@ -266,28 +259,10 @@
     "05-resources/documents/Plano de Ação.md",
     "02-refinement/estrategia/segundo-rascunho-projeto/HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Ready_pt-BR.md",
     "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.pdf",
-    "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md",
     "TaskNotes/Tasks/Consolidar a proposta de valor da plataforma.md",
     "TaskNotes/Tasks/Refinar os dados do Blueprint.md",
-    "TaskNotes/Tasks/Selecionar mais 2 ou 3 empresas.md",
-    "TaskNotes/Tasks/Analisar Campari.md",
-    "TaskNotes/Tasks/Analisar B.blend.md",
-    "TaskNotes/Tasks/MVPs Empresas Selecionadas.md",
-    "TaskNotes/Tasks/Estruturar frente acadêmica.md",
-    "TaskNotes/Tasks/Desenvolvimento do MVP.md",
-    "TaskNotes/Tasks/Definir arquitetura financeira.md",
-    "TaskNotes/Tasks/Definir indicadores dos MVPs.md",
-    "TaskNotes/Tasks/Mapear jornadas da plataforma.md",
-    "TaskNotes/Tasks/Definir o escopo do MVP.md",
     "TaskNotes/Tasks",
-    "05-resources/documents/Estrategia_Plataforma_Pessoas_Negocios_Comunidade.md",
     "TaskNotes/Views/agenda-default.base",
-    "04-project-management/tarefas/BP-008_HUB_Blueprint_Lancamento_e_Evolucao.md",
-    "04-project-management/tarefas/BP-001_HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
-    "System/Plugins docs/Obsidian Base/Obsidian cheat sheet Bases vs Dataview.md",
-    "System/Plugins docs/Obsidian Base/Functions.md",
-    "System/Plugins docs/Obsidian Base/Bases syntax.md",
-    "System/Plugins docs/Obsidian Base",
-    "System/Plugins docs/Tracker Plugin"
+    "System/Plugins docs/Obsidian Base"
   ]
 }
