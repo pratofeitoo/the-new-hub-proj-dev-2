@@ -1,8 +1,9 @@
 ---
-title: "BP-008 — Blueprint de Lançamento e Evolução do HUB"
+title: BP-008 — Blueprint de Lançamento e Evolução do HUB
 task_id: BP-008
 task_type: blueprint-document
-status: completed
+status:
+  - done
 priority: critical
 layer: blueprint
 area: launch-vision
@@ -31,6 +32,11 @@ related_notes:
   - "[[00-project-control/gap-register/HUB_Project_Gap_Register]]"
 created: 2026-08-20
 updated: 2026-08-21
+tags:
+  - task
+tasknotes_manual_order: tneiriririrf
+completedDate: 2026-08-26
+dateModified: 2026-08-26T15:56:00.130-03:00
 ---
 
 # BP-008 — Blueprint de Lançamento e Evolução do HUB

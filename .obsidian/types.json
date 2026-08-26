@@ -5,6 +5,9 @@
     "tags": "tags",
     "status": "multitext",
     "layer": "multitext",
-    "area": "multitext"
+    "area": "multitext",
+    "priority": "multitext",
+    "owner": "multitext",
+    "task_type": "multitext"
   }
 }

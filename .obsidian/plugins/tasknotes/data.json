@@ -1,6 +1,6 @@
 {
   "tasksFolder": "TaskNotes/Tasks",
-  "moveArchivedTasks": false,
+  "moveArchivedTasks": true,
   "archiveFolder": "TaskNotes/Archive",
   "taskTag": "task",
   "taskIdentificationMethod": "tag",
@@ -62,7 +62,7 @@
     "timeblockAttachmentSearchOrder": "name-asc",
     "nowIndicator": true,
     "selectMirror": true,
-    "weekNumbers": false,
+    "weekNumbers": true,
     "showTodayHighlight": true,
     "eventMinHeight": 15,
     "slotEventOverlap": true,
@@ -74,14 +74,14 @@
   "pomodoroShortBreakDuration": 5,
   "pomodoroLongBreakDuration": 15,
   "pomodoroLongBreakInterval": 4,
-  "pomodoroAutoStartBreaks": true,
+  "pomodoroAutoStartBreaks": false,
   "pomodoroAutoStartWork": false,
-  "pomodoroNotifications": true,
-  "pomodoroSoundEnabled": true,
+  "pomodoroNotifications": false,
+  "pomodoroSoundEnabled": false,
   "pomodoroSoundVolume": 50,
   "pomodoroStorageLocation": "plugin",
   "pomodoroMobileSidebar": "tab",
-  "showPomodoroInStatusBar": true,
+  "showPomodoroInStatusBar": false,
   "enableTaskLinkOverlay": true,
   "disableOverlayOnAlias": false,
   "enableInstantTaskConvert": true,
@@ -187,7 +187,8 @@
       "excludeFromCycle": false,
       "order": 0,
       "autoArchive": false,
-      "autoArchiveDelay": 5
+      "autoArchiveDelay": 5,
+      "nextStatus": "open"
     },
     {
       "id": "open",
@@ -198,7 +199,8 @@
       "excludeFromCycle": false,
       "order": 1,
       "autoArchive": false,
-      "autoArchiveDelay": 5
+      "autoArchiveDelay": 5,
+      "nextStatus": "in-progress"
     },
     {
       "id": "in-progress",
@@ -209,7 +211,8 @@
       "excludeFromCycle": false,
       "order": 2,
       "autoArchive": false,
-      "autoArchiveDelay": 5
+      "autoArchiveDelay": 5,
+      "nextStatus": "done"
     },
     {
       "id": "done",
@@ -257,15 +260,15 @@
   "showReleaseNotesOnUpdate": true,
   "checkForUpdatesOnStartup": true,
   "starterNoteCreated": true,
-  "showTrackedTasksInStatusBar": false,
-  "autoStopTimeTrackingOnComplete": true,
+  "showTrackedTasksInStatusBar": true,
+  "autoStopTimeTrackingOnComplete": false,
   "autoStopTimeTrackingNotification": false,
   "showRelationships": true,
   "relationshipsPosition": "bottom",
   "showTaskCardInNote": true,
   "showCompletedTaskStrikethrough": true,
   "showExpandableSubtasks": true,
-  "expandSubtasksByDefault": false,
+  "expandSubtasksByDefault": true,
   "subtaskChevronPosition": "right",
   "viewsButtonAlignment": "right",
   "hideCompletedFromOverdue": true,
@@ -449,7 +452,7 @@
     "recurrence"
   ],
   "enableBases": true,
-  "enableMdbaseSpec": false,
+  "enableMdbaseSpec": true,
   "autoCreateDefaultBasesFiles": true,
   "commandFileMapping": {
     "open-calendar-view": "TaskNotes/Views/mini-calendar-default.base",

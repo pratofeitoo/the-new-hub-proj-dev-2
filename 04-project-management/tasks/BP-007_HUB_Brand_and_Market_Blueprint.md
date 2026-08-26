@@ -1,8 +1,9 @@
 ---
-title: "BP-007 — Blueprint de Marca e Mercado do HUB"
+title: BP-007 — Blueprint de Marca e Mercado do HUB
 task_id: BP-007
 task_type: blueprint-document
-status: completed
+status:
+  - done
 priority: high
 layer: blueprint
 area: brand-market
@@ -30,6 +31,11 @@ related_notes:
   - "[[00-project-control/gap-register/HUB_Project_Gap_Register]]"
 created: 2026-08-20
 updated: 2026-08-21
+tags:
+  - task
+tasknotes_manual_order: tneiriririrg
+completedDate: 2026-08-26
+dateModified: 2026-08-26T15:55:58.975-03:00
 ---
 
 # BP-007 — Blueprint de Marca e Mercado do HUB

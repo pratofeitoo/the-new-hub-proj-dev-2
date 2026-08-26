@@ -1,8 +1,9 @@
 ---
-title: "BP-005 — Blueprint do Modelo Operacional do HUB"
+title: BP-005 — Blueprint do Modelo Operacional do HUB
 task_id: BP-005
 task_type: blueprint-document
-status: completed
+status:
+  - done
 priority: high
 layer: blueprint
 area: operations
@@ -24,6 +25,11 @@ related_notes:
   - "[[00-project-control/gap-register/HUB_Project_Gap_Register]]"
 created: 2026-08-20
 updated: 2026-08-21
+tags:
+  - task
+tasknotes_manual_order: tniririririq
+completedDate: 2026-08-26
+dateModified: 2026-08-26T15:55:56.112-03:00
 ---
 
 # BP-005 — Blueprint do Modelo Operacional do HUB

@@ -1,8 +1,9 @@
 ---
-title: "BP-006 — Blueprint de Governança e Jurídico do HUB"
+title: BP-006 — Blueprint de Governança e Jurídico do HUB
 task_id: BP-006
 task_type: blueprint-document
-status: completed
+status:
+  - done
 priority: critical
 layer: blueprint
 area: governance-legal
@@ -29,6 +30,11 @@ related_notes:
   - "[[00-project-control/gap-register/HUB_Project_Gap_Register]]"
 created: 2026-08-20
 updated: 2026-08-21
+tags:
+  - task
+tasknotes_manual_order: tneiriririrh
+completedDate: 2026-08-26
+dateModified: 2026-08-26T15:55:57.807-03:00
 ---
 
 # BP-006 — Blueprint de Governança e Jurídico do HUB
