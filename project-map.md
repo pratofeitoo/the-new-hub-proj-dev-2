@@ -1,5 +1,5 @@
-<!-- git-hash: 48eb410 -->
-<!-- last-synced: 2026-08-26T08:15:00-03:00 -->
+<!-- git-hash: ca54b39 -->
+<!-- last-synced: 2026-08-26T16:25:14-03:00 -->
 
 # Mapa do Projeto
 
@@ -25,6 +25,10 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `05-resources/` | Documentos estratégicos, plano de ação, imagens de referência, esboços de UI, apresentações, materiais de origem, datasets e templates. |
 | `06-deliverables/` | Saídas finais uma vez aprovadas para uso externo. |
 | `99-archive/` | Material histórico e superado. |
+| `TaskNotes/` | Orientação e visualizações Bases para gerenciamento de tarefas. |
+| `System/` | Documentação local de plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes. |
+| `_types/` | Definições de tipos usadas pelo mdbase/TaskNotes. |
+| `.obsidian/` | Configurações do vault, plugins comunitários, temas e workspace. |
 
 Fundação primária do blueprint: [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
 
@@ -34,6 +38,14 @@ Base de Gaps: [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Proj
 
 Registro de tarefas do blueprint: [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base).
 
+Configuração do sistema de tipos: [`mdbase.yaml`](mdbase.yaml).
+
+Guia inicial de tarefas: [`TaskNotes/Start Here.md`](TaskNotes/Start%20Here.md).
+
+Visão padrão das tarefas: [`TaskNotes/Views/tasks-default.base`](TaskNotes/Views/tasks-default.base).
+
+Documentação local de plugins: [`System/Plugins docs/`](System/Plugins%20docs/).
+
 ## Regras
 
 - Mantenha planos, tarefas e logs centralizados em `04-project-management/`.
@@ -41,6 +53,8 @@ Registro de tarefas do blueprint: [`HUB_Blueprint_Tasks.base`](04-project-manage
 - Marque a maturidade explicitamente: `blueprint`, `refining`, `conditionally-approved`, `approved`, `blocked` ou `superseded`.
 - Conecte artefatos relacionados entre camadas em vez de duplicar conteúdo.
 - Mova um artefato para trás quando a aprovação revelar um gap ou contradição.
+- Mantenha as definições de tipos em `_types/` e as visualizações de tarefas em `TaskNotes/Views/`.
+- Trate `System/` como documentação de referência local, não como área de trabalho do produto.
 
 ## Mapa da hierarquia de pastas
 
@@ -56,6 +70,9 @@ flowchart TB
     TB05["05-resources"]:::resources
     TB06["06-deliverables"]:::deliverables
     TN99["99-archive"]:::archive
+    TTN["TaskNotes"]:::tasknotes
+    TSYS["System"]:::system
+    TTYPES["_types"]:::types
 
     %% Connections from root
     root --> TC
@@ -66,6 +83,9 @@ flowchart TB
     root --> TB05
     root --> TB06
     root --> TN99
+    root --> TTN
+    root --> TSYS
+    root --> TTYPES
 
     %% Level 2: subfolders within each top-level folder
     %% 00-project-control
@@ -209,6 +229,12 @@ flowchart TB
     TN99 --> AR_rejected
     TN99 --> AR_superseded
 
+    %% TaskNotes, System and type definitions
+    TTN --> TN_views["Views"]:::tn_sub
+    TTN --> TN_start["Start Here.md"]:::tn_sub
+    TSYS --> SYS_plugins["Plugins docs"]:::sys_sub
+    TTYPES --> TYPE_task["task.md"]:::type_sub
+
     %% Styling classes
     classDef projctrl fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
     classDef blueprint  fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
@@ -218,6 +244,9 @@ flowchart TB
     classDef resources  fill:#f1f8e9,stroke:#388e3c,stroke-width:2px;
     classDef deliverables fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
     classDef archive    fill:#fafafa,stroke:#607d8b,stroke-width:2px;
+    classDef tasknotes  fill:#fff8e1,stroke:#f9a825,stroke-width:2px;
+    classDef system     fill:#ede7f6,stroke:#5e35b1,stroke-width:2px;
+    classDef types      fill:#fbe9e7,stroke:#d84315,stroke-width:2px;
     classDef pc_sub     fill:#e3f2fd,stroke:#1565c0,stroke-width:1px,stroke-dasharray: 5 5;
     classDef bp_sub     fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,stroke-dasharray: 5 5;
     classDef rf_sub     fill:#e3e5f5,stroke:#1a237e,stroke-width:1px,stroke-dasharray: 5 5;
@@ -226,4 +255,7 @@ flowchart TB
     classDef rs_sub     fill:#f1f8e9,stroke:#388e3c,stroke-width:1px,stroke-dasharray: 5 5;
     classDef dl_sub     fill:#e1f5fe,stroke:#01579b,stroke-width:1px,stroke-dasharray: 5 5;
     classDef ar_sub     fill:#fafafa,stroke:#607d8b,stroke-width:1px,stroke-dasharray: 5 5;
+    classDef tn_sub     fill:#fff8e1,stroke:#f9a825,stroke-width:1px,stroke-dasharray: 5 5;
+    classDef sys_sub    fill:#ede7f6,stroke:#5e35b1,stroke-width:1px,stroke-dasharray: 5 5;
+    classDef type_sub   fill:#fbe9e7,stroke:#d84315,stroke-width:1px,stroke-dasharray: 5 5;
 ```
