@@ -14,6 +14,10 @@ Depois disso:
 1. Abra o repositório no Obsidian.
 2. Confirme que o `project-map.md` está disponível na raiz.
 3. Use o `README.md` da raiz e o [README da pasta blueprint](01-blueprint/README.md) para orientação inicial.
+4. Confirme que os plugins comunitários listados em `.obsidian/community-plugins.json` estão instalados e ativados.
+5. Para o fluxo de tarefas, consulte [`TaskNotes/Start Here.md`](TaskNotes/Start%20Here.md).
+
+O arquivo [`mdbase.yaml`](mdbase.yaml) configura o TaskNotes para usar `_types/` como pasta de definições e `TaskNotes/` como espaço de trabalho das tarefas.
 
 ## Como ler este repositório
 
@@ -53,6 +57,9 @@ flowchart TB
     R --> RS[05-resources]
     R --> DL[06-deliverables]
     R --> AR[99-archive]
+    R --> TN[TaskNotes]
+    R --> SYS[System]
+    R --> TYP[_types]
 
     PC --> PCF[framework / scope / decisions / risks / dependencies / indexes]
     BP --> BPF[strategy / product / business-model / technology / data / launch-vision / operations / brand-market / governance-legal]
@@ -62,6 +69,9 @@ flowchart TB
     RS --> RSF[documents / source-materials / external-references / images / presentations / datasets / spreadsheets / templates]
     DL --> DLF[business / product / data / governance / investor / launch]
     AR --> ARF[deprecated / rejected / superseded / historical-snapshots]
+    TN --> TNF[Start Here / Views / bases de tarefas]
+    SYS --> SYSF[documentação de plugins e ferramentas Obsidian]
+    TYP --> TYPF[definições de tipos mdbase]
 ```
 
 ## O que cada pasta significa
@@ -74,6 +84,11 @@ flowchart TB
 - [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
+- [`TaskNotes/`](TaskNotes/) — orientação e visualizações Bases para gerenciamento de tarefas.
+- [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes.
+- [`_types/`](%5Ftypes/) — definições de tipos usadas pelo mdbase/TaskNotes.
+- [`.obsidian/`](.obsidian/) — configurações do vault, plugins comunitários, temas e workspace do Obsidian.
+- [`mdbase.yaml`](mdbase.yaml) — configuração do sistema de tipos e exclusões do mdbase.
 
 ## Regras de navegação
 
@@ -85,6 +100,9 @@ flowchart TB
 - Use `05-resources/` para localizar a matéria-prima do trabalho.
 - Use `06-deliverables/` para encontrar o que já está pronto para distribuição.
 - Use `99-archive/` para consultar histórico, mas não para continuar trabalho ativo.
+- Use `TaskNotes/` para revisar tarefas por listas, agenda, calendário e kanban.
+- Use `System/` quando precisar consultar a documentação local das ferramentas do vault.
+- Não edite manualmente arquivos compilados dos plugins em `.obsidian/plugins/`, salvo quando a manutenção do vault exigir isso.
 
 ## Arquivos-chave
 
@@ -93,6 +111,9 @@ flowchart TB
 - [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md) — lista transversal de lacunas, riscos e pendências.
 - [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base) — base de dados dos gaps.
 - [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base) — base de tarefas do blueprint.
+- [`TaskNotes/Views/tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas.
+- [`_types/task.md`](%5Ftypes/task.md) — definição do tipo de tarefa.
+- [`System/Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas de Obsidian.
 
 ## Como usar
 
