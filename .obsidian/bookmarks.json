@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "ctime": 1787762512444,
+      "path": "00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md",
+      "title": "3 Layer Development Framework"
+    },
+    {
+      "type": "group",
+      "ctime": 1787762555024,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1787762546562,
+          "path": "00-project-control/gap-register/HUB_Project_Gaps.base"
+        }
+      ],
+      "title": "Bases"
+    },
+    {
+      "type": "file",
+      "ctime": 1787762571676,
+      "path": "00-project-control/gap-register/HUB_Project_Gap_Register.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1787762640266,
+      "path": "01-blueprint/brand-market/HUB_Brand_and_Market_Blueprint.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1787762656319,
+      "path": "01-blueprint/business-model/HUB_Offer_and_Revenue_Architecture.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1787762669265,
+      "path": "01-blueprint/data-intelligence/HUB_Data_and_Intelligence_Blueprint.md"
+    }
+  ]
+}

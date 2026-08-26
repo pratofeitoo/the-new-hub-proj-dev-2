@@ -1,13 +1,25 @@
 ---
-title: "Blueprint de Marca e Mercado do HUB"
+title: Blueprint de Marca e Mercado do HUB
 blueprint_id: BP-007
 status: draft
 layer: blueprint
 area: brand-market
 source_task: "[[04-project-management/tasks/BP-007_HUB_Brand_and_Market_Blueprint]]"
+gap_ids:
+  - STR-004
+  - STR-005
+  - STR-006
+  - GTM-001
+  - GTM-002
+  - GTM-003
+  - GTM-004
+  - GTM-005
+  - GTM-006
+  - BRD-001
+  - BRD-002
+  - BRD-003
 created: 2026-08-21
 updated: 2026-08-21
-gap_ids: [STR-004, STR-005, STR-006, GTM-001, GTM-002, GTM-003, GTM-004, GTM-005, GTM-006, BRD-001, BRD-002, BRD-003]
 ---
 
 # Blueprint de Marca e Mercado do HUB
