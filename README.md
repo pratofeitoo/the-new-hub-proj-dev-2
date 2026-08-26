@@ -1,22 +1,111 @@
 # The New HUB
 
-Este repositório contém o projeto completo de negócios e produto do HUB, desde o blueprint inicial até o refinamento e a aprovação final para lançamento.
+Este repositório é o centro operacional do HUB: aqui vivem a estratégia, o blueprint, o refinamento, as aprovações, a gestão do projeto, os recursos de apoio, as entregas finais e o histórico arquivado.
 
-## Navegação
+## Como ler este repositório
 
-- [`00-project-control/`](00-project-control/) — framework, escopo, decisões, riscos e índices do projeto.
-- [`01-blueprint/`](01-blueprint/) — ideias, conceitos, premissas e a arquitetura completa do projeto.
-- [`02-refinement/`](02-refinement/) — pesquisas, testes, protótipos, modelos e revisões.
-- [`03-approval/`](03-approval/) — evidências, pacotes de revisão, aprovações e itens bloqueados.
-- [`04-project-management/`](04-project-management/) — planos, tarefas, marcos, logs e relatórios de status.
-- [`05-resources/`](05-resources/) — documentos estratégicos, plano de ação, imagens de referência, esboços de UI, apresentações, datasets, materiais de origem e templates.
-- [`06-deliverables/`](06-deliverables/) — entregas liberadas para uso de negócio, produto, investidores ou lançamento.
-- [`99-archive/`](99-archive/) — material substituído, rejeitado, descontinuado e histórico.
+Se você chegou agora, siga esta ordem:
 
-O processo norteador está documentado em [`HUB_Three-Layer_Project_Development_Framework.md`](00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md).
+1. Leia [`README.md`](README.md) para entender a estrutura geral.
+2. Abra o [`project-map.md`](project-map.md) para enxergar o mapa vivo do repositório.
+3. Vá para o framework em [`HUB_Three-Layer_Project_Development_Framework.md`](00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md).
+4. Depois revise a fundação do projeto em [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
+5. Se houver lacunas, consulte o gap register em [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md).
 
-O ponto de partida consolidado para moldar o projeto é [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
+## Visão geral das camadas
 
-O inventário transversal de trabalhos pendentes é [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md), com a base de dados em [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base).
+```mermaid
+flowchart LR
+    A[Blueprint] --> B[Refinement]
+    B --> C[Aprovação]
+    C --> D[Deliverables]
+    A --> E[Project Control]
+    B --> E
+    C --> E
+    D --> F[Archive]
+    E --> G[Project Management]
+    G --> D
+```
 
-O registro de tarefas do blueprint está em [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base).
+## Mapa principal de pastas
+
+```mermaid
+flowchart TB
+    R[Raiz do projeto]
+    R --> PC[00-project-control]
+    R --> BP[01-blueprint]
+    R --> RF[02-refinement]
+    R --> AP[03-approval]
+    R --> PM[04-project-management]
+    R --> RS[05-resources]
+    R --> DL[06-deliverables]
+    R --> AR[99-archive]
+
+    PC --> PCF[framework / scope / decisions / risks / dependencies / indexes]
+    BP --> BPF[strategy / product / business-model / technology / data / launch-vision / operations / brand-market / governance-legal]
+    RF --> RFF[research / tests-experiments / prototypes / reviews / revisions / strategy / product / data-model-refinement / financial-models]
+    AP --> APF[evidence / review-packets / approval-criteria / approved / blocked / conditionally-approved / launch-gate]
+    PM --> PMF[master-plans / phase-plans / tasks / milestones / schedules / work-logs / status-reports / meeting-notes / retrospectives]
+    RS --> RSF[documents / source-materials / external-references / images / presentations / datasets / spreadsheets / templates]
+    DL --> DLF[business / product / data / governance / investor / launch]
+    AR --> ARF[deprecated / rejected / superseded / historical-snapshots]
+```
+
+## O que cada pasta significa
+
+- [`00-project-control/`](00-project-control/) — regras do jogo: framework, escopo, decisões, riscos, dependências, gaps e índices.
+- [`01-blueprint/`](01-blueprint/) — a visão-base do projeto: estratégia, produto, negócios, tecnologia, dados, governança e visão de lançamento.
+- [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário.
+- [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste.
+- [`04-project-management/`](04-project-management/) — planejamento e controle: tarefas, marcos, cronogramas, reuniões, status e logs.
+- [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
+- [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
+- [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
+
+## Regras de navegação
+
+- Comece em `00-project-control/` quando precisar entender contexto, limites e decisões.
+- Use `01-blueprint/` para responder “o que estamos construindo?”.
+- Use `02-refinement/` para responder “o que foi testado, revisado ou melhorado?”.
+- Use `03-approval/` para responder “isso já pode ser considerado válido?”.
+- Use `04-project-management/` para responder “o que está em andamento agora?”.
+- Use `05-resources/` para localizar a matéria-prima do trabalho.
+- Use `06-deliverables/` para encontrar o que já está pronto para distribuição.
+- Use `99-archive/` para consultar histórico, mas não para continuar trabalho ativo.
+
+## Arquivos-chave
+
+- [`HUB_Three-Layer_Project_Development_Framework.md`](00-project-control/framework/HUB_Three-Layer_Project_Development_Framework.md) — descreve o processo central do projeto.
+- [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md) — ponto de partida consolidado para a arquitetura do HUB.
+- [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md) — lista transversal de lacunas, riscos e pendências.
+- [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base) — base de dados dos gaps.
+- [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base) — base de tarefas do blueprint.
+
+## Como usar o repositório no dia a dia
+
+Se você estiver **planejando**, vá para `01-blueprint/`.
+
+Se você estiver **pesquisando ou testando**, vá para `02-refinement/`.
+
+Se você estiver **decidindo aprovação**, vá para `03-approval/`.
+
+Se você estiver **executando o projeto**, vá para `04-project-management/`.
+
+Se você estiver **procurando materiais de apoio**, vá para `05-resources/`.
+
+Se você estiver **buscando a entrega final**, vá para `06-deliverables/`.
+
+Se você estiver **auditando o passado**, vá para `99-archive/`.
+
+## Convenções de leitura
+
+- `blueprint` = hipótese ou direção base.
+- `refining` = material em evolução.
+- `conditionally-approved` = pode avançar com ressalvas.
+- `approved` = pronto para uso.
+- `blocked` = precisa de dependência ou decisão.
+- `superseded` = substituído por uma versão melhor.
+
+## Observação
+
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
