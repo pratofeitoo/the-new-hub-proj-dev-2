@@ -89,7 +89,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-project-management/tasks/BP-008_HUB_Launch_and_Evolution_Blueprint.md",
+                "file": "04-project-management/tasks/HUB_Blueprint_Tasks.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -229,7 +229,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-project-management/tasks/BP-008_HUB_Launch_and_Evolution_Blueprint.md",
+                "file": "04-project-management/tasks/HUB_Blueprint_Tasks.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -244,7 +244,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "04-project-management/tasks/BP-008_HUB_Launch_and_Evolution_Blueprint.md"
+                "file": "04-project-management/tasks/HUB_Blueprint_Tasks.base"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -279,8 +279,12 @@
       "univer:Univer": false
     }
   },
-  "active": "aa7b9d1bda30d77d",
+  "active": "d7a57f3fd76f55a2",
   "lastOpenFiles": [
+    "04-project-management/tasks/BP-001_HUB_Offer_and_Revenue_Architecture.md",
+    "TaskNotes/Views/tasks-default.base",
+    "TaskNotes/Views/kanban-default.base",
+    "04-project-management/tasks/BP-008_HUB_Launch_and_Evolution_Blueprint.md",
     "System/Plugins docs/Obsidian Base/Obsidian cheat sheet Bases vs Dataview.md",
     "System/Plugins docs/Obsidian Base/Functions.md",
     "System/Plugins docs/Obsidian Base/Bases syntax.md",
@@ -306,16 +310,12 @@
     "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 6.md",
     "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 2.md",
     "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 3.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 7.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerexamplesTestCalendar.md at master · pyrochloreobsidian-tracker 2.md",
     "System/Plugins docs/Tracker Plugin",
     "System/Plugins docs/datacore/datacore-quickstart.html",
     "System/Plugins docs/datacore",
     "System/Plugins docs/Charts Plugin Docs",
     "System/Plugins docs/Task Notes",
     "System/Plugins docs/Dataview Charts",
-    "System/Plugins docs",
-    "System",
-    "TaskNotes/Views/kanban-default.base"
+    "System/Plugins docs"
   ]
 }
