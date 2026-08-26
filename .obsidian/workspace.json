@@ -41,9 +41,9 @@
               "state": {
                 "file": "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
                 "viewState": {
-                  "x": 1118.9461096117652,
-                  "y": 986.4444731587371,
-                  "zoom": -0.32181843539163996
+                  "x": 2258.5129717111076,
+                  "y": 1069.6818556806265,
+                  "zoom": -0.7459739265847756
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -57,7 +57,7 @@
               "type": "markdown",
               "state": {
                 "file": "project-map.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -65,7 +65,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -127,8 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -252,13 +251,13 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "751853e2fe9e4f75",
+  "active": "e9f86e5380992cfe",
   "lastOpenFiles": [
-    "project-map.md",
-    "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
-    "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md",
     "TaskNotes/Views/kanban-default.base",
+    "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
+    "project-map.md",
+    "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md",
     "README.md",
     "TaskNotes/Views/tasks-default.base",
     "04-project-management/planos-diretores/HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Ready_pt-BR.md",
