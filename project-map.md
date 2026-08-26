@@ -1,5 +1,5 @@
-<!-- git-hash: ca54b39 -->
-<!-- last-synced: 2026-08-26T16:25:14-03:00 -->
+<!-- git-hash: 6df19b3 -->
+<!-- last-synced: 2026-08-26T19:17:34.677945-03:00 -->
 
 # Mapa do Projeto
 
@@ -30,13 +30,13 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `_types/` | Definições de tipos usadas pelo mdbase/TaskNotes. |
 | `.obsidian/` | Configurações do vault, plugins comunitários, temas e workspace. |
 
-Fundação primária do blueprint: [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md).
+Fundação primária do blueprint: [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
 
-Registro transversal de gaps: [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md).
+Registro transversal de gaps: [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md).
 
-Base de Gaps: [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base).
+Base de Gaps: [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base).
 
-Registro de tarefas do blueprint: [`HUB_Blueprint_Tasks.base`](HUB_Project_Tasks.base).
+Registro de tarefas do blueprint: [`HUB_Blueprint_Tasks.base`](HUB_Tarefas_Projeto.base).
 
 Configuração do sistema de tipos: [`mdbase.yaml`](mdbase.yaml).
 
@@ -50,7 +50,7 @@ Documentação local de plugins: [`System/Plugins docs/`](System/Plugins%20docs/
 
 - Mantenha planos, tarefas e logs centralizados em `04-project-management/`.
 - Mantenha material de origem em `05-resources/`; não o trate como evidência aprovada.
-- Marque a maturidade explicitamente: `blueprint`, `refining`, `conditionally-approved`, `approved`, `blocked` ou `superseded`.
+- Marque a maturidade explicitamente: `blueprint`, `refining`, `aprovado-condicionalmente`, `approved`, `blocked` ou `superseded`.
 - Conecte artefatos relacionados entre camadas em vez de duplicar conteúdo.
 - Mova um artefato para trás quando a aprovação revelar um gap ou contradição.
 - Mantenha as definições de tipos em `_types/` e as visualizações de tarefas em `TaskNotes/Views/`.
@@ -89,15 +89,15 @@ flowchart TB
 
     %% Level 2: subfolders within each top-level folder
     %% 00-project-control
-    PC_assumptions["assumptions"]:::pc_sub
-    PC_change_log["change-log"]:::pc_sub
-    PC_decisions["decisions"]:::pc_sub
-    PC_dependencies["dependencies"]:::pc_sub
+    PC_assumptions["premissas"]:::pc_sub
+    PC_change_log["registro-mudancas"]:::pc_sub
+    PC_decisions["decisoes"]:::pc_sub
+    PC_dependencies["dependencias"]:::pc_sub
     PC_framework["framework"]:::pc_sub
-    PC_gap_register["gap-register"]:::pc_sub
-    PC_indexes["indexes"]:::pc_sub
-    PC_risks["risks"]:::pc_sub
-    PC_scope["scope"]:::pc_sub
+    PC_gap_register["registro-lacunas"]:::pc_sub
+    PC_indexes["indices"]:::pc_sub
+    PC_risks["riscos"]:::pc_sub
+    PC_scope["escopo"]:::pc_sub
     TC --> PC_assumptions
     TC --> PC_change_log
     TC --> PC_decisions
@@ -109,15 +109,15 @@ flowchart TB
     TC --> PC_scope
 
     %% 01-blueprint
-    BP_brand["brand-market"]:::bp_sub
-    BP_business["business-model"]:::bp_sub
-    BP_data["data-intelligence"]:::bp_sub
-    BP_governance["governance-legal"]:::bp_sub
-    BP_launch["launch-vision"]:::bp_sub
-    BP_operations["operations"]:::bp_sub
-    BP_product["product"]:::bp_sub
-    BP_strategy["strategy"]:::bp_sub
-    BP_technology["technology"]:::bp_sub
+    BP_brand["marca-mercado"]:::bp_sub
+    BP_business["modelo-negocio"]:::bp_sub
+    BP_data["dados-inteligencia"]:::bp_sub
+    BP_governance["governanca-juridico"]:::bp_sub
+    BP_launch["visao-lancamento"]:::bp_sub
+    BP_operations["operacoes"]:::bp_sub
+    BP_product["produto"]:::bp_sub
+    BP_strategy["estrategia"]:::bp_sub
+    BP_technology["tecnologia"]:::bp_sub
     TB01 --> BP_brand
     TB01 --> BP_business
     TB01 --> BP_data
@@ -127,18 +127,18 @@ flowchart TB
     TB01 --> BP_product
     TB01 --> BP_strategy
     TB01 --> BP_technology
-    BP_technology --> first_draft["first-project-draft"]
+    BP_technology --> first_draft["primeiro-rascunho-projeto"]
 
     %% 02-refinement
-    RF_data_model["data-model-refinement"]:::rf_sub
-    RF_financial["financial-models"]:::rf_sub
-    RF_governance["governance-refinement"]:::rf_sub
-    RF_product["product-refinement"]:::rf_sub
+    RF_data_model["refinamento-modelo-dados"]:::rf_sub
+    RF_financial["modelos-financeiros"]:::rf_sub
+    RF_governance["refinamento-governanca"]:::rf_sub
+    RF_product["refinamento-produto"]:::rf_sub
     RF_prototypes["prototypes"]:::rf_sub
     RF_research["research"]:::rf_sub
     RF_reviews["reviews"]:::rf_sub
     RF_revisions["revisions"]:::rf_sub
-    RF_strategy["strategy"]:::rf_sub
+    RF_strategy["estrategia"]:::rf_sub
     RF_tests["tests-experiments"]:::rf_sub
     TB02 --> RF_data_model
     TB02 --> RF_financial
@@ -152,13 +152,13 @@ flowchart TB
     TB02 --> RF_tests
 
     %% 03-approval
-    AP_criteria["approval-criteria"]:::ap_sub
+    AP_criteria["criterios-aprovacao"]:::ap_sub
     AP_approved["approved"]:::ap_sub
     AP_blocked["blocked"]:::ap_sub
-    AP_cond_approved["conditionally-approved"]:::ap_sub
+    AP_cond_approved["aprovado-condicionalmente"]:::ap_sub
     AP_evidence["evidence"]:::ap_sub
-    AP_launch_gate["launch-gate"]:::ap_sub
-    AP_review_packets["review-packets"]:::ap_sub
+    AP_launch_gate["portao-lancamento"]:::ap_sub
+    AP_review_packets["pacotes-revisao"]:::ap_sub
     TB03 --> AP_criteria
     TB03 --> AP_approved
     TB03 --> AP_blocked
@@ -168,15 +168,15 @@ flowchart TB
     TB03 --> AP_review_packets
 
     %% 04-project-management
-    PM_master["master-plans"]:::pm_sub
-    PM_meeting["meeting-notes"]:::pm_sub
+    PM_master["planos-diretores"]:::pm_sub
+    PM_meeting["atas-reuniao"]:::pm_sub
     PM_milestones["milestones"]:::pm_sub
-    PM_phase["phase-plans"]:::pm_sub
+    PM_phase["planos-fase"]:::pm_sub
     PM_retrospectives["retrospectives"]:::pm_sub
     PM_schedules["schedules"]:::pm_sub
-    PM_status["status-reports"]:::pm_sub
+    PM_status["relatorios-status"]:::pm_sub
     PM_tasks["tasks"]:::pm_sub
-    PM_worklogs["work-logs"]:::pm_sub
+    PM_worklogs["registros-trabalho"]:::pm_sub
     TB04 --> PM_master
     TB04 --> PM_meeting
     TB04 --> PM_milestones
@@ -190,10 +190,10 @@ flowchart TB
     %% 05-resources
     RS_datasets["datasets"]:::rs_sub
     RS_documents["documents"]:::rs_sub
-    RS_external["external-references"]:::rs_sub
+    RS_external["referencias-externas"]:::rs_sub
     RS_images["images"]:::rs_sub
     RS_presentations["presentations"]:::rs_sub
-    RS_source["source-materials"]:::rs_sub
+    RS_source["materiais-origem"]:::rs_sub
     RS_spreadsheets["spreadsheets"]:::rs_sub
     RS_templates["templates"]:::rs_sub
     TB05 --> RS_datasets
@@ -211,7 +211,7 @@ flowchart TB
     DL_governance["governance"]:::dl_sub
     DL_investor["investor"]:::dl_sub
     DL_launch["launch"]:::dl_sub
-    DL_product["product"]:::dl_sub
+    DL_product["produto"]:::dl_sub
     TB06 --> DL_business
     TB06 --> DL_data
     TB06 --> DL_governance
@@ -221,7 +221,7 @@ flowchart TB
 
     %% 99-archive
     AR_deprecated["deprecated"]:::ar_sub
-    AR_historical["historical-snapshots"]:::ar_sub
+    AR_historical["instantaneos-historicos"]:::ar_sub
     AR_rejected["rejected"]:::ar_sub
     AR_superseded["superseded"]:::ar_sub
     TN99 --> AR_deprecated
