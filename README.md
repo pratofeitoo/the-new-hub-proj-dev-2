@@ -61,22 +61,22 @@ flowchart TB
     R --> SYS[System]
     R --> TYP[_types]
 
-    PC --> PCF[framework / escopo / decisoes / riscos / dependencias / indices]
-    BP --> BPF[estrategia / produto / modelo-negocio / tecnologia / dados / visao-lancamento / operacoes / marca-mercado / governanca-juridico]
-    RF --> RFF[pesquisa / testes-experimentos / prototipos / revisoes / revisoes-iteradas / estrategia / produto / refinamento-modelo-dados / modelos-financeiros]
+    PC --> PCF[decisoes / dependencias / escopo / framework / indices / premissas / registro-lacunas / registro-mudancas / riscos]
+    BP --> BPF[estrategia / produto / modelo-negocio / tecnologia / dados-inteligencia / visao-lancamento / operacoes / marca-mercado / governanca-juridico]
+    RF --> RFF[estrategia / modelos-financeiros / pesquisa / prototipos / refinamento-governanca / refinamento-modelo-dados / refinamento-produto / revisoes / revisoes-iteradas / testes-experimentos]
     AP --> APF[evidencias / pacotes-revisao / criterios-aprovacao / aprovado / bloqueado / aprovado-condicionalmente / portao-lancamento]
     PM --> PMF[planos-diretores / planos-fase / tarefas / marcos / cronogramas / registros-trabalho / relatorios-status / atas-reuniao / retrospectivas]
     RS --> RSF[documentos / materiais-origem / referencias-externas / imagens / apresentacoes / conjuntos-dados / planilhas / modelos]
-    DL --> DLF[business / product / data / governance / investor / launch]
+    DL --> DLF[dados / governanca / investidor / lancamento / negocio / produto]
     AR --> ARF[descontinuado / rejeitado / superado / instantaneos-historicos]
-    TN --> TNF[Start Here / Views / bases de tarefas]
-    SYS --> SYSF[documentação de plugins e ferramentas Obsidian]
-    TYP --> TYPF[definições de tipos mdbase]
+    TN --> TNF[Start Here / Tasks / Views]
+    SYS --> SYSF[Plugins docs]
+    TYP --> TYPF[task.md]
 ```
 
 ## O que cada pasta significa
 
-- [`00-project-control/`](00-project-control/) — regras do jogo: framework, escopo, decisões, riscos, dependências, gaps e índices.
+- [`00-project-control/`](00-project-control/) — regras do jogo: framework, escopo, decisões, dependências, premissas, riscos, gaps, registro de mudanças e índices.
 - [`01-blueprint/`](01-blueprint/) — a visão-base do projeto: estratégia, produto, negócios, tecnologia, dados, governança e visão de lançamento.
 - [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário.
 - [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste.
@@ -84,10 +84,12 @@ flowchart TB
 - [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
-- [`TaskNotes/`](TaskNotes/) — orientação e visualizações Bases para gerenciamento de tarefas.
+- [`TaskNotes/`](TaskNotes/) — notas de tarefas, visualizações Bases (agenda, kanban, tarefas) e guia inicial do fluxo.
 - [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes.
 - [`_types/`](%5Ftypes/) — definições de tipos usadas pelo mdbase/TaskNotes.
 - [`.obsidian/`](.obsidian/) — configurações do vault, plugins comunitários, temas e workspace do Obsidian.
+- [`.omo/`](.omo/) — planos e artefatos de orquestração do OhMyOpenCode.
+- [`.logs/`](.logs/) — logs de execução de subtasks e agentes.
 - [`mdbase.yaml`](mdbase.yaml) — configuração do sistema de tipos e exclusões do mdbase.
 
 ## Regras de navegação
@@ -100,7 +102,7 @@ flowchart TB
 - Use `05-resources/` para localizar a matéria-prima do trabalho.
 - Use `06-deliverables/` para encontrar o que já está pronto para distribuição.
 - Use `99-archive/` para consultar histórico, mas não para continuar trabalho ativo.
-- Use `TaskNotes/` para revisar tarefas por listas, agenda, calendário e kanban.
+- Use `TaskNotes/` para revisar tarefas por agenda, kanban e visões Bases.
 - Use `System/` quando precisar consultar a documentação local das ferramentas do vault.
 - Não edite manualmente arquivos compilados dos plugins em `.obsidian/plugins/`, salvo quando a manutenção do vault exigir isso.
 
@@ -110,9 +112,13 @@ flowchart TB
 - [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — ponto de partida consolidado para a arquitetura do HUB.
 - [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — lista transversal de lacunas, riscos e pendências.
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados dos gaps.
-- [`HUB_Blueprint_Tasks.base`](HUB_Tarefas_Projeto.base) — base de tarefas do blueprint.
+- [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint.
+- [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
+- [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — modelo para atas de reunião.
+- [`TaskNotes/Start Here.md`](TaskNotes/Start%20Here.md) — guia inicial do fluxo de tarefas.
 - [`TaskNotes/Views/tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas.
 - [`_types/task.md`](%5Ftypes/task.md) — definição do tipo de tarefa.
+- [`mdbase.yaml`](mdbase.yaml) — configuração do sistema de tipos e exclusões.
 - [`System/Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas de Obsidian.
 
 ## Como usar
@@ -161,6 +167,8 @@ Fluxo recomendado:
 4. Atualize os links internos quando mover ou criar arquivos.
 5. Se a mudança afetar o mapa do projeto, atualize também o `project-map.md`.
 6. Antes de abrir PR ou enviar alterações, revise se não há arquivos não relacionados no working tree.
+7. Logs de execução ficam em `.logs/`; não edite manualmente.
+8. Planos e artefatos do orquestrador ficam em `.omo/`; não edite manualmente.
 
 ## Como usar o repositório no dia a dia
 
@@ -186,6 +194,8 @@ Se você estiver **auditando o passado**, vá para `99-archive/`.
 - `aprovado` = pronto para uso.
 - `bloqueado` = precisa de dependência ou decisão.
 - `superado` = substituído por uma versão melhor.
+- `descontinuado` = desativado, sem intenção de retomada.
+- `rejeitado` = não aprovado e arquivado.
 
 ## Observação
 

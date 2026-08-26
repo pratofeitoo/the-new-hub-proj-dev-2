@@ -4,7 +4,7 @@
 		"frontmatter":{}
 	},
 	"nodes":[
-		{"id":"f54cc82deac492da","type":"group","x":-760,"y":640,"width":4480,"height":520,"color":"5","label":"Blueprint"},
+		{"id":"f54cc82deac492da","type":"group","x":-760,"y":640,"width":4480,"height":540,"color":"5","label":"Blueprint"},
 		{"id":"e51be87c86503500","type":"group","x":-760,"y":-280,"width":2700,"height":720,"color":"4","label":"framework de 3 camadas"},
 		{
 			"id":"7d021fb47fc157d1",
@@ -37,15 +37,6 @@
 			"height":560
 		},
 		{"id":"ad9de25adefea53e","type":"file","file":"00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md","x":-620,"y":-160,"width":400,"height":540},
-		{"id":"aa41e696498dbf81","type":"file","file":"01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md","x":-620,"y":720,"width":400,"height":400},
-		{"id":"4b99eeca7f59b0a6","type":"file","file":"01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md","x":-150,"y":720,"width":400,"height":400},
-		{"id":"110ab80f8edff18d","type":"file","file":"01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md","x":320,"y":720,"width":400,"height":400},
-		{"id":"98e1d7fa48f12911","type":"file","file":"01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md","x":800,"y":720,"width":400,"height":400},
-		{"id":"e26efd43ccd5c816","type":"file","file":"01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md","x":1280,"y":720,"width":400,"height":400},
-		{"id":"dde820b9845b1c4d","type":"file","file":"01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md","x":1760,"y":720,"width":400,"height":400},
-		{"id":"9b8cfb16914c2f98","type":"file","file":"01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md","x":2240,"y":720,"width":400,"height":400},
-		{"id":"beed10262b55eafb","type":"file","file":"01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md","x":2720,"y":720,"width":400,"height":400},
-		{"id":"e5595ebfae184efe","type":"file","file":"01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md","x":3200,"y":720,"width":400,"height":400},
 		{
 			"id":"698020e80b023ee8",
 			"type":"text",
@@ -85,7 +76,16 @@
 			"y":-260,
 			"width":400,
 			"height":60
-		}
+		},
+		{"id":"aa41e696498dbf81","type":"file","file":"01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md","x":-620,"y":720,"width":400,"height":400},
+		{"id":"4b99eeca7f59b0a6","type":"file","file":"01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md","x":-150,"y":720,"width":400,"height":400},
+		{"id":"110ab80f8edff18d","type":"file","file":"01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md","x":320,"y":720,"width":400,"height":400},
+		{"id":"98e1d7fa48f12911","type":"file","file":"01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md","x":800,"y":720,"width":400,"height":400},
+		{"id":"e26efd43ccd5c816","type":"file","file":"01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md","x":1280,"y":720,"width":400,"height":400},
+		{"id":"dde820b9845b1c4d","type":"file","file":"01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md","x":1760,"y":720,"width":400,"height":400},
+		{"id":"9b8cfb16914c2f98","type":"file","file":"01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md","x":2240,"y":720,"width":400,"height":400},
+		{"id":"beed10262b55eafb","type":"file","file":"01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md","x":2720,"y":720,"width":400,"height":400},
+		{"id":"e5595ebfae184efe","type":"file","file":"01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md","x":3200,"y":720,"width":400,"height":400}
 	],
 	"edges":[]
 }
