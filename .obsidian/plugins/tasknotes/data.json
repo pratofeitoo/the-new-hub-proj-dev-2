@@ -10,7 +10,7 @@
   "taskPropertyValue": "",
   "excludedFolders": "",
   "defaultTaskPriority": "normal",
-  "defaultTaskStatus": "open",
+  "defaultTaskStatus": "none",
   "taskOrgFiltersCollapsed": false,
   "taskFilenameFormat": "zettel",
   "storeTitleInFilename": true,
@@ -19,7 +19,7 @@
   "occurrenceFilenameTemplateProperty": "occurrenceFilenameTemplate",
   "taskCreationDefaults": {
     "defaultContexts": "",
-    "defaultTags": "",
+    "defaultTags": "task",
     "defaultProjects": "",
     "useParentNoteForTaskCreation": false,
     "useParentNoteAsProject": false,
@@ -29,7 +29,7 @@
     "defaultRecurrence": "none",
     "defaultDueDate": "none",
     "defaultDueTime": "none",
-    "defaultScheduledDate": "today",
+    "defaultScheduledDate": "none",
     "defaultScheduledTime": "none",
     "bodyTemplate": "",
     "useBodyTemplate": false,
@@ -89,7 +89,7 @@
   "preserveCheckboxOnConvert": false,
   "taskModalTabMovesFocus": true,
   "enableNaturalLanguageInput": true,
-  "nlpDefaultToScheduled": true,
+  "nlpDefaultToScheduled": false,
   "nlpLanguage": "en",
   "uiLanguage": "system",
   "statusSuggestionTrigger": "*",
@@ -118,6 +118,11 @@
       {
         "propertyId": "priority",
         "trigger": "!",
+        "enabled": false
+      },
+      {
+        "propertyId": "field_1787774953681",
+        "trigger": "field_1787774953681:",
         "enabled": false
       }
     ]
@@ -298,7 +303,14 @@
   "apiAuthToken": "",
   "enableMCP": false,
   "webhooks": [],
-  "userFields": [],
+  "userFields": [
+    {
+      "id": "field_1787774953681",
+      "displayName": "Owner",
+      "key": "owner",
+      "type": "list"
+    }
+  ],
   "modalFieldsConfig": {
     "version": 1,
     "fields": [
@@ -391,6 +403,16 @@
         "visibleInCreation": true,
         "visibleInEdit": true,
         "order": 1,
+        "enabled": true
+      },
+      {
+        "id": "field_1787774953681",
+        "fieldType": "user",
+        "group": "custom",
+        "displayName": "Owner",
+        "visibleInCreation": true,
+        "visibleInEdit": true,
+        "order": 0,
         "enabled": true
       }
     ],

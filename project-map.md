@@ -36,7 +36,7 @@ Registro transversal de gaps: [`HUB_Project_Gap_Register.md`](00-project-control
 
 Base de Gaps: [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base).
 
-Registro de tarefas do blueprint: [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base).
+Registro de tarefas do blueprint: [`HUB_Blueprint_Tasks.base`](HUB_Project_Tasks.base).
 
 Configuração do sistema de tipos: [`mdbase.yaml`](mdbase.yaml).
 

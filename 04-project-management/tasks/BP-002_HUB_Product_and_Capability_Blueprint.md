@@ -8,7 +8,8 @@ priority: critical
 layer: blueprint
 area: product
 sequence: 2
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/product/HUB_Product_and_Capability_Blueprint.md
 dependencies:
   - BP-001

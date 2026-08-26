@@ -1,5 +1,11 @@
 {
   "pillColors": {
+    "5": "#855050",
+    "6": "#865050",
+    "7": "#875050",
+    "8": "#885050",
+    "9": "#895050",
+    "12": "#595650",
     "Three-Layer Project Framework": "#bf6b51",
     "HUB Project Development Layers": "#8faab8",
     "hub": "#bd7c51",
@@ -85,9 +91,17 @@
     "LCH-005": "#719462",
     "LCH-006": "#729462",
     "LCH-007": "#739462",
-    "done": "#52937f"
+    "done": "#52937f",
+    "⬜": "#505050",
+    "PF Rezende": "#c3b5c4"
   },
   "pillEnabled": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "12": true,
     "Three-Layer Project Framework": true,
     "HUB Project Development Layers": true,
     "hub": true,
@@ -173,7 +187,9 @@
     "LCH-005": true,
     "LCH-006": true,
     "LCH-007": true,
-    "done": true
+    "done": true,
+    "⬜": true,
+    "PF Rezende": true
   },
   "colorListProperties": true,
   "colorFormulaProperties": true,

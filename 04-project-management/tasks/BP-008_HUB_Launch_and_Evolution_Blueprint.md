@@ -8,7 +8,8 @@ priority: critical
 layer: blueprint
 area: launch-vision
 sequence: 8
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/launch-vision/HUB_Launch_and_Evolution_Blueprint.md
 dependencies:
   - BP-001

@@ -8,7 +8,8 @@ priority: critical
 layer: blueprint
 area: governance-legal
 sequence: 6
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/governance-legal/HUB_Governance_and_Legal_Blueprint.md
 dependencies:
   - BP-001

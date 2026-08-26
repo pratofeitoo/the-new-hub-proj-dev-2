@@ -1,6 +1,6 @@
 # Arquitetura de Tarefas do Blueprint
 
-O arquivo [`HUB_Blueprint_Tasks.base`](HUB_Blueprint_Tasks.base) é a visualização centralizada do Obsidian Bases para as notas de tarefas blueprint-document desta pasta.
+O arquivo [`HUB_Blueprint_Tasks.base`](HUB_Project_Tasks.base) é a visualização centralizada do Obsidian Bases para as notas de tarefas blueprint-document desta pasta.
 
 Cada tarefa é uma nota Markdown com frontmatter YAML. O frontmatter são os metadados estruturados da tarefa; o corpo contém o objetivo da tarefa, o conteúdo exigido e os critérios de conclusão.
 

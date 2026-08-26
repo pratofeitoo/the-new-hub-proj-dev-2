@@ -8,7 +8,8 @@ priority: high
 layer: blueprint
 area: technology
 sequence: 4
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/technology/HUB_Technology_Architecture_Blueprint.md
 dependencies:
   - BP-002

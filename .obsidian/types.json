@@ -8,6 +8,8 @@
     "area": "multitext",
     "priority": "multitext",
     "owner": "multitext",
-    "task_type": "multitext"
+    "task_type": "multitext",
+    "type": "multitext",
+    "version": "multitext"
   }
 }

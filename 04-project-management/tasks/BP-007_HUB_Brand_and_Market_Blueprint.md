@@ -8,7 +8,8 @@ priority: high
 layer: blueprint
 area: brand-market
 sequence: 7
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/brand-market/HUB_Brand_and_Market_Blueprint.md
 dependencies:
   - BP-001

@@ -1,8 +1,7 @@
 filters:
   and:
-    - file.inFolder("WORK/HUB/Projects/2026/The New HUB dev-2/04-project-management/tasks")
+    - file.hasTag("task")
     - file.ext == "md"
-    - task_type == "blueprint-document"
 formulas:
   status_icon: if(status == "completed", "✅", if(status == "approved", "✅", if(status == "blocked", "⛔", if(status == "in-progress", "🔄", "⬜"))))
   dependency_count: dependencies.length
@@ -41,12 +40,13 @@ views:
   - type: table
     name: Blueprint Task Register
     order:
-      - task_id
-      - formula.status_icon
       - file.name
-      - priority
-      - area
+      - task_id
       - sequence
+      - status
+      - priority
+      - owner
+      - area
       - target_file
       - gap_ids
       - dependencies
@@ -54,7 +54,7 @@ views:
     columnSize:
       file.name: 342
       note.priority: 107
-      note.gap_ids: 867
+      note.gap_ids: 636
   - type: table
     name: Work Queue
     filters:

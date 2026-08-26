@@ -20,6 +20,7 @@ tags:
   - documento-mãe
   - investor-readiness
   - validation-required
+source_document: "[[02-refinement/strategy/second-project-draft/HUB_Escopo_Estrategico_Documento_Mae_v2_Investor_Ready_pt-BR]]"
 ---
 
 # HUB — Documento-Mãe Estratégico v2

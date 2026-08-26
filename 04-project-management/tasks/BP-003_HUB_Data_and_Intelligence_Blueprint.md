@@ -8,7 +8,8 @@ priority: critical
 layer: blueprint
 area: data-intelligence
 sequence: 3
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/data-intelligence/HUB_Data_and_Intelligence_Blueprint.md
 dependencies:
   - BP-001

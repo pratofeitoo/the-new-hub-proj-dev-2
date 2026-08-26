@@ -25,17 +25,17 @@
 
 Objetivo: definir exatamente o que será validado, com quem, quais dados serão coletados e como isso pode gerar receita.
 
-| Ação | Entregável | Prazo sugerido | Responsáveis sugeridos |
-| ----- | ----- | ----- | ----- |
-| Consolidar a proposta de valor da plataforma | Documento de uma página: problema, solução, públicos e diferenciais | 31/08 | Tamara \+ Paulo |
-| Definir o escopo do MVP | Funcionalidades indispensáveis e itens que ficarão para depois | 04/09 | Tamara \+ equipe técnica |
-| Mapear jornadas da plataforma | Jornada de empresa, candidato, fornecedor e parceiro | 04/09 | Tamara \+ Paulo |
-| Definir indicadores dos MVPs | Matriz de dados, impacto, receita, economia e conversão | 11/09 | Tamara \+ responsável por dados |
-| Analisar B.blend | Proposta específica de MVP, problema que será testado e dados necessários | 11/09 | Tamara |
-| Analisar Campari | Proposta específica de MVP e contrapartidas | 11/09 | Tamara |
-| Selecionar mais 2 ou 3 empresas | Lista priorizada, contatos, aderência e abordagem | 18/09 | Tamara \+ comercial |
-| Definir arquitetura financeira | Fontes de receita, custos, preço inicial e necessidades de investimento | 18/09 | Tamara \+ Paulo |
-| Estruturar frente acadêmica | Relação entre plataforma, pesquisa, mestrado e produção científica | 18/09 | Tamara \+ Ana Minuto \+ Juliana Kaiser |
+| Ação                                         | Entregável                                                                | Prazo sugerido | Responsáveis sugeridos                 |
+| -------------------------------------------- | ------------------------------------------------------------------------- | -------------- | -------------------------------------- |
+| Consolidar a proposta de valor da plataforma | Documento de uma página: problema, solução, públicos e diferenciais       | 31/08          | Tamara \+ Paulo                        |
+| Definir o escopo do MVP                      | Funcionalidades indispensáveis e itens que ficarão para depois            | 04/09          | Tamara \+ equipe técnica               |
+| Mapear jornadas da plataforma                | Jornada de empresa, candidato, fornecedor e parceiro                      | 04/09          | Tamara \+ Paulo                        |
+| Definir indicadores dos MVPs                 | Matriz de dados, impacto, receita, economia e conversão                   | 11/09          | Tamara \+ responsável por dados        |
+| Analisar B.blend                             | Proposta específica de MVP, problema que será testado e dados necessários | 11/09          | Tamara                                 |
+| Analisar Campari                             | Proposta específica de MVP e contrapartidas                               | 11/09          | Tamara                                 |
+| Selecionar mais 2 ou 3 empresas              | Lista priorizada, contatos, aderência e abordagem                         | 18/09          | Tamara \+ comercial                    |
+| Definir arquitetura financeira               | Fontes de receita, custos, preço inicial e necessidades de investimento   | 18/09          | Tamara \+ Paulo                        |
+| Estruturar frente acadêmica                  | Relação entre plataforma, pesquisa, mestrado e produção científica        | 18/09          | Tamara \+ Ana Minuto \+ Juliana Kaiser |
 
 ### **Critério para escolher as empresas adicionais**
 

@@ -21,7 +21,7 @@ fields:
     required: true
     values: [none, open, in-progress, done]
     tn_completed_values: [done]
-    default: open
+    default: none
     tn_role: status
   priority:
     type: enum
@@ -187,6 +187,10 @@ fields:
     tn_role: googleCalendarMovedOriginalDates
     items:
       type: date
+  owner:
+    type: list
+    items:
+      type: string
 
 x-tasknotes:
   nlp:
@@ -205,6 +209,9 @@ x-tasknotes:
         enabled: true
       - property_id: "priority"
         trigger: "!"
+        enabled: false
+      - property_id: "field_1787774953681"
+        trigger: "field_1787774953681:"
         enabled: false
 ---
 

@@ -110,7 +110,7 @@ flowchart TB
 - [`HUB_Project_Blueprint_Foundation.md`](01-blueprint/strategy/HUB_Project_Blueprint_Foundation.md) — ponto de partida consolidado para a arquitetura do HUB.
 - [`HUB_Project_Gap_Register.md`](00-project-control/gap-register/HUB_Project_Gap_Register.md) — lista transversal de lacunas, riscos e pendências.
 - [`HUB_Project_Gaps.base`](00-project-control/gap-register/HUB_Project_Gaps.base) — base de dados dos gaps.
-- [`HUB_Blueprint_Tasks.base`](04-project-management/tasks/HUB_Blueprint_Tasks.base) — base de tarefas do blueprint.
+- [`HUB_Blueprint_Tasks.base`](HUB_Project_Tasks.base) — base de tarefas do blueprint.
 - [`TaskNotes/Views/tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas.
 - [`_types/task.md`](%5Ftypes/task.md) — definição do tipo de tarefa.
 - [`System/Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas de Obsidian.

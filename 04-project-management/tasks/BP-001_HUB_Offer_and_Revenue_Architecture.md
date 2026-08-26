@@ -6,7 +6,8 @@ priority: critical
 layer: blueprint
 area: business-model
 sequence: 1
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/business-model/HUB_Offer_and_Revenue_Architecture.md
 dependencies: []
 gap_ids:

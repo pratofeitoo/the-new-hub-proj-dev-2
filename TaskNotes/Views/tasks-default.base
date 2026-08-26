@@ -65,6 +65,9 @@ views:
         direction: DESC
   - type: tasknotesTaskList
     name: All Tasks
+    groupBy:
+      property: status
+      direction: DESC
     order:
       - status
       - priority

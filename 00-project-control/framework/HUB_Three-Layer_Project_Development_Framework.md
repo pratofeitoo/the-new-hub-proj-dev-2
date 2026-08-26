@@ -8,6 +8,10 @@ tags:
   - project-framework
   - product-development
   - governance
+type:
+  - framework
+author:
+  - PF Rezende
 ---
 
 # Framework de Desenvolvimento de Projetos em Três Camadas do HUB
@@ -73,12 +77,12 @@ As camadas são progressivas, mas não estritamente lineares:
 
 ```mermaid
 flowchart LR
-    B[Layer 1: Blueprint\nIdeas, concepts, assumptions] --> R[Layer 2: Refinement\nTests, learning, improvements]
-    R --> A[Layer 3: Approval\nValidation, decision, launch filter]
-    A -->|Blocked or incomplete| R
-    R -->|New scope or insight| B
-    A -->|Approved component| C[Connected project system]
-    C --> L[Complete launch readiness]
+    B[Camada 1: Blueprint\nIdeias, conceitos, premissas] --> R[Camada 2: Refinamento\nTestes, aprendizados, melhorias]
+    R --> A[Camada 3: Aprovação\nValidação, decisão, filtro de lançamento]
+    A -->|Bloqueado ou incompleto| R
+    R -->|Novo escopo ou insight| B
+    A -->|Componente aprovado| C[Sistema de projeto conectado]
+    C --> L[Prontidão completa para lançamento]
 ```
 
 Um componente pode retroceder quando uma aprovação revela uma fraqueza ou quando o refinamento expõe um conceito ausente. Retroceder não é falha; é parte do desenvolvimento controlado do projeto.
@@ -95,14 +99,14 @@ Neste ponto, a equipe mapeia a cadeia completa:
 
 ```mermaid
 flowchart LR
-    A[Opportunity definition] --> B[Business diagnosis]
-    B --> C[Evidence and readiness result]
-    C --> D[Recommended journey]
-    D --> E[Human-assisted connection]
-    E --> F[Implementation tracking]
-    F --> G[Outcome and value report]
-    G --> H[Governance, data and financial controls]
-    H --> I[Launch-ready capability]
+    A[Definição da oportunidade] --> B[Diagnóstico do negócio]
+    B --> C[Resultado de evidência e prontidão]
+    C --> D[Jornada recomendada]
+    D --> E[Conexão assistida por pessoas]
+    E --> F[Acompanhamento da implementação]
+    F --> G[Relatório de resultado e valor]
+    G --> H[Governança, dados e controles financeiros]
+    H --> I[Capacidade pronta para lançamento]
 ```
 
 O blueprint registra premissas como os atores envolvidos, os dados necessários, o valor esperado, os papéis operacionais, a lógica de receita, os controles de governança e como a capacidade se conecta ao restante da plataforma HUB.
@@ -115,19 +119,19 @@ O fluxo de trabalho é colaborativo, e não linear:
 
 ```mermaid
 sequenceDiagram
-    participant S as Strategy
-    participant P as Product
-    participant O as Operations
-    participant D as Data/Technology
-    participant G as Governance/Finance
+    participant S as Estratégia
+    participant P as Produto
+    participant O as Operações
+    participant D as Dados/Tecnologia
+    participant G as Governança/Finanças
 
-    S->>P: Define intended capability and project connection
-    P->>O: Prototype the user and operator workflow
-    O->>D: Identify data, events, roles and integration needs
-    D->>G: Expose privacy, control and financial implications
-    G-->>S: Return risks, conditions and missing evidence
-    S-->>P: Revise scope and assumptions
-    P-->>O: Run the next refinement cycle
+    S->>P: Define a capacidade pretendida e sua conexão com o projeto
+    P->>O: Prototipe o fluxo de usuários e operadores
+    O->>D: Identifique dados, eventos, papéis e necessidades de integração
+    D->>G: Exponha implicações de privacidade, controle e finanças
+    G-->>S: Retorne riscos, condições e evidências ausentes
+    S-->>P: Revise o escopo e as premissas
+    P-->>O: Execute o próximo ciclo de refinamento
 ```
 
 Cada ciclo pode melhorar, substituir ou remover parte do design original. A capacidade permanece parte do projeto como um todo mesmo quando sua implementação local muda.
@@ -138,16 +142,23 @@ Quando o refinamento está suficientemente maduro, a capacidade é revisada cont
 
 ```mermaid
 stateDiagram-v2
+    state "Refinado" as Refined
+    state "Escopo aprovado" as ScopeApproved
+    state "Evidências aprovadas" as EvidenceApproved
+    state "Controles aprovados" as ControlApproved
+    state "Operacionalmente aprovado" as OperationallyApproved
+    state "Lançamento aprovado" as LaunchApproved
+
     [*] --> Refined
-    Refined --> ScopeApproved: Whole-project fit confirmed
-    ScopeApproved --> EvidenceApproved: Claims and calculations evidenced
-    EvidenceApproved --> ControlApproved: Data, legal and governance controls cleared
-    ControlApproved --> OperationallyApproved: Roles, support and failure handling ready
-    OperationallyApproved --> LaunchApproved: Final release decision
-    ScopeApproved --> Refined: Gap or contradiction found
-    EvidenceApproved --> Refined: Evidence insufficient
-    ControlApproved --> Refined: Risk or control blocked
-    OperationallyApproved --> Refined: Operating readiness incomplete
+    Refined --> ScopeApproved: Aderência ao projeto completo confirmada
+    ScopeApproved --> EvidenceApproved: Alegações e cálculos evidenciados
+    EvidenceApproved --> ControlApproved: Controles de dados, jurídicos e governança liberados
+    ControlApproved --> OperationallyApproved: Papéis, suporte e tratamento de falhas prontos
+    OperationallyApproved --> LaunchApproved: Decisão final de lançamento
+    ScopeApproved --> Refined: Lacuna ou contradição encontrada
+    EvidenceApproved --> Refined: Evidência insuficiente
+    ControlApproved --> Refined: Risco ou controle bloqueado
+    OperationallyApproved --> Refined: Prontidão operacional incompleta
     LaunchApproved --> [*]
 ```
 
@@ -159,9 +170,9 @@ Os valores abaixo são meramente ilustrativos. Eles mostram como a prontidão po
 
 ```mermaid
 xychart-beta
-    title "Illustrative readiness by development layer"
-    x-axis [Blueprint, Refinement, Approval]
-    y-axis "Readiness score" 0 --> 100
+    title "Prontidão ilustrativa por camada de desenvolvimento"
+    x-axis ["Blueprint", "Refinamento", "Aprovação"]
+    y-axis "Pontuação de prontidão" 0 --> 100
     bar [30, 70, 95]
     line [20, 65, 100]
 ```

@@ -8,7 +8,8 @@ priority: high
 layer: blueprint
 area: operations
 sequence: 5
-owner: project-team
+owner:
+  - PF Rezende
 target_file: 01-blueprint/operations/HUB_Operating_Model_Blueprint.md
 dependencies:
   - BP-001
