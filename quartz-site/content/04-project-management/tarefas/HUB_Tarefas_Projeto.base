@@ -1,0 +1,104 @@
+filters:
+  and:
+    - file.hasTag("task")
+    - file.ext == "md"
+formulas:
+  status_icon: if(status == "completed", "✅", if(status == "approved", "✅", if(status == "blocked", "⛔", if(status == "in-progress", "🔄", "⬜"))))
+  dependency_count: dependencies.length
+  gap_count: gap_ids.length
+  priority_rank: if(priority == "critical", 1, if(priority == "high", 2, 3))
+properties:
+  task_id:
+    displayName: Task ID
+  status:
+    displayName: Status
+  priority:
+    displayName: Priority
+  area:
+    displayName: Workstream
+  layer:
+    displayName: Layer
+  sequence:
+    displayName: Sequence
+  owner:
+    displayName: Owner
+  target_file:
+    displayName: Blueprint Output
+  dependencies:
+    displayName: Dependencies
+  gap_ids:
+    displayName: Gap IDs
+  formula.status_icon:
+    displayName: State
+  formula.dependency_count:
+    displayName: Dependencies (#)
+  formula.gap_count:
+    displayName: Gaps (#)
+  formula.priority_rank:
+    displayName: Priority Rank
+views:
+  - type: table
+    name: Blueprint Task Register
+    order:
+      - file.name
+      - task_id
+      - sequence
+      - status
+      - priority
+      - owner
+      - area
+      - target_file
+      - gap_ids
+      - dependencies
+      - formula.gap_count
+    columnSize:
+      file.name: 342
+      note.priority: 107
+      note.gap_ids: 636
+  - type: table
+    name: Work Queue
+    filters:
+      and:
+        - status != "completed"
+        - status != "approved"
+    order:
+      - formula.priority_rank
+      - sequence
+      - task_id
+      - file.name
+      - status
+      - priority
+      - dependencies
+      - gap_ids
+  - type: table
+    name: Dependency View
+    order:
+      - sequence
+      - task_id
+      - file.name
+      - dependencies
+      - formula.dependency_count
+      - status
+      - target_file
+  - type: table
+    name: Blocked and Review
+    filters:
+      or:
+        - status == "blocked"
+        - status == "conditionally-approved"
+    order:
+      - task_id
+      - file.name
+      - status
+      - priority
+      - gap_ids
+      - target_file
+  - type: cards
+    name: Blueprint Workstreams
+    order:
+      - file.name
+      - formula.status_icon
+      - area
+      - priority
+      - target_file
+      - gap_ids

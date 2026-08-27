@@ -1,0 +1,25 @@
+﻿Mapa neural da inteligência HUB
+,
+A plataforma conecta dados fragmentados até que possam sustentar uma decisão e provar valor financeiro.
+,
+FONTES,,,IDENTIDADES,,,SINAIS,,,INTELIGÊNCIA,,,AÇÃO,,,RESULTADO,,VALOR FINANCEIRO
+,
+RH / ERP / ATS,,,Pessoa,,,Capacidades,,,Score de prontidão,,,Jornada recomendada,,,Produtividade,,Horas e custo evitados
+LMS / trilhas,,,Empresa,,,Lacunas,,,Prioridade de desenvolvimento,,,Formação / mobilidade,,,Retenção,,Turnover evitado
+CRM / marketing,,,Entidade,,,Interesses,,,Propensão / segmento,,,Campanha / conexão,,,Receita e contratos,,Margem incremental
+Compras / contratos,,,Fornecedor,,,Desempenho,,,Risco / compatibilidade,,,Match / homologação,,,Eficiência de compras,,Saving e ciclo reduzido
+Eventos da plataforma,,,Oportunidade,,,Comportamento,,,Recomendação,,,Projeto / solução,,,Inovação,,Novos mercados
+Financeiro / BI,,,Programa,,,Baseline,,,Atribuição causal,,,Decisão executiva,,,Risco reduzido,,Perda esperada evitada
+,
+,
+Loop de aprendizagem: o resultado realimenta o modelo
+,
+1. Observar,,,2. Explicar,,,3. Recomendar,,,4. Experimentar,,,5. Monetizar,,,6. Aprender
+"Registrar contexto, exposição e comportamento.",,,Relacionar sinais a resultados e controlar confundidores.,,,Priorizar a ação com maior probabilidade de valor.,,,"Comparar baseline, cohort ou grupo de controle.",,,Converter somente a parcela de efeito atribuível.,,,"Atualizar pesos, regras, benchmark e confiança da recomendação."
+,
+,
+,
+Quatro visões integradas
+,
+PESSOA,,,,,EMPRESA,,,,,ENTIDADE,,,,,HUB
+"O que consigo fazer, onde tenho lacuna e qual oportunidade aumenta meu valor?",,,,,"Quais decisões sobre pessoas, compras e mercado geram resultado?",,,,,Que padrões do ecossistema merecem ação coletiva e novos serviços?,,,,,"Onde existe valor recorrente, prova de impacto e possibilidade de escala?"

@@ -1,0 +1,17 @@
+﻿Matriz de integração entre vertentes
+,
+"A mesma evidência pode servir a várias visões, mas a regra financeira é única e deduplicada."
+,
+Família de indicador,Pessoas,Empresas / RH,Compras,Entidades,Marketing,Produto,Financeiro,Dados / IA,Nó central,Output compartilhado,Risco de dupla contagem
+Prontidão e capacidades,●,●,○,●,○,●,○,●,Competência,gap e recomendação,usar uma única evolução por pessoa-período
+Matching e oportunidades,●,●,●,●,○,●,○,●,Match,"fit, ciclo e conversão",uma origem principal por contrato
+Jornadas e desenvolvimento,●,●,○,●,○,●,○,●,Jornada,"dose, conclusão e outcome",não somar conclusão como benefício
+Produtividade,●,●,○,●,○,○,●,●,Indicador de negócio,ganho monetizado,não somar horas e output sobrepostos
+Retenção,●,●,○,●,○,●,●,●,Vínculo,turnover evitado,uma saída evitada por pessoa
+Compras e fornecedores,○,●,●,●,○,●,●,●,Fornecedor / contrato,"saving, ciclo, risco",separar saving de custo operacional
+Marketing e pipeline,○,●,○,●,●,●,●,●,Campanha / oportunidade,pipeline e margem,não somar pipeline e receita
+Entidade e associados,○,●,●,●,●,●,●,●,Entidade / vínculo,"ativação, renovação, valor",separar valor do associado e receita da entidade
+Risco,●,●,●,●,○,●,●,●,Risco / controle,perda esperada evitada,não somar risco esperado e perda real
+Receita recorrente HUB,○,○,○,●,●,●,●,○,Contrato / transação,"MRR, ARR, NRR",não somar MRR e ARR
+Impacto financeiro cliente,○,●,●,●,●,○,●,●,Valor financeiro,ROI e payback,deduplicação por alavanca e período
+Qualidade e confiança,●,●,●,●,●,●,●,●,Consentimento / modelo,score de confiança,não monetizar qualidade isoladamente

@@ -1,0 +1,25 @@
+assumption_key,current_value,unit,status,evidence_owner,use_rule
+invest_licenca,600000,R$ / year,illustrative,client input,Investment total = license + services + internal cost; never a benefit
+invest_servicos,250000,R$ / year,illustrative,client input,Implementation and projects; revise with contract evidence
+invest_interno,100000,R$ / year,illustrative,client input,"Internal hours, integration and change cost"
+pessoas,500,people,illustrative,client input,Eligible exposed population; cohort membership required
+custo_anual,120000,R$ / person-year,illustrative,client input,Loaded cost; cap productivity value at observed output capacity
+ganho_prod,0.02,fraction,illustrative,client input,Theoretical capacity assumption; realized output must be measured separately
+attr_prod,0.30,fraction,illustrative,evidence haircut,Use only with pre/post + comparable cohort; otherwise zero recognized value
+contratacoes,100,contracts / year,illustrative,client input,Comparable vacancies only
+dias_vaga,8,days,illustrative,baseline delta,Avoided vacancy cost; exclude productivity benefit for same period
+custo_vaga_dia,500,R$ / vacancy-day,illustrative,client finance,"Avoided cost, not revenue or margin"
+attr_vaga,0.40,fraction,illustrative,evidence haircut,Requires comparable-vacancy baseline
+turnover_base,0.18,fraction,illustrative,client HRIS,Same cohort and timing window as post measure
+turnover_pos,0.15,fraction,illustrative,client HRIS,Do not infer causality without control / DiD
+custo_reposicao,60000,R$ / exit,illustrative,client finance,Avoided cost; one avoided exit per person-period
+attr_retencao,0.40,fraction,illustrative,evidence haircut,No double count with vacancy or productivity for same person-period
+spend,10000000,R$ / year,illustrative,client procurement,Addressed spend only; reference price must be documented
+saving_rate,0.025,fraction,illustrative,controller validation,"Realized saving = reference minus actual, quality held constant"
+attr_compras,0.50,fraction,illustrative,evidence haircut,Requires category-matched baseline
+perda_esperada,400000,R$ / year,illustrative,risk register,Theoretical expected loss; not realized loss
+reducao_risco,0.20,fraction,illustrative,risk review,Expected loss reduction; residual loss remains separate
+attr_risco,0.50,fraction,illustrative,evidence haircut,Do not sum with realized incident cost avoided
+pipeline,2000000,R$ raw pipeline,illustrative,CRM,"Raw, probability-weighted, and realized pipeline are distinct"
+margem_cliente,0.35,fraction,illustrative,client finance,"Contribution margin, not gross revenue"
+attr_receita,0.25,fraction,illustrative,holdout/cohort,Recognize only incremental realized margin after timing and attribution gate

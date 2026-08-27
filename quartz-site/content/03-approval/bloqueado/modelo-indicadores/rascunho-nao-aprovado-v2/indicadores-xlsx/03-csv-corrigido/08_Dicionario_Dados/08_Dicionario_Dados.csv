@@ -1,0 +1,46 @@
+﻿Dicionário de dados mínimo
+,
+Campos necessários para instrumentar o mapa neural e os indicadores prioritários.
+,
+Tabela,Campo,Tipo,Definição,Chave,Obrigatório,Exemplo,Sensibilidade,Base legal / finalidade,Origem,Frequência,Regra de qualidade,Retenção,Controle de acesso,Consentimento / revogação,Evidência
+dim_person,person_id,UUID,Identificador pseudônimo da pessoa.,PK,Sim,p_01...,Alta,Execução de contrato / consentimento conforme uso,Cadastro / HRIS,Tempo real,"único, não nulo e não reutilizado",60 meses vault; TTL analítico por finalidade,vault separado; RBAC DPO/Data,revogação bloqueia novos usos <=5 min,ROPA + token scan
+dim_person,company_id,UUID,Empresa do vínculo vigente.,FK,Não,c_01...,Alta,Execução do serviço,HRIS / CRM,Diária,existir em dim_company,60 meses ou contrato + obrigação legal,purpose-scoped RBAC,não aplicável,access review + TTL log
+dim_person,consent_status,enum,Status por finalidade de tratamento.,,Sim,granted,Crítica,Consentimento / obrigação legal,CMP,Tempo real,vigência e versão válidas,permanente enquanto necessário,CMP/DPO only; downstream read,revogação bloqueia processamento <=5 min,CMP log + propagation test
+dim_person,profile_segment,string,Segmento operacional não sensível.,,Não,gestor,Média,Personalização,Cadastro,Diária,vocabulário controlado,24 months analytics,,,
+dim_company,company_id,UUID,Identificador da organização.,PK,Sim,c_01...,Média,Execução do contrato,CRM,Diária,único e não nulo,60 months or contract + legal obligation,,,
+dim_company,entity_id,UUID,Entidade à qual a empresa está associada.,FK,Não,e_01...,Média,Execução do serviço,CRM,Diária,vínculo vigente,60 months or contract + legal obligation,,,
+dim_company,segment,enum,Setor/porte/cluster comercial.,,Sim,indústria_média,Baixa,Inteligência e serviço,CRM,Mensal,taxonomia versionada,24 months analytics,,,
+dim_entity,entity_id,UUID,Identificador de entidade/rede.,PK,Sim,e_01...,Baixa,Execução do contrato,CRM,Diária,único,60 months or contract + legal obligation,,,
+dim_skill,skill_id,UUID,Identificador de capacidade na taxonomia.,PK,Sim,sk_01...,Baixa,Inteligência,Taxonomia,Release,sem duplicidades semânticas,36 months after event,,,
+dim_skill,skill_version,string,Versão da taxonomia.,,Sim,v3.2,Baixa,Auditabilidade,Taxonomia,Release,imutável após uso,60 months after taxonomy retirement,,,
+fact_person_skill,person_id,UUID,Pessoa avaliada.,FK,Sim,p_01...,Alta,Execução do serviço,Diagnóstico,Evento,consentimento aplicável,36 meses após evento,token only; analysts no vault,revogação bloqueia novos cálculos <=5 min,consent event + load scan
+fact_person_skill,skill_id,UUID,Capacidade avaliada.,FK,Sim,sk_01...,Média,Execução do serviço,Diagnóstico,Evento,taxonomia válida,36 months after event,,,
+fact_person_skill,level,decimal,Nível padronizado.,,Sim,,Alta,Recomendação,Diagnóstico,Evento,0 a 5,36 meses após evento,purpose-scoped RBAC,consentimento aplicável,range test + lineage
+fact_person_skill,confidence,decimal,Confiança baseada na evidência.,,Sim,,Média,Explicabilidade,Motor,Evento,0 a 1,36 months after event,,,
+fact_assessment,assessment_id,UUID,Rodada de diagnóstico.,PK,Sim,a_01...,Alta,Execução do serviço,Plataforma,Evento,único,36 meses,restricted assessment role,consentimento aplicável,ID uniqueness + DSAR link
+fact_assessment,instrument_version,string,Versão do instrumento.,,Sim,roi_people_v2,Média,Auditabilidade,Plataforma,Evento,versão existente,60 months after instrument retirement,,,
+fact_assessment,dimension_score,decimal,Score por dimensão.,,Sim,,Alta,Diagnóstico,Plataforma,Evento,faixa definida,36 meses,restricted analytics,consentimento aplicável,range/population test
+fact_event,event_id,UUID,Identificador do evento de produto.,PK,Sim,ev_01...,Média,Analytics,SDK,Tempo real,único e idempotente,24 months analytics; legal hold by exception,,,
+fact_event,event_name,string,Nome padronizado do evento.,,Sim,recommendation_accepted,Baixa,Analytics,SDK,Tempo real,catálogo válido,24 months analytics,,,
+fact_event,occurred_at,timestamp,Momento UTC do evento.,,Sim,2026-08-18T12:00Z,Média,Analytics,SDK,Tempo real,não futuro; timezone UTC,24 months analytics,,,
+fact_event,object_id,UUID,Objeto afetado pelo evento.,FK,Não,rec_01...,Média,Analytics,SDK,Tempo real,existir no domínio,24 months analytics,,,
+fact_opportunity,opportunity_id,UUID,Demanda rastreável.,PK,Sim,op_01...,Média,Execução / interesse legítimo,ATS/CRM/Compras,Diária,único,36 months after record closure; purpose-specific TTL,,,
+fact_opportunity,value,decimal,Valor potencial da oportunidade.,,Não,,Alta,Mensuração financeira,CRM,Diária,moeda e estágio presentes,60 months or contract + legal obligation,,,
+fact_opportunity,stage,enum,Estágio do funil.,,Sim,proposal,Média,Operação,CRM,Diária,transições válidas,60 months or contract + legal obligation,,,
+fact_match,match_id,UUID,Par oferta-demanda avaliado.,PK,Sim,m_01...,Média,Recomendação,Motor,Tempo real,único por versão,36 months after decision,,,
+fact_match,score,decimal,Compatibilidade explicável.,,Sim,,Média,Recomendação,Motor,Tempo real,0 a 1,36 months after decision,,,
+fact_match,model_version_id,string,Versão que produziu o score.,FK,Sim,match_v7,Média,Auditabilidade,MLOps,Tempo real,versão registrada,60 months after model retirement,,,
+fact_participation,participation_id,UUID,Exposição a programa ou ação.,PK,Sim,pt_01...,Alta,Execução do serviço,Eventos/LMS,Evento,único por pessoa-ação,36 meses,token only; L&D role,revogação blocks future processing <=5 min,event log + deletion receipt
+fact_participation,dose,decimal,Intensidade/duração da exposição.,,Não,,Média,Mensuração de efeito,Eventos/LMS,Evento,unidade definida,36 months after event,,,
+fact_contract,contract_id,UUID,Contrato fechado.,PK,Sim,ct_01...,Alta,Execução do contrato,CRM/ERP,Diária,conciliado,120 meses fiscal/legal,Finance restricted; masked BI,not consent-dependent,ERP reconciliation + audit log
+fact_contract,origin_touchpoint,UUID,Touchpoint ou match de origem.,FK,Não,m_01...,Média,Atribuição,CRM,Diária,janela válida,60 months or contract + legal obligation,,,
+fact_transaction,amount,decimal,Valor reconhecido ou pago.,,Sim,,Alta,Execução do contrato,ERP,Diária,conciliação financeira,120 meses fiscal/legal,Finance restricted,not consent-dependent,ledger reconciliation
+fact_business_metric,metric_id,string,Indicador de negócio acordado.,PK parcial,Sim,turnover,Alta,Mensuração,BI cliente,Mensal,dicionário e owner definidos,60 months after certification,,,
+fact_business_metric,baseline_value,decimal,Valor antes da intervenção.,,Sim,,Alta,Mensuração,BI cliente,Mensal,mesma definição do pós,60 months after certification,,,
+fact_business_metric,observed_value,decimal,Valor observado no período.,,Sim,,Alta,Mensuração,BI cliente,Mensal,mesma população e janela,60 months after certification,,,
+fact_financial_value,lever,enum,Alavanca financeira deduplicada.,,Sim,retention,Alta,Prova de valor,Data mart,Trimestral,taxonomia financeira,60 months after certification,,,
+fact_financial_value,gross_value,decimal,Valor antes da atribuição.,,Sim,,Alta,Prova de valor,Data mart,Trimestral,fonte e fórmula registradas,60 months after certification,,,
+fact_financial_value,attribution_rate,decimal,Parcela atribuída à HUB.,,Sim,,Alta,Prova de valor,Metodologia,Trimestral,0 a 1; evidência associada,60 months after certification,,,
+fact_financial_value,evidence_level,enum,Força metodológica da estimativa.,,Sim,quase_experimental,Média,Transparência,Metadados,Trimestral,catálogo válido,60 months after certification,,,
+dim_cohort,cohort_definition,json,Critérios imutáveis do grupo.,,Sim,{...},Alta,Mensuração,Camada analítica,Mensal,versionado e reproduzível,36 months after cohort closure,,,
+dim_model_version,features_hash,string,Hash das features e pesos.,,Sim,sha256...,Média,Auditabilidade,MLOps,Release,imutável,60 months after model retirement,,,

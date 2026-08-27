@@ -1,0 +1,18 @@
+artifact_type,source_path,size_bytes,sha256,rows,columns,nonempty_rows,manifest_sheet
+workbook,run-01-source/99-assets/Indicadores XLSX/HUB_Mapa_Inteligencia_Dados_Indicadores.xlsx,83123,83ea826d7b903e7790cea1dbc786dbf7d065ef1b97be743fda747786493028c7,,,,
+manifest,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/00-manifest/manifest.csv,978,5fe1f31faeab5623714049101d4da45ebfee78f768a57e5353671578e671e7cf,16,5,16,
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/00_Leia-me/00_Leia-me.csv,3071,fda2e92fc0507e2f81a3b271d21b8187b154d68369fdf585d361e4265019598b,45,3,33,00_Leia-me
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/01_Mapa_Visual/01_Mapa_Visual.csv,1867,253ea361279e027e192fcde4bde2b35905f710ac1db38fb64239a1c24c67eb74,25,18,15,01_Mapa_Visual
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/02_Nos_de_Dados/02_Nos_de_Dados.csv,6090,0f455438e7f7f06e1743004673a15a196005d7baab8e4d522997d309fa877d6a,30,11,28,02_Nos_de_Dados
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/03_Conexoes/03_Conexoes.csv,3880,a861431ac6a08f096a4ddd75cbf2ab88f09b529d150755d4fee840ebaf44e58c,25,11,23,03_Conexoes
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/04_Indicadores_Master/04_Indicadores_Master.csv,27317,531812b288111d0d23a7db6066e81fd22717354dffb14b5f6eae012a4afd1df6,78,20,76,04_Indicadores_Master
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/05_Arvore_de_Valor/05_Arvore_de_Valor.csv,4103,78eec6cb97773b4fd44397e72a9190121650f09f8a6c72c7d5dd8c57dc22d126,17,10,15,05_Arvore_de_Valor
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/06_Simulador_ROI/06_Simulador_ROI.csv,3616,0118545060ec9e0e57774d965088061af50e6165b52f174d64075fcf6b8f83e1,43,12,38,06_Simulador_ROI
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/07_Visoes_Dashboard/07_Visoes_Dashboard.csv,3449,61a9e525dd3d0ff7b0cadc9840d6e6fd581a211d6f155226cf3de7a66a385941,15,10,13,07_Visoes_Dashboard
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/08_Dicionario_Dados/08_Dicionario_Dados.csv,5914,8737f47d971864480eac3a0a07d662c59b210015de174a702a181dd7ae20affd,46,12,44,08_Dicionario_Dados
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/09_Eventos_Produto/09_Eventos_Produto.csv,5360,ba8ca8fd70839e3b05cbe410c85d99f74a701c4db339c18e806ebbb1c0d33ad3,32,11,30,09_Eventos_Produto
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/10_Integracoes/10_Integracoes.csv,2964,733892a373c9f0341565d57e3edd273696b9607713bebf5e1e092e37dd3306c2,20,12,18,10_Integracoes
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/11_Governanca_LGPD/11_Governanca_LGPD.csv,3928,8098d2a665bee711366e7811cda0fb5ffb985158766277009371899ce331d433,28,10,26,11_Governanca_LGPD
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/12_Roadmap/12_Roadmap.csv,1891,26a3069b5ab5e01689fc99349aadb8fe08e2eef207498f6ced8a6a0d82d4678d,10,10,8,12_Roadmap
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/13_Matriz_Integracao/13_Matriz_Integracao.csv,1836,f862a4fa520018b42261b11948294f39f9ff842c4a1d7426984bcf2d4e68bbe4,17,12,15,13_Matriz_Integracao
+source_csv,run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/14_RACI/14_RACI.csv,1262,9124f731284aaab378ce12464b9d3da3ebdc3fd771711460d8203c420eaa7c24,18,12,16,14_RACI

@@ -1,0 +1,129 @@
+filters:
+  and:
+    - file.inFolder("04-project-management/planos-fase")
+    - file.ext == "md"
+    - phase != ""
+formulas:
+  status_icon: if(status == "aprovado", "✅", if(status == "em-revisao", "🔍", if(status == "bloqueado", "⛔", if(status == "em-execucao", "🔄", "⬜"))))
+  gap_count: gap_ids.length
+  bp_count: bp_tasks.length
+  is_critical_path: if(phase == "P01" || phase == "P02" || phase == "P03" || phase == "P06" || phase == "P07", "★", "")
+  can_parallel: if(phase == "P04" || phase == "P05", "↔", "")
+properties:
+  title:
+    displayName: Fase
+  phase:
+    displayName: Código
+  status:
+    displayName: Status
+  priority:
+    displayName: Prioridade
+  area:
+    displayName: Área
+  owner:
+    displayName: Dono(s)
+  gap_ids:
+    displayName: Gaps
+  bp_tasks:
+    displayName: BP Tasks
+  related_notes:
+    displayName: Links
+  formula.status_icon:
+    displayName: " "
+  formula.gap_count:
+    displayName: Gaps (#)
+  formula.bp_count:
+    displayName: BP (#)
+  formula.is_critical_path:
+    displayName: Crítico
+  formula.can_parallel:
+    displayName: Paralelo
+views:
+  - type: table
+    name: Timeline — P01→P07 (caminho sequencial)
+    order:
+      - phase
+      - formula.status_icon
+      - file.name
+      - status
+      - priority
+      - area
+      - owner
+      - gap_ids
+      - formula.gap_count
+      - bp_tasks
+      - formula.is_critical_path
+      - formula.can_parallel
+    columnSize:
+      phase: 80
+      formula.status_icon: 40
+      file.name: 320
+      note.priority: 110
+      note.gap_ids: 420
+      formula.gap_count: 80
+  - type: table
+    name: Caminho Crítico (P01→P02→P03→P06→P07)
+    filters:
+      or:
+        - phase == "P01"
+        - phase == "P02"
+        - phase == "P03"
+        - phase == "P06"
+        - phase == "P07"
+    order:
+      - phase
+      - formula.status_icon
+      - file.name
+      - status
+      - gap_ids
+      - owner
+      - formula.is_critical_path
+  - type: table
+    name: Paralelizáveis — P04 + P05 (após P03)
+    filters:
+      or:
+        - phase == "P04"
+        - phase == "P05"
+    order:
+      - phase
+      - formula.status_icon
+      - file.name
+      - status
+      - owner
+      - gap_ids
+      - formula.can_parallel
+      - related_notes
+  - type: table
+    name: Por Dono (RACI)
+    groupBy:
+      property: owner
+      direction: ASC
+    order:
+      - phase
+      - formula.status_icon
+      - file.name
+      - priority
+      - owner
+      - gap_ids
+  - type: cards
+    name: Portfolio de Fases
+    order:
+      - file.name
+      - formula.status_icon
+      - phase
+      - priority
+      - area
+      - owner
+      - gap_ids
+      - bp_tasks
+  - type: table
+    name: Gaps por Fase (cobertura 68 gaps)
+    order:
+      - phase
+      - file.name
+      - formula.gap_count
+      - gap_ids
+      - bp_tasks
+      - priority
+    summaries:
+      formula.gap_count: Sum
