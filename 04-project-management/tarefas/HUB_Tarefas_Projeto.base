@@ -3,10 +3,10 @@ filters:
     - file.hasTag("task")
     - file.ext == "md"
 formulas:
-  status_icon: if(status == "completed", "✅", if(status == "approved", "✅", if(status == "blocked", "⛔", if(status == "in-progress", "🔄", "⬜"))))
+  status_icon: 'if(status.contains("done") || status.contains("completed") || status.contains("approved") || status.contains("concluido"), "✅", if(status.contains("blocked") || status.contains("bloqueado"), "⛔", if(status.contains("in-progress") || status.contains("em-execucao"), "🔄", if(status.contains("em-revisao") || status.contains("conditionally-approved") || status.contains("condicional"), "🔍", "⬜"))))'
   dependency_count: dependencies.length
   gap_count: gap_ids.length
-  priority_rank: if(priority == "critical", 1, if(priority == "high", 2, 3))
+  priority_rank: 'if(priority.contains("critical") || priority.contains("critica"), 1, if(priority.contains("high") || priority.contains("alta"), 2, 3))'
 properties:
   task_id:
     displayName: Task ID
@@ -59,8 +59,7 @@ views:
     name: Work Queue
     filters:
       and:
-        - status != "completed"
-        - status != "approved"
+        - '!(status.contains("done") || status.contains("completed") || status.contains("approved") || status.contains("concluido"))'
     order:
       - formula.priority_rank
       - sequence
@@ -84,8 +83,8 @@ views:
     name: Blocked and Review
     filters:
       or:
-        - status == "blocked"
-        - status == "conditionally-approved"
+        - 'status.contains("blocked") || status.contains("bloqueado")'
+        - 'status.contains("em-revisao") || status.contains("conditionally-approved") || status.contains("condicional")'
     order:
       - task_id
       - file.name

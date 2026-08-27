@@ -2,7 +2,7 @@
 title: P01-T04 — Segmentos e orçamentos de compradores de lançamento
 task_id: P01-T04
 phase: P01
-status: pendente
+status: em-revisao
 priority: alta
 area: gtm
 layer: blueprint
@@ -39,3 +39,9 @@ Segmentos aprovados por Finanças+Jurídico+Ops.
 
 ## Registros relacionados
 - [[00-project-control/registro-lacunas/lacunas/GTM-001]]
+
+## Execução
+
+- **Entregável produzido:** tabela de seis segmentos de lançamento, papéis `quem assina / quem paga / quem opera`, processos de compra e faixas de orçamento adicionada em [[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.2 Segmentos e orçamentos de compradores de lançamento v1]].
+- **Resultado:** segmentos e orçamentos estão documentados como hipóteses qualificáveis, sem tratar faixas como preço, TAM ou tração.
+- **Próximo gate:** validação por Finanças, Jurídico e Operações; registrar evidências de comprador e orçamento no log GTM-002 antes de promover qualquer segmento para tração.
