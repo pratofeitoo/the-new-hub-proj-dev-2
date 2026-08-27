@@ -180,7 +180,7 @@
       "hideSettingsButton": false,
       "allowFoldingLists": true,
       "allowFoldingHeadings": true,
-      "documentWidth": "40em"
+      "documentWidth": "60em"
     },
     "rssOptions": {
       "featureId": "rss",
@@ -215,7 +215,7 @@
     "faviconPath": "",
     "siteName": "The New HUB dev-2",
     "iconEmojiStyle": "Native",
-    "exportRoot": "",
+    "exportRoot": "01-blueprint/modelo-negocio",
     "includePluginCss": [],
     "includeStyleCssIds": [],
     "autoDisposeWebpages": true

@@ -1,8 +1,7 @@
 filters:
   and:
-    - file.inFolder("WORK/HUB/Projects/2026/The New HUB dev-2/00-project-control/registro-lacunas/lacunas")
+    - file.inFolder("00-project-control/registro-lacunas")
     - file.ext == "md"
-    - gap_id != ""
 formulas:
   status_icon: if(status == "closed", "✅", if(status == "blocked", "⛔", if(status == "refining", "🔄", "⬜")))
   priority_rank: if(priority == "critical", 1, if(priority == "high", 2, 3))
@@ -36,20 +35,18 @@ views:
   - type: table
     name: All Gaps
     order:
-      - gap_id
       - formula.status_icon
       - file.name
+      - status
       - priority
-      - gap_type
       - domain
       - current_layer
       - next_layer
       - owner
       - related_tasks
     columnSize:
-      note.gap_id: 108
+      file.name: 131
       note.priority: 111
-      note.gap_type: 135
       note.domain: 269
       note.current_layer: 136
       note.next_layer: 131

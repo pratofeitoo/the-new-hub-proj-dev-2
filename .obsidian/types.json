@@ -12,6 +12,9 @@
     "type": "multitext",
     "version": "multitext",
     "phase": "multitext",
-    "date": "datetime"
+    "date": "datetime",
+    "domain": "multitext",
+    "current_layer": "multitext",
+    "next_layer": "multitext"
   }
 }
