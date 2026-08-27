@@ -1,0 +1,189 @@
+filters:
+  and:
+    - file.hasTag("task")
+    - file.ext == "md"
+    - file.inFolder("04-project-management/tarefas")
+    - phase != ""
+formulas:
+  status_icon: if(status == "concluido", "✅", if(status == "em-revisao", "🔍", if(status == "bloqueado", "⛔", if(status == "em-execucao", "🔄", if(status == "pendente", "⬜", "⬜")))))
+  priority_rank: if(priority == "critica", 1, if(priority == "alta", 2, if(priority == "media", 3, 4)))
+  phase_rank: if(phase == "P00", 0, if(phase == "P01", 1, if(phase == "P02", 2, if(phase == "P03", 3, if(phase == "P04", 4, if(phase == "P05", 5, if(phase == "P06", 6, if(phase == "P07", 7, 99))))))))
+  is_critical: if(phase == "P01" || phase == "P02" || phase == "P03" || phase == "P06" || phase == "P07", "★", "")
+  gap_count: gap_ids.length
+  dep_count: dependencies.length
+properties:
+  task_id:
+    displayName: ID
+  phase:
+    displayName: Fase
+  title:
+    displayName: Tarefa
+  status:
+    displayName: Status
+  priority:
+    displayName: Prioridade
+  area:
+    displayName: Área
+  owner:
+    displayName: Dono(s)
+  gap_ids:
+    displayName: Gaps
+  dependencies:
+    displayName: Depende de
+  target_file:
+    displayName: Alvo
+  formula.status_icon:
+    displayName: " "
+  formula.priority_rank:
+    displayName: Rank Prior.
+  formula.phase_rank:
+    displayName: Ordem
+  formula.is_critical:
+    displayName: Crítico
+  formula.gap_count:
+    displayName: Gaps (#)
+  formula.dep_count:
+    displayName: Deps (#)
+views:
+  - type: table
+    name: Execução por Fase — P01→P07
+    order:
+      - formula.phase_rank
+      - phase
+      - formula.status_icon
+      - task_id
+      - file.name
+      - status
+      - priority
+      - owner
+      - gap_ids
+      - formula.gap_count
+      - dependencies
+      - target_file
+      - formula.is_critical
+    groupBy:
+      property: phase
+      direction: ASC
+    summaries:
+      formula.gap_count: Sum
+
+  - type: table
+    name: Caminho Crítico (P01→P02→P03→P06→P07)
+    filters:
+      or:
+        - phase == "P01"
+        - phase == "P02"
+        - phase == "P03"
+        - phase == "P06"
+        - phase == "P07"
+    order:
+      - formula.phase_rank
+      - task_id
+      - formula.status_icon
+      - file.name
+      - status
+      - priority
+      - owner
+      - gap_ids
+      - dependencies
+      - formula.is_critical
+
+  - type: table
+    name: Paralelizáveis — P04 + P05 (após P03)
+    filters:
+      or:
+        - phase == "P04"
+        - phase == "P05"
+    order:
+      - phase
+      - task_id
+      - formula.status_icon
+      - file.name
+      - status
+      - owner
+      - gap_ids
+      - dependencies
+
+  - type: table
+    name: Kanban por Status
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - formula.phase_rank
+      - phase
+      - task_id
+      - formula.status_icon
+      - file.name
+      - priority
+      - owner
+      - gap_ids
+
+  - type: table
+    name: Por Prioridade (Crítica → Média)
+    order:
+      - formula.priority_rank
+      - formula.phase_rank
+      - task_id
+      - file.name
+      - priority
+      - phase
+      - status
+      - owner
+      - gap_ids
+      - dependencies
+
+  - type: table
+    name: Por Dono (RACI)
+    groupBy:
+      property: owner
+      direction: ASC
+    order:
+      - formula.phase_rank
+      - task_id
+      - file.name
+      - phase
+      - status
+      - priority
+      - gap_ids
+
+  - type: cards
+    name: Portfolio de Tarefas
+    order:
+      - file.name
+      - formula.status_icon
+      - phase
+      - priority
+      - owner
+      - status
+      - gap_ids
+      - target_file
+
+  - type: table
+    name: Bloqueadas & Em Revisão
+    filters:
+      or:
+        - status == "bloqueado"
+        - status == "em-revisao"
+    order:
+      - formula.phase_rank
+      - task_id
+      - file.name
+      - status
+      - priority
+      - gap_ids
+      - dependencies
+      - target_file
+
+  - type: table
+    name: Gaps por Fase (cobertura 68 gaps)
+    order:
+      - formula.phase_rank
+      - phase
+      - file.name
+      - formula.gap_count
+      - gap_ids
+      - task_id
+      - priority
+    summaries:
+      formula.gap_count: Sum

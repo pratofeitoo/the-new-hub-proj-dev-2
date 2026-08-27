@@ -1,0 +1,43 @@
+---
+title: P06-T09 — Estratégia de canais + limites de concentração
+task_id: P06-T09
+phase: P06
+status: pendente
+priority: alta
+area: gtm
+layer: refining
+owner:
+  - GTM (a designar)
+  - Governança (a designar)
+gap_ids:
+  - GTM-003
+  - GTM-006
+dependencies:
+  - P01-T06
+target_file: "02-refinement/pesquisa/segundo-rascunho-projeto/"
+related_notes:
+  - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
+  - "[[00-project-control/registro-lacunas/lacunas/GTM-003]]"
+  - "[[00-project-control/registro-lacunas/lacunas/GTM-006]]"
+created: 2026-08-26
+tags:
+  - task
+  - fase-P06
+---
+
+# P06-T09 — Estratégia de canais + limites de concentração
+
+## Objetivo
+Sequenciar canais (direto, institucional, parceiros) com fallback e thresholds de concentração aprovados por governança.
+
+## Entregável
+Estratégia diversificada e mensurável.
+
+## Dependências
+- [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros|P01-T06]]
+
+## Critério (G06.8)
+Diversificação aprovada.
+
+## Registros
+- [[00-project-control/registro-lacunas/lacunas/GTM-003]] · [[00-project-control/registro-lacunas/lacunas/GTM-006]]

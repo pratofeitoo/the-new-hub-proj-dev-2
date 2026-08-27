@@ -1,0 +1,41 @@
+---
+title: P06-T03 — Ponte produto→valor→receita (árvore de valor)
+task_id: P06-T03
+phase: P06
+status: pendente
+priority: alta
+area: business-model
+layer: refining
+owner:
+  - Finanças (a designar)
+  - Produto (a designar)
+gap_ids:
+  - FIN-004
+dependencies:
+  - P03-T06
+target_file: "02-refinement/modelos-financeiros/"
+related_notes:
+  - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
+  - "[[00-project-control/registro-lacunas/lacunas/FIN-004]]"
+created: 2026-08-26
+tags:
+  - task
+  - fase-P06
+---
+
+# P06-T03 — Ponte produto→valor→receita (árvore de valor)
+
+## Objetivo
+Vincular atividade produto → valor cliente → receita HUB via 12 alavancas da árvore de valor + estados de valor P03.
+
+## Entregável
+Matriz valor demonstrada para 1 oferta de lançamento com padrão evidência aceito.
+
+## Dependências
+- [[04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias|P03-T06]]
+
+## Critério (G06.3)
+Ponte demonstrada.
+
+## Registros
+- [[00-project-control/registro-lacunas/lacunas/FIN-004]]
