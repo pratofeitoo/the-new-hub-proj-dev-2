@@ -1,5 +1,5 @@
-<!-- git-hash: 1c2733f586a17987ef22885a5bb54c1e815ff2f8 -->
-<!-- last-synced: 2026-08-26T21:03:13-03:00 -->
+<!-- git-hash: 973a23bdd3c1d1ab125e5a844685a3f11f559bf5 -->
+<!-- last-synced: 2026-08-26T21:31:25-03:00 -->
 
 # Mapa do Projeto
 
@@ -21,7 +21,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `01-blueprint/`          | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança e lançamento. |
 | `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados.             |
 | `03-approval/`           | Critérios, evidências, pacotes de revisão, estados de aprovação e material bloqueado.                |
-| `04-project-management/` | Planos (mestre P01–P07 + fases), tarefas, marcos (M00–M07), cronogramas (Bases), reuniões, retrospectivas, logs e status. |
+| `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP, marcos (M00–M07), cronogramas + base execução (9 views), reuniões, retrospectivas, logs e status. |
 | `05-resources/`          | Documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
 | `06-deliverables/`       | Saídas finais organizadas por dados, governança, investidor, lançamento, negócio e produto.          |
 | `99-archive/`            | Material descontinuado, rejeitado, superado e instantâneos históricos.                               |
@@ -67,7 +67,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   ├── premissas/  — premissas que exigem refinamento ou evidência
 │   ├── registro-lacunas/  — registro transversal de lacunas, riscos e pendências
 │   │   └── lacunas/  — notas individuais de gap (BRD-*, DAT-*, FIN-*, GOV-*, TEC-* — ~68 notas)
-│   ├── registro-mudancas/  — mudanças materiais de escopo, estrutura ou decisões
+│   ├── registro-mudancas/  — mudanças materiais de escopo, estrutura ou decisões (2026-08-26-faseamento-P01-P07 + 2026-08-26-tarefas-56-execucao-base)
 │   └── riscos/  — riscos, mitigações e responsáveis
 │
 ├── 01-blueprint/  — BLUEPRINT — visão-base do HUB antes de refinamento e aprovação
@@ -158,10 +158,10 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   ├── marcos/  — marcos e milestones (marcos-fases-v1.md — M00→M07 + sub-gates M03.A/B)
 │   ├── planos-fase/  — planos por fase (P01_Arquitetura_Oferta_Negocio → P07_Portao_Lancamento — 7 fases spine GOV/TEC paralelizáveis)
 │   ├── planos-mestres/  — planos diretores / master plans (HUB_Plano_Fases_v1.md — Plano Diretor P01–P07 + alternativa 4-fases; Doc-Mãe v2 investidor)
-│   ├── registros-trabalho/  — logs de trabalho / work logs
+│   ├── registros-trabalho/  — logs + base de execução (HUB_Tarefas_Fases_Execucao.base — 9 views: por Fase, Crítico, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps)
 │   ├── relatorios-status/  — relatórios de status periódicos
 │   ├── retrospectivas/  — retrospectivas de ciclo/sprint
-│   └── tarefas/  — tarefas do blueprint (notas BP-*, HUB_Tarefas_Projeto.base e README)
+│   └── tarefas/  — tarefas do blueprint + 56 tarefas de fase (P01-T01→P07-T07, 7+6+9+8+7+12+7) + HUB_Tarefas_Projeto.base e HUB_Tarefas_Fases_Execucao (via registros-trabalho) + README
 │
 ├── 05-resources/  — RECURSOS — matéria-prima e materiais de apoio (não são evidência aprovada)
 │   ├── apresentacoes/  — apresentações
@@ -205,7 +205,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 └── _types/  — TIPOS — definições de tipos do mdbase/TaskNotes (ex.: task.md)
 ```
 
-> **Total inventariado:** ~115 pastas navegáveis (excluindo `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro.
+> **Total inventariado:** ~115 pastas + 66 notas de tarefas (8 BP + 56 P0x) navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro.
 
 ## Anexo para agentes — tabela navegável (machine-readable)
 
@@ -240,7 +240,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `00-project-control/premissas/` | controle | Premissas que exigem evidência | `.gitkeep` | reservado |
 | `00-project-control/registro-lacunas/` | controle | Registro transversal de lacunas/riscos/pendências | `HUB_Registro_...md`, `HUB_Lacunas_...base` | ativo |
 | `00-project-control/registro-lacunas/lacunas/` | controle | Notas individuais de gap (≈68 notas) | `BRD-*`, `DAT-*`, `FIN-*`, `GOV-*`, `TEC-*` | ativo |
-| `00-project-control/registro-mudancas/` | controle | Mudanças materiais de escopo/estrutura/decisões | `.gitkeep` | reservado |
+| `00-project-control/registro-mudancas/` | controle | Mudanças materiais de escopo/estrutura/decisões | `2026-08-26-faseamento-P01-P07-cronograma-marcos.md` + `2026-08-26-tarefas-56-execucao-base.md` | ativo |
 | `00-project-control/riscos/` | controle | Riscos, mitigações e responsáveis | `.gitkeep` | reservado |
 | `01-blueprint/` | blueprint | Visão-base do HUB antes de refinamento/aprovação | 9 domínios | ativo |
 | `01-blueprint/dados-inteligencia/` | blueprint | Dados, inteligência e modelo semântico | `HUB_Blueprint_Dados_e_Inteligencia.md` | ativo |
@@ -321,16 +321,16 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `03-approval/evidencias/` | approval | Evidências que sustentam decisões de aprovação | `.gitkeep` | reservado |
 | `03-approval/pacotes-revisao/` | approval | Pacotes montados para revisão por stakeholders | `.gitkeep` | reservado |
 | `03-approval/portao-lancamento/` | approval | Portão de lançamento (go/no-go) | `.gitkeep` | reservado |
-| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + cronograma + marcos + tarefas | ativo |
+| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + 56 tarefas + bases execução/cronograma + marcos | ativo |
 | `04-project-management/atas-reuniao/` | gestão | Atas de reunião | `template-reuniao.md` | ativo |
 | `04-project-management/cronogramas/` | gestão | Cronogramas do projeto | `cronograma-fases-v1.base` (6 views: Timeline, Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps) | ativo |
 | `04-project-management/marcos/` | gestão | Marcos e milestones | `marcos-fases-v1.md` (M00→M07 + sub-gates M03.A/B) | ativo |
 | `04-project-management/planos-fase/` | gestão | Planos por fase | `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT) | ativo |
 | `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases) + `Doc-Mãe v2 investidor` | ativo |
-| `04-project-management/registros-trabalho/` | gestão | Logs de trabalho / work logs | `.gitkeep` | reservado |
+| `04-project-management/registros-trabalho/` | gestão | Logs + base de execução | `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) | ativo |
 | `04-project-management/relatorios-status/` | gestão | Relatórios de status periódicos | `.gitkeep` | reservado |
 | `04-project-management/retrospectivas/` | gestão | Retrospectivas de ciclo/sprint | `.gitkeep` | reservado |
-| `04-project-management/tarefas/` | gestão | Tarefas do blueprint | `BP-*`, `HUB_Tarefas_Projeto.base` | ativo |
+| `04-project-management/tarefas/` | gestão | Tarefas do blueprint + fases | `BP-001..008` + 56× `P01-T01`→`P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` | ativo |
 | `05-resources/` | recursos | Matéria-prima e materiais de apoio (não é evidência aprovada) | docs, imagens, planilhas | ativo |
 | `05-resources/apresentacoes/` | recursos | Apresentações | pitch-decks | ativo |
 | `05-resources/apresentacoes/pitch-decks/` | recursos | Pitch decks | `SEBRAE 2026.pdf`, `FIRJAN.pdf` | ativo |
@@ -401,7 +401,8 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 - [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — fundação consolidada do blueprint.
 - [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — registro transversal de lacunas, riscos e pendências.
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados das lacunas.
-- [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint.
+- [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint (BP-001..008).
+- [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — base de execução das 56 tarefas de fase (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor de faseamento sequencial P01–P07 (spine DAT, GOV/TEC paralelizáveis) + alternativa 4-fases.
 - [`P01_Arquitetura_Oferta_Negocio.md`](04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md) — P01 oferta & negócio (STR-001/002/003, FIN-002, GTM-001) → `BP-001`.
 - [`P02_Produto_Operacao.md`](04-project-management/planos-fase/P02_Produto_Operacao.md) — P02 produto & operação (PRD-001..007) → `BP-002`+`BP-005`.
@@ -410,6 +411,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 - [`P05_Tecnologia_Contratual.md`](04-project-management/planos-fase/P05_Tecnologia_Contratual.md) — P05 tecnologia contratual (TEC-001..007) → `BP-004`.
 - [`P06_Economia_GTM_Evidencia.md`](04-project-management/planos-fase/P06_Economia_GTM_Evidencia.md) — P06 economia & GTM com evidência (FIN/GTM/BRD) → `BP-007`.
 - [`P07_Portao_Lancamento.md`](04-project-management/planos-fase/P07_Portao_Lancamento.md) — P07 portão de lançamento (LCH-001..007) → `BP-008`.
+- [`P01-T01`→`P07-T07`](04-project-management/tarefas/) — 56 tarefas de execução P01(7)+P02(6)+P03(9)+P04(8)+P05(7)+P06(12)+P07(7) com `phase`, `gap_ids`, `dependencies`, `target_file`.
 - [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) — cronograma Bases com 6 views (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
 - [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) — marcos M00→M07 + sub-gates M03.A/B com critérios de saída verificáveis.
 - [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
@@ -464,13 +466,16 @@ flowchart TB
 
 ## Notas de frescor
 
-- O mapa reflete o commit `1c2733f`, que entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views Bases, `marcos-fases-v1.md` M00→M07).
-- `04-project-management/tarefas/` contém oito notas `BP-*`, a base central de tarefas e seu README.
+- O mapa reflete o commit `973a23b`, que registrou as **56 tarefas P01→P07 + base de execução** (`HUB_Tarefas_Fases_Execucao.base` com 9 views em `registros-trabalho/`, 56 notas `P01-T01→P07-T07` em `tarefas/`).
+- Anterior `1c2733f` entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views, `marcos-fases-v1.md` M00→M07).
+- `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README.
+- `04-project-management/registros-trabalho/` contém `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
 - `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases) e `HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`.
 - `04-project-management/planos-fase/` contém `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis).
 - `04-project-management/cronogramas/` contém `cronograma-fases-v1.base` (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
 - `04-project-management/marcos/` contém `marcos-fases-v1.md` (M00→M07 + M03.A/B, critérios G01.x→G07.x).
-- `TaskNotes/Tasks/` contém tarefas operacionais adicionais, separadas das notas de tarefa do blueprint.
+- `00-project-control/registro-mudancas/` contém 2 notas: `2026-08-26-faseamento-P01-P07-cronograma-marcos` + `2026-08-26-tarefas-56-execucao-base`.
+- `TaskNotes/Tasks/` contém tarefas operacionais adicionais, separadas das notas de tarefa do blueprint/fase.
 - A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios de validação.
 - `.obsidian/themes/` contém 7 temas (Blossom, Dark Moss, Nebula, Royal Velvet, Slytherin, Sodalite, Vicious).
-- **Atualização desta revisão:** sincronizado ao commit `1c2733f` (faseamento), verificado contra `find` em disco + `git log` em 2026-08-26T21:03:13-03:00; anterior `7c97901` traduziu estrutura para pt-BR.
+- **Atualização desta revisão:** sincronizado ao commit `973a23b` (56 tarefas + base execução), verificado contra `find` + `git log` em 2026-08-26T21:31:25-03:00; anteriores `1c2733f` (faseamento) e `7c97901` (tradução pt-BR).
