@@ -2,7 +2,7 @@
 title: P01-T06 — Limites de concentração de parceiros (thresholds)
 task_id: P01-T06
 phase: P01
-status: pendente
+status: em-revisao
 priority: alta
 area: gtm
 layer: governance
@@ -38,3 +38,10 @@ Aprovado por Governança.
 
 ## Registros relacionados
 - [[00-project-control/registro-lacunas/lacunas/GTM-006]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos|matriz de limites de concentração de parceiros — hipóteses propostas]].
+- **Cobertura:** thresholds warning/critical para receita, roadmap, capacidade, dados e reputação, com métrica/denominador, escalonamento, fallback, cadência, owner e fonte de evidência.
+- **Governança:** todos os valores estão explicitamente marcados como propostos/hipóteses controladas; aprovação permanece pendente e é o critério de aceite.
+- **Validação:** `git diff --check` e validação estrutural focada executados após a edição.

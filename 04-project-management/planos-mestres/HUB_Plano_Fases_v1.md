@@ -2,11 +2,11 @@
 title: HUB — Plano Diretor de Fases v1
 subtitle: Sequenciamento eficiente para gestão sequencial do projeto completo
 version: 1
-status: rascunho — revisão pendente
+status: em-revisao — gates consolidados, aprovação pendente
 type: plano-mestre
 layer: cross-cutting
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-08-27
 owner:
   - PF Rezende
 tags:
@@ -71,6 +71,23 @@ flowchart TD
 
 **Regra de ouro:** `P03 Dados Canônicos` é o **spine**. Nenhuma economia reconstruída (FIN-003), contrato de integração (TEC-001) ou alegação de valor (BRD-002) pode ser aprovada antes de `DAT-001` (entidades/chaves), `DAT-003` (event envelope) e `DAT-006` (taxonomia de valor) estarem aprovadas. Hoje `FIN-001` e `DAT-004` mostram exatamente o custo de violar isso — ROI 28,42% ilustrativo tratado como evidência.
 
+### 2.1 Dependências e regra de liberação dos gates
+
+| Gate | Depende de | Libera | Regra de bloqueio |
+|---|---|---|---|
+| **P00** | — | P01 | Sem baseline de escopo e RACI provisório, P01 permanece trabalho de risco. |
+| **P01** | P00 | P02; hipóteses de P06 somente | Oferta, comprador, capacidade, receita e rota devem estar rastreáveis; `STR-001..003`, `FIN-002` e `GTM-001` continuam abertos até evidência/aceite. |
+| **P02** | P01 | P03 | Sem fronteiras de módulo, jornada, permissões, SOPs e RACI, não há contrato confiável para dados. |
+| **P03.A** | P02 | P04; descoberta técnica de P05 | Só identidade/entidades; P05 só detalha contratos após P03.B; não libera economia, claims ou lançamento. |
+| **P03.B** | P03.A | Contratos detalhados de P05 | Só eventos/dicionário físico; P06 continua bloqueado. |
+| **P03** | P03.B | P06 (com P04 e P05 ainda obrigatórios) | Entidades, eventos, métricas, linhagem e taxonomia de valor aprovados; é o spine do sistema. |
+| **P04** | P03.A (P03.B recomendado) | P06 e contribuição para P07 | Sem LGPD, responsabilidade, PI, Selo e controles aprovados, claims, funding restrito e lançamento ficam bloqueados. |
+| **P05** | P03.B | P06 e contribuição para P07 | Sem contratos, segurança, SLOs, recuperação e rollback testados, não há capacidade técnica aprovada. |
+| **P06** | P03 + P04 + P05 | P07 | Finanças/GTM são evidência auditada; hipóteses não podem ser contadas como tração. |
+| **P07** | P06 + P04 | Lançamento, somente se aprovado | Qualquer crítico em blueprint, risco sem tratamento ou rastreabilidade órfã bloqueia o lançamento. |
+
+> **Estado dos gates:** esta tabela define critérios e ordem, não registra aprovação. Cada liberação exige pacote de revisão, evidência rastreável e decisão nominal em `00-project-control/decisoes/`. Enquanto isso não existir, o gate permanece `em-revisao` ou `bloqueado`.
+
 **Paralelismo permitido:**
 
 | Janela | Paralelo seguro | Por quê |
@@ -94,7 +111,7 @@ flowchart TD
 | **P04** | Governança & Confiança | `GOV-001..005` · `GOV-008` | `BP-006` | Estrutura entidades + LGPD map + Selo charter | Jurídico | Legal/Sec approved |
 | **P05** | Tecnologia Contratual | `TEC-001..004` · `TEC-006` | `BP-004` | Contratos API/evento + SLOs + threat model | Tech | Arch/Sec approved |
 | **P06** | Economia & GTM com Evidência | `FIN-001,003,006` · `GTM-002..006` · `BRD-002` | `BP-007` + parte `BP-001` | Modelo financeiro reconstruído + claim library + GTM routes | Finanças + GTM | Evidence audit passed |
-| **P07** | Portão de Lançamento | `LCH-001..006` | `BP-008` | Checklist integrado + runbook + workflow aprovação | Controle Projeto | Launch Approved |
+| **P07** | Portão de Lançamento | `LCH-001..007` · `STR-003` | `BP-008` | Checklist integrado + runbook + workflow aprovação | Controle Projeto | Launch Approved |
 
 > Detalhamento completo em [`04-project-management/planos-fase/P01_*.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-fase) — um arquivo por fase com entradas/saídas, critérios de saída verificáveis e backlog de tarefas.
 
@@ -109,6 +126,22 @@ flowchart TD
 | M2 | Value mart, experimentos, atribuição, sign-off financeiro | P06 |
 | M3 | Modelos, drift, fairness, model cards | Pós-P07 (roadmap futuro) |
 | M4 | Benchmarks anônimos, marketplace, multi-ecossistema | Pós-P07 |
+
+### 3.1 Critérios de saída consolidados por domínio
+
+Os critérios abaixo são a versão de coordenação do gate. Os checklists normativos permanecem nos planos de fase e em [[04-project-management/marcos/marcos-fases-v1]]. Nenhum item abaixo implica aceite formal.
+
+| Fase | Saída mínima verificável | Domínios reconciliados | Evidência/gap vinculante |
+|---|---|---|---|
+| **P01** | Matriz oferta→comprador→unidade→capacidade→operação→receita→gap; taxonomia de receita; rotas com fallback; roadmap sem contradição (**G01.6**). | Negócio, produto, finanças, operações, governança e lançamento. | P01-T01/P01-T02; G01.1–G01.7; `STR-001..003`, `FIN-002`, `GTM-001`. |
+| **P02** | Fronteiras dos 6 módulos, jornada/eventos, ator×permissão, diagnóstico reproduzível, SOPs com SLA e RACI sem ambiguidade. | Produto, operações, segurança, dados e governança. | G02.1–G02.7; `PRD-*`, `STR-007/008`, `GOV-008`. |
+| **P03** | Entidades/chaves e matching testados; envelope/schema/replay; catálogo de métricas, linhagem, taxonomia de valor, LGPD e XLSX reconciliado. | Dados, produto, finanças, governança e tecnologia. | G03.A1–G03.C5; `DAT-001..006`, `DAT-008..010`. P03.A/P03.B liberam apenas o trabalho indicado. |
+| **P04** | Estrutura e responsabilidades jurídicas; base legal/retenção/DSAR; PI; Selo independente ou bloqueado; fairness/drift e controles testados. | Governança, jurídico, dados, finanças e operações. | G04.1–G04.9; `GOV-001..009`. |
+| **P05** | Arquitetura e contratos M0; integração por chaves P03; baseline de custo/latência/volume; threat model; SLO/on-call/recovery e rollback. | Tecnologia, dados, segurança, operações e finanças. | G05.1–G05.7; `TEC-001..007`. |
+| **P06** | Modelo financeiro em 3 cenários sem dupla contagem; ponte produto→valor; separação restrito/comercial; KPIs ledger; mercado e GTM com logs, diversificação e claims revisados. | Finanças, GTM, produto, dados, jurídico e governança. | G06.1–G06.12; `FIN-*`, `GTM-*`, `BRD-*`, com `STR-003` condicionante. |
+| **P07** | Portão mestre, produto implantável, workflow auditável, rastreabilidade sem órfãos, riscos tratados, checklist comercial e ciclo de vida de artefatos. | Todos os domínios + controle de projeto. | G07.1–G07.8; `LCH-001..007`, `STR-003`. Lançamento só após M01–M06 aprovados. |
+
+**Regra de coerência P01→P07:** produto e negócio definem o que pode ser prometido; P03 define o que pode ser medido; P04 define o que pode ser usado/alegado; P05 define o que pode ser operado; P06 define o que pode ser financiado e vendido; P07 verifica a composição. Uma hipótese, piloto ou artefato em blueprint não é convertido em aprovação, tração ou prontidão por este roadmap.
 
 ---
 

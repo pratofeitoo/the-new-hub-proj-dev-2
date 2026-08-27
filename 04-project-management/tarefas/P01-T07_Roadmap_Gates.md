@@ -2,7 +2,7 @@
 title: P01-T07 — Roadmap P01→P07 com dependências e gates
 task_id: P01-T07
 phase: P01
-status: pendente
+status: em-revisao
 priority: alta
 area: launch-vision
 layer: governance
@@ -42,3 +42,15 @@ Roadmap publicado sem contradição entre domínios.
 
 ## Registros relacionados
 - [[00-project-control/registro-lacunas/lacunas/STR-003]]
+
+## Execução
+
+- **Entregável produzido:** roadmap P01→P07 consolidado em [[04-project-management/planos-mestres/HUB_Plano_Fases_v1]], com dependências duras, sub-gates P03.A/P03.B, critérios de saída por domínio e regra explícita de não aprovação automática.
+- **Reconciliação:** negócio/produto definem promessa; P03 define medição; P04 uso e confiança; P05 operação técnica; P06 financiamento/GTM baseado em evidência; P07 verifica a composição. P07 inclui `LCH-001..007` e `STR-003`.
+- **Artefatos vinculados:** `cronograma-fases-v1.base` permanece a view derivada dos planos de fase; `marcos-fases-v1.md` permanece o registro operacional de evidências e decisões, com dependências P03.A/P03.B e condição explícita de `STR-003`. Nenhum status de gate foi promovido para `aprovado`.
+- **Estado:** `em-revisao` — G01.6 preparado para revisão; `STR-003` permanece aberto até evidência, responsável aceito e aprovação interdomínios.
+
+## Validação
+
+- `git diff --check` — passou.
+- Consistência focada — roadmap contém P01–P07, dependências P00/P01/P02/P03.A/P03.B/P03/P04/P05/P06/P07, critérios G01–G07 e referências `STR-003`/`LCH-001..007`; sem aprovação formal declarada.

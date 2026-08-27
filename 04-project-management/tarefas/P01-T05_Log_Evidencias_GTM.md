@@ -2,7 +2,7 @@
 title: P01-T05 — Log de evidências por rota GTM (hipótese vs tração)
 task_id: P01-T05
 phase: P01
-status: pendente
+status: em-revisao
 priority: alta
 area: gtm
 layer: refining
@@ -12,7 +12,7 @@ gap_ids:
   - GTM-002
 dependencies:
   - P01-T04
-target_file: "02-refinement/pesquisa/segundo-rascunho-projeto/"
+target_file: "02-refinement/pesquisa/log-evidencias-GTM.md"
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-002]]"
@@ -38,3 +38,10 @@ Gate GTM-002: sem evidência = hipótese.
 
 ## Registros relacionados
 - [[00-project-control/registro-lacunas/lacunas/GTM-002]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/pesquisa/log-evidencias-GTM|log de evidências GTM]] com sete rotas, parceiro, status, evidência, link, fallback, owner, próxima evidência necessária e data de revisão.
+- **Resultado:** todas as rotas permanecem `hipótese` (incluindo a rota de marketplace, explicitamente adiada), pois as fontes não contêm evidência escrita de acordo, mandato, piloto, compra ou renovação.
+- **Rastreabilidade:** o log está vinculado a [[00-project-control/registro-lacunas/lacunas/GTM-002|GTM-002]] e à pesquisa GTM; nomes de parceiros são mantidos como possibilidades, sem inventar relacionamentos ou tração.
+- **Status:** `em-revisao`; o artefato está completo para revisão do owner e promoção futura somente mediante evidência escrita.

@@ -4,7 +4,7 @@ version: 1.0
 status: rascunho
 type: marcos
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-08-27
 owner:
   - PF Rezende
 tags:
@@ -26,6 +26,9 @@ related_notes:
 
 > [!warning] Sem datas fictícias
 > Este arquivo registra **ordem, dependência e evidência** — não calendário. Datas entram quando cada gate for agendado no [`cronograma-fases-v1.base`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/cronogramas/cronograma-fases-v1.base) (view Timeline) + `atas-reuniao/`.
+
+> [!warning] Estado e evidência
+> Os checkboxes abaixo permanecem desmarcados até existir pacote de revisão, evidência linkada e decisão nominal em `00-project-control/decisoes/`. `rascunho`, `em-execucao` e `em-revisao` não liberam a fase seguinte; nenhum marco neste arquivo constitui aprovação formal.
 
 ```mermaid
 flowchart LR
@@ -83,6 +86,10 @@ flowchart LR
 - [ ] **G01.5** Segmentos aprovados por Finanças+Jurídico+Ops (assinaturas)
 - [ ] **G01.6** Roadmap P01→P07 sem contradição entre domínios
 - [ ] **G01.7** Revisão por Estratégia, Finanças, Jurídico, Ops
+
+> **Condição STR-003:** permanece aberto até haver evidência, responsável aceito e decisão interdomínios registrada. A existência deste marco não autoriza converter hipótese, piloto ou parceiro não validado em tração, receita ou prontidão.
+
+> **Evidência G01.6:** consultar [[04-project-management/planos-mestres/HUB_Plano_Fases_v1#2.1 Dependências e regra de liberação dos gates]] e [[04-project-management/planos-mestres/HUB_Plano_Fases_v1#3.1 Critérios de saída consolidados por domínio]]. A consolidação é preparatória; este checkbox só pode ser marcado após revisão e decisão formal.
 
 ---
 
@@ -207,6 +214,8 @@ flowchart LR
 | **Gaps** | `FIN-001,003..007` · `GTM-002..007` · `BRD-001..003` |
 | **Pacote revisão** | `03-approval/pacotes-revisao/P06-Economia-GTM.md` |
 
+> **Condição de entrada:** `STR-003` deve estar evidenciado e aceito para qualquer claim, projeção ou rota comercial; se continuar aberto, o gate permanece bloqueado para esses itens e não pode ser contado como tração.
+
 - [ ] **G06.1** Registro premissas sem TBD crítico
 - [ ] **G06.2** Modelo 3 cenários reconciliado, sem dupla contagem
 - [ ] **G06.3** Ponte produto→valor demonstrada
@@ -242,6 +251,8 @@ flowchart LR
 - [ ] **G07.8** Roadmap sem contradição
 
 > **Definição de completo:** `M07 Launch Approved` = `M01..M06` aprovados + G07.1..8 + sistema coerente (framework Definição de conclusão). Piloto isolado não é lançamento.
+>
+> **Condição STR-003:** `STR-003` precisa de evidência, responsável aceito e decisão interdomínios antes de M07; enquanto pendente, lançamento e qualquer claim dependente permanecem bloqueados.
 
 ---
 
