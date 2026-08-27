@@ -1,5 +1,5 @@
-<!-- git-hash: 7c9790163ed40095631f6bd61438505330eb9b28 -->
-<!-- last-synced: 2026-08-26T19:43:20-03:00 -->
+<!-- git-hash: 1c2733f586a17987ef22885a5bb54c1e815ff2f8 -->
+<!-- last-synced: 2026-08-26T21:03:13-03:00 -->
 
 # Mapa do Projeto
 
@@ -21,7 +21,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `01-blueprint/`          | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança e lançamento. |
 | `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados.             |
 | `03-approval/`           | Critérios, evidências, pacotes de revisão, estados de aprovação e material bloqueado.                |
-| `04-project-management/` | Planos, tarefas, marcos, cronogramas, reuniões, retrospectivas, logs e status.                       |
+| `04-project-management/` | Planos (mestre P01–P07 + fases), tarefas, marcos (M00–M07), cronogramas (Bases), reuniões, retrospectivas, logs e status. |
 | `05-resources/`          | Documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
 | `06-deliverables/`       | Saídas finais organizadas por dados, governança, investidor, lançamento, negócio e produto.          |
 | `99-archive/`            | Material descontinuado, rejeitado, superado e instantâneos históricos.                               |
@@ -45,10 +45,12 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 ├── .obsidian/  — configurações do vault Obsidian (workspace, hotkeys, appearance)
 │   ├── icons/  — ícones customizados do vault
 │   ├── plugins/  — plugins comunitários instalados (código compilado — não editar manualmente)
-│   └── themes/  — temas instalados do Obsidian
+│   └── themes/  — temas instalados do Obsidian (7 temas)
 │       ├── Blossom/  — tema Blossom
 │       ├── Dark Moss/  — tema Dark Moss
+│       ├── Nebula/  — tema Nebula
 │       ├── Royal Velvet/  — tema Royal Velvet
+│       ├── Slytherin/  — tema Slytherin
 │       ├── Sodalite/  — tema Sodalite
 │       └── Vicious/  — tema Vicious
 ├── .omo/  — orquestração OhMyOpenCode (planos e artefatos do agente)
@@ -152,10 +154,10 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │
 ├── 04-project-management/  — GESTÃO DO PROJETO — planejamento e controle transversal
 │   ├── atas-reuniao/  — atas de reunião (+ template-reuniao.md)
-│   ├── cronogramas/  — cronogramas do projeto
-│   ├── marcos/  — marcos e milestones
-│   ├── planos-fase/  — planos por fase
-│   ├── planos-mestres/  — planos diretores / master plans (ex.: Doc-Mãe v2 investidor)
+│   ├── cronogramas/  — cronogramas do projeto (cronograma-fases-v1.base — 6 views Bases: Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps)
+│   ├── marcos/  — marcos e milestones (marcos-fases-v1.md — M00→M07 + sub-gates M03.A/B)
+│   ├── planos-fase/  — planos por fase (P01_Arquitetura_Oferta_Negocio → P07_Portao_Lancamento — 7 fases spine GOV/TEC paralelizáveis)
+│   ├── planos-mestres/  — planos diretores / master plans (HUB_Plano_Fases_v1.md — Plano Diretor P01–P07 + alternativa 4-fases; Doc-Mãe v2 investidor)
 │   ├── registros-trabalho/  — logs de trabalho / work logs
 │   ├── relatorios-status/  — relatórios de status periódicos
 │   ├── retrospectivas/  — retrospectivas de ciclo/sprint
@@ -217,10 +219,12 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `.obsidian/` | infra | Configurações do vault Obsidian | `workspace.json`, `app.json`, `hotkeys.json` | ativo |
 | `.obsidian/icons/` | infra | Ícones customizados do vault | ícones svg/json | ativo |
 | `.obsidian/plugins/` | infra | Plugins comunitários compilados | código por plugin | não editar |
-| `.obsidian/themes/` | infra | Temas instalados do Obsidian | 5 temas | ativo |
+| `.obsidian/themes/` | infra | Temas instalados do Obsidian | 7 temas | ativo |
 | `.obsidian/themes/Blossom/` | infra | Tema Blossom | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Dark Moss/` | infra | Tema Dark Moss | tema | ativo |
+| `.obsidian/themes/Nebula/` | infra | Tema Nebula | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Royal Velvet/` | infra | Tema Royal Velvet | tema | ativo |
+| `.obsidian/themes/Slytherin/` | infra | Tema Slytherin | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Sodalite/` | infra | Tema Sodalite | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Vicious/` | infra | Tema Vicious | `theme.css`, `manifest.json` | ativo |
 | `.omo/` | infra | Orquestração OhMyOpenCode | planos e artefatos do agente | ativo |
@@ -317,12 +321,12 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `03-approval/evidencias/` | approval | Evidências que sustentam decisões de aprovação | `.gitkeep` | reservado |
 | `03-approval/pacotes-revisao/` | approval | Pacotes montados para revisão por stakeholders | `.gitkeep` | reservado |
 | `03-approval/portao-lancamento/` | approval | Portão de lançamento (go/no-go) | `.gitkeep` | reservado |
-| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | planos, tarefas, marcos, atas | ativo |
+| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + cronograma + marcos + tarefas | ativo |
 | `04-project-management/atas-reuniao/` | gestão | Atas de reunião | `template-reuniao.md` | ativo |
-| `04-project-management/cronogramas/` | gestão | Cronogramas do projeto | `.gitkeep` | reservado |
-| `04-project-management/marcos/` | gestão | Marcos e milestones | `.gitkeep` | reservado |
-| `04-project-management/planos-fase/` | gestão | Planos por fase | `.gitkeep` | reservado |
-| `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `Doc-Mãe v2 investidor` | ativo |
+| `04-project-management/cronogramas/` | gestão | Cronogramas do projeto | `cronograma-fases-v1.base` (6 views: Timeline, Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps) | ativo |
+| `04-project-management/marcos/` | gestão | Marcos e milestones | `marcos-fases-v1.md` (M00→M07 + sub-gates M03.A/B) | ativo |
+| `04-project-management/planos-fase/` | gestão | Planos por fase | `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT) | ativo |
+| `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases) + `Doc-Mãe v2 investidor` | ativo |
 | `04-project-management/registros-trabalho/` | gestão | Logs de trabalho / work logs | `.gitkeep` | reservado |
 | `04-project-management/relatorios-status/` | gestão | Relatórios de status periódicos | `.gitkeep` | reservado |
 | `04-project-management/retrospectivas/` | gestão | Retrospectivas de ciclo/sprint | `.gitkeep` | reservado |
@@ -398,6 +402,16 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 - [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — registro transversal de lacunas, riscos e pendências.
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados das lacunas.
 - [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint.
+- [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor de faseamento sequencial P01–P07 (spine DAT, GOV/TEC paralelizáveis) + alternativa 4-fases.
+- [`P01_Arquitetura_Oferta_Negocio.md`](04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md) — P01 oferta & negócio (STR-001/002/003, FIN-002, GTM-001) → `BP-001`.
+- [`P02_Produto_Operacao.md`](04-project-management/planos-fase/P02_Produto_Operacao.md) — P02 produto & operação (PRD-001..007) → `BP-002`+`BP-005`.
+- [`P03_Dados_Canonicos.md`](04-project-management/planos-fase/P03_Dados_Canonicos.md) — P03 **spine** dados canônicos (DAT-001..010, sub-gates M03.A/B/C) → `BP-003`.
+- [`P04_Governanca_Confianca.md`](04-project-management/planos-fase/P04_Governanca_Confianca.md) — P04 governança & confiança (GOV-001..009) → `BP-006`.
+- [`P05_Tecnologia_Contratual.md`](04-project-management/planos-fase/P05_Tecnologia_Contratual.md) — P05 tecnologia contratual (TEC-001..007) → `BP-004`.
+- [`P06_Economia_GTM_Evidencia.md`](04-project-management/planos-fase/P06_Economia_GTM_Evidencia.md) — P06 economia & GTM com evidência (FIN/GTM/BRD) → `BP-007`.
+- [`P07_Portao_Lancamento.md`](04-project-management/planos-fase/P07_Portao_Lancamento.md) — P07 portão de lançamento (LCH-001..007) → `BP-008`.
+- [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) — cronograma Bases com 6 views (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
+- [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) — marcos M00→M07 + sub-gates M03.A/B com critérios de saída verificáveis.
 - [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
 - [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — modelo para atas de reunião.
 - [`Start Here.md`](TaskNotes/Start%20Here.md) — guia inicial do fluxo de tarefas.
@@ -450,8 +464,13 @@ flowchart TB
 
 ## Notas de frescor
 
-- O mapa reflete o commit `7c97901`, que concluiu a tradução da estrutura para pt-BR.
+- O mapa reflete o commit `1c2733f`, que entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views Bases, `marcos-fases-v1.md` M00→M07).
 - `04-project-management/tarefas/` contém oito notas `BP-*`, a base central de tarefas e seu README.
+- `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases) e `HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`.
+- `04-project-management/planos-fase/` contém `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis).
+- `04-project-management/cronogramas/` contém `cronograma-fases-v1.base` (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
+- `04-project-management/marcos/` contém `marcos-fases-v1.md` (M00→M07 + M03.A/B, critérios G01.x→G07.x).
 - `TaskNotes/Tasks/` contém tarefas operacionais adicionais, separadas das notas de tarefa do blueprint.
 - A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios de validação.
-- **Atualização desta revisão:** adicionada seção "Árvore completa de pastas" (camada humana) + "Anexo para agentes — tabela navegável" (camada machine-readable) + "Onde escrever / Onde ler — guia de roteamento"; verificado contra `find` em disco em 2026-08-26.
+- `.obsidian/themes/` contém 7 temas (Blossom, Dark Moss, Nebula, Royal Velvet, Slytherin, Sodalite, Vicious).
+- **Atualização desta revisão:** sincronizado ao commit `1c2733f` (faseamento), verificado contra `find` em disco + `git log` em 2026-08-26T21:03:13-03:00; anterior `7c97901` traduziu estrutura para pt-BR.

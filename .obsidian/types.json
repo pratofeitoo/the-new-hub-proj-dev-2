@@ -10,6 +10,7 @@
     "owner": "multitext",
     "task_type": "multitext",
     "type": "multitext",
-    "version": "multitext"
+    "version": "multitext",
+    "phase": "multitext"
   }
 }

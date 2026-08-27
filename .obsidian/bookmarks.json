@@ -24,6 +24,11 @@
           "type": "file",
           "ctime": 1787774541101,
           "path": "TaskNotes/Views/tasks-default.base"
+        },
+        {
+          "type": "file",
+          "ctime": 1787788842931,
+          "path": "04-project-management/cronogramas/cronograma-fases-v1.base"
         }
       ],
       "title": "Bases"
@@ -47,6 +52,16 @@
       "type": "file",
       "ctime": 1787762669265,
       "path": "01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1787788487340,
+      "path": "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1787788831414,
+      "path": "04-project-management/marcos/marcos-fases-v1.md"
     }
   ]
 }

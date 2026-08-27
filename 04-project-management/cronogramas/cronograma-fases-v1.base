@@ -61,7 +61,6 @@ views:
       note.priority: 110
       note.gap_ids: 420
       formula.gap_count: 80
-
   - type: table
     name: Caminho Crítico (P01→P02→P03→P06→P07)
     filters:
@@ -79,7 +78,6 @@ views:
       - gap_ids
       - owner
       - formula.is_critical_path
-
   - type: table
     name: Paralelizáveis — P04 + P05 (após P03)
     filters:
@@ -95,7 +93,6 @@ views:
       - gap_ids
       - formula.can_parallel
       - related_notes
-
   - type: table
     name: Por Dono (RACI)
     groupBy:
@@ -108,7 +105,6 @@ views:
       - priority
       - owner
       - gap_ids
-
   - type: cards
     name: Portfolio de Fases
     order:
@@ -120,7 +116,6 @@ views:
       - owner
       - gap_ids
       - bp_tasks
-
   - type: table
     name: Gaps por Fase (cobertura 68 gaps)
     order:
