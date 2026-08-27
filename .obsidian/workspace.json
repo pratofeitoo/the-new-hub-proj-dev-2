@@ -58,16 +58,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
+                "file": "04-project-management/planos-fase/P02_Produto_Operacao.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "P01_Arquitetura_Oferta_Negocio"
+              "title": "P02_Produto_Operacao"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -253,11 +253,11 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "4f99de9bd170a6cd",
+  "active": "94d92b407366b66d",
   "lastOpenFiles": [
     "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
-    "04-project-management/cronogramas/cronograma-fases-v1.base",
     "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
+    "04-project-management/cronogramas/cronograma-fases-v1.base",
     "04-project-management/marcos/marcos-fases-v1.md",
     "project-map.md",
     "04-project-management/planos-fase/P07_Portao_Lancamento.md",
