@@ -11,6 +11,7 @@
     "task_type": "multitext",
     "type": "multitext",
     "version": "multitext",
-    "phase": "multitext"
+    "phase": "multitext",
+    "date": "datetime"
   }
 }

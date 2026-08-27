@@ -1,11 +1,12 @@
 ---
-title: "Decisão — {{date:YYYY-MM-DD}}"
+title: Decisão — {{date:YYYY-MM-DD}}
 date: "{{date:YYYY-MM-DD}}"
 type: decision
 status: pending
 tags:
   - projeto/decisao
   - projeto/gestao
+author:
 ---
 
 # Decisão — {{date:YYYY-MM-DD}}

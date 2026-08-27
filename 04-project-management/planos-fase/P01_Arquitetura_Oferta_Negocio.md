@@ -1,8 +1,9 @@
 ---
 title: P01 — Arquitetura de Oferta & Negócio
 phase: P01
-version: 1.0
-status: rascunho
+version: 1
+status:
+  - active
 layer: blueprint
 priority: critica
 area: business-model

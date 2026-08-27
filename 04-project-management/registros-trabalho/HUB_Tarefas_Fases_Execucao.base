@@ -68,6 +68,7 @@ views:
       formula.gap_count: Sum
     columnSize:
       file.name: 364
+      note.gap_ids: 203
   - type: table
     name: Caminho Crítico (P01→P02→P03→P06→P07)
     filters:

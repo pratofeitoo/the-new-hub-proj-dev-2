@@ -8,61 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e9f86e5380992cfe",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
-                "viewState": {
-                  "x": 3670,
-                  "y": 430,
-                  "zoom": -2.368761259697233
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Fases_Projeto"
-            }
-          },
-          {
-            "id": "4f99de9bd170a6cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HUB_Plano_Fases_v1"
-            }
-          },
-          {
-            "id": "9bd9f8cad0173b9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-project-management/marcos/marcos-fases-v1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "marcos-fases-v1"
-            }
-          },
-          {
             "id": "28d59aa9f8d1a012",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "04-project-management/cronogramas/cronograma-fases-v1.base",
-                "viewName": "Timeline — P01→P07 (caminho sequencial)"
+                "file": "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "cronograma-fases-v1"
+              "icon": "lucide-file",
+              "title": "P01_Arquitetura_Oferta_Negocio"
             }
           },
           {
@@ -77,9 +33,65 @@
               "icon": "lucide-table",
               "title": "HUB_Tarefas_Fases_Execucao"
             }
+          },
+          {
+            "id": "aa09ff73564e812c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-project-management/tarefas/P01-T03_Taxonomia_Receita.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "P01-T03_Taxonomia_Receita"
+            }
+          },
+          {
+            "id": "0b1c7f993217ad7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-project-management/tarefas/P01-T01_Matriz_4_Unidades.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "P01-T01_Matriz_4_Unidades"
+            }
+          },
+          {
+            "id": "47c8055b1e0be9d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "P01-T02_Matriz_Oferta_Comprador_Capacidade"
+            }
+          },
+          {
+            "id": "3e9bd253fe165aea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HUB_Blueprint_Oferta_e_Arquitetura_Receita"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true,
+                "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -283,46 +295,58 @@
       "canvas2document:C2D Step 2 - Make cleared document": false
     }
   },
-  "active": "94d92b407366b66d",
+  "active": "3e9bd253fe165aea",
   "lastOpenFiles": [
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 10.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 1 2.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 7.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerexamplesTestTask.md at master · pyrochloreobsidian-tracker 2.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerexamplesTestDvField.md at master · pyrochloreobsidian-tracker 2.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerexamplesTestCalendar.md at master · pyrochloreobsidian-tracker 2.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 12.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 11.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 8.md",
-    "System/Plugins docs/Tracker Plugin/obsidian-trackerdocsExamples.md at master · pyrochloreobsidian-tracker 9.md",
-    "System/Plugins docs/Charts Plugin Docs/COLOR_FIX_GUIDE.md",
-    "System/Plugins docs/Charts Plugin Docs/Basics.md",
-    "System/Plugins docs/Charts Plugin Docs/Bar Chart.md",
-    "System/Plugins docs/Charts Plugin Docs/Chart from Table.md",
-    "System/Plugins docs/Charts Plugin Docs/Dataview Integration.md",
-    "System/Plugins docs/Charts Plugin Docs/Customization.md",
-    "System/Plugins docs/Charts Plugin Docs/Charts Documentation 1.md",
-    "System/Plugins docs/Charts Plugin Docs/Charts Documentation.md",
-    "System/Plugins docs/Charts Plugin Docs/Pie and Donut Chart.md",
-    "System/Plugins docs/Charts Plugin Docs/Modifiers.md",
-    "System/Plugins docs/Charts Plugin Docs/Line Chart.md",
-    "System/Plugins docs/Charts Plugin Docs/Types.md",
-    "System/Plugins docs/Charts Plugin Docs/Radar Chart.md",
-    "System/Plugins docs/Charts Plugin Docs/Polar Area Chart.md",
-    "System/Plugins docs/Charts Plugin Docs/charts_cheatsheets pt-br.md",
-    "System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian.md",
-    "TaskNotes/Views/mini-calendar-default.base",
-    "TaskNotes/Views/calendar-default.base",
-    "TaskNotes/Views/pomodoro-stats.base",
-    "TaskNotes/Views/relationships.base",
-    "TaskNotes/Views/agenda-default.base",
-    "TaskNotes/Views/tasks-default.base",
-    "TaskNotes/Views/kanban-default.base",
-    "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base",
-    "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
+    "04-project-management/tarefas/P01-T03_Taxonomia_Receita.md",
+    "04-project-management/tarefas/P01-T01_Matriz_4_Unidades.md",
+    "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
+    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
+    "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md",
+    "04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores.md",
+    "05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1.md",
+    "00-project-control/registro-mudancas/2026-08-27-remocao-receita-marketplace.md",
+    "00-project-control/decisoes/template-decisao.md",
+    "00-project-control/registro-mudancas/template-registro-mudanca.md",
+    "01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md",
+    "04-project-management/marcos/marcos-fases-v1.md",
+    "quartz-site/public/tags/index-og-image.webp",
+    "quartz-site/public/tags/project-note-og-image.webp",
+    "quartz-site/public/tags/planning-og-image.webp",
+    "quartz-site/public/tags/admin-og-image.webp",
+    "quartz-site/public/tags/tag-og-image.webp",
+    "quartz-site/public/tags/bloodpressure-og-image.webp",
+    "quartz-site/public/tags/weightlifting-og-image.webp",
+    "quartz-site/public/tags/blood-pressure-og-image.webp",
+    "quartz-site/public/tags/finance/bank1/outcome-og-image.webp",
+    "quartz-site/public/tags/finance/bank1/income-og-image.webp",
     "04-project-management/cronogramas/cronograma-fases-v1.base",
-    "99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/14_raci/index.csv",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/13_matriz_integracao/index.csv",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/12_roadmap/index.csv",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/10_integracoes/index.csv",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/11_governanca_lgpd/index.csv",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/09_eventos_produto/index.csv",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/08_dicionario_dados/index.csv",
+    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/06_simulador_roi/index.csv",
+    "quartz-site/content/index.md",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
+    "quartz-site/node_modules/@quartz-community/table-of-contents/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/unlisted-pages/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-themes/core/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/utils/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/tag-page/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/tag-list/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/stacked-pages/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/syntax-highlighting/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/spacer/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/encrypted-pages/node_modules/@quartz-community/types/README.md",
+    "quartz-site/node_modules/@quartz-community/roam/node_modules/@quartz-community/types/README.md",
+    "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
+    "quartz-site/content/99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",
+    "quartz-site/docs/Canvas.canvas",
+    "99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",
     "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto 1.canvas"
   ]
 }
