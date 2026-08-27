@@ -24,14 +24,14 @@ Open <http://localhost:8080> after starting the server.
 
 ## GitHub Pages deployment
 
-The workflow in `.github/workflows/deploy.yml` runs on pushes to the `v5` branch and can also be started manually with **Actions → Deploy Quartz site to GitHub Pages → Run workflow**.
+The workflow in `.github/workflows/deploy.yml` runs on pushes to the `main` branch and can also be started manually with **Actions → Deploy Quartz site to GitHub Pages → Run workflow**.
 
 To enable it:
 
 1. Push this project to `pratofeitoo/the-new-hub-site`.
 2. Open **Settings → Pages**.
 3. Set **Source** to **GitHub Actions**.
-4. Push to `v5` or manually run the workflow.
+4. Push to `main` or manually run the workflow.
 5. Open the URL reported by the `github-pages` deployment environment.
 
 The workflow installs dependencies, installs Quartz plugins, builds `public/`, uploads it as a Pages artifact, and deploys it with the official Pages actions. The site URL is configured in `quartz.config.yaml` under `configuration.baseUrl`.
@@ -48,7 +48,7 @@ npx quartz build
 git diff --stat
 git add content quartz.config.yaml .github/workflows README.md package.json package-lock.json .gitignore
 git commit -m "chore: update published vault"
-git push origin v5
+git push origin main
 ```
 
 Review the diff before pushing. This repository contains the copied vault snapshot, but Quartz primarily turns Markdown into pages; configuration files, databases, canvases, and arbitrary binary files may remain unrendered or unsupported in the website. Do not add secrets to the vault or repository.

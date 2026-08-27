@@ -1,7 +1,7 @@
 ---
 title: HUB — Plano Diretor de Fases v1
 subtitle: Sequenciamento eficiente para gestão sequencial do projeto completo
-version: 1.0
+version: 1
 status: rascunho — revisão pendente
 type: plano-mestre
 layer: cross-cutting
@@ -20,7 +20,7 @@ related_notes:
   - "[[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
   - "[[04-project-management/tarefas/HUB_Tarefas_Projeto.base]]"
-  - "[[00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas]]"
+  - "[[Fases_Projeto.canvas]]"
 ---
 
 # HUB — Plano Diretor de Fases v1
