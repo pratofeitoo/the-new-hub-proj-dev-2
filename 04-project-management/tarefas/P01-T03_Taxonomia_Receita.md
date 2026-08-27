@@ -7,7 +7,6 @@ priority: critica
 area: business-model
 layer: blueprint
 owner:
-  - Finanças (a designar)
   - PF Rezende
   - Tamara
 gap_ids:

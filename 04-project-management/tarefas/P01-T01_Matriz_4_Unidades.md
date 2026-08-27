@@ -3,7 +3,7 @@ title: P01-T01 — Matriz 4 Unidades (capacidades compartilhadas vs específicas
 task_id: P01-T01
 phase: P01
 status:
-  - done
+  - em-revisao
 priority: critica
 area: business-model
 layer: blueprint
