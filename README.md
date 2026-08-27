@@ -81,7 +81,7 @@ flowchart TB
 - [`01-blueprint/`](01-blueprint/) — a visão-base do projeto: estratégia, produto, negócios, tecnologia, dados, governança e visão de lançamento.
 - [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário.
 - [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste.
-- [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor de fases P01→P07, planos por fase, tarefas (BP-*), marcos M00→M07, cronogramas (Bases), reuniões, status e logs.
+- [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor P01→P07, 7 planos de fase, 56 tarefas P01→P07 + 8 BP, marcos M00→M07, cronogramas (Bases) + base de execução (9 views), reuniões, status e logs.
 - [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
@@ -113,14 +113,17 @@ flowchart TB
 - [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — ponto de partida consolidado para a arquitetura do HUB.
 - [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — lista transversal de lacunas, riscos e pendências.
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados dos gaps.
-- [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint.
+- [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint (BP-001..008).
+- [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — base de execução das 56 tarefas de fase (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor de faseamento sequencial P01→P07 (spine DAT, GOV/TEC paralelizáveis, alternativa 4-fases).
 - [`P01_Arquitetura_Oferta_Negocio.md`](04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md) — P01 oferta & negócio (STR/FIN/GTM) → `BP-001`.
+- [`P02_Produto_Operacao.md`](04-project-management/planos-fase/P02_Produto_Operacao.md) — P02 produto & operação (PRD) → `BP-002`+`BP-005`.
 - [`P03_Dados_Canonicos.md`](04-project-management/planos-fase/P03_Dados_Canonicos.md) — P03 spine dados canônicos (DAT-001..010, sub-gates M03.A/B/C) → `BP-003`.
 - [`P04_Governanca_Confianca.md`](04-project-management/planos-fase/P04_Governanca_Confianca.md) — P04 governança & confiança (GOV-001..009) → `BP-006`.
 - [`P05_Tecnologia_Contratual.md`](04-project-management/planos-fase/P05_Tecnologia_Contratual.md) — P05 tecnologia contratual (TEC-001..007) → `BP-004`.
 - [`P06_Economia_GTM_Evidencia.md`](04-project-management/planos-fase/P06_Economia_GTM_Evidencia.md) — P06 economia & GTM com evidência → `BP-007`.
 - [`P07_Portao_Lancamento.md`](04-project-management/planos-fase/P07_Portao_Lancamento.md) — P07 portão de lançamento (LCH-001..007) → `BP-008`.
+- [`P01-T01`→`P07-T07`](04-project-management/tarefas/) — 56 tarefas de execução (P01 7 + P02 6 + P03 9 + P04 8 + P05 7 + P06 12 + P07 7) com `phase`, `gap_ids`, `dependencies`.
 - [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) — cronograma Bases com 6 views (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
 - [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) — marcos M00→M07 + sub-gates M03.A/B com critérios G01.x→G07.x.
 - [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
@@ -136,7 +139,7 @@ flowchart TB
 - Para entender o projeto: comece por este README e pelo `project-map.md`.
 - Para entender a ordem de execução: abra [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) e o [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) (Timeline P01→P07).
 - Para trabalhar na estratégia: entre em `01-blueprint/`.
-- Para controlar execução: use `04-project-management/` (fases em `planos-fase/`, gates em `marcos/marcos-fases-v1.md`).
+- Para controlar execução: use `04-project-management/` — fases em `planos-fase/`, 56 tarefas em `tarefas/P01-T01→P07-T07`, execução em `registros-trabalho/HUB_Tarefas_Fases_Execucao.base` (9 views), gates em `marcos/marcos-fases-v1.md`.
 - Para consultar fontes e materiais: use `05-resources/`.
 - Para revisar entregas: use `03-approval/` e `06-deliverables/`.
 
@@ -189,7 +192,7 @@ Se você estiver **pesquisando ou testando**, vá para `02-refinement/` (cite a 
 
 Se você estiver **decidindo aprovação**, vá para `03-approval/` (monte o pacote em `pacotes-revisao/` e valide no gate `marcos-fases-v1.md`).
 
-Se você estiver **executando o projeto**, vá para `04-project-management/` — fases em `planos-fase/`, cronograma em `cronogramas/cronograma-fases-v1.base`, gates em `marcos/marcos-fases-v1.md`.
+Se você estiver **executando o projeto**, vá para `04-project-management/` — fases em `planos-fase/`, 56 tarefas em `tarefas/P01-T01→P07-T07`, base de execução em `registros-trabalho/HUB_Tarefas_Fases_Execucao.base` (Kanban por Fase/Status/Prioridade), cronograma em `cronogramas/cronograma-fases-v1.base`, gates em `marcos/marcos-fases-v1.md`.
 
 Se você estiver **procurando materiais de apoio**, vá para `05-resources/`.
 
@@ -214,10 +217,11 @@ O projeto agora possui um **faseamento sequencial** para gestão eficiente:
 
 - **P01 Oferta & Negócio** → **P02 Produto & Operação** → **P03 Dados Canônicos (spine, sub-gates M03.A/B/C)** → **P04 Governança** ↔ **P05 Tecnologia** (paralelizáveis) → **P06 Economia & GTM** → **P07 Portão de Lançamento**
 - Detalhe em [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) e em cada `P0x` em [`planos-fase/`](04-project-management/planos-fase/)
+- **56 tarefas de execução** em [`tarefas/P01-T01→P07-T07`](04-project-management/tarefas/) (7+6+9+8+7+12+7) com `phase`, `gap_ids`, `dependencies`, organizadas pela base [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) (9 views: por Fase, Crítico `★`, Kanban, Prioridade, Por Dono, Gaps)
 - Cronograma visual em [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) (views: Timeline, Caminho Crítico, Paralelizáveis, Por Dono)
 - Gates verificáveis em [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) (M00→M07, critérios G01.x→G07.x)
 - Alternativa leve de **4 fases** documentada no plano diretor para times enxutos
 
 ## Observação
 
-O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `a74c098`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `b616539`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
