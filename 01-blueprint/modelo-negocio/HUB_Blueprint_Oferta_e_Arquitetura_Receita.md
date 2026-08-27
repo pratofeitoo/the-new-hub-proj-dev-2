@@ -7,7 +7,7 @@ layer: blueprint
 area: business-model
 source_task: "[[04-project-management/tarefas/BP-001_HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
 created: 2026-08-21
-updated: 2026-08-21
+updated: 2026-08-27
 gap_ids:
   - STR-001
   - STR-002
@@ -58,14 +58,14 @@ flowchart LR
     P[Plataforma HUB]:::unit
 
     C1[Narrativa, posicionamento e método C.A.O.S.]:::shared
-    C2[Padrões de portfólio, nomenclatura e ofertas]:::shared
+    C2[Padrões de portfólio, nomenclatura e arquitetura de ofertas]:::shared
     C3[Venda, contratação e responsabilização comercial]:::specific
     C4[Operação de programas, consultoria e experiências]:::specific
     C5[Missão, educação e impacto restrito]:::specific
     C6[Funding restrito, elegibilidade e reporte]:::specific
-    C7[Infraestrutura, workflows e configuração]:::shared
-    C8[Identidade, dados e primitivas de evidência]:::shared
-    C9[Medição, aprendizado e evidências de entrega]:::shared
+    C7[Infraestrutura de software, workflows e configuração]:::shared
+    C8[Identidade, dados operacionais e primitivas de evidência]:::shared
+    C9[Medição, aprendizado e produção de evidências de entrega]:::shared
     C10[Parceiros, canais e relações comerciais]:::specific
 
     M -->|dona| C1
@@ -79,19 +79,28 @@ flowchart LR
     P -->|dona| C9
     N -->|dona| C10
 
-    C1 -. usa .-> N
-    C1 -. usa .-> I
-    C1 -. usa .-> P
-    C2 -. configura .-> N
-    C2 -. configura .-> I
-    C2 -. configura .-> P
-    N -. executa .-> C4
+    M -. usa .-> C1
+    N -. usa .-> C1
+    I -. usa .-> C1
+    P -. usa .-> C1
+    M -. usa .-> C2
+    N -. usa .-> C2
+    I -. usa .-> C2
+    P -. usa .-> C2
+    M -. usa .-> C7
     N -. usa .-> C7
-    I -. executa .-> C5
     I -. usa .-> C7
-    M -. consulta .-> C8
-    N -. produz .-> C9
-    I -. produz .-> C9
+    P -. usa .-> C7
+    M -. usa .-> C8
+    N -. usa .-> C8
+    I -. usa .-> C8
+    P -. usa .-> C8
+    M -. usa .-> C9
+    N -. usa .-> C9
+    I -. usa .-> C9
+    P -. usa .-> C9
+    N -. executa .-> C4
+    I -. executa .-> C5
     N -. coordena .-> C10
 
     classDef unit fill:#243447,stroke:#7aa2f7,color:#fff

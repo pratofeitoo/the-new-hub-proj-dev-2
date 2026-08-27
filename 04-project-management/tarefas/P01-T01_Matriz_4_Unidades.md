@@ -70,3 +70,17 @@ Quatro unidades com proprietário único por capacidade; sem sobreposição não
 - [ ] Manter `STR-001` aberto até que as evidências e a condição de aprovação do gap sejam atendidas.
 
 **Decisão de revisão:** `em-revisao` — aprovado condicionalmente como insumo de Blueprint; não aprovado como fechamento do gate P01.
+
+## Governança de STR-001
+
+- **Owner formal do gap:** PF Rezende.
+- **Responsabilidade:** coordenar a resolução das condições, consolidar evidências e solicitar os aceites nominais.
+
+| Função aprovadora | Aceite nominal | Estado | Evidência / data |
+|---|---|---|---|
+| Estratégia | A designar | pendente | — |
+| Operações | A designar | pendente | — |
+| Jurídico / Governança | A designar | pendente | — |
+| Finanças | A designar | pendente | — |
+
+Os quatro aceites permanecem pendentes até que os responsáveis sejam nomeados e registrem decisão explícita. Nenhum aceite foi inferido a partir do parecer preparatório.
