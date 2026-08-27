@@ -24,7 +24,7 @@ Open <http://localhost:8080> after starting the server.
 
 ## GitHub Pages deployment
 
-The workflow in `.github/workflows/deploy.yml` runs on pushes to the `main` branch and can also be started manually with **Actions → Deploy Quartz site to GitHub Pages → Run workflow**.
+The repository-root workflow in `.github/workflows/deploy.yml` runs on pushes to the `main` branch and can also be started manually with **Actions → Deploy Quartz site to GitHub Pages → Run workflow**.
 
 To enable it:
 
@@ -57,7 +57,7 @@ Review the diff before pushing. This repository contains the copied vault snapsh
 
 - `content/` — copied vault snapshot used as Quartz input
 - `quartz.config.yaml` — site title, URL, theme, plugins, and processing rules
-- `.github/workflows/deploy.yml` — GitHub Pages build/deploy workflow
+- `../.github/workflows/deploy.yml` — GitHub Pages build/deploy workflow
 - `public/` — generated output; ignored and not committed
 
 For Quartz documentation, see <https://quartz.jzhao.xyz/>.
