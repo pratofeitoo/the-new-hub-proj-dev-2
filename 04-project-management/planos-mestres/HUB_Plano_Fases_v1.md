@@ -222,3 +222,64 @@ flowchart LR
 - [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) — tese investidor (não validada)
 
 > **Manutenção:** ao mover/criar arquivos, atualizar também [`project-map.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/project-map.md) (tabela navegável + árvore de pastas).
+
+---
+
+## 11. Glossário de terminologia
+
+> Códigos de identificação usados nas fases, gaps e tarefas deste plano. Códigos `P##` referem-se às fases; códigos `XXX-###` referem-se a gaps de domínio; `BP-###` referem-se a blueprint tasks.
+
+### Fases (P)
+
+| Código | Significado |
+|---|---|
+| **P00** | Fundação & Alinhamento — scope baseline + RACI provisório |
+| **P01** | Arquitetura de Oferta & Negócio |
+| **P02** | Produto & Operação |
+| **P03** | Dados Canônicos (spine) |
+| **P04** | Governança & Confiança |
+| **P05** | Tecnologia Contratual |
+| **P06** | Economia & GTM com Evidência |
+| **P07** | Portão de Lançamento |
+
+### Prefixos de gap por domínio
+
+| Prefixo | Domínio |
+|---|---|
+| **STR-** | Estratégia / Oferta & Negócio |
+| **PRD-** | Produto |
+| **DAT-** | Dados Canônicos |
+| **GOV-** | Governança & Confiança |
+| **TEC-** | Tecnologia Contratual |
+| **FIN-** | Finanças / Economia |
+| **GTM-** | Go-to-Market |
+| **BRD-** | Business Requirements / proposta de valor |
+| **LCH-** | Launch / Portão de Lançamento |
+
+### Blueprint tasks
+
+| Código | Significado |
+|---|---|
+| **BP-001** | Blueprint task de Oferta & Negócio |
+| **BP-002** | Blueprint task de Produto |
+| **BP-003** | Blueprint task de Dados Canônicos (spine) |
+| **BP-004** | Blueprint task de Tecnologia Contratual |
+| **BP-005** | Blueprint task de Operação |
+| **BP-006** | Blueprint task de Governança |
+| **BP-007** | Blueprint task de Finanças / GTM |
+| **BP-008** | Blueprint task de Lançamento |
+
+### Exemplos citados neste plano
+
+| Código | Contexto de uso neste documento |
+|---|---|
+| **DAT-001** | Entidades/chaves — pré-requisito do spine (P03) |
+| **DAT-003** | Event envelope — pré-requisito do spine (P03) |
+| **DAT-006** | Taxonomia de valor — pré-requisito do spine (P03) |
+| **DAT-004** | Gap que mostrou custo de violar o spine |
+| **FIN-003** | Economia reconstruída — bloqueada até P03+P04+P05 |
+| **TEC-001** | Contrato de integração — bloqueado até DAT aprovado |
+| **BRD-002** | Alegação de valor — bloqueada até DAT aprovado |
+| **LHC-007 / LCH-007** | Gap de lançamento não bloqueador (backlog pós-MVP) |
+
+> **Nota:** por inconsistência do registro de gaps, `LHC-007` aparece no §3 como `LCH-007`. Ambos referem-se ao mesmo gap de domínio Launch.
