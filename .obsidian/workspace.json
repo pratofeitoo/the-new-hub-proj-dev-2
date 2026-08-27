@@ -15,9 +15,9 @@
               "state": {
                 "file": "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
                 "viewState": {
-                  "x": 2232.107935967927,
-                  "y": 2251.3161145430277,
-                  "zoom": -1.9281811255225103
+                  "x": 911.1578177534476,
+                  "y": 308.3280267378658,
+                  "zoom": -0.12662495646950442
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -39,6 +39,19 @@
             }
           },
           {
+            "id": "28d59aa9f8d1a012",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "04-project-management/cronogramas/cronograma-fases-v1.base",
+                "viewName": "Timeline — P01→P07 (caminho sequencial)"
+              },
+              "icon": "lucide-table",
+              "title": "cronograma-fases-v1"
+            }
+          },
+          {
             "id": "94d92b407366b66d",
             "type": "leaf",
             "state": {
@@ -52,7 +65,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -72,7 +85,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false,
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -212,9 +225,23 @@
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
+          },
+          {
+            "id": "9fc4e6eca44257c9",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md"
+              },
+              "pinned": true,
+              "icon": "lucide-info",
+              "title": "File properties for HUB_Plano_Fases_v1"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -238,12 +265,23 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "aa7b9d1bda30d77d",
+  "active": "4f99de9bd170a6cd",
   "lastOpenFiles": [
+    "04-project-management/Fases_Projeto_Canvas_v1.html",
+    "04-project-management/HUB_Plano_Unificado_Full_v1.html",
+    "04-project-management/HUB_Plano_Unificado_v1.html",
+    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "04-project-management/cronogramas/cronograma-fases-v1.base",
+    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
+    "04-project-management/tarefas/P01-T01_Matriz_4_Unidades.md",
+    "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
+    "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
+    "04-project-management/tarefas/BP-001_HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+    "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto 1.canvas",
+    "99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",
     "00-project-control/registro-mudancas/2026-08-26-tarefas-56-execucao-base.md",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
     "04-project-management/planos-fase/P02_Produto_Operacao.md",
-    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
     "04-project-management/tarefas/P07-T07_Ciclo_Vida_Artefatos.md",
     "04-project-management/tarefas/P07-T06_Checklist_Lancamento_Comercial.md",
     "04-project-management/tarefas/P07-T05_Registro_Riscos_Premissas_Dependencias.md",
@@ -263,19 +301,10 @@
     "04-project-management/tarefas/P06-T03_Ponte_Valor_Produto_Receita.md",
     "04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios.md",
     "04-project-management/tarefas/P06-T01_Registro_Premissas.md",
-    "04-project-management/tarefas/P05-T07_Processo_Release_Rollback.md",
-    "04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao.md",
-    "04-project-management/tarefas/P05-T05_Threat_Model_Controles.md",
-    "04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade.md",
-    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-    "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas",
-    "04-project-management/cronogramas/cronograma-fases-v1.base",
     "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Views/tasks-default.base",
     "00-project-control/escopo/fases-projeto/rascunho",
     "00-project-control/escopo/fases-projeto",
-    "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.pdf",
-    "TaskNotes/Tasks",
-    "TaskNotes/Views/agenda-default.base"
+    "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.pdf"
   ]
 }

@@ -29,6 +29,11 @@
           "type": "file",
           "ctime": 1787788842931,
           "path": "04-project-management/cronogramas/cronograma-fases-v1.base"
+        },
+        {
+          "type": "file",
+          "ctime": 1787854827777,
+          "path": "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base"
         }
       ],
       "title": "Bases"
@@ -67,6 +72,11 @@
       "type": "file",
       "ctime": 1787789351799,
       "path": "project-map.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1787854841359,
+      "path": "00-project-control/escopo/fases-projeto/rascunho/Fases_Projeto.canvas"
     }
   ]
 }

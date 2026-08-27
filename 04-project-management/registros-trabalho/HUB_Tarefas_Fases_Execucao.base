@@ -47,6 +47,9 @@ properties:
 views:
   - type: table
     name: Execução por Fase — P01→P07
+    groupBy:
+      property: phase
+      direction: ASC
     order:
       - formula.phase_rank
       - phase
@@ -61,12 +64,10 @@ views:
       - dependencies
       - target_file
       - formula.is_critical
-    groupBy:
-      property: phase
-      direction: ASC
     summaries:
       formula.gap_count: Sum
-
+    columnSize:
+      file.name: 364
   - type: table
     name: Caminho Crítico (P01→P02→P03→P06→P07)
     filters:
@@ -87,7 +88,6 @@ views:
       - gap_ids
       - dependencies
       - formula.is_critical
-
   - type: table
     name: Paralelizáveis — P04 + P05 (após P03)
     filters:
@@ -103,7 +103,6 @@ views:
       - owner
       - gap_ids
       - dependencies
-
   - type: table
     name: Kanban por Status
     groupBy:
@@ -118,7 +117,6 @@ views:
       - priority
       - owner
       - gap_ids
-
   - type: table
     name: Por Prioridade (Crítica → Média)
     order:
@@ -132,7 +130,6 @@ views:
       - owner
       - gap_ids
       - dependencies
-
   - type: table
     name: Por Dono (RACI)
     groupBy:
@@ -146,7 +143,6 @@ views:
       - status
       - priority
       - gap_ids
-
   - type: cards
     name: Portfolio de Tarefas
     order:
@@ -158,7 +154,6 @@ views:
       - status
       - gap_ids
       - target_file
-
   - type: table
     name: Bloqueadas & Em Revisão
     filters:
@@ -174,7 +169,6 @@ views:
       - gap_ids
       - dependencies
       - target_file
-
   - type: table
     name: Gaps por Fase (cobertura 68 gaps)
     order:
