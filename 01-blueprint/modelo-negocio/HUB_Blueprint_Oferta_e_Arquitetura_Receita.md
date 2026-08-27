@@ -1,13 +1,19 @@
 ---
-title: "Arquitetura de Ofertas e Receita do HUB"
+title: Arquitetura de Ofertas e Receita do HUB
 blueprint_id: BP-001
-status: draft
+status:
+  - active
 layer: blueprint
 area: business-model
 source_task: "[[04-project-management/tarefas/BP-001_HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
 created: 2026-08-21
 updated: 2026-08-21
-gap_ids: [STR-001, STR-002, STR-003, FIN-002, GTM-001]
+gap_ids:
+  - STR-001
+  - STR-002
+  - STR-003
+  - FIN-002
+  - GTM-001
 ---
 
 # Arquitetura de Ofertas e Receita do HUB
@@ -27,6 +33,74 @@ A **Plataforma HUB** é a camada de infraestrutura de software, dados, fluxos de
 
 A relação pretendida é um ciclo controlado: a marca define a promessa e o método; o HUB Negócios traduz esse método em trabalho pago; a Plataforma HUB captura fluxos de trabalho repetíveis, evidências e efeitos de rede; o Instituto HUB apoia missões de impacto restrito onde funding e propósito permitirem. Um projeto pode envolver as quatro unidades, mas contratos, papéis de dados, PI, responsabilidade, responsabilização pela entrega e titularidade de receita devem ser explícitos, e não inferidos (**STR-001**, **FIN-002**). O Selo HUB permanece uma capacidade de reconhecimento potencialmente conectada, não uma garantia comercial: avaliação e implementação devem ser independentes e com conflitos controlados.
 
+### 1.1 Matriz de capacidades das quatro unidades
+
+Esta matriz é uma definição operacional de Blueprint, não uma decisão jurídica ou uma atribuição societária final. `✓` indica que a unidade usa ou participa da capacidade; `—` indica que não é a unidade primariamente responsável. A coluna **A único** estabelece um proprietário accountable por capacidade, mesmo quando a capacidade é compartilhada.
+
+| Capacidade | Tipo | Marca / estratégia HUB | HUB Negócios | Instituto HUB | Plataforma HUB | A único |
+|---|---|---:|---:|---:|---:|---|
+| Narrativa, posicionamento e método C.A.O.S. | compartilhada | ✓ | ✓ | ✓ | ✓ | Marca / estratégia HUB |
+| Padrões de portfólio, nomenclatura e arquitetura de ofertas | compartilhada | ✓ | ✓ | ✓ | ✓ | Marca / estratégia HUB |
+| Venda, contratação e responsabilização por entrega comercial | específica | — | ✓ | — | — | HUB Negócios |
+| Operação de programas, consultoria e experiências comerciais | específica | — | ✓ | — | — | HUB Negócios |
+| Gestão de missão, educação e programas de impacto restrito | específica | — | — | ✓ | — | Instituto HUB |
+| Gestão de funding restrito, elegibilidade e reporte de impacto | específica | — | — | ✓ | — | Instituto HUB |
+| Infraestrutura de software, fluxos de trabalho e configuração de plataforma | compartilhada | ✓ | ✓ | ✓ | ✓ | Plataforma HUB |
+| Identidade, dados operacionais e primitivas de evidência | compartilhada | ✓ | ✓ | ✓ | ✓ | Plataforma HUB |
+| Medição, aprendizado e produção de evidências de entrega | compartilhada | ✓ | ✓ | ✓ | ✓ | Plataforma HUB |
+| Desenvolvimento de canais, parceiros e relações comerciais | específica | — | ✓ | — | — | HUB Negócios |
+
+```mermaid
+flowchart LR
+    M[Marca / estratégia HUB]:::unit
+    N[HUB Negócios]:::unit
+    I[Instituto HUB]:::unit
+    P[Plataforma HUB]:::unit
+
+    C1[Narrativa, posicionamento e método C.A.O.S.]:::shared
+    C2[Padrões de portfólio, nomenclatura e ofertas]:::shared
+    C3[Venda, contratação e responsabilização comercial]:::specific
+    C4[Operação de programas, consultoria e experiências]:::specific
+    C5[Missão, educação e impacto restrito]:::specific
+    C6[Funding restrito, elegibilidade e reporte]:::specific
+    C7[Infraestrutura, workflows e configuração]:::shared
+    C8[Identidade, dados e primitivas de evidência]:::shared
+    C9[Medição, aprendizado e evidências de entrega]:::shared
+    C10[Parceiros, canais e relações comerciais]:::specific
+
+    M -->|dona| C1
+    M -->|dona| C2
+    N -->|dona| C3
+    N -->|dona| C4
+    I -->|dona| C5
+    I -->|dona| C6
+    P -->|dona| C7
+    P -->|dona| C8
+    P -->|dona| C9
+    N -->|dona| C10
+
+    C1 -. usa .-> N
+    C1 -. usa .-> I
+    C1 -. usa .-> P
+    C2 -. configura .-> N
+    C2 -. configura .-> I
+    C2 -. configura .-> P
+    N -. executa .-> C4
+    N -. usa .-> C7
+    I -. executa .-> C5
+    I -. usa .-> C7
+    M -. consulta .-> C8
+    N -. produz .-> C9
+    I -. produz .-> C9
+    N -. coordena .-> C10
+
+    classDef unit fill:#243447,stroke:#7aa2f7,color:#fff
+    classDef shared fill:#164e63,stroke:#67e8f9,color:#fff
+    classDef specific fill:#4c1d95,stroke:#c4b5fd,color:#fff
+```
+
+**Regra de não sobreposição:** participação no uso ou na produção de uma capacidade não transfere sua titularidade. Qualquer contrato entre unidades, compartilhamento de dados, transferência de PI ou repasse financeiro deve explicitar a fronteira e permanecer sujeito ao refinamento de **STR-001**, **FIN-002** e aos blueprints downstream.
+
 ## 2. Três frentes de negócio: ofertas, clientes, parceiros e responsabilidades de entrega
 
 As frentes são lentes de portfólio, não silos separados. Cada oferta deve identificar uma organização compradora, beneficiários participantes, unidade responsável, papéis de parceiros, configuração de plataforma e evidência de valor. Segmentação de portfólio, titularidade de orçamento e processo de compra permanecem abertos (**GTM-001**).
@@ -40,6 +114,32 @@ As frentes são lentes de portfólio, não silos separados. Cada oferta deve ide
 A espinha dorsal de entrega C.A.O.S. é comum: **Contexto** diagnostica o comprador e o ecossistema; **Arquitetura** define o estado-alvo, escopo da oferta e medidas; **Operação** executa conteúdo, conexões, intervenções ou jornadas; **Sustentação** mede, governa, aprende e evolui. Isso preserva um vocabulário único, permitindo que um projeto de mídia, um programa financiado e um contrato de ecossistema empresarial tenham entregas e termos comerciais diferentes.
 
 Os limites das ofertas devem ser registrados em uma matriz oferta-comprador-capacidade: quem assina, quem paga, quem participa, o que é entregue, quais módulos de plataforma são usados, qual parceiro é necessário, que evidência pode ser produzida e qual unidade assume o risco. Essa matriz é o refinamento exigido para **STR-002** e deve ser reconciliada com o trabalho de segmentação de portfólio em [[04-project-management/tarefas/BP-007_HUB_Go_To_Market_and_Partnerships]] (dependência do BP-007; não infer aqui seus segmentos finais).
+
+### 2.1 Matriz oferta → comprador → unidade → capacidade → operação → receita → gap
+
+Esta matriz transforma as ofertas candidatas das três frentes em unidades rastreáveis. Os compradores e motores de receita são hipóteses de Blueprint; não representam demanda validada, preço aprovado ou reconhecimento contábil. `N` = HUB Negócios, `I` = Instituto HUB, `P` = Plataforma HUB e `M` = Marca / estratégia HUB. A unidade indicada é a dona da oferta e da relação principal; capacidades compartilhadas continuam sob o proprietário definido na matriz de capacidades §1.1.
+
+| Frente | Oferta candidata | Comprador primário | Unidade dona | Capacidade principal | Operação / troca de valor | Motor de receita | Gap |
+|---|---|---|---|---|---|---|---|
+| Mídia e Experiências | Estratégia de campanha ou conteúdo | Empresas, instituições e marcas | N | Narrativa C.A.O.S.; padrões de portfólio; entrega comercial | Diagnosticar contexto, definir estratégia, produzir conteúdo e medir aprendizado para o comprador | Projeto + implementação; recorrência de inteligência é hipótese | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/GTM-001\|GTM-001]] |
+| Mídia e Experiências | Eventos e experiências inclusivas | Donos de eventos, marcas e conveners | N | Entrega comercial; infraestrutura e workflows; medição | Projetar e operar experiência, coordenar parceiros e entregar evidência de participação e resultado | Receita de projetos + implementação | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/STR-005\|STR-005]] |
+| Mídia e Experiências | Ativação de empregador ou marca | Empresas e líderes de marca/RH | N | Padrões de portfólio; entrega comercial; parceiros e canais | Configurar campanha ou jornada, executar ativação e reportar evidências ao comprador | Receita de projetos + implementação | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/GTM-001\|GTM-001]] |
+| Mídia e Experiências | Comunicações orientadas por insights | Empresas, instituições e associações | N | Identidade, dados e evidências; medição e aprendizado | Interpretar sinais do ecossistema, produzir comunicação e sustentar ciclo de aprendizado | Projeto; retainer recorrente é hipótese | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Mídia e Experiências | Pacote de medição e aprendizado | Empresas, instituições e donos de eventos | N | Medição e evidências; identidade e dados | Definir medidas, coletar evidências, validar resultados e devolver aprendizado operacional | Implementação + recorrência de inteligência | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Impacto Financiável | Diagnóstico de impacto | Instituições, fundações e financiadores | I | Missão e impacto restrito; medição e evidências | Diagnosticar problema, população e resultados possíveis sem prometer impacto não demonstrado | Projeto de impacto ou funding restrito; classificação a validar | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Impacto Financiável | Arquitetura de programa | Financiadores e instituições | I | Missão e impacto restrito; padrões de portfólio; workflows | Desenhar objetivos, intervenções, governança, indicadores e responsabilidades do programa | Funding restrito ou projeto de impacto; classificação a validar | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Impacto Financiável | Portfólio de intervenções financiado | Financiadores de interesse público e empresas com orçamento de impacto | I | Funding restrito; missão e impacto; parceiros e canais | Selecionar intervenções elegíveis, coordenar implementação e controlar custos e reporte | Funding restrito; não contar como ARR comercial | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Impacto Financiável | Monitoramento, avaliação e aprendizado | Financiadores, instituições e avaliadores | I | Medição e evidências; identidade e dados | Coletar dados, avaliar resultados, documentar limitações e ajustar o programa | Projeto de impacto + recorrência de medição; classificação a validar | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Impacto Financiável | Academia de capacidades | Instituições, organizações de implementação e participantes | I | Narrativa C.A.O.S.; missão e impacto; workflows | Entregar formação, aplicar método e registrar capacidades desenvolvidas | Receita de projetos ou recorrente; funding restrito somente se elegível | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Impacto Financiável | Reporte de impacto restrito | Financiadores e instituições concedentes | I | Funding restrito; medição e evidências | Consolidar uso de recursos, resultados, limitações e prestação de contas com ledger separado | Funding restrito; não é receita recorrente comercial | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Ecossistemas Empresariais | Inteligência de ecossistema | Instituições, federações e compradores corporativos | N | Identidade, dados e evidências; medição; entrega comercial | Mapear atores e necessidades, produzir inteligência acionável e registrar evidências | Implementação + recorrência de inteligência | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/GTM-001\|GTM-001]] |
+| Ecossistemas Empresariais | Descoberta de fornecedores e talentos | Compradores corporativos, fornecedores e especialistas | N | Identidade, dados e evidências; parceiros e canais | Verificar perfis, qualificar necessidade e apresentar alternativas sem tratar match como tração | Recorrência de serviço; transação/marketplace permanece hipótese | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/GTM-002\|GTM-002]] |
+| Ecossistemas Empresariais | Conexões qualificadas e pareamento de oportunidades | Compradores, fornecedores e donos de oportunidades | N | Parceiros e canais; identidade e dados; medição | Qualificar critérios, realizar pareamento, registrar aceite e acompanhar resultado | Recorrência ou projeto; taxa de transação permanece hipótese | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/GTM-002\|GTM-002]] |
+| Ecossistemas Empresariais | Programas de procurement e capacidades | Líderes de procurement/RH, associações e federações | N | Entrega comercial; workflows; parceiros e canais | Diagnosticar processo, configurar programa, operar capacitação e medir adoção | Implementação + programa recorrente | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/STR-005\|STR-005]] |
+| Ecossistemas Empresariais | Acesso empresarial à plataforma | Instituições e compradores corporativos | N | Infraestrutura e workflows; identidade e dados | Contratar acesso, provisionar configuração, suportar uso e reportar métricas de serviço | Implementação + licença/serviço recorrente; reconhecimento a validar | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+| Ecossistemas Empresariais | Implementação e evolução | Compradores corporativos e donos de ecossistemas | N | Entrega comercial; infraestrutura; medição e evidências | Configurar solução, executar rollout, operar suporte e evoluir com controle de mudanças | Receita de implementação + recorrência de serviço | [[00-project-control/registro-lacunas/lacunas/STR-002\|STR-002]], [[00-project-control/registro-lacunas/lacunas/FIN-002\|FIN-002]] |
+
+**Regra de rastreabilidade:** cada linha ainda precisa ser refinada com JTBD, quem assina, quem paga, beneficiários, parceiro nomeado, risco, módulos de plataforma, evidência de demanda e critério de aceite. Até esse refinamento, a unidade dona e o motor de receita permanecem hipóteses controladas; nenhum comprador, preço, ARR ou resultado de impacto deve ser tratado como fato.
 
 ## 3. Motores de receita primários, secundários e de expansão
 
@@ -61,18 +161,35 @@ Motores de expansão potenciais incluem taxas de marketplace por soluções ou t
 
 A lógica comercial completa é, portanto: implementação paga cria valor configurado e aprendizado; acesso recorrente sustenta fluxos de trabalho e medição; oportunidades de marketplace, rede, mídia, programas financiados e adjacentes a reconhecimento expandem o sistema quando seus controles separados estão satisfeitos. O roadmap deve conectar essas movimentações aos critérios de saída de produto, dados, governança e lançamento M0–M4, em vez de implicar disponibilidade simultânea (**STR-003**).
 
+### 3.1 Taxonomia operacional e regra de reconhecimento v1
+
+| Camada | Categoria | Natureza | Quando reconhecer | Tratamento ARR | Exemplo HUB | Controle obrigatório |
+|---|---|---|---|---|---|---|
+| Primária | Implementação | Comercial | Identificar as obrigações de desempenho e determinar, para cada uma, se a satisfação ocorre ao longo do período ou em momento específico. Reconhecer somente quando a obrigação correspondente for satisfeita; aceite ou marco são evidência apenas quando representarem essa satisfação. | **Não é ARR**; receita pontual de implementação | Diagnóstico C.A.O.S. ou configuração de workflow | Separar setup, migração, configuração e treinamento do serviço recorrente somente se forem obrigações distintas; registrar escopo, aceite, marcos e custos |
+| Primária | Mídia e experiências / projetos | Comercial | Inventariar cada obrigação contratual — estratégia, produção, evento, mídia, medição e componentes de parceiros — e reconhecer cada obrigação quando satisfeita, ao longo do período ou em marco/momento específico, conforme entrega efetivamente realizada e evidenciada | **Não é ARR**; receita pontual de projeto | Evento inclusivo ou estratégia de conteúdo | Contratante, obrigações, critério de satisfação, marcos, parceiros e evidência; faturamento ou aceite administrativo não são gatilhos isolados |
+| Secundária | Acesso à Plataforma / licença de software | Comercial | Distinguir acesso hospedado ou serviço contínuo de direito de uso de software. Analisar acesso ao longo do período; para licença, documentar disponibilização do direito e obrigações distintas de suporte, atualização, implementação ou hospedagem | **Pode compor ARR** somente para obrigação recorrente contratada e iniciada; licença pontual não é ARR por padrão | Acesso empresarial à plataforma | Alocação por obrigação, unidade e entidade contratante, período, limite de serviço, suporte, métricas e titularidade |
+| Secundária | Assinatura ou serviço recorrente | Comercial | Reconhecer conceitualmente conforme o serviço é disponibilizado e prestado durante o período contratado. O início do serviço, e não faturamento ou renovação, é o marco operacional | **Pode compor ARR**; excluir setup, uso eventual, repasses, funding restrito e renovação não contratada | Retainer de inteligência ou jornada gerenciada | Início/fim do serviço, renovação contratada, denominador, churn, custo de suporte e evidência de prestação; aceite não substitui análise da obrigação |
+| Expansão | Marketplace / transação qualificada | Comercial potencial; **adiado** | Antes do reconhecimento, documentar se o HUB atua como principal ou agente, considerando controle da solução, responsabilidade perante o cliente e riscos de cumprimento. Apresentação bruta ou líquida seguirá essa conclusão aprovada; não presumir tratamento líquido por haver repasse | **Não é ARR por padrão**; volume bruto ou repasse não é automaticamente receita HUB | Taxa de match ou transação, ainda não habilitada | Principal/agente, divulgação, conflito, tributos, dados, responsabilidade, cancelamentos, liquidação e aprovação de FIN-002 |
+| Secundária ou expansão | Funding de impacto restrito | Restrita; não comercial | Classificar inicialmente como entrada de funding restrito; classificação e momento dependem do instrumento, entidade, elegibilidade, condições, reporte, período e eventual devolução | **Nunca é ARR comercial**; reportar em métrica restrita separada | Subsídio, doação ou patrocínio restrito do Instituto | Ring-fencing, custos elegíveis, ledger e reporte separados, devolução, rateio documentado e proibição de subsídio implícito |
+
+> [!warning] Regra de maturidade financeira
+> Esta é uma taxonomia conceitual de Blueprint. Nenhuma linha autoriza reconhecimento contábil, classificação fiscal, preço, ARR, margem ou transferência intercompany. Finanças deve validar o tratamento por obrigação contratual, entidade, jurisdição, ledger fonte da verdade e política de reporte em **FIN-002**.
+
+**ARR (KPI gerencial):** receita recorrente anualizada, não conclusão de reconhecimento contábil. Incluir somente contraprestação recorrente contratada, ativa e atribuível a serviço recorrente iniciado, com período, unidade contratante e limite de serviço identificados. Excluir implementação, projetos, eventos, uso eventual, taxas transacionais, repasses, valores variáveis não comprometidos, funding restrito, créditos, descontos não normalizados e renovações ainda não contratadas. Registrar fórmula, data de medição e tratamento de cancelamentos, expansão e contração.
+
+Os exemplos reproduzíveis e os campos mínimos para cenários estão em [[05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1|HUB_Taxonomia_Receita_Reconhecimento_v1]]. A tabela deve ser reconciliada com cada linha da matriz de ofertas §2.1 e com os cenários de contrato antes do gate P01.
+
 ## 4. Classificações de receita e fronteiras de titularidade
 
 A taxonomia a seguir previne colisões de categoria. A classificação é conceitual até que finanças defina reconhecimento, timing, alocação de contratos, tratamento tributário, ledger fonte-da-verdade e regras de reporte (**FIN-002**).
 
-| Classificação | Significado econômico | Atividade HUB ilustrativa | Proprietário / fronteira primária |
-|---|---|---|---|
-| **Receita comercial** | Contraprestação de um cliente por uma oferta de propósito comercial. | Consultoria, acesso empresarial, programa gerenciado, serviço de mídia/experiência. | Unidade comercial contratante (proposto HUB Negócios); não funding restrito do Instituto. |
-| **Receita de implementação** | Trabalho pago de setup, configuração, migração, onboarding, diagnóstico ou mudança necessário para ativar uma oferta. | Diagnóstico C.A.O.S., configuração de tenant, design de fluxo de trabalho, onboarding de dados, treinamento. | Proprietário da entrega e unidade contratante; escopo e aceitação devem ser separados das obrigações de serviço recorrente. |
-| **Receita recorrente** | Acesso ou serviço periódico contratado com obrigação contínua. | Assinatura/licença de plataforma, retainer de inteligência, jornada gerenciada, suporte ou acesso à academia. | Proprietário da plataforma e/ou serviço comercial conforme definido em contrato; exige métricas de renovação e serviço. |
-| **Receita de marketplace** | Taxas ou comissões associadas a uma conexão qualificada, serviço de fornecedor ou transação. | Taxa de match, comissão de fornecedor, taxa de indicação ou de transação. | Operador de marketplace com controles de divulgação, conflito, tributos, responsabilidade e dados; nunca contar repasse bruto como receita HUB sem uma regra. |
-| **Receita de projetos** | Contraprestação fixa ou por marco para uma campanha, evento, programa financiado ou intervenção sob medida delimitados. | Projeto de mídia, evento, programa de impacto, pesquisa ou ativação de ecossistema. | Unidade contratante e proprietário de projeto nomeado; entregáveis, marcos e repasses de parceiros devem ser rastreáveis. |
-| **Receita/funding de impacto restrito** | Fundos legal ou contratualmente restritos a um propósito de impacto, educação ou missão. | Subsídio do Instituto, doação, patrocínio ou funding restrito de programa. | Instituto HUB (conceitualmente), com ledger restrito, regras de custos elegíveis e reporte; não pode ser silenciosamente reclassificado como receita comercial. |
+| Classificação                           | Significado econômico                                                                                                   | Atividade HUB ilustrativa                                                                                     | Proprietário / fronteira primária                                                                                                                               |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Receita comercial**                   | Contraprestação de um cliente por uma oferta de propósito comercial.                                                    | Consultoria, acesso empresarial, programa gerenciado, serviço de mídia/experiência.                           | Unidade comercial contratante (proposto HUB Negócios); não funding restrito do Instituto.                                                                       |
+| **Receita de implementação**            | Trabalho pago de setup, configuração, migração, onboarding, diagnóstico ou mudança necessário para ativar uma oferta.   | Diagnóstico C.A.O.S., configuração de tenant, design de fluxo de trabalho, onboarding de dados, treinamento.  | Proprietário da entrega e unidade contratante; escopo e aceitação devem ser separados das obrigações de serviço recorrente.                                     |
+| **Receita recorrente**                  | Acesso ou serviço periódico contratado com obrigação contínua.                                                          | Assinatura/licença de plataforma, retainer de inteligência, jornada gerenciada, suporte ou acesso à academia. | Proprietário da plataforma e/ou serviço comercial conforme definido em contrato; exige métricas de renovação e serviço.                                         |
+| **Receita de projetos**                 | Contraprestação fixa ou por marco para uma campanha, evento, programa financiado ou intervenção sob medida delimitados. | Projeto de mídia, evento, programa de impacto, pesquisa ou ativação de ecossistema.                           | Unidade contratante e proprietário de projeto nomeado; entregáveis, marcos e repasses de parceiros devem ser rastreáveis.                                       |
+| **Receita/funding de impacto restrito** | Fundos legal ou contratualmente restritos a um propósito de impacto, educação ou missão.                                | Subsídio do Instituto, doação, patrocínio ou funding restrito de programa.                                    | Instituto HUB (conceitualmente), com ledger restrito, regras de custos elegíveis e reporte; não pode ser silenciosamente reclassificado como receita comercial. |
 
 Um contrato pode conter múltiplas classificações, mas a alocação deve ser documentada no nível de obrigação. Implementação não deve ser apresentada como ARR; volume de transações de marketplace não deve ser apresentado como receita HUB; valor influenciado de clientes não deve ser apresentado como caixa realizado; funding restrito não deve ser contado como receita recorrente comercial. Essas distinções sustentam os princípios de estado de valor em [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]] e exigem refinamento de finanças (**FIN-002**).
 
