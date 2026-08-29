@@ -35,7 +35,7 @@ Tabela validável em `HUB_Blueprint_Oferta_e_Arquitetura_Receita.md`. Cada ofert
 ## Dependências
 - [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades|P01-T01]]
 
-## Critério de aceite (G01.1/G01.2)
+## Critério de refinamento (G01.1/G01.2)
 Nenhuma oferta em 2 unidades sem regra de propriedade + acordo intragrupo anotado.
 
 ## Registros relacionados
@@ -46,7 +46,7 @@ Nenhuma oferta em 2 unidades sem regra de propriedade + acordo intragrupo anotad
 - **Entregável produzido:** matriz oferta → comprador → unidade → capacidade → operação → receita → gap adicionada em [[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.1 Matriz oferta → comprador → unidade → capacidade → operação → receita → gap]].
 - **Cobertura:** 17 ofertas candidatas nas frentes Mídia e Experiências, Impacto Financiável e Ecossistemas Empresariais.
 - **Resultado:** cada linha possui unidade dona, capacidade principal, operação/troca de valor, motor de receita e gap vinculado.
-- **Próximo gate:** validar compradores, JTBD, parceiros, riscos e classificação de receita em refinamento; manter hipóteses explícitas até os aceites de P01.
+- **Próximo gate interno:** investigar compradores, JTBD, parceiros, riscos e classificação de receita em refinamento; manter hipóteses explícitas e não tratá-las como decisões finais.
 
 ## Validação estrutural de STR-002 — 2026-08-27
 
@@ -63,18 +63,18 @@ O inventário foi reconciliado com a matriz §2.1 e com os segmentos de lançame
 
 ### Resultado da validação
 
-- **Propriedade:** fechada em nível de Blueprint; a unidade dona está definida por oferta e não é alterada pelo uso de capacidades compartilhadas.
+- **Propriedade:** coerente em nível de Blueprint; a unidade dona está delineada por oferta e não é alterada pelo uso de capacidades compartilhadas.
 - **Comprador:** definido em nível de segmento e função compradora; ainda não é comprador nomeado nem evidência de demanda.
-- **Economia:** motor de receita e faixa de teste estão definidos; não constituem preço aprovado, margem, ARR, receita reconhecida ou tração.
+- **Economia:** motor de receita e faixa de teste estão definidos como hipóteses; não constituem preço, margem, ARR, receita reconhecida ou tração.
 - **Condição G01.1/G01.2:** atendida estruturalmente para a versão v1, sem sobreposição de unidade dona.
 
-### Pendências para aceite formal
+### Pendências para o próximo ciclo de refinamento
 
-- Nomear o comprador real e a autoridade de contratação para a primeira oferta de cada segmento.
-- Confirmar JTBD, orçamento real, custo de entrega, limite de serviço e economia unitária.
-- Registrar evidência de demanda no log GTM-002 antes de classificar qualquer rota como tração.
-- Reconciliar classificação e reconhecimento de receita com Finanças em FIN-002.
-- Registrar aceite nominal do owner de STR-002; a validação estrutural não equivale a aprovação interfuncional.
+- Refinar o perfil do comprador e a autoridade de contratação para a primeira oferta de cada segmento; não são compradores nomeados nesta camada.
+- Refinar JTBD, hipóteses de orçamento, custo de entrega, limite de serviço e economia unitária; não buscar confirmação financeira nesta camada.
+- Registrar evidências de demanda no log GTM-002; manter qualquer rota como hipótese até haver evidência suficiente.
+- Refinar a classificação e o reconhecimento de receita com as hipóteses de Finanças em FIN-002.
+- Registrar o parecer interno do owner de STR-002; a validação estrutural não equivale a aprovação interfuncional.
 
 ## Fichas operacionais das ofertas — v1 — 2026-08-27
 
@@ -88,7 +88,7 @@ As fichas abaixo tornam explícitas as hipóteses de execução para as 17 ofert
 - **Comprador:** diretor(a) de Marketing, Comunicação, Marca ou RH de empresa, instituição ou associação; sponsor econômico e usuário operacional devem ser identificados no cenário real.
 - **Parceiros:** criação, mídia, pesquisa, distribuição e produção de conteúdo, conforme escopo.
 - **Riscos:** briefing ambíguo; escopo de produção maior que a capacidade; atribuição indevida de impacto; conflito entre marca, público e mensagem.
-- **Critérios de sucesso:** briefing aprovado como entrada; estratégia, público, mensagens, plano de canais e responsáveis documentados; entregáveis aceitos pelo comprador; aprendizado registrado com fonte e data.
+- **Critérios de sucesso:** briefing confirmado como entrada; estratégia, público, mensagens, plano de canais e responsáveis documentados; retorno sobre entregáveis registrado quando houver interação de teste; aprendizado registrado com fonte e data.
 
 #### 2. Eventos e experiências inclusivas
 
@@ -138,7 +138,7 @@ As fichas abaixo tornam explícitas as hipóteses de execução para as 17 ofert
 - **Comprador:** financiador ou instituição com autoridade sobre o desenho e instrumento de funding.
 - **Parceiros:** organizações de implementação, avaliadores, especialistas, educadores e instituições públicas ou comunitárias.
 - **Riscos:** teoria de mudança inconsistente; responsabilidades difusas; orçamento incompatível; indicadores não mensuráveis; dependência de funding condicionado.
-- **Critérios de sucesso:** objetivos e intervenções vinculados; RACI e governança definidos; indicadores e fontes descritos; orçamento e elegibilidade mapeados; plano de aprendizado aprovado como artefato de trabalho.
+- **Critérios de sucesso:** objetivos e intervenções vinculados; RACI e governança definidos; indicadores e fontes descritos; orçamento e elegibilidade mapeados; plano de aprendizado registrado como artefato de trabalho.
 
 #### 8. Portfólio de intervenções financiado
 
@@ -188,7 +188,7 @@ As fichas abaixo tornam explícitas as hipóteses de execução para as 17 ofert
 - **Comprador:** líder de Procurement, Suprimentos, RH, Operações ou comprador corporativo; fornecedores e especialistas são participantes, não necessariamente compradores.
 - **Parceiros:** fornecedores, especialistas, associações, redes profissionais e sistemas de procurement/CRM.
 - **Riscos:** perfil desatualizado; recomendação enviesada; ausência de due diligence; tratamento de match como contratação ou tração; dados pessoais excessivos.
-- **Critérios de sucesso:** necessidade e critérios registrados; perfis verificados na data; alternativas comparáveis apresentadas; conflito e limitações declarados; aceite ou rejeição do comprador registrado.
+- **Critérios de sucesso:** necessidade e critérios registrados; perfis verificados na data; alternativas comparáveis apresentadas; conflito e limitações declarados; retorno do comprador registrado quando houver interação de teste.
 
 #### 14. Conexões qualificadas e pareamento de oportunidades
 
@@ -219,19 +219,19 @@ As fichas abaixo tornam explícitas as hipóteses de execução para as 17 ofert
 - **JTBD:** configurar uma solução, conduzir rollout, operar suporte inicial e evoluir o serviço com controle de mudanças.
 - **Comprador:** comprador corporativo ou dono de ecossistema responsável por implementação, adoção e evolução.
 - **Parceiros:** Plataforma HUB, integração, dados, segurança, especialistas de domínio e fornecedores do cliente.
-- **Riscos:** escopo aberto; dependência de dados ou parceiro; mudança sem aprovação; rollout prematuro; suporte sem limite de serviço.
-- **Critérios de sucesso:** plano de rollout e critérios de aceite definidos; configuração testada; treinamento e suporte entregues; mudanças versionadas; adoção, incidentes e backlog de evolução registrados.
+- **Riscos:** escopo aberto; dependência de dados ou parceiro; mudança sem critério interno; rollout prematuro; suporte sem limite de serviço.
+- **Critérios de sucesso:** plano de rollout e critérios de verificação definidos; configuração testada; treinamento e suporte descritos; mudanças versionadas; adoção, incidentes e backlog de evolução registrados.
 
 ## Matriz de prontidão operacional
 
-| Frente | Ofertas | Unidade dona | Ficha operacional | Próximo artefato sem aprovação final |
+| Frente | Ofertas | Unidade dona | Ficha operacional | Próximo artefato de refinamento |
 |---|---:|---|---|---|
 | Mídia e Experiências | 5 | HUB Negócios | Completa em v1 | Executar cenário SEG-01 |
 | Impacto Financiável | 6 | Instituto HUB | Completa em v1 | Executar cenários SEG-04/SEG-05 |
 | Ecossistemas Empresariais | 6 | HUB Negócios | Completa em v1 | Executar cenários SEG-02/SEG-03/SEG-06 |
 | **Total** | **17** | **N/I** | **17/17** | 6 cenários de teste criados |
 
-As fichas não fecham a aprovação de `STR-002`: compradores reais, evidência de demanda, economia unitária, classificação financeira e aceite nominal continuam pendentes.
+As fichas não encerram o refinamento de `STR-002`: perfil de comprador, evidência de demanda, economia unitária, classificação financeira e parecer interno continuam como hipóteses e pontos de investigação.
 
 ## Cenários de teste por segmento
 

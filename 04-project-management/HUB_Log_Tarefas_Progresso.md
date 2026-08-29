@@ -53,11 +53,11 @@ tags:
 |---|---|---|
 | [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades\|P01-T01]] Matriz das 4 Unidades | `em-revisao` | 2026-08-27 |
 | [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade\|P01-T02]] Matriz Oferta × Comprador × Capacidade | `em-revisao` | 2026-08-27 |
-| [[04-project-management/tarefas/P01-T03_Taxonomia_Receita\|P01-T03]] Taxonomia de Receita | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores\|P01-T04]] Segmentos, Orçamentos e Compradores | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P01-T05_Log_Evidencias_GTM\|P01-T05]] Log de Evidências GTM | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros\|P01-T06]] Limites de Concentração de Parceiros | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P01-T07_Roadmap_Gates\|P01-T07]] Roadmap e Gates | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/P01-T03_Taxonomia_Receita\|P01-T03]] Taxonomia de Receita | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores\|P01-T04]] Segmentos, Orçamentos e Compradores | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T05_Log_Evidencias_GTM\|P01-T05]] Log de Evidências GTM | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros\|P01-T06]] Limites de Concentração de Parceiros | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T07_Roadmap_Gates\|P01-T07]] Roadmap e Gates | `em-revisao` | 2026-08-29 |
 
 ### P02 — Produto e Operação
 
@@ -144,6 +144,13 @@ tags:
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
 
+### 2026-08-29 — P01 avançou para refinamento integrado
+
+- **O que mudou:** P01-T03 a P01-T07 foram executadas e passaram de `pendente` para `em-revisao`; P01-T01 e P01-T02 permanecem em revisão.
+- **Escopo:** os artefatos foram alinhados à Camada 1 — Blueprint e à Camada 2 — Refinamento. Taxonomias, segmentos, limites, evidências e roadmap permanecem hipóteses, modelos de trabalho ou estruturas de investigação.
+- **Decisão:** não buscar aceitação formal, aprovação final, compradores reais, budgets reais ou validação financeira nesta etapa. Nenhum gate foi promovido para `aprovado`.
+- **Próximo passo:** revisar a coerência integrada de P01 e registrar contradições, questões de investigação e dependências para as fases seguintes.
+
 ### 2026-08-27 — Criados seis cenários de teste por segmento para P01-T02
 
 - **O que mudou:** criados cenários operacionais para SEG-01 a SEG-06 a partir das 17 fichas de oferta de P01-T02.
@@ -166,7 +173,7 @@ tags:
 - **O que mudou:** criado este recurso de memória de longo prazo para registro descritivo de status e progresso das tarefas do HUB.
 - **Snapshot inicial de status:**
   - `BP-002` (Produto e Capacidades) — `done`, já revisado e aceito.
-  - `P01-T01` (Matriz das 4 Unidades) — `em-revisao`; revisão cross-functional realizada em 2026-08-27 com **aprovar com condições** em Estratégia, Operações e Jurídico; parecer preparatório indica prontidão para refinamento, mas `STR-001` permanece aberto e sem aceite formal.
+  - `P01-T01` (Matriz das 4 Unidades) — `em-revisao`; revisão interna realizada em 2026-08-27 com condições de refinamento em Estratégia, Operações e Jurídico; o artefato está pronto para o próximo ciclo, mas `STR-001` permanece aberto como questão de coerência.
   - Demais tarefas — sem status registrado nas notas individuais; preenchimento pendente.
 - **Decisões:** statuses padronizados conforme legenda acima; as notas em `tarefas/` continuam sendo a fonte de verdade detalhada.
 - **Próximos passos:** preencher status das tarefas restantes e manter este log em toda sessão.
@@ -178,7 +185,7 @@ tags:
 > Atualizar sempre que um bloqueio surgir ou for resolvido.
 
 - **Nenhum bloqueio registrado até 2026-08-27.**
-- **Em observação:** aceite formal de `P01-T01` pendente — depende de Estratégia, Operações, Jurídico e Finanças (não fecha `STR-001`).
+- **Em observação:** condições de refinamento de `P01-T01` e `STR-001` continuam abertas; devem ser trabalhadas como questões de coerência e desenho, não como aceites formais nesta camada.
 
 ## Marcos
 

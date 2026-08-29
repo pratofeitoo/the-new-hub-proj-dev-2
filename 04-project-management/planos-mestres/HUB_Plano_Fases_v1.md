@@ -1,7 +1,7 @@
 ---
 title: HUB — Plano Diretor de Fases v1
 subtitle: Sequenciamento eficiente para gestão sequencial do projeto completo
-version: 1
+version: "1.0"
 status: em-revisao — gates consolidados, aprovação pendente
 type: plano-mestre
 layer: cross-cutting
@@ -304,15 +304,15 @@ flowchart LR
 
 ### Exemplos citados neste plano
 
-| Código | Contexto de uso neste documento |
-|---|---|
-| **DAT-001** | Entidades/chaves — pré-requisito do spine (P03) |
-| **DAT-003** | Event envelope — pré-requisito do spine (P03) |
-| **DAT-006** | Taxonomia de valor — pré-requisito do spine (P03) |
-| **DAT-004** | Gap que mostrou custo de violar o spine |
-| **FIN-003** | Economia reconstruída — bloqueada até P03+P04+P05 |
-| **TEC-001** | Contrato de integração — bloqueado até DAT aprovado |
-| **BRD-002** | Alegação de valor — bloqueada até DAT aprovado |
-| **LHC-007 / LCH-007** | Gap de lançamento não bloqueador (backlog pós-MVP) |
+| Código                | Contexto de uso neste documento                     |
+| --------------------- | --------------------------------------------------- |
+| **DAT-001**           | Entidades/chaves — pré-requisito do spine (P03)     |
+| **DAT-003**           | Event envelope — pré-requisito do spine (P03)       |
+| **DAT-006**           | Taxonomia de valor — pré-requisito do spine (P03)   |
+| **DAT-004**           | Gap que mostrou custo de violar o spine             |
+| **FIN-003**           | Economia reconstruída — bloqueada até P03+P04+P05   |
+| **TEC-001**           | Contrato de integração — bloqueado até DAT aprovado |
+| **BRD-002**           | Alegação de valor — bloqueada até DAT aprovado      |
+| **LHC-007 / LCH-007** | Gap de lançamento não bloqueador (backlog pós-MVP)  |
 
 > **Nota:** por inconsistência do registro de gaps, `LHC-007` aparece no §3 como `LCH-007`. Ambos referem-se ao mesmo gap de domínio Launch.

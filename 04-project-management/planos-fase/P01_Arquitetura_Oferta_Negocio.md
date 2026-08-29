@@ -44,19 +44,19 @@ updated: 2026-08-26
 
 Definir como o sistema completo do HUB — marca, HUB Negócios, Instituto HUB e Plataforma HUB — se torna um portfólio coerente de ofertas, compradores, trocas de valor, motores de receita e responsabilidades por unidade. Conectar cada oferta ao blueprint completo sem apresentá-la como validada.
 
-> Alvo: fechar `STR-001..003` (relação unidades↔ofertas↔roadmap) + classificar a origem de cada real (`FIN-002`) + nomear segmentos de lançamento (`GTM-001`).
+> Alvo: reduzir os gaps de refinamento `STR-001..003` (relação unidades↔ofertas↔roadmap) + estruturar hipóteses sobre a origem de cada real (`FIN-002`) + delinear segmentos de lançamento (`GTM-001`).
 
-## 2. Gaps que esta fase fecha
+## 2. Gaps de refinamento trabalhados nesta fase
 
-| ID | Gap | Tipo | Condição de aprovação (do registro) |
+| ID | Gap | Tipo | Evidência/condição de refinamento |
 |---|---|---|---|
-| **STR-001** | Relação unidades↔ofertas↔clientes↔ops↔plataforma | definition | Estratégia+Ops+Jurídico+Finanças aprovam modelo de sistema consistente |
+| **STR-001** | Relação unidades↔ofertas↔clientes↔ops↔plataforma | definition | Modelo de sistema coerente, com hipóteses, interfaces e pontos de investigação registrados |
 | **STR-002** | Arquitetura de ofertas (quem compra o quê, por qual unidade, com qual recorrência) | definition | Toda oferta de lançamento tem comprador, troca de valor, responsável e economia |
-| **STR-003** | Roadmap que preserve sistema completo | connection | Dependências e critérios de saída de fase aprovados em todos os domínios |
+| **STR-003** | Roadmap que preserve sistema completo | connection | Dependências e critérios de saída de fase coerentes entre os domínios, com lacunas explícitas |
 | **STR-005** | Papel de parceiros e rota comercial | definition | Nenhum caminho crítico depende de parceiro não confirmado |
-| **FIN-002** | Taxonomia de receita primária/secundária/expansão | definition | Finanças aprovam classificação e lógica de relatórios |
-| **GTM-001** | Segmentação por portfólio | definition | Segmentos e propriedade de lançamento aprovados |
-| **GTM-002** | Demanda documentada por rota | evidence | Nenhuma rota tratada como tração sem evidência |
+| **FIN-002** | Taxonomia de receita primária/secundária/expansão | definition | Classificação e lógica de relatórios estruturadas como hipótese de trabalho, com questões para refinamento financeiro |
+| **GTM-001** | Segmentação por portfólio | definition | Segmentos e propriedade de lançamento delineados, com premissas e evidências necessárias registradas |
+| **GTM-002** | Demanda documentada por rota | evidence | Rotas classificadas como hipótese até que evidências de demanda sejam registradas |
 
 > Backlog não-crítico desta fase: `STR-004` (moat), `STR-006` (categorias), `STR-007` (autoridade delegada) — entram em P06/P04.
 
@@ -93,7 +93,7 @@ Definir como o sistema completo do HUB — marca, HUB Negócios, Instituto HUB e
 | Matriz oferta–comprador–capacidade v1 | `01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (atualizado) | blueprint |
 | Diagrama 4 unidades + frentes + ofertas | mesmo doc (anexo mermaid) | blueprint |
 | Taxonomia de receita (primária/secundária/expansão + comercial vs restrita) | mesmo doc § Receita + `05-resources/planilhas/` (tabela) | blueprint |
-| Arquitetura de compradores de lançamento (segmentos, papéis, orçamentos) | mesmo doc + `02-refinement/pesquisa/` (se entrevistas) | refining |
+| Arquitetura de compradores de lançamento (segmentos, papéis, hipóteses de orçamento) | mesmo doc + `02-refinement/pesquisa/` (se entrevistas) | refining |
 | Portfólio de parceiros + matriz dependências | `02-refinement/pesquisa/` + `00-project-control/dependencias/` | refining |
 | Roadmap P01–P07 atualizado | `HUB_Plano_Fases_v1.md` + `04-project-management/cronogramas/` | gestão |
 | Pacote de revisão P01 | `03-approval/pacotes-revisao/P01-Oferta-Negocio.md` | approval |
@@ -107,9 +107,9 @@ Definir como o sistema completo do HUB — marca, HUB Negócios, Instituto HUB e
 - [ ] **G01.2** — Nenhuma oferta aparece em 2 unidades sem regra de propriedade explícita e acordo intragrupo anotado.
 - [ ] **G01.3** — Taxonomia de receita distingue pelo menos: implementação, licença/plataforma, assinatura, marketplace (adiado), mídia, funding restrito — com regra de reconhecimento (quando vira ARR vs receita pontual vs restrita).
 - [ ] **G01.4** — Toda rota crítica de lançamento tem `parceiro = nomeado + status [confirmado/hipótese]`. Se hipótese, há rota fallback documentada (STR-005).
-- [ ] **G01.5** — Segmentos de lançamento aprovados por Finanças+Jurídico+Ops (assinaturas em decisão).
+- [ ] **G01.5** — Segmentos de lançamento coerentes com as hipóteses de Finanças, Jurídico e Ops, com questões e evidências faltantes registradas.
 - [ ] **G01.6** — Roadmap P01→P07 com dependências e critérios de saída de fase publicado e sem contradição entre domínios (STR-003).
-- [ ] **G01.7** — Pacote de revisão P01 revisado por pelo menos Estratégia, Finanças, Jurídico, Ops.
+- [ ] **G01.7** — Pacote de revisão P01 submetido a revisão interna de Estratégia, Finanças, Jurídico e Ops, com divergências e próximos ciclos registrados.
 
 ## 7. Tarefas (backlog inicial)
 

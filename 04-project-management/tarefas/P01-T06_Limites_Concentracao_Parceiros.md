@@ -25,16 +25,16 @@ tags:
 # P01-T06 — Limites de concentração de parceiros (thresholds)
 
 ## Objetivo
-Definir thresholds numéricos para concentração receita/roadmap/capacidade/dados/reputação e política de escalonamento.
+Propor e documentar thresholds numéricos para concentração de receita/roadmap/capacidade/dados/reputação e política de escalonamento, como hipótese de governança para o refinamento.
 
 ## Entregável
-Tabela de limites em `02-refinement/pesquisa/` linkada ao portfólio de parceiros.
+Tabela de limites propostos em `02-refinement/pesquisa/`, linkada ao portfólio de parceiros e encaminhada para revisão posterior de Governança.
 
 ## Dependências
 - [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade|P01-T02]]
 
 ## Critério de aceite
-Aprovado por Governança.
+Hipóteses registradas com métricas, denominadores e escalonamento explícitos, com encaminhamento para revisão de Governança; este registro não constitui aprovação final.
 
 ## Registros relacionados
 - [[00-project-control/registro-lacunas/lacunas/GTM-006]]
@@ -43,5 +43,6 @@ Aprovado por Governança.
 
 - **Entregável produzido:** [[02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos|matriz de limites de concentração de parceiros — hipóteses propostas]].
 - **Cobertura:** thresholds warning/critical para receita, roadmap, capacidade, dados e reputação, com métrica/denominador, escalonamento, fallback, cadência, owner e fonte de evidência.
-- **Governança:** todos os valores estão explicitamente marcados como propostos/hipóteses controladas; aprovação permanece pendente e é o critério de aceite.
+- **Governança:** todos os valores estão explicitamente marcados como propostos/hipóteses controladas; revisão e eventual aprovação permanecem pendentes e não são promovidas nesta etapa.
+- **Encaminhamento:** [[04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao|P06-T09]] usa esta matriz como insumo; a conexão com P07 permanece sujeita à verificação composta do roadmap, sem aprovação automática.
 - **Validação:** `git diff --check` e validação estrutural focada executados após a edição.

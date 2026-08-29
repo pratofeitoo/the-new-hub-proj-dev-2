@@ -61,13 +61,13 @@ views:
       - owner
       - gap_ids
       - formula.gap_count
-      - dependencies
       - target_file
+      - dependencies
       - formula.is_critical
     summaries:
       formula.gap_count: Sum
     columnSize:
-      file.name: 364
+      file.name: 327
       note.gap_ids: 203
   - type: table
     name: Caminho Crítico (P01→P02→P03→P06→P07)

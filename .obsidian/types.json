@@ -10,7 +10,7 @@
     "owner": "multitext",
     "task_type": "multitext",
     "type": "multitext",
-    "version": "multitext",
+    "version": "text",
     "phase": "multitext",
     "date": "datetime",
     "domain": "multitext",
