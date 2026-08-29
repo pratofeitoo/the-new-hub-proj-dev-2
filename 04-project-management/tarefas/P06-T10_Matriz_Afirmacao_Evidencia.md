@@ -41,3 +41,5 @@ Review proposto para avaliação posterior; matriz deve permitir verificar que n
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/BRD-002]] · [[00-project-control/registro-lacunas/lacunas/GTM-007]]
+
+> **Nota de escopo:** `BRD-002` e `GTM-007` são os gaps canônicos desta tarefa. `BRD-004` (governança de idioma, localização e terminologia) permanece backlog pós-MVP e não faz parte do critério G06.10.

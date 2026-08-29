@@ -91,7 +91,7 @@ Produzir economia verificável, modelo de mercado bottom-up, estratégia GTM seq
 6. Dicionário KPIs financeiros: ARR/MRR/NRR, coortes, timing, ledger fonte verdade (FIN-007).
 7. Modelo mercado bottom-up: contas nomeadas, alcançabilidade, ACV, ativação/renovação (GTM-005).
 8. Log evidências por rota GTM (GTM-002) + análise alternativas buyer-ranked (GTM-004) + estratégia canais sequenciada com fallback (GTM-003) + limites concentração (GTM-006).
-9. Arquitetura marca + hierarquia + regras white-label (BRD-001/003) + matriz afirmação-evidência + glossário controlado (BRD-002/004, GTM-007).
+9. Arquitetura marca + hierarquia + regras white-label (BRD-001/003) + matriz afirmação-evidência + glossário controlado (BRD-002, GTM-007). A governança de idioma/localização (BRD-004) permanece backlog pós-MVP.
 10. Teste defensibilidade moat (STR-004) + portfólio parceiros refinado (STR-005) + posicionamento categoria (STR-006).
 
 ### Fora
@@ -138,16 +138,20 @@ Produzir economia verificável, modelo de mercado bottom-up, estratégia GTM seq
 
 | Tarefa | Gap |
 |---|---|
-| Registro premissas com proveniência | FIN-001 |
-| Reconstruir modelo financeiro 3 cenários | FIN-003 |
-| Ponte valor (árvore valor ↔ indicadores) | FIN-004 |
-| Definir separação comercial vs restrito | FIN-005 |
-| Modelo capital + tranches | FIN-006 |
-| Dicionário KPIs financeiros | FIN-007 |
-| Modelo mercado bottom-up | GTM-005 |
-| Log evidências rota + análise alternativas | GTM-002, GTM-004 |
-| Estratégia canais + limites concentração | GTM-003, GTM-006 |
-| Matriz afirmação-evidência + glossário | BRD-002, BRD-004 |
+| **P06-T01** — Registro premissas com proveniência | FIN-001 |
+| **P06-T02** — Reconstruir modelo financeiro 3 cenários | FIN-003 |
+| **P06-T03** — Ponte valor (árvore valor ↔ indicadores) | FIN-004 |
+| **P06-T04** — Definir separação comercial vs restrito | FIN-005 |
+| **P06-T05** — Modelo capital + tranches | FIN-006 |
+| **P06-T06** — Dicionário KPIs financeiros | FIN-007 |
+| **P06-T07** — Modelo mercado bottom-up | GTM-005 |
+| **P06-T08** — Log evidências rota + análise alternativas | GTM-002, GTM-004 |
+| **P06-T09** — Estratégia canais + limites concentração | GTM-003, GTM-006 |
+| **P06-T10** — Matriz afirmação-evidência + glossário | BRD-002, GTM-007 |
+| **P06-T11** — Arquitetura de marca + regras white-label | BRD-001, BRD-003 |
+| **P06-T12** — Teste de defensibilidade (moat institucional + evidência) | STR-004, STR-005, STR-006 |
+
+> **Nota de escopo:** `BRD-004` (governança de idioma, localização e terminologia) é backlog pós-MVP e não compõe o conjunto de gaps/tarefas do gate P06.
 
 ## 8. Riscos
 

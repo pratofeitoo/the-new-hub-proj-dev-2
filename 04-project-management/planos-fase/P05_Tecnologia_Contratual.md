@@ -51,9 +51,9 @@ Definir a arquitetura-alvo, contratos de integração, requisitos não funcionai
 | **TEC-002** | Confiabilidade: SLOs, on-call, runbooks, recuperação | governance | Exercícios recuperação atendem limiares serviço+integridade |
 | **TEC-003** | Arquitetura-alvo, ambientes, NFRs | definition | Revisão arquitetura aprova escalabilidade/segurança/manutenibilidade |
 | **TEC-004** | Tenancy/IAM/secrets/auditoria/incidentes | governance | Aprovação segurança + remediação evidenciada |
-| **TEC-005** | Custo/latência/volume/rate-limit por integração | validation | Economia técnica sustenta plano negócio/lançamento |
+| **TEC-005** | Custo/latência/volume/rate-limit por integração | validation · **blocking: yes** | Economia técnica sustenta plano negócio/lançamento antes de P06 |
 | **TEC-006** | Mapa identidade entre sistemas → comportamento integração | connection | Testes integração demonstram resolução entidade correta |
-| **TEC-007** | Release, rollback, suporte, ambientes | launch | Prontidão release/rollback/suporte aprovada |
+| **TEC-007** | Release, rollback, suporte, ambientes | launch · **blocking: yes** | Prontidão release/rollback/suporte aprovada antes de P07 |
 
 ## 3. Escopo
 
@@ -97,10 +97,10 @@ Definir a arquitetura-alvo, contratos de integração, requisitos não funcionai
 - [ ] **G05.1** — Arquitetura-alvo revisada e aprovada para escalabilidade, segurança, manutenibilidade (TEC-003).
 - [ ] **G05.2** — Cada integração M0 tem contrato (payload, auth, owner, versão, system-of-record) e passa em review contrato+segurança (TEC-001).
 - [ ] **G05.3** — Testes integração demonstram resolução correta de entidades via chaves P03 (TEC-006).
-- [ ] **G05.4** — Baseline técnico (custo/latência/volume/rate-limit) publicado e输入ado no modelo financeiro P06 (TEC-005).
+- [ ] **G05.4** — Baseline técnico (custo/latência/volume/rate-limit) publicado e integrado ao modelo financeiro P06 (**TEC-005; blocking: yes**). Otimizações avançadas e novas integrações ficam pós-MVP.
 - [ ] **G05.5** — Modelo ameaças + controles tenancy/IAM/secrets/auditoria aprovados; remediações críticas evidenciadas (TEC-004).
 - [ ] **G05.6** — SLOs + on-call + runbooks + testes recuperação (inclui replay/DLQ) atendem limiares aprovados (TEC-002).
-- [ ] **G05.7** — Processo release/rollback + ambientes + suporte aprovados (TEC-007).
+- [ ] **G05.7** — Processo release/rollback + ambientes + suporte aprovados e testados (**TEC-007; blocking: yes**). Automação/expansão de ambientes e progressive delivery ficam pós-MVP.
 
 ## 7. Tarefas
 

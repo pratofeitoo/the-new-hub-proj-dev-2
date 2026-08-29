@@ -59,7 +59,7 @@ Produzir o modelo canônico de dados, eventos, métricas e valor do HUB — com 
 | **DAT-006** | Regras atribuição valor + estados valor | definition | Finanças+Gov dados aprovam classificação valor |
 | **DAT-008** | Mapa finalidade-campo + retenção/exclusão derivados | governance | LGPD valida propagação ponta a ponta |
 | **DAT-009** | Fluxos linhagem/correção/replay/DSAR | implementation | Testes controle passam |
-| **DAT-010** | Fonte verdade autoritativa (origem vs corrigido) | validation | Linhagem artefatos inequívoca |
+| **DAT-010** | Fonte verdade autoritativa (origem vs corrigido) | validation · **blocking: yes** | Linhagem de artefatos inequívoca antes de liberar o gate P03 |
 
 > Fora desta fase: `DAT-007` (M2/M3 thresholds, fica para P06/M3).
 
@@ -109,7 +109,7 @@ Produzir o modelo canônico de dados, eventos, métricas e valor do HUB — com 
 
 ### Sub-gate S3B — Eventos & Contratos (libera P05 detalhar payloads)
 - [ ] **G03.B1** — Envelope canônico de evento + schema registry + versionamento + idempotência publicados; produtores/consumidores de teste passam em contrato+replay (DAT-003).
-- [ ] **G03.B2** — Dicionário físico ~41 campos mapeado para entidades canônicas; contradições entre `abas-origem/` e `03-csv-corrigido/` resolvidas e registradas em `04-registro-correcoes/` (DAT-010).
+- [ ] **G03.B2** — Dicionário físico ~41 campos mapeado para entidades canônicas; contradições entre `abas-origem/` e `03-csv-corrigido/` resolvidas e registradas em `04-registro-correcoes/` (**DAT-010; blocking: yes**). Este mínimo é obrigatório para liberar P03; automação e cobertura adicional de fontes são extensões pós-MVP.
 
 ### Gate G3 completo — Métricas & Valor (libera P06)
 - [ ] **G03.C1** — Catálogo de 73 indicadores com fórmula, dimensão, owner e dependência; nenhuma métrica crítica com definição alternativa (DAT-005).

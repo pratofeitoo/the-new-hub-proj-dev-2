@@ -53,7 +53,7 @@ Construir e operar o portão mestre de lançamento do sistema completo — cobri
 | **LCH-004** | Rastreabilidade requisito→evidência→entregável | connection | Nenhum crítico órfão |
 | **LCH-005** | Riscos/premissas/dependências com dono/data/limiar | governance | Críticos com tratamento ou bloqueiam |
 | **LCH-006** | Onboarding cliente, contratos, preço, privacidade, suporte | launch | Checklist comercial+operacional passa |
-| **LCH-007** | Ciclo vida artefatos (blocked/refining→aprovado) | validation | Todo artefato lançamento com status válido |
+| **LCH-007** | Ciclo vida artefatos (blocked/refining→aprovado) | validation · **blocking: yes** | Todo artefato lançamento com status e proveniência válidos antes de liberar P07 |
 | **STR-003** | Roadmap coerente entre domínios | connection | Dependências + critérios saída aprovados |
 
 ## 3. Escopo
@@ -101,7 +101,7 @@ Construir e operar o portão mestre de lançamento do sistema completo — cobri
 - [ ] **G07.4** — Matriz rastreabilidade sem requisito crítico órfão (LCH-004).
 - [ ] **G07.5** — Riscos/premissas/dependências críticas com dono, data, limiar e tratamento; sem risco crítico sem plano (LCH-005).
 - [ ] **G07.6** — Checklist comercial: onboarding, contratos, preços com base P06, aviso privacidade P04, suporte e alegações limitadas a evidência P06 (LCH-006).
-- [ ] **G07.7** — Todo artefato de lançamento tem status válido e proveniência; regra promoção respeitada (LCH-007).
+- [ ] **G07.7** — Todo artefato de lançamento tem status válido e proveniência; regra promoção respeitada (**LCH-007; blocking: yes**). Retenção histórica ampliada fica pós-MVP.
 - [ ] **G07.8** — Roadmap e gates P01→P07 sem contradição (STR-003).
 
 > **Definição de lançamento pronto:** `P07 Launch Approved` = `P01..P06` aprovados + G07.1..G07.8 passam + sistema coerente como um todo (framework Definição de conclusão). Não basta 1 módulo.

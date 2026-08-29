@@ -92,13 +92,13 @@ flowchart TD
 | **P02** | Produto & Operação | `PRD-001,002` · `STR-007` · `GOV-008` | `BP-002` + `BP-005` | Fronteiras de módulos + matriz permissão + SOPs C.A.O.S. | Produto + Ops | Operability ready |
 | **P03** | Dados Canônicos (spine) | `DAT-001..006` · `DAT-008` | `BP-003` | Modelo lógico/físico + event envelope + catálogo métricas | Dados | Data arch approved |
 | **P04** | Governança & Confiança | `GOV-001..005` · `GOV-008` | `BP-006` | Estrutura entidades + LGPD map + Selo charter | Jurídico | Legal/Sec approved |
-| **P05** | Tecnologia Contratual | `TEC-001..004` · `TEC-006` | `BP-004` | Contratos API/evento + SLOs + threat model | Tech | Arch/Sec approved |
+| **P05** | Tecnologia Contratual | `TEC-001..007` | `BP-004` | Contratos API/evento + SLOs + threat model | Tech | Arch/Sec approved |
 | **P06** | Economia & GTM com Evidência | `FIN-001,003,006` · `GTM-002..006` · `BRD-002` | `BP-007` + parte `BP-001` | Modelo financeiro reconstruído + claim library + GTM routes | Finanças + GTM | Evidence audit passed |
-| **P07** | Portão de Lançamento | `LCH-001..006` | `BP-008` | Checklist integrado + runbook + workflow aprovação | Controle Projeto | Launch Approved |
+| **P07** | Portão de Lançamento | `LCH-001..007` · `STR-003` | `BP-008` | Checklist integrado + runbook + workflow aprovação | Controle Projeto | Launch Approved |
 
 > Detalhamento completo em [`04-project-management/planos-fase/P01_*.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-fase) — um arquivo por fase com entradas/saídas, critérios de saída verificáveis e backlog de tarefas.
 
-**Cobertura de gaps:** P01–P07 fecham **24 gaps críticos + 22 dos 35 altos** diretamente. Restante (`DAT-007/010`, `TEC-005/007`, `BRD-004`, `LCH-007` etc. — prioridade Média/Alta não bloqueadora) fica como backlog pós-MVP dentro de cada fase (ver `Fora de escopo` em cada P).
+**Cobertura de gaps:** P01–P07 fecham **24 gaps críticos + 22 dos 35 altos** diretamente. DAT-010, TEC-005, TEC-007 e LCH-007 têm mínimo obrigatório bloqueador nos respectivos gates; somente extensões além desse mínimo, além de BRD-004, ficam como backlog pós-MVP.
 
 **Roadmap M0–M4 (da Fundação §10) mapeado:**
 
@@ -280,6 +280,6 @@ flowchart LR
 | **FIN-003** | Economia reconstruída — bloqueada até P03+P04+P05 |
 | **TEC-001** | Contrato de integração — bloqueado até DAT aprovado |
 | **BRD-002** | Alegação de valor — bloqueada até DAT aprovado |
-| **LHC-007 / LCH-007** | Gap de lançamento não bloqueador (backlog pós-MVP) |
+| **LCH-007** | Ciclo de vida de artefatos — bloqueador do G07.7; extensões pós-MVP |
 
-> **Nota:** por inconsistência do registro de gaps, `LHC-007` aparece no §3 como `LCH-007`. Ambos referem-se ao mesmo gap de domínio Launch.
+> **Nota:** `LCH-007` é a grafia canônica do gap de ciclo de vida de artefatos.

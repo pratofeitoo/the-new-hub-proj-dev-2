@@ -136,10 +136,10 @@ flowchart LR
 |---|---|
 | **Depende de** | M03.A |
 | **Libera** | P05 contratos |
-| **Gaps** | `DAT-003,010` |
+| **Gaps** | `DAT-003`, `DAT-010` (**blocking: yes** at G03.B2) |
 
 - [ ] **G03.B1** Envelope evento + schema registry + idempotência + replay
-- [ ] **G03.B2** Dicionário físico mapeado; `03-csv-corrigido/` reconciliado
+- [ ] **G03.B2** Dicionário físico mapeado; `03-csv-corrigido/` reconciliado (**DAT-010; blocking: yes**)
 
 ### M03 — Dados Completos (libera P06)
 
@@ -190,16 +190,16 @@ flowchart LR
 | **Depende de** | M03.B |
 | **Paralelo com** | M04 |
 | **Dono (A)** | Tech |
-| **Gaps** | `TEC-001..007` |
+| **Gaps** | `TEC-001..007`; `TEC-005` e `TEC-007` (**blocking: yes** nos G05.4/G05.7) |
 | **Pacote revisão** | `03-approval/pacotes-revisao/P05-Tecnologia.md` |
 
 - [ ] **G05.1** Arquitetura-alvo aprovada
 - [ ] **G05.2** Contratos M0 com review contrato+segurança
 - [ ] **G05.3** Testes integração com resolução identidade correta
-- [ ] **G05.4** Baseline técnico inputado em P06
+- [ ] **G05.4** Baseline técnico integrado em P06 (**TEC-005; blocking: yes**)
 - [ ] **G05.5** Threat model + tenancy/IAM/secrets
 - [ ] **G05.6** SLOs + runbooks + recuperação testados
-- [ ] **G05.7** Release/rollback aprovado
+- [ ] **G05.7** Release/rollback aprovado (**TEC-007; blocking: yes**)
 
 ---
 
@@ -211,8 +211,10 @@ flowchart LR
 | **Depende de** | M03 + M04 + M05 |
 | **Libera** | M07 |
 | **Dono (A)** | Finanças |
-| **Gaps** | `FIN-001,003..007` · `GTM-002..007` · `BRD-001..003` |
+| **Gaps** | `FIN-001,003..007` · `GTM-002..007` · `BRD-001..003` · `STR-004..006` |
 | **Pacote revisão** | `03-approval/pacotes-revisao/P06-Economia-GTM.md` |
+
+> **Backlog pós-MVP:** `BRD-004` (governança de idioma, localização e terminologia) não compõe o conjunto de gaps nem o gate M06.
 
 > **Condição de entrada:** `STR-003` deve estar evidenciado e aceito para qualquer claim, projeção ou rota comercial; se continuar aberto, o gate permanece bloqueado para esses itens e não pode ser contado como tração.
 
@@ -238,7 +240,7 @@ flowchart LR
 | **Fase** | [`P07_Portao_Lancamento`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-fase/P07_Portao_Lancamento.md) |
 | **Depende de** | M06 + M04 (gov) |
 | **Dono (A)** | Controle Projeto |
-| **Gaps** | `LCH-001..007` · `STR-003` |
+| **Gaps** | `LCH-001..007` · `STR-003`; `LCH-007` (**blocking: yes** no G07.7) |
 | **Artefatos** | `03-approval/portao-lancamento/portao-mestre-v1.md` + runbook + matriz rastreabilidade |
 
 - [ ] **G07.1** Portão mestre sem crítico em `blueprint`
@@ -247,7 +249,7 @@ flowchart LR
 - [ ] **G07.4** Rastreabilidade sem órfão crítico
 - [ ] **G07.5** Riscos com dono+limiar+tratamento
 - [ ] **G07.6** Checklist comercial (contratos, preço, privacidade, suporte)
-- [ ] **G07.7** Artefatos com status válido; `06-deliverables/` só pós-aprovação
+- [ ] **G07.7** Artefatos com status válido; `06-deliverables/` só pós-aprovação (**LCH-007; blocking: yes**)
 - [ ] **G07.8** Roadmap sem contradição
 
 > **Definição de completo:** `M07 Launch Approved` = `M01..M06` aprovados + G07.1..8 + sistema coerente (framework Definição de conclusão). Piloto isolado não é lançamento.
