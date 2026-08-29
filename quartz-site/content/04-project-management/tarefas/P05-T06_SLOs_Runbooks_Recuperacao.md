@@ -2,7 +2,7 @@
 title: P05-T06 — SLOs + on-call + runbooks + testes de recuperação
 task_id: P05-T06
 phase: P05
-status: pendente
+status: em-revisao
 priority: alta
 area: technology
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Definir SLOs, ownership on-call, runbooks, retries/DLQ/replay/quarentena/rollback e exercitar recuperação.
 
 ## Entregável
-Exercícios atendem limiares de serviço+integridade.
+Especificação revisável de SLOs, runbooks e exercícios de recuperação, com limiares de serviço e integridade a serem testados.
 
 ## Dependências
 - [[04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes|P05-T01]]
 
 ## Critério (G05.6)
-Limiares aprovados.
+Limiar, resultado de teste e lacunas de recuperação registrados para revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/TEC-002]]

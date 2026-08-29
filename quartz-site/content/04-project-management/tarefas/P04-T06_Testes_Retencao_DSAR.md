@@ -30,14 +30,14 @@ tags:
 Executar testes ponta a ponta de retenção, DSAR, exclusão, portabilidade cobrindo derivados, backups, caches, fornecedores e saídas de parceiros.
 
 ## Entregável
-Relatórios de teste com SLAs atendidos em `02-refinement/refinamento-governanca/` + `03-approval/evidencias/`.
+Relatórios de teste planejados ou realizados, com resultados, evidências e lacunas para revisão posterior, em `02-refinement/refinamento-governanca/` + `03-approval/evidencias/`.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR|P03-T09]]
 - [[04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo|P04-T02]]
 
 ## Critério (G04.6)
-SLAs atendidos.
+Critérios de SLA definidos e resultados registrados; atendimento e exceções permanecem sujeitos à avaliação posterior.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-007]]

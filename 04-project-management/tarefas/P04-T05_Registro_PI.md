@@ -2,7 +2,7 @@
 title: P04-T05 — Registro PI + acordos de contribuidores
 task_id: P04-T05
 phase: P04
-status: pendente
+status: em-revisao
 priority: alta
 area: governance-legal
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Mapear titularidade de marca, C.A.O.S., conteúdo, software, schemas, dados/derivados + acordos de contribuidores.
 
 ## Entregável
-Registro PI completo e exigível.
+Registro PI em refinamento, com cadeia de titularidade e acordos propostos para revisão jurídica posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P04-T01_Arquitetura_Entidades|P04-T01]]
 
 ## Critério (G04.5)
-Cadeia completa e exigível.
+Cadeia de titularidade e acordos mapeados, com lacunas e pontos para validação jurídica posterior.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-006]]

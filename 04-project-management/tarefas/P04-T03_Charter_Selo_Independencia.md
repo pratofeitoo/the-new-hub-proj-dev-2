@@ -2,7 +2,7 @@
 title: P04-T03 — Charter independência do Selo HUB + controles operacionais
 task_id: P04-T03
 phase: P04
-status: pendente
+status: em-revisao
 priority: critica
 area: governance-legal
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Elaborar carta de governança independente: nomeação/pagamento avaliadores, conflitos, recursos, desligamento, regras de alegação pública, segregação receita comercial.
 
 ## Entregável
-Charter publicado; se não aprovado, Selo permanece bloqueado.
+Rascunho de Charter para revisão; até eventual aprovação na Camada 3, o Selo permanece bloqueado.
 
 ## Dependências
 - [[04-project-management/tarefas/P04-T01_Arquitetura_Entidades|P04-T01]]
 
-## Critério (G04.3)
-Revisão independente aprova modelo; avaliador não controlado por vendas.
+## Critério de refinamento (G04.3)
+O modelo deve explicitar revisão independente e a ausência de controle do avaliador por vendas; a aprovação permanece pendente de evidências e revisão futura.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-003]]

@@ -2,7 +2,7 @@
 title: P05-T03 — Mapa identidade entre sistemas (chaves canônicas)
 task_id: P05-T03
 phase: P05
-status: pendente
+status: em-revisao
 priority: alta
 area: technology
 layer: refining
@@ -30,14 +30,14 @@ tags:
 Conectar chaves de integração ao modelo canônico; mapear identidade/propriedade entre sistemas externos e HUB.
 
 ## Entregável
-Mapa + testes demonstrando resolução correta de entidades.
+Mapa revisável + testes de refinamento para avaliar a resolução de entidades.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T02_Servico_Identidade_Matching|P03-T02]]
 - [[04-project-management/tarefas/P05-T02_Contratos_Integracao|P05-T02]]
 
 ## Critério (G05.3)
-Testes passam com chaves P03.
+Os testes de refinamento devem permitir avaliar a resolução com as chaves P03; resultados permanecem sujeitos a revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/TEC-006]]

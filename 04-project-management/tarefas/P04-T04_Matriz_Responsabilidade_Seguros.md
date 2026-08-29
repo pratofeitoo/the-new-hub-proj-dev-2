@@ -2,7 +2,7 @@
 title: P04-T04 — Matriz de responsabilidade + seguros e indenizações
 task_id: P04-T04
 phase: P04
-status: pendente
+status: em-revisao
 priority: alta
 area: governance-legal
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Mapear responsabilidade civil para recomendações, matching, fornecedores, incidentes de dados e alegações públicas + seguros/indenizações.
 
 ## Entregável
-Matriz com exposição residual aprovada por Jurídico+risco.
+Matriz com exposição residual documentada para análise posterior por Jurídico e Risco; não constitui aprovação nesta etapa.
 
 ## Dependências
 - [[04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo|P04-T02]]
 
-## Critério (G04.4)
-Aprovação Jurídico+risco.
+## Critério de refinamento (G04.4)
+As responsabilidades, seguros e indenizações devem estar explicitados para revisão posterior por Jurídico e Risco; a aprovação permanece pendente de evidências e decisão na Camada 3.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-004]]

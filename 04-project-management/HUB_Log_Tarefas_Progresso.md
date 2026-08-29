@@ -88,26 +88,26 @@ tags:
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P04-T01_Arquitetura_Entidades\|P04-T01]] Arquitetura de Entidades | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo\|P04-T02]] Mapa de Governança de Dados e Fluxo | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P04-T03_Charter_Selo_Independencia\|P04-T03]] Charter do Selo de Independência | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P04-T04_Matriz_Responsabilidade_Seguros\|P04-T04]] Matriz de Responsabilidade e Seguros | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P04-T05_Registro_PI\|P04-T05]] Registro de PI | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P04-T06_Testes_Retencao_DSAR\|P04-T06]] Testes de Retenção e DSAR | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P04-T07_RACI_v2_Direitos_Decisao\|P04-T07]] RACI v2 — Direitos e Decisão | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P04-T08_Revisao_Inteligencia_Responsavel\|P04-T08]] Revisão de Inteligência Responsável | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/P04-T01_Arquitetura_Entidades\|P04-T01]] Arquitetura de Entidades | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo\|P04-T02]] Mapa de Governança de Dados e Fluxo | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T03_Charter_Selo_Independencia\|P04-T03]] Charter do Selo de Independência | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T04_Matriz_Responsabilidade_Seguros\|P04-T04]] Matriz de Responsabilidade e Seguros | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T05_Registro_PI\|P04-T05]] Registro de PI | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T06_Testes_Retencao_DSAR\|P04-T06]] Testes de Retenção e DSAR | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T07_RACI_v2_Direitos_Decisao\|P04-T07]] RACI v2 — Direitos e Decisão | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T08_Revisao_Inteligencia_Responsavel\|P04-T08]] Revisão de Inteligência Responsável | `em-revisao` | 2026-08-29 |
 
 ### P05 — Tecnologia e Contratos
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes\|P05-T01]] Arquitetura de Solução e Ambientes | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P05-T02_Contratos_Integracao\|P05-T02]] Contratos de Integração | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P05-T03_Mapa_Identidade_Sistemas\|P05-T03]] Mapa de Identidade entre Sistemas | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade\|P05-T04]] Baseline Técnico de Capacidade | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P05-T05_Threat_Model_Controles\|P05-T05]] Threat Model e Controles | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao\|P05-T06]] SLOs, Runbooks e Recuperação | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P05-T07_Processo_Release_Rollback\|P05-T07]] Processo de Release e Rollback | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes\|P05-T01]] Arquitetura de Solução e Ambientes | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T02_Contratos_Integracao\|P05-T02]] Contratos de Integração | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T03_Mapa_Identidade_Sistemas\|P05-T03]] Mapa de Identidade entre Sistemas | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade\|P05-T04]] Baseline Técnico de Capacidade | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T05_Threat_Model_Controles\|P05-T05]] Threat Model e Controles | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao\|P05-T06]] SLOs, Runbooks e Recuperação | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T07_Processo_Release_Rollback\|P05-T07]] Processo de Release e Rollback | `em-revisao` | 2026-08-29 |
 
 ### P06 — Economia, GTM e Evidência
 
@@ -164,6 +164,20 @@ tags:
 - **Escopo:** modelos, identidade, eventos, mapeamentos, métricas, linhagem, estados de valor, finalidade e DSAR permanecem artefatos de Blueprint/Refinamento; referências à Camada 3 são futuras e não representam aprovação atual.
 - **Resultado:** a linguagem foi ajustada para propostas, rascunhos, verificações e revisão posterior, sem promover artefatos para produção, aprovação final ou aceite formal.
 - **Próximo passo:** revisar a coerência integrada da spine de dados com as entradas de P01/P02 antes de iniciar P04/P05.
+
+### 2026-08-29 — P04 revisada para refinamento coerente
+
+- **O que mudou:** P04-T01 a P04-T08 foram revisadas; as tarefas passaram de `pendente` para `em-revisao`.
+- **Escopo:** arquitetura de entidades, governança de dados, Selo, responsabilidades, PI, DSAR, RACI e inteligência responsável permanecem propostas e artefatos de refinamento; referências à Camada 3 são futuras.
+- **Resultado:** a linguagem foi ajustada para rascunhos, propostas, evidências e revisão posterior, sem declarar aprovação final, liberação produtiva ou aceite formal.
+- **Próximo passo:** revisar a coerência integrada de P04 com as entradas de P03 e registrar dependências para P05/P06.
+
+### 2026-08-29 — P05 revisada para refinamento coerente
+
+- **O que mudou:** P05-T01 a P05-T07 foram revisadas; as tarefas passaram de `pendente` para `em-revisao`.
+- **Escopo:** arquitetura, contratos, identidade, baseline, segurança, SLOs, recuperação e release permanecem especificações revisáveis; produção e aprovação final ficam fora desta etapa.
+- **Resultado:** a linguagem foi ajustada para propostas, especificações, testes planejados e revisão posterior, sem declarar liberação para uso.
+- **Próximo passo:** revisar a coerência integrada da P05 com as entradas de P03/P04 antes de avançar para P06.
 
 ### 2026-08-27 — Criados seis cenários de teste por segmento para P01-T02
 

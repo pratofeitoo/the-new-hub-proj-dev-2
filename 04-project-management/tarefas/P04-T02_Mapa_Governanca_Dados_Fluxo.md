@@ -2,7 +2,7 @@
 title: P04-T02 — Mapa governança de dados fluxo a fluxo (LGPD)
 task_id: P04-T02
 phase: P04
-status: pendente
+status: em-revisao
 priority: critica
 area: governance-legal
 layer: refining
@@ -30,14 +30,14 @@ tags:
 Completar `fluxo → campo → finalidade → base legal → controller/processor → retenção → consentimento → exclusão` por fluxo de lançamento.
 
 ## Entregável
-Mapa validado por LGPD; libera fluxos de lançamento.
+Mapa preliminar para revisão de governança e LGPD; não libera fluxos de lançamento nesta etapa.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade|P03-T08]]
 - [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy|P02-T03]]
 
-## Critério (G04.2)
-LGPD libera todos os fluxos.
+## Critério de refinamento (G04.2)
+Todos os fluxos devem ter os campos de governança especificados para revisão posterior; eventual liberação depende de revisão e aprovação na Camada 3.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-002]]

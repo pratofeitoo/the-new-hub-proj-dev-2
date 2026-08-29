@@ -2,7 +2,7 @@
 title: P05-T07 — Processo release/rollback + ambientes + suporte
 task_id: P05-T07
 phase: P05
-status: pendente
+status: em-revisao
 priority: alta
 area: technology
 layer: refining
@@ -29,14 +29,14 @@ tags:
 Definir ciclo vida entrega, controles ambiente, runbook lançamento, rollback e modelo de suporte.
 
 ## Entregável
-Processo aprovado.
+Especificação revisável do processo de release/rollback, ambientes e suporte.
 
 ## Dependências
 - [[04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes|P05-T01]]
 - [[04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao|P05-T06]]
 
 ## Critério (G05.7)
-Prontidão release/rollback/suporte aprovada.
+Condições para futura avaliação de release/rollback/suporte descritas, sem constituir liberação para uso.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/TEC-007]]

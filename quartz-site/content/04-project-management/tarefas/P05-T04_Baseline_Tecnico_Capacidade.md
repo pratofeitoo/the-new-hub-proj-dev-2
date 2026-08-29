@@ -2,7 +2,7 @@
 title: P05-T04 — Baseline técnico (custo/latência/volume/rate-limit)
 task_id: P05-T04
 phase: P05
-status: pendente
+status: em-revisao
 priority: alta
 area: technology
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Estabelecer baseline por integração (M0–M2) para custo, latência, volume, rate-limit e disponibilidade — insumo para P06.
 
 ## Entregável
-Tabela validada sustenta plano de negócio/lançamento; input para modelo financeiro P06.
+Tabela de baseline em refinamento, com premissas e validações explicitadas, para subsidiar o plano de negócio/lançamento e o modelo financeiro P06.
 
 ## Dependências
 - [[04-project-management/tarefas/P05-T02_Contratos_Integracao|P05-T02]]
 
 ## Critério (G05.4)
-Baseline publicado e inputado em P06.
+Baseline documentado e encaminhado como input provisório para P06, sujeito a revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/TEC-005]]

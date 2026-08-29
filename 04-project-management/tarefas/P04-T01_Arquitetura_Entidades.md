@@ -2,7 +2,7 @@
 title: P04-T01 — Arquitetura de entidades (4 unidades) + acordos intragrupo
 task_id: P04-T01
 phase: P04
-status: pendente
+status: em-revisao
 priority: critica
 area: governance-legal
 layer: refining
@@ -27,17 +27,17 @@ tags:
 # P04-T01 — Arquitetura de entidades (4 unidades) + acordos intragrupo
 
 ## Objetivo
-Formalizar constituição, propriedade, contas, tributos e acordos intragrupo (HUB marca, Negócios, Instituto, Plataforma) com parecer jurídico.
+Definir, como proposta para refinamento, constituição, propriedade, contas, tributos e acordos intragrupo (HUB marca, Negócios, Instituto, Plataforma), para posterior revisão jurídica e financeira.
 
 ## Entregável
-Matriz entidades + minutas acordos em `01-blueprint/governanca-juridico/` + `02-refinement/refinamento-governanca/`.
+Matriz de entidades + minutas de acordos em `01-blueprint/governanca-juridico/` + `02-refinement/refinamento-governanca/`, como insumos de Blueprint e Refinamento para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]] (entidades)
 - [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades|P01-T01]] (4 unidades)
 
-## Critério (G04.1)
-Aprovado por assessoria jurídica + finanças (evidência: parecer/contrato).
+## Critério de refinamento (G04.1)
+A proposta deve explicitar os pontos a serem revisados por assessoria jurídica e finanças; parecer ou contrato são evidências esperadas para etapa posterior, não aprovação nesta tarefa.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-001]]

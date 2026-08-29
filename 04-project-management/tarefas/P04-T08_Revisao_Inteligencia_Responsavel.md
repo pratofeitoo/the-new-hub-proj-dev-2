@@ -2,7 +2,7 @@
 title: P04-T08 — Revisão inteligência responsável (model cards/fairness/drift)
 task_id: P04-T08
 phase: P04
-status: pendente
+status: em-revisao
 priority: alta
 area: governance-legal
 layer: refining
@@ -28,16 +28,16 @@ tags:
 # P04-T08 — Revisão inteligência responsável (model cards/fairness/drift)
 
 ## Objetivo
-Estabelecer processo com model cards, grupos protegidos, limiares drift/fairness, explicabilidade, amostragem e trilha auditável; evidenciar que controles operam.
+Definir processo com model cards, grupos protegidos, limiares drift/fairness, explicabilidade, amostragem e trilha auditável; definir como evidenciar a operação dos controles em ciclos posteriores.
 
 ## Entregável
-Processo publicado + evidência em `03-approval/evidencias/` para portão governança.
+Processo proposto + evidências de refinamento em `03-approval/evidencias/`, como insumo para o portão de governança.
 
 ## Dependências
 - [[04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo|P04-T02]]
 
 ## Critério (G04.8/G04.9)
-Controles modelos aprovados; portão sem lacuna crítica.
+Controles de modelos definidos para revisão posterior; lacunas críticas identificadas e encaminhadas para o portão de governança.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-009]] · [[00-project-control/registro-lacunas/lacunas/GOV-005]]

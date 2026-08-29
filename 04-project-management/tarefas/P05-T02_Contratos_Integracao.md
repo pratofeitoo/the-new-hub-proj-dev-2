@@ -2,7 +2,7 @@
 title: P05-T02 — Contratos de integração + matriz system-of-record
 task_id: P05-T02
 phase: P05
-status: pendente
+status: em-revisao
 priority: critica
 area: technology
 layer: refining
@@ -29,14 +29,14 @@ tags:
 Especificar payloads, endpoints, autenticação, propriedade, versionamento por integração M0 (CRM, plataforma, warehouse, consentimento) + matriz SoR.
 
 ## Entregável
-Contratos com review contrato+segurança.
+Rascunhos de contratos com review contrato+segurança, sujeitos a revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes|P05-T01]]
 - [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]]
 
 ## Critério (G05.2)
-Cada M0 passa em review contrato+segurança.
+Cada integração M0 deve permitir avaliar contrato+segurança; resultados e pendências permanecem sujeitos a revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/TEC-001]]
