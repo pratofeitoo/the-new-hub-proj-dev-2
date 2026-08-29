@@ -2,7 +2,8 @@
 title: P01-T05 — Log de evidências por rota GTM (hipótese vs tração)
 task_id: P01-T05
 phase: P01
-status: pendente
+status:
+  - concluido
 priority: alta
 area: gtm
 layer: refining

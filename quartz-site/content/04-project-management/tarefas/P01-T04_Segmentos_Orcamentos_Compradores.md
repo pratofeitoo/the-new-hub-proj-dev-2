@@ -2,7 +2,8 @@
 title: P01-T04 — Segmentos e orçamentos de compradores de lançamento
 task_id: P01-T04
 phase: P01
-status: pendente
+status:
+  - concluido
 priority: alta
 area: gtm
 layer: blueprint

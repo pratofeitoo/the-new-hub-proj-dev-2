@@ -2,7 +2,8 @@
 title: P01-T03 — Taxonomia de receita e regras de reconhecimento
 task_id: P01-T03
 phase: P01
-status: em-revisao
+status:
+  - concluido
 priority: critica
 area: business-model
 layer: blueprint
