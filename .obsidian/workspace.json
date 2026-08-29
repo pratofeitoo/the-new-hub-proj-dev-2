@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "28d59aa9f8d1a012",
+            "id": "bce5d94e2089fe20",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,20 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "HUB_Plano_Fases_v1"
-            }
-          },
-          {
-            "id": "bce5d94e2089fe20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-project-management/registros-trabalho/logs-progresso/Sat 29 Aug 2026.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sat 29 Aug 2026"
             }
           },
           {
@@ -50,19 +36,6 @@
             }
           },
           {
-            "id": "bf9f5f0f92e4a9ab",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
-                "viewName": "Blueprint Task Register"
-              },
-              "icon": "lucide-table",
-              "title": "HUB_Tarefas_Projeto"
-            }
-          },
-          {
             "id": "94d92b407366b66d",
             "type": "leaf",
             "state": {
@@ -74,9 +47,22 @@
               "icon": "lucide-table",
               "title": "HUB_Tarefas_Fases_Execucao"
             }
+          },
+          {
+            "id": "82f09a83a242c9a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "P01-T02_Matriz_Oferta_Comprador_Capacidade"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -280,41 +266,42 @@
       "canvas2document:C2D Step 2 - Make cleared document": false
     }
   },
-  "active": "8101f37e774942bb",
+  "active": "bce5d94e2089fe20",
   "lastOpenFiles": [
-    "04-project-management/registros-trabalho/logs-progresso/Sat 29 Aug 2026.md",
-    "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
-    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
     "04-project-management/registro-mestre/matriz-fases-tarefas-v1.md",
+    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
+    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "quartz-site/content/02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1.md",
+    "02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1.md",
+    "04-project-management/registros-trabalho/logs-progresso/Sat 29 Aug 2026.md",
+    "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md",
+    "04-project-management/tarefas/P02-T06_RACI_Accountable_Unico.md",
+    "04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico.md",
+    "02-refinement/refinamento-produto/RACI_v1.md",
+    "04-project-management/tarefas/P02-T04_SOPs_CAOS.md",
+    "04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides.md",
+    "02-refinement/refinamento-produto/filas-revisao-overrides.md",
+    "04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy.md",
+    "02-refinement/refinamento-produto/matriz-autorizacao-tenancy.md",
+    "04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos.md",
+    "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
+    "04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md",
+    "04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros.md",
+    "02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos.md",
+    "04-project-management/tarefas/P01-T07_Roadmap_Gates.md",
+    "04-project-management/tarefas/P01-T05_Log_Evidencias_GTM.md",
+    "02-refinement/pesquisa/log-evidencias-GTM.md",
+    "04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores.md",
+    "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+    "04-project-management/tarefas/P01-T03_Taxonomia_Receita.md",
+    "03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/14_RACI",
+    "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
     "04-project-management/registro-mestre",
-    "04-project-management/HUB_Log_Tarefas_Progresso.md",
-    "04-project-management/relatorios-status/template-relatorio-status.md",
     "04-project-management/registros-trabalho/logs-progresso",
-    "docs/superpowers/plans/2026-08-27-quartz-github-pages.md",
     "docs/superpowers/plans",
     "docs/superpowers",
     "docs",
-    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
-    "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
-    "04-project-management/marcos/marcos-fases-v1.md",
     "04-project-management/cronogramas/cronograma-fases-v1.base",
-    "02-refinement/modelos-financeiros/registro-premissas-v0.md",
-    "00-project-control/README.md",
-    "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
-    "04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md",
-    "04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
-    "04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
-    "04-project-management/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH.md",
-    "04-project-management/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto.md",
-    "04-project-management/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao.md",
-    "04-project-management/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma.md",
-    "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
-    "04-project-management/planos-fase/P02_Produto_Operacao.md",
-    "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md",
-    "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md",
-    "04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores.md",
-    "04-project-management/tarefas/P01-T05_Log_Evidencias_GTM.md",
-    "03-approval/pacotes-revisao/P01-aceite-cross-functional-v1.md",
     "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.09.jpeg",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.10.jpeg",
@@ -326,7 +313,6 @@
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.12.jpeg",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.12 (1).jpeg",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.12 (2).jpeg",
-    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/14_raci/index.csv",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",

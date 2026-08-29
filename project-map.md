@@ -1,5 +1,5 @@
-<!-- git-hash: 0b8f919616414288eb2cd1de298919437132f2e9 -->
-<!-- last-synced: 2026-08-29T11:21:09-03:00 -->
+<!-- git-hash: a02e74e49e1585ee650434b59b580dfec5fc4545 -->
+<!-- last-synced: 2026-08-29T13:25:26-03:00 -->
 
 # Mapa do Projeto
 
@@ -21,7 +21,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `01-blueprint/`          | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança e lançamento. |
 | `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados.             |
 | `03-approval/`           | Critérios, evidências, pacotes de revisão, estados de aprovação e material bloqueado.                |
-| `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP, marcos (M00–M07), cronogramas + base execução (9 views), reuniões, retrospectivas, logs e status. |
+| `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP, matriz canônica, marcos (M00–M07), cronogramas + base execução (9 views), reuniões, retrospectivas, logs e status. |
 | `05-resources/`          | Documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
 | `06-deliverables/`       | Saídas finais organizadas por dados, governança, investidor, lançamento, negócio e produto.          |
 | `99-archive/`            | Material descontinuado, rejeitado, superado e instantâneos históricos.                               |
@@ -45,7 +45,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 ├── .obsidian/  — configurações do vault Obsidian (workspace, hotkeys, appearance)
 │   ├── icons/  — ícones customizados do vault
 │   ├── plugins/  — plugins comunitários instalados (código compilado — não editar manualmente)
-│   └── themes/  — temas instalados do Obsidian (8 temas)
+│   └── themes/  — temas instalados do Obsidian (9 temas)
 │       ├── Blossom/  — tema Blossom
 │       ├── Dark Moss/  — tema Dark Moss
 │       ├── Dracula + LYT/  — tema Dracula + LYT
@@ -53,7 +53,8 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │       ├── Royal Velvet/  — tema Royal Velvet
 │       ├── Slytherin/  — tema Slytherin
 │       ├── Sodalite/  — tema Sodalite
-│       └── Vicious/  — tema Vicious
+│       ├── Vicious/  — tema Vicious
+│       └── Glass Robo/  — tema Glass Robo
 ├── .omo/  — orquestração OhMyOpenCode (planos e artefatos do agente)
 │   └── plans/  — planos salvos (ex.: traducao-pastas-arquivos-ptbr-plan.md)
 │
@@ -159,8 +160,9 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   ├── marcos/  — marcos e milestones (marcos-fases-v1.md — M00→M07 + sub-gates M03.A/B)
 │   ├── planos-fase/  — planos por fase (P01_Arquitetura_Oferta_Negocio → P07_Portao_Lancamento — 7 fases spine GOV/TEC paralelizáveis)
 │   ├── planos-mestres/  — planos diretores / master plans (HUB_Plano_Fases_v1.md — Plano Diretor P01–P07 + alternativa 4-fases; Doc-Mãe v2 investidor)
+│   ├── registro-mestre/  — matriz canônica de coordenação fase/tarefa (56 tarefas P01–P07)
 │   ├── registros-trabalho/  — logs + base de execução (HUB_Tarefas_Fases_Execucao.base — 9 views: por Fase, Crítico, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps)
-│   ├── relatorios-status/  — relatórios de status periódicos
+│   ├── relatorios-status/  — relatórios de status periódicos + template-relatorio-status.md
 │   ├── retrospectivas/  — retrospectivas de ciclo/sprint
 │   └── tarefas/  — tarefas do blueprint + 56 tarefas de fase (P01-T01→P07-T07, 7+6+9+8+7+12+7) + HUB_Tarefas_Projeto.base e HUB_Tarefas_Fases_Execucao (via registros-trabalho) + README
 │
@@ -323,14 +325,15 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `03-approval/evidencias/` | approval | Evidências que sustentam decisões de aprovação | `.gitkeep` | reservado |
 | `03-approval/pacotes-revisao/` | approval | Pacotes montados para revisão por stakeholders | `.gitkeep` | reservado |
 | `03-approval/portao-lancamento/` | approval | Portão de lançamento (go/no-go) | `.gitkeep` | reservado |
-| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + 56 tarefas + bases execução/cronograma + marcos | ativo |
+| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + 56 tarefas + matriz canônica + bases execução/cronograma + marcos | ativo |
 | `04-project-management/atas-reuniao/` | gestão | Atas de reunião | `template-reuniao.md` | ativo |
 | `04-project-management/cronogramas/` | gestão | Cronogramas do projeto | `cronograma-fases-v1.base` (6 views: Timeline, Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps) | ativo |
 | `04-project-management/marcos/` | gestão | Marcos e milestones | `marcos-fases-v1.md` (M00→M07 + sub-gates M03.A/B) | ativo |
 | `04-project-management/planos-fase/` | gestão | Planos por fase | `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT) | ativo |
 | `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) + `Doc-Mãe v2 investidor` | ativo |
+| `04-project-management/registro-mestre/` | gestão | Fonte de coordenação fase/tarefa | `matriz-fases-tarefas-v1.md` (56 tarefas, dependências, gaps, critérios e status) | ativo |
 | `04-project-management/registros-trabalho/` | gestão | Logs + base de execução | `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) | ativo |
-| `04-project-management/relatorios-status/` | gestão | Relatórios de status periódicos | `.gitkeep` | reservado |
+| `04-project-management/relatorios-status/` | gestão | Relatórios de status periódicos | `template-relatorio-status.md` + `.gitkeep` | ativo |
 | `04-project-management/retrospectivas/` | gestão | Retrospectivas de ciclo/sprint | `.gitkeep` | reservado |
 | `04-project-management/tarefas/` | gestão | Tarefas do blueprint + fases | `BP-001..008` + 56× `P01-T01`→`P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` | ativo |
 | `05-resources/` | recursos | Matéria-prima e materiais de apoio (não é evidência aprovada) | docs, imagens, planilhas | ativo |
@@ -405,6 +408,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados das lacunas.
 - [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint (BP-001..008).
 - [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — base de execução das 56 tarefas de fase (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
+- [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — matriz canônica de coordenação das 56 tarefas, dependências, gaps, critérios, evidências e status.
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor de faseamento sequencial P01–P07 (spine DAT, GOV/TEC paralelizáveis) + alternativa 4-fases + §11 Glossário (P00-P07, gaps, BP).
 - [`P01_Arquitetura_Oferta_Negocio.md`](04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md) — P01 oferta & negócio (STR-001/002/003, FIN-002, GTM-001) → `BP-001`.
 - [`P02_Produto_Operacao.md`](04-project-management/planos-fase/P02_Produto_Operacao.md) — P02 produto & operação (PRD-001..007) → `BP-002`+`BP-005`.
@@ -468,12 +472,13 @@ flowchart TB
 
 ## Notas de frescor
 
-- O mapa reflete o commit `0b8f919`, que consolidou a sincronização recente do workspace; o working tree atual ainda contém revisões locais em `04-project-management/tarefas/P01-T01..P03-T09.md`, `04-project-management/HUB_Log_Tarefas_Progresso.md` e ajustes em `.obsidian/workspace.json` / `.obsidian/types.json`.
+- O mapa reflete o commit `a02e74e`, que sincronizou a matriz de governança e os ativos locais do workspace com `origin/main`. O remoto separado `publish` não é atualizado automaticamente.
 - Anterior `973a23b` registrou as **56 tarefas P01→P07 + base de execução** (`HUB_Tarefas_Fases_Execucao.base` com 9 views em `registros-trabalho/`, 56 notas `P01-T01→P07-T07` em `tarefas/`).
 - Anterior `1c2733f` entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views, `marcos-fases-v1.md` M00→M07).
 - `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README.
 - `04-project-management/registros-trabalho/` contém `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
 - `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) e `HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`.
+- `04-project-management/registro-mestre/` contém `matriz-fases-tarefas-v1.md`, com 56 linhas de coordenação P01–P07; P07 permanece pendente e não aprovado.
 - `04-project-management/planos-fase/` contém `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis).
 - `04-project-management/cronogramas/` contém `cronograma-fases-v1.base` (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
 - `04-project-management/marcos/` contém `marcos-fases-v1.md` (M00→M07 + M03.A/B, critérios G01.x→G07.x).
@@ -483,4 +488,4 @@ flowchart TB
 - `TaskNotes/Tasks/` contém tarefas operacionais adicionais, separadas das notas de tarefa do blueprint/fase.
 - A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios de validação.
 - `.obsidian/themes/` contém 8 temas (Blossom, Dark Moss, Dracula + LYT, Nebula, Royal Velvet, Slytherin, Sodalite, Vicious).
-- **Atualização desta revisão:** sincronizado ao commit `0b8f919` e ao working tree atual; verificado em 2026-08-29T11:21:09-03:00. Anteriores `973a23b` (56 tarefas + base execução) e `1c2733f` (faseamento) continuam válidos como histórico.
+- **Atualização desta revisão:** sincronizado ao commit `a02e74e` e ao working tree atual; verificado em 2026-08-29T13:25:26-03:00. Anteriores `973a23b` (56 tarefas + base execução) e `1c2733f` (faseamento) continuam válidos como histórico.

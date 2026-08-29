@@ -2,7 +2,8 @@
 title: HUB — Plano Diretor de Fases v1
 subtitle: Sequenciamento eficiente para gestão sequencial do projeto completo
 version: "1.0"
-status: em-revisao — gates consolidados, aprovação pendente
+status:
+  - approved plan
 type: plano-mestre
 layer: cross-cutting
 created: 2026-08-26

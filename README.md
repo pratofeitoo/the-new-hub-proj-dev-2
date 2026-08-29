@@ -82,6 +82,7 @@ flowchart TB
 - [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário.
 - [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste.
 - [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor P01→P07, 7 planos de fase, 56 tarefas P01→P07 + 8 BP, marcos M00→M07, cronogramas (Bases) + base de execução (9 views), reuniões, status e logs.
+- [`04-project-management/registro-mestre/`](04-project-management/registro-mestre/) — matriz canônica de coordenação das 56 tarefas, dependências, gaps, critérios, evidências e status.
 - [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
@@ -115,6 +116,7 @@ flowchart TB
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados dos gaps.
 - [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint (BP-001..008).
 - [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — base de execução das 56 tarefas de fase (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
+- [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — fonte de coordenação fase/tarefa, com 56 linhas P01–P07.
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor de faseamento sequencial P01→P07 (spine DAT, GOV/TEC paralelizáveis, alternativa 4-fases + §11 Glossário).
 - [`P01_Arquitetura_Oferta_Negocio.md`](04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md) — P01 oferta & negócio (STR/FIN/GTM) → `BP-001`.
 - [`P02_Produto_Operacao.md`](04-project-management/planos-fase/P02_Produto_Operacao.md) — P02 produto & operação (PRD) → `BP-002`+`BP-005`.
@@ -140,6 +142,7 @@ flowchart TB
 - Para entender a ordem de execução: abra [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) e o [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) (Timeline P01→P07).
 - Para trabalhar na estratégia: entre em `01-blueprint/`.
 - Para controlar execução: use `04-project-management/` — fases em `planos-fase/`, 56 tarefas em `tarefas/P01-T01→P07-T07`, execução em `registros-trabalho/HUB_Tarefas_Fases_Execucao.base` (9 views), gates em `marcos/marcos-fases-v1.md`.
+- Para coordenar execução: consulte primeiro a [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md); as notas individuais em `tarefas/` continuam sendo a fonte da intenção e dos critérios.
 - Para consultar fontes e materiais: use `05-resources/`.
 - Para revisar entregas: use `03-approval/` e `06-deliverables/`.
 
@@ -222,6 +225,13 @@ O projeto agora possui um **faseamento sequencial** para gestão eficiente:
 - Gates verificáveis em [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) (M00→M07, critérios G01.x→G07.x)
 - Alternativa leve de **4 fases** documentada no plano diretor para times enxutos
 
+## Estado atual do projeto
+
+- A matriz canônica registra 56 tarefas: P01=7, P02=6, P03=9, P04=8, P05=7, P06=12 e P07=7.
+- Os requisitos mínimos de `DAT-010`, `TEC-005`, `TEC-007` e `LCH-007` são bloqueadores dos respectivos gates; extensões estão classificadas como pós-MVP.
+- `P07-T01` depende explicitamente de `P04-T01` e `P06-T02`. P07 permanece pendente e não aprovado.
+- A sincronização operacional foi enviada para `origin/main`; o remoto separado `publish` não é atualizado automaticamente.
+
 ## Observação
 
-O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `0b8f919`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `a02e74e`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
