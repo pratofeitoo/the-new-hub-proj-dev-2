@@ -6,7 +6,6 @@
       {
         "id": "0a41854effe84dcc",
         "type": "tabs",
-        "dimension": 49.733475479744136,
         "children": [
           {
             "id": "28d59aa9f8d1a012",
@@ -28,12 +27,39 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-project-management/HUB_Log_Tarefas_Progresso.md",
+                "file": "04-project-management/registros-trabalho/logs-progresso/Sat 29 Aug 2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HUB_Log_Tarefas_Progresso"
+              "title": "Sat 29 Aug 2026"
+            }
+          },
+          {
+            "id": "8101f37e774942bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-project-management/registro-mestre/matriz-fases-tarefas-v1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "matriz-fases-tarefas-v1"
+            }
+          },
+          {
+            "id": "bf9f5f0f92e4a9ab",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
+                "viewName": "Blueprint Task Register"
+              },
+              "icon": "lucide-table",
+              "title": "HUB_Tarefas_Projeto"
             }
           },
           {
@@ -49,43 +75,8 @@
               "title": "HUB_Tarefas_Fases_Execucao"
             }
           }
-        ]
-      },
-      {
-        "id": "c9cff694dd5c7792",
-        "type": "tabs",
-        "dimension": 50.266524520255864,
-        "children": [
-          {
-            "id": "3e9bd253fe165aea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HUB_Blueprint_Oferta_e_Arquitetura_Receita"
-            }
-          },
-          {
-            "id": "2e62c7de90db58ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HUB_Blueprint_Produto_e_Capacidades"
-            }
-          }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -147,8 +138,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.48828125,
-    "collapsed": true
+    "width": 282.48828125
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -290,13 +280,28 @@
       "canvas2document:C2D Step 2 - Make cleared document": false
     }
   },
-  "active": "28d59aa9f8d1a012",
+  "active": "8101f37e774942bb",
   "lastOpenFiles": [
-    "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
+    "04-project-management/registros-trabalho/logs-progresso/Sat 29 Aug 2026.md",
+    "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
     "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
-    "04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md",
+    "04-project-management/registro-mestre/matriz-fases-tarefas-v1.md",
+    "04-project-management/registro-mestre",
     "04-project-management/HUB_Log_Tarefas_Progresso.md",
+    "04-project-management/relatorios-status/template-relatorio-status.md",
+    "04-project-management/registros-trabalho/logs-progresso",
+    "docs/superpowers/plans/2026-08-27-quartz-github-pages.md",
+    "docs/superpowers/plans",
+    "docs/superpowers",
+    "docs",
+    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
+    "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
+    "04-project-management/marcos/marcos-fases-v1.md",
+    "04-project-management/cronogramas/cronograma-fases-v1.base",
+    "02-refinement/modelos-financeiros/registro-premissas-v0.md",
+    "00-project-control/README.md",
+    "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
+    "04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md",
     "04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
     "04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
     "04-project-management/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH.md",
@@ -308,16 +313,9 @@
     "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md",
     "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md",
     "04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores.md",
-    "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
     "04-project-management/tarefas/P01-T05_Log_Evidencias_GTM.md",
     "03-approval/pacotes-revisao/P01-aceite-cross-functional-v1.md",
     "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base",
-    "02-refinement/pesquisa/log-evidencias-GTM.md",
-    "02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos.md",
-    "00-project-control/registro-lacunas/lacunas/BRD-001.md",
-    "00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md",
-    "04-project-management/tarefas/P01-T07_Roadmap_Gates.md",
-    "04-project-management/tarefas/P01-T03_Taxonomia_Receita.md",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.09.jpeg",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.10.jpeg",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.10 (1).jpeg",
@@ -328,15 +326,7 @@
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.12.jpeg",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.12 (1).jpeg",
     "05-resources/imagens/WhatsApp Image 2026-08-27 at 18.55.12 (2).jpeg",
-    "04-project-management/tarefas/P01-T01_Matriz_4_Unidades.md",
-    "04-project-management/cronogramas/cronograma-fases-v1.base",
     "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/14_raci/index.csv",
-    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/13_matriz_integracao/index.csv",
-    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/12_roadmap/index.csv",
-    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/10_integracoes/index.csv",
-    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/11_governanca_lgpd/index.csv",
-    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/09_eventos_produto/index.csv",
-    "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/08_dicionario_dados/index.csv",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",
