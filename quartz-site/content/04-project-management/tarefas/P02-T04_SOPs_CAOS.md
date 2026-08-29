@@ -2,7 +2,8 @@
 title: P02-T04 — SOPs por estágio C.A.O.S. (vendas→escalonamento)
 task_id: P02-T04
 phase: P02
-status: pendente
+status:
+  - concluido
 priority: alta
 area: operations
 layer: blueprint

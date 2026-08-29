@@ -2,7 +2,8 @@
 title: P02-T02 — Jornada estados/eventos + trilha de auditoria
 task_id: P02-T02
 phase: P02
-status: pendente
+status:
+  - concluido
 priority: critica
 area: product
 layer: blueprint

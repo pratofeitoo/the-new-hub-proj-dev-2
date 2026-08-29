@@ -2,7 +2,8 @@
 title: P02-T06 — RACI v1 com accountable único + autoridade delegada
 task_id: P02-T06
 phase: P02
-status: pendente
+status:
+  - concluido
 priority: critica
 area: operations
 layer: governance

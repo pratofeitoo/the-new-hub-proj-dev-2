@@ -2,7 +2,8 @@
 title: P02-T05 — Filas de revisão + overrides + trilha auditoria
 task_id: P02-T05
 phase: P02
-status: em-revisao
+status:
+  - concluido
 priority: alta
 area: operations
 layer: refining
@@ -38,3 +39,9 @@ A proposta não deve deixar passo de alto impacto sem fila + dono; lacunas perma
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/PRD-007]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/refinamento-produto/filas-revisao-overrides|filas-revisao-overrides.md]] com 6 filas + regra assistido + overrides + appeals + audit trail append-only.
+- **Resultado:** nenhum alto impacto sem fila+dono; trilha com actor/scope/reason/timestamp/prev→next.
+- **Próximo:** nomear donos e exercitar 1 fluxo por fila.

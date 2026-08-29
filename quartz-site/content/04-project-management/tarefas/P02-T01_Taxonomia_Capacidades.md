@@ -2,7 +2,8 @@
 title: P02-T01 — Taxonomia de capacidades + contratos de módulos
 task_id: P02-T01
 phase: P02
-status: pendente
+status:
+  - concluido
 priority: critica
 area: product
 layer: blueprint

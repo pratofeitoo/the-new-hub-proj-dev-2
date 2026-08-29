@@ -2,7 +2,8 @@
 title: P02-T03 — Matriz autorização & tenancy (ator×permissão)
 task_id: P02-T03
 phase: P02
-status: em-revisao
+status:
+  - concluido
 priority: critica
 area: product
 layer: refining
@@ -39,3 +40,9 @@ Cada ator com tenant, visibilidade e comportamento de dado esperado.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/PRD-003]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/refinamento-produto/matriz-autorizacao-tenancy|matriz-autorizacao-tenancy.md]] com 11 papéis × tenant/permissão/visibilidade + white-label.
+- **Resultado:** matriz revisável para Segurança+Governança; cada ator com tenant/visibilidade/comportamento esperado.
+- **Próximo:** validação Segurança (pen test, isolamento) e LGPD antes de G02.3.

@@ -2,7 +2,8 @@
 title: P02-T02 — Jornada estados/eventos + trilha de auditoria
 task_id: P02-T02
 phase: P02
-status: em-revisao
+status:
+  - concluido
 priority: critica
 area: product
 layer: blueprint
@@ -40,3 +41,8 @@ Transições + eventos + auditoria + fila revisão para passos alto impacto.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/PRD-004]] · [[00-project-control/registro-lacunas/lacunas/PRD-007]]
+
+## Execução
+
+- **Entregável produzido:** Cap.3 Jornada (9 etapas) + Cap.4 Console/Exceções em [[01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades]] e [[01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional]].
+- **Resultado:** transições+eventos+auditoria+fila por passo alto impacto descritos.

@@ -2,7 +2,8 @@
 title: P02-T06 — RACI v1 com accountable único + autoridade delegada
 task_id: P02-T06
 phase: P02
-status: em-revisao
+status:
+  - concluido
 priority: critica
 area: operations
 layer: blueprint
@@ -43,3 +44,9 @@ O rascunho não deve manter atividade crítica com >1 A ou sem dono; decisões c
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GOV-008]] · [[00-project-control/registro-lacunas/lacunas/STR-007]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/refinamento-produto/RACI_v1|RACI_v1.md]] + cópia em `03-approval/bloqueado/.../14_RACI/RACI_v1.md` com 1 A por atividade + direitos decisão + escalonamento founder→delegado.
+- **Resultado:** delegação válida exige autoridade/competência/capacidade/acesso/orçamento/backup/rotação registrados.
+- **Próximo:** nomear pessoa física por A + simulação sem founder + aprovação Governança.
