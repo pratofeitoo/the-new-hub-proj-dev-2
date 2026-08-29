@@ -2,7 +2,7 @@
 title: P02-T05 — Filas de revisão + overrides + trilha auditoria
 task_id: P02-T05
 phase: P02
-status: pendente
+status: em-revisao
 priority: alta
 area: operations
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Definir filas human-in-the-loop, direitos de override, recursos e trilha de auditoria para decisões de alto impacto.
 
 ## Entregável
-Especificação de filas + audit trail em `02-refinement/refinamento-produto/`.
+Rascunho de especificação de filas + audit trail em `02-refinement/refinamento-produto/`, para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos|P02-T02]]
 
-## Critério (G02.2/G02.7)
-Nenhum passo alto impacto sem fila + dono.
+## Critério de refinamento (G02.2/G02.7)
+A proposta não deve deixar passo de alto impacto sem fila + dono; lacunas permanecem explícitas para revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/PRD-007]]

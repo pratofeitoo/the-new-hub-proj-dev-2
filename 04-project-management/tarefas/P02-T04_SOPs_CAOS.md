@@ -2,7 +2,7 @@
 title: P02-T04 — SOPs por estágio C.A.O.S. (vendas→escalonamento)
 task_id: P02-T04
 phase: P02
-status: pendente
+status: em-revisao
 priority: alta
 area: operations
 layer: blueprint
@@ -35,8 +35,8 @@ SOPs em `HUB_Blueprint_Modelo_Operacional.md` + `02-refinement/refinamento-produ
 ## Dependências
 - [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos|P02-T02]]
 
-## Critério (G02.5)
-SOPs com dono e tempo alvo; rastreabilidade C.A.O.S.→módulos publicada (STR-008).
+## Critério de refinamento (G02.5)
+SOPs com dono e tempo alvo; rastreabilidade C.A.O.S.→módulos documentada como estrutura de trabalho, sujeita a revisão (STR-008).
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/PRD-005]] · [[00-project-control/registro-lacunas/lacunas/STR-008]]

@@ -2,7 +2,7 @@
 title: P02-T03 — Matriz autorização & tenancy (ator×permissão)
 task_id: P02-T03
 phase: P02
-status: pendente
+status: em-revisao
 priority: critica
 area: product
 layer: refining
@@ -29,7 +29,7 @@ tags:
 Construir matriz `ator × papel × tenant × permissão × visibilidade` incluindo white-label.
 
 ## Entregável
-Arquivo `matriz-autorizacao-tenancy.md` em `02-refinement/refinamento-produto/` revisado por Segurança+Governança.
+Arquivo `matriz-autorizacao-tenancy.md` em `02-refinement/refinamento-produto/` para revisão conjunta por Segurança e Governança.
 
 ## Dependências
 - [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades|P02-T01]]

@@ -2,7 +2,7 @@
 title: P03-T01 — Modelo lógico/físico com PK/FK/cardinalidade (M03.A)
 task_id: P03-T01
 phase: P03
-status: pendente
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: blueprint
@@ -28,13 +28,13 @@ tags:
 Produzir modelo canônico de entidades (~25 nós → entidades com PK/FK, cardinalidade, tipos objeto, temporalidade).
 
 ## Entregável
-Diagramas + tabelas em `HUB_Blueprint_Dados_e_Inteligencia.md` + `02-refinement/refinamento-modelo-dados/`.
+Proposta de diagramas + tabelas em `HUB_Blueprint_Dados_e_Inteligencia.md` + `02-refinement/refinamento-modelo-dados/`, para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades|P02-T01]] — fronteiras travadas
 
-## Critério (G03.A1)
-Sem entidade sem chave estável; validado por arquitetura de dados.
+## Critério de refinamento (G03.A1)
+A proposta não deve manter entidade sem chave estável; a validação por arquitetura de dados permanece pendente de revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-001]]

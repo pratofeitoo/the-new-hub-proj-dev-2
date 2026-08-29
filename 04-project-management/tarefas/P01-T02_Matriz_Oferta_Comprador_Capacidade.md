@@ -46,9 +46,9 @@ Nenhuma oferta em 2 unidades sem regra de propriedade + acordo intragrupo anotad
 - **Entregável produzido:** matriz oferta → comprador → unidade → capacidade → operação → receita → gap adicionada em [[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.1 Matriz oferta → comprador → unidade → capacidade → operação → receita → gap]].
 - **Cobertura:** 17 ofertas candidatas nas frentes Mídia e Experiências, Impacto Financiável e Ecossistemas Empresariais.
 - **Resultado:** cada linha possui unidade dona, capacidade principal, operação/troca de valor, motor de receita e gap vinculado.
-- **Próximo gate interno:** investigar compradores, JTBD, parceiros, riscos e classificação de receita em refinamento; manter hipóteses explícitas e não tratá-las como decisões finais.
+- **Próximo ciclo de refinamento:** investigar compradores, JTBD, parceiros, riscos e classificação de receita; manter hipóteses explícitas e não tratá-las como decisões finais.
 
-## Validação estrutural de STR-002 — 2026-08-27
+## Verificação estrutural de STR-002 — 2026-08-27
 
 O inventário foi reconciliado com a matriz §2.1 e com os segmentos de lançamento §2.2.
 
@@ -61,7 +61,7 @@ O inventário foi reconciliado com a matriz §2.1 e com os segmentos de lançame
 | Motor econômico | **17/17** | Cada linha possui motor de receita; recorrência, marketplace e classificação contábil permanecem hipóteses quando indicado |
 | Gap rastreável | **17/17** | Cada linha aponta STR-002 e os gaps complementares aplicáveis |
 
-### Resultado da validação
+### Resultado da verificação estrutural
 
 - **Propriedade:** coerente em nível de Blueprint; a unidade dona está delineada por oferta e não é alterada pelo uso de capacidades compartilhadas.
 - **Comprador:** definido em nível de segmento e função compradora; ainda não é comprador nomeado nem evidência de demanda.

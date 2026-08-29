@@ -6,7 +6,7 @@
       {
         "id": "0a41854effe84dcc",
         "type": "tabs",
-        "dimension": 62.119289340101524,
+        "dimension": 49.733475479744136,
         "children": [
           {
             "id": "28d59aa9f8d1a012",
@@ -20,20 +20,6 @@
               },
               "icon": "lucide-file",
               "title": "HUB_Plano_Fases_v1"
-            }
-          },
-          {
-            "id": "ecdd7e66cbf305eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-project-management/planos-fase/P02_Produto_Operacao.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "P02_Produto_Operacao"
             }
           },
           {
@@ -64,25 +50,26 @@
             }
           },
           {
-            "id": "3e9bd253fe165aea",
+            "id": "2ad850739839da62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+                "file": "04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HUB_Blueprint_Oferta_e_Arquitetura_Receita"
+              "title": "P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "c9cff694dd5c7792",
         "type": "tabs",
-        "dimension": 37.880710659898476,
+        "dimension": 50.266524520255864,
         "children": [
           {
             "id": "2e62c7de90db58ad",
@@ -96,6 +83,20 @@
               },
               "icon": "lucide-file",
               "title": "HUB_Blueprint_Produto_e_Capacidades"
+            }
+          },
+          {
+            "id": "3e9bd253fe165aea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HUB_Blueprint_Oferta_e_Arquitetura_Receita"
             }
           }
         ]
@@ -160,7 +161,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.48828125
+    "width": 282.48828125,
+    "collapsed": true
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -302,16 +304,18 @@
       "canvas2document:C2D Step 2 - Make cleared document": false
     }
   },
-  "active": "aa7b9d1bda30d77d",
+  "active": "2e62c7de90db58ad",
   "lastOpenFiles": [
+    "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
     "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
-    "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md",
+    "04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
+    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "04-project-management/HUB_Log_Tarefas_Progresso.md",
     "04-project-management/planos-fase/P02_Produto_Operacao.md",
     "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
-    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-    "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
+    "04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
+    "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md",
     "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md",
-    "04-project-management/HUB_Log_Tarefas_Progresso.md",
     "04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores.md",
     "04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md",
     "04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md",
@@ -339,8 +343,6 @@
     "00-project-control/registro-mudancas/2026-08-27-remocao-receita-marketplace.md",
     "00-project-control/decisoes/template-decisao.md",
     "00-project-control/registro-mudancas/template-registro-mudanca.md",
-    "01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md",
-    "04-project-management/marcos/marcos-fases-v1.md",
     "04-project-management/cronogramas/cronograma-fases-v1.base",
     "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/14_raci/index.csv",
     "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/13_matriz_integracao/index.csv",
@@ -349,7 +351,6 @@
     "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/11_governanca_lgpd/index.csv",
     "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/09_eventos_produto/index.csv",
     "quartz-site/public/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/08_dicionario_dados/index.csv",
-    "quartz-site/content/index.md",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",

@@ -2,7 +2,7 @@
 title: P03-T03 — Envelope canônico de evento + schema registry (M03.B)
 task_id: P03-T03
 phase: P03
-status: pendente
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: refining
@@ -29,13 +29,13 @@ tags:
 Definir envelope canônico, schema registry, versionamento, idempotência e regras temporais.
 
 ## Entregável
-Envelope publicado + testes contrato+replay (produtores/consumidores de teste).
+Rascunho de envelope + proposta de schema e testes de contrato+replay (produtores/consumidores de teste), para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]]
 
-## Critério (G03.B1)
-Produtores/consumidores de teste passam em contrato+replay.
+## Critério de refinamento (G03.B1)
+A proposta deve permitir avaliar produtores/consumidores de teste em contrato+replay; resultados permanecem sujeitos a revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-003]]

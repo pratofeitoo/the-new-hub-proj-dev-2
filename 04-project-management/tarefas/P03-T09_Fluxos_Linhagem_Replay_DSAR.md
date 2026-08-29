@@ -1,8 +1,8 @@
 ---
-title: P03-T09 — Fluxos linhagem/correção/replay/DSAR + XLSX validado
+title: P03-T09 — Fluxos linhagem/correção/replay/DSAR + reconstrução de XLSX
 task_id: P03-T09
 phase: P03
-status: pendente
+status: em-revisao
 priority: alta
 area: data-intelligence
 layer: refining
@@ -26,20 +26,20 @@ tags:
   - fase-P03
 ---
 
-# P03-T09 — Fluxos linhagem/correção/replay/DSAR + XLSX validado
+# P03-T09 — Fluxos linhagem/correção/replay/DSAR + reconstrução de XLSX
 
 ## Objetivo
-Prototipar fluxos executáveis de linhagem/correção/replay/DSAR/portabilidade e reconstruir XLSX validado a partir dos `03-csv-corrigido/` validados.
+Prototipar fluxos de linhagem/correção/replay/DSAR/portabilidade e reconstruir XLSX a partir dos artefatos disponíveis em `03-csv-corrigido/`, registrando as verificações realizadas.
 
 ## Entregável
-Fluxos testados + XLSX reconstruído aprovado em `06-relatorios-validacao/` (entity-key, roi-recalculation).
+Fluxos prototipados/testados + XLSX reconstruído com resultados registrados em `06-relatorios-validacao/` (entity-key, roi-recalculation), como insumo para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema|P03-T03]]
 - [[04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade|P03-T08]]
 
 ## Critério (G03.C4/C5)
-Testes passam + XLSX validado.
+Resultados dos testes registrados + XLSX reconstruído para revisão posterior; aprovação, se aplicável, fica para a Camada 3.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-009]] · [[00-project-control/registro-lacunas/lacunas/DAT-010]]

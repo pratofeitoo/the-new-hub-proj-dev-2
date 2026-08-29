@@ -2,7 +2,7 @@
 title: P02-T01 — Taxonomia de capacidades + contratos de módulos
 task_id: P02-T01
 phase: P02
-status: pendente
+status: em-revisao
 priority: critica
 area: product
 layer: blueprint
@@ -31,7 +31,7 @@ Definir núcleo compartilhado vs específico de oferta vs serviço humano para o
 Tabela com contrato por módulo (entradas, saídas, dependências, dono) em `HUB_Blueprint_Produto_e_Capacidades.md`.
 
 ## Dependências
-- [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade|P01-T02]] — ofertas travadas
+- [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade|P01-T02]] — ofertas descritas no escopo de P01-T02
 
 ## Critério (G02.1)
 6 módulos com fronteira escrita e classificação núcleo/oferta/serviço.

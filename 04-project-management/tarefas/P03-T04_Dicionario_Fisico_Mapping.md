@@ -2,7 +2,7 @@
 title: P03-T04 — Dicionário físico (≈41 campos) mapeado para entidades canônicas
 task_id: P03-T04
 phase: P03
-status: pendente
+status: em-revisao
 priority: alta
 area: data-intelligence
 layer: refining
@@ -35,8 +35,8 @@ Tabela de mapeamento + registro de correções auditável.
 - [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]]
 - [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema|P03-T03]]
 
-## Critério (G03.B2)
-Contradições registradas; linhagem artefatos inequívoca.
+## Critério de refinamento (G03.B2)
+Contradições registradas; linhagem dos artefatos inequívoca para revisão. Este critério orienta o refinamento e não constitui aprovação final nem prontidão de produção.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-010]]

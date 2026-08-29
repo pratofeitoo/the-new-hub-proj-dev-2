@@ -63,26 +63,26 @@ tags:
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades\|P02-T01]] Taxonomia de Capacidades | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos\|P02-T02]] Jornada, Estados e Eventos | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy\|P02-T03]] Matriz de Autorização e Tenancy | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P02-T04_SOPs_CAOS\|P02-T04]] SOPs e CAOS | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides\|P02-T05]] Filas de Revisão e Overrides | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P02-T06_RACI_Accountable_Unico\|P02-T06]] RACI — Accountable Único | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades\|P02-T01]] Taxonomia de Capacidades | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos\|P02-T02]] Jornada, Estados e Eventos | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy\|P02-T03]] Matriz de Autorização e Tenancy | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T04_SOPs_CAOS\|P02-T04]] SOPs e CAOS | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides\|P02-T05]] Filas de Revisão e Overrides | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T06_RACI_Accountable_Unico\|P02-T06]] RACI — Accountable Único | `em-revisao` | 2026-08-29 |
 
 ### P03 — Dados Canônicos
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico\|P03-T01]] Modelo Lógico e Físico | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T02_Servico_Identidade_Matching\|P03-T02]] Serviço de Identidade e Matching | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema\|P03-T03]] Envelope de Evento e Schema | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T04_Dicionario_Fisico_Mapping\|P03-T04]] Dicionário Físico e Mapping | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo\|P03-T05]] Catálogo de Métricas e Grafo | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias\|P03-T06]] Templates de Linhagem e Evidências | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T07_Taxonomia_Estados_Valor\|P03-T07]] Taxonomia de Estados de Valor | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade\|P03-T08]] Matriz de Dados por Finalidade | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR\|P03-T09]] Fluxos de Linhagem, Replay e DSAR | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico\|P03-T01]] Modelo Lógico e Físico | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T02_Servico_Identidade_Matching\|P03-T02]] Serviço de Identidade e Matching | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema\|P03-T03]] Envelope de Evento e Schema | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T04_Dicionario_Fisico_Mapping\|P03-T04]] Dicionário Físico e Mapping | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo\|P03-T05]] Catálogo de Métricas e Grafo | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias\|P03-T06]] Templates de Linhagem e Evidências | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T07_Taxonomia_Estados_Valor\|P03-T07]] Taxonomia de Estados de Valor | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade\|P03-T08]] Matriz de Dados por Finalidade | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR\|P03-T09]] Fluxos de Linhagem, Replay e DSAR | `em-revisao` | 2026-08-29 |
 
 ### P04 — Governança e Confiança
 
@@ -150,6 +150,20 @@ tags:
 - **Escopo:** os artefatos foram alinhados à Camada 1 — Blueprint e à Camada 2 — Refinamento. Taxonomias, segmentos, limites, evidências e roadmap permanecem hipóteses, modelos de trabalho ou estruturas de investigação.
 - **Decisão:** não buscar aceitação formal, aprovação final, compradores reais, budgets reais ou validação financeira nesta etapa. Nenhum gate foi promovido para `aprovado`.
 - **Próximo passo:** revisar a coerência integrada de P01 e registrar contradições, questões de investigação e dependências para as fases seguintes.
+
+### 2026-08-29 — P02 revisada para refinamento coerente
+
+- **O que mudou:** P02-T01 a P02-T06 foram revisadas; as tarefas passaram de `pendente` para `em-revisao`.
+- **Escopo:** fronteiras de capacidades, jornada, autorização, SOPs, filas e RACI permanecem artefatos de Blueprint/Refinamento, sem prontidão de produção ou aprovação final.
+- **Resultado:** foram corrigidas apenas inconsistências de linguagem e enquadramento; P02-T02 não exigiu alteração de conteúdo.
+- **Próximo passo:** revisar a coerência integrada de P02 com as entradas de P01 antes de avançar para P03.
+
+### 2026-08-29 — P03 revisada para refinamento coerente
+
+- **O que mudou:** P03-T01 a P03-T09 foram revisadas; as tarefas passaram de `pendente` para `em-revisao`.
+- **Escopo:** modelos, identidade, eventos, mapeamentos, métricas, linhagem, estados de valor, finalidade e DSAR permanecem artefatos de Blueprint/Refinamento; referências à Camada 3 são futuras e não representam aprovação atual.
+- **Resultado:** a linguagem foi ajustada para propostas, rascunhos, verificações e revisão posterior, sem promover artefatos para produção, aprovação final ou aceite formal.
+- **Próximo passo:** revisar a coerência integrada da spine de dados com as entradas de P01/P02 antes de iniciar P04/P05.
 
 ### 2026-08-27 — Criados seis cenários de teste por segmento para P01-T02
 

@@ -224,4 +224,4 @@ O projeto agora possui um **faseamento sequencial** para gestão eficiente:
 
 ## Observação
 
-O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `7534ede`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `0b8f919`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.

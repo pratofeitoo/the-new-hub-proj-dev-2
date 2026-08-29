@@ -1,5 +1,5 @@
-<!-- git-hash: 7534edec77670e86f61767e647528b362767d57b -->
-<!-- last-synced: 2026-08-27T15:03:15-03:00 -->
+<!-- git-hash: 0b8f919616414288eb2cd1de298919437132f2e9 -->
+<!-- last-synced: 2026-08-29T11:21:09-03:00 -->
 
 # Mapa do Projeto
 
@@ -45,9 +45,10 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 ├── .obsidian/  — configurações do vault Obsidian (workspace, hotkeys, appearance)
 │   ├── icons/  — ícones customizados do vault
 │   ├── plugins/  — plugins comunitários instalados (código compilado — não editar manualmente)
-│   └── themes/  — temas instalados do Obsidian (7 temas)
+│   └── themes/  — temas instalados do Obsidian (8 temas)
 │       ├── Blossom/  — tema Blossom
 │       ├── Dark Moss/  — tema Dark Moss
+│       ├── Dracula + LYT/  — tema Dracula + LYT
 │       ├── Nebula/  — tema Nebula
 │       ├── Royal Velvet/  — tema Royal Velvet
 │       ├── Slytherin/  — tema Slytherin
@@ -205,7 +206,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 └── _types/  — TIPOS — definições de tipos do mdbase/TaskNotes (ex.: task.md)
 ```
 
-> **Total inventariado:** ~115 pastas + 66 notas de tarefas (8 BP + 56 P0x) navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro.
+> **Total inventariado:** ~116 pastas + 66 notas de tarefas (8 BP + 56 P0x) navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro.
 
 ## Anexo para agentes — tabela navegável (machine-readable)
 
@@ -219,9 +220,10 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `.obsidian/` | infra | Configurações do vault Obsidian | `workspace.json`, `app.json`, `hotkeys.json` | ativo |
 | `.obsidian/icons/` | infra | Ícones customizados do vault | ícones svg/json | ativo |
 | `.obsidian/plugins/` | infra | Plugins comunitários compilados | código por plugin | não editar |
-| `.obsidian/themes/` | infra | Temas instalados do Obsidian | 7 temas | ativo |
+| `.obsidian/themes/` | infra | Temas instalados do Obsidian | 8 temas | ativo |
 | `.obsidian/themes/Blossom/` | infra | Tema Blossom | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Dark Moss/` | infra | Tema Dark Moss | tema | ativo |
+| `.obsidian/themes/Dracula + LYT/` | infra | Tema Dracula + LYT | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Nebula/` | infra | Tema Nebula | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Royal Velvet/` | infra | Tema Royal Velvet | tema | ativo |
 | `.obsidian/themes/Slytherin/` | infra | Tema Slytherin | `theme.css`, `manifest.json` | ativo |
@@ -466,7 +468,7 @@ flowchart TB
 
 ## Notas de frescor
 
-- O mapa reflete o commit `7534ede`, que adicionou **§11 Glossário** a `HUB_Plano_Fases_v1.md` e **redesenhou `Fases_Projeto.canvas` para fluxo sequencial P00→P07 com gates** (spine P03, P04||P05 paralelizáveis), arquivando v0 em `99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas`.
+- O mapa reflete o commit `0b8f919`, que consolidou a sincronização recente do workspace; o working tree atual ainda contém revisões locais em `04-project-management/tarefas/P01-T01..P03-T09.md`, `04-project-management/HUB_Log_Tarefas_Progresso.md` e ajustes em `.obsidian/workspace.json` / `.obsidian/types.json`.
 - Anterior `973a23b` registrou as **56 tarefas P01→P07 + base de execução** (`HUB_Tarefas_Fases_Execucao.base` com 9 views em `registros-trabalho/`, 56 notas `P01-T01→P07-T07` em `tarefas/`).
 - Anterior `1c2733f` entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views, `marcos-fases-v1.md` M00→M07).
 - `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README.
@@ -480,5 +482,5 @@ flowchart TB
 - `00-project-control/registro-mudancas/` contém 2 notas: `2026-08-26-faseamento-P01-P07-cronograma-marcos` + `2026-08-26-tarefas-56-execucao-base`.
 - `TaskNotes/Tasks/` contém tarefas operacionais adicionais, separadas das notas de tarefa do blueprint/fase.
 - A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios de validação.
-- `.obsidian/themes/` contém 7 temas (Blossom, Dark Moss, Nebula, Royal Velvet, Slytherin, Sodalite, Vicious).
-- **Atualização desta revisão:** sincronizado ao commit `7534ede` (glossário + canvas sequencial), verificado contra `find` + `git log` em 2026-08-27T15:03:15-03:00; anteriores `973a23b` (56 tarefas + base execução) e `1c2733f` (faseamento).
+- `.obsidian/themes/` contém 8 temas (Blossom, Dark Moss, Dracula + LYT, Nebula, Royal Velvet, Slytherin, Sodalite, Vicious).
+- **Atualização desta revisão:** sincronizado ao commit `0b8f919` e ao working tree atual; verificado em 2026-08-29T11:21:09-03:00. Anteriores `973a23b` (56 tarefas + base execução) e `1c2733f` (faseamento) continuam válidos como histórico.

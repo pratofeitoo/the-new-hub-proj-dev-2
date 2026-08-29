@@ -2,7 +2,7 @@
 title: P03-T02 — Serviço de identidade (matching/merging/survivorship)
 task_id: P03-T02
 phase: P03
-status: pendente
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: refining
@@ -25,16 +25,16 @@ tags:
 # P03-T02 — Serviço de identidade (matching/merging/survivorship)
 
 ## Objetivo
-Especificar regras de matching, merge, alias, survivorship e correção com reversibilidade, testadas em dataset sintético.
+Especificar regras de matching, merge, alias, survivorship e correção com reversibilidade, a serem testadas em dataset sintético.
 
 ## Entregável
-Especificação + dataset de teste com métricas FP/FN em `02-refinement/refinamento-modelo-dados/modelo-indicadores/`.
+Rascunho de especificação + dataset de teste com métricas FP/FN em `02-refinement/refinamento-modelo-dados/modelo-indicadores/`, para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]]
 
-## Critério (G03.A2)
-Taxa FP/FN medida e reversibilidade demonstrada.
+## Critério de refinamento (G03.A2)
+A proposta deve indicar como medir a taxa FP/FN e avaliar a reversibilidade; resultados permanecem sujeitos a revisão.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-002]]

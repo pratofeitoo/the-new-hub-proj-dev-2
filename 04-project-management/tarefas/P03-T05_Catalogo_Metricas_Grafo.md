@@ -2,7 +2,7 @@
 title: P03-T05 — Catálogo canônico de métricas + grafo de dependências
 task_id: P03-T05
 phase: P03
-status: pendente
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: refining
@@ -35,8 +35,8 @@ Catálogo canônico + grafo em `sintese-entre-abas/`.
 - [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]]
 - [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema|P03-T03]]
 
-## Critério (G03.C1)
-Nenhuma métrica crítica com definição alternativa.
+## Critério de refinamento (G03.C1)
+Nenhuma métrica crítica com definição alternativa; este critério orienta o refinamento, e o catálogo permanece artefato de definição, sem certificação para uso em produção.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-005]]

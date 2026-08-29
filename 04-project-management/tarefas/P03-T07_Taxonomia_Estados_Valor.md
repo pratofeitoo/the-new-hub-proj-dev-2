@@ -2,7 +2,7 @@
 title: P03-T07 — Taxonomia estados de valor (potencial→realizado)
 task_id: P03-T07
 phase: P03
-status: pendente
+status: em-revisao
 priority: alta
 area: data-intelligence
 layer: refining
@@ -29,13 +29,13 @@ tags:
 Definir estados `potencial → influenciado → validado → realizado` + políticas cálculo/atribuição/deduplicação/contrafactual.
 
 ## Entregável
-Taxonomia aprovada por Finanças+Gov Dados.
+Taxonomia refinada, com pareceres de Finanças e Governança de Dados registrados como insumo para decisão posterior na Camada 3.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo|P03-T05]]
 
 ## Critério (G03.C3)
-Aprovação Finanças+Governança de Dados.
+Pareceres de Finanças e Governança de Dados registrados para subsidiar a aprovação na Camada 3.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-006]]

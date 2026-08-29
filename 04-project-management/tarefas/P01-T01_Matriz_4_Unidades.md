@@ -46,7 +46,7 @@ Quatro unidades com proprietário único por capacidade; sem sobreposição não
 
 - **Entregável produzido:** matriz 4×N e diagrama Mermaid adicionados em [[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#1.1 Matriz de capacidades das quatro unidades]].
 - **Resultado:** cada capacidade possui um proprietário único (A único); capacidades compartilhadas e específicas estão explicitamente classificadas.
-- **Próximo gate interno:** revisão de coerência por Estratégia, Operações, Jurídico e Finanças, conforme as necessidades de refinamento de [[00-project-control/registro-lacunas/lacunas/STR-001]].
+- **Próximo ciclo de refinamento:** revisão de coerência por Estratégia, Operações, Jurídico e Finanças, conforme as necessidades de investigação de [[00-project-control/registro-lacunas/lacunas/STR-001]].
 
 ## Revisão cross-functional — 2026-08-27
 
@@ -69,7 +69,7 @@ Quatro unidades com proprietário único por capacidade; sem sobreposição não
 - [ ] Registrar fronteiras jurídicas, de PI, dados, funding, custos, receita e contratos intercompany.
 - [ ] Manter `STR-001` aberto até que as evidências necessárias e as coerências do modelo sejam trabalhadas.
 
-**Decisão de revisão:** `em-revisao` — considerado insumo de Blueprint para o próximo ciclo; o gap permanece aberto para refinamento.
+**Estado de revisão:** `em-revisao` — considerado insumo de Blueprint para o próximo ciclo; o gap permanece aberto para refinamento.
 
 ## Governança de STR-001
 
