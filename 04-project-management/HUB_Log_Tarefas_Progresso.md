@@ -51,24 +51,24 @@ tags:
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades\|P01-T01]] Matriz das 4 Unidades | `em-revisao` | 2026-08-27 |
-| [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade\|P01-T02]] Matriz Oferta × Comprador × Capacidade | `em-revisao` | 2026-08-27 |
-| [[04-project-management/tarefas/P01-T03_Taxonomia_Receita\|P01-T03]] Taxonomia de Receita | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores\|P01-T04]] Segmentos, Orçamentos e Compradores | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T05_Log_Evidencias_GTM\|P01-T05]] Log de Evidências GTM | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros\|P01-T06]] Limites de Concentração de Parceiros | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T07_Roadmap_Gates\|P01-T07]] Roadmap e Gates | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades\|P01-T01]] Matriz das 4 Unidades | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade\|P01-T02]] Matriz Oferta × Comprador × Capacidade | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T03_Taxonomia_Receita\|P01-T03]] Taxonomia de Receita | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores\|P01-T04]] Segmentos, Orçamentos e Compradores | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T05_Log_Evidencias_GTM\|P01-T05]] Log de Evidências GTM | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros\|P01-T06]] Limites de Concentração de Parceiros | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T07_Roadmap_Gates\|P01-T07]] Roadmap e Gates | `done` | 2026-08-29 |
 
 ### P02 — Produto e Operação
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades\|P02-T01]] Taxonomia de Capacidades | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos\|P02-T02]] Jornada, Estados e Eventos | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy\|P02-T03]] Matriz de Autorização e Tenancy | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T04_SOPs_CAOS\|P02-T04]] SOPs e CAOS | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides\|P02-T05]] Filas de Revisão e Overrides | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T06_RACI_Accountable_Unico\|P02-T06]] RACI — Accountable Único | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades\|P02-T01]] Taxonomia de Capacidades | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos\|P02-T02]] Jornada, Estados e Eventos | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy\|P02-T03]] Matriz de Autorização e Tenancy | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T04_SOPs_CAOS\|P02-T04]] SOPs e CAOS | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides\|P02-T05]] Filas de Revisão e Overrides | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T06_RACI_Accountable_Unico\|P02-T06]] RACI — Accountable Único | `done` | 2026-08-29 |
 
 ### P03 — Dados Canônicos
 
@@ -143,6 +143,27 @@ tags:
 ## Log cronológico
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
+
+### 2026-08-29 — P02 concluído — 6 tarefas + 3 artefatos de refinamento criados
+
+- **O que mudou:** P02-T01 a P02-T06 passaram de `em-revisao` para `done` (`status: concluido` nas notas). Criados 3 rascunhos faltantes: `02-refinement/refinamento-produto/matriz-autorizacao-tenancy.md` (G02.3), `02-refinement/refinamento-produto/filas-revisao-overrides.md` (G02.2/G02.7) e `02-refinement/refinamento-produto/RACI_v1.md` + cópia em `03-approval/bloqueado/.../14_RACI/RACI_v1.md` (G02.6/G02.7). Blocos `## Execução` adicionados nas 6 notas.
+- **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` sincronizada — P02 6 linhas agora `- [x]` / `concluido` (total `- [x]` = 13: P01 7 + P02 6).
+- **Mirrors:** `quartz-site/content/04-project-management/tarefas/P02-T*.md` sincronizados.
+- **Commit:** `8202ede docs(p02): create missing refinement artifacts and mark P02 concluido`.
+- **Próximo:** P03 Dados Canônicos (spine) — revisar sub-gates M03.A/B antes de P04/P05.
+
+### 2026-08-29 — P01 concluído — 7 tarefas marcadas como concluído e matriz sincronizada
+
+- **O que mudou:** P01-T01 a P01-T07 passaram de `em-revisao` para `done` (`status: - concluido` nas notas) após revisão das entregas em `01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (§1.1 matriz 4 unidades, §2.1 17 ofertas + fichas, §3.1 taxonomia, §2.2 6 segmentos, log GTM, limites concentração e roadmap). Verificação anterior já cobria 17/17 ofertas, 6/6 segmentos e cenários SEG-01..06 como `hypothesis`.
+- **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` — coluna `deliverable` com checkboxes `- [x]` e `status: concluido` para P01 (7/56). P01-T01..T07 agora refletem `✅` nas views Bases.
+- **Mirrors:** `quartz-site/content/04-project-management/tarefas/P01-T*.md` sincronizados.
+- **Commit:** `ba619bb docs(p01): mark P01 tasks concluido and sync matrix`.
+
+### 2026-08-29 — Governança de fases e matriz canônica sincronizadas
+
+- **O que mudou:** criado `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` (56 tarefas: P01 7/P02 6/P03 9/P04 8/P05 7/P06 12/P07 7); corrigidos gaps bloqueadores `DAT-010/G03.B2`, `TEC-005/G05.4`, `TEC-007/G05.7`, `LCH-007/G07.7` em `HUB_Plano_Fases_v1.md`, `marcos-fases-v1.md` e planos P03/P05/P07; adicionada dependência `P04-T01` a `P07-T01`; reconciliado `BRD-004` como pós-MVP.
+- **Commits:** `90b8211 docs: align phase gates and task matrix`; `a02e74e chore: sync Obsidian workspace assets`.
+- **Docs:** `project-map.md` e `README.md` atualizados para commit `a02e74e` e nova estrutura `registro-mestre/`.
 
 ### 2026-08-29 — P01 avançou para refinamento integrado
 
@@ -219,8 +240,8 @@ tags:
 
 > Atualizar sempre que um bloqueio surgir ou for resolvido.
 
-- **Nenhum bloqueio registrado até 2026-08-27.**
-- **Em observação:** condições de refinamento de `P01-T01` e `STR-001` continuam abertas; devem ser trabalhadas como questões de coerência e desenho, não como aceites formais nesta camada.
+- **Atual (2026-08-29):** P01 (7 tarefas) e P02 (6 tarefas) concluídos; `P01-T01..T07` e `P02-T01..T06` em `done`. Condições de `STR-001`/`STR-002` tratadas como hipótese controlada; sem bloqueio ativo.
+- **Em observação:** P03–P06 permanecem `em-revisao`; P07 `pendente`. Gate G02.3/G02.6/G02.7 agora têm rascunhos em `02-refinement/refinamento-produto/` e `14_RACI` para revisão Segurança/Governança.
 
 ## Marcos
 
