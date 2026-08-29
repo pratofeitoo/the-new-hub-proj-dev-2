@@ -2,7 +2,7 @@
 title: P06-T04 — Separação comercial vs instituto restrito
 task_id: P06-T04
 phase: P06
-status: pendente
+status: em-revisao
 priority: critica
 area: business-model
 layer: refining
@@ -29,13 +29,13 @@ tags:
 Definir alocação por entidade, transfer pricing, controles fundos restritos e relatórios — segregar comercial vs instituto.
 
 ## Entregável
-Política aprovada por Jurídico+Finanças+Governança.
+Minuta de política em refinamento para revisão por Jurídico, Finanças e Governança; aprovação permanece para etapa posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P04-T01_Arquitetura_Entidades|P04-T01]]
 
-## Critério (G06.4)
-Aprovação tripla.
+## Critério de refinamento (G06.4)
+Política explicita controles e lacunas para revisão tripla posterior; aprovação permanece pendente.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/FIN-005]]

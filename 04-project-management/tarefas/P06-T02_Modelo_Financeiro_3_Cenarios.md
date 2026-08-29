@@ -2,7 +2,7 @@
 title: P06-T02 — Modelo financeiro 3 cenários (timing/ramp/payback)
 task_id: P06-T02
 phase: P06
-status: pendente
+status: em-revisao
 priority: critica
 area: business-model
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Reconstruir modelo financeiro conservador/base/otimista com timing, ramp, payback benefício líquido, atribuição sem dupla contagem.
 
 ## Entregável
-Modelo reconciliado; metodologia aprovada.
+Modelo reconciliado em refinamento; metodologia proposta para revisão posterior, sem aprovação nesta etapa.
 
 ## Dependências
 - [[04-project-management/tarefas/P06-T01_Registro_Premissas|P06-T01]]
 
-## Critério (G06.2)
-Sem dupla contagem; 3 cenários validados.
+## Critério de refinamento (G06.2)
+Sem dupla contagem prevista nos 3 cenários propostos; validação permanece sujeita a revisão posterior.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/FIN-003]]

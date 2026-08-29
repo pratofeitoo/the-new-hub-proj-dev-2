@@ -2,7 +2,7 @@
 title: P06-T08 — Log evidências GTM + análise alternativas (buyer-ranked)
 task_id: P06-T08
 phase: P06
-status: pendente
+status: em-revisao
 priority: alta
 area: gtm
 layer: refining
@@ -30,13 +30,13 @@ tags:
 Consolidar log por rota com evidência e conduzir análise comparativa vs alternativas ranqueada pelo comprador.
 
 ## Entregável
-Log + matriz alternativa que posicionamento sobrevive a review comparativa.
+Log + matriz alternativa propostos para revisão comparativa posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P01-T05_Log_Evidencias_GTM|P01-T05]]
 
-## Critério (G06.8/G06.9)
-Nenhuma rota sem evidência; review passa.
+## Critério de refinamento (G06.8/G06.9)
+Nenhuma rota sem evidência proposta; review permanece sujeito a avaliação posterior.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GTM-002]] · [[00-project-control/registro-lacunas/lacunas/GTM-004]]

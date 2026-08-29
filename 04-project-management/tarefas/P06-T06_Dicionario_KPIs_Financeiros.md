@@ -2,7 +2,7 @@
 title: P06-T06 — Dicionário KPIs financeiros (ARR/MRR/NRR)
 task_id: P06-T06
 phase: P06
-status: pendente
+status: em-revisao
 priority: alta
 area: business-model
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Definir ARR/MRR/NRR com denominadores, coortes, timing e ledger fonte verdade.
 
 ## Entregável
-Dicionário certificado por Finanças.
+Dicionário em refinamento para revisão por Finanças.
 
 ## Dependências
 - [[04-project-management/tarefas/P06-T01_Registro_Premissas|P06-T01]]
 
-## Critério (G06.6)
-Definições aprovadas.
+## Critério de refinamento (G06.6)
+Definições propostas para revisão posterior; certificação permanece pendente.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/FIN-007]]

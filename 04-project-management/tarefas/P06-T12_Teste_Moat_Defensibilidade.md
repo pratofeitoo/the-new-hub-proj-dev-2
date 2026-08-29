@@ -2,7 +2,7 @@
 title: P06-T12 — Teste de defensibilidade (moat institucional + evidência)
 task_id: P06-T12
 phase: P06
-status: pendente
+status: em-revisao
 priority: alta
 area: business-model
 layer: refining
@@ -31,13 +31,13 @@ tags:
 Testar hipótese moat (distribuição institucional + evidência verificada) + mapear categorias alternativas, orçamentos e posicionamento.
 
 ## Entregável
-Moat sustentado com fontes/ciclos aprendizado ou explicitamente rebaixado para Hipótese.
+Moat avaliado com fontes e ciclos de aprendizado propostos, ou explicitamente rebaixado para Hipótese, para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P06-T08_Log_Evidencias_GTM_Alternativas|P06-T08]]
 
-## Critério (G06.12)
-Decisão documentada.
+## Critério de refinamento (G06.12)
+Decisão proposta e documentada para revisão posterior; sustentação permanece sujeita a avaliação.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/STR-004]] · [[00-project-control/registro-lacunas/lacunas/STR-005]] · [[00-project-control/registro-lacunas/lacunas/STR-006]]

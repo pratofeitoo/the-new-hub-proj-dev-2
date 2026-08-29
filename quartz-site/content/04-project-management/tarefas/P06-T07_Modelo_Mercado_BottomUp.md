@@ -2,7 +2,7 @@
 title: P06-T07 — Modelo de mercado bottom-up (contas nomeadas)
 task_id: P06-T07
 phase: P06
-status: pendente
+status: em-revisao
 priority: alta
 area: gtm
 layer: refining
@@ -28,13 +28,13 @@ tags:
 Construir universo de contas nomeadas, alcançabilidade, ACV, premissas ativação/renovação — sem TAM top-down.
 
 ## Entregável
-Modelo transparente com testes de cenário/sensibilidade.
+Modelo transparente em refinamento, com testes de cenário/sensibilidade para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores|P01-T04]]
 
-## Critério (G06.7)
-Modelo com contas nomeadas.
+## Critério de refinamento (G06.7)
+Modelo com contas nomeadas proposto para revisão posterior; validação permanece pendente.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GTM-005]]

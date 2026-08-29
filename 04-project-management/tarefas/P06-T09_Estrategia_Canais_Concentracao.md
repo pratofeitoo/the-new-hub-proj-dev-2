@@ -2,7 +2,7 @@
 title: P06-T09 — Estratégia de canais + limites de concentração
 task_id: P06-T09
 phase: P06
-status: pendente
+status: em-revisao
 priority: alta
 area: gtm
 layer: refining
@@ -28,16 +28,16 @@ tags:
 # P06-T09 — Estratégia de canais + limites de concentração
 
 ## Objetivo
-Sequenciar canais (direto, institucional, parceiros) com fallback e thresholds de concentração aprovados por governança.
+Propor sequenciamento de canais (direto, institucional, parceiros) com fallback e thresholds de concentração para revisão por governança.
 
 ## Entregável
-Estratégia diversificada e mensurável.
+Estratégia diversificada e mensurável em refinamento, para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros|P01-T06]]
 
-## Critério (G06.8)
-Diversificação aprovada.
+## Critério de refinamento (G06.8)
+Diversificação e thresholds propostos para revisão posterior; aprovação permanece pendente.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/GTM-003]] · [[00-project-control/registro-lacunas/lacunas/GTM-006]]

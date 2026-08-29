@@ -2,7 +2,7 @@
 title: P06-T01 — Registro de premissas com proveniência (FIN-001)
 task_id: P06-T01
 phase: P06
-status: pendente
+status: em-revisao
 priority: critica
 area: business-model
 layer: refining
@@ -29,14 +29,14 @@ tags:
 Transformar premissas ilustrativas (ROI 28,42% etc.) em registro com fonte, data, confiança, dono e próxima evidência. Sem TBD em premissa crítica.
 
 ## Entregável
-Registro auditável em `02-refinement/modelos-financeiros/` + `05-resources/planilhas/`.
+Registro auditável em `02-refinement/modelos-financeiros/` + `05-resources/planilhas/`, como insumo de refinamento para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo|P03-T05]] (métricas)
 - [[04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade|P05-T04]] (baseline custo/latência)
 
-## Critério (G06.1)
-Sem TBD crítico; cada premissa com confiança.
+## Critério de refinamento (G06.1)
+Sem TBD crítico proposto; cada premissa com confiança, fonte e lacunas registradas para revisão posterior.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/FIN-001]]

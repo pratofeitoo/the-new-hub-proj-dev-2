@@ -2,7 +2,7 @@
 title: P06-T11 — Arquitetura de marca + regras white-label
 task_id: P06-T11
 phase: P06
-status: pendente
+status: em-revisao
 priority: alta
 area: brand-market
 layer: blueprint
@@ -31,13 +31,13 @@ tags:
 Definir hierarquia marca-produto-grupo + limites white-label (atribuição, visibilidade, integridade metodológica).
 
 ## Entregável
-Arquitetura aprovada por governança de marca; regras deployment aprovadas por Produto+Marca+Jurídico.
+Proposta de arquitetura para revisão por governança de marca; regras de deployment propostas para revisão por Produto, Marca e Jurídico.
 
 ## Dependências
 - [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades|P01-T01]]
 
-## Critério (G06.11)
-Aprovações obtidas.
+## Critério de refinamento (G06.11)
+Arquitetura e regras propostas para revisão posterior; aprovações permanecem pendentes.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/BRD-001]] · [[00-project-control/registro-lacunas/lacunas/BRD-003]]

@@ -2,7 +2,7 @@
 title: P06-T10 — Matriz afirmação-evidência + governança de claims (BRD)
 task_id: P06-T10
 phase: P06
-status: pendente
+status: em-revisao
 priority: alta
 area: brand-market
 layer: refining
@@ -31,13 +31,13 @@ tags:
 Mapear cada afirmação externa a evidência + status aprovação; reconciliar decks com blueprint e registro de afirmações.
 
 ## Entregável
-Matriz + decks reconciliados passam em review evidência+jurídico; nenhuma afirmação excede estado evidência (BRD-002, GTM-007).
+Matriz + decks reconciliados propostos para review evidência+jurídico; nenhuma afirmação deve exceder estado de evidência nesta etapa (BRD-002, GTM-007).
 
 ## Dependências
 - [[04-project-management/tarefas/P06-T01_Registro_Premissas|P06-T01]]
 
-## Critério (G06.10)
-Review passa.
+## Critério de refinamento (G06.10)
+Review proposto para avaliação posterior; matriz deve permitir verificar que nenhuma afirmação excede a evidência.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/BRD-002]] · [[00-project-control/registro-lacunas/lacunas/GTM-007]]

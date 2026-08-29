@@ -84,7 +84,8 @@
               "title": "HUB_Blueprint_Produto_e_Capacidades"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -291,17 +292,17 @@
   },
   "active": "28d59aa9f8d1a012",
   "lastOpenFiles": [
+    "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
     "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
     "04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md",
     "04-project-management/HUB_Log_Tarefas_Progresso.md",
-    "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
     "04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
     "04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
     "04-project-management/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH.md",
     "04-project-management/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto.md",
     "04-project-management/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao.md",
     "04-project-management/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma.md",
-    "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md",
     "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md",
     "04-project-management/planos-fase/P02_Produto_Operacao.md",
     "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md",

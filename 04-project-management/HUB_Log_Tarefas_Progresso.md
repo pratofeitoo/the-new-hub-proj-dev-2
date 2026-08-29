@@ -113,18 +113,18 @@ tags:
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P06-T01_Registro_Premissas\|P06-T01]] Registro de Premissas | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios\|P06-T02]] Modelo Financeiro em 3 Cenários | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T03_Ponte_Valor_Produto_Receita\|P06-T03]] Ponte de Valor: Produto × Receita | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T04_Separacao_Comercial_Restrito\|P06-T04]] Separação Comercial e Restrito | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T05_Modelo_Capital_Tranches\|P06-T05]] Modelo de Capital em Tranches | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T06_Dicionario_KPIs_Financeiros\|P06-T06]] Dicionário de KPIs Financeiros | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T07_Modelo_Mercado_BottomUp\|P06-T07]] Modelo de Mercado Bottom-Up | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T08_Log_Evidencias_GTM_Alternativas\|P06-T08]] Log de Evidências GTM — Alternativas | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao\|P06-T09]] Estratégia de Canais e Concentração | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T10_Matriz_Afirmacao_Evidencia\|P06-T10]] Matriz Afirmação × Evidência | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T11_Arquitetura_Marca_WhiteLabel\|P06-T11]] Arquitetura de Marca White-Label | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P06-T12_Teste_Moat_Defensibilidade\|P06-T12]] Teste de Moat e Defensibilidade | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/P06-T01_Registro_Premissas\|P06-T01]] Registro de Premissas | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios\|P06-T02]] Modelo Financeiro em 3 Cenários | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T03_Ponte_Valor_Produto_Receita\|P06-T03]] Ponte de Valor: Produto × Receita | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T04_Separacao_Comercial_Restrito\|P06-T04]] Separação Comercial e Restrito | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T05_Modelo_Capital_Tranches\|P06-T05]] Modelo de Capital em Tranches | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T06_Dicionario_KPIs_Financeiros\|P06-T06]] Dicionário de KPIs Financeiros | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T07_Modelo_Mercado_BottomUp\|P06-T07]] Modelo de Mercado Bottom-Up | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T08_Log_Evidencias_GTM_Alternativas\|P06-T08]] Log de Evidências GTM — Alternativas | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao\|P06-T09]] Estratégia de Canais e Concentração | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T10_Matriz_Afirmacao_Evidencia\|P06-T10]] Matriz Afirmação × Evidência | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T11_Arquitetura_Marca_WhiteLabel\|P06-T11]] Arquitetura de Marca White-Label | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T12_Teste_Moat_Defensibilidade\|P06-T12]] Teste de Moat e Defensibilidade | `em-revisao` | 2026-08-29 |
 
 ### P07 — Portão de Lançamento
 
@@ -178,6 +178,13 @@ tags:
 - **Escopo:** arquitetura, contratos, identidade, baseline, segurança, SLOs, recuperação e release permanecem especificações revisáveis; produção e aprovação final ficam fora desta etapa.
 - **Resultado:** a linguagem foi ajustada para propostas, especificações, testes planejados e revisão posterior, sem declarar liberação para uso.
 - **Próximo passo:** revisar a coerência integrada da P05 com as entradas de P03/P04 antes de avançar para P06.
+
+### 2026-08-29 — P06 revisada para refinamento coerente
+
+- **O que mudou:** P06-T01 a P06-T12 foram revisadas; as tarefas passaram de `pendente` para `em-revisao`.
+- **Escopo:** premissas, modelo financeiro, ponte valor-produto-receita, separação comercial/restrito, capital, KPIs, mercado bottom-up, evidências GTM, canais, matriz afirmação-evidência, marca e moat permanecem propostas e artefatos de refinamento; aprovação, validação e certificação ficam para etapa posterior.
+- **Resultado:** a linguagem foi ajustada para propostas, minutas, modelos e revisões posteriores, sem declarar aprovação, validação ou liberação para uso.
+- **Próximo passo:** revisar a coerência integrada da P06 com as entradas de P01/P03/P04/P05 antes de avançar para P07.
 
 ### 2026-08-27 — Criados seis cenários de teste por segmento para P01-T02
 
