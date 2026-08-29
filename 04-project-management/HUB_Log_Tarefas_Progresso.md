@@ -144,6 +144,13 @@ tags:
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
 
+### 2026-08-29 — P01-T02 refactor — fichas separadas para artefato dedicado
+
+- **O que mudou:** 17 fichas operacionais + matriz prontidão + cenários movidos de `04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md` (248→88 linhas) para `02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1.md` (183 linhas). Task note virou índice: mantém `Execução` resumida, `Verificação estrutural 17/17` e `Pendências`, e vincula via `[[02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1]]` + SEG-01..06.
+- **Mirrors:** `quartz-site/content/04-project-management/tarefas/P01-T02...` e `quartz-site/content/02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1.md` sincronizados.
+- **Commit:** `658a8bc refactor(p01-t02): extract 17 fichas to refinement artifact and keep task as index`.
+
+
 ### 2026-08-29 — P03–P06 revertidos para pendente (reset fases 3–7)
 
 - **O que mudou:** 36 tarefas de P03 (9), P04 (8), P05 (7) e P06 (12) passaram de `em-revisao` para `pendente` (`status: - pendente` nas notas). P07 já estava `pendente` (7) e foi normalizado para `status: - pendente` (lista). P01 (7) e P02 (6) permanecem `done` (`concluido`).
