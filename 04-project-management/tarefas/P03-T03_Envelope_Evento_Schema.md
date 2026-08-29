@@ -2,7 +2,8 @@
 title: P03-T03 — Envelope canônico de evento + schema registry (M03.B)
 task_id: P03-T03
 phase: P03
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: data-intelligence
 layer: refining

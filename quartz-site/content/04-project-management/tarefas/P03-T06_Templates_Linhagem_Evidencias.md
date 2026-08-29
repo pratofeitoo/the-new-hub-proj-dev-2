@@ -2,7 +2,8 @@
 title: P03-T06 — Templates de linhagem + registro de evidências
 task_id: P03-T06
 phase: P03
-status: pendente
+status:
+  - pendente
 priority: critica
 area: data-intelligence
 layer: refining

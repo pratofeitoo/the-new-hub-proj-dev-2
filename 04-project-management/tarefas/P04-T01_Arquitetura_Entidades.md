@@ -2,7 +2,8 @@
 title: P04-T01 — Arquitetura de entidades (4 unidades) + acordos intragrupo
 task_id: P04-T01
 phase: P04
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: governance-legal
 layer: refining

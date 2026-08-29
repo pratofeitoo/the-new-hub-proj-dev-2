@@ -2,7 +2,8 @@
 title: P04-T03 — Charter independência do Selo HUB + controles operacionais
 task_id: P04-T03
 phase: P04
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: governance-legal
 layer: refining

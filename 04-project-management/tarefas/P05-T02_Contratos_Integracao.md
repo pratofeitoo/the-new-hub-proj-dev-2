@@ -2,7 +2,8 @@
 title: P05-T02 — Contratos de integração + matriz system-of-record
 task_id: P05-T02
 phase: P05
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: technology
 layer: refining

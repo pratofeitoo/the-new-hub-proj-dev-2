@@ -2,7 +2,8 @@
 title: P06-T04 — Separação comercial vs instituto restrito
 task_id: P06-T04
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: business-model
 layer: refining

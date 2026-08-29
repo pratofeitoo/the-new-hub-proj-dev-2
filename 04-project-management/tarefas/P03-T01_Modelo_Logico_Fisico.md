@@ -2,7 +2,8 @@
 title: P03-T01 — Modelo lógico/físico com PK/FK/cardinalidade (M03.A)
 task_id: P03-T01
 phase: P03
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: data-intelligence
 layer: blueprint

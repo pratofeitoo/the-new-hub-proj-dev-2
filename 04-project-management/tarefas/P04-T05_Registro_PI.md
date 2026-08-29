@@ -2,7 +2,8 @@
 title: P04-T05 — Registro PI + acordos de contribuidores
 task_id: P04-T05
 phase: P04
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: governance-legal
 layer: refining

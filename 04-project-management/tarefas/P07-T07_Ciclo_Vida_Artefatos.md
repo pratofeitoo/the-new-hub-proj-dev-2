@@ -2,7 +2,8 @@
 title: P07-T07 — Ciclo de vida de artefatos + regras de promoção
 task_id: P07-T07
 phase: P07
-status: pendente
+status:
+  - pendente
 priority: alta
 area: launch-vision
 layer: approval

@@ -2,7 +2,8 @@
 title: P07-T05 — Registro riscos/premissas/dependências operacionalizado
 task_id: P07-T05
 phase: P07
-status: pendente
+status:
+  - pendente
 priority: alta
 area: launch-vision
 layer: approval

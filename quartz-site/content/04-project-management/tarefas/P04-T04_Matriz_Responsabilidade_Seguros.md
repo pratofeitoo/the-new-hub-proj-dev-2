@@ -2,7 +2,8 @@
 title: P04-T04 — Matriz de responsabilidade + seguros e indenizações
 task_id: P04-T04
 phase: P04
-status: pendente
+status:
+  - pendente
 priority: alta
 area: governance-legal
 layer: refining

@@ -2,7 +2,8 @@
 title: P06-T07 — Modelo de mercado bottom-up (contas nomeadas)
 task_id: P06-T07
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: gtm
 layer: refining

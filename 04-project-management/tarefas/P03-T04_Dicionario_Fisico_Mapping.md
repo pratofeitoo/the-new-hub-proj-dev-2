@@ -2,7 +2,8 @@
 title: P03-T04 — Dicionário físico (≈41 campos) mapeado para entidades canônicas
 task_id: P03-T04
 phase: P03
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: data-intelligence
 layer: refining

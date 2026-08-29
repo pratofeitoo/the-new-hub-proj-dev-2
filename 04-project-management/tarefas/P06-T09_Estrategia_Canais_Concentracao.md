@@ -2,7 +2,8 @@
 title: P06-T09 — Estratégia de canais + limites de concentração
 task_id: P06-T09
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: gtm
 layer: refining

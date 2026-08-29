@@ -38,14 +38,14 @@ tags:
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/BP-001_HUB_Blueprint_Oferta_e_Arquitetura_Receita\|BP-001]] Oferta e Arquitetura de Receita | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/BP-001_HUB_Blueprint_Oferta_e_Arquitetura_Receita\|BP-001]] Oferta e Arquitetura de Receita | pendente | 2026-08-29 |
 | [[04-project-management/tarefas/BP-002_HUB_Blueprint_Produto_e_Capacidades\|BP-002]] Produto e Capacidades | `done` | 2026-08-27 |
-| [[04-project-management/tarefas/BP-003_HUB_Blueprint_Dados_e_Inteligencia\|BP-003]] Dados e Inteligência | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/BP-004_HUB_Blueprint_Arquitetura_Tecnologica\|BP-004]] Arquitetura Tecnológica | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/BP-005_HUB_Blueprint_Modelo_Operacional\|BP-005]] Modelo Operacional | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/BP-006_HUB_Blueprint_Governanca_e_Juridico\|BP-006]] Governança e Jurídico | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/BP-007_HUB_Blueprint_Marca_e_Mercado\|BP-007]] Marca e Mercado | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/BP-008_HUB_Blueprint_Lancamento_e_Evolucao\|BP-008]] Lançamento e Evolução | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/BP-003_HUB_Blueprint_Dados_e_Inteligencia\|BP-003]] Dados e Inteligência | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/BP-004_HUB_Blueprint_Arquitetura_Tecnologica\|BP-004]] Arquitetura Tecnológica | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/BP-005_HUB_Blueprint_Modelo_Operacional\|BP-005]] Modelo Operacional | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/BP-006_HUB_Blueprint_Governanca_e_Juridico\|BP-006]] Governança e Jurídico | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/BP-007_HUB_Blueprint_Marca_e_Mercado\|BP-007]] Marca e Mercado | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/BP-008_HUB_Blueprint_Lancamento_e_Evolucao\|BP-008]] Lançamento e Evolução | pendente | 2026-08-29 |
 
 ### P01 — Arquitetura de Oferta e Negócio
 
@@ -74,75 +74,83 @@ tags:
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico\|P03-T01]] Modelo Lógico e Físico | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T02_Servico_Identidade_Matching\|P03-T02]] Serviço de Identidade e Matching | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema\|P03-T03]] Envelope de Evento e Schema | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T04_Dicionario_Fisico_Mapping\|P03-T04]] Dicionário Físico e Mapping | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo\|P03-T05]] Catálogo de Métricas e Grafo | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias\|P03-T06]] Templates de Linhagem e Evidências | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T07_Taxonomia_Estados_Valor\|P03-T07]] Taxonomia de Estados de Valor | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade\|P03-T08]] Matriz de Dados por Finalidade | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR\|P03-T09]] Fluxos de Linhagem, Replay e DSAR | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico\|P03-T01]] Modelo Lógico e Físico | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T02_Servico_Identidade_Matching\|P03-T02]] Serviço de Identidade e Matching | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema\|P03-T03]] Envelope de Evento e Schema | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T04_Dicionario_Fisico_Mapping\|P03-T04]] Dicionário Físico e Mapping | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo\|P03-T05]] Catálogo de Métricas e Grafo | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias\|P03-T06]] Templates de Linhagem e Evidências | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T07_Taxonomia_Estados_Valor\|P03-T07]] Taxonomia de Estados de Valor | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade\|P03-T08]] Matriz de Dados por Finalidade | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR\|P03-T09]] Fluxos de Linhagem, Replay e DSAR | `pendente` | 2026-08-29 |
 
 ### P04 — Governança e Confiança
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P04-T01_Arquitetura_Entidades\|P04-T01]] Arquitetura de Entidades | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo\|P04-T02]] Mapa de Governança de Dados e Fluxo | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P04-T03_Charter_Selo_Independencia\|P04-T03]] Charter do Selo de Independência | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P04-T04_Matriz_Responsabilidade_Seguros\|P04-T04]] Matriz de Responsabilidade e Seguros | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P04-T05_Registro_PI\|P04-T05]] Registro de PI | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P04-T06_Testes_Retencao_DSAR\|P04-T06]] Testes de Retenção e DSAR | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P04-T07_RACI_v2_Direitos_Decisao\|P04-T07]] RACI v2 — Direitos e Decisão | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P04-T08_Revisao_Inteligencia_Responsavel\|P04-T08]] Revisão de Inteligência Responsável | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T01_Arquitetura_Entidades\|P04-T01]] Arquitetura de Entidades | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo\|P04-T02]] Mapa de Governança de Dados e Fluxo | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T03_Charter_Selo_Independencia\|P04-T03]] Charter do Selo de Independência | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T04_Matriz_Responsabilidade_Seguros\|P04-T04]] Matriz de Responsabilidade e Seguros | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T05_Registro_PI\|P04-T05]] Registro de PI | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T06_Testes_Retencao_DSAR\|P04-T06]] Testes de Retenção e DSAR | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T07_RACI_v2_Direitos_Decisao\|P04-T07]] RACI v2 — Direitos e Decisão | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P04-T08_Revisao_Inteligencia_Responsavel\|P04-T08]] Revisão de Inteligência Responsável | `pendente` | 2026-08-29 |
 
 ### P05 — Tecnologia e Contratos
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes\|P05-T01]] Arquitetura de Solução e Ambientes | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P05-T02_Contratos_Integracao\|P05-T02]] Contratos de Integração | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P05-T03_Mapa_Identidade_Sistemas\|P05-T03]] Mapa de Identidade entre Sistemas | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade\|P05-T04]] Baseline Técnico de Capacidade | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P05-T05_Threat_Model_Controles\|P05-T05]] Threat Model e Controles | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao\|P05-T06]] SLOs, Runbooks e Recuperação | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P05-T07_Processo_Release_Rollback\|P05-T07]] Processo de Release e Rollback | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes\|P05-T01]] Arquitetura de Solução e Ambientes | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T02_Contratos_Integracao\|P05-T02]] Contratos de Integração | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T03_Mapa_Identidade_Sistemas\|P05-T03]] Mapa de Identidade entre Sistemas | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade\|P05-T04]] Baseline Técnico de Capacidade | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T05_Threat_Model_Controles\|P05-T05]] Threat Model e Controles | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao\|P05-T06]] SLOs, Runbooks e Recuperação | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P05-T07_Processo_Release_Rollback\|P05-T07]] Processo de Release e Rollback | `pendente` | 2026-08-29 |
 
 ### P06 — Economia, GTM e Evidência
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P06-T01_Registro_Premissas\|P06-T01]] Registro de Premissas | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios\|P06-T02]] Modelo Financeiro em 3 Cenários | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T03_Ponte_Valor_Produto_Receita\|P06-T03]] Ponte de Valor: Produto × Receita | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T04_Separacao_Comercial_Restrito\|P06-T04]] Separação Comercial e Restrito | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T05_Modelo_Capital_Tranches\|P06-T05]] Modelo de Capital em Tranches | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T06_Dicionario_KPIs_Financeiros\|P06-T06]] Dicionário de KPIs Financeiros | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T07_Modelo_Mercado_BottomUp\|P06-T07]] Modelo de Mercado Bottom-Up | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T08_Log_Evidencias_GTM_Alternativas\|P06-T08]] Log de Evidências GTM — Alternativas | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao\|P06-T09]] Estratégia de Canais e Concentração | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T10_Matriz_Afirmacao_Evidencia\|P06-T10]] Matriz Afirmação × Evidência | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T11_Arquitetura_Marca_WhiteLabel\|P06-T11]] Arquitetura de Marca White-Label | `em-revisao` | 2026-08-29 |
-| [[04-project-management/tarefas/P06-T12_Teste_Moat_Defensibilidade\|P06-T12]] Teste de Moat e Defensibilidade | `em-revisao` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T01_Registro_Premissas\|P06-T01]] Registro de Premissas | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios\|P06-T02]] Modelo Financeiro em 3 Cenários | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T03_Ponte_Valor_Produto_Receita\|P06-T03]] Ponte de Valor: Produto × Receita | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T04_Separacao_Comercial_Restrito\|P06-T04]] Separação Comercial e Restrito | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T05_Modelo_Capital_Tranches\|P06-T05]] Modelo de Capital em Tranches | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T06_Dicionario_KPIs_Financeiros\|P06-T06]] Dicionário de KPIs Financeiros | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T07_Modelo_Mercado_BottomUp\|P06-T07]] Modelo de Mercado Bottom-Up | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T08_Log_Evidencias_GTM_Alternativas\|P06-T08]] Log de Evidências GTM — Alternativas | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao\|P06-T09]] Estratégia de Canais e Concentração | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T10_Matriz_Afirmacao_Evidencia\|P06-T10]] Matriz Afirmação × Evidência | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T11_Arquitetura_Marca_WhiteLabel\|P06-T11]] Arquitetura de Marca White-Label | `pendente` | 2026-08-29 |
+| [[04-project-management/tarefas/P06-T12_Teste_Moat_Defensibilidade\|P06-T12]] Teste de Moat e Defensibilidade | `pendente` | 2026-08-29 |
 
 ### P07 — Portão de Lançamento
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P07-T01_Portao_Mestre_Grafo\|P07-T01]] Portão Mestre em Grafo | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P07-T02_Plano_Operacoes_Lancamento\|P07-T02]] Plano de Operações de Lançamento | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P07-T03_Workflow_Aprovacao\|P07-T03]] Workflow de Aprovação | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P07-T04_Matriz_Rastreabilidade\|P07-T04]] Matriz de Rastreabilidade | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P07-T05_Registro_Riscos_Premissas_Dependencias\|P07-T05]] Registro de Riscos, Premissas e Dependências | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P07-T06_Checklist_Lancamento_Comercial\|P07-T06]] Checklist de Lançamento Comercial | pendente | 2026-08-27 |
-| [[04-project-management/tarefas/P07-T07_Ciclo_Vida_Artefatos\|P07-T07]] Ciclo de Vida dos Artefatos | pendente | 2026-08-27 |
+| [[04-project-management/tarefas/P07-T01_Portao_Mestre_Grafo\|P07-T01]] Portão Mestre em Grafo | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/P07-T02_Plano_Operacoes_Lancamento\|P07-T02]] Plano de Operações de Lançamento | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/P07-T03_Workflow_Aprovacao\|P07-T03]] Workflow de Aprovação | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/P07-T04_Matriz_Rastreabilidade\|P07-T04]] Matriz de Rastreabilidade | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/P07-T05_Registro_Riscos_Premissas_Dependencias\|P07-T05]] Registro de Riscos, Premissas e Dependências | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/P07-T06_Checklist_Lancamento_Comercial\|P07-T06]] Checklist de Lançamento Comercial | pendente | 2026-08-29 |
+| [[04-project-management/tarefas/P07-T07_Ciclo_Vida_Artefatos\|P07-T07]] Ciclo de Vida dos Artefatos | pendente | 2026-08-29 |
 
 ---
 
 ## Log cronológico
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
+
+### 2026-08-29 — P03–P06 revertidos para pendente (reset fases 3–7)
+
+- **O que mudou:** 36 tarefas de P03 (9), P04 (8), P05 (7) e P06 (12) passaram de `em-revisao` para `pendente` (`status: - pendente` nas notas). P07 já estava `pendente` (7) e foi normalizado para `status: - pendente` (lista). P01 (7) e P02 (6) permanecem `done` (`concluido`).
+- **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` sincronizada — 43 linhas agora `pendente`/`- [ ]` (P03–P07), 13 linhas `concluido`/`- [x]` (P01+P02).
+- **Mirrors:** `quartz-site/content/04-project-management/tarefas/P03-T*.md` a `P06-T*.md` sincronizados para `pendente`.
+- **Base:** `HUB_Tarefas_Fases_Execucao.base` sem alteração (view derivada); passará a mostrar `⬜ pendente` para P03–P07.
+- **Motivo:** reset operacional para replanejamento sequencial; bases/execução espelham o novo status.
 
 ### 2026-08-29 — P02 concluído — 6 tarefas + 3 artefatos de refinamento criados
 
@@ -240,8 +248,8 @@ tags:
 
 > Atualizar sempre que um bloqueio surgir ou for resolvido.
 
-- **Atual (2026-08-29):** P01 (7 tarefas) e P02 (6 tarefas) concluídos; `P01-T01..T07` e `P02-T01..T06` em `done`. Condições de `STR-001`/`STR-002` tratadas como hipótese controlada; sem bloqueio ativo.
-- **Em observação:** P03–P06 permanecem `em-revisao`; P07 `pendente`. Gate G02.3/G02.6/G02.7 agora têm rascunhos em `02-refinement/refinamento-produto/` e `14_RACI` para revisão Segurança/Governança.
+- **Atual (2026-08-29):** P01 (7) e P02 (6) em `done` (`concluido`); P03 (9), P04 (8), P05 (7), P06 (12) e P07 (7) em `pendente` — reset para replanejamento.
+- **Em observação:** G02.3/G02.6/G02.7 têm rascunhos em `02-refinement/refinamento-produto/` e `14_RACI` aguardando revisão Segurança/Governança antes de reabrir P02→P03.
 
 ## Marcos
 

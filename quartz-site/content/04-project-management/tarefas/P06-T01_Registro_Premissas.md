@@ -2,7 +2,8 @@
 title: P06-T01 — Registro de premissas com proveniência (FIN-001)
 task_id: P06-T01
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: business-model
 layer: refining

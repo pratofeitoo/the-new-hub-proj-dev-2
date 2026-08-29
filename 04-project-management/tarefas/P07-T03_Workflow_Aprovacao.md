@@ -2,7 +2,8 @@
 title: P07-T03 — Workflow de aprovação + templates pacote revisão
 task_id: P07-T03
 phase: P07
-status: pendente
+status:
+  - pendente
 priority: critica
 area: launch-vision
 layer: approval

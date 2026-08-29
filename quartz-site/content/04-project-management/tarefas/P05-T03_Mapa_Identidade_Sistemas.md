@@ -2,7 +2,8 @@
 title: P05-T03 — Mapa identidade entre sistemas (chaves canônicas)
 task_id: P05-T03
 phase: P05
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: technology
 layer: refining

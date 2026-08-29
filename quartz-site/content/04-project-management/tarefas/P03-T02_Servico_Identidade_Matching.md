@@ -2,7 +2,8 @@
 title: P03-T02 — Serviço de identidade (matching/merging/survivorship)
 task_id: P03-T02
 phase: P03
-status: pendente
+status:
+  - pendente
 priority: critica
 area: data-intelligence
 layer: refining

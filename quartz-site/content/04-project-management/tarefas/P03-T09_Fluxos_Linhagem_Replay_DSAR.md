@@ -2,7 +2,8 @@
 title: P03-T09 — Fluxos linhagem/correção/replay/DSAR + XLSX validado
 task_id: P03-T09
 phase: P03
-status: pendente
+status:
+  - pendente
 priority: alta
 area: data-intelligence
 layer: refining

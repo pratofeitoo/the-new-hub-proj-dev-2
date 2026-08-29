@@ -2,7 +2,8 @@
 title: P07-T04 — Matriz rastreabilidade requisito→evidência→entregável
 task_id: P07-T04
 phase: P07
-status: pendente
+status:
+  - pendente
 priority: alta
 area: launch-vision
 layer: approval

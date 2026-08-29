@@ -2,7 +2,8 @@
 title: P03-T05 — Catálogo canônico de métricas + grafo de dependências
 task_id: P03-T05
 phase: P03
-status: pendente
+status:
+  - pendente
 priority: critica
 area: data-intelligence
 layer: refining

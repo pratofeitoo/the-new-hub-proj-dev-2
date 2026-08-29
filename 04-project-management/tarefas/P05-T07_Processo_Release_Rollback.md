@@ -2,7 +2,8 @@
 title: P05-T07 — Processo release/rollback + ambientes + suporte
 task_id: P05-T07
 phase: P05
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: technology
 layer: refining

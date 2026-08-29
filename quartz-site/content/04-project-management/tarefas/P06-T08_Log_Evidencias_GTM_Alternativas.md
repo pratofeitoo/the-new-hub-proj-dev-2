@@ -2,7 +2,8 @@
 title: P06-T08 — Log evidências GTM + análise alternativas (buyer-ranked)
 task_id: P06-T08
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: gtm
 layer: refining

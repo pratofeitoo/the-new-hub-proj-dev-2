@@ -2,7 +2,8 @@
 title: P05-T05 — Threat model + controles tenancy/IAM/secrets/auditoria
 task_id: P05-T05
 phase: P05
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: technology
 layer: refining

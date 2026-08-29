@@ -2,7 +2,8 @@
 title: P06-T06 — Dicionário KPIs financeiros (ARR/MRR/NRR)
 task_id: P06-T06
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: business-model
 layer: refining

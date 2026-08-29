@@ -2,7 +2,8 @@
 title: P03-T07 — Taxonomia estados de valor (potencial→realizado)
 task_id: P03-T07
 phase: P03
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: data-intelligence
 layer: refining

@@ -2,7 +2,8 @@
 title: P05-T01 — Arquitetura solução + estratégia de ambientes (NFRs)
 task_id: P05-T01
 phase: P05
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: technology
 layer: blueprint

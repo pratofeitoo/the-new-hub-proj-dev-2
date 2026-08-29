@@ -2,7 +2,8 @@
 title: P05-T06 — SLOs + on-call + runbooks + testes de recuperação
 task_id: P05-T06
 phase: P05
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: technology
 layer: refining

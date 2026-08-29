@@ -2,7 +2,8 @@
 title: P07-T01 — Portão mestre + grafo de dependências (LCH-001)
 task_id: P07-T01
 phase: P07
-status: pendente
+status:
+  - pendente
 priority: critica
 area: launch-vision
 layer: approval

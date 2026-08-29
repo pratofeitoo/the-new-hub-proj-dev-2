@@ -2,7 +2,8 @@
 title: P06-T11 — Arquitetura de marca + regras white-label
 task_id: P06-T11
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: brand-market
 layer: blueprint

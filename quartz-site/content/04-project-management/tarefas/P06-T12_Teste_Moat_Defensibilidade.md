@@ -2,7 +2,8 @@
 title: P06-T12 — Teste de defensibilidade (moat institucional + evidência)
 task_id: P06-T12
 phase: P06
-status: em-revisao
+status:
+  - pendente
 priority: alta
 area: business-model
 layer: refining

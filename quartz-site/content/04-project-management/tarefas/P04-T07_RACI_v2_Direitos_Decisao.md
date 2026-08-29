@@ -2,7 +2,8 @@
 title: P04-T07 — RACI v2 + matriz direitos de decisão + incidentes
 task_id: P04-T07
 phase: P04
-status: pendente
+status:
+  - pendente
 priority: critica
 area: governance-legal
 layer: refining

@@ -2,7 +2,8 @@
 title: P04-T02 — Mapa governança de dados fluxo a fluxo (LGPD)
 task_id: P04-T02
 phase: P04
-status: em-revisao
+status:
+  - pendente
 priority: critica
 area: governance-legal
 layer: refining
