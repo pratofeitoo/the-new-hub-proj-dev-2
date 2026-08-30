@@ -1,0 +1,15 @@
+{
+  "event_id": "evt_test_001",
+  "event_type": "identity.merged",
+  "schema_version": "1.0",
+  "producer": "hub.identity",
+  "tenant_id": "tenant_001",
+  "subject_canonical_id": "hub_p_001",
+  "object_type": "Person",
+  "occurred_at": "2026-08-29T14:00:00Z",
+  "recorded_at": "2026-08-29T14:00:02Z",
+  "valid_from": "2026-08-29T14:00:00Z",
+  "valid_to": null,
+  "payload": {"merged_ids": ["HRIS_001","CRM_042"]},
+  "idempotency_key": "hub.identity:identity.merged:hub_p_001:2026-08-29T14:00:00Z:hash123"
+}

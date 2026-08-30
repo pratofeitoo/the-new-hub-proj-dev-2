@@ -227,11 +227,11 @@ O projeto agora possui um **faseamento sequencial** para gestão eficiente:
 
 ## Estado atual do projeto
 
-- A matriz canônica registra 56 tarefas: P01=7, P02=6, P03=9, P04=8, P05=7, P06=12 e P07=7.
-- Os requisitos mínimos de `DAT-010`, `TEC-005`, `TEC-007` e `LCH-007` são bloqueadores dos respectivos gates; extensões estão classificadas como pós-MVP.
-- `P07-T01` depende explicitamente de `P04-T01` e `P06-T02`. P07 permanece pendente e não aprovado.
-- A sincronização operacional foi enviada para `origin/main`; o remoto separado `publish` não é atualizado automaticamente.
+- A matriz canônica registra 56 tarefas: P01=7 `done`, P02=6 `done`, P03=9 `em-revisao` (rascunhos G03.A1–G03.C5 entregues), P04=8 `pendente`, P05=7 `pendente`, P06=12 `pendente` e P07=7 `pendente` (total 13 `done`/`- [x]`, 43 `pendente`/`- [ ]` + 9 `em-revisao`).
+- Os requisitos mínimos de `DAT-010` (G03.B2), `TEC-005` (G05.4), `TEC-007` (G05.7) e `LCH-007` (G07.7) são bloqueadores dos respectivos gates; extensões estão classificadas como pós-MVP.
+- `P03-T01` (modelo lógico 25 entidades) a `P03-T09` (fluxos+XLSX reconstruído) estão em `em-revisao` para validação Dados+Tech+LGPD; `P07-T01` depende explicitamente de `P04-T01` e `P06-T02`. P07 permanece pendente e não aprovado.
+- A sincronização operacional foi enviada para `origin/main` (`76401a3`); o remoto separado `publish` não é atualizado automaticamente.
 
 ## Observação
 
-O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `a02e74e`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `76401a3`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.

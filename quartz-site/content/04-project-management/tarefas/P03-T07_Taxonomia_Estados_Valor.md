@@ -3,7 +3,7 @@ title: P03-T07 — Taxonomia estados de valor (potencial→realizado)
 task_id: P03-T07
 phase: P03
 status:
-  - pendente
+  - em-revisao
 priority: alta
 area: data-intelligence
 layer: refining
@@ -30,13 +30,30 @@ tags:
 Definir estados `potencial → influenciado → validado → realizado` + políticas cálculo/atribuição/deduplicação/contrafactual.
 
 ## Entregável
-Taxonomia aprovada por Finanças+Gov Dados.
+Taxonomia refinada, com pareceres de Finanças e Governança de Dados registrados como insumo para decisão posterior na Camada 3.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo|P03-T05]]
 
 ## Critério (G03.C3)
-Aprovação Finanças+Governança de Dados.
+Pareceres de Finanças e Governança de Dados registrados para subsidiar a aprovação na Camada 3.
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-006]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|taxonomia-estados-valor-P03-T07-v1.md]] — 4 estados com caminho evidências, políticas cálculo/atribuição/deduplicação/contrafactual + exemplo `PES-02→RH-06→R$18.500 influenciado` com regra promoção para `validado` (holdout) e `realizado` (`contract_id`+ledger).
+- **Pareceres:** Finanças e Gov Dados ambos `Refinar com condições` — `influenciado` operacional vs `realizado` ledger; `DAT-006` aberto até Camada 3.
+- **Resultado:** nenhum valor `influenciado` entra em demonstrativo sem `contract_id`; duplicação bloqueada por `financial_claims` indexado.
+- **Próximo:** protocolo holdout `run_rh06_holdout_001` e decisão `DEC-P03-T07.md`.
+
+## Verificação G03.C3 — 2026-08-29
+
+| Critério | Resultado | Evidência |
+|---|---|---|
+| 4 estados com evidência mínima | ok | §1 tabela estados |
+| Políticas dedup/atribuição/contrafactual | ok | §2.1–2.4 |
+| Pareceres Finanças/Gov Dados | ok | §4 ambos `Refinar com condições` |
+
+> **Status:** `em-revisao` — insumo Camada 3; `DAT-006` aberto.

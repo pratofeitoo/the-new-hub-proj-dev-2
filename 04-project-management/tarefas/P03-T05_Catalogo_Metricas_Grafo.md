@@ -3,7 +3,7 @@ title: P03-T05 — Catálogo canônico de métricas + grafo de dependências
 task_id: P03-T05
 phase: P03
 status:
-  - pendente
+  - em-revisao
 priority: critica
 area: data-intelligence
 layer: refining
@@ -41,3 +41,20 @@ Nenhuma métrica crítica com definição alternativa; este critério orienta o 
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-005]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1.md]] (73 indicadores) + cópia em `sintese-entre-abas/` — catálogo com fórmula/dimensão/owner/tipo/alavanca + grafo `DAT-01/02/03 → eventos → indicadores → contrato/transação → fato financeiro → dashboards` (Mermaid) + resolução 6 definições alternativas (MRR/ARR/NRR, retenções, etc.).
+- **Cobertura:** 8 vertentes (Pessoas 10, Empresas/RH 10, Produto 10, etc.), 12 alavancas Árvore de Valor, 10 visões Dashboard, 12 famílias Matriz Integração.
+- **Resultado:** 73/73 com fórmula única, dimensão e dependência; nenhuma métrica crítica com definição alternativa após §4.
+- **Próximo:** validar 73 fórmulas vs `06_Simulador_ROI` (H20 payback bruto vs líquido) e `08_Dicionario_Dados` chaves antes de G03.C2.
+
+## Verificação G03.C1 — 2026-08-29
+
+| Critério | Resultado | Evidência |
+|---|---|---|
+| 73 indicadores com fórmula/dimensão/owner | 73/73 | Tabela §2 do catálogo |
+| Nenhuma métrica crítica alternativa | ok | §4 resolução 6 casos |
+| Grafo dependências publicado | ok | §3 Mermaid validado |
+
+> **Status:** `em-revisao` — catálogo de definição, sem certificação produção; `DAT-005` aberto até validação G03.C2.

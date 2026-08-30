@@ -103,16 +103,16 @@ flowchart TD
 
 ## 3. As 7 fases — visão executiva
 
-| Fase | Nome | Gaps críticos que fecha | Task BP âncora | Saída principal | Dono provisório | Gate |
-|---|---|---|---|---|---|---|
-| **P00** | Fundação & Alinhamento (0–2 sem) | — | — | Scope baseline + RACI provisório + canvas P1–P7 | PF Rezende | Scope approved |
-| **P01** | Arquitetura de Oferta & Negócio | `STR-001,002,003` · `FIN-002` · `GTM-001` | `BP-001` | Matriz oferta–comprador–capacidade + taxonomia receita | PF Rezende + Finanças | Oferta aprovada |
-| **P02** | Produto & Operação | `PRD-001,002` · `STR-007` · `GOV-008` | `BP-002` + `BP-005` | Fronteiras de módulos + matriz permissão + SOPs C.A.O.S. | Produto + Ops | Operability ready |
-| **P03** | Dados Canônicos (spine) | `DAT-001..006` · `DAT-008` · `DAT-010` | `BP-003` | Modelo lógico/físico + event envelope + catálogo métricas | Dados | Data arch approved |
-| **P04** | Governança & Confiança | `GOV-001..005` · `GOV-008` | `BP-006` | Estrutura entidades + LGPD map + Selo charter | Jurídico | Legal/Sec approved |
-| **P05** | Tecnologia Contratual | `TEC-001..007` | `BP-004` | Contratos API/evento + SLOs + threat model | Tech | Arch/Sec approved |
-| **P06** | Economia & GTM com Evidência | `FIN-001,003,006` · `GTM-002..006` · `BRD-002` | `BP-007` + parte `BP-001` | Modelo financeiro reconstruído + claim library + GTM routes | Finanças + GTM | Evidence audit passed |
-| **P07** | Portão de Lançamento | `LCH-001..007` · `STR-003` | `BP-008` | Checklist integrado + runbook + workflow aprovação | Controle Projeto | Launch Approved |
+| Fase    | Nome                             | Gaps críticos que fecha                        | Task BP âncora            | Saída principal                                             | Dono provisório       | Gate                  |
+| ------- | -------------------------------- | ---------------------------------------------- | ------------------------- | ----------------------------------------------------------- | --------------------- | --------------------- |
+| **P00** | Fundação & Alinhamento (0–2 sem) | —                                              | —                         | Scope baseline + RACI provisório + canvas P1–P7             | PF Rezende            | Scope approved        |
+| **P01** | Arquitetura de Oferta & Negócio  | `STR-001,002,003` · `FIN-002` · `GTM-001`      | `BP-001`                  | Matriz oferta–comprador–capacidade + taxonomia receita      | PF Rezende + Finanças | Oferta aprovada       |
+| **P02** | Produto & Operação               | `PRD-001,002` · `STR-007` · `GOV-008`          | `BP-002` + `BP-005`       | Fronteiras de módulos + matriz permissão + SOPs C.A.O.S.    | Produto + Ops         | Operability ready     |
+| **P03** | Dados Canônicos (spine)          | `DAT-001..006` · `DAT-008` · `DAT-010`         | `BP-003`                  | Modelo lógico/físico + event envelope + catálogo métricas   | Dados                 | Data arch approved    |
+| **P04** | Governança & Confiança           | `GOV-001..005` · `GOV-008`                     | `BP-006`                  | Estrutura entidades + LGPD map + Selo charter               | Jurídico              | Legal/Sec approved    |
+| **P05** | Tecnologia Contratual            | `TEC-001..007`                                 | `BP-004`                  | Contratos API/evento + SLOs + threat model                  | Tech                  | Arch/Sec approved     |
+| **P06** | Economia & GTM com Evidência     | `FIN-001,003,006` · `GTM-002..006` · `BRD-002` | `BP-007` + parte `BP-001` | Modelo financeiro reconstruído + claim library + GTM routes | Finanças + GTM        | Evidence audit passed |
+| **P07** | Portão de Lançamento             | `LCH-001..007` · `STR-003`                     | `BP-008`                  | Checklist integrado + runbook + workflow aprovação          | Controle Projeto      | Launch Approved       |
 
 > Detalhamento completo em [`04-project-management/planos-fase/P01_*.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-fase) — um arquivo por fase com entradas/saídas, critérios de saída verificáveis e backlog de tarefas.
 

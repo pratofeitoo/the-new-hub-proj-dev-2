@@ -51,6 +51,8 @@ O modelo separa **tempo de validade** (quando um fato é verdadeiro no mundo rep
 
 Este contrato lógico aborda [[00-project-control/registro-lacunas/lacunas/DAT-001|DAT-001]], mas não afirma que chaves primárias, chaves estrangeiras, índices ou tabelas de armazenamento físicas estejam aprovados. O entregável de refinamento é um modelo lógico e físico aprovado; a aprovação da arquitetura de dados continua pendente.
 
+> **Refinamento P03-T01 (M03.A):** proposta detalhada com 25 entidades (PK estável), 12 relacionamentos com cardinalidade/temporalidade, tipos de objeto e diagrama ER em [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — atende G03.A1 para revisão Dados+Tech.
+
 ## 2. Arquitetura de indicadores de origem conectada às capacidades do produto e aos resultados de negócio
 
 O catálogo de aproximadamente 73 indicadores e a árvore de valor com 12 alavancas são tratados como um grafo de dependências semânticas, não como um backlog de dashboards. Cada indicador deve conectar quatro camadas:
