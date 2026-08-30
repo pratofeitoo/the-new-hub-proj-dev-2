@@ -4,7 +4,7 @@ type:
 owner:
   - PF Rezende
 status:
-  - open
+  - concluido
 ---
 
 

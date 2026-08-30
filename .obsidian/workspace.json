@@ -22,16 +22,13 @@
             }
           },
           {
-            "id": "64f77c38ec99183a",
+            "id": "cf9c8fa3f1afce06",
             "type": "leaf",
             "state": {
-              "type": "bases",
-              "state": {
-                "file": "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-                "viewName": "Execução por Fase — P01→P07"
-              },
-              "icon": "lucide-table",
-              "title": "HUB_Tarefas_Fases_Execucao"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -240,7 +237,11 @@
   },
   "active": "94d92b407366b66d",
   "lastOpenFiles": [
+    "99-archive/README.md",
+    "99-archive/project-map.md",
+    "project-map.md",
     "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "Inventário dos arquivos de valor.md",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30.jpeg",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30 (3).jpeg",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30 (2).jpeg",
@@ -268,7 +269,6 @@
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Acadêmico/README.md",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Candidatos/README.md",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Candidatos/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/Visão de Comunidades",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/README.md",
     "05-resources/Processar/Plataforma HUB/Plataforma Completa/Portfólio de Produtos/README.md",
     "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/README.md",
@@ -276,7 +276,6 @@
     "05-resources/Processar/Plataforma HUB/Plataforma Completa/Modelo Financeiro para Investidores/README.md",
     "05-resources/Processar/Plataforma HUB/Plataforma Completa/Estrutura de Liderança e Atribuições/README.md",
     "05-resources/documentos/Estrategia_Plataforma_Pessoas_Negocios_Comunidade.md",
-    "Inventário dos arquivos de valor.md",
     "02-refinement/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1.md",
     "04-project-management/registros-trabalho/logs-progresso/P03-entregaveis-dados-canonicos-spine-2026-08-29.md",
     "04-project-management/registros-trabalho/logs-progresso/P02-entregaveis-produto-operacao-2026-08-29.md",
@@ -284,8 +283,6 @@
     "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md",
     "docs/superpowers/plans/2026-08-30-replace-corrupt-git-metadata.md",
     "05-resources/Arquitetura e Custos Totais.md",
-    "04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros.md",
-    "04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",
