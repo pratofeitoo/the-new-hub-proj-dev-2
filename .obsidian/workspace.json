@@ -31,7 +31,8 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -235,13 +236,13 @@
       "canvas2document:C2D Step 2 - Make cleared document": false
     }
   },
-  "active": "94d92b407366b66d",
+  "active": "aa7b9d1bda30d77d",
   "lastOpenFiles": [
+    "Inventário dos arquivos de valor.md",
     "99-archive/README.md",
     "99-archive/project-map.md",
     "project-map.md",
     "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-    "Inventário dos arquivos de valor.md",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30.jpeg",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30 (3).jpeg",
     "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30 (2).jpeg",
