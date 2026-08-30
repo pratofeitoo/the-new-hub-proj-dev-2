@@ -3,7 +3,7 @@ title: P03-T01 — Modelo lógico/físico com PK/FK/cardinalidade (M03.A)
 task_id: P03-T01
 phase: P03
 status:
-  - pendente
+  - em-revisao
 priority: critica
 area: data-intelligence
 layer: blueprint
@@ -39,3 +39,21 @@ A proposta não deve manter entidade sem chave estável; a validação por arqui
 
 ## Registros
 - [[00-project-control/registro-lacunas/lacunas/DAT-001]]
+
+## Execução
+
+- **Entregável produzido:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — 25 entidades com `canonical_id` (PK estável), 12 relacionamentos com PK/FK/cardinalidade/temporalidade, tipos de objeto por família, regras temporais e diagrama ER Mermaid; crosswalk `identity_alias` com `hub_id`/`external_id`/`source_system`.
+- **Blueprint atualizado:** [[01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]] vinculado ao rascunho (G03.A1).
+- **Resultado:** nenhuma entidade sem chave estável; `relationship_id` e bridges N:N temporal formalizados; `valid_from/to` e `occurred_at`/`recorded_at` padronizados (UTC).
+- **Próximo:** revisão Dados+Tech, popular `identity_alias` com dataset representativo, constraints físicas e testes de órfãos/unicidade antes de G03.A2.
+
+## Verificação G03.A1 — 2026-08-29
+
+| Critério | Resultado | Evidência |
+|---|---|---|
+| Entidades com PK estável | 25/25 | Tabela §1 do rascunho — todo `canonical_id` imutável |
+| FK + cardinalidade + temporalidade | 12/12 | Tabela §2 + diagrama ER |
+| Tipos objeto por família | 6 famílias | §3 mapeado a BP-003 |
+| Regras temporais explícitas | ok | §4 `valid_from/to` inclusivo/exclusivo + UTC |
+
+> **Status:** `em-revisao` — rascunho para revisão Arquitetura de Dados; `DAT-001` permanece aberto até aprovação.

@@ -1,5 +1,5 @@
-<!-- git-hash: a02e74e49e1585ee650434b59b580dfec5fc4545 -->
-<!-- last-synced: 2026-08-29T13:25:26-03:00 -->
+<!-- git-hash: 76401a3dd5e6c4598bbe368fada939ad401edb34 -->
+<!-- last-synced: 2026-08-29T15:28:24-03:00 -->
 
 # Mapa do Projeto
 
@@ -112,12 +112,12 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   │   └── segundo-rascunho-projeto/  — pesquisas que embasam o doc-mãe v2
 │   │       └── pt-BR/  — traduções pt-BR das pesquisas v2 (governança, financeiro, mercado, produto)
 │   ├── prototipos/  — protótipos e simulações
-│   ├── refinamento-governanca/  — refinamento de LGPD, controle e responsabilidades
-│   ├── refinamento-modelo-dados/  — sínteses semânticas e ajustes do modelo de dados
+│   ├── refinamento-governanca/  — refinamento de LGPD, controle e responsabilidades (matriz dados-finalidade P03-T08 v1)
+│   ├── refinamento-modelo-dados/  — sínteses semânticas e ajustes do modelo de dados (rascunhos P03-T01..T09 v1: modelo lógico/físico, identidade, envelope, dicionário 41 campos, catálogo 73, templates linhagem, taxonomia estados)
 │   │   └── modelo-indicadores/  — refinamento específico do modelo de indicadores
 │   │       ├── pastas-trabalho/  — xlsx melhorado (MELHORADO_v1.1.xlsx)
 │   │       └── sintese-entre-abas/  — sínteses cross-aba (crosswalk de chaves, consistência financeira, governança)
-│   ├── refinamento-produto/  — ajustes de escopo, fluxo e experiência do produto
+│   ├── refinamento-produto/  — ajustes de escopo, fluxo e experiência do produto (fichas P01-T02 v1, matriz autorização, filas revisão, RACI)
 │   ├── revisoes/  — feedback e revisões pontuais
 │   ├── revisoes-iteradas/  — versões iteradas / ciclos de revisão
 │   └── testes-experimentos/  — testes, provas de conceito e experimentos
@@ -286,7 +286,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `02-refinement/pesquisa/segundo-rascunho-projeto/pt-BR/` | refinement | Traduções pt-BR das pesquisas v2 | `*-pt-BR.md` | ativo |
 | `02-refinement/prototipos/` | refinement | Protótipos e simulações | `.gitkeep` | reservado |
 | `02-refinement/refinamento-governanca/` | refinement | Refinamento de LGPD/controle/responsabilidades | `.gitkeep` | reservado |
-| `02-refinement/refinamento-modelo-dados/` | refinement | Sínteses semânticas e ajustes do modelo de dados | modelo-indicadores | ativo |
+| `02-refinement/refinamento-modelo-dados/` | refinement | Sínteses semânticas e ajustes do modelo de dados — 9 rascunhos P03 v1 (G03.A1–C5) + `fichas-operacionais-P01-T02` | modelo-indicadores + 6 rascunhos P03 | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/` | refinement | Refinamento específico do modelo de indicadores | pastas-trabalho + sintese | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/pastas-trabalho/` | refinement | XLSX melhorado do modelo de indicadores | `MELHORADO_v1.1.xlsx` | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/` | refinement | Sínteses cross-aba (crosswalk, consistência, governança) | `*.md` síntese | ativo |
@@ -472,13 +472,13 @@ flowchart TB
 
 ## Notas de frescor
 
-- O mapa reflete o commit `a02e74e`, que sincronizou a matriz de governança e os ativos locais do workspace com `origin/main`. O remoto separado `publish` não é atualizado automaticamente.
+- O mapa reflete o commit `76401a3`, que sincronizou P03 spine em `em-revisao` (9 rascunhos G03.A1–G03.C5) + matriz/log. Anteriores `a02e74e` (matriz), `90b8211` (phase gates) e `1c2733f` (faseamento) permanecem como histórico. `origin/main` é o remoto operacional; `publish` não é atualizado automaticamente.
 - Anterior `973a23b` registrou as **56 tarefas P01→P07 + base de execução** (`HUB_Tarefas_Fases_Execucao.base` com 9 views em `registros-trabalho/`, 56 notas `P01-T01→P07-T07` em `tarefas/`).
 - Anterior `1c2733f` entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views, `marcos-fases-v1.md` M00→M07).
 - `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README.
 - `04-project-management/registros-trabalho/` contém `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
 - `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) e `HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`.
-- `04-project-management/registro-mestre/` contém `matriz-fases-tarefas-v1.md`, com 56 linhas de coordenação P01–P07; P07 permanece pendente e não aprovado.
+- `04-project-management/registro-mestre/` contém `matriz-fases-tarefas-v1.md` (56 linhas: P01 7 `done`, P02 6 `done`, P03 9 `em-revisao`, P04–P07 34 `pendente`); P07 permanece pendente e não aprovado.
 - `04-project-management/planos-fase/` contém `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis).
 - `04-project-management/cronogramas/` contém `cronograma-fases-v1.base` (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
 - `04-project-management/marcos/` contém `marcos-fases-v1.md` (M00→M07 + M03.A/B, critérios G01.x→G07.x).
