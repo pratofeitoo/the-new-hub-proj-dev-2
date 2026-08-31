@@ -1,0 +1,11 @@
+OPEX MENSAL — PLATAFORMA E MÓDULOS,,,,,,,,,,,,,,
+Componente,Base mensal R$,Core %,Vertical %,Core mensal,Pool verticais,Observação,Premissa,,Código,Módulo,Peso de complexidade,OPEX incremental/mês,Core rateado/mês,OPEX fully-loaded/mês
+Cloud / infraestrutura,18000,0.75,0.25,13500,4500,"Ambientes, banco, storage, observabilidade; recalibrar por volume",Editável,,ED,Estratégia & Dados,0.1782083012668681,13811.143348182277,9214.285714285714,23025.429062467992
+Dados / pipelines / BI,14000,0.55,0.44999999999999996,7700.000000000001,6299.999999999999,"Orquestração, processamento e monitoramento",Editável,,COL,Colaboradores / Meu Time,0.10677034917004385,8274.702060678399,9214.285714285714,17488.987774964113
+IA / modelos / APIs,12000,0.35,0.65,4200,7800,Uso variável; depende de volume e arquitetura,Editável,,CAN,Candidatos & Carreira,0.15959932049733508,12368.947338543469,9214.285714285714,21583.233052829182
+DevOps / SRE,22000,0.3,0.7,6600,15399.999999999998,Sustentação de plataforma,Editável,,FOR,Fornecedores & Negócios,0.15566140601998157,12063.758966548572,9214.285714285714,21278.044680834286
+Segurança / compliance,14000,0.7,0.30000000000000004,9800,4200.000000000001,"Monitoramento, scans, LGPD e auditoria",Editável,,ACA,Acadêmico / Universidades,0.13603211275065433,10542.48873817571,9214.285714285714,19756.774452461425
+QA / releases,16000,0.35,0.65,5600,10400,Regressão e qualidade contínua,Editável,,EVT,Eventos,0.1723909914037516,13360.301833790749,9214.285714285714,22574.587548076463
+Produto / operação técnica,28000,0.45,0.55,12600,15400.000000000002,"Gestão de backlog, incidentes e evolução",Editável,,COM,Comunidades,0.09133751889136532,7078.657714080812,9214.285714285714,16292.943428366525
+Suporte / CS técnico,18000,0.25,0.75,4500,13500,Atendimento B2B e operação,Editável,,,,,,,
+OPEX BASE TOTAL / MÊS,,,,142000,,,,,,,,,,

@@ -1,0 +1,12 @@
+CAPEX E CUSTO INCREMENTAL POR MÓDULO,,,,,,,,,,,,,
+O custo incremental exclui o Core compartilhado. Isso permite precificar cada vertical sem cobrar novamente a infraestrutura-base já construída.,,,,,,,,,,,,,
+Código,Módulo,Telas,MVP,Fase 2,Horas líquidas,CAPEX total,CAPEX MVP,CAPEX Fase 2,Core alocado,Custo incremental,% do CAPEX,Complexas,Leitura comercial
+CORE,Core / Plataforma,12,10,2,549.3056999999999,160722.26340799994,135167.76895999996,25554.49444799999,160722.26340799994,160722.26340799994,0.02866116918753688,6,Base compartilhada
+ED,Estratégia & Dados,11,9,2,3294.091499999999,970690.5868799998,764201.8271999999,206488.75968,22960.323343999993,970690.5868799998,0.17310064299363487,9,Preço do módulo = incremental + parcela de Core + implantação/integrações específicas do cliente
+COL,Colaboradores / Meu Time,11,7,4,2021.1589999999997,581572.08256,360714.57519999996,220857.50736,22960.323343999993,581572.08256,0.10371018612826884,4,Preço do módulo = incremental + parcela de Core + implantação/integrações específicas do cliente
+CAN,Candidatos & Carreira,13,9,4,2982.2475,869328.5160000001,571622.772,297705.74400000006,22960.323343999993,869328.5160000001,0.15502501737034505,5,Preço do módulo = incremental + parcela de Core + implantação/integrações específicas do cliente
+FOR,Fornecedores & Negócios,14,10,4,2928.964250000001,847878.9174800001,603203.4436400001,244675.47384,22960.323343999993,847878.9174800001,0.151199968126073,9,Preço do módulo = incremental + parcela de Core + implantação/integrações específicas do cliente
+ACA,Acadêmico / Universidades,12,8,4,2546.4927500000003,740959.2618400002,469950.70528,271008.55656,22960.323343999993,740959.2618400002,0.13213327335216973,6,Preço do módulo = incremental + parcela de Core + implantação/integrações específicas do cliente
+EVT,Eventos,14,10,4,3251.841824999999,939004.027472,714015.2936,224988.733872,22960.323343999993,939004.027472,0.16745006403272147,10,Preço do módulo = incremental + parcela de Core + implantação/integrações específicas do cliente
+COM,Comunidades,9,6,3,1734.1715,497510.32464,322123.13279999996,175387.19184,22960.323343999993,497510.32464,0.08871967880925005,2,Preço do módulo = incremental + parcela de Core + implantação/integrações específicas do cliente
+CAPEX TOTAL DA PLATAFORMA (sem duplicação de telas compartilhadas),,,,,,5607665.980280001,,,,,,,

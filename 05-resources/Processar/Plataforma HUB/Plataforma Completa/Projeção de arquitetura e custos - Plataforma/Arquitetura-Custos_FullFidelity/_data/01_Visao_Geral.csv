@@ -1,0 +1,13 @@
+ARQUITETURA INICIAL DA PLATAFORMA HUB,,,,,,,
+"Primeiro dimensionamento funcional para, no segundo momento, transformar escopo em custo real de produto, tecnologia, dados e operação.",,,,,,,
+Código,Frente / módulo,Público,Modelo,Standalone?,O que resolve,Integrações,Leitura
+CORE,Core / Plataforma,Transversal,Base comum,Sim,"Autenticação, perfis, permissões, consentimentos, integrações, notificações, analytics e administração.",Todas as frentes usam o Core.,Obrigatório para qualquer implantação.
+ED,Estratégia & Dados,Empresas,Produto independente,Sim,"Conecta dados internos de pessoas e negócio para diagnóstico, prioridades, planos de ação e ROI.","Pode receber dados de RH/ERP/BI sem usar candidatos, fornecedores, acadêmico ou eventos.",Pode ser vendido sozinho.
+COL,Colaboradores / Meu Time,Empresas,Independente ou conectado a ED,Sim,"Desempenho, competências, desenvolvimento, liderança, saúde do time e talentos internos.",Alimenta ED com sinais de pessoas e recebe prioridades/planos.,Pode operar sem marketplace externo.
+CAN,Candidatos & Carreira,Pessoas + Empresas,Marketplace / jornada,Sim,"Perfil, competências, capacitação, oportunidades, candidatura, match e acompanhamento.","Conversa com Acadêmico, Empresas, Eventos e Core.",Vertical de empregabilidade.
+FOR,Fornecedores & Negócios,Fornecedores + Compradores,Marketplace B2B,Sim,"Maturidade, demandas, desenvolvimento, match, negociação e conversão.","Conversa com Eventos, ED e Core.",Pode operar sozinho para acesso a mercado.
+ACA,Acadêmico / Universidades,Alunos + Universidades + Empresas,Educação-mercado,Sim,"Projetos, bolsas, pesquisa aplicada, estágio, carreira, formação e conexão com empresas.",Conversa fortemente com Candidatos e Empresas; opcionalmente Eventos.,Pode ser vendido sozinho para universidade.
+EVT,Eventos,Organizadores + Público + Empresas,Orquestrador transversal,Parcial,"Talentos, fornecedores, pesquisa, patrocínios, acessibilidade, segurança/assédio e ROI.","Consome Candidatos, Fornecedores e Dados; pode ativar Acadêmico.","Pode começar standalone, mas ganha valor com outros módulos."
+COM,Comunidades / Eu & Eu / Cultura,Pessoas,Jornada individual,Sim,"Perfil, objetivos, plano, preparação, mentoria, cuidado, eventos e conexões.","Pode alimentar Candidatos, Acadêmico e Eventos com consentimento.",Camada B2C; não é pré-requisito B2B.
+PRINCÍPIO DE ARQUITETURA,,,,,,,
+"A plataforma deve ser modular. Estratégia & Dados pode funcionar somente com dados já existentes do cliente (RHIS, ERP, BI, pesquisas e outras plataformas), sem exigir Candidatos, Fornecedores, Acadêmico, Eventos ou Comunidades. As outras frentes ampliam a inteligência do ecossistema, mas não devem virar dependências artificiais.",,,,,,,

@@ -1,0 +1,9 @@
+CENÁRIOS DE IMPLANTAÇÃO MODULAR,,,,,,,,,
+Cenário,CORE,ED,COL,CAN,FOR,ACA,EVT,COM,Leitura
+Estratégia & Dados standalone,✓,✓,,,,,,,Dados do cliente entram por integrações; não exige marketplaces.
+Gestão de pessoas completa,✓,✓,✓,,,,,,ED + jornada interna.
+Empregabilidade / Firjan,✓,,,✓,,,,Opcional,Formação + candidatos + vagas; COM pode apoiar preparação.
+Fornecedores / Sebrae-GINGA,✓,Opcional,,,✓,,Opcional,,Match B2B; ED mede impacto e EVT pode ativar GINGA.
+Universidade / Mackenzie,✓,Opcional,,✓,,✓,Opcional,,ACA standalone; CAN amplia carreira/estágio.
+HUB Eventos,✓,Opcional,,✓,✓,,✓,Opcional,"Orquestra talentos, fornecedores, pesquisa e ROI."
+Ecossistema completo,✓,✓,✓,✓,✓,✓,✓,✓,"Máxima inteligência de rede, com consentimento e governança."

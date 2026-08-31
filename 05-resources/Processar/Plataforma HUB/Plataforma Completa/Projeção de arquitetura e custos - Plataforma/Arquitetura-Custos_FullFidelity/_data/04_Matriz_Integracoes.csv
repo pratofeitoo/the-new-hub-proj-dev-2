@@ -1,0 +1,11 @@
+MATRIZ DE INTEGRAÇÃO ENTRE FRENTES,,,,,,,,,
+3 = mesmo módulo | 2 = integração direta/forte | 1 = opcional/troca de dados | 0 = não precisa conversar diretamente,,,,,,,,,
+Código,Módulo,CORE,ED,COL,CAN,FOR,ACA,EVT,COM
+CORE,Core / Plataforma,3,2,2,2,2,2,2,2
+ED,Estratégia & Dados,2,3,2,1,1,1,2,1
+COL,Colaboradores / Meu Time,2,2,3,1,0,1,1,1
+CAN,Candidatos & Carreira,2,1,1,3,0,2,2,2
+FOR,Fornecedores & Negócios,2,1,0,0,3,1,2,1
+ACA,Acadêmico / Universidades,2,1,1,2,1,3,1,2
+EVT,Eventos,2,2,1,2,2,1,3,2
+COM,Comunidades / Eu & Eu / Cultura,2,1,1,2,1,2,2,3

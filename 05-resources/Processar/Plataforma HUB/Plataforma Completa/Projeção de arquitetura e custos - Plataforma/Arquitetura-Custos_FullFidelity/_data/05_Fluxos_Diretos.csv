@@ -1,0 +1,13 @@
+O QUE CONVERSA DIRETAMENTE — E O QUE NÃO PRECISA,,,,,,,
+Origem,Destino,Tipo,Dado compartilhado,Por que integrar,Obrigatória?,Funciona sem?,Exemplo
+Estratégia & Dados,Colaboradores,Direta,"KPIs, skills, desempenho, liderança",Enriquece pessoas x negócio,Não,Sim,ED pode usar RHIS/ERP/BI sem COL.
+Estratégia & Dados,Eventos,Direta,"Pesquisa, receita, custos, fornecedores, equipes",Conecta operação ao ROI,Não,Sim,EVT pode enviar dados agregados.
+Estratégia & Dados,Fornecedores,Opcional,"Spend, conversão, impacto",Analisa cadeia e negócios,Não,Sim,ED não depende do marketplace B2B.
+Estratégia & Dados,Candidatos,Opcional,"Funil, contratação, skills",Relaciona atração e performance,Não,Sim,Pode usar ATS existente.
+Candidatos,Acadêmico,Direta,"Perfil, skills, formação, projetos, estágio",Formação -> empregabilidade,Não,Sim,ACA pode ter oportunidades próprias.
+Candidatos,Eventos,Direta,Talentos temporários e vagas,Contratação para eventos,Não,Sim,EVT pode integrar ATS externo.
+Fornecedores,Eventos,Direta,"Fornecedores, demandas, docs, contratos",Compras do evento,Não,Sim,EVT pode cadastrar base própria.
+Acadêmico,Empresas/Candidatos,Direta,"Projetos, bolsas, estágios, pesquisa",Universidade -> mercado,Não,Sim,ACA pode começar isolado.
+Comunidades,Candidatos,Direta c/ consentimento,"Perfil, objetivos, preparação",Evita recadastro,Não,Sim,CAN pode ter onboarding próprio.
+Comunidades,Eventos,Direta c/ consentimento,"Interesses, presença, pesquisa",Personaliza experiência,Não,Sim,EVT pode operar com base própria.
+Candidatos,Fornecedores,Sem integração direta,-,Marketplaces diferentes,Não,Sim,Cruza apenas em casos via Core/Eventos.

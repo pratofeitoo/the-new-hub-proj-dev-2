@@ -1,0 +1,10 @@
+RESUMO DE ESCOPO POR MÓDULO,,,,,,,
+Código,Módulo,Total telas,MVP,Fase 2,Alta/Muito alta,Standalone?,Leitura
+CORE,Core / Plataforma,12,10,2,6,Sim,Obrigatório para qualquer implantação.
+ED,Estratégia & Dados,11,9,2,9,Sim,Pode ser vendido sozinho.
+COL,Colaboradores / Meu Time,11,7,4,4,Sim,Pode operar sem marketplace externo.
+CAN,Candidatos & Carreira,13,9,4,5,Sim,Vertical de empregabilidade.
+FOR,Fornecedores & Negócios,14,10,4,9,Sim,Pode operar sozinho para acesso a mercado.
+ACA,Acadêmico / Universidades,12,8,4,6,Sim,Pode ser vendido sozinho para universidade.
+EVT,Eventos,14,10,4,10,Parcial,"Pode começar standalone, mas ganha valor com outros módulos."
+COM,Comunidades / Eu & Eu / Cultura,9,6,3,2,Sim,Camada B2C; não é pré-requisito B2B.

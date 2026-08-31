@@ -1,0 +1,31 @@
+# Bases — Inventário 96 Telas (CSV)
+# Uso: View > Table, Filter por Código/Fase/Complexidade
+# Requer Obsidian 1.8+ (Bases nativo) — não é Dataview
+
+filters:
+  and: []
+source: _data/02_Inventario_96_Telas.csv
+display:
+  table:
+    columns:
+      - ID
+      - Código
+      - Frente
+      - "Página / tela"
+      - Canal
+      - Fase
+      - Complexidade
+      - "Compartilhável?"
+views:
+  - name: Todas (96)
+    filter: {}
+  - name: MVP + Muito alta (3)
+    filter:
+      and:
+        - Fase == "MVP"
+        - Complexidade == "Muito alta"
+  - name: EVT (14)
+    filter:
+      Código == "EVT"
+  - name: Por módulo
+    groupBy: Código

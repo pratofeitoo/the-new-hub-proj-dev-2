@@ -1,0 +1,11 @@
+BASE PARA A PRÓXIMA ETAPA DE PRECIFICAÇÃO,,,,,,,,,,,
+"Sem valores ainda: drivers que serão convertidos em horas, equipe, infraestrutura, licenças e custos recorrentes.",,,,,,,,,,,
+Código,Módulo,Telas,Complexas,Integrações diretas,IA/matching,Dados/BI,Mensageria,Mobile,Compliance,Operação humana,Observação
+CORE,Core / Plataforma,12,6,7,Não,Média,Alta,Sim,Muito alta,Média,Infraestrutura transversal
+ED,Estratégia & Dados,11,9,3,Alta,Muito alta,Baixa,Não,Alta,Baixa,"Peso em dados, integrações e analytics"
+COL,Colaboradores / Meu Time,11,4,2,Média,Alta,Média,Sim,Alta,Média,Dados sensíveis e ciclos internos
+CAN,Candidatos & Carreira,13,5,4,Muito alta,Alta,Alta,Sim,Alta,Alta,"Marketplace, matching e alto volume"
+FOR,Fornecedores & Negócios,14,9,2,Muito alta,Alta,Alta,Responsivo,Alta,Alta,"B2B, documentos e negociação"
+ACA,Acadêmico / Universidades,12,6,3,Alta,Alta,Média,Sim,Alta,Média,Entidades acadêmicas e matching
+EVT,Eventos,14,10,5,Alta,Muito alta,Alta,Sim,Muito alta,Muito alta,"Tempo real, pesquisa e operação"
+COM,Comunidades / Eu & Eu / Cultura,9,2,4,Média,Média,Alta,Sim,Alta,Alta,B2C e engajamento

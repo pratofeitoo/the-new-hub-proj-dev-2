@@ -3,7 +3,7 @@ title: remocao-receita-marketplace
 date: 2026-08-27T18:36:00
 type: registro-mudanca
 status:
-  - done
+  - registrado
 tags:
   - projeto/registro-mudanca
   - projeto/gestao

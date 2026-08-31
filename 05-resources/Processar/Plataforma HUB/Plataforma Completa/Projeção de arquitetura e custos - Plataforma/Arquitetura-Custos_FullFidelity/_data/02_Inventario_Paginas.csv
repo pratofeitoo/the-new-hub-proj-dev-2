@@ -1,0 +1,98 @@
+INVENTÁRIO DE PÁGINAS / TELAS,,,,,,,,,
+ID,Código,Frente,Página / tela,Canal,Fase,Complexidade,Compartilhável?,Dependência,Observação
+1,CORE,Core / Plataforma,Login / SSO,Web,MVP,Baixa,Sim,-,Autenticação
+2,CORE,Core / Plataforma,Cadastro / onboarding,Web/Mobile,MVP,Média,Sim,-,Entrada por tipo
+3,CORE,Core / Plataforma,Perfis e organizações,Web,MVP,Média,Sim,-,Entidades
+4,CORE,Core / Plataforma,Papéis e permissões,Admin,MVP,Alta,Sim,-,RBAC
+5,CORE,Core / Plataforma,Consentimentos / LGPD,Web/Admin,MVP,Alta,Sim,-,Privacidade
+6,CORE,Core / Plataforma,Central de integrações,Admin,MVP,Alta,Sim,-,APIs/RHIS/ERP/CRM/LMS
+7,CORE,Core / Plataforma,Notificações,Web/Mobile,MVP,Média,Sim,-,Gatilhos
+8,CORE,Core / Plataforma,Mensagens,Web/Mobile,Fase 2,Alta,Sim,-,Conversas
+9,CORE,Core / Plataforma,Busca global,Web,Fase 2,Média,Sim,-,Busca
+10,CORE,Core / Plataforma,Analytics de uso,Admin,MVP,Média,Sim,-,Adoção
+11,CORE,Core / Plataforma,Administração,Admin,MVP,Alta,Sim,-,Configurações
+12,CORE,Core / Plataforma,Auditoria e logs,Admin,MVP,Alta,Sim,-,Rastreabilidade
+13,ED,Estratégia & Dados,Visão executiva,Web,MVP,Alta,Não,CORE,KPIs pessoas x negócio
+14,ED,Estratégia & Dados,Conectores de dados,Admin,MVP,Alta,Não,CORE,Dados existentes
+15,ED,Estratégia & Dados,Mapeamento de indicadores,Admin,MVP,Alta,Não,CORE,Dicionário
+16,ED,Estratégia & Dados,Diagnóstico,Web,MVP,Alta,Não,CORE,Contexto
+17,ED,Estratégia & Dados,Análises e correlações,Web,MVP,Muito alta,Não,CORE,Padrões
+18,ED,Estratégia & Dados,Prioridades,Web,MVP,Alta,Não,CORE,Riscos/oportunidades
+19,ED,Estratégia & Dados,Planos de ação,Web,MVP,Média,Não,CORE,Ações
+20,ED,Estratégia & Dados,Cenários / simulações,Web,Fase 2,Muito alta,Não,CORE,Projeções
+21,ED,Estratégia & Dados,ROI / valor capturado,Web,MVP,Alta,Não,CORE,Financeiro
+22,ED,Estratégia & Dados,Relatórios executivos,Web,MVP,Média,Não,CORE,Exportação
+23,ED,Estratégia & Dados,Alertas estratégicos,Web,Fase 2,Alta,Não,CORE,Sinais
+24,COL,Colaboradores / Meu Time,Meu time,Web,MVP,Alta,Não,CORE,Mapa
+25,COL,Colaboradores / Meu Time,Perfil do colaborador,Web,MVP,Média,Parcial,CORE,360
+26,COL,Colaboradores / Meu Time,Objetivos e combinados,Web,MVP,Média,Não,CORE,Metas
+27,COL,Colaboradores / Meu Time,Competências,Web,MVP,Média,Não,CORE,Skills
+28,COL,Colaboradores / Meu Time,Feedbacks / check-ins,Web/Mobile,MVP,Média,Não,CORE,Ciclo
+29,COL,Colaboradores / Meu Time,Plano de desenvolvimento,Web,MVP,Média,Parcial,CORE,PDI
+30,COL,Colaboradores / Meu Time,Mentorias,Web,Fase 2,Média,Não,CORE,Matching
+31,COL,Colaboradores / Meu Time,Aprendizagem / trilhas,Web,Fase 2,Média,Não,CORE,Conteúdo
+32,COL,Colaboradores / Meu Time,Talentos internos / mobilidade,Web,Fase 2,Alta,Não,CORE,Oportunidades
+33,COL,Colaboradores / Meu Time,Sucessão,Web,Fase 2,Alta,Não,CORE,Prontidão
+34,COL,Colaboradores / Meu Time,Saúde do time / alertas,Web,MVP,Alta,Não,CORE,Risco
+35,CAN,Candidatos & Carreira,Perfil do candidato,Web/Mobile,MVP,Média,Parcial,CORE,Perfil
+36,CAN,Candidatos & Carreira,Currículo / portfólio,Web/Mobile,MVP,Média,Não,CORE,Evidências
+37,CAN,Candidatos & Carreira,Competências e interesses,Web/Mobile,MVP,Média,Não,CORE,Skills
+38,CAN,Candidatos & Carreira,Oportunidades recomendadas,Web/Mobile,MVP,Alta,Não,CORE,Feed
+39,CAN,Candidatos & Carreira,Detalhe da oportunidade,Web/Mobile,MVP,Baixa,Não,CORE,Vaga/projeto
+40,CAN,Candidatos & Carreira,Candidatura,Web/Mobile,MVP,Média,Não,CORE,Aplicação
+41,CAN,Candidatos & Carreira,Match candidato-vaga,Web,MVP,Muito alta,Não,CORE,Aderência
+42,CAN,Candidatos & Carreira,Minha jornada,Web/Mobile,MVP,Média,Não,CORE,Progresso
+43,CAN,Candidatos & Carreira,Capacitação recomendada,Web/Mobile,Fase 2,Alta,Não,CORE,Gap->trilha
+44,CAN,Candidatos & Carreira,Mentoria / preparação,Web/Mobile,Fase 2,Média,Não,CORE,Carreira
+45,CAN,Candidatos & Carreira,Feedbacks do processo,Web/Mobile,Fase 2,Média,Não,CORE,Retorno
+46,CAN,Candidatos & Carreira,Painel empresa - talentos,Web,MVP,Alta,Não,CORE,Shortlist
+47,CAN,Candidatos & Carreira,Inteligência de vagas,Web,Fase 2,Muito alta,Não,CORE,Requisitos por evidência
+48,FOR,Fornecedores & Negócios,Perfil do fornecedor,Web,MVP,Média,Parcial,CORE,Capacidades
+49,FOR,Fornecedores & Negócios,Documentos e compliance,Web,MVP,Alta,Não,CORE,Certificações
+50,FOR,Fornecedores & Negócios,Maturidade,Web,MVP,Alta,Não,CORE,Diagnóstico
+51,FOR,Fornecedores & Negócios,Plano de desenvolvimento,Web,MVP,Alta,Parcial,CORE,Gaps
+52,FOR,Fornecedores & Negócios,Trilhas / apoio,Web,Fase 2,Média,Não,CORE,Cursos/crédito
+53,FOR,Fornecedores & Negócios,Oportunidades / demandas,Web,MVP,Média,Não,CORE,Compras
+54,FOR,Fornecedores & Negócios,Detalhe da demanda,Web,MVP,Baixa,Não,CORE,Critérios
+55,FOR,Fornecedores & Negócios,Match fornecedor-demanda,Web,MVP,Muito alta,Não,CORE,Aderência
+56,FOR,Fornecedores & Negócios,Painel empresa compradora,Web,MVP,Alta,Não,CORE,Criar demanda
+57,FOR,Fornecedores & Negócios,Reuniões / conexões,Web,MVP,Média,Não,CORE,Agenda
+58,FOR,Fornecedores & Negócios,Propostas,Web,Fase 2,Alta,Não,CORE,Pipeline
+59,FOR,Fornecedores & Negócios,Negociações,Web,Fase 2,Alta,Não,CORE,Pipeline
+60,FOR,Fornecedores & Negócios,Contratos / negócios,Web,Fase 2,Alta,Não,CORE,Conversão
+61,FOR,Fornecedores & Negócios,Indicadores do ecossistema,Web,MVP,Alta,Parcial,CORE,Impacto
+62,ACA,Acadêmico / Universidades,Portal da universidade,Web,MVP,Média,Não,CORE,Institucional
+63,ACA,Acadêmico / Universidades,Perfil acadêmico do aluno,Web/Mobile,MVP,Média,Parcial,CORE,Formação
+64,ACA,Acadêmico / Universidades,Perfil pesquisador/docente,Web,Fase 2,Média,Parcial,CORE,Linhas
+65,ACA,Acadêmico / Universidades,Oportunidades acadêmicas,Web/Mobile,MVP,Média,Não,CORE,Bolsas/projetos
+66,ACA,Acadêmico / Universidades,Projetos empresa-universidade,Web,MVP,Alta,Não,CORE,Desafios
+67,ACA,Acadêmico / Universidades,Match aluno-projeto,Web,MVP,Alta,Não,CORE,Aderência
+68,ACA,Acadêmico / Universidades,Match pesquisador-empresa,Web,Fase 2,Muito alta,Não,CORE,Pesquisa aplicada
+69,ACA,Acadêmico / Universidades,Estágios e carreira,Web/Mobile,MVP,Alta,Não,CORE,Integra CAN
+70,ACA,Acadêmico / Universidades,Bolsas corporativas,Web,MVP,Média,Não,CORE,Empresa->aluno
+71,ACA,Acadêmico / Universidades,Formação / trilhas,Web/Mobile,Fase 2,Média,Não,CORE,Desenvolvimento
+72,ACA,Acadêmico / Universidades,Acompanhamento de projeto,Web,Fase 2,Alta,Não,CORE,Entregas
+73,ACA,Acadêmico / Universidades,Indicadores universidade-mercado,Web,MVP,Alta,Parcial,CORE,Impacto
+74,EVT,Eventos,Visão geral do evento,Web,MVP,Alta,Não,CORE,Dashboard
+75,EVT,Eventos,Planejamento / metas,Web,MVP,Média,Não,CORE,KPIs
+76,EVT,Eventos,Talentos / equipes,Web,MVP,Alta,Não,CORE,CAN
+77,EVT,Eventos,Fornecedores do evento,Web,MVP,Alta,Não,CORE,FOR
+78,EVT,Eventos,Demandas e contratações,Web,MVP,Alta,Não,CORE,Compras
+79,EVT,Eventos,Patrocínios / marcas,Web,Fase 2,Alta,Não,CORE,Retorno
+80,EVT,Eventos,Artistas / criadores,Web,Fase 2,Média,Não,CORE,Conexões
+81,EVT,Eventos,Pesquisa de público / mercado,Web/Mobile,MVP,Alta,Não,CORE,Insights
+82,EVT,Eventos,Acessibilidade,Web,MVP,Média,Não,CORE,Plano
+83,EVT,Eventos,Segurança / combate ao assédio,Web/Mobile,MVP,Alta,Não,CORE,Protocolos
+84,EVT,Eventos,Operação / checklists,Web/Mobile,Fase 2,Alta,Não,CORE,Execução
+85,EVT,Eventos,Indicadores em tempo real,Web,Fase 2,Alta,Parcial,CORE,Operação
+86,EVT,Eventos,ROI / impacto financeiro,Web,MVP,Alta,Não,CORE,Retorno
+87,EVT,Eventos,Relatório pós-evento,Web,MVP,Média,Não,CORE,Resultados
+88,COM,Comunidades / Eu & Eu / Cultura,Meu perfil,Web/Mobile,MVP,Baixa,Não,CORE,Preferências
+89,COM,Comunidades / Eu & Eu / Cultura,Objetivos,Web/Mobile,MVP,Média,Não,CORE,Metas
+90,COM,Comunidades / Eu & Eu / Cultura,Plano de ação,Web/Mobile,MVP,Média,Não,CORE,Passos
+91,COM,Comunidades / Eu & Eu / Cultura,Preparação / conteúdos,Web/Mobile,MVP,Média,Não,CORE,Trilhas
+92,COM,Comunidades / Eu & Eu / Cultura,Mentoria,Web/Mobile,Fase 2,Média,Não,CORE,Conexões
+93,COM,Comunidades / Eu & Eu / Cultura,Saúde & cuidado,Web/Mobile,Fase 2,Alta,Não,CORE,Recursos
+94,COM,Comunidades / Eu & Eu / Cultura,Eventos da comunidade,Web/Mobile,MVP,Média,Não,CORE,Agenda
+95,COM,Comunidades / Eu & Eu / Cultura,Conexões com empresas,Web/Mobile,MVP,Alta,Não,CORE,Oportunidades
+96,COM,Comunidades / Eu & Eu / Cultura,Acadêmico,Web/Mobile,Fase 2,Média,Não,CORE,Formação
