@@ -1,11 +1,10 @@
 ---
-title: "P01-S05 — SEG-05 Instituições com agenda de impacto e educação"
+title: P01-S05 — SEG-05 Instituições com agenda de impacto e educação
 type: test-scenario
 segment: SEG-05
 source_task: "[[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade]]"
 status: hypothesis
 tags:
-  - task
   - fase-P01
   - scenario
 ---

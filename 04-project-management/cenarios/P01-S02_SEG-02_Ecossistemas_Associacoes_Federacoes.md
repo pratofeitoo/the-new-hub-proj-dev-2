@@ -5,7 +5,6 @@ segment: SEG-02
 source_task: "[[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade]]"
 status: hypothesis
 tags:
-  - task
   - fase-P01
   - scenario
 ---

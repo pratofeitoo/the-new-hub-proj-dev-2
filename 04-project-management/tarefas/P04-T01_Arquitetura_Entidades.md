@@ -15,7 +15,7 @@ gap_ids:
 dependencies:
   - P03-T01
   - P01-T01
-target_file: "01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md"
+target_file: 01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-001]]"
@@ -23,6 +23,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P04
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:27:17.944-03:00
 ---
 
 # P04-T01 — Arquitetura de entidades (4 unidades) + acordos intragrupo

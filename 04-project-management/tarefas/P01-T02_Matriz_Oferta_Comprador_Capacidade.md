@@ -23,6 +23,9 @@ updated: 2026-08-27
 tags:
   - task
   - fase-P01
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:04.324-03:00
 ---
 
 # P01-T02 — Matriz oferta × comprador × capacidade (v1)

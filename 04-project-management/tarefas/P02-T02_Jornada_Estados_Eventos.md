@@ -14,7 +14,7 @@ gap_ids:
   - PRD-007
 dependencies:
   - P02-T01
-target_file: "01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md"
+target_file: 01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-004]]"
@@ -23,6 +23,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P02
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:35.638-03:00
 ---
 
 # P02-T02 — Jornada estados/eventos + trilha de auditoria

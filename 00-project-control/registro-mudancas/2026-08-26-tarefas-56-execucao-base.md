@@ -1,5 +1,5 @@
 ---
-title: "Registro de Mudança — 56 tarefas P01→P07 + base de execução"
+title: Registro de Mudança — 56 tarefas P01→P07 + base de execução
 date: 2026-08-26
 type: registro-mudanca
 status: registrado
@@ -8,7 +8,6 @@ tags:
   - projeto/gestao
   - fase-projeto
   - hub
-  - tarefas
 related_notes:
   - "[[04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base]]"
   - "[[04-project-management/tarefas/HUB_Tarefas_Projeto.base]]"

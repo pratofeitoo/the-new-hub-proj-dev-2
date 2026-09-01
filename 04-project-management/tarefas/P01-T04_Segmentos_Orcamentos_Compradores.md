@@ -14,7 +14,7 @@ gap_ids:
   - GTM-001
 dependencies:
   - P01-T02
-target_file: "01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md"
+target_file: 01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-001]]"
@@ -22,6 +22,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P01
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:13.123-03:00
 ---
 
 # P01-T04 — Segmentos e orçamentos de compradores de lançamento

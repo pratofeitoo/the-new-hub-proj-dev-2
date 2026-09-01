@@ -15,7 +15,7 @@ gap_ids:
   - BRD-003
 dependencies:
   - P01-T01
-target_file: "01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md"
+target_file: 01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/BRD-001]]"
@@ -24,6 +24,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P06
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:29:09.319-03:00
 ---
 
 # P06-T11 — Arquitetura de marca + regras white-label

@@ -14,7 +14,7 @@ gap_ids:
   - STR-008
 dependencies:
   - P02-T02
-target_file: "01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md"
+target_file: 01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-005]]"
@@ -23,6 +23,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P02
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:43.405-03:00
 ---
 
 # P02-T04 — SOPs por estágio C.A.O.S. (vendas→escalonamento)

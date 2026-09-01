@@ -14,7 +14,7 @@ gap_ids:
   - PRD-003
 dependencies:
   - P02-T01
-target_file: "02-refinement/refinamento-produto/"
+target_file: 02-refinement/refinamento-produto/
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-003]]"
@@ -22,6 +22,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P02
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:39.439-03:00
 ---
 
 # P02-T03 — Matriz autorização & tenancy (ator×permissão)

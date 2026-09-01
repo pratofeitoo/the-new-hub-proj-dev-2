@@ -1,7 +1,7 @@
 ---
 task_id: BP-001
 task_type: blueprint-document
-status: done
+status: em-revisao
 priority: critical
 layer: blueprint
 area: business-model
@@ -23,9 +23,10 @@ created: 2026-08-20
 updated: 2026-08-21
 tags:
   - task
-dateModified: 2026-08-26T15:53:51.009-03:00
-completedDate: 2026-08-26
+dateModified: 2026-09-01T20:12:20.410-03:00
 tasknotes_manual_order: tnvririririo
+projects:
+  - "[[Refinar os dados do Blueprint]]"
 ---
 
 # BP-001 — Arquitetura de Ofertas e Receita do HUB

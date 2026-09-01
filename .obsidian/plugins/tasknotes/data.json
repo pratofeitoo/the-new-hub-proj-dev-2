@@ -21,9 +21,9 @@
     "defaultContexts": "",
     "defaultTags": "task",
     "defaultProjects": "",
-    "useParentNoteForTaskCreation": false,
+    "useParentNoteForTaskCreation": true,
     "useParentNoteAsProject": false,
-    "useParentHeaderAsProject": false,
+    "useParentHeaderAsProject": true,
     "inheritParentTaskProperties": false,
     "defaultTimeEstimate": 0,
     "defaultRecurrence": "none",
@@ -137,7 +137,9 @@
       "{file.path|n(Path)}"
     ],
     "showAdvanced": false,
-    "requiredTags": [],
+    "requiredTags": [
+      "project-note"
+    ],
     "includeFolders": [],
     "propertyKey": "",
     "propertyValue": ""
@@ -208,16 +210,42 @@
       "nextStatus": "in-progress"
     },
     {
+      "id": "status_1788220041847",
+      "value": "pendente",
+      "label": "pendente",
+      "color": "#6366f1",
+      "completed": false,
+      "isCompleted": false,
+      "excludeFromCycle": false,
+      "order": 2,
+      "autoArchive": false,
+      "autoArchiveDelay": 5,
+      "nextStatus": "none"
+    },
+    {
       "id": "in-progress",
       "value": "in-progress",
       "label": "In progress",
       "color": "#0066cc",
       "isCompleted": false,
       "excludeFromCycle": false,
-      "order": 2,
+      "order": 3,
       "autoArchive": false,
       "autoArchiveDelay": 5,
       "nextStatus": "done"
+    },
+    {
+      "id": "status_1788219957945",
+      "value": "em-revisao",
+      "label": "em-revisao",
+      "color": "#6366f1",
+      "completed": false,
+      "isCompleted": false,
+      "excludeFromCycle": false,
+      "order": 4,
+      "autoArchive": false,
+      "autoArchiveDelay": 5,
+      "nextStatus": "in-progress"
     },
     {
       "id": "done",
@@ -226,8 +254,20 @@
       "color": "#00aa00",
       "isCompleted": true,
       "excludeFromCycle": false,
-      "order": 3,
-      "autoArchive": false,
+      "order": 5,
+      "autoArchive": true,
+      "autoArchiveDelay": 5
+    },
+    {
+      "id": "status_1788220148911",
+      "value": "concluido",
+      "label": "concluido",
+      "color": "#6366f1",
+      "completed": false,
+      "isCompleted": true,
+      "excludeFromCycle": false,
+      "order": 6,
+      "autoArchive": true,
       "autoArchiveDelay": 5
     }
   ],
@@ -262,7 +302,7 @@
     }
   ],
   "recurrenceMigrated": false,
-  "showReleaseNotesOnUpdate": true,
+  "showReleaseNotesOnUpdate": false,
   "checkForUpdatesOnStartup": true,
   "starterNoteCreated": true,
   "showTrackedTasksInStatusBar": true,
@@ -512,11 +552,12 @@
     "defaultReminderMinutes": null
   },
   "enableDebugLogging": false,
-  "lastSeenVersion": "4.12.4",
+  "lastSeenVersion": "4.12.5",
   "lastNotifiedReleaseVersion": "4.12.5",
   "pomodoroState": {
     "isRunning": false,
     "timeRemaining": 1500
   },
-  "lastPomodoroDate": "2026-08-31"
+  "lastPomodoroDate": "2026-09-01",
+  "autoArchiveQueue": []
 }

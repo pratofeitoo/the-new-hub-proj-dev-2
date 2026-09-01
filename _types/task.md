@@ -19,8 +19,8 @@ fields:
   status:
     type: enum
     required: true
-    values: [none, open, in-progress, done]
-    tn_completed_values: [done]
+    values: [none, open, pendente, in-progress, em-revisao, done, concluido]
+    tn_completed_values: [done, concluido]
     default: none
     tn_role: status
   priority:

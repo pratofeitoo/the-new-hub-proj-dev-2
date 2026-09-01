@@ -13,7 +13,7 @@ gap_ids:
   - TEC-003
 dependencies:
   - P03-T03
-target_file: "01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md"
+target_file: 01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-003]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P05
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:27:53.605-03:00
 ---
 
 # P05-T01 — Arquitetura solução + estratégia de ambientes (NFRs)

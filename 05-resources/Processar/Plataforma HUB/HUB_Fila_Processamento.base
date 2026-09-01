@@ -1,0 +1,77 @@
+filters:
+  and:
+    - file.inFolder("05-resources/Processar/Plataforma HUB/00-entrada")
+    - file.ext == "md"
+    - tipo == "cartao-processamento"
+formulas:
+  status_icon: if(status == "concluido", "✅", if(status == "bloqueado", "⛔", if(status == "aguardando-revisao", "🔎", if(status == "aprovado-para-mover", "📦", "🔄"))))
+properties:
+  status:
+    displayName: Status
+  destino:
+    displayName: Destino
+  classe:
+    displayName: Classe
+  proprietario:
+    displayName: Proprietário
+  data-entrada:
+    displayName: Entrada
+  data-revisao:
+    displayName: Revisão
+  fonte-original:
+    displayName: Fonte original
+  documento-resultado:
+    displayName: Documento-resultado
+  formula.status_icon:
+    displayName: Estado
+views:
+  - type: table
+    name: Fila ativa
+    filters:
+      and:
+        - status != "concluido"
+        - status != "arquivado"
+    order:
+      - formula.status_icon
+      - file.name
+      - status
+      - destino
+      - classe
+      - proprietario
+      - data-entrada
+  - type: table
+    name: Aguardando revisão
+    filters: status == "aguardando-revisao"
+    order:
+      - file.name
+      - destino
+      - proprietario
+      - data-revisao
+      - documento-resultado
+  - type: table
+    name: Bloqueados
+    filters: status == "bloqueado"
+    order:
+      - file.name
+      - proprietario
+      - fonte-original
+      - documento-resultado
+  - type: table
+    name: Prontos para mover
+    filters: status == "aprovado-para-mover"
+    order:
+      - file.name
+      - destino
+      - classe
+      - documento-resultado
+  - type: table
+    name: Concluídos
+    filters:
+      or:
+        - status == "concluido"
+        - status == "arquivado"
+    order:
+      - file.name
+      - status
+      - destino
+      - data-revisao

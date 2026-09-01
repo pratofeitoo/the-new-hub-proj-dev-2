@@ -13,7 +13,7 @@ gap_ids:
   - GTM-005
 dependencies:
   - P01-T04
-target_file: "02-refinement/pesquisa/segundo-rascunho-projeto/"
+target_file: 02-refinement/pesquisa/segundo-rascunho-projeto/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-005]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P06
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:28:51.153-03:00
 ---
 
 # P06-T07 — Modelo de mercado bottom-up (contas nomeadas)

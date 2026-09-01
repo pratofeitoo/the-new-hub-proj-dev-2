@@ -1,11 +1,10 @@
 ---
-title: "P01-S06 — SEG-06 Acesso Empresarial à Plataforma"
+title: P01-S06 — SEG-06 Acesso Empresarial à Plataforma
 type: test-scenario
 segment: SEG-06
 source_task: "[[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade]]"
 status: hypothesis
 tags:
-  - task
   - fase-P01
   - scenario
 ---

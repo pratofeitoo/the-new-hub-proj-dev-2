@@ -2,8 +2,7 @@
 title: BP-003 — Blueprint de Dados e Inteligência do HUB
 task_id: BP-003
 task_type: blueprint-document
-status:
-  - done
+status: em-revisao
 priority: critical
 layer: blueprint
 area: data-intelligence
@@ -31,8 +30,9 @@ updated: 2026-08-21
 tags:
   - task
 tasknotes_manual_order: tnmzzzzzzzzy
-completedDate: 2026-08-26
-dateModified: 2026-08-26T15:55:53.508-03:00
+dateModified: 2026-09-01T20:12:13.860-03:00
+projects:
+  - "[[Refinar os dados do Blueprint]]"
 ---
 
 # BP-003 — Blueprint de Dados e Inteligência do HUB

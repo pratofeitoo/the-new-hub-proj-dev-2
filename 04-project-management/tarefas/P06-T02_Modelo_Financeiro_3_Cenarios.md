@@ -13,7 +13,7 @@ gap_ids:
   - FIN-003
 dependencies:
   - P06-T01
-target_file: "02-refinement/modelos-financeiros/"
+target_file: 02-refinement/modelos-financeiros/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-003]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P06
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:28:27.254-03:00
 ---
 
 # P06-T02 — Modelo financeiro 3 cenários (timing/ramp/payback)

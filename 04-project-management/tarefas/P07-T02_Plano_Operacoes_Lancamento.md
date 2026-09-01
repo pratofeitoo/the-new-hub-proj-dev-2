@@ -15,7 +15,7 @@ gap_ids:
 dependencies:
   - P05-T07
   - P02-T04
-target_file: "03-approval/portao-lancamento/"
+target_file: 03-approval/portao-lancamento/
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-002]]"
@@ -23,6 +23,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P07
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:29:23.802-03:00
 ---
 
 # P07-T02 — Plano operações de lançamento + runbook release

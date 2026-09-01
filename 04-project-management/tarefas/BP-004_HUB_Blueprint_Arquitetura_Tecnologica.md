@@ -2,8 +2,7 @@
 title: BP-004 — Blueprint de Arquitetura de Tecnologia do HUB
 task_id: BP-004
 task_type: blueprint-document
-status:
-  - done
+status: em-revisao
 priority: high
 layer: blueprint
 area: technology
@@ -30,8 +29,9 @@ updated: 2026-08-21
 tags:
   - task
 tasknotes_manual_order: tneiriririri
-completedDate: 2026-08-26
-dateModified: 2026-08-26T15:55:54.924-03:00
+dateModified: 2026-09-01T20:12:05.762-03:00
+projects:
+  - "[[Refinar os dados do Blueprint]]"
 ---
 
 # BP-004 — Blueprint de Arquitetura de Tecnologia do HUB

@@ -14,7 +14,7 @@ gap_ids:
   - FIN-005
 dependencies:
   - P04-T01
-target_file: "02-refinement/modelos-financeiros/"
+target_file: 02-refinement/modelos-financeiros/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-005]]"
@@ -22,6 +22,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P06
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:28:36.420-03:00
 ---
 
 # P06-T04 — Separação comercial vs instituto restrito

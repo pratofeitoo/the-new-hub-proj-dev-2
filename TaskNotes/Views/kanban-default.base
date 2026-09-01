@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.hasTag("task")
+    - file.hasTag("task", "tasks", "project-note", "tarefas")
 formulas:
   priorityWeight: if(priority=="none",0,if(priority=="low",1,if(priority=="normal",2,if(priority=="high",3,999))))
   daysUntilDue: if((due.isEmpty() == false), ((number(date(due)) - number(today())) / 86400000).floor(), null)
@@ -65,3 +65,4 @@ views:
     config:
       columnWidth: 280
       hideEmptyColumns: false
+    columnOrder: '{"note.status":["none","open","pendente","em-revisao","in-progress","concluido","hypothesis","done"]}'

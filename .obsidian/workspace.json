@@ -4,24 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "bcb7c4f8bd60742d",
+        "id": "e787596a92678b34",
         "type": "tabs",
         "children": [
           {
-            "id": "a6642f67a2db0810",
+            "id": "7da1db510e706667",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "00-project-control/registro-mudancas/2026-08-31-diretorio-arquivos-filtrados.md",
-                "mode": "preview",
-                "source": false
+                "file": "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+                "viewName": "Execução por Fase — P01→P07"
               },
-              "icon": "lucide-file",
-              "title": "2026-08-31-diretorio-arquivos-filtrados"
+              "icon": "lucide-table",
+              "title": "HUB_Tarefas_Fases_Execucao"
+            }
+          },
+          {
+            "id": "fdb4515863ea1f32",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/kanban-default.base",
+                "viewName": "Kanban Board"
+              },
+              "icon": "tasknotes-simple",
+              "title": "kanban-default"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.25390625
+    "width": 333.76171875
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -197,7 +210,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -211,57 +224,65 @@
       "templates:Insert template": true,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "publish:Publish changes...": false
+      "publish:Publish changes...": true,
+      "tasknotes:Open mini calendar view": true,
+      "tasknotes:Open calendar view": false,
+      "tasknotes:Open tasks view": false,
+      "tasknotes:Open agenda view": true,
+      "tasknotes:Open Kanban board": false,
+      "tasknotes:Open Pomodoro timer": true,
+      "tasknotes:Open Pomodoro statistics": true,
+      "tasknotes:Create new task": false
     }
   },
-  "active": "a6642f67a2db0810",
+  "active": "fdb4515863ea1f32",
   "lastOpenFiles": [
-    "00-project-control/registro-mudancas/2026-08-26-faseamento-P01-P07-cronograma-marcos.md",
+    "TaskNotes/Views/relationships.base",
+    "TaskNotes/Views/tasks-default.base",
+    "TaskNotes/Views/kanban-default.base",
+    "TaskNotes/Archive",
+    "04-project-management/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma.md",
+    "04-project-management/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao.md",
+    "04-project-management/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto.md",
+    "04-project-management/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH.md",
+    "04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
+    "04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
     "00-project-control/registro-mudancas/2026-08-26-tarefas-56-execucao-base.md",
-    "00-project-control/registro-mudancas/2026-08-27-remocao-receita-marketplace.md",
-    "00-project-control/registro-mudancas/2026-08-31-diretorio-arquivos-filtrados.md",
-    "00-project-control/registro-mudancas/template-registro-mudanca.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/00_HUB_Arquitetura_Custos_Dashboard.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/HUB_Arquitetura_Custos_FULLFIDELITY.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/02_Inventario.base",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/06_Estimativa_Build.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/05_Premissas_CAPEX_OPEX.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/04_Cenarios_Implantacao.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/03_Matriz_Integracoes.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/02_Inventario_96_Telas.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/01_Visao_Geral_Modulos.md",
-    "Inventário dos arquivos de valor.md",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura e Custos Totais.xlsx",
-    "05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura e Custos Totais.md",
-    "99-archive/README.md",
-    "99-archive/project-map.md",
-    "project-map.md",
-    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30.jpeg",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30 (3).jpeg",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30 (2).jpeg",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.29 (2).jpeg",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.30 (1).jpeg",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.29.jpeg",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/README.md",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações/WhatsApp Image 2026-08-29 at 12.42.29 (1).jpeg",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/Visão de Comunidades/README.md",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/Visão de Comunidades/Comunidades.docx",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Fornecedores/README.md",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Fornecedores/HUB_MVP_Sebrae_GINGA_100_Fornecedores_100_Compradores.xlsx",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Fornecedores/ChatGPT Image 29 de ago. de 2026, 12_25_24.png",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Estratégia e Dados/README.md",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Estratégia e Dados/HUB_Portfolio_Produtos_Primeiro_Momento.docx",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Estratégia e Dados/HUB_MVP_Monks_Custos_Fundadores_v2.xlsx",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Estratégia e Dados/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/ChatGPT Image 29 de ago. de 2026, 12_35_54.png",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/README.md",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/HUB_MVP_Eventos_1000_Pessoas_10_Marcas.xlsx",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Eventos/Ativações",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Colaboradores + Dados/README.md",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Colaboradores + Dados/HUB_MVP_Bblend_80_Colaboradores_Meu_Time_Estrategia_Dados.xlsx",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Acadêmico/README.md",
-    "05-resources/Processar/Plataforma HUB/MVP + Estrutura/MVP - Candidatos/README.md",
+    "04-project-management/tarefas/P04-T01_Arquitetura_Entidades.md",
+    "05-resources/Processar/Plataforma HUB/03-analises-processadas",
+    "05-resources/Processar/Plataforma HUB/HUB_Fila_Processamento.base",
+    "05-resources/Processar/Plataforma HUB/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais/ChatGPT Image 29 de ago. de 2026, 12_25_24.png",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/fontes/HUB_MVP_Sebrae_GINGA_100_Fornecedores_100_Compradores.xlsx",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/notas",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/fontes",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/dados",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/notas/HUB_Portfolio_Produtos_Primeiro_Momento.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/visuais/ChatGPT Image 29 de ago. de 2026, 12_33_20.png",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30.jpeg",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (2).jpeg",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (3).jpeg",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (1).jpeg",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (1).jpeg",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29.jpeg",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (2).jpeg",
+    "05-resources/Processar/Plataforma HUB/01-mvps/Visão de Comunidades/notas/Comunidades.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/Visão de Comunidades/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Colaboradores + Dados/README.md",
+    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Candidatos/README.md",
+    "05-resources/Processar/Plataforma HUB/manifesto-processamento.md",
+    "05-resources/Processar/Plataforma HUB/00-entrada/piloto-firjan-processamento.md",
+    "05-resources/Processar/Plataforma HUB/_templates/cartao-processamento.md",
+    "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/06_Estimativa_Build.md",
+    "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/README.md",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",

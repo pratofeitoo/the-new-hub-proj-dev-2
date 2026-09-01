@@ -13,7 +13,7 @@ gap_ids:
   - DAT-001
 dependencies:
   - P02-T01
-target_file: "01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md"
+target_file: 01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-001]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P03
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:22:55.102-03:00
 ---
 
 # P03-T01 — Modelo lógico/físico com PK/FK/cardinalidade (M03.A)

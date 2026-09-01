@@ -13,7 +13,7 @@ gap_ids:
   - DAT-002
 dependencies:
   - P03-T01
-target_file: "02-refinement/refinamento-modelo-dados/modelo-indicadores/"
+target_file: 02-refinement/refinamento-modelo-dados/modelo-indicadores/
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-002]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P03
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:22:55.190-03:00
 ---
 
 # P03-T02 — Serviço de identidade (matching/merging/survivorship)

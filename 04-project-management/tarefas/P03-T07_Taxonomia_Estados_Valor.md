@@ -14,7 +14,7 @@ gap_ids:
   - DAT-006
 dependencies:
   - P03-T05
-target_file: "02-refinement/refinamento-modelo-dados/modelo-indicadores/"
+target_file: 02-refinement/refinamento-modelo-dados/modelo-indicadores/
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-006]]"
@@ -22,6 +22,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P03
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:26:19.225-03:00
 ---
 
 # P03-T07 — Taxonomia estados de valor (potencial→realizado)

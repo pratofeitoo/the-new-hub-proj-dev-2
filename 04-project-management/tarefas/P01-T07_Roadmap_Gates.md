@@ -14,7 +14,7 @@ gap_ids:
 dependencies:
   - P01-T01
   - P01-T02
-target_file: "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md"
+target_file: 04-project-management/planos-mestres/HUB_Plano_Fases_v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/STR-003]]"
@@ -24,6 +24,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P01
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:26.971-03:00
 ---
 
 # P01-T07 — Roadmap P01→P07 com dependências e gates

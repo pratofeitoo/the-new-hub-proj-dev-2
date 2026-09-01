@@ -1,9 +1,8 @@
 ---
-status:
-  - open
+status: em-revisao
 priority: normal
 dateCreated: 2026-08-26T17:11:54.427-03:00
-dateModified: 2026-08-26T18:01:04.030-03:00
+dateModified: 2026-09-01T20:06:02.362-03:00
 tags:
   - task
 owner:

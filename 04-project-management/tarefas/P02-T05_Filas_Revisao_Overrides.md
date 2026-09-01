@@ -13,7 +13,7 @@ gap_ids:
   - PRD-007
 dependencies:
   - P02-T02
-target_file: "02-refinement/refinamento-produto/"
+target_file: 02-refinement/refinamento-produto/
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-007]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P02
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:48.305-03:00
 ---
 
 # P02-T05 — Filas de revisão + overrides + trilha auditoria

@@ -13,7 +13,7 @@ gap_ids:
   - GTM-002
 dependencies:
   - P01-T04
-target_file: "02-refinement/pesquisa/log-evidencias-GTM.md"
+target_file: 02-refinement/pesquisa/log-evidencias-GTM.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-002]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P01
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:17.124-03:00
 ---
 
 # P01-T05 — Log de evidências por rota GTM (hipótese vs tração)

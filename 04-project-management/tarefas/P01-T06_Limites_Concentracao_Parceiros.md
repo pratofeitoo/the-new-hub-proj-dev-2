@@ -13,7 +13,7 @@ gap_ids:
   - GTM-006
 dependencies:
   - P01-T02
-target_file: "02-refinement/pesquisa/segundo-rascunho-projeto/"
+target_file: 02-refinement/pesquisa/segundo-rascunho-projeto/
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-006]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P01
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:22.873-03:00
 ---
 
 # P01-T06 — Limites de concentração de parceiros (thresholds)

@@ -16,7 +16,7 @@ gap_ids:
 dependencies:
   - P02-T01
   - P02-T04
-target_file: "01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md"
+target_file: 01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-008]]"
@@ -25,6 +25,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P02
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:53.138-03:00
 ---
 
 # P02-T06 — RACI v1 com accountable único + autoridade delegada

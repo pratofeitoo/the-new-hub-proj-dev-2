@@ -13,7 +13,7 @@ gap_ids:
   - GOV-004
 dependencies:
   - P04-T02
-target_file: "02-refinement/refinamento-governanca/"
+target_file: 02-refinement/refinamento-governanca/
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-004]]"
@@ -21,6 +21,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P04
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:27:31.473-03:00
 ---
 
 # P04-T04 — Matriz de responsabilidade + seguros e indenizações

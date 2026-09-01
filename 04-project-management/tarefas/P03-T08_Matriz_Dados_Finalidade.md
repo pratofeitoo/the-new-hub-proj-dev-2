@@ -14,7 +14,7 @@ gap_ids:
   - DAT-008
 dependencies:
   - P03-T01
-target_file: "02-refinement/refinamento-governanca/"
+target_file: 02-refinement/refinamento-governanca/
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-008]]"
@@ -22,6 +22,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P03
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:26:24.642-03:00
 ---
 
 # P03-T08 — Matriz dados-finalidade + ciclo de vida (LGPD)

@@ -22,6 +22,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P01
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:45:08.373-03:00
 ---
 
 # P01-T03 — Taxonomia de receita e regras de reconhecimento

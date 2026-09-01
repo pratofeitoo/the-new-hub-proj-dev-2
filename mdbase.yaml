@@ -1,8 +1,10 @@
-spec_version: "0.2.0"
-name: "TaskNotes"
-description: "Task collection managed by TaskNotes for Obsidian"
+spec_version: 0.2.0
+name: TaskNotes
+description: Task collection managed by TaskNotes for Obsidian
 settings:
-  types_folder: "_types"
+  types_folder: _types
   default_strict: false
   exclude:
-    - "_types"
+  - _types
+x-mdbase-connect:
+  collection_id: cb232589-2329-4864-8dee-d6c2a77ce071

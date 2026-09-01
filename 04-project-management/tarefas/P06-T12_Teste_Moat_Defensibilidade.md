@@ -16,7 +16,7 @@ gap_ids:
   - STR-006
 dependencies:
   - P06-T08
-target_file: "02-refinement/pesquisa/segundo-rascunho-projeto/"
+target_file: 02-refinement/pesquisa/segundo-rascunho-projeto/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/STR-004]]"
@@ -24,6 +24,9 @@ created: 2026-08-26
 tags:
   - task
   - fase-P06
+projects:
+  - "[[Fases 01-07]]"
+dateModified: 2026-09-01T19:29:14.419-03:00
 ---
 
 # P06-T12 — Teste de defensibilidade (moat institucional + evidência)
