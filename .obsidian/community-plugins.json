@@ -5,5 +5,8 @@
   "tasknotes",
   "tasknotes-project-colors",
   "omni-viewer",
-  "powerbases"
+  "powerbases",
+  "obsidian-charts",
+  "obsidian-chartsview-plugin",
+  "dataview"
 ]
