@@ -2,7 +2,7 @@
 status: in-progress
 priority: normal
 dateCreated: 2026-09-01T23:34:36.272-03:00
-dateModified: 2026-09-02T15:50:21.642-03:00
+dateModified: 2026-09-02T17:07:47.040-03:00
 tags:
   - task
 owner:
@@ -27,7 +27,7 @@ projects:
 
 ---
 
-### Criar convenção para uso e processamento da pasta 05-resources:
+### ✅Criar convenção para uso e processamento da pasta 05-resources:
 `/Shared drives/DiverCidade HUB/2026/THE NEW HUB/Obsidian Inventory/05-resources`
 
 ##### Revisar o Manifesto de Processamento:

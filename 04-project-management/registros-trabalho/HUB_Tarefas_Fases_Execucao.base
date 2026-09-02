@@ -196,9 +196,9 @@ views:
       - gap_ids
       - dependencies
     sort:
-      - column: formula.phase_rank
+      - property: formula.phase_rank
         direction: ASC
-      - column: sequence
+      - property: sequence
         direction: ASC
     canvasBasesLayout: columns
     canvasBasesEdgeMode: properties
@@ -206,7 +206,7 @@ views:
     canvasBasesShowBodyEditor: false
     canvasBasesNodeWidth: 360
     canvasBasesNodeHeight: 200
-    canvasBasesLinkedCanvasPath: "04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas"
+    canvasBasesLinkedCanvasPath: 04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas
     canvasBasesPreservePositions: true
     canvasBasesRemoveMissingNodes: true
     canvasBasesTaskNotesMode: off
@@ -237,10 +237,16 @@ views:
         valueType: string
       - origin: custom
         id: bloqueado
-        label: "⛔ Bloqueado"
+        label: ⛔ Bloqueado
         action: set-property
         property: note.status
         value: bloqueado
         updateMode: replace
         valueType: string
         color: "#ef4444"
+    canvasBasesNodePositions:
+      canvas-bases-file-5yn7y6:
+        x: 906
+        y: 60
+        width: 360
+        height: 200

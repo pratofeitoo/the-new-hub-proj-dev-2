@@ -110,9 +110,9 @@ views:
       - domain
       - related_tasks
     sort:
-      - column: formula.priority_rank
+      - property: formula.priority_rank
         direction: ASC
-      - column: gap_id
+      - property: gap_id
         direction: ASC
     canvasBasesLayout: grid
     canvasBasesEdgeMode: properties
@@ -120,7 +120,7 @@ views:
     canvasBasesShowBodyEditor: false
     canvasBasesNodeWidth: 360
     canvasBasesNodeHeight: 200
-    canvasBasesLinkedCanvasPath: "00-project-control/registro-lacunas/HUB_Gaps.canvas"
+    canvasBasesLinkedCanvasPath: 00-project-control/registro-lacunas/HUB_Gaps.canvas
     canvasBasesPreservePositions: true
     canvasBasesRemoveMissingNodes: true
     canvasBasesTaskNotesMode: off

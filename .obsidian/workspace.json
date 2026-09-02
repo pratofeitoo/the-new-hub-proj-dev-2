@@ -35,29 +35,29 @@
             }
           },
           {
-            "id": "7e52b8989f329f55",
+            "id": "f7eb9cf3a221d908",
             "type": "leaf",
             "state": {
               "type": "bases",
               "state": {
-                "file": "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-                "viewName": "Execução Canvas — P01→P07"
+                "file": "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base",
+                "viewName": "All Gaps"
               },
-              "icon": "layout-dashboard",
-              "title": "HUB_Tarefas_Fases_Execucao"
+              "icon": "lucide-table",
+              "title": "HUB_Lacunas_Projeto"
             }
           },
           {
-            "id": "98bd2b198450b981",
+            "id": "dc1ec606c47091ac",
             "type": "leaf",
             "state": {
               "type": "bases",
               "state": {
-                "file": "TaskNotes/Views/tasks-default.base",
-                "viewName": "All Tasks"
+                "file": "TaskNotes/Views/documentacao-oficial.base",
+                "viewName": "Kanban — por Status"
               },
               "icon": "tasknotes-simple",
-              "title": "tasks-default"
+              "title": "documentacao-oficial"
             }
           }
         ],
@@ -251,11 +251,24 @@
   },
   "active": "108b413f58344ed0",
   "lastOpenFiles": [
+    "TaskNotes/Views/documentacao-oficial.base",
+    "project-map.md",
+    "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base",
+    "02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md",
+    "02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md",
+    "00-project-control/registro-lacunas/lacunas/GOV-001.md",
+    "TaskNotes/Views/kanban-default.base",
+    "TaskNotes/Tasks/Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M.md",
+    "TaskNotes/Tasks/Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador.md",
+    "TaskNotes/Tasks/Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ.md",
+    "TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs).md",
+    "TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14).md",
+    "02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md",
+    "TaskNotes/Views/tasks-default.base",
+    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "TaskNotes/Archive/Configurar um diretório dedicado para documentações oficiais e formas do projeto.md",
     "session-log.md",
     "state.md",
-    "TaskNotes/Views/tasks-default.base",
-    "TaskNotes/Views/kanban-default.base",
-    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
     "04-project-management/HUB_Log_Tarefas_Progresso.md",
     "00-project-control/registro-lacunas/HUB_Gaps.canvas",
     "04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas",
@@ -275,21 +288,7 @@
     "Canvas Bases/Views",
     "Canvas Bases/Canvases",
     "Canvas Bases",
-    "TaskNotes/Views/agenda-default.base",
-    "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Tasks/Preparar slide valor piloto (valor fechado, sem breakdown).md",
-    "04-project-management/atas-reuniao/Transcript meeting SEBRAE 02-09-2026.md",
-    "04-project-management/atas-reuniao/Transcript Alinhamento - Plataforma.md",
-    "System/Plugins docs/Dataview Charts/Plotting Task Completions with DataviewJS and Obsidian Charts.md",
-    "System/Plugins docs/Dataview Charts/DataviewJS & Charts, how to get a cumulative line chart out of daily outcome values - Help.md",
-    "System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian.md",
-    "TaskNotes/Tasks/Preencher as pastas de Execuções Paralelas.md",
-    "TaskNotes/Tasks/Solucionar o live sync do obsidian vault PF e Tamara.md",
-    "TaskNotes/Tasks/Revisão Completa do Task Database.md",
-    "TaskNotes/Tasks/Gestão de Projeto e Governança.md",
-    "TaskNotes/Tasks/Forms Diverse Match.md",
-    "TaskNotes/Tasks/Ajustes Jurídicos.md",
-    "TaskNotes/Tasks/Ajustes de UI e Design.md",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais/ChatGPT Image 29 de ago. de 2026, 12_25_24.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/visuais/ChatGPT Image 29 de ago. de 2026, 12_33_20.png",
