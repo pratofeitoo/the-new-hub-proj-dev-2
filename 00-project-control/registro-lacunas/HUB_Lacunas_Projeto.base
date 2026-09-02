@@ -97,3 +97,30 @@ views:
       - domain
       - owner
       - related_tasks
+  - type: canvas-bases
+    name: Gap Portfolio — Canvas
+    groupBy:
+      property: domain
+      direction: ASC
+    order:
+      - formula.status_icon
+      - gap_id
+      - file.name
+      - priority
+      - domain
+      - related_tasks
+    sort:
+      - column: formula.priority_rank
+        direction: ASC
+      - column: gap_id
+        direction: ASC
+    canvasBasesLayout: grid
+    canvasBasesEdgeMode: properties
+    canvasBasesEdgeProperties: related_tasks
+    canvasBasesShowBodyEditor: false
+    canvasBasesNodeWidth: 360
+    canvasBasesNodeHeight: 200
+    canvasBasesLinkedCanvasPath: "00-project-control/registro-lacunas/HUB_Gaps.canvas"
+    canvasBasesPreservePositions: true
+    canvasBasesRemoveMissingNodes: true
+    canvasBasesTaskNotesMode: off

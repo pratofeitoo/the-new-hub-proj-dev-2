@@ -182,3 +182,65 @@ views:
       - priority
     summaries:
       formula.gap_count: Sum
+  - type: canvas-bases
+    name: Execução Canvas — P01→P07
+    groupBy:
+      property: phase
+      direction: ASC
+    order:
+      - formula.status_icon
+      - task_id
+      - file.name
+      - status
+      - priority
+      - gap_ids
+      - dependencies
+    sort:
+      - column: formula.phase_rank
+        direction: ASC
+      - column: sequence
+        direction: ASC
+    canvasBasesLayout: columns
+    canvasBasesEdgeMode: properties
+    canvasBasesEdgeProperties: dependencies
+    canvasBasesShowBodyEditor: false
+    canvasBasesNodeWidth: 360
+    canvasBasesNodeHeight: 200
+    canvasBasesLinkedCanvasPath: "04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas"
+    canvasBasesPreservePositions: true
+    canvasBasesRemoveMissingNodes: true
+    canvasBasesTaskNotesMode: off
+    canvasBasesZones:
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: pendente
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: em-execucao
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: em-revisao
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: concluido
+        updateMode: replace
+        valueType: string
+      - origin: custom
+        id: bloqueado
+        label: "⛔ Bloqueado"
+        action: set-property
+        property: note.status
+        value: bloqueado
+        updateMode: replace
+        valueType: string
+        color: "#ef4444"

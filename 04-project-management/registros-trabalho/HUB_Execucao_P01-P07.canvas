@@ -1,0 +1,1247 @@
+{
+  "nodes": [
+    {
+      "id": "group-P01",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 460,
+      "height": 1620,
+      "label": "P01 — 7 tasks",
+      "color": "6"
+    },
+    {
+      "id": "group-P02",
+      "type": "group",
+      "x": 490,
+      "y": 0,
+      "width": 460,
+      "height": 1400,
+      "label": "P02 — 6 tasks",
+      "color": "6"
+    },
+    {
+      "id": "group-P03",
+      "type": "group",
+      "x": 980,
+      "y": 0,
+      "width": 460,
+      "height": 2060,
+      "label": "P03 — 9 tasks",
+      "color": "5"
+    },
+    {
+      "id": "group-P04",
+      "type": "group",
+      "x": 1470,
+      "y": 0,
+      "width": 460,
+      "height": 1840,
+      "label": "P04 — 8 tasks",
+      "color": "3"
+    },
+    {
+      "id": "group-P05",
+      "type": "group",
+      "x": 1960,
+      "y": 0,
+      "width": 460,
+      "height": 1620,
+      "label": "P05 — 7 tasks",
+      "color": "3"
+    },
+    {
+      "id": "group-P06",
+      "type": "group",
+      "x": 2450,
+      "y": 0,
+      "width": 460,
+      "height": 2720,
+      "label": "P06 — 12 tasks",
+      "color": "6"
+    },
+    {
+      "id": "group-P07",
+      "type": "group",
+      "x": 2940,
+      "y": 0,
+      "width": 460,
+      "height": 1620,
+      "label": "P07 — 7 tasks",
+      "color": "4"
+    },
+    {
+      "id": "node-P01-T01",
+      "type": "file",
+      "x": 15,
+      "y": 80,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P01-T01_Matriz_4_Unidades.md"
+    },
+    {
+      "id": "node-P01-T02",
+      "type": "file",
+      "x": 15,
+      "y": 300,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md"
+    },
+    {
+      "id": "node-P01-T03",
+      "type": "file",
+      "x": 15,
+      "y": 520,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P01-T03_Taxonomia_Receita.md"
+    },
+    {
+      "id": "node-P01-T04",
+      "type": "file",
+      "x": 15,
+      "y": 740,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores.md"
+    },
+    {
+      "id": "node-P01-T05",
+      "type": "file",
+      "x": 15,
+      "y": 960,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P01-T05_Log_Evidencias_GTM.md"
+    },
+    {
+      "id": "node-P01-T06",
+      "type": "file",
+      "x": 15,
+      "y": 1180,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros.md"
+    },
+    {
+      "id": "node-P01-T07",
+      "type": "file",
+      "x": 15,
+      "y": 1400,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P01-T07_Roadmap_Gates.md"
+    },
+    {
+      "id": "node-P02-T01",
+      "type": "file",
+      "x": 505,
+      "y": 80,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md"
+    },
+    {
+      "id": "node-P02-T02",
+      "type": "file",
+      "x": 505,
+      "y": 300,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos.md"
+    },
+    {
+      "id": "node-P02-T03",
+      "type": "file",
+      "x": 505,
+      "y": 520,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy.md"
+    },
+    {
+      "id": "node-P02-T04",
+      "type": "file",
+      "x": 505,
+      "y": 740,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P02-T04_SOPs_CAOS.md"
+    },
+    {
+      "id": "node-P02-T05",
+      "type": "file",
+      "x": 505,
+      "y": 960,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides.md"
+    },
+    {
+      "id": "node-P02-T06",
+      "type": "file",
+      "x": 505,
+      "y": 1180,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P02-T06_RACI_Accountable_Unico.md"
+    },
+    {
+      "id": "node-P03-T01",
+      "type": "file",
+      "x": 995,
+      "y": 80,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico.md"
+    },
+    {
+      "id": "node-P03-T02",
+      "type": "file",
+      "x": 995,
+      "y": 300,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T02_Servico_Identidade_Matching.md"
+    },
+    {
+      "id": "node-P03-T03",
+      "type": "file",
+      "x": 995,
+      "y": 520,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T03_Envelope_Evento_Schema.md"
+    },
+    {
+      "id": "node-P03-T04",
+      "type": "file",
+      "x": 995,
+      "y": 740,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T04_Dicionario_Fisico_Mapping.md"
+    },
+    {
+      "id": "node-P03-T05",
+      "type": "file",
+      "x": 995,
+      "y": 960,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo.md"
+    },
+    {
+      "id": "node-P03-T06",
+      "type": "file",
+      "x": 995,
+      "y": 1180,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias.md"
+    },
+    {
+      "id": "node-P03-T07",
+      "type": "file",
+      "x": 995,
+      "y": 1400,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T07_Taxonomia_Estados_Valor.md"
+    },
+    {
+      "id": "node-P03-T08",
+      "type": "file",
+      "x": 995,
+      "y": 1620,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade.md"
+    },
+    {
+      "id": "node-P03-T09",
+      "type": "file",
+      "x": 995,
+      "y": 1840,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR.md"
+    },
+    {
+      "id": "node-P04-T01",
+      "type": "file",
+      "x": 1485,
+      "y": 80,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T01_Arquitetura_Entidades.md"
+    },
+    {
+      "id": "node-P04-T02",
+      "type": "file",
+      "x": 1485,
+      "y": 300,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo.md"
+    },
+    {
+      "id": "node-P04-T03",
+      "type": "file",
+      "x": 1485,
+      "y": 520,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T03_Charter_Selo_Independencia.md"
+    },
+    {
+      "id": "node-P04-T04",
+      "type": "file",
+      "x": 1485,
+      "y": 740,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T04_Matriz_Responsabilidade_Seguros.md"
+    },
+    {
+      "id": "node-P04-T05",
+      "type": "file",
+      "x": 1485,
+      "y": 960,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T05_Registro_PI.md"
+    },
+    {
+      "id": "node-P04-T06",
+      "type": "file",
+      "x": 1485,
+      "y": 1180,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T06_Testes_Retencao_DSAR.md"
+    },
+    {
+      "id": "node-P04-T07",
+      "type": "file",
+      "x": 1485,
+      "y": 1400,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T07_RACI_v2_Direitos_Decisao.md"
+    },
+    {
+      "id": "node-P04-T08",
+      "type": "file",
+      "x": 1485,
+      "y": 1620,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P04-T08_Revisao_Inteligencia_Responsavel.md"
+    },
+    {
+      "id": "node-P05-T01",
+      "type": "file",
+      "x": 1975,
+      "y": 80,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes.md"
+    },
+    {
+      "id": "node-P05-T02",
+      "type": "file",
+      "x": 1975,
+      "y": 300,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P05-T02_Contratos_Integracao.md"
+    },
+    {
+      "id": "node-P05-T03",
+      "type": "file",
+      "x": 1975,
+      "y": 520,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P05-T03_Mapa_Identidade_Sistemas.md"
+    },
+    {
+      "id": "node-P05-T04",
+      "type": "file",
+      "x": 1975,
+      "y": 740,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade.md"
+    },
+    {
+      "id": "node-P05-T05",
+      "type": "file",
+      "x": 1975,
+      "y": 960,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P05-T05_Threat_Model_Controles.md"
+    },
+    {
+      "id": "node-P05-T06",
+      "type": "file",
+      "x": 1975,
+      "y": 1180,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao.md"
+    },
+    {
+      "id": "node-P05-T07",
+      "type": "file",
+      "x": 1975,
+      "y": 1400,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P05-T07_Processo_Release_Rollback.md"
+    },
+    {
+      "id": "node-P06-T01",
+      "type": "file",
+      "x": 2465,
+      "y": 80,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T01_Registro_Premissas.md"
+    },
+    {
+      "id": "node-P06-T02",
+      "type": "file",
+      "x": 2465,
+      "y": 300,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios.md"
+    },
+    {
+      "id": "node-P06-T03",
+      "type": "file",
+      "x": 2465,
+      "y": 520,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T03_Ponte_Valor_Produto_Receita.md"
+    },
+    {
+      "id": "node-P06-T04",
+      "type": "file",
+      "x": 2465,
+      "y": 740,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T04_Separacao_Comercial_Restrito.md"
+    },
+    {
+      "id": "node-P06-T05",
+      "type": "file",
+      "x": 2465,
+      "y": 960,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T05_Modelo_Capital_Tranches.md"
+    },
+    {
+      "id": "node-P06-T06",
+      "type": "file",
+      "x": 2465,
+      "y": 1180,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T06_Dicionario_KPIs_Financeiros.md"
+    },
+    {
+      "id": "node-P06-T07",
+      "type": "file",
+      "x": 2465,
+      "y": 1400,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T07_Modelo_Mercado_BottomUp.md"
+    },
+    {
+      "id": "node-P06-T08",
+      "type": "file",
+      "x": 2465,
+      "y": 1620,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T08_Log_Evidencias_GTM_Alternativas.md"
+    },
+    {
+      "id": "node-P06-T09",
+      "type": "file",
+      "x": 2465,
+      "y": 1840,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao.md"
+    },
+    {
+      "id": "node-P06-T10",
+      "type": "file",
+      "x": 2465,
+      "y": 2060,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T10_Matriz_Afirmacao_Evidencia.md"
+    },
+    {
+      "id": "node-P06-T11",
+      "type": "file",
+      "x": 2465,
+      "y": 2280,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T11_Arquitetura_Marca_WhiteLabel.md"
+    },
+    {
+      "id": "node-P06-T12",
+      "type": "file",
+      "x": 2465,
+      "y": 2500,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P06-T12_Teste_Moat_Defensibilidade.md"
+    },
+    {
+      "id": "node-P07-T01",
+      "type": "file",
+      "x": 2955,
+      "y": 80,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P07-T01_Portao_Mestre_Grafo.md"
+    },
+    {
+      "id": "node-P07-T02",
+      "type": "file",
+      "x": 2955,
+      "y": 300,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P07-T02_Plano_Operacoes_Lancamento.md"
+    },
+    {
+      "id": "node-P07-T03",
+      "type": "file",
+      "x": 2955,
+      "y": 520,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P07-T03_Workflow_Aprovacao.md"
+    },
+    {
+      "id": "node-P07-T04",
+      "type": "file",
+      "x": 2955,
+      "y": 740,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P07-T04_Matriz_Rastreabilidade.md"
+    },
+    {
+      "id": "node-P07-T05",
+      "type": "file",
+      "x": 2955,
+      "y": 960,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P07-T05_Registro_Riscos_Premissas_Dependencias.md"
+    },
+    {
+      "id": "node-P07-T06",
+      "type": "file",
+      "x": 2955,
+      "y": 1180,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P07-T06_Checklist_Lancamento_Comercial.md"
+    },
+    {
+      "id": "node-P07-T07",
+      "type": "file",
+      "x": 2955,
+      "y": 1400,
+      "width": 430,
+      "height": 200,
+      "file": "04-project-management/tarefas/P07-T07_Ciclo_Vida_Artefatos.md"
+    },
+    {
+      "id": "legend-exec",
+      "type": "text",
+      "x": 0,
+      "y": -260,
+      "width": 3400,
+      "height": 200,
+      "text": "# HUB — Execução por Fase P01→P07  —  Canvas Bases snapshot\n**Source:** `04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base` (filters: `phase != \"\"`)  ·  **Groups:** phase columns (P00→P07 flow, P03 spine in yellow)  ·  **Edges:** dependencies  ·  **Status lanes:** use Assignment Zones (pendente→concluido) when opening as live Canvas Bases view"
+    },
+    {
+      "id": "spine-note",
+      "type": "text",
+      "x": 980,
+      "y": -260,
+      "width": 460,
+      "height": 120,
+      "text": ">> **P03 is spine** — FIN/TEC/BRD gates blocked until P03 Data Arch Approved",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0000",
+      "fromNode": "node-P01-T01",
+      "fromSide": "right",
+      "toNode": "node-P01-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0001",
+      "fromNode": "node-P01-T02",
+      "fromSide": "right",
+      "toNode": "node-P01-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0002",
+      "fromNode": "node-P01-T02",
+      "fromSide": "right",
+      "toNode": "node-P01-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0003",
+      "fromNode": "node-P01-T04",
+      "fromSide": "right",
+      "toNode": "node-P01-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0004",
+      "fromNode": "node-P01-T02",
+      "fromSide": "right",
+      "toNode": "node-P01-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0005",
+      "fromNode": "node-P01-T01",
+      "fromSide": "right",
+      "toNode": "node-P01-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0006",
+      "fromNode": "node-P01-T02",
+      "fromSide": "right",
+      "toNode": "node-P01-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0007",
+      "fromNode": "node-P01-T02",
+      "fromSide": "right",
+      "toNode": "node-P02-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0008",
+      "fromNode": "node-P02-T01",
+      "fromSide": "right",
+      "toNode": "node-P02-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0009",
+      "fromNode": "node-P02-T01",
+      "fromSide": "right",
+      "toNode": "node-P02-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0010",
+      "fromNode": "node-P02-T02",
+      "fromSide": "right",
+      "toNode": "node-P02-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0011",
+      "fromNode": "node-P02-T02",
+      "fromSide": "right",
+      "toNode": "node-P02-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0012",
+      "fromNode": "node-P02-T01",
+      "fromSide": "right",
+      "toNode": "node-P02-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0013",
+      "fromNode": "node-P02-T04",
+      "fromSide": "right",
+      "toNode": "node-P02-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0014",
+      "fromNode": "node-P02-T01",
+      "fromSide": "right",
+      "toNode": "node-P03-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0015",
+      "fromNode": "node-P03-T01",
+      "fromSide": "right",
+      "toNode": "node-P03-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0016",
+      "fromNode": "node-P03-T01",
+      "fromSide": "right",
+      "toNode": "node-P03-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0017",
+      "fromNode": "node-P03-T01",
+      "fromSide": "right",
+      "toNode": "node-P03-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0018",
+      "fromNode": "node-P03-T03",
+      "fromSide": "right",
+      "toNode": "node-P03-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0019",
+      "fromNode": "node-P03-T01",
+      "fromSide": "right",
+      "toNode": "node-P03-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0020",
+      "fromNode": "node-P03-T03",
+      "fromSide": "right",
+      "toNode": "node-P03-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0021",
+      "fromNode": "node-P03-T05",
+      "fromSide": "right",
+      "toNode": "node-P03-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0022",
+      "fromNode": "node-P03-T05",
+      "fromSide": "right",
+      "toNode": "node-P03-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0023",
+      "fromNode": "node-P03-T01",
+      "fromSide": "right",
+      "toNode": "node-P03-T08",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0024",
+      "fromNode": "node-P03-T03",
+      "fromSide": "right",
+      "toNode": "node-P03-T09",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0025",
+      "fromNode": "node-P03-T08",
+      "fromSide": "right",
+      "toNode": "node-P03-T09",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0026",
+      "fromNode": "node-P03-T01",
+      "fromSide": "right",
+      "toNode": "node-P04-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0027",
+      "fromNode": "node-P01-T01",
+      "fromSide": "right",
+      "toNode": "node-P04-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0028",
+      "fromNode": "node-P03-T08",
+      "fromSide": "right",
+      "toNode": "node-P04-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0029",
+      "fromNode": "node-P02-T03",
+      "fromSide": "right",
+      "toNode": "node-P04-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0030",
+      "fromNode": "node-P04-T01",
+      "fromSide": "right",
+      "toNode": "node-P04-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0031",
+      "fromNode": "node-P04-T02",
+      "fromSide": "right",
+      "toNode": "node-P04-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0032",
+      "fromNode": "node-P04-T01",
+      "fromSide": "right",
+      "toNode": "node-P04-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0033",
+      "fromNode": "node-P03-T09",
+      "fromSide": "right",
+      "toNode": "node-P04-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0034",
+      "fromNode": "node-P04-T02",
+      "fromSide": "right",
+      "toNode": "node-P04-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0035",
+      "fromNode": "node-P02-T06",
+      "fromSide": "right",
+      "toNode": "node-P04-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0036",
+      "fromNode": "node-P04-T01",
+      "fromSide": "right",
+      "toNode": "node-P04-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0037",
+      "fromNode": "node-P04-T02",
+      "fromSide": "right",
+      "toNode": "node-P04-T08",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0038",
+      "fromNode": "node-P03-T03",
+      "fromSide": "right",
+      "toNode": "node-P05-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0039",
+      "fromNode": "node-P05-T01",
+      "fromSide": "right",
+      "toNode": "node-P05-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0040",
+      "fromNode": "node-P03-T01",
+      "fromSide": "right",
+      "toNode": "node-P05-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0041",
+      "fromNode": "node-P03-T02",
+      "fromSide": "right",
+      "toNode": "node-P05-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0042",
+      "fromNode": "node-P05-T02",
+      "fromSide": "right",
+      "toNode": "node-P05-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0043",
+      "fromNode": "node-P05-T02",
+      "fromSide": "right",
+      "toNode": "node-P05-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0044",
+      "fromNode": "node-P04-T02",
+      "fromSide": "right",
+      "toNode": "node-P05-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0045",
+      "fromNode": "node-P02-T03",
+      "fromSide": "right",
+      "toNode": "node-P05-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0046",
+      "fromNode": "node-P05-T01",
+      "fromSide": "right",
+      "toNode": "node-P05-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0047",
+      "fromNode": "node-P05-T01",
+      "fromSide": "right",
+      "toNode": "node-P05-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0048",
+      "fromNode": "node-P05-T06",
+      "fromSide": "right",
+      "toNode": "node-P05-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0049",
+      "fromNode": "node-P03-T05",
+      "fromSide": "right",
+      "toNode": "node-P06-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0050",
+      "fromNode": "node-P05-T04",
+      "fromSide": "right",
+      "toNode": "node-P06-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0051",
+      "fromNode": "node-P06-T01",
+      "fromSide": "right",
+      "toNode": "node-P06-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0052",
+      "fromNode": "node-P03-T06",
+      "fromSide": "right",
+      "toNode": "node-P06-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "1"
+    },
+    {
+      "id": "e0053",
+      "fromNode": "node-P04-T01",
+      "fromSide": "right",
+      "toNode": "node-P06-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0054",
+      "fromNode": "node-P06-T02",
+      "fromSide": "right",
+      "toNode": "node-P06-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0055",
+      "fromNode": "node-P06-T01",
+      "fromSide": "right",
+      "toNode": "node-P06-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0056",
+      "fromNode": "node-P01-T04",
+      "fromSide": "right",
+      "toNode": "node-P06-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0057",
+      "fromNode": "node-P01-T05",
+      "fromSide": "right",
+      "toNode": "node-P06-T08",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0058",
+      "fromNode": "node-P01-T06",
+      "fromSide": "right",
+      "toNode": "node-P06-T09",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0059",
+      "fromNode": "node-P06-T01",
+      "fromSide": "right",
+      "toNode": "node-P06-T10",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0060",
+      "fromNode": "node-P01-T01",
+      "fromSide": "right",
+      "toNode": "node-P06-T11",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0061",
+      "fromNode": "node-P06-T08",
+      "fromSide": "right",
+      "toNode": "node-P06-T12",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0062",
+      "fromNode": "node-P06-T02",
+      "fromSide": "right",
+      "toNode": "node-P07-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0063",
+      "fromNode": "node-P04-T01",
+      "fromSide": "right",
+      "toNode": "node-P07-T01",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0064",
+      "fromNode": "node-P05-T07",
+      "fromSide": "right",
+      "toNode": "node-P07-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0065",
+      "fromNode": "node-P02-T04",
+      "fromSide": "right",
+      "toNode": "node-P07-T02",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0066",
+      "fromNode": "node-P07-T01",
+      "fromSide": "right",
+      "toNode": "node-P07-T03",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0067",
+      "fromNode": "node-P07-T01",
+      "fromSide": "right",
+      "toNode": "node-P07-T04",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0068",
+      "fromNode": "node-P07-T01",
+      "fromSide": "right",
+      "toNode": "node-P07-T05",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0069",
+      "fromNode": "node-P06-T02",
+      "fromSide": "right",
+      "toNode": "node-P07-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0070",
+      "fromNode": "node-P04-T02",
+      "fromSide": "right",
+      "toNode": "node-P07-T06",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    },
+    {
+      "id": "e0071",
+      "fromNode": "node-P07-T01",
+      "fromSide": "right",
+      "toNode": "node-P07-T07",
+      "toSide": "left",
+      "label": "depends",
+      "color": "5"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "canvas-bases",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a live Canvas Bases view for my project task register, grouped by status, with dependency edges and a linked canvas snapshot. Inspect the existing .base first and don't destroy its current views.",
+      "expected_output": "A safe plan or implementation that preserves existing views, adds a canvas-bases view, explains live versus snapshot behavior, and configures dependency edges from existing properties.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My Canvas Bases board shows the tasks but no dependency lines. Diagnose it without changing task data.",
+      "expected_output": "A diagnosis that checks endpoint visibility, property edge configuration, resolvable links, and TaskNotes capability before suggesting changes.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design an expert workflow board where dragging a task into Review or Done updates the appropriate property, and explain how to keep a generated .canvas current.",
+      "expected_output": "A zone design with exact stored values, mutation-source guidance, and explicit snapshot update instructions.",
+      "files": []
+    }
+  ]
+}

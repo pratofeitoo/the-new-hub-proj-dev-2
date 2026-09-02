@@ -101,3 +101,32 @@ views:
       - priority
       - target_file
       - gap_ids
+  - type: canvas-bases
+    name: Blueprint Board
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - task_id
+      - formula.status_icon
+      - priority
+      - area
+      - owner
+      - dependencies
+      - gap_ids
+    sort:
+      - column: formula.priority_rank
+        direction: ASC
+      - column: sequence
+        direction: ASC
+    canvasBasesLayout: grid
+    canvasBasesEdgeMode: properties
+    canvasBasesEdgeProperties: dependencies, gap_ids
+    canvasBasesShowBodyEditor: false
+    canvasBasesNodeWidth: 380
+    canvasBasesNodeHeight: 220
+    canvasBasesLinkedCanvasPath: "04-project-management/tarefas/HUB_Tarefas_Projeto.canvas"
+    canvasBasesPreservePositions: true
+    canvasBasesRemoveMissingNodes: true
+    canvasBasesTaskNotesMode: off
