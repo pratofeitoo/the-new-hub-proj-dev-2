@@ -86,7 +86,7 @@ flowchart TB
 - [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
-- [`TaskNotes/`](TaskNotes/) — notas de tarefas, visualizações Bases (agenda, kanban, calendário, pomodoro, relações) e guia inicial do fluxo.
+- [`TaskNotes/`](TaskNotes/) — 25 notas operacionais de tarefas, visualizações Bases (agenda, kanban, calendário, pomodoro, relações) e guia inicial do fluxo.
 - [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes (7 docs incluindo `JSON Canvas Spec.md`).
 - [`_types/`](%5Ftypes/) — definições de tipos usadas pelo mdbase/TaskNotes.
 - [`.obsidian/`](.obsidian/) — configurações do vault, plugins comunitários, 13 temas e workspace do Obsidian.
@@ -236,8 +236,8 @@ O projeto agora possui um **faseamento sequencial** para gestão eficiente:
 - `P03-T01` (modelo lógico 25 entidades) a `P03-T09` (fluxos+XLSX reconstruído + validações entity-key/ROI/corrected-CSV) estão em `em-revisao` para validação Dados+Tech+LGPD; `P07-T01` depende explicitamente de `P04-T01` e `P06-T02`. P07 permanece pendente e não aprovado.
 - Atas: `Transcript Alinhamento - Plataforma.md` (01/09/2026, TL;DR + decisões + 10 ações com dono/prazo) estruturado com `_template-ata.md` canônico; `template-reuniao.md` mantido como redirect. Infra piloto: 1× Hostinger KVM-8; produção 3× (2 app + 1 DB), futuro HA 2 DB + 2 BI.
 - Refinamento P03 spine: 9 rascunhos v1 (`modelo-logico-fisico`, `especificacao-identidade` + dataset sintético, `envelope-evento-schema` + fixture `schema-registry`, `dicionario-fisico-mapping`, `catalogo-metricas-grafo`, `templates-linhagem-evidencias`, `taxonomia-estados-valor`, `matriz-dados-finalidade-P03-T08-v1`, `fluxos-linhagem-replay-dsar`) + `refinamento-produto/` (4 artefatos P01-T02/P02-T03..T06) verificáveis em `registros-trabalho/logs-progresso/P03-*.md`.
-- A sincronização operacional foi enviada para `origin/main` (`00dcc4e`); o remoto separado `publish` não é atualizado automaticamente.
+- A sincronização operacional foi enviada para `origin/main` (`72f6d43`); o remoto separado `publish` não é atualizado automaticamente.
 
 ## Observação
 
-O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `00dcc4e` em 2026-09-01) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (atualizado em 2026-09-02 após o commit `72f6d43`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.

@@ -1,5 +1,5 @@
-<!-- git-hash: 00dcc4e08570d9e5379a8c2337fa92c1539adf20 -->
-<!-- last-synced: 2026-09-01T23:45:00-03:00 -->
+<!-- git-hash: 72f6d4323d68684ea695c9e43c1f510b722b5436 -->
+<!-- last-synced: 2026-09-02T01:38:11-03:00 -->
 
 # Mapa do Projeto
 
@@ -25,7 +25,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `05-resources/`          | Documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
 | `06-deliverables/`       | Saídas finais organizadas por dados, governança, investidor, lançamento, negócio e produto.          |
 | `99-archive/`            | Material descontinuado, rejeitado, superado e instantâneos históricos.                               |
-| `TaskNotes/`             | Notas de tarefas (9 operacionais) e visualizações Bases — agenda, calendário, kanban, mini-calendar, pomodoro, relações e tasks. |
+| `TaskNotes/`             | Notas de tarefas (25 operacionais) e visualizações Bases — agenda, calendário, kanban, mini-calendar, pomodoro, relações e tasks. |
 | `System/`                | Documentação local de plugins, Canvas, Bases, Dataview e TaskNotes (7 docs: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base, Task Notes, Tracker, datacore). |
 | `_types/`                | Definições de tipos usadas pelo mdbase/TaskNotes (`task.md`).                                        |
 | `.obsidian/`             | Configurações do vault, plugins (7 ativos), 13 temas e workspace.                                    |
@@ -372,7 +372,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `99-archive/rejeitado/` | arquivo | Material rejeitado em revisão | `.gitkeep` | reservado |
 | `99-archive/superado/` | arquivo | Material superado por versão melhor | `Fases_Projeto_v0_clusters_tematicos.canvas` (clusters temáticos arquivado) | ativo |
 | `TaskNotes/` | tarefas | Notas e visões do plugin TaskNotes | `Start Here.md` + Tasks + Views | ativo |
-| `TaskNotes/Tasks/` | tarefas | Notas de tarefa operacionais (fluxo TaskNotes) | 9 notas operacionais (separadas de BP/P0x) | ativo |
+| `TaskNotes/Tasks/` | tarefas | Notas de tarefa operacionais (fluxo TaskNotes) | 25 notas operacionais (separadas de BP/P0x) | ativo |
 | `TaskNotes/Views/` | tarefas | Visões Bases (agenda, kanban, calendário, relações, pomodoro) | 7 bases: `agenda-default`, `calendar-default`, `kanban-default`, `mini-calendar`, `pomodoro-stats`, `relationships`, `tasks-default` | ativo |
 | `System/` | sistema | Documentação local de referência das ferramentas do vault | `Plugins docs/` (7 docs) | ativo |
 | `System/Plugins docs/` | sistema | Docs locais por plugin | 7 docs (inclui JSON Canvas Spec) | ativo |
@@ -506,7 +506,7 @@ flowchart TB
 - `00-project-control/escopo/fases-projeto/rascunho/` contém `Fases_Projeto.canvas` sequencial P00→P07 (redesenhado 2026-08-27).
 - `99-archive/superado/` contém `Fases_Projeto_v0_clusters_tematicos.canvas` (clusters temáticos, superado pelo sequencial).
 - `00-project-control/registro-mudancas/` contém 4 notas (2026-08-26 ×2, 2026-08-27, 2026-08-31) + `template-registro-mudanca.md`.
-- `TaskNotes/Tasks/` contém 9 notas operacionais (separadas das 56 P0x + 8 BP).
+- `TaskNotes/Tasks/` contém 25 notas operacionais (separadas das 56 P0x + 8 BP), incluindo `Preencher as pastas de Execuções Paralelas.md`.
 - A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios (`03-csv-corrigido/` 15 pastas, `04-registro-correcoes/`, `06-relatorios-validacao/` entity-key/ROI/corrected-CSV).
 - `.obsidian/themes/` contém 13 temas (Blossom, Dark Moss, Dracula + LYT, Glass Robo, March, Modern GenZ Vibedose, Nebula, Royal Velvet, Slytherin, Sodalite, Terminal2K, Vicious, WY Console).
-- **Atualização desta revisão:** sincronizado ao commit `00dcc4e` em 2026-09-01T23:45:00-03:00; anteriores `76401a3` (P03 spine), `a02e74e` (matriz), `973a23b` (56 tarefas + base) e `1c2733f` (faseamento) continuam válidos como histórico.
+- **Atualização desta revisão:** sincronizado ao estado de trabalho após `72f6d43` em 2026-09-02T01:38:11-03:00; anteriores `00dcc4e` (ata estruturada), `76401a3` (P03 spine), `a02e74e` (matriz), `973a23b` (56 tarefas + base) e `1c2733f` (faseamento) continuam válidos como histórico.
