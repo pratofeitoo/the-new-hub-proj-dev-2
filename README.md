@@ -81,13 +81,13 @@ flowchart TB
 - [`01-blueprint/`](01-blueprint/) — a visão-base do projeto: estratégia, produto, negócios, tecnologia, dados, governança e visão de lançamento.
 - [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário (spine P03: 9 rascunhos G03.A1–C5 + `refinamento-governanca/` e `refinamento-produto/` com 4 artefatos).
 - [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste (bloqueado: modelo de indicadores não aprovado + relatórios entity-key/ROI/corrected-CSV).
-- [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor P01→P07, 7 planos de fase, 56 tarefas P01→P07 + 8 BP, marcos M00→M07, cronogramas (Bases) + base de execução (9 views), atas (transcript 01/09 + `_template-ata.md`), logs de progresso (`logs-progresso/` P01/P02/P03) e status.
+- [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor P01→P07, 7 planos de fase, 56 tarefas P01→P07 + 8 BP, marcos M00→M07, cronogramas (Bases) + base de execução (9 views), atas (01/09 Alinhamento + 02/09 SEBRAE/Ginga estruturadas + `.docx` + `_template-ata.md`), cenários P01-S01→S06 (6 segmentos), logs de progresso (`logs-progresso/` P01/P02/P03) e status.
 - [`04-project-management/registro-mestre/`](04-project-management/registro-mestre/) — matriz canônica de coordenação das 56 tarefas, dependências, gaps, critérios, evidências e status.
-- [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
+- [`05-resources/`](05-resources/) — materiais de apoio e origem: `Processar/Plataforma HUB/` (151 arquivos — 7 MVPs + visão de plataforma com Arquitetura-Custos 96 telas + Rascunhos), documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
 - [`TaskNotes/`](TaskNotes/) — 25 notas operacionais de tarefas, visualizações Bases (agenda, kanban, calendário, pomodoro, relações) e guia inicial do fluxo.
-- [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes (7 docs incluindo `JSON Canvas Spec.md`).
+- [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes (7 docs incluindo `JSON Canvas Spec.md`) + `attachments/` (áudios das atas).
 - [`_types/`](%5Ftypes/) — definições de tipos usadas pelo mdbase/TaskNotes.
 - [`.obsidian/`](.obsidian/) — configurações do vault, plugins comunitários, 13 temas e workspace do Obsidian.
 - [`.omo/`](.omo/) — planos e artefatos de orquestração do OhMyOpenCode.
@@ -132,6 +132,7 @@ flowchart TB
 - [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
 - [`_template-ata.md`](04-project-management/atas-reuniao/_template-ata.md) — template canônico de ata estruturada (TL;DR, decisões, ações `- [ ] @dono`, callouts colapsados, `audio.mp3`).
 - [`Transcript Alinhamento - Plataforma.md`](04-project-management/atas-reuniao/Transcript%20Alinhamento%20-%20Plataforma.md) — ata estruturada 01/09/2026 (decisões piloto 50/50, valor hora R$180–250, infra Hostinger, MRR R$15k).
+- [`Transcript meeting SEBRAE 02-09-2026.md`](04-project-management/atas-reuniao/Transcript%20meeting%20SEBRAE%2002-09-2026.md) — ata estruturada 02/09/2026 SEBRAE/Ginga (evento 28/10 30 fornecedores, 10 decisões, 10 ações, MVP validado; + `.docx` 51 KB docx padrão).
 - [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — redirect legado para `_template-ata.md`.
 - [`P01-entregaveis-*.md` / `P02-*.md` / `P03-*.md`](04-project-management/registros-trabalho/logs-progresso/) — logs consolidados de entregáveis por fase (P01 6 itens, P02 6, P03 18 artefatos) + `Sat 29 Aug 2026.md`.
 - [`TaskNotes/Start Here.md`](TaskNotes/Start%20Here.md) — guia inicial do fluxo de tarefas.
@@ -234,10 +235,11 @@ O projeto agora possui um **faseamento sequencial** para gestão eficiente:
 - A matriz canônica registra 56 tarefas: P01=7 `concluido`, P02=6 `concluido`, P03=9 `em-revisao` (rascunhos G03.A1–G03.C5 entregues em `02-refinement/refinamento-modelo-dados/` + `02-refinement/refinamento-governanca/`), P04=8 `pendente`, P05=7 `pendente`, P06=12 `pendente` e P07=7 `pendente` (total 13 `concluido`/`- [x]`, 34 `pendente`/`- [ ]` + 9 `em-revisao`/`- [ ]`).
 - Os requisitos mínimos de `DAT-010` (G03.B2), `TEC-005` (G05.4), `TEC-007` (G05.7) e `LCH-007` (G07.7) são bloqueadores dos respectivos gates; extensões estão classificadas como pós-MVP.
 - `P03-T01` (modelo lógico 25 entidades) a `P03-T09` (fluxos+XLSX reconstruído + validações entity-key/ROI/corrected-CSV) estão em `em-revisao` para validação Dados+Tech+LGPD; `P07-T01` depende explicitamente de `P04-T01` e `P06-T02`. P07 permanece pendente e não aprovado.
-- Atas: `Transcript Alinhamento - Plataforma.md` (01/09/2026, TL;DR + decisões + 10 ações com dono/prazo) estruturado com `_template-ata.md` canônico; `template-reuniao.md` mantido como redirect. Infra piloto: 1× Hostinger KVM-8; produção 3× (2 app + 1 DB), futuro HA 2 DB + 2 BI.
+- Atas: `Transcript Alinhamento - Plataforma.md` (01/09, TL;DR + 10 ações, piloto 50/50 R$180–250) + `Transcript meeting SEBRAE 02-09-2026.md/.docx` (02/09, TL;DR + 10 decisões/10 ações, evento 28/10 30 fornecedores, MVP SEBRAE/Ginga validado) estruturadas com `_template-ata.md` canônico; `template-reuniao.md` mantido como redirect. Áudios em `System/attachments/` (`reuniao plataforma-sebrae.mp3`). Infra piloto: 1× Hostinger KVM-8; produção 3× (2 app + 1 DB), futuro HA 2 DB + 2 BI.
 - Refinamento P03 spine: 9 rascunhos v1 (`modelo-logico-fisico`, `especificacao-identidade` + dataset sintético, `envelope-evento-schema` + fixture `schema-registry`, `dicionario-fisico-mapping`, `catalogo-metricas-grafo`, `templates-linhagem-evidencias`, `taxonomia-estados-valor`, `matriz-dados-finalidade-P03-T08-v1`, `fluxos-linhagem-replay-dsar`) + `refinamento-produto/` (4 artefatos P01-T02/P02-T03..T06) verificáveis em `registros-trabalho/logs-progresso/P03-*.md`.
-- A sincronização operacional foi enviada para `origin/main` (`72f6d43`); o remoto separado `publish` não é atualizado automaticamente.
+- `05-resources/Processar/Plataforma HUB/` com 151 arquivos (7 MVPs + visão de plataforma: Arquitetura-Custos 96 telas, CAPEX/OPEX, Dashboard) permanece como fila de processamento — não é evidência aprovada até promoção via `02-refinement` → `03-approval`.
+- A sincronização operacional reflete `9494c74` (working tree com SEBRAE `.docx` não rastreado); último push `origin/main` foi `72f6d43` — remoto `publish` não é atualizado automaticamente.
 
 ## Observação
 
-O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (atualizado em 2026-09-02 após o commit `72f6d43`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (atualizado em 2026-09-02 após `9494c74` — atas SEBRAE + 05-resources/Processar) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.

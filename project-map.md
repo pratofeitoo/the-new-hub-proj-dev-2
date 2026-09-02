@@ -1,5 +1,5 @@
-<!-- git-hash: 72f6d4323d68684ea695c9e43c1f510b722b5436 -->
-<!-- last-synced: 2026-09-02T01:38:11-03:00 -->
+<!-- git-hash: 9494c748642ae77ad4ffaf2a82a32f7c0e133ade -->
+<!-- last-synced: 2026-09-02T13:55:42-03:00 -->
 
 # Mapa do Projeto
 
@@ -21,12 +21,12 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `01-blueprint/`          | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança e lançamento (9 domínios). |
 | `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados — spine P03 9 rascunhos G03.A1–C5 (lógico/físico, identidade+dataset, envelope+fixture, dicionário, catálogo, linhagem, taxonomia, matriz LGPD, fluxos+XLSX) + produto/gov. |
 | `03-approval/`           | Critérios, evidências, pacotes de revisão, estados de aprovação e material bloqueado (modelo indicadores não aprovado + 03-csv-corrigido/04-registro-correcoes/06-relatorios-validacao). |
-| `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP, matriz canônica, marcos (M00–M07 + M03.A/B), cronogramas + base execução (9 views), atas (transcript 01/09 + `_template-ata.md`), logs-progresso (P01/P02/P03 + Sat 29 Aug), retrospectivas e status. |
-| `05-resources/`          | Documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
+| `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP (64 notas + 2 bases), matriz canônica, marcos (M00–M07 + M03.A/B), cronogramas + base execução (9 views), atas (01/09 Alinhamento + 02/09 SEBRAE/Ginga estruturadas `.md` + SEBRAE `.docx` + `_template-ata.md`), cenários P01-S01→S06 (6 segmentos), planos unificados HTML, logs-progresso (P01/P02/P03 + Sat 29 Aug), retrospectivas e status. |
+| `05-resources/`          | Recursos e matéria-prima: `Processar/Plataforma HUB/` (151 arquivos: `01-mvps/` 7 MVPs — Fornecedores/Candidatos/Acadêmico/Colaboradores/Eventos/Estratégia/Comunidades + `02-visao-plataforma/` — Arquitetura e Custos 96 telas, CAPEX/OPEX, Dashboard — + `99-arquivo/` Rascunhos), + documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
 | `06-deliverables/`       | Saídas finais organizadas por dados, governança, investidor, lançamento, negócio e produto.          |
 | `99-archive/`            | Material descontinuado, rejeitado, superado e instantâneos históricos.                               |
 | `TaskNotes/`             | Notas de tarefas (25 operacionais) e visualizações Bases — agenda, calendário, kanban, mini-calendar, pomodoro, relações e tasks. |
-| `System/`                | Documentação local de plugins, Canvas, Bases, Dataview e TaskNotes (7 docs: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base, Task Notes, Tracker, datacore). |
+| `System/`                | Documentação local de plugins, Canvas, Bases, Dataview e TaskNotes (7 docs: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base, Task Notes, Tracker, datacore) + `attachments/` (áudios: `audio.mp3`, `reuniao plataforma-sebrae.mp3`). |
 | `_types/`                | Definições de tipos usadas pelo mdbase/TaskNotes (`task.md`).                                        |
 | `.obsidian/`             | Configurações do vault, plugins (7 ativos), 13 temas e workspace.                                    |
 | `.omo/`                  | Planos e artefatos de orquestração do OhMyOpenCode.                                                  |
@@ -161,18 +161,28 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   └── portao-lancamento/  — portão de lançamento (go/no-go)
 │
 ├── 04-project-management/  — GESTÃO DO PROJETO — planejamento e controle transversal
-│   ├── atas-reuniao/  — atas de reunião (Transcript Alinhamento - Plataforma.md 01/09/2026 estruturada + _template-ata.md canônico + template-reuniao.md redirect)
+│   ├── atas-reuniao/  — atas de reunião (Transcript Alinhamento - Plataforma.md 01/09/2026 estruturada + Transcript meeting SEBRAE 02-09-2026.md/.docx 02/09/2026 estruturada SEBRAE/Ginga 28/10 + _template-ata.md canônico + template-reuniao.md redirect)
+│   ├── cenarios/  — cenários por segmento P01-S01→S06 (6 arquivos: Empresas Marca, Ecossistemas, Compradores, Fundações, Instituições, Acesso Empresarial)
 │   ├── cronogramas/  — cronogramas do projeto (cronograma-fases-v1.base — 6 views Bases: Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps)
 │   ├── marcos/  — marcos e milestones (marcos-fases-v1.md — M00→M07 + sub-gates M03.A/B, critérios G01.x→G07.x)
 │   ├── planos-fase/  — planos por fase (P01_Arquitetura_Oferta_Negocio → P07_Portao_Lancamento — 7 fases spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis)
-│   ├── planos-mestres/  — planos diretores / master plans (HUB_Plano_Fases_v1.md — Plano Diretor P01–P07 + alternativa 4-fases + §11 Glossário; HUB_Escopo_Estrategico_Documento_Mae_v2_*.md — 3 variantes Investor Ready)
+│   ├── planos-mestres/  — planos diretores / master plans (HUB_Plano_Fases_v1.md — Plano Diretor P01–P07 + alternativa 4-fases + §11 Glossário; HUB_Escopo_Estrategico_Documento_Mae_v2_*.md — 1 variante Pronta_Investidor no diretório)
 │   ├── registro-mestre/  — matriz canônica de coordenação fase/tarefa (matriz-fases-tarefas-v1.md — 56 linhas P01–P07, P01 7 concluido/P02 6 concluido/P03 9 em-revisao/P04–P07 34 pendente)
 │   ├── registros-trabalho/  — logs + base de execução (HUB_Tarefas_Fases_Execucao.base — 9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) + logs-progresso/ (P01/P02/P03 entregáveis + Sat 29 Aug 2026.md)
 │   ├── relatorios-status/  — relatórios de status periódicos + template-relatorio-status.md
 │   ├── retrospectivas/  — retrospectivas de ciclo/sprint
-│   └── tarefas/  — tarefas do blueprint (BP-001..008) + 56 tarefas de fase (P01-T01→P07-T07, 7+6+9+8+7+12+7) + HUB_Tarefas_Projeto.base e HUB_Tarefas_Fases_Execucao (via registros-trabalho) + README
+│   ├── tarefas/  — tarefas do blueprint (BP-001..008) + 56 tarefas de fase (P01-T01→P07-T07, 7+6+9+8+7+12+7) + HUB_Tarefas_Projeto.base e HUB_Tarefas_Fases_Execucao (via registros-trabalho) + README
+│   ├── Fases_Projeto_Canvas_v1.html  — canvas interativo das fases
+│   ├── HUB_Log_Tarefas_Progresso.md  — log consolidado de progresso das tarefas
+│   └── HUB_Plano_Unificado*.html  — planos unificados exportados (v1 + Full v1)
 │
 ├── 05-resources/  — RECURSOS — matéria-prima e materiais de apoio (não são evidência aprovada)
+│   ├── Processar/  — FILA DE PROCESSAMENTO — inbox estruturado Plataforma HUB (manifesto, HUB_Fila_Processamento.base, _templates/)
+│   │   └── Plataforma HUB/  — pacote Plataforma HUB para processamento (01-mvps/ 7 MVPs + 02-visao-plataforma/ + 03-analises-processadas/ + 99-arquivo/ Rascunhos iniciais)
+│   │       ├── 01-mvps/  — MVPs por proposição (Fornecedores, Candidatos, Acadêmico, Colaboradores+Dado, Eventos, Estratégia e Dados, Comunidades — cada um com fontes/.xlsx, visuais/, README/notas)
+│   │       ├── 02-visao-plataforma/  — visão de plataforma (Exemplo de Deck, Portfólio de Produtos, Estrutura de Liderança e Remuneração, Modelo Financeiro para Investidores, Projeção Arquitetura e Custos)
+│   │       │   └── Projeção de arquitetura e custos - Plataforma/  — Arquitetura-Custos (00 Dashboard + 01 Visão Geral + 02 Inventário 96 Telas base + _data/ 96 telas/CAPEX/OPEX) e FullFidelity (12 CSVs: módulos, integrações, cenários, pricing, premissas)
+│   │       └── 99-arquivo/  — Rascunhos iniciais (decks iniciais, visões, WhatsApp esboços)
 │   ├── apresentacoes/  — apresentações
 │   │   └── pitch-decks/  — pitch decks (SEBRAE 2026, FIRJAN)
 │   ├── conjuntos-dados/  — datasets de apoio
@@ -203,19 +213,20 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   └── Views/  — visões Bases (agenda-default, mini-calendar, pomodoro-stats, relationships, tasks-default, etc.)
 │
 ├── System/  — SISTEMA — documentação local de referência das ferramentas do vault
-│   └── Plugins docs/  — docs locais por plugin (7 docs)
-│       ├── Charts Plugin Docs/  — documentação do Charts
-│       ├── Dataview Charts/  — documentação Dataview Charts
-│       ├── JSON Canvas Spec.md  — especificação JSON Canvas 1.0
-│       ├── Obsidian Base/  — documentação do Obsidian Bases
-│       ├── Task Notes/  — documentação do Task Notes
-│       ├── Tracker Plugin/  — documentação do Tracker
-│       └── datacore/  — documentação do Datacore
+│   ├── Plugins docs/  — docs locais por plugin (7 docs)
+│   │   ├── Charts Plugin Docs/  — documentação do Charts
+│   │   ├── Dataview Charts/  — documentação Dataview Charts
+│   │   ├── JSON Canvas Spec.md  — especificação JSON Canvas 1.0
+│   │   ├── Obsidian Base/  — documentação do Obsidian Bases
+│   │   ├── Task Notes/  — documentação do Task Notes
+│   │   ├── Tracker Plugin/  — documentação do Tracker
+│   │   └── datacore/  — documentação do Datacore
+│   └── attachments/  — anexos do vault (áudios: audio.mp3, reuniao plataforma-sebrae.mp3)
 │
 └── _types/  — TIPOS — definições de tipos do mdbase/TaskNotes (ex.: task.md)
 ```
 
-> **Total inventariado:** ~120 pastas + 66 notas de tarefas (8 BP + 56 P0x) navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro. Novos: `02-refinement/refinamento-modelo-dados/schema-registry/fixtures`, `04-project-management/registros-trabalho/logs-progresso`, `04-project-management/atas-reuniao` (transcript + template canônico).
+> **Total inventariado:** ~125 pastas + 66 notas de tarefas (8 BP + 56 P0x) + 151 arquivos em `05-resources/Processar/Plataforma HUB/` navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro. Novos nesta revisão: `04-project-management/atas-reuniao/Transcript meeting SEBRAE 02-09-2026.md/.docx` (ata SEBRAE/Ginga 28/10), `04-project-management/cenarios/` (6 segmentos P01-S01→S06), `05-resources/Processar/Plataforma HUB/` (7 MVPs + Arquitetura-Custos 96 telas), `02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos.md` + `log-evidencias-GTM.md`, `System/attachments/` (áudios).
 
 ## Anexo para agentes — tabela navegável (machine-readable)
 
@@ -338,17 +349,22 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `03-approval/pacotes-revisao/` | approval | Pacotes montados para revisão por stakeholders | `.gitkeep` | reservado |
 | `03-approval/portao-lancamento/` | approval | Portão de lançamento (go/no-go) | `.gitkeep` | reservado |
 | `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + 56 tarefas + matriz canônica + bases execução/cronograma + marcos + atas + logs-progresso | ativo |
-| `04-project-management/atas-reuniao/` | gestão | Atas de reunião (estruturadas) | `Transcript Alinhamento - Plataforma.md` (01/09, 10 ações) + `_template-ata.md` canônico + `template-reuniao.md` redirect | ativo |
+| `04-project-management/atas-reuniao/` | gestão | Atas de reunião (estruturadas) | `Transcript Alinhamento - Plataforma.md` (01/09, 10 ações, piloto 50/50 R$180–250) + `Transcript meeting SEBRAE 02-09-2026.md` + `.docx` (02/09, 10 ações, evento 28/10 30 fornecedores, MVP SEBRAE/Ginga) + `_template-ata.md` canônico + `template-reuniao.md` redirect | ativo |
 | `04-project-management/cronogramas/` | gestão | Cronogramas do projeto | `cronograma-fases-v1.base` (6 views: Timeline, Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps) | ativo |
 | `04-project-management/marcos/` | gestão | Marcos e milestones | `marcos-fases-v1.md` (M00→M07 + sub-gates M03.A/B, critérios G01.x→G07.x) | ativo |
 | `04-project-management/planos-fase/` | gestão | Planos por fase | `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis) | ativo |
-| `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) + `HUB_Escopo_Estrategico_Documento_Mae_v2_*.md` (3 variantes) | ativo |
+| `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) + `HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md` (1 variante no dir; outras 2 em `02-refinement/estrategia/segundo-rascunho-projeto/`) | ativo |
 | `04-project-management/registro-mestre/` | gestão | Fonte de coordenação fase/tarefa | `matriz-fases-tarefas-v1.md` (56 linhas, P01 7 concluido/P02 6 concluido/P03 9 em-revisao/P04–P07 34 pendente) | ativo |
 | `04-project-management/registros-trabalho/` | gestão | Logs + base de execução | `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) + `logs-progresso/` (P01/P02/P03 + Sat 29 Aug) | ativo |
 | `04-project-management/relatorios-status/` | gestão | Relatórios de status periódicos | `template-relatorio-status.md` + `.gitkeep` | ativo |
 | `04-project-management/retrospectivas/` | gestão | Retrospectivas de ciclo/sprint | `.gitkeep` | reservado |
 | `04-project-management/tarefas/` | gestão | Tarefas do blueprint + fases | `BP-001..008` + 56× `P01-T01`→`P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` | ativo |
-| `05-resources/` | recursos | Matéria-prima e materiais de apoio (não é evidência aprovada) | docs, imagens, planilhas | ativo |
+| `05-resources/` | recursos | Matéria-prima e materiais de apoio (não é evidência aprovada) | `Processar/Plataforma HUB/` (151 arquivos) + docs, imagens, planilhas | ativo |
+| `05-resources/Processar/` | recursos | Fila de processamento — inbox estruturado | `Plataforma HUB/`, `HUB_Fila_Processamento.base`, `manifesto` | ativo |
+| `05-resources/Processar/Plataforma HUB/` | recursos | Pacote Plataforma HUB para processamento | `01-mvps/` (7 MVPs) + `02-visao-plataforma/` + `03-analises-processadas/` + `99-arquivo/` | ativo |
+| `05-resources/Processar/Plataforma HUB/01-mvps/` | recursos | MVPs por proposição | 7 MVPs: Fornecedores, Candidatos, Acadêmico, Colaboradores+Dado, Eventos, Estratégia e Dados, Comunidades | ativo |
+| `05-resources/Processar/Plataforma HUB/02-visao-plataforma/` | recursos | Visão de plataforma | Portfólio, Liderança, Modelo Financeiro, Arquitetura-Custos 96 telas | ativo |
+| `05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/` | recursos | Projeção Arquitetura e Custos | `Arquitetura-Custos/` (96 telas, CAPEX/OPEX) + `Arquitetura-Custos_FullFidelity/` (12 CSVs) + `Arquitetura e Custos Totais.xlsx` | ativo |
 | `05-resources/apresentacoes/` | recursos | Apresentações | pitch-decks | ativo |
 | `05-resources/apresentacoes/pitch-decks/` | recursos | Pitch decks | `SEBRAE 2026.pdf`, `FIRJAN.pdf` | ativo |
 | `05-resources/conjuntos-dados/` | recursos | Datasets de apoio | `.gitkeep` | reservado |
@@ -374,8 +390,9 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `TaskNotes/` | tarefas | Notas e visões do plugin TaskNotes | `Start Here.md` + Tasks + Views | ativo |
 | `TaskNotes/Tasks/` | tarefas | Notas de tarefa operacionais (fluxo TaskNotes) | 25 notas operacionais (separadas de BP/P0x) | ativo |
 | `TaskNotes/Views/` | tarefas | Visões Bases (agenda, kanban, calendário, relações, pomodoro) | 7 bases: `agenda-default`, `calendar-default`, `kanban-default`, `mini-calendar`, `pomodoro-stats`, `relationships`, `tasks-default` | ativo |
-| `System/` | sistema | Documentação local de referência das ferramentas do vault | `Plugins docs/` (7 docs) | ativo |
+| `System/` | sistema | Documentação local de referência das ferramentas do vault | `Plugins docs/` (7 docs) + `attachments/` (áudios) | ativo |
 | `System/Plugins docs/` | sistema | Docs locais por plugin | 7 docs (inclui JSON Canvas Spec) | ativo |
+| `System/attachments/` | sistema | Anexos do vault | `audio.mp3`, `reuniao plataforma-sebrae.mp3` | ativo |
 | `System/Plugins docs/Charts Plugin Docs/` | sistema | Documentação do Charts | docs | ativo |
 | `System/Plugins docs/Dataview Charts/` | sistema | Documentação Dataview Charts | docs | ativo |
 | `System/Plugins docs/JSON Canvas Spec.md` | sistema | Especificação JSON Canvas 1.0 | spec | ativo |
@@ -437,6 +454,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 - [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
 - [`_template-ata.md`](04-project-management/atas-reuniao/_template-ata.md) — template canônico de ata estruturada (TL;DR, decisões, ações `- [ ] @dono`, callouts, `audio.mp3`).
 - [`Transcript Alinhamento - Plataforma.md`](04-project-management/atas-reuniao/Transcript%20Alinhamento%20-%20Plataforma.md) — ata estruturada 01/09/2026 (piloto 50/50, R$180–250/h, Hostinger KVM-8, MRR R$15k).
+- [`Transcript meeting SEBRAE 02-09-2026.md`](04-project-management/atas-reuniao/Transcript%20meeting%20SEBRAE%2002-09-2026.md) — ata estruturada 02/09/2026 SEBRAE/Ginga (evento 28/10 30 fornecedores, 10 decisões, 10 ações, validação MVP plataforma) + `.docx` (51 KB, formatação docx padrão).
 - [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — redirect legado para `_template-ata.md`.
 - [`logs-progresso/P01-entregaveis-*.md` / `P02-*.md` / `P03-*.md`](04-project-management/registros-trabalho/logs-progresso/) — logs consolidados de entregáveis por fase (9 rascunhos P03 v1 + validações).
 - [`Start Here.md`](TaskNotes/Start%20Here.md) — guia inicial do fluxo de tarefas.
@@ -478,8 +496,8 @@ flowchart TB
     BP --> BPF["dados-inteligencia / estrategia / governanca-juridico / marca-mercado / modelo-negocio / operacoes / produto / tecnologia / visao-lancamento"]
     RF --> RFF["estrategia / modelos-financeiros / pesquisa / prototipos / refinamento-governanca / refinamento-modelo-dados / refinamento-produto / revisoes-iteradas / revisoes / testes-experimentos"]
     AP --> APF["aprovado / aprovado-condicionalmente / bloqueado / criterios-aprovacao / evidencias / pacotes-revisao / portao-lancamento"]
-     PM --> PMF["atas-reuniao / cronogramas / marcos / planos-mestres / planos-fase / registro-mestre / registros-trabalho / relatorios-status / retrospectivas / tarefas"]
-    RS --> RSF["apresentacoes / conjuntos-dados / documentos / imagens / materiais-origem / modelos / planilhas / referencias-externas"]
+     PM --> PMF["atas-reuniao / cenarios / cronogramas / marcos / planos-mestres / planos-fase / registro-mestre / registros-trabalho / relatorios-status / retrospectivas / tarefas"]
+     RS --> RSF["Processar / apresentacoes / conjuntos-dados / documentos / imagens / materiais-origem / modelos / planilhas / referencias-externas"]
     DL --> DLF["dados / governanca / investidor / lancamento / negocio / produto"]
     AR --> ARF["descontinuado / instantaneos-historicos / rejeitado / superado"]
     TN --> TNF["Start Here.md / Tasks / Views"]
@@ -489,16 +507,17 @@ flowchart TB
 
 ## Notas de frescor
 
-- O mapa reflete o commit `00dcc4e` (2026-09-01), que estruturou `Transcript Alinhamento - Plataforma.md` em ata (TL;DR + decisões + 10 ações) + `_template-ata.md` canônico; anteriores `8d6ece2` (clean up TaskNotes), `4832388` (sync vault), `a02e74e` (matriz P01-P07) continuam válidos. `origin/main` é o remoto operacional; `publish` não é atualizado automaticamente.
-- Anterior `76401a3` sincronizou P03 spine em `em-revisao` (9 rascunhos G03.A1–G03.C5) + matriz/log; `90b8211` alinhou phase gates e `1c2733f` entregou faseamento P01–P07. Esta revisão promove `76401a3` → `00dcc4e` sem regressão de P03 spine.
-- Anterior `973a23b` registrou as **56 tarefas P01→P07 + base de execução** (`HUB_Tarefas_Fases_Execucao.base` com 9 views em `registros-trabalho/`, 56 notas `P01-T01→P07-T07` em `tarefas/`).
-- Anterior `1c2733f` entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views, `marcos-fases-v1.md` M00→M07).
-- `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README — verified em `00dcc4e`.
+- O mapa reflete o commit `9494c74` (2026-09-02T13:55), que adiciona `Transcript meeting SEBRAE 02-09-2026.md/.docx` (ata SEBRAE/Ginga estruturada 02/09 — 10 decisões, 10 ações, evento 28/10 30 fornecedores, MVP validado) + atualiza inventário `05-resources/Processar/Plataforma HUB/` (151 arquivos, 7 MVPs, Arquitetura-Custos 96 telas). Anterior `72f6d43` (2026-09-02T01:38) já sincronizado; `00dcc4e` (01/09 ata Alinhamento), `76401a3` (P03 spine), `973a23b` (56 tarefas + base) e `1c2733f` (faseamento P01–P07) continuam válidos. `origin/main` é o remoto operacional; `publish` não é atualizado automaticamente.
+- `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README — verified em `9494c74`.
 - `04-project-management/registros-trabalho/` contém `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) + `logs-progresso/` (4 arquivos: `P01-entregaveis-*.md`, `P02-*.md`, `P03-*.md`, `Sat 29 Aug 2026.md`).
-- `04-project-management/atas-reuniao/` contém `Transcript Alinhamento - Plataforma.md` (01/09, 107KB, estruturada) + `_template-ata.md` (3.9KB canônico) + `template-reuniao.md` (redirect 953B).
-- `02-refinement/refinamento-modelo-dados/` contém 9 rascunhos v1 P03-T01..T09 + `schema-registry/fixtures/identity.merged.v1.0.valid.json` + `modelo-indicadores/dataset-identidade-sintetico-P03-T02.csv`; `refinamento-produto/` 4 artefatos e `refinamento-governanca/` 1 matriz LGPD — todos `em-revisao`.
-- `00-project-control/registro-mudancas/` contém 4 notas (2026-08-26 ×2, 2026-08-27, 2026-08-31) + template; `System/Plugins docs/` 7 docs; `.obsidian/themes/` 13 temas.
-- `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) e `HUB_Escopo_Estrategico_Documento_Mae_v2_*.md` (3 variantes Investor Ready) — verified em `00dcc4e`.
+- `04-project-management/atas-reuniao/` contém `Transcript Alinhamento - Plataforma.md` (01/09, 107KB, estruturada) + `Transcript meeting SEBRAE 02-09-2026.md` (30KB, estruturada) + `.docx` (51KB, docx padrão) + `_template-ata.md` (3.9KB canônico) + `template-reuniao.md` (redirect 953B).
+- `04-project-management/cenarios/` contém 6 cenários P01-S01→S06 (Empresas Marca, Ecossistemas, Compradores, Fundações, Instituições, Acesso Empresarial) — novos nesta revisão.
+- `04-project-management/` raiz contém `HUB_Log_Tarefas_Progresso.md`, `Fases_Projeto_Canvas_v1.html` e `HUB_Plano_Unificado*.html` (exportados).
+- `05-resources/Processar/Plataforma HUB/` contém 151 arquivos: `01-mvps/` (7 MVPs cada com fontes/.xlsx + visuais + README), `02-visao-plataforma/` (Portfólio, Liderança/Remuneração, Modelo Financeiro, Projeção Arquitetura e Custos — 96 telas, CAPEX/OPEX, FullFidelity 12 CSVs), `99-arquivo/` (Rascunhos iniciais).
+- `02-refinement/refinamento-modelo-dados/` contém 9 rascunhos v1 P03-T01..T09 + `schema-registry/fixtures/identity.merged.v1.0.valid.json` + `modelo-indicadores/dataset-identidade-sintetico-P03-T02.csv`; `refinamento-produto/` 4 artefatos e `refinamento-governanca/` 1 matriz LGPD — todos `em-revisao`. Novos em `02-refinement/pesquisa/`: `HUB_v2_limites_concentracao_parceiros_propostos.md` + `log-evidencias-GTM.md`.
+- `02-refinement/modelos-financeiros/` contém `registro-premissas-v0.md` (novo).
+- `00-project-control/registro-mudancas/` contém 4 notas (2026-08-26 ×2, 2026-08-27, 2026-08-31) + template; `System/Plugins docs/` 7 docs + `System/attachments/` (audio.mp3, reuniao plataforma-sebrae.mp3); `.obsidian/themes/` 13 temas.
+- `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) e `HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md` (1 variante no dir; outras 2 em `02-refinement/estrategia/segundo-rascunho-projeto/`) — verified em `9494c74`.
 - `04-project-management/registro-mestre/` contém `matriz-fases-tarefas-v1.md` (56 linhas: P01 7 `concluido`, P02 6 `concluido`, P03 9 `em-revisao`, P04–P07 34 `pendente`); P07 permanece pendente e não aprovado.
 - `04-project-management/planos-fase/` contém `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis) — 7 arquivos.
 - `04-project-management/cronogramas/` contém `cronograma-fases-v1.base` (6 views: Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
@@ -506,7 +525,7 @@ flowchart TB
 - `00-project-control/escopo/fases-projeto/rascunho/` contém `Fases_Projeto.canvas` sequencial P00→P07 (redesenhado 2026-08-27).
 - `99-archive/superado/` contém `Fases_Projeto_v0_clusters_tematicos.canvas` (clusters temáticos, superado pelo sequencial).
 - `00-project-control/registro-mudancas/` contém 4 notas (2026-08-26 ×2, 2026-08-27, 2026-08-31) + `template-registro-mudanca.md`.
-- `TaskNotes/Tasks/` contém 25 notas operacionais (separadas das 56 P0x + 8 BP), incluindo `Preencher as pastas de Execuções Paralelas.md`.
+- `TaskNotes/Tasks/` contém 25 notas operacionais (separadas das 56 P0x + 8 BP).
 - A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios (`03-csv-corrigido/` 15 pastas, `04-registro-correcoes/`, `06-relatorios-validacao/` entity-key/ROI/corrected-CSV).
 - `.obsidian/themes/` contém 13 temas (Blossom, Dark Moss, Dracula + LYT, Glass Robo, March, Modern GenZ Vibedose, Nebula, Royal Velvet, Slytherin, Sodalite, Terminal2K, Vicious, WY Console).
-- **Atualização desta revisão:** sincronizado ao estado de trabalho após `72f6d43` em 2026-09-02T01:38:11-03:00; anteriores `00dcc4e` (ata estruturada), `76401a3` (P03 spine), `a02e74e` (matriz), `973a23b` (56 tarefas + base) e `1c2733f` (faseamento) continuam válidos como histórico.
+- **Atualização desta revisão:** sincronizado ao estado de trabalho em `9494c74` (2026-09-02T13:55:42-03:00) com working tree incluindo `atas-reuniao/SEBRAE.docx` não rastreado + `05-resources/Processar/` como fonte de recursos; `04-project-management/pacotes-revisao/P01-aceite-cross-functional-v1.md` e `05-resources/documentos/` permanecem fora do fluxo de aprovação até validação.
