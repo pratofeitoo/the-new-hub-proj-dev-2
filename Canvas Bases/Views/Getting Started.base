@@ -1,0 +1,119 @@
+filters:
+  and:
+    - file.hasTag("canvas-bases-demo")
+views:
+  - type: canvas-bases
+    name: "Getting Started"
+    order:
+      - file.name
+      - status
+      - review
+      - area
+      - related
+    sort:
+      - column: status
+        direction: ASC
+      - column: file.name
+        direction: ASC
+    groupBy:
+      property: status
+      direction: ASC
+    canvasBasesLayout: grid
+    canvasBasesEdgeMode: properties
+    canvasBasesEdgeProperties: related
+    canvasBasesShowBodyEditor: true
+    canvasBasesTaskNotesMode: off
+    canvasBasesTaskNotesShowBadges: false
+    canvasBasesTaskNotesShowActions: false
+    canvasBasesTaskNotesRelationships: none
+    canvasBasesLinkedCanvasPath: "Canvas Bases/Canvases/Getting Started.canvas"
+    canvasBasesPreservePositions: true
+    canvasBasesRemoveMissingNodes: true
+    canvasBasesNodeWidth: 360
+    canvasBasesNodeHeight: 190
+    canvasBasesNodePositions:
+      canvas-bases-file-3decwn:
+        x: 0
+        y: 0
+        width: 360
+        height: 190
+      canvas-bases-file-1l8qzm:
+        x: 560
+        y: 250
+        width: 360
+        height: 190
+      canvas-bases-file-c84cwu:
+        x: 0
+        y: 500
+        width: 360
+        height: 190
+  - type: canvas-bases
+    name: "Assignment zones"
+    order:
+      - file.name
+      - status
+      - review
+      - area
+      - related
+    sort:
+      - column: status
+        direction: ASC
+      - column: file.name
+        direction: ASC
+    groupBy:
+      property: status
+      direction: ASC
+    canvasBasesLayout: columns
+    canvasBasesEdgeMode: properties
+    canvasBasesEdgeProperties: related
+    canvasBasesShowBodyEditor: true
+    canvasBasesTaskNotesMode: off
+    canvasBasesTaskNotesShowBadges: false
+    canvasBasesTaskNotesShowActions: false
+    canvasBasesTaskNotesRelationships: none
+    canvasBasesPreservePositions: true
+    canvasBasesRemoveMissingNodes: true
+    canvasBasesNodeWidth: 360
+    canvasBasesNodeHeight: 190
+    canvasBasesZones:
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: 1. Choose
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: 2. Arrange
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: 3. Snapshot
+        updateMode: replace
+        valueType: string
+      - origin: custom
+        id: review-needed
+        label: Needs review
+        action: set-property
+        property: note.review
+        value: Needs review
+        updateMode: replace
+        valueType: string
+        color: "#f59e0b"
+    canvasBasesNodePositions:
+      canvas-bases-manual-group-57hwgp:
+        x: 444
+        y: 316
+        width: 360
+        height: 250
+      canvas-bases-text-1yj0j87:
+        x: 0
+        y: 316
+        width: 360
+        height: 190
+    canvasBasesTextCards:
+      - id: active-groups-prompt
+        text: "Drag between status zones to update status, or into Needs review to add a review property."

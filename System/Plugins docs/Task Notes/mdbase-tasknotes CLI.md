@@ -17,14 +17,14 @@ If you are looking for the built-in `obsidian tasknotes:*` commands exposed by t
 
 TaskNotes ships with [tasknotes-cli](https://github.com/callumalpass/tasknotes-cli) (`tn`), which communicates with the Obsidian plugin over its HTTP API. `mdbase-tasknotes` operates directly on the markdown files instead.
 
-|  | `tn` (tasknotes-cli) | `mtn` (mdbase-tasknotes) |
-| --- | --- | --- |
-| **Requires Obsidian** | Yes — plugin must be running with API enabled | No |
-| **Operates on** | HTTP API | Markdown files directly via mdbase |
-| **Use when** | Obsidian is open and you want live sync | Obsidian is closed, on a server, or in scripts |
-| **Time tracking** | Via plugin API | Via frontmatter `timeEntries` |
-| **Task creation** | NLP via API | NLP via bundled `tasknotes-nlp-core` |
-| **Install** | `npm install -g tasknotes-cli` | `npm install -g mdbase-tasknotes` |
+|                       | `tn` (tasknotes-cli)                          | `mtn` (mdbase-tasknotes)                       |
+| --------------------- | --------------------------------------------- | ---------------------------------------------- |
+| **Requires Obsidian** | Yes — plugin must be running with API enabled | No                                             |
+| **Operates on**       | HTTP API                                      | Markdown files directly via mdbase             |
+| **Use when**          | Obsidian is open and you want live sync       | Obsidian is closed, on a server, or in scripts |
+| **Time tracking**     | Via plugin API                                | Via frontmatter `timeEntries`                  |
+| **Task creation**     | NLP via API                                   | NLP via bundled `tasknotes-nlp-core`           |
+| **Install**           | `npm install -g tasknotes-cli`                | `npm install -g mdbase-tasknotes`              |
 
 Use `mtn` when:
 

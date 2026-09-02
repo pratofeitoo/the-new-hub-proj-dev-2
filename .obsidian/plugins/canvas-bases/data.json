@@ -1,0 +1,18 @@
+{
+  "locale": "system",
+  "starterFilesCreated": true,
+  "defaultCanvasFolder": "Canvas Bases",
+  "defaultLayout": "columns",
+  "defaultEdgeMode": "none",
+  "defaultEdgeProperties": "",
+  "defaultShowBodyEditor": true,
+  "defaultTaskNotesMode": "auto",
+  "defaultTaskNotesShowBadges": true,
+  "defaultTaskNotesShowActions": true,
+  "defaultTaskNotesRelationships": "all",
+  "preservePositions": true,
+  "removeMissingNodes": true,
+  "nodeWidth": 320,
+  "nodeHeight": 160,
+  "linkedViews": {}
+}

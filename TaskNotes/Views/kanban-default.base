@@ -66,3 +66,6 @@ views:
       columnWidth: 280
       hideEmptyColumns: false
     columnOrder: '{"note.status":["none","open","pendente","em-revisao","in-progress","concluido","hypothesis","done"]}'
+  - type: powerbases-calendar
+    name: Calendar-custom
+    dateProp: note.due
