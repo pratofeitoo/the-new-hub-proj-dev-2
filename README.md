@@ -77,19 +77,19 @@ flowchart TB
 
 ## O que cada pasta significa
 
-- [`00-project-control/`](00-project-control/) — regras do jogo: framework, escopo, decisões, dependências, premissas, riscos, gaps, registro de mudanças e índices.
+- [`00-project-control/`](00-project-control/) — regras do jogo: framework, escopo, decisões, dependências, premissas, riscos, gaps, registro de mudanças (4 notas + template) e índices.
 - [`01-blueprint/`](01-blueprint/) — a visão-base do projeto: estratégia, produto, negócios, tecnologia, dados, governança e visão de lançamento.
-- [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário.
-- [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste.
-- [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor P01→P07, 7 planos de fase, 56 tarefas P01→P07 + 8 BP, marcos M00→M07, cronogramas (Bases) + base de execução (9 views), reuniões, status e logs.
+- [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário (spine P03: 9 rascunhos G03.A1–C5 + `refinamento-governanca/` e `refinamento-produto/` com 4 artefatos).
+- [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste (bloqueado: modelo de indicadores não aprovado + relatórios entity-key/ROI/corrected-CSV).
+- [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor P01→P07, 7 planos de fase, 56 tarefas P01→P07 + 8 BP, marcos M00→M07, cronogramas (Bases) + base de execução (9 views), atas (transcript 01/09 + `_template-ata.md`), logs de progresso (`logs-progresso/` P01/P02/P03) e status.
 - [`04-project-management/registro-mestre/`](04-project-management/registro-mestre/) — matriz canônica de coordenação das 56 tarefas, dependências, gaps, critérios, evidências e status.
 - [`05-resources/`](05-resources/) — materiais de apoio e origem: documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
-- [`TaskNotes/`](TaskNotes/) — notas de tarefas, visualizações Bases (agenda, kanban, tarefas) e guia inicial do fluxo.
-- [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes.
+- [`TaskNotes/`](TaskNotes/) — notas de tarefas, visualizações Bases (agenda, kanban, calendário, pomodoro, relações) e guia inicial do fluxo.
+- [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes (7 docs incluindo `JSON Canvas Spec.md`).
 - [`_types/`](%5Ftypes/) — definições de tipos usadas pelo mdbase/TaskNotes.
-- [`.obsidian/`](.obsidian/) — configurações do vault, plugins comunitários, temas e workspace do Obsidian.
+- [`.obsidian/`](.obsidian/) — configurações do vault, plugins comunitários, 13 temas e workspace do Obsidian.
 - [`.omo/`](.omo/) — planos e artefatos de orquestração do OhMyOpenCode.
 - [`.logs/`](.logs/) — logs de execução de subtasks e agentes.
 - [`mdbase.yaml`](mdbase.yaml) — configuração do sistema de tipos e exclusões do mdbase.
@@ -112,12 +112,13 @@ flowchart TB
 
 - [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — descreve o processo central do projeto.
 - [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — ponto de partida consolidado para a arquitetura do HUB.
-- [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — lista transversal de lacunas, riscos e pendências.
+- [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — lista transversal de lacunas, riscos e pendências (68 notas `lacunas/` BRD/DAT/FIN/GOV/TEC).
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados dos gaps.
 - [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint (BP-001..008).
 - [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — base de execução das 56 tarefas de fase (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
-- [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — fonte de coordenação fase/tarefa, com 56 linhas P01–P07.
+- [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — fonte de coordenação fase/tarefa, com 56 linhas P01–P07 (P01 7 `concluido`, P02 6 `concluido`, P03 9 `em-revisao`, P04–P07 34 `pendente`).
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor de faseamento sequencial P01→P07 (spine DAT, GOV/TEC paralelizáveis, alternativa 4-fases + §11 Glossário).
+- [`HUB_Escopo_Estrategico_Documento_Mae_v2_*.md`](02-refinement/estrategia/segundo-rascunho-projeto/) — Doc-Mãe v2 Investor Ready (3 variantes: `Investor_Ready_pt-BR`, `Pronta_Investidor`, `Plano_Prontidao_Investidor`).
 - [`P01_Arquitetura_Oferta_Negocio.md`](04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md) — P01 oferta & negócio (STR/FIN/GTM) → `BP-001`.
 - [`P02_Produto_Operacao.md`](04-project-management/planos-fase/P02_Produto_Operacao.md) — P02 produto & operação (PRD) → `BP-002`+`BP-005`.
 - [`P03_Dados_Canonicos.md`](04-project-management/planos-fase/P03_Dados_Canonicos.md) — P03 spine dados canônicos (DAT-001..010, sub-gates M03.A/B/C) → `BP-003`.
@@ -129,12 +130,15 @@ flowchart TB
 - [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) — cronograma Bases com 6 views (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
 - [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) — marcos M00→M07 + sub-gates M03.A/B com critérios G01.x→G07.x.
 - [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
-- [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — modelo para atas de reunião.
+- [`_template-ata.md`](04-project-management/atas-reuniao/_template-ata.md) — template canônico de ata estruturada (TL;DR, decisões, ações `- [ ] @dono`, callouts colapsados, `audio.mp3`).
+- [`Transcript Alinhamento - Plataforma.md`](04-project-management/atas-reuniao/Transcript%20Alinhamento%20-%20Plataforma.md) — ata estruturada 01/09/2026 (decisões piloto 50/50, valor hora R$180–250, infra Hostinger, MRR R$15k).
+- [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — redirect legado para `_template-ata.md`.
+- [`P01-entregaveis-*.md` / `P02-*.md` / `P03-*.md`](04-project-management/registros-trabalho/logs-progresso/) — logs consolidados de entregáveis por fase (P01 6 itens, P02 6, P03 18 artefatos) + `Sat 29 Aug 2026.md`.
 - [`TaskNotes/Start Here.md`](TaskNotes/Start%20Here.md) — guia inicial do fluxo de tarefas.
-- [`TaskNotes/Views/tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas.
+- [`TaskNotes/Views/tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas (7 views: agenda, calendar, kanban, mini-calendar, pomodoro, relationships, tasks).
 - [`_types/task.md`](%5Ftypes/task.md) — definição do tipo de tarefa.
 - [`mdbase.yaml`](mdbase.yaml) — configuração do sistema de tipos e exclusões.
-- [`System/Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas de Obsidian.
+- [`System/Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas de Obsidian (7 docs: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base, Task Notes, Tracker, datacore).
 
 ## Como usar
 
@@ -227,11 +231,13 @@ O projeto agora possui um **faseamento sequencial** para gestão eficiente:
 
 ## Estado atual do projeto
 
-- A matriz canônica registra 56 tarefas: P01=7 `done`, P02=6 `done`, P03=9 `em-revisao` (rascunhos G03.A1–G03.C5 entregues), P04=8 `pendente`, P05=7 `pendente`, P06=12 `pendente` e P07=7 `pendente` (total 13 `done`/`- [x]`, 43 `pendente`/`- [ ]` + 9 `em-revisao`).
+- A matriz canônica registra 56 tarefas: P01=7 `concluido`, P02=6 `concluido`, P03=9 `em-revisao` (rascunhos G03.A1–G03.C5 entregues em `02-refinement/refinamento-modelo-dados/` + `02-refinement/refinamento-governanca/`), P04=8 `pendente`, P05=7 `pendente`, P06=12 `pendente` e P07=7 `pendente` (total 13 `concluido`/`- [x]`, 34 `pendente`/`- [ ]` + 9 `em-revisao`/`- [ ]`).
 - Os requisitos mínimos de `DAT-010` (G03.B2), `TEC-005` (G05.4), `TEC-007` (G05.7) e `LCH-007` (G07.7) são bloqueadores dos respectivos gates; extensões estão classificadas como pós-MVP.
-- `P03-T01` (modelo lógico 25 entidades) a `P03-T09` (fluxos+XLSX reconstruído) estão em `em-revisao` para validação Dados+Tech+LGPD; `P07-T01` depende explicitamente de `P04-T01` e `P06-T02`. P07 permanece pendente e não aprovado.
-- A sincronização operacional foi enviada para `origin/main` (`76401a3`); o remoto separado `publish` não é atualizado automaticamente.
+- `P03-T01` (modelo lógico 25 entidades) a `P03-T09` (fluxos+XLSX reconstruído + validações entity-key/ROI/corrected-CSV) estão em `em-revisao` para validação Dados+Tech+LGPD; `P07-T01` depende explicitamente de `P04-T01` e `P06-T02`. P07 permanece pendente e não aprovado.
+- Atas: `Transcript Alinhamento - Plataforma.md` (01/09/2026, TL;DR + decisões + 10 ações com dono/prazo) estruturado com `_template-ata.md` canônico; `template-reuniao.md` mantido como redirect. Infra piloto: 1× Hostinger KVM-8; produção 3× (2 app + 1 DB), futuro HA 2 DB + 2 BI.
+- Refinamento P03 spine: 9 rascunhos v1 (`modelo-logico-fisico`, `especificacao-identidade` + dataset sintético, `envelope-evento-schema` + fixture `schema-registry`, `dicionario-fisico-mapping`, `catalogo-metricas-grafo`, `templates-linhagem-evidencias`, `taxonomia-estados-valor`, `matriz-dados-finalidade-P03-T08-v1`, `fluxos-linhagem-replay-dsar`) + `refinamento-produto/` (4 artefatos P01-T02/P02-T03..T06) verificáveis em `registros-trabalho/logs-progresso/P03-*.md`.
+- A sincronização operacional foi enviada para `origin/main` (`00dcc4e`); o remoto separado `publish` não é atualizado automaticamente.
 
 ## Observação
 
-O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `76401a3`) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.
+O [`project-map.md`](project-map.md) complementa este README com um mapa vivo da estrutura (sincronizado ao commit `00dcc4e` em 2026-09-01) e deve ser consultado quando você quiser navegar com rapidez sem reexplorar o repositório inteiro.

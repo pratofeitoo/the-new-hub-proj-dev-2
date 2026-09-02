@@ -1,5 +1,5 @@
-<!-- git-hash: 76401a3dd5e6c4598bbe368fada939ad401edb34 -->
-<!-- last-synced: 2026-08-29T15:28:24-03:00 -->
+<!-- git-hash: 00dcc4e08570d9e5379a8c2337fa92c1539adf20 -->
+<!-- last-synced: 2026-09-01T23:45:00-03:00 -->
 
 # Mapa do Projeto
 
@@ -17,18 +17,18 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 
 | Área                     | Papel atual                                                                                          |
 | ------------------------ | ---------------------------------------------------------------------------------------------------- |
-| `00-project-control/`    | Framework, escopo, decisões, premissas, riscos, dependências, gaps e índices.                        |
-| `01-blueprint/`          | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança e lançamento. |
-| `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados.             |
-| `03-approval/`           | Critérios, evidências, pacotes de revisão, estados de aprovação e material bloqueado.                |
-| `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP, matriz canônica, marcos (M00–M07), cronogramas + base execução (9 views), reuniões, retrospectivas, logs e status. |
+| `00-project-control/`    | Framework, escopo, decisões, premissas, riscos, dependências, gaps (68 notas), índices e registro de mudanças (4 notas + template). |
+| `01-blueprint/`          | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança e lançamento (9 domínios). |
+| `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados — spine P03 9 rascunhos G03.A1–C5 (lógico/físico, identidade+dataset, envelope+fixture, dicionário, catálogo, linhagem, taxonomia, matriz LGPD, fluxos+XLSX) + produto/gov. |
+| `03-approval/`           | Critérios, evidências, pacotes de revisão, estados de aprovação e material bloqueado (modelo indicadores não aprovado + 03-csv-corrigido/04-registro-correcoes/06-relatorios-validacao). |
+| `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP, matriz canônica, marcos (M00–M07 + M03.A/B), cronogramas + base execução (9 views), atas (transcript 01/09 + `_template-ata.md`), logs-progresso (P01/P02/P03 + Sat 29 Aug), retrospectivas e status. |
 | `05-resources/`          | Documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
 | `06-deliverables/`       | Saídas finais organizadas por dados, governança, investidor, lançamento, negócio e produto.          |
 | `99-archive/`            | Material descontinuado, rejeitado, superado e instantâneos históricos.                               |
-| `TaskNotes/`             | Notas de tarefas e visualizações Bases, agenda, calendário, kanban e relações.                       |
-| `System/`                | Documentação local de plugins, Canvas, Bases, Dataview e TaskNotes.                                  |
-| `_types/`                | Definições de tipos usadas pelo mdbase/TaskNotes.                                                    |
-| `.obsidian/`             | Configurações do vault, plugins, temas e workspace.                                                  |
+| `TaskNotes/`             | Notas de tarefas (9 operacionais) e visualizações Bases — agenda, calendário, kanban, mini-calendar, pomodoro, relações e tasks. |
+| `System/`                | Documentação local de plugins, Canvas, Bases, Dataview e TaskNotes (7 docs: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base, Task Notes, Tracker, datacore). |
+| `_types/`                | Definições de tipos usadas pelo mdbase/TaskNotes (`task.md`).                                        |
+| `.obsidian/`             | Configurações do vault, plugins (7 ativos), 13 temas e workspace.                                    |
 | `.omo/`                  | Planos e artefatos de orquestração do OhMyOpenCode.                                                  |
 | `.logs/`                 | Logs de execução de subtasks e agentes.                                                              |
 
@@ -45,16 +45,20 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 ├── .obsidian/  — configurações do vault Obsidian (workspace, hotkeys, appearance)
 │   ├── icons/  — ícones customizados do vault
 │   ├── plugins/  — plugins comunitários instalados (código compilado — não editar manualmente)
-│   └── themes/  — temas instalados do Obsidian (9 temas)
+│   └── themes/  — temas instalados do Obsidian (13 temas)
 │       ├── Blossom/  — tema Blossom
 │       ├── Dark Moss/  — tema Dark Moss
 │       ├── Dracula + LYT/  — tema Dracula + LYT
+│       ├── Glass Robo/  — tema Glass Robo
+│       ├── March/  — tema March
+│       ├── Modern GenZ Vibedose/  — tema Modern GenZ Vibedose
 │       ├── Nebula/  — tema Nebula
 │       ├── Royal Velvet/  — tema Royal Velvet
 │       ├── Slytherin/  — tema Slytherin
 │       ├── Sodalite/  — tema Sodalite
+│       ├── Terminal2K/  — tema Terminal2K
 │       ├── Vicious/  — tema Vicious
-│       └── Glass Robo/  — tema Glass Robo
+│       └── WY Console/  — tema WY Console
 ├── .omo/  — orquestração OhMyOpenCode (planos e artefatos do agente)
 │   └── plans/  — planos salvos (ex.: traducao-pastas-arquivos-ptbr-plan.md)
 │
@@ -69,7 +73,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   ├── premissas/  — premissas que exigem refinamento ou evidência
 │   ├── registro-lacunas/  — registro transversal de lacunas, riscos e pendências
 │   │   └── lacunas/  — notas individuais de gap (BRD-*, DAT-*, FIN-*, GOV-*, TEC-* — ~68 notas)
-│   ├── registro-mudancas/  — mudanças materiais de escopo, estrutura ou decisões (2026-08-26-faseamento-P01-P07 + 2026-08-26-tarefas-56-execucao-base)
+│   ├── registro-mudancas/  — mudanças materiais de escopo, estrutura ou decisões (4 notas: 2026-08-26-faseamento-P01-P07-cronograma-marcos + 2026-08-26-tarefas-56-execucao-base + 2026-08-27-remocao-receita-marketplace + 2026-08-31-diretorio-arquivos-filtrados + template-registro-mudanca.md)
 │   └── riscos/  — riscos, mitigações e responsáveis
 │
 ├── 01-blueprint/  — BLUEPRINT — visão-base do HUB antes de refinamento e aprovação
@@ -106,18 +110,20 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │
 ├── 02-refinement/  — REFINAMENTO — onde o blueprint é testado, comparado e melhorado
 │   ├── estrategia/  — refinamento estratégico (ponte blueprint → v2)
-│   │   └── segundo-rascunho-projeto/  — segundo rascunho do documento-mãe (Investor Ready pt-BR + v1b)
+│   │   └── segundo-rascunho-projeto/  — segundo rascunho do documento-mãe (3 variantes: Investor_Ready_pt-BR + Pronta_Investidor + Plano_Prontidao_Investidor)
 │   ├── modelos-financeiros/  — requisitos e refinamentos de modelo financeiro
 │   ├── pesquisa/  — pesquisas e validações exploratórias por domínio
-│   │   └── segundo-rascunho-projeto/  — pesquisas que embasam o doc-mãe v2
+│   │   └── segundo-rascunho-projeto/  — pesquisas que embasam o doc-mãe v2 (6 arquivos: beachhead, financial_model, governance_legal, gtm_partnerships, market_competitive, product_mvp)
 │   │       └── pt-BR/  — traduções pt-BR das pesquisas v2 (governança, financeiro, mercado, produto)
 │   ├── prototipos/  — protótipos e simulações
-│   ├── refinamento-governanca/  — refinamento de LGPD, controle e responsabilidades (matriz dados-finalidade P03-T08 v1)
-│   ├── refinamento-modelo-dados/  — sínteses semânticas e ajustes do modelo de dados (rascunhos P03-T01..T09 v1: modelo lógico/físico, identidade, envelope, dicionário 41 campos, catálogo 73, templates linhagem, taxonomia estados)
+│   ├── refinamento-governanca/  — refinamento de LGPD, controle e responsabilidades (matriz-dados-finalidade-P03-T08-v1.md — 5 fluxos × 41 campos, base legal/retenção/DSAR)
+│   ├── refinamento-modelo-dados/  — sínteses semânticas e ajustes do modelo de dados (9 rascunhos P03-T01..T09 v1: modelo lógico/físico 25 entidades, especificacao-identidade+dataset sintético, envelope-evento-schema+fixture, dicionario-fisico 41 campos, catalogo-metricas 73, templates-linhagem, taxonomia-estados, matriz-dados-finalidade, fluxos-linhagem-replay-DSAR+XLSX reconstruído)
 │   │   └── modelo-indicadores/  — refinamento específico do modelo de indicadores
-│   │       ├── pastas-trabalho/  — xlsx melhorado (MELHORADO_v1.1.xlsx)
-│   │       └── sintese-entre-abas/  — sínteses cross-aba (crosswalk de chaves, consistência financeira, governança)
-│   ├── refinamento-produto/  — ajustes de escopo, fluxo e experiência do produto (fichas P01-T02 v1, matriz autorização, filas revisão, RACI)
+│   │       ├── dataset-identidade-sintetico-P03-T02.csv  — dataset sintético 20 pessoas/40 aliases/15 pares rotulados
+│   │       ├── pastas-trabalho/  — xlsx melhorado (HUB_Mapa_Inteligencia_...xlsx + MELHORADO_v1.1.xlsx)
+│   │       └── sintese-entre-abas/  — sínteses cross-aba (crosswalk de chaves, consistência financeira, governança, catálogo métricas)
+│   │   └── schema-registry/  — registry de schemas (fixtures/identity.merged.v1.0.valid.json)
+│   ├── refinamento-produto/  — ajustes de escopo, fluxo e experiência do produto (4 artefatos: fichas-operacionais-P01-T02-v1.md 17 fichas, matriz-autorizacao-tenancy.md, filas-revisao-overrides.md, RACI_v1.md)
 │   ├── revisoes/  — feedback e revisões pontuais
 │   ├── revisoes-iteradas/  — versões iteradas / ciclos de revisão
 │   └── testes-experimentos/  — testes, provas de conceito e experimentos
@@ -155,16 +161,16 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   └── portao-lancamento/  — portão de lançamento (go/no-go)
 │
 ├── 04-project-management/  — GESTÃO DO PROJETO — planejamento e controle transversal
-│   ├── atas-reuniao/  — atas de reunião (+ template-reuniao.md)
+│   ├── atas-reuniao/  — atas de reunião (Transcript Alinhamento - Plataforma.md 01/09/2026 estruturada + _template-ata.md canônico + template-reuniao.md redirect)
 │   ├── cronogramas/  — cronogramas do projeto (cronograma-fases-v1.base — 6 views Bases: Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps)
-│   ├── marcos/  — marcos e milestones (marcos-fases-v1.md — M00→M07 + sub-gates M03.A/B)
-│   ├── planos-fase/  — planos por fase (P01_Arquitetura_Oferta_Negocio → P07_Portao_Lancamento — 7 fases spine GOV/TEC paralelizáveis)
-│   ├── planos-mestres/  — planos diretores / master plans (HUB_Plano_Fases_v1.md — Plano Diretor P01–P07 + alternativa 4-fases; Doc-Mãe v2 investidor)
-│   ├── registro-mestre/  — matriz canônica de coordenação fase/tarefa (56 tarefas P01–P07)
-│   ├── registros-trabalho/  — logs + base de execução (HUB_Tarefas_Fases_Execucao.base — 9 views: por Fase, Crítico, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps)
+│   ├── marcos/  — marcos e milestones (marcos-fases-v1.md — M00→M07 + sub-gates M03.A/B, critérios G01.x→G07.x)
+│   ├── planos-fase/  — planos por fase (P01_Arquitetura_Oferta_Negocio → P07_Portao_Lancamento — 7 fases spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis)
+│   ├── planos-mestres/  — planos diretores / master plans (HUB_Plano_Fases_v1.md — Plano Diretor P01–P07 + alternativa 4-fases + §11 Glossário; HUB_Escopo_Estrategico_Documento_Mae_v2_*.md — 3 variantes Investor Ready)
+│   ├── registro-mestre/  — matriz canônica de coordenação fase/tarefa (matriz-fases-tarefas-v1.md — 56 linhas P01–P07, P01 7 concluido/P02 6 concluido/P03 9 em-revisao/P04–P07 34 pendente)
+│   ├── registros-trabalho/  — logs + base de execução (HUB_Tarefas_Fases_Execucao.base — 9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) + logs-progresso/ (P01/P02/P03 entregáveis + Sat 29 Aug 2026.md)
 │   ├── relatorios-status/  — relatórios de status periódicos + template-relatorio-status.md
 │   ├── retrospectivas/  — retrospectivas de ciclo/sprint
-│   └── tarefas/  — tarefas do blueprint + 56 tarefas de fase (P01-T01→P07-T07, 7+6+9+8+7+12+7) + HUB_Tarefas_Projeto.base e HUB_Tarefas_Fases_Execucao (via registros-trabalho) + README
+│   └── tarefas/  — tarefas do blueprint (BP-001..008) + 56 tarefas de fase (P01-T01→P07-T07, 7+6+9+8+7+12+7) + HUB_Tarefas_Projeto.base e HUB_Tarefas_Fases_Execucao (via registros-trabalho) + README
 │
 ├── 05-resources/  — RECURSOS — matéria-prima e materiais de apoio (não são evidência aprovada)
 │   ├── apresentacoes/  — apresentações
@@ -197,9 +203,10 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 │   └── Views/  — visões Bases (agenda-default, mini-calendar, pomodoro-stats, relationships, tasks-default, etc.)
 │
 ├── System/  — SISTEMA — documentação local de referência das ferramentas do vault
-│   └── Plugins docs/  — docs locais por plugin
+│   └── Plugins docs/  — docs locais por plugin (7 docs)
 │       ├── Charts Plugin Docs/  — documentação do Charts
 │       ├── Dataview Charts/  — documentação Dataview Charts
+│       ├── JSON Canvas Spec.md  — especificação JSON Canvas 1.0
 │       ├── Obsidian Base/  — documentação do Obsidian Bases
 │       ├── Task Notes/  — documentação do Task Notes
 │       ├── Tracker Plugin/  — documentação do Tracker
@@ -208,7 +215,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 └── _types/  — TIPOS — definições de tipos do mdbase/TaskNotes (ex.: task.md)
 ```
 
-> **Total inventariado:** ~116 pastas + 66 notas de tarefas (8 BP + 56 P0x) navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro.
+> **Total inventariado:** ~120 pastas + 66 notas de tarefas (8 BP + 56 P0x) navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro. Novos: `02-refinement/refinamento-modelo-dados/schema-registry/fixtures`, `04-project-management/registros-trabalho/logs-progresso`, `04-project-management/atas-reuniao` (transcript + template canônico).
 
 ## Anexo para agentes — tabela navegável (machine-readable)
 
@@ -222,15 +229,20 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `.obsidian/` | infra | Configurações do vault Obsidian | `workspace.json`, `app.json`, `hotkeys.json` | ativo |
 | `.obsidian/icons/` | infra | Ícones customizados do vault | ícones svg/json | ativo |
 | `.obsidian/plugins/` | infra | Plugins comunitários compilados | código por plugin | não editar |
-| `.obsidian/themes/` | infra | Temas instalados do Obsidian | 8 temas | ativo |
+| `.obsidian/themes/` | infra | Temas instalados do Obsidian | 13 temas | ativo |
 | `.obsidian/themes/Blossom/` | infra | Tema Blossom | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Dark Moss/` | infra | Tema Dark Moss | tema | ativo |
 | `.obsidian/themes/Dracula + LYT/` | infra | Tema Dracula + LYT | `theme.css`, `manifest.json` | ativo |
+| `.obsidian/themes/Glass Robo/` | infra | Tema Glass Robo | tema | ativo |
+| `.obsidian/themes/March/` | infra | Tema March | tema | ativo |
+| `.obsidian/themes/Modern GenZ Vibedose/` | infra | Tema Modern GenZ Vibedose | tema | ativo |
 | `.obsidian/themes/Nebula/` | infra | Tema Nebula | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Royal Velvet/` | infra | Tema Royal Velvet | tema | ativo |
 | `.obsidian/themes/Slytherin/` | infra | Tema Slytherin | `theme.css`, `manifest.json` | ativo |
 | `.obsidian/themes/Sodalite/` | infra | Tema Sodalite | `theme.css`, `manifest.json` | ativo |
+| `.obsidian/themes/Terminal2K/` | infra | Tema Terminal2K | tema | ativo |
 | `.obsidian/themes/Vicious/` | infra | Tema Vicious | `theme.css`, `manifest.json` | ativo |
+| `.obsidian/themes/WY Console/` | infra | Tema WY Console | tema | ativo |
 | `.omo/` | infra | Orquestração OhMyOpenCode | planos e artefatos do agente | ativo |
 | `.omo/plans/` | infra | Planos salvos do orquestrador | `traducao-pastas-arquivos-ptbr-plan.md` | ativo |
 | `00-project-control/` | controle | Regras do jogo e registros transversais | framework, escopo, decisões, gaps | ativo |
@@ -244,7 +256,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `00-project-control/premissas/` | controle | Premissas que exigem evidência | `.gitkeep` | reservado |
 | `00-project-control/registro-lacunas/` | controle | Registro transversal de lacunas/riscos/pendências | `HUB_Registro_...md`, `HUB_Lacunas_...base` | ativo |
 | `00-project-control/registro-lacunas/lacunas/` | controle | Notas individuais de gap (≈68 notas) | `BRD-*`, `DAT-*`, `FIN-*`, `GOV-*`, `TEC-*` | ativo |
-| `00-project-control/registro-mudancas/` | controle | Mudanças materiais de escopo/estrutura/decisões | `2026-08-26-faseamento-P01-P07-cronograma-marcos.md` + `2026-08-26-tarefas-56-execucao-base.md` | ativo |
+| `00-project-control/registro-mudancas/` | controle | Mudanças materiais de escopo/estrutura/decisões | 4 notas: `2026-08-26-faseamento-P01-P07-cronograma-marcos` + `2026-08-26-tarefas-56-execucao-base` + `2026-08-27-remocao-receita-marketplace` + `2026-08-31-diretorio-arquivos-filtrados` + `template-registro-mudanca.md` | ativo |
 | `00-project-control/riscos/` | controle | Riscos, mitigações e responsáveis | `.gitkeep` | reservado |
 | `01-blueprint/` | blueprint | Visão-base do HUB antes de refinamento/aprovação | 9 domínios | ativo |
 | `01-blueprint/dados-inteligencia/` | blueprint | Dados, inteligência e modelo semântico | `HUB_Blueprint_Dados_e_Inteligencia.md` | ativo |
@@ -279,18 +291,18 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `01-blueprint/visao-lancamento/` | blueprint | Visão de lançamento, evolução e narrativa de entrada | `HUB_Blueprint_Lancamento_e_Evolucao.md` | ativo |
 | `02-refinement/` | refinement | Onde o blueprint é testado, comparado e melhorado | 10 subáreas | ativo |
 | `02-refinement/estrategia/` | refinement | Refinamento estratégico (ponte blueprint → v2) | segundo-rascunho | ativo |
-| `02-refinement/estrategia/segundo-rascunho-projeto/` | refinement | Segundo rascunho do doc-mãe (Investor Ready) | `HUB_Escopo_...v2_...md` | ativo |
+| `02-refinement/estrategia/segundo-rascunho-projeto/` | refinement | Segundo rascunho do doc-mãe (Investor Ready — 3 variantes) | `HUB_Escopo_...v2_Investor_Ready_pt-BR.md` + `Pronta_Investidor` + `Plano_Prontidao_Investidor` | ativo |
 | `02-refinement/modelos-financeiros/` | refinement | Requisitos e refinamentos de modelo financeiro | `.gitkeep` | reservado |
-| `02-refinement/pesquisa/` | refinement | Pesquisas e validações exploratórias por domínio | pesquisas v2 | ativo |
-| `02-refinement/pesquisa/segundo-rascunho-projeto/` | refinement | Pesquisas que embasam o doc-mãe v2 | `HUB_v2_*_research.md` | ativo |
+| `02-refinement/pesquisa/` | refinement | Pesquisas e validações exploratórias por domínio | 6 pesquisas v2 + pt-BR | ativo |
+| `02-refinement/pesquisa/segundo-rascunho-projeto/` | refinement | Pesquisas que embasam o doc-mãe v2 | `HUB_v2_*_research.md` (6 arquivos) | ativo |
 | `02-refinement/pesquisa/segundo-rascunho-projeto/pt-BR/` | refinement | Traduções pt-BR das pesquisas v2 | `*-pt-BR.md` | ativo |
 | `02-refinement/prototipos/` | refinement | Protótipos e simulações | `.gitkeep` | reservado |
-| `02-refinement/refinamento-governanca/` | refinement | Refinamento de LGPD/controle/responsabilidades | `.gitkeep` | reservado |
-| `02-refinement/refinamento-modelo-dados/` | refinement | Sínteses semânticas e ajustes do modelo de dados — 9 rascunhos P03 v1 (G03.A1–C5) + `fichas-operacionais-P01-T02` | modelo-indicadores + 6 rascunhos P03 | ativo |
+| `02-refinement/refinamento-governanca/` | refinement | Refinamento de LGPD/controle/responsabilidades (P03-T08) | `matriz-dados-finalidade-P03-T08-v1.md` (5 fluxos × 41 campos) | ativo |
+| `02-refinement/refinamento-modelo-dados/` | refinement | Sínteses semânticas e ajustes do modelo de dados — 9 rascunhos P03 v1 (G03.A1–C5) | 9 md + `modelo-indicadores/` + `schema-registry/fixtures` | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/` | refinement | Refinamento específico do modelo de indicadores | pastas-trabalho + sintese | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/pastas-trabalho/` | refinement | XLSX melhorado do modelo de indicadores | `MELHORADO_v1.1.xlsx` | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/` | refinement | Sínteses cross-aba (crosswalk, consistência, governança) | `*.md` síntese | ativo |
-| `02-refinement/refinamento-produto/` | refinement | Ajustes de escopo, fluxo e experiência do produto | `.gitkeep` | reservado |
+| `02-refinement/refinamento-produto/` | refinement | Ajustes de escopo, fluxo e experiência do produto (P01-T02/P02-T03..T06) | 4 artefatos: `fichas-operacionais-P01-T02-v1.md` + `matriz-autorizacao-tenancy.md` + `filas-revisao-overrides.md` + `RACI_v1.md` | ativo |
 | `02-refinement/revisoes/` | refinement | Feedback e revisões pontuais | `.gitkeep` | reservado |
 | `02-refinement/revisoes-iteradas/` | refinement | Versões iteradas / ciclos de revisão | `.gitkeep` | reservado |
 | `02-refinement/testes-experimentos/` | refinement | Testes, provas de conceito e experimentos | `.gitkeep` | reservado |
@@ -325,14 +337,14 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `03-approval/evidencias/` | approval | Evidências que sustentam decisões de aprovação | `.gitkeep` | reservado |
 | `03-approval/pacotes-revisao/` | approval | Pacotes montados para revisão por stakeholders | `.gitkeep` | reservado |
 | `03-approval/portao-lancamento/` | approval | Portão de lançamento (go/no-go) | `.gitkeep` | reservado |
-| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + 56 tarefas + matriz canônica + bases execução/cronograma + marcos | ativo |
-| `04-project-management/atas-reuniao/` | gestão | Atas de reunião | `template-reuniao.md` | ativo |
+| `04-project-management/` | gestão | Planejamento e controle transversal do projeto | plano diretor P01–P07 + 56 tarefas + matriz canônica + bases execução/cronograma + marcos + atas + logs-progresso | ativo |
+| `04-project-management/atas-reuniao/` | gestão | Atas de reunião (estruturadas) | `Transcript Alinhamento - Plataforma.md` (01/09, 10 ações) + `_template-ata.md` canônico + `template-reuniao.md` redirect | ativo |
 | `04-project-management/cronogramas/` | gestão | Cronogramas do projeto | `cronograma-fases-v1.base` (6 views: Timeline, Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps) | ativo |
-| `04-project-management/marcos/` | gestão | Marcos e milestones | `marcos-fases-v1.md` (M00→M07 + sub-gates M03.A/B) | ativo |
-| `04-project-management/planos-fase/` | gestão | Planos por fase | `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT) | ativo |
-| `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) + `Doc-Mãe v2 investidor` | ativo |
-| `04-project-management/registro-mestre/` | gestão | Fonte de coordenação fase/tarefa | `matriz-fases-tarefas-v1.md` (56 tarefas, dependências, gaps, critérios e status) | ativo |
-| `04-project-management/registros-trabalho/` | gestão | Logs + base de execução | `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) | ativo |
+| `04-project-management/marcos/` | gestão | Marcos e milestones | `marcos-fases-v1.md` (M00→M07 + sub-gates M03.A/B, critérios G01.x→G07.x) | ativo |
+| `04-project-management/planos-fase/` | gestão | Planos por fase | `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis) | ativo |
+| `04-project-management/planos-mestres/` | gestão | Planos diretores / master plans | `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) + `HUB_Escopo_Estrategico_Documento_Mae_v2_*.md` (3 variantes) | ativo |
+| `04-project-management/registro-mestre/` | gestão | Fonte de coordenação fase/tarefa | `matriz-fases-tarefas-v1.md` (56 linhas, P01 7 concluido/P02 6 concluido/P03 9 em-revisao/P04–P07 34 pendente) | ativo |
+| `04-project-management/registros-trabalho/` | gestão | Logs + base de execução | `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) + `logs-progresso/` (P01/P02/P03 + Sat 29 Aug) | ativo |
 | `04-project-management/relatorios-status/` | gestão | Relatórios de status periódicos | `template-relatorio-status.md` + `.gitkeep` | ativo |
 | `04-project-management/retrospectivas/` | gestão | Retrospectivas de ciclo/sprint | `.gitkeep` | reservado |
 | `04-project-management/tarefas/` | gestão | Tarefas do blueprint + fases | `BP-001..008` + 56× `P01-T01`→`P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` | ativo |
@@ -360,12 +372,13 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `99-archive/rejeitado/` | arquivo | Material rejeitado em revisão | `.gitkeep` | reservado |
 | `99-archive/superado/` | arquivo | Material superado por versão melhor | `Fases_Projeto_v0_clusters_tematicos.canvas` (clusters temáticos arquivado) | ativo |
 | `TaskNotes/` | tarefas | Notas e visões do plugin TaskNotes | `Start Here.md` + Tasks + Views | ativo |
-| `TaskNotes/Tasks/` | tarefas | Notas de tarefa operacionais (fluxo TaskNotes) | 12 notas operacionais | ativo |
-| `TaskNotes/Views/` | tarefas | Visões Bases (agenda, kanban, calendário, relações) | `*.base` visões | ativo |
-| `System/` | sistema | Documentação local de referência das ferramentas do vault | `Plugins docs/` | ativo |
-| `System/Plugins docs/` | sistema | Docs locais por plugin | 6 subpastas | ativo |
+| `TaskNotes/Tasks/` | tarefas | Notas de tarefa operacionais (fluxo TaskNotes) | 9 notas operacionais (separadas de BP/P0x) | ativo |
+| `TaskNotes/Views/` | tarefas | Visões Bases (agenda, kanban, calendário, relações, pomodoro) | 7 bases: `agenda-default`, `calendar-default`, `kanban-default`, `mini-calendar`, `pomodoro-stats`, `relationships`, `tasks-default` | ativo |
+| `System/` | sistema | Documentação local de referência das ferramentas do vault | `Plugins docs/` (7 docs) | ativo |
+| `System/Plugins docs/` | sistema | Docs locais por plugin | 7 docs (inclui JSON Canvas Spec) | ativo |
 | `System/Plugins docs/Charts Plugin Docs/` | sistema | Documentação do Charts | docs | ativo |
 | `System/Plugins docs/Dataview Charts/` | sistema | Documentação Dataview Charts | docs | ativo |
+| `System/Plugins docs/JSON Canvas Spec.md` | sistema | Especificação JSON Canvas 1.0 | spec | ativo |
 | `System/Plugins docs/Obsidian Base/` | sistema | Documentação do Obsidian Bases | docs | ativo |
 | `System/Plugins docs/Task Notes/` | sistema | Documentação do Task Notes | docs | ativo |
 | `System/Plugins docs/Tracker Plugin/` | sistema | Documentação do Tracker | docs | ativo |
@@ -404,12 +417,13 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 - [`README.md`](README.md) — orientação de navegação, convenções e visão geral do repositório.
 - [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — processo central das três camadas.
 - [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — fundação consolidada do blueprint.
-- [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — registro transversal de lacunas, riscos e pendências.
+- [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — registro transversal de lacunas, riscos e pendências (68 gaps BRD/DAT/FIN/GOV/TEC).
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados das lacunas.
 - [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint (BP-001..008).
 - [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — base de execução das 56 tarefas de fase (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
-- [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — matriz canônica de coordenação das 56 tarefas, dependências, gaps, critérios, evidências e status.
+- [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — matriz canônica de coordenação das 56 tarefas, dependências, gaps, critérios, evidências e status (P01 7 concluido / P02 6 concluido / P03 9 em-revisao / P04–P07 34 pendente).
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor de faseamento sequencial P01–P07 (spine DAT, GOV/TEC paralelizáveis) + alternativa 4-fases + §11 Glossário (P00-P07, gaps, BP).
+- [`HUB_Escopo_Estrategico_Documento_Mae_v2_*.md`](02-refinement/estrategia/segundo-rascunho-projeto/) — Doc-Mãe v2 Investor Ready (3 variantes: `Investor_Ready_pt-BR`, `Pronta_Investidor`, `Plano_Prontidao_Investidor`).
 - [`P01_Arquitetura_Oferta_Negocio.md`](04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md) — P01 oferta & negócio (STR-001/002/003, FIN-002, GTM-001) → `BP-001`.
 - [`P02_Produto_Operacao.md`](04-project-management/planos-fase/P02_Produto_Operacao.md) — P02 produto & operação (PRD-001..007) → `BP-002`+`BP-005`.
 - [`P03_Dados_Canonicos.md`](04-project-management/planos-fase/P03_Dados_Canonicos.md) — P03 **spine** dados canônicos (DAT-001..010, sub-gates M03.A/B/C) → `BP-003`.
@@ -419,14 +433,17 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 - [`P07_Portao_Lancamento.md`](04-project-management/planos-fase/P07_Portao_Lancamento.md) — P07 portão de lançamento (LCH-001..007) → `BP-008`.
 - [`P01-T01`→`P07-T07`](04-project-management/tarefas/) — 56 tarefas de execução P01(7)+P02(6)+P03(9)+P04(8)+P05(7)+P06(12)+P07(7) com `phase`, `gap_ids`, `dependencies`, `target_file`.
 - [`cronograma-fases-v1.base`](04-project-management/cronogramas/cronograma-fases-v1.base) — cronograma Bases com 6 views (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
-- [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) — marcos M00→M07 + sub-gates M03.A/B com critérios de saída verificáveis.
+- [`marcos-fases-v1.md`](04-project-management/marcos/marcos-fases-v1.md) — marcos M00→M07 + sub-gates M03.A/B/C com critérios de saída verificáveis G01.x→G07.x.
 - [`template-decisao.md`](00-project-control/decisoes/template-decisao.md) — modelo para registrar decisões.
-- [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — modelo para atas de reunião.
+- [`_template-ata.md`](04-project-management/atas-reuniao/_template-ata.md) — template canônico de ata estruturada (TL;DR, decisões, ações `- [ ] @dono`, callouts, `audio.mp3`).
+- [`Transcript Alinhamento - Plataforma.md`](04-project-management/atas-reuniao/Transcript%20Alinhamento%20-%20Plataforma.md) — ata estruturada 01/09/2026 (piloto 50/50, R$180–250/h, Hostinger KVM-8, MRR R$15k).
+- [`template-reuniao.md`](04-project-management/atas-reuniao/template-reuniao.md) — redirect legado para `_template-ata.md`.
+- [`logs-progresso/P01-entregaveis-*.md` / `P02-*.md` / `P03-*.md`](04-project-management/registros-trabalho/logs-progresso/) — logs consolidados de entregáveis por fase (9 rascunhos P03 v1 + validações).
 - [`Start Here.md`](TaskNotes/Start%20Here.md) — guia inicial do fluxo de tarefas.
-- [`tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas.
+- [`tasks-default.base`](TaskNotes/Views/tasks-default.base) — visão padrão das tarefas (7 views: agenda, calendar, kanban, mini-calendar, pomodoro, relationships, tasks).
 - [`task.md`](%5Ftypes/task.md) — definição do tipo de tarefa.
-- [`mdbase.yaml`](mdbase.yaml) — configuração do sistema de tipos e exclusões.
-- [`Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas do vault.
+- [`mdbase.yaml`](mdbase.yaml) — configuração do sistema de tipos e exclusões (`_types/` + `TaskNotes/`).
+- [`Plugins docs/`](System/Plugins%20docs/) — documentação local das ferramentas do vault (7 docs: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base, Task Notes, Tracker, datacore).
 
 ## Regras
 
@@ -461,7 +478,7 @@ flowchart TB
     BP --> BPF["dados-inteligencia / estrategia / governanca-juridico / marca-mercado / modelo-negocio / operacoes / produto / tecnologia / visao-lancamento"]
     RF --> RFF["estrategia / modelos-financeiros / pesquisa / prototipos / refinamento-governanca / refinamento-modelo-dados / refinamento-produto / revisoes-iteradas / revisoes / testes-experimentos"]
     AP --> APF["aprovado / aprovado-condicionalmente / bloqueado / criterios-aprovacao / evidencias / pacotes-revisao / portao-lancamento"]
-    PM --> PMF["atas-reuniao / cronogramas / marcos / planos-diretores / planos-fase / registros-trabalho / relatorios-status / retrospectivas / tarefas"]
+     PM --> PMF["atas-reuniao / cronogramas / marcos / planos-mestres / planos-fase / registro-mestre / registros-trabalho / relatorios-status / retrospectivas / tarefas"]
     RS --> RSF["apresentacoes / conjuntos-dados / documentos / imagens / materiais-origem / modelos / planilhas / referencias-externas"]
     DL --> DLF["dados / governanca / investidor / lancamento / negocio / produto"]
     AR --> ARF["descontinuado / instantaneos-historicos / rejeitado / superado"]
@@ -472,20 +489,24 @@ flowchart TB
 
 ## Notas de frescor
 
-- O mapa reflete o commit `76401a3`, que sincronizou P03 spine em `em-revisao` (9 rascunhos G03.A1–G03.C5) + matriz/log. Anteriores `a02e74e` (matriz), `90b8211` (phase gates) e `1c2733f` (faseamento) permanecem como histórico. `origin/main` é o remoto operacional; `publish` não é atualizado automaticamente.
+- O mapa reflete o commit `00dcc4e` (2026-09-01), que estruturou `Transcript Alinhamento - Plataforma.md` em ata (TL;DR + decisões + 10 ações) + `_template-ata.md` canônico; anteriores `8d6ece2` (clean up TaskNotes), `4832388` (sync vault), `a02e74e` (matriz P01-P07) continuam válidos. `origin/main` é o remoto operacional; `publish` não é atualizado automaticamente.
+- Anterior `76401a3` sincronizou P03 spine em `em-revisao` (9 rascunhos G03.A1–G03.C5) + matriz/log; `90b8211` alinhou phase gates e `1c2733f` entregou faseamento P01–P07. Esta revisão promove `76401a3` → `00dcc4e` sem regressão de P03 spine.
 - Anterior `973a23b` registrou as **56 tarefas P01→P07 + base de execução** (`HUB_Tarefas_Fases_Execucao.base` com 9 views em `registros-trabalho/`, 56 notas `P01-T01→P07-T07` em `tarefas/`).
 - Anterior `1c2733f` entregou o **faseamento sequencial P01–P07 + cronograma e marcos** (Plano Diretor `HUB_Plano_Fases_v1.md`, 7 planos de fase, `cronograma-fases-v1.base` com 6 views, `marcos-fases-v1.md` M00→M07).
-- `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README.
-- `04-project-management/registros-trabalho/` contém `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
-- `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) e `HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`.
-- `04-project-management/registro-mestre/` contém `matriz-fases-tarefas-v1.md` (56 linhas: P01 7 `done`, P02 6 `done`, P03 9 `em-revisao`, P04–P07 34 `pendente`); P07 permanece pendente e não aprovado.
-- `04-project-management/planos-fase/` contém `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis).
-- `04-project-management/cronogramas/` contém `cronograma-fases-v1.base` (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
-- `04-project-management/marcos/` contém `marcos-fases-v1.md` (M00→M07 + M03.A/B, critérios G01.x→G07.x).
+- `04-project-management/tarefas/` contém 8 notas `BP-*` + 56 notas `P01-T01→P07-T07` (7+6+9+8+7+12+7) + `HUB_Tarefas_Projeto.base` e README — verified em `00dcc4e`.
+- `04-project-management/registros-trabalho/` contém `HUB_Tarefas_Fases_Execucao.base` (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps) + `logs-progresso/` (4 arquivos: `P01-entregaveis-*.md`, `P02-*.md`, `P03-*.md`, `Sat 29 Aug 2026.md`).
+- `04-project-management/atas-reuniao/` contém `Transcript Alinhamento - Plataforma.md` (01/09, 107KB, estruturada) + `_template-ata.md` (3.9KB canônico) + `template-reuniao.md` (redirect 953B).
+- `02-refinement/refinamento-modelo-dados/` contém 9 rascunhos v1 P03-T01..T09 + `schema-registry/fixtures/identity.merged.v1.0.valid.json` + `modelo-indicadores/dataset-identidade-sintetico-P03-T02.csv`; `refinamento-produto/` 4 artefatos e `refinamento-governanca/` 1 matriz LGPD — todos `em-revisao`.
+- `00-project-control/registro-mudancas/` contém 4 notas (2026-08-26 ×2, 2026-08-27, 2026-08-31) + template; `System/Plugins docs/` 7 docs; `.obsidian/themes/` 13 temas.
+- `04-project-management/planos-mestres/` contém `HUB_Plano_Fases_v1.md` (P01–P07 + alternativa 4-fases + §11 Glossário) e `HUB_Escopo_Estrategico_Documento_Mae_v2_*.md` (3 variantes Investor Ready) — verified em `00dcc4e`.
+- `04-project-management/registro-mestre/` contém `matriz-fases-tarefas-v1.md` (56 linhas: P01 7 `concluido`, P02 6 `concluido`, P03 9 `em-revisao`, P04–P07 34 `pendente`); P07 permanece pendente e não aprovado.
+- `04-project-management/planos-fase/` contém `P01_Arquitetura_Oferta_Negocio` → `P07_Portao_Lancamento` (7 fases, spine DAT com sub-gates M03.A/B/C, GOV/TEC paralelizáveis) — 7 arquivos.
+- `04-project-management/cronogramas/` contém `cronograma-fases-v1.base` (6 views: Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps).
+- `04-project-management/marcos/` contém `marcos-fases-v1.md` (M00→M07 + M03.A/B/C, critérios G01.x→G07.x).
 - `00-project-control/escopo/fases-projeto/rascunho/` contém `Fases_Projeto.canvas` sequencial P00→P07 (redesenhado 2026-08-27).
 - `99-archive/superado/` contém `Fases_Projeto_v0_clusters_tematicos.canvas` (clusters temáticos, superado pelo sequencial).
-- `00-project-control/registro-mudancas/` contém 2 notas: `2026-08-26-faseamento-P01-P07-cronograma-marcos` + `2026-08-26-tarefas-56-execucao-base`.
-- `TaskNotes/Tasks/` contém tarefas operacionais adicionais, separadas das notas de tarefa do blueprint/fase.
-- A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios de validação.
-- `.obsidian/themes/` contém 8 temas (Blossom, Dark Moss, Dracula + LYT, Nebula, Royal Velvet, Slytherin, Sodalite, Vicious).
-- **Atualização desta revisão:** sincronizado ao commit `a02e74e` e ao working tree atual; verificado em 2026-08-29T13:25:26-03:00. Anteriores `973a23b` (56 tarefas + base execução) e `1c2733f` (faseamento) continuam válidos como histórico.
+- `00-project-control/registro-mudancas/` contém 4 notas (2026-08-26 ×2, 2026-08-27, 2026-08-31) + `template-registro-mudanca.md`.
+- `TaskNotes/Tasks/` contém 9 notas operacionais (separadas das 56 P0x + 8 BP).
+- A pasta `03-approval/bloqueado/` contém o modelo de indicadores não aprovado e seus relatórios (`03-csv-corrigido/` 15 pastas, `04-registro-correcoes/`, `06-relatorios-validacao/` entity-key/ROI/corrected-CSV).
+- `.obsidian/themes/` contém 13 temas (Blossom, Dark Moss, Dracula + LYT, Glass Robo, March, Modern GenZ Vibedose, Nebula, Royal Velvet, Slytherin, Sodalite, Terminal2K, Vicious, WY Console).
+- **Atualização desta revisão:** sincronizado ao commit `00dcc4e` em 2026-09-01T23:45:00-03:00; anteriores `76401a3` (P03 spine), `a02e74e` (matriz), `973a23b` (56 tarefas + base) e `1c2733f` (faseamento) continuam válidos como histórico.
