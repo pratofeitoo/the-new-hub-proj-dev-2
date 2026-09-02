@@ -54,14 +54,14 @@
               "type": "bases",
               "state": {
                 "file": "TaskNotes/Views/documentacao-oficial.base",
-                "viewName": "Kanban — por Status"
+                "viewName": "Epic + Subtasks"
               },
               "icon": "tasknotes-simple",
               "title": "documentacao-oficial"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -249,15 +249,15 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "108b413f58344ed0",
+  "active": "dc1ec606c47091ac",
   "lastOpenFiles": [
+    "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Views/documentacao-oficial.base",
     "project-map.md",
     "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base",
     "02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md",
     "02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md",
     "00-project-control/registro-lacunas/lacunas/GOV-001.md",
-    "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Tasks/Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M.md",
     "TaskNotes/Tasks/Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador.md",
     "TaskNotes/Tasks/Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ.md",

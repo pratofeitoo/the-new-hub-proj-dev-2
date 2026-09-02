@@ -44,6 +44,11 @@
           "type": "file",
           "ctime": 1788318700295,
           "path": "TaskNotes/Views/kanban-default.base"
+        },
+        {
+          "type": "file",
+          "ctime": 1788381568937,
+          "path": "TaskNotes/Views/documentacao-oficial.base"
         }
       ],
       "title": "Bases"
