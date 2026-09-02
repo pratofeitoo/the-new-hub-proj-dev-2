@@ -2,8 +2,9 @@
 status: em-revisao
 priority: high
 dateCreated: 2026-08-26T17:25:22.051-03:00
-dateModified: 2026-09-01T20:05:55.012-03:00
+dateModified: 2026-09-02T00:12:57.815-03:00
 tags:
+  - project
   - task
 tasknotes_manual_order: tnxcxcxcxcxc
 owner:

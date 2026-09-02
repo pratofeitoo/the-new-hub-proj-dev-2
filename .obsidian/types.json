@@ -16,6 +16,7 @@
     "domain": "multitext",
     "current_layer": "multitext",
     "next_layer": "multitext",
-    "segment": "multitext"
+    "segment": "multitext",
+    "language": "multitext"
   }
 }

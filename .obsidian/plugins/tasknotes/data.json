@@ -21,7 +21,7 @@
     "defaultContexts": "",
     "defaultTags": "task",
     "defaultProjects": "",
-    "useParentNoteForTaskCreation": true,
+    "useParentNoteForTaskCreation": false,
     "useParentNoteAsProject": false,
     "useParentHeaderAsProject": true,
     "inheritParentTaskProperties": false,
@@ -138,7 +138,7 @@
     ],
     "showAdvanced": false,
     "requiredTags": [
-      "project-note"
+      "project"
     ],
     "includeFolders": [],
     "propertyKey": "",
@@ -504,18 +504,22 @@
     "contexts",
     "tags",
     "blocked",
-    "blocking"
+    "blocking",
+    "user:field_1787774953681"
   ],
   "inlineVisibleProperties": [
     "status",
     "priority",
     "due",
     "scheduled",
-    "recurrence"
+    "projects",
+    "contexts",
+    "user:field_1787774953681",
+    "checklistProgress"
   ],
   "enableBases": true,
   "enableMdbaseSpec": true,
-  "autoCreateDefaultBasesFiles": true,
+  "autoCreateDefaultBasesFiles": false,
   "commandFileMapping": {
     "open-calendar-view": "TaskNotes/Views/mini-calendar-default.base",
     "open-kanban-view": "TaskNotes/Views/kanban-default.base",

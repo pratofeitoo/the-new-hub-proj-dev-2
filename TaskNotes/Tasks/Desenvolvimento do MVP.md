@@ -2,10 +2,10 @@
 status: em-revisao
 priority: high
 dateCreated: 2026-08-26T17:14:02.443-03:00
-dateModified: 2026-09-01T20:16:05.178-03:00
+dateModified: 2026-09-02T00:06:23.843-03:00
 tags:
-  - project-note
   - task
+  - project
 owner:
   - PF Rezende
   - Tamara

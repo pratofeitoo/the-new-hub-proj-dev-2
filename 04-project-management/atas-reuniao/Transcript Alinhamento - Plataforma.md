@@ -16,15 +16,8 @@ status: estruturada
 tags:
   - ata
   - plataforma
-  - SEBRAE
-  - FIRJAN
-  - pricing
   - infraestrutura
-  - NDA
 related:
-  - "[[Plataforma Ruby]]"
-  - "[[MVP Fornecedores]]"
-  - "[[MVP Candidatos]]"
 ---
 
 # Ata — Alinhamento Plataforma (01/09/2026 18h)

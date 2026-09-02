@@ -92,7 +92,7 @@ views:
     name: Projects
     filters:
       and:
-        - list(this.projects).map(file(value.replace(/^\[[^\]]+\]\((.*)\)$/, "$1").replace(/%20/g, " ")).asLink()).contains(file.asLink())
+        - file.tags.contains("project")
     order:
       - status
       - priority
@@ -103,9 +103,8 @@ views:
       - file.tags
       - blockedBy
       - file.name
-      - recurrence
-      - complete_instances
       - file.tasks
+    subGroup: note.status
   - type: tasknotesTaskList
     name: Blocked By
     filters:

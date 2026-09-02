@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7da1db510e706667",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
-                "viewName": "Execução por Fase — P01→P07"
-              },
-              "icon": "lucide-table",
-              "title": "HUB_Tarefas_Fases_Execucao"
-            }
-          },
-          {
             "id": "fdb4515863ea1f32",
             "type": "leaf",
             "state": {
@@ -32,9 +19,35 @@
               "icon": "tasknotes-simple",
               "title": "kanban-default"
             }
+          },
+          {
+            "id": "5ea20db54dc90c12",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/relationships.base",
+                "viewName": "Projects"
+              },
+              "icon": "tasknotes-simple",
+              "title": "relationships"
+            }
+          },
+          {
+            "id": "574ae5fe0cd97f09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-project-management/atas-reuniao/Transcript Alinhamento - Plataforma.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Transcript Alinhamento - Plataforma"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,7 +241,7 @@
       "tasknotes:Open mini calendar view": true,
       "tasknotes:Open calendar view": false,
       "tasknotes:Open tasks view": false,
-      "tasknotes:Open agenda view": true,
+      "tasknotes:Open agenda view": false,
       "tasknotes:Open Kanban board": false,
       "tasknotes:Open Pomodoro timer": true,
       "tasknotes:Open Pomodoro statistics": true,
@@ -237,33 +250,44 @@
   },
   "active": "fdb4515863ea1f32",
   "lastOpenFiles": [
+    "TaskNotes/Tasks/Solucionar o live sync do obsidian vault PF e Tamara.md",
+    "TaskNotes/Tasks/Revisão Completa do Task Database.md",
+    "TaskNotes/Tasks/Gestão de Projeto e Governança.md",
     "TaskNotes/Views/relationships.base",
-    "TaskNotes/Views/tasks-default.base",
+    "04-project-management/atas-reuniao/Transcript Alinhamento - Plataforma.md",
+    "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Views/kanban-default.base",
+    "TaskNotes/Views/mini-calendar-default.base",
+    "TaskNotes/Views/agenda-default.base",
+    "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
+    "TaskNotes/Tasks/Forms Diverse Match.md",
+    "TaskNotes/Tasks/Ajustes Jurídicos.md",
+    "TaskNotes/Tasks/Ajustes de UI e Design.md",
+    "TaskNotes/Tasks/Calcular horas por visão (Aba 2) × R$180–250 e trazer mínimomáximo por MVP Fornecedores.md",
+    "TaskNotes/Tasks/Separar telas por bloco (Fornecedores vs Candidatos) e definir linha visual a seguir-2.md",
+    "TaskNotes/Tasks/Preparar slide valor piloto (valor fechado, sem breakdown).md",
+    "TaskNotes/Tasks/Subir candidatura LED-2.md",
+    "TaskNotes/Tasks/Levantar proposta de sociedade.md",
+    "TaskNotes/Tasks/Preparar NDA padrão + configurar bloqueio de gravaçãoprint no Meet-2.md",
+    "TaskNotes/Tasks/Criar convenção de uso do Drive compartilhado.md",
+    "TaskNotes/Tasks/Validar custos não-hora da planilha.md",
+    "TaskNotes/Tasks/Desenho de arquitetura + custos.md",
+    "TaskNotes/Tasks/Calcular valorhr dos sócios.md",
+    "04-project-management/atas-reuniao/_template-ata.md",
+    "audio.mp3",
+    "04-project-management/atas-reuniao/template-reuniao.md",
+    "TaskNotes/Tasks/Desenvolvimento do MVP.md",
+    "TaskNotes/Tasks/Definir o escopo do MVP.md",
+    "TaskNotes/Views/tasks-default.base",
     "TaskNotes/Archive",
     "04-project-management/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma.md",
     "04-project-management/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao.md",
     "04-project-management/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto.md",
     "04-project-management/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH.md",
     "04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
-    "04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
-    "00-project-control/registro-mudancas/2026-08-26-tarefas-56-execucao-base.md",
-    "04-project-management/tarefas/P04-T01_Arquitetura_Entidades.md",
     "05-resources/Processar/Plataforma HUB/03-analises-processadas",
-    "05-resources/Processar/Plataforma HUB/HUB_Fila_Processamento.base",
-    "05-resources/Processar/Plataforma HUB/README.md",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais/ChatGPT Image 29 de ago. de 2026, 12_25_24.png",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/fontes/HUB_MVP_Sebrae_GINGA_100_Fornecedores_100_Compradores.xlsx",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/notas",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/fontes",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/dados",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/README.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/README.md",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/notas/HUB_Portfolio_Produtos_Primeiro_Momento.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/README.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/README.md",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/visuais/ChatGPT Image 29 de ago. de 2026, 12_33_20.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30.jpeg",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (2).jpeg",
@@ -272,17 +296,6 @@
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (1).jpeg",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29.jpeg",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (2).jpeg",
-    "05-resources/Processar/Plataforma HUB/01-mvps/Visão de Comunidades/notas/Comunidades.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativações/README.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/Visão de Comunidades/README.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/README.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Colaboradores + Dados/README.md",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Candidatos/README.md",
-    "05-resources/Processar/Plataforma HUB/manifesto-processamento.md",
-    "05-resources/Processar/Plataforma HUB/00-entrada/piloto-firjan-processamento.md",
-    "05-resources/Processar/Plataforma HUB/_templates/cartao-processamento.md",
-    "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/06_Estimativa_Build.md",
-    "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/README.md",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "quartz-site/content/99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas",
