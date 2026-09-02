@@ -2,61 +2,21 @@
 title: "Reunião — {{date:YYYY-MM-DD}}"
 date: "{{date:YYYY-MM-DD}}"
 type: meeting-note
-status: active
+status: deprecated
 tags:
   - projeto/reuniao
   - projeto/gestao
+deprecated: true
+canonical: "_template-ata.md"
 ---
 
-# Reunião — {{date:YYYY-MM-DD}}
+> [!warning] Template descontinuado
+> Este `template-reuniao.md` foi **substituído** por [[_template-ata|_template-ata.md]] (padrão `Ata Estruturada`).
+> **Use para novas atas:** `Cmd+O` → `_template-ata` → duplique.
+> Este arquivo é mantido apenas por compatibilidade — novas criações via Templater devem apontar para `_template-ata.md`.
+> Se seu Templater ainda aponta para este arquivo, troque em `Settings → Templater → Folder Templates`.
 
-## Informações
+![[_template-ata]]
 
-- **Data:** {{date:YYYY-MM-DD}}
-- **Horário:**
-- **Local ou link:**
-- **Facilitador(a):**
-- **Responsável pelo registro:**
-- **Participantes:**
-
-## Objetivo
-
-<!-- Registre em uma frase o resultado esperado desta reunião. -->
-
-## Pauta
-
-- [ ]
-
-## Discussões e atualizações
-
-### Tópico 1
-
-- **Contexto:**
-- **Pontos principais:**
-- **Dúvidas ou riscos:**
-
-## Decisões
-
-| Decisão | Motivo | Responsável | Data |
-|---|---|---|---|
-| | | | |
-
-## Ações e próximos passos
-
-| Ação | Responsável | Prazo | Status |
-|---|---|---|---|
-| | | | ☐ Pendente |
-
-## Itens em aberto
-
-- [ ]
-
-## Próxima reunião
-
-- **Data prevista:**
-- **Objetivo:**
-- **Preparação necessária:**
-
-## Referências
-
--
+> [!note] Migração
+> Se você já tem notas criadas com este template antigo, não precisa refazer. Para novas reuniões, o esqueleto completo está em `_template-ata.md` (TL;DR, Decisões, Ações com `- [ ] @dono`, Riscos, Transcrição limpa/bruta colapsada).
