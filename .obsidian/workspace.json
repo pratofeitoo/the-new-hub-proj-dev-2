@@ -14,14 +14,41 @@
               "type": "markdown",
               "state": {
                 "file": "TaskNotes/Task Dashboard.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Task Dashboard"
             }
+          },
+          {
+            "id": "4b392fe64284a7f5",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/kanban-default.base",
+                "viewName": "Kanban Board"
+              },
+              "icon": "tasknotes-simple",
+              "title": "kanban-default"
+            }
+          },
+          {
+            "id": "e605c3e073eca993",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/tasks-default.base",
+                "viewName": "All Tasks"
+              },
+              "icon": "tasknotes-simple",
+              "title": "tasks-default"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TaskNotes/Views/kanban-default.base",
+                "file": "TaskNotes/Task Dashboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TaskNotes/Views/kanban-default.base",
+                "file": "TaskNotes/Task Dashboard.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -176,24 +203,10 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "TaskNotes/Views/kanban-default.base"
+                "file": "TaskNotes/Task Dashboard.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
-            }
-          },
-          {
-            "id": "9fc4e6eca44257c9",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "04-project-management/planos-mestres/HUB_Plano_Fases_v1.md"
-              },
-              "pinned": true,
-              "icon": "lucide-info",
-              "title": "File properties for HUB_Plano_Fases_v1"
             }
           }
         ],
@@ -222,10 +235,16 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "fdb4515863ea1f32",
+  "active": "4b392fe64284a7f5",
   "lastOpenFiles": [
+    "TaskNotes/Views/tasks-default.base",
     "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Task Dashboard.md",
+    "TaskNotes/Views/agenda-default.base",
+    "System/Plugins docs/Task Notes/TaskNotes Obsidian CLI.md",
+    "System/Plugins docs/Dataview Charts/Plotting Task Completions with DataviewJS and Obsidian Charts.md",
+    "System/Plugins docs/Dataview Charts/DataviewJS & Charts, how to get a cumulative line chart out of daily outcome values - Help.md",
+    "System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian.md",
     "04-project-management/atas-reuniao/Transcript Alinhamento - Plataforma.md",
     "TaskNotes/Views/relationships.base",
     "TaskNotes/Tasks/Preencher as pastas de Execuções Paralelas.md",
@@ -234,7 +253,6 @@
     "TaskNotes/Tasks/Gestão de Projeto e Governança.md",
     "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Views/mini-calendar-default.base",
-    "TaskNotes/Views/agenda-default.base",
     "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
     "TaskNotes/Tasks/Forms Diverse Match.md",
     "TaskNotes/Tasks/Ajustes Jurídicos.md",
@@ -252,12 +270,7 @@
     "04-project-management/atas-reuniao/_template-ata.md",
     "audio.mp3",
     "04-project-management/atas-reuniao/template-reuniao.md",
-    "TaskNotes/Tasks/Desenvolvimento do MVP.md",
-    "TaskNotes/Tasks/Definir o escopo do MVP.md",
-    "TaskNotes/Views/tasks-default.base",
     "TaskNotes/Archive",
-    "04-project-management/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma.md",
-    "04-project-management/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao.md",
     "05-resources/Processar/Plataforma HUB/03-analises-processadas",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais/ChatGPT Image 29 de ago. de 2026, 12_25_24.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",

@@ -1,303 +1,391 @@
 ---
-title: Task Dashboard
+title: Painel de Tarefas
 tags:
   - dashboard
   - tasknotes
-description: Dynamic task dashboard powered by Dataview + Obsidian Charts
+description: Painel unificado — Dataview + Obsidian Charts sobre TaskNotes/Tasks (operacional, 26 notas) + 04-project-management/tarefas (blueprint/P01-P07, 64 notas)
 ---
 
-# Task Dashboard
+# Painel de Tarefas — Unificado (Operacional + Blueprint)
 
-> Live overview of `TaskNotes/Tasks` — KPIs, distributions and trends rendered with **Dataview** + **Obsidian Charts** (`dataviewjs` + `window.renderChart`). See [[System/Plugins docs/Charts Plugin Docs/Basics|Basics]] and [[System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian|Creating Dynamic Graphs]] for the underlying patterns.
+> Visão ao vivo de **dois sistemas de tarefas** renderizada com **Dataview** + **Obsidian Charts** (`dataviewjs` + `window.renderChart`):
+> - `TaskNotes/Tasks` — tarefas operacionais (26 notas, plugin TaskNotes, `status: open/in-progress/em-revisao`, `priority: high/normal`, `owner`, `due`, `dateCreated`)
+> - `04-project-management/tarefas` — tarefas de blueprint e fases (64 notas: `BP-001..008` + `P01-T01..P07-T07`, `status: concluido/em-revisao/pendente`, `priority: critica/alta/critical/high`, `phase: P01..P07`, `layer: blueprint/refining/approval`, `gap_ids`)
+> Veja [[System/Plugins docs/Charts Plugin Docs/Basics|Basics]] e [[System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian|Creating Dynamic Graphs]] para os padrões subjacentes.
 
-## Prerequisites
+## Pré-requisitos
 
-1. Install community plugins **Dataview** and **Obsidian Charts** (`obsidian-charts` by phibr0).
-2. Dataview → Settings → **Enable JavaScript Queries** and **Enable Inline JavaScript Queries** = ON.
-3. Reload Obsidian after enabling. If charts show as code, switch to Reading/Preview mode.
+1. Instale os plugins da comunidade **Dataview** e **Obsidian Charts** (`obsidian-charts` por phibr0) — já adicionados em `.obsidian/community-plugins.json` (`dataview`, `obsidian-charts`, `obsidian-chartsview-plugin`).
+2. Dataview → Configurações → **Enable JavaScript Queries** e **Enable Inline JavaScript Queries** = ON (ativado).
+3. Recarregue o Obsidian após ativar. Se os gráficos aparecerem como código, alterne para o modo Leitura/Preview.
 
-> Reference cheat-sheets: [[System/Plugins docs/Charts Plugin Docs/charts_cheatsheets|Charts Cheat-sheets]] · [[System/Plugins docs/Charts Plugin Docs/Dataview Integration|Dataview Integration]] · [[System/Plugins docs/Charts Plugin Docs/Bar Chart|Bar Chart]] · [[System/Plugins docs/Charts Plugin Docs/Pie and Donut Chart|Pie and Donut Chart]] · [[System/Plugins docs/Charts Plugin Docs/Line Chart|Line Chart]]
+> Folhas de referência: [[System/Plugins docs/Charts Plugin Docs/charts_cheatsheets|Charts Cheat-sheets]] · [[System/Plugins docs/Charts Plugin Docs/Dataview Integration|Dataview Integration]] · [[System/Plugins docs/Charts Plugin Docs/Bar Chart|Bar Chart]] · [[System/Plugins docs/Charts Plugin Docs/Pie and Donut Chart|Pie and Donut Chart]] · [[System/Plugins docs/Charts Plugin Docs/Line Chart|Line Chart]]
 
 ---
 
-## KPIs — Dataview
+## KPIs — Dataview (Unificado + Por Fonte)
+
+### Unificado (ambas as fontes)
 
 ```dataview
 TABLE WITHOUT ID
-  length(rows) as "Total",
-  length(filter(rows, (r) => r.status = "open")) as "Open",
-  length(filter(rows, (r) => r.status = "in-progress")) as "In Progress",
-  length(filter(rows, (r) => r.status = "em-revisao")) as "Em Revisão",
-  length(filter(rows, (r) => r.priority = "high")) as "High Priority",
-  length(filter(rows, (r) => !r.due)) as "No Due Date"
-FROM "TaskNotes/Tasks"
+  length(rows) as "Total (90)",
+  length(filter(rows, (r) => contains(string(r.status), "open"))) as "Abertas (ops)",
+  length(filter(rows, (r) => contains(string(r.status), "in-progress"))) as "Em Progresso",
+  length(filter(rows, (r) => contains(string(r.status), "em-revisao"))) as "Em Revisão",
+  length(filter(rows, (r) => contains(string(r.status), "pendente"))) as "Pendentes (blueprint)",
+  length(filter(rows, (r) => contains(string(r.status), "concluido"))) as "Concluídas"
+FROM "TaskNotes/Tasks" OR "04-project-management/tarefas"
 GROUP BY true
 ```
 
 ```dataviewjs
-const pages = dv.pages('"TaskNotes/Tasks"');
-const total = pages.length;
-const byStatus = s => pages.where(p => String(p.status) === s).length;
-const high = pages.where(p => String(p.priority) === "high").length;
-const noDue = pages.where(p => !p.due).length;
+const normStatus = p => { let s=p.status; if(!s) return "none"; if(Array.isArray(s)) s=s[0]; return String(s).trim(); };
+const normPriority = p => String(p.priority||"none").trim();
+const all = dv.pages('"TaskNotes/Tasks" or "04-project-management/tarefas"');
+const ops = dv.pages('"TaskNotes/Tasks"');
+const bp = dv.pages('"04-project-management/tarefas"');
+const by = (pages, fn) => pages.where(fn).length;
 
-dv.paragraph(`**Total:** ${total} · **Open:** ${byStatus("open")} · **In Progress:** ${byStatus("in-progress")} · **Em Revisão:** ${byStatus("em-revisao")} · **High:** ${high} · **No due:** ${noDue}`);
+dv.paragraph(`**Unificado (90):** Total ${all.length} · Abertas ${by(all, p=>normStatus(p)==="open")} · Em Progresso ${by(all, p=>normStatus(p)==="in-progress")} · Em Revisão ${by(all, p=>normStatus(p)==="em-revisao")} · Pendentes ${by(all, p=>normStatus(p)==="pendente")} · Concluídas ${by(all, p=>normStatus(p)==="concluido")} — **Ops:** ${ops.length} · **Blueprint/P0x:** ${bp.length}`);
+```
+
+### Detalhamento por fonte
+
+```dataview
+TABLE WITHOUT ID
+  "TaskNotes/Tasks" as Fonte,
+  length(rows) as Total,
+  length(filter(rows, (r) => r.status = "open")) as Abertas,
+  length(filter(rows, (r) => r.status = "em-revisao")) as "Em Revisão",
+  length(filter(rows, (r) => r.status = "in-progress")) as "Em Progresso",
+  length(filter(rows, (r) => r.priority = "high")) as Alta
+FROM "TaskNotes/Tasks"
+GROUP BY true
+```
+
+```dataview
+TABLE WITHOUT ID
+  "04-project-management/tarefas" as Fonte,
+  length(rows) as Total,
+  length(filter(rows, (r) => contains(string(r.status), "concluido"))) as Concluidas,
+  length(filter(rows, (r) => contains(string(r.status), "em-revisao"))) as "Em Revisão",
+  length(filter(rows, (r) => contains(string(r.status), "pendente"))) as Pendentes,
+  length(filter(rows, (r) => contains(string(r.phase), "P03"))) as P03
+FROM "04-project-management/tarefas"
+GROUP BY true
 ```
 
 ---
 
-## Charts — Static (Charts plugin only, no JS)
+## Gráficos — Estáticos (somente plugin Charts, sem JS)
 
-Use these when DataviewJS is off — values reflect vault on 2026-09-02 (26 tasks).
+> Fallback quando o DataviewJS está desativado. Valores = vault em 2026-09-02: **26 ops + 64 blueprint = 90 total**. Todo o texto em branco para tema escuro.
 
-### Status distribution — doughnut
+### Status unificado — rosca
 
 ```chart
 type: doughnut
-labels: [open, em-revisao, in-progress]
+labels: [open, "em-revisao", "in-progress", pendente, concluido]
 series:
-  - title: Tasks by status
-    data: [18, 5, 3]
-width: 55%
-labelColors: true
+  - title: Unificado por status
+    data: [18, 22, 3, 34, 13]
+width: 60%
+labelColors: false
 legend: true
 legendPosition: right
+options:
+  plugins:
+    legend:
+      labels:
+        color: '#ffffff'
 ```
 
-### Priority distribution — bar
+### Operacional vs Blueprint — barras
 
 ```chart
 type: bar
-labels: [high, normal]
+labels: ["TaskNotes/Tasks", "04-project-management/tarefas"]
 series:
-  - title: Tasks by priority
-    data: [5, 21]
+  - title: Tarefas por fonte
+    data: [26, 64]
 beginAtZero: true
-yTitle: Tasks
+yTitle: Tarefas
+options:
+  plugins:
+    legend:
+      labels:
+        color: '#ffffff'
+  scales:
+    x:
+      ticks:
+        color: '#ffffff'
+      title:
+        color: '#ffffff'
+        display: true
+      grid:
+        color: 'rgba(255,255,255,0.15)'
+    y:
+      ticks:
+        color: '#ffffff'
+      title:
+        color: '#ffffff'
+        display: true
+      grid:
+        color: 'rgba(255,255,255,0.15)'
 ```
 
-### Owner workload — horizontal bar
+### Blueprint por fase — barras
 
 ```chart
 type: bar
-labels: [Tamara, "PF Rezende", Marcos]
+labels: [P01, P02, P03, P04, P05, P06, P07]
 series:
-  - title: Tasks per owner
-    data: [22, 18, 10]
-indexAxis: y
+  - title: Tarefas de blueprint por fase
+    data: [7, 6, 9, 8, 7, 12, 7]
 beginAtZero: true
-xTitle: Tasks
+yTitle: Tarefas
+options:
+  plugins:
+    legend:
+      labels:
+        color: '#ffffff'
+  scales:
+    x:
+      ticks:
+        color: '#ffffff'
+      title:
+        color: '#ffffff'
+        display: true
+      grid:
+        color: 'rgba(255,255,255,0.15)'
+    y:
+      ticks:
+        color: '#ffffff'
+      title:
+        color: '#ffffff'
+        display: true
+      grid:
+        color: 'rgba(255,255,255,0.15)'
+```
+
+### Prioridade (bruto) — barras (unificado)
+
+```chart
+type: bar
+labels: [critica, alta, critical, high, normal]
+series:
+  - title: Unificado por prioridade (bruto)
+    data: [25, 31, 5, 8, 21]
+beginAtZero: true
+yTitle: Tarefas
+options:
+  plugins:
+    legend:
+      labels:
+        color: '#ffffff'
+  scales:
+    x:
+      ticks:
+        color: '#ffffff'
+      title:
+        color: '#ffffff'
+        display: true
+      grid:
+        color: 'rgba(255,255,255,0.15)'
+    y:
+      ticks:
+        color: '#ffffff'
+      title:
+        color: '#ffffff'
+        display: true
+      grid:
+        color: 'rgba(255,255,255,0.15)'
 ```
 
 ---
 
-## Charts — Dynamic (DataviewJS + Obsidian Charts)
+## Gráficos — Dinâmicos (DataviewJS + Obsidian Charts)
 
-> These query `TaskNotes/Tasks` at render time via `dv.pages()` and plot with `window.renderChart` — see [[System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian|Creating Dynamic Graphs]] § Basic bar charts and [[System/Plugins docs/Charts Plugin Docs/Dataview Integration|Dataview Integration]].
+> Cada bloco consulta o vault em tempo de renderização via `dv.pages()` e plota com `window.renderChart` — veja [[System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian|Creating Dynamic Graphs]] § Basic bar charts e [[System/Plugins docs/Charts Plugin Docs/Dataview Integration|Dataview Integration]].
+> Helper `normStatus` desembrulha `status: [concluido]` (forma array nas tarefas de blueprint) vs `status: open` (forma string nas TaskNotes). Todo o texto forçado para branco (`#ffffff`) para tema escuro.
 
-### 1) Tasks by status — doughnut (live)
+### 1) Por status unificado — rosca (ao vivo, ambas as fontes)
 
 ```dataviewjs
-const pages = dv.pages('"TaskNotes/Tasks"');
-const statuses = ["open", "em-revisao", "in-progress", "pendente", "concluido", "done", "none"];
-const counts = statuses.map(s => pages.where(p => String(p.status).trim() === s).length);
-const labels = statuses.filter((_, i) => counts[i] > 0);
-const data = counts.filter(v => v > 0);
-
-const chartData = {
-    type: 'doughnut',
-    data: {
-        labels: labels,
-        datasets: [{
-            label: 'Tasks by status',
-            data: data,
-            backgroundColor: ['#6366f1','#06b6d4','#f59e0b','#84cc16','#ef4444','#10b981','#9ca3af']
-        }]
-    },
-    options: {
-        plugins: { legend: { position: 'right' } },
-        cutout: '55%'
-    }
-};
-window.renderChart(chartData, this.container);
+const pages = dv.pages('"TaskNotes/Tasks" or "04-project-management/tarefas"');
+const norm = p => { let s=p.status; if(!s) return "none"; if(Array.isArray(s)) s=s[0]; return String(s).trim(); };
+const statuses = ["open","em-revisao","in-progress","pendente","concluido","done","none"];
+const counts = statuses.map(s => pages.where(p => norm(p)===s).length);
+const labels = statuses.filter((_,i)=>counts[i]>0);
+const data = counts.filter(v=>v>0);
+window.renderChart({ type:'doughnut', data:{ labels:labels, datasets:[{ label:'Unificado por status', data:data, backgroundColor:['#22c55e','#6366f1','#f59e0b','#06b6d4','#10b981','#9ca3af','#eab308'] }] }, options:{ plugins:{legend:{position:'right', labels:{color:'#ffffff'}}}, cutout:'58%' } }, this.container);
 ```
 
-### 2) Tasks by priority — bar (live)
+### 2) Comparativo por fonte — barras empilhadas (ao vivo)
 
 ```dataviewjs
-const pages = dv.pages('"TaskNotes/Tasks"');
-const prios = ["high","normal","low","none"];
-const counts = prios.map(p => pages.where(x => String(x.priority) === p).length);
-const labels = prios.filter((_, i) => counts[i] > 0);
-const data = counts.filter(v => v > 0);
-
-const chartData = {
-    type: 'bar',
-    data: {
-        labels: labels,
-        datasets: [{ label: 'Tasks', data: data, backgroundColor: ['#ef4444','#f59e0b','#10b981','#9ca3af'] }]
-    },
-    options: {
-        plugins: { legend: { display: false } },
-        scales: { y: { beginAtZero: true, ticks: { precision: 0 } } }
-    }
-};
-window.renderChart(chartData, this.container);
+const ops = dv.pages('"TaskNotes/Tasks"');
+const bp = dv.pages('"04-project-management/tarefas"');
+const norm = p => { let s=p.status; if(!s) return "none"; if(Array.isArray(s)) s=s[0]; return String(s).trim(); };
+const cats = ["open","in-progress","em-revisao","pendente","concluido"];
+const opsData = cats.map(c => ops.where(p=>norm(p)===c).length);
+const bpData  = cats.map(c => bp.where(p=>norm(p)===c).length);
+window.renderChart({ type:'bar', data:{ labels:cats, datasets:[{label:'TaskNotes/Tasks', data:opsData, backgroundColor:'#6366f1'}, {label:'04-project-management/tarefas', data:bpData, backgroundColor:'#06b6d4'}] }, options:{ plugins:{legend:{position:'top', labels:{color:'#ffffff'}}}, scales:{x:{stacked:true, ticks:{color:'#ffffff'}, grid:{color:'rgba(255,255,255,0.15)'}}, y:{stacked:true, beginAtZero:true, ticks:{color:'#ffffff', precision:0}, grid:{color:'rgba(255,255,255,0.15)'}}} } }, this.container);
 ```
 
-### 3) Workload by owner — horizontal bar (live)
+### 3) Blueprint por fase — barras (ao vivo, só tarefas)
 
 ```dataviewjs
-const pages = dv.pages('"TaskNotes/Tasks"');
-// flatten owner (TaskNotes stores owner as list)
+const pages = dv.pages('"04-project-management/tarefas"');
+const phases = ["P01","P02","P03","P04","P05","P06","P07"];
+const counts = phases.map(ph => pages.where(p=>String(p.phase)===ph).length);
+window.renderChart({ type:'bar', data:{ labels:phases, datasets:[{label:'Blueprint por fase', data:counts, backgroundColor:'#8b5cf6'}] }, options:{ plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#ffffff'}, grid:{color:'rgba(255,255,255,0.15)'}}, y:{beginAtZero:true, ticks:{color:'#ffffff', precision:0}, grid:{color:'rgba(255,255,255,0.15)'}}} } }, this.container);
+```
+
+### 4) Blueprint por camada — rosca (ao vivo)
+
+```dataviewjs
+const pages = dv.pages('"04-project-management/tarefas"');
+const layers = ["blueprint","refining","approval","governance","refinement"];
+const counts = layers.map(l => pages.where(p=>String(p.layer)===l).length);
+const labels = layers.filter((_,i)=>counts[i]>0);
+const data = counts.filter(v=>v>0);
+window.renderChart({ type:'doughnut', data:{ labels:labels, datasets:[{label:'Por camada', data:data, backgroundColor:['#6366f1','#06b6d4','#f59e0b','#10b981','#8b5cf6'], borderColor:'#1e1e1e', borderWidth:2 }] }, options:{plugins:{legend:{position:'right', labels:{color:'#ffffff'}}}, cutout:'55%'} }, this.container);
+```
+
+### 5) Prioridade unificada — barras (ao vivo, valores brutos)
+
+```dataviewjs
+const pages = dv.pages('"TaskNotes/Tasks" or "04-project-management/tarefas"');
+const normP = p => String(p.priority||"none").trim();
+const prios = ["critica","alta","critical","high","normal","low","none"];
+const counts = prios.map(v => pages.where(p=>normP(p)===v).length);
+const labels = prios.filter((_,i)=>counts[i]>0);
+const data = counts.filter(v=>v>0);
+window.renderChart({ type:'bar', data:{ labels:labels, datasets:[{label:'Unificada por prioridade (bruto)', data:data, backgroundColor:'#f59e0b'}] }, options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#ffffff'}, grid:{color:'rgba(255,255,255,0.15)'}}, y:{beginAtZero:true, ticks:{color:'#ffffff', precision:0}, grid:{color:'rgba(255,255,255,0.15)'}}}} }, this.container);
+```
+
+### 6) Carga por responsável — barras horizontais (ao vivo, unificado)
+
+```dataviewjs
+const pages = dv.pages('"TaskNotes/Tasks" or "04-project-management/tarefas"');
 const owners = {};
-pages.forEach(p => {
-    const list = p.owner ? (Array.isArray(p.owner) ? p.owner : [p.owner]) : [];
-    list.forEach(o => {
-        const key = String(o).replace(/\[\[|\]\]/g,'');
-        owners[key] = (owners[key] || 0) + 1;
-    });
+pages.forEach(p=>{
+  const list = p.owner ? (Array.isArray(p.owner)?p.owner:[p.owner]) : [];
+  list.forEach(o=>{
+    const key = String(o).replace(/\[\[|\]\]/g,'').trim();
+    if(!key) return;
+    owners[key]=(owners[key]||0)+1;
+  });
 });
-const labels = Object.keys(owners);
-const data = Object.values(owners);
-
-const chartData = {
-    type: 'bar',
-    data: {
-        labels: labels,
-        datasets: [{ label: 'Tasks per owner', data: data }]
-    },
-    options: {
-        indexAxis: 'y',
-        plugins: { legend: { display: false } },
-        scales: { x: { beginAtZero: true, ticks: { precision: 0 } } }
-    }
-};
-window.renderChart(chartData, this.container);
+const labels = Object.keys(owners).sort((a,b)=>owners[b]-owners[a]).slice(0,12);
+const data = labels.map(k=>owners[k]);
+const palette = ['#6366f1','#06b6d4','#f59e0b','#10b981','#8b5cf6','#ec4899','#f43f5e','#14b8a6','#eab308','#22c55e','#3b82f6','#a855f7'];
+window.renderChart({ type:'bar', data:{ labels:labels, datasets:[{label:'Tarefas por responsável (top 12)', data:data, backgroundColor: labels.map((_,i)=>palette[i%palette.length]), borderColor:'#1e1e1e', borderWidth:1 }] }, options:{ indexAxis:'y', plugins:{legend:{display:false}, tooltip:{enabled:true}, datalabels:{anchor:'end', align:'right', color:'#ffffff', font:{weight:'bold', size:11}, formatter:(v)=>v} }, scales:{x:{beginAtZero:true, ticks:{color:'#ffffff', precision:0}, grid:{color:'rgba(255,255,255,0.15)'}}, y:{ticks:{color:'#ffffff'}, grid:{color:'rgba(255,255,255,0.15)'}}} } }, this.container);
 ```
 
-### 4) Tasks created over time — line (live, by week)
+### 7) Criação ao longo do tempo — linha (ao vivo, por semana, ambas as fontes)
 
 ```dataviewjs
-const pages = dv.pages('"TaskNotes/Tasks"').where(p => p.dateCreated);
+const pages = dv.pages('"TaskNotes/Tasks" or "04-project-management/tarefas"');
 const byWeek = {};
-pages.forEach(p => {
-    const d = dv.date(p.dateCreated);
-    if (!d) return;
-    const key = d.toFormat("yyyy-'W'WW");
-    byWeek[key] = (byWeek[key] || 0) + 1;
+pages.forEach(p=>{
+  const raw = p.dateCreated || p.created || p.dateModified || p.updated;
+  const d = dv.date(raw);
+  if(!d) return;
+  const key = d.toFormat("yyyy-'W'WW");
+  byWeek[key]=(byWeek[key]||0)+1;
 });
 const labels = Object.keys(byWeek).sort();
-const data = labels.map(k => byWeek[k]);
-
-const chartData = {
-    type: 'line',
-    data: {
-        labels: labels,
-        datasets: [{
-            label: 'New tasks / week',
-            data: data,
-            tension: 0.35,
-            fill: true,
-            borderColor: '#6366f1',
-            backgroundColor: 'rgba(99,102,241,0.12)'
-        }]
-    },
-    options: {
-        plugins: { legend: { display: false } },
-        scales: { y: { beginAtZero: true, ticks: { precision: 0 } }, x: { ticks: { maxRotation: 45 } } }
-    }
-};
-window.renderChart(chartData, this.container);
-```
-
-### 5) Due-date horizon — bar (live, from Dataview formulas)
-
-```dataviewjs
-const pages = dv.pages('"TaskNotes/Tasks"');
-const buckets = { "Overdue": 0, "Today": 0, "This week": 0, "Later": 0, "No due date": 0 };
-const today = dv.date("today");
-pages.forEach(p => {
-    if (!p.due) { buckets["No due date"]++; return; }
-    const d = dv.date(p.due);
-    if (!d) { buckets["No due date"]++; return; }
-    const diff = Math.floor((d - today) / (1000*60*60*24));
-    if (diff < 0) buckets["Overdue"]++;
-    else if (diff === 0) buckets["Today"]++;
-    else if (diff <= 7) buckets["This week"]++;
-    else buckets["Later"]++;
-});
-const labels = Object.keys(buckets);
-const data = labels.map(k => buckets[k]);
-
-const chartData = {
-    type: 'bar',
-    data: {
-        labels: labels,
-        datasets: [{ label: 'Tasks', data: data, backgroundColor: '#06b6d4' }]
-    },
-    options: {
-        plugins: { legend: { display: false } },
-        scales: { y: { beginAtZero: true, ticks: { precision: 0 } } }
-    }
-};
-window.renderChart(chartData, this.container);
+const data = labels.map(k=>byWeek[k]);
+window.renderChart({ type:'line', data:{ labels:labels, datasets:[{label:'Novas tarefas / semana (unificado)', data:data, tension:0.35, fill:true, borderColor:'#6366f1', backgroundColor:'rgba(99,102,241,0.12)', pointBackgroundColor:'#ffffff'}] }, options:{ plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#ffffff', maxRotation:45}, grid:{color:'rgba(255,255,255,0.15)'}}, y:{beginAtZero:true, ticks:{color:'#ffffff', precision:0}, grid:{color:'rgba(255,255,255,0.15)'}}} } }, this.container);
 ```
 
 ---
 
-## Tables — Dataview
+## Tabelas — Dataview (Unificado + Por Fonte)
 
-### Open high-priority tasks
+### Unificado — tarefas alta/crítica (ambas as fontes)
 
 ```dataview
-TABLE status as Status, priority as Priority, owner as Owner, due as Due, file.mtime as Updated
-FROM "TaskNotes/Tasks"
-WHERE priority = "high" AND status != "done" AND status != "concluido"
-SORT priority DESC, due ASC
+TABLE WITHOUT ID file.link as Tarefa, status as Status, priority as Prioridade, phase as Fase, layer as Camada, owner as Responsável
+FROM "TaskNotes/Tasks" OR "04-project-management/tarefas"
+WHERE contains(string(priority), "high") OR priority = "critica" OR priority = "critical" OR priority = "alta"
+SORT priority DESC, phase ASC
+LIMIT 20
 ```
 
-### Due soon / overdue (7 days)
+### TaskNotes/Tasks — alta prioridade em aberto
 
 ```dataview
-TABLE WITHOUT ID file.link as Task, status, priority, due, owner
+TABLE status as Status, priority as Prioridade, owner as Responsável, due as Vencimento, file.mtime as Atualizado
 FROM "TaskNotes/Tasks"
-WHERE due AND date(due) <= date(today) + dur(7 days) AND status != "done" AND status != "concluido"
+WHERE priority = "high" AND !contains(string(status), "done") AND !contains(string(status), "concluido")
 SORT due ASC
 ```
 
-### Recently modified
+### TaskNotes/Tasks — vencimento ≤ 7 dias
 
 ```dataview
-TABLE status, priority, dateModified as Modified, owner
+TABLE WITHOUT ID file.link as Tarefa, status as Status, priority as Prioridade, due as Vencimento, owner as Responsável
 FROM "TaskNotes/Tasks"
+WHERE due AND date(due) <= date(today) + dur(7 days) AND !contains(string(status), "done") AND !contains(string(status), "concluido")
+SORT due ASC
+```
+
+### 04-project-management/tarefas — por fase com status
+
+```dataview
+TABLE task_id as ID, status as Status, priority as Prioridade, layer as Camada, gap_ids as Gaps, target_file as ArquivoAlvo
+FROM "04-project-management/tarefas"
+WHERE phase = "P03"
+SORT task_id ASC
+```
+
+### 04-project-management/tarefas — pendentes (precisam de trabalho)
+
+```dataview
+TABLE WITHOUT ID file.link as Tarefa, phase as Fase, status as Status, priority as Prioridade, gap_ids as Gaps
+FROM "04-project-management/tarefas"
+WHERE contains(string(status), "pendente")
+SORT phase ASC, task_id ASC
+LIMIT 25
+```
+
+### Unificado — modificadas recentemente (ambas as fontes)
+
+```dataview
+TABLE status as Status, priority as Prioridade, phase as Fase, dateModified as Modificado, owner as Responsável
+FROM "TaskNotes/Tasks" OR "04-project-management/tarefas"
 SORT dateModified DESC
-LIMIT 10
+LIMIT 15
 ```
 
 ---
 
-## Bases — embedded views (no plugin install needed)
+## Bases — visões incorporadas (sem necessidade de plugin)
 
-> TaskNotes ships these; no Dataview/Charts required. Keep them as fast fallback.
+>Fallback rápido quando Dataview/Charts estão desativados.
 
-- **Kanban by status:** ![[TaskNotes/Views/kanban-default.base]]
-- **Agenda (due/scheduled):** ![[TaskNotes/Views/agenda-default.base]]
-- **List (all tasks):** ![[TaskNotes/Views/tasks-default.base]]
+- **Kanban Ops (TaskNotes):** ![[TaskNotes/Views/kanban-default.base]]
+- **Agenda Ops:** ![[TaskNotes/Views/agenda-default.base]]
+- **Lista Ops:** ![[TaskNotes/Views/tasks-default.base]]
+- **Blueprint — todas P01..P07 (64 tarefas + 8 BP):** ![[04-project-management/tarefas/HUB_Tarefas_Projeto.base]]
+- **Blueprint — quadro de execução (56 tarefas de fase, 9 visões):** ![[04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base]]
 
 ---
 
-## How to extend
+## Como estender
 
-- Change `FROM "TaskNotes/Tasks"` to `FROM #project` or `FROM "04-project-management/tarefas"` to chart blueprint tasks.
-- Swap `status`/`priority`/`owner` for `contexts` or `projects` — see [[System/Plugins docs/Charts Plugin Docs/Types|Types]] and [[System/Plugins docs/Charts Plugin Docs/charts_cheatsheets|Cheat-sheets]] § Obsidian Charts Plugin.
-- For Tracker-style time-series (if you add `weight::` or `#habit` inline fields), use a `tracker` codeblock — pattern in [[System/Plugins docs/Charts Plugin Docs/charts_cheatsheets|Tracker Cheat-sheet]].
-- See [[System/Plugins docs/Dataview Charts/Plotting Task Completions with DataviewJS and Obsidian Charts|Plotting Task Completions]] for task-completion-over-time scripts (requires `completionDate::` / `✅`).
+- Filtre gráficos unificados para uma única fonte: troque `dv.pages('"TaskNotes/Tasks" or "04-project-management/tarefas"')` por `dv.pages('"TaskNotes/Tasks"')` ou `dv.pages('"04-project-management/tarefas"')`.
+- Troque `status`/`priority`/`phase`/`layer`/`owner` por `gap_ids`, `area`, `projects`, `contexts` — veja [[System/Plugins docs/Charts Plugin Docs/Types|Types]] e [[System/Plugins docs/Charts Plugin Docs/charts_cheatsheets|Cheat-sheets]] § Obsidian Charts Plugin.
+- Para séries temporais estilo Tracker (se adicionar campos inline `weight::` ou `#habit`), use um bloco `tracker` — padrão em [[System/Plugins docs/Charts Plugin Docs/charts_cheatsheets|Tracker Cheat-sheet]].
+- Veja [[System/Plugins docs/Dataview Charts/Plotting Task Completions with DataviewJS and Obsidian Charts|Plotting Task Completions]] para scripts de conclusão ao longo do tempo (requer `completionDate::` / `✅`).
 
-## Verification
+## Verificação
 
-1. Open this note in **Reading View**.
-2. Confirm 5 dynamic charts render (doughnut, bars, line).
-3. Run Dataview table at top — totals should match `Total: 26` (adjust after adding/archiving tasks).
-4. If charts are blank: check Developer Console for `window.renderChart is not a function` → install/enable Obsidian Charts.
-
+1. Abra esta nota no **modo Leitura**.
+2. Confirme que os 7 gráficos dinâmicos renderizam (rosca, barras empilhadas, barras por fase, rosca por camada, barras por prioridade, barras por responsável, linha) — todos os rótulos/ticks/legendas em branco.
+3. Os KPIs no topo devem mostrar `Total 90` (26 ops + 64 blueprint) — ajuste após adicionar/arquivar tarefas.
+4. Se os gráficos ficarem em branco: verifique o Console do Desenvolvedor por `window.renderChart is not a function` → instale/ative Obsidian Charts e Dataview (JS Queries ON).

@@ -83,6 +83,9 @@ views:
     sort:
       - property: due
         direction: ASC
+    pbGroup: note.status
+    cardProps: "6"
+    subGroup: note.status
   - type: tasknotesTaskList
     name: Not Blocked
     filters:
