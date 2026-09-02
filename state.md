@@ -14,7 +14,7 @@ Create and deliver an expert Canvas Bases workflow for the HUB Obsidian vault.
 - Three JSON Canvas snapshots: complete.
 - Three live `.base` views wired to snapshots: complete.
 - Canvas Bases skill and eval prompts: complete and validated.
-- Git delivery: in progress.
+- Git delivery: complete; commit `f3c4eca` is pushed to `origin/main`.
 
 ## Evidence
 - Both skill folders passed `quick_validate.py`.
