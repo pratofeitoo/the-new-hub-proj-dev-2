@@ -1,4 +1,4 @@
-<!-- git-hash: 9494c748642ae77ad4ffaf2a82a32f7c0e133ade -->
+<!-- git-hash: 2aea746 -->
 <!-- last-synced: 2026-09-02T13:55:42-03:00 -->
 
 # Mapa do Projeto
@@ -19,13 +19,13 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | ------------------------ | ---------------------------------------------------------------------------------------------------- |
 | `00-project-control/`    | Framework, escopo, decisões, premissas, riscos, dependências, gaps (68 notas), índices e registro de mudanças (4 notas + template). |
 | `01-blueprint/`          | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança e lançamento (9 domínios). |
-| `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados — spine P03 9 rascunhos G03.A1–C5 (lógico/físico, identidade+dataset, envelope+fixture, dicionário, catálogo, linhagem, taxonomia, matriz LGPD, fluxos+XLSX) + produto/gov. |
+| `02-refinement/`         | Estratégia V2, pesquisas, testes, protótipos, revisões e refinamento do modelo de dados — spine P03 9 rascunhos G03.A1–C5 (lógico/físico, identidade+dataset, envelope+fixture, dicionário, catálogo, linhagem, taxonomia, matriz LGPD, fluxos+XLSX) + produto/gov + mapas/instrução do vault de documentação oficial. |
 | `03-approval/`           | Critérios, evidências, pacotes de revisão, estados de aprovação e material bloqueado (modelo indicadores não aprovado + 03-csv-corrigido/04-registro-correcoes/06-relatorios-validacao). |
 | `04-project-management/` | Planos (mestre P01–P07 + fases), 56 tarefas P01→P07 + BP (64 notas + 2 bases), matriz canônica, marcos (M00–M07 + M03.A/B), cronogramas + base execução (9 views), atas (01/09 Alinhamento + 02/09 SEBRAE/Ginga estruturadas `.md` + SEBRAE `.docx` + `_template-ata.md`), cenários P01-S01→S06 (6 segmentos), planos unificados HTML, logs-progresso (P01/P02/P03 + Sat 29 Aug), retrospectivas e status. |
 | `05-resources/`          | Recursos e matéria-prima: `Processar/Plataforma HUB/` (151 arquivos: `01-mvps/` 7 MVPs — Fornecedores/Candidatos/Acadêmico/Colaboradores/Eventos/Estratégia/Comunidades + `02-visao-plataforma/` — Arquitetura e Custos 96 telas, CAPEX/OPEX, Dashboard — + `99-arquivo/` Rascunhos), + documentos, materiais de origem, referências, imagens, apresentações, datasets, planilhas e modelos. |
 | `06-deliverables/`       | Saídas finais organizadas por dados, governança, investidor, lançamento, negócio e produto.          |
 | `99-archive/`            | Material descontinuado, rejeitado, superado e instantâneos históricos.                               |
-| `TaskNotes/`             | Notas de tarefas (25 operacionais) e visualizações Bases — agenda, calendário, kanban, mini-calendar, pomodoro, relações e tasks. |
+| `TaskNotes/`             | Notas de tarefas (30 operacionais) e visualizações Bases — agenda, calendário, kanban, mini-calendar, pomodoro, relações, tasks e `documentacao-oficial`. |
 | `System/`                | Documentação local de plugins, Canvas, Bases, Dataview e TaskNotes (7 docs: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base, Task Notes, Tracker, datacore) + `attachments/` (áudios: `audio.mp3`, `reuniao plataforma-sebrae.mp3`). |
 | `_types/`                | Definições de tipos usadas pelo mdbase/TaskNotes (`task.md`).                                        |
 | `.obsidian/`             | Configurações do vault, plugins (7 ativos), 13 temas e workspace.                                    |
@@ -226,7 +226,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 └── _types/  — TIPOS — definições de tipos do mdbase/TaskNotes (ex.: task.md)
 ```
 
-> **Total inventariado:** ~125 pastas + 66 notas de tarefas (8 BP + 56 P0x) + 151 arquivos em `05-resources/Processar/Plataforma HUB/` navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro. Novos nesta revisão: `04-project-management/atas-reuniao/Transcript meeting SEBRAE 02-09-2026.md/.docx` (ata SEBRAE/Ginga 28/10), `04-project-management/cenarios/` (6 segmentos P01-S01→S06), `05-resources/Processar/Plataforma HUB/` (7 MVPs + Arquitetura-Custos 96 telas), `02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos.md` + `log-evidencias-GTM.md`, `System/attachments/` (áudios).
+> **Total inventariado:** ~125 pastas + 71 notas de tarefas (8 BP + 56 P0x + 1 epic documentacao-oficial) + 151 arquivos em `05-resources/Processar/Plataforma HUB/` navegáveis (exclui `.git` e `.obsidian/plugins` compilado). Cada `*.base`, `*.canvas` e `*.md` relevante permanece no caminho indicado acima; pastas com `.gitkeep` estão reservadas para uso futuro. Novos nesta revisão: `02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md`, `HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md`, `HUB_Instrucao_Vault_Documentos_Oficiais.md`, `TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14).md`, `TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs).md`, `TaskNotes/Tasks/Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ.md`, `TaskNotes/Tasks/Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador.md`, `TaskNotes/Tasks/Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M.md`, `TaskNotes/Views/documentacao-oficial.base`, `04-project-management/atas-reuniao/Transcript meeting SEBRAE 02-09-2026.md/.docx` (ata SEBRAE/Ginga 28/10), `04-project-management/cenarios/` (6 segmentos P01-S01→S06), `05-resources/Processar/Plataforma HUB/` (7 MVPs + Arquitetura-Custos 96 telas), `02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos.md` + `log-evidencias-GTM.md`, `System/attachments/` (áudios).
 
 ## Anexo para agentes — tabela navegável (machine-readable)
 
@@ -308,7 +308,7 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `02-refinement/pesquisa/segundo-rascunho-projeto/` | refinement | Pesquisas que embasam o doc-mãe v2 | `HUB_v2_*_research.md` (6 arquivos) | ativo |
 | `02-refinement/pesquisa/segundo-rascunho-projeto/pt-BR/` | refinement | Traduções pt-BR das pesquisas v2 | `*-pt-BR.md` | ativo |
 | `02-refinement/prototipos/` | refinement | Protótipos e simulações | `.gitkeep` | reservado |
-| `02-refinement/refinamento-governanca/` | refinement | Refinamento de LGPD/controle/responsabilidades (P03-T08) | `matriz-dados-finalidade-P03-T08-v1.md` (5 fluxos × 41 campos) | ativo |
+| `02-refinement/refinamento-governanca/` | refinement | Refinamento de LGPD/controle/responsabilidades (P03-T08) + mapas de documentação oficial | `matriz-dados-finalidade-P03-T08-v1.md` (5 fluxos × 41 campos) + `HUB_Mapa_Documentos_Oficiais_v1.md` + `HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` + `HUB_Instrucao_Vault_Documentos_Oficiais.md` | ativo |
 | `02-refinement/refinamento-modelo-dados/` | refinement | Sínteses semânticas e ajustes do modelo de dados — 9 rascunhos P03 v1 (G03.A1–C5) | 9 md + `modelo-indicadores/` + `schema-registry/fixtures` | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/` | refinement | Refinamento específico do modelo de indicadores | pastas-trabalho + sintese | ativo |
 | `02-refinement/refinamento-modelo-dados/modelo-indicadores/pastas-trabalho/` | refinement | XLSX melhorado do modelo de indicadores | `MELHORADO_v1.1.xlsx` | ativo |
@@ -388,8 +388,8 @@ Gestão de projeto transversal, recursos, entregáveis e áreas de arquivo perma
 | `99-archive/rejeitado/` | arquivo | Material rejeitado em revisão | `.gitkeep` | reservado |
 | `99-archive/superado/` | arquivo | Material superado por versão melhor | `Fases_Projeto_v0_clusters_tematicos.canvas` (clusters temáticos arquivado) | ativo |
 | `TaskNotes/` | tarefas | Notas e visões do plugin TaskNotes | `Start Here.md` + Tasks + Views | ativo |
-| `TaskNotes/Tasks/` | tarefas | Notas de tarefa operacionais (fluxo TaskNotes) | 25 notas operacionais (separadas de BP/P0x) | ativo |
-| `TaskNotes/Views/` | tarefas | Visões Bases (agenda, kanban, calendário, relações, pomodoro) | 7 bases: `agenda-default`, `calendar-default`, `kanban-default`, `mini-calendar`, `pomodoro-stats`, `relationships`, `tasks-default` | ativo |
+| `TaskNotes/Tasks/` | tarefas | Notas de tarefa operacionais (fluxo TaskNotes) | 30 notas operacionais (separadas de BP/P0x) | ativo |
+| `TaskNotes/Views/` | tarefas | Visões Bases (agenda, kanban, calendário, relações, pomodoro) | 8 bases: `agenda-default`, `calendar-default`, `kanban-default`, `mini-calendar`, `pomodoro-stats`, `relationships`, `tasks-default`, `documentacao-oficial` | ativo |
 | `System/` | sistema | Documentação local de referência das ferramentas do vault | `Plugins docs/` (7 docs) + `attachments/` (áudios) | ativo |
 | `System/Plugins docs/` | sistema | Docs locais por plugin | 7 docs (inclui JSON Canvas Spec) | ativo |
 | `System/attachments/` | sistema | Anexos do vault | `audio.mp3`, `reuniao plataforma-sebrae.mp3` | ativo |

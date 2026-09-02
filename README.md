@@ -79,14 +79,14 @@ flowchart TB
 
 - [`00-project-control/`](00-project-control/) — regras do jogo: framework, escopo, decisões, dependências, premissas, riscos, gaps, registro de mudanças (4 notas + template) e índices.
 - [`01-blueprint/`](01-blueprint/) — a visão-base do projeto: estratégia, produto, negócios, tecnologia, dados, governança e visão de lançamento.
-- [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário (spine P03: 9 rascunhos G03.A1–C5 + `refinamento-governanca/` e `refinamento-produto/` com 4 artefatos).
+- [`02-refinement/`](02-refinement/) — onde a proposta é testada, comparada, melhorada e substituída quando necessário (spine P03: 9 rascunhos G03.A1–C5 + `refinamento-governanca/` com os mapas `HUB_Mapa_Documentos_Oficiais_v1.md` / `HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` e a instrução `HUB_Instrucao_Vault_Documentos_Oficiais.md` + `refinamento-produto/` com 4 artefatos).
 - [`03-approval/`](03-approval/) — evidências e pacotes de revisão para decidir o que pode avançar, o que fica bloqueado e o que precisa de ajuste (bloqueado: modelo de indicadores não aprovado + relatórios entity-key/ROI/corrected-CSV).
 - [`04-project-management/`](04-project-management/) — planejamento e controle: plano diretor P01→P07, 7 planos de fase, 56 tarefas P01→P07 + 8 BP, marcos M00→M07, cronogramas (Bases) + base de execução (9 views), atas (01/09 Alinhamento + 02/09 SEBRAE/Ginga estruturadas + `.docx` + `_template-ata.md`), cenários P01-S01→S06 (6 segmentos), logs de progresso (`logs-progresso/` P01/P02/P03) e status.
 - [`04-project-management/registro-mestre/`](04-project-management/registro-mestre/) — matriz canônica de coordenação das 56 tarefas, dependências, gaps, critérios, evidências e status.
 - [`05-resources/`](05-resources/) — materiais de apoio e origem: `Processar/Plataforma HUB/` (151 arquivos — 7 MVPs + visão de plataforma com Arquitetura-Custos 96 telas + Rascunhos), documentos, referências, imagens, apresentações, datasets, planilhas e templates.
 - [`06-deliverables/`](06-deliverables/) — saídas prontas para uso fora do repositório, quando aprovadas.
 - [`99-archive/`](99-archive/) — tudo o que foi substituído, rejeitado, descontinuado ou preservado por histórico.
-- [`TaskNotes/`](TaskNotes/) — 25 notas operacionais de tarefas, visualizações Bases (agenda, kanban, calendário, pomodoro, relações) e guia inicial do fluxo.
+- [`TaskNotes/`](TaskNotes/) — 30 notas operacionais de tarefas, visualizações Bases (agenda, kanban, calendário, pomodoro, relações) + a view `documentacao-oficial.base` para o vault isolado e guia inicial do fluxo.
 - [`System/`](System/) — documentação de apoio sobre plugins, Bases, Dataview, Datacore, gráficos, Canvas e TaskNotes (7 docs incluindo `JSON Canvas Spec.md`) + `attachments/` (áudios das atas).
 - [`_types/`](%5Ftypes/) — definições de tipos usadas pelo mdbase/TaskNotes.
 - [`.obsidian/`](.obsidian/) — configurações do vault, plugins comunitários, 13 temas e workspace do Obsidian.
@@ -113,6 +113,9 @@ flowchart TB
 - [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — descreve o processo central do projeto.
 - [`HUB_Fundacao_Blueprint_Projeto.md`](01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — ponto de partida consolidado para a arquitetura do HUB.
 - [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — lista transversal de lacunas, riscos e pendências (68 notas `lacunas/` BRD/DAT/FIN/GOV/TEC).
+- [`HUB_Mapa_Documentos_Oficiais_v1.md`](02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md) — matriz canônica 01-08 dos documentos oficiais obrigatórios.
+- [`HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md`](02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md) — matriz canônica 09-14 dos documentos não-obrigatórios mas requeridos.
+- [`HUB_Instrucao_Vault_Documentos_Oficiais.md`](02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md) — instrução visual do vault isolado `HUB_Documentos_Oficiais`.
 - [`HUB_Lacunas_Projeto.base`](00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base) — base de dados dos gaps.
 - [`HUB_Tarefas_Projeto.base`](04-project-management/tarefas/HUB_Tarefas_Projeto.base) — base central das tarefas do blueprint (BP-001..008).
 - [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — base de execução das 56 tarefas de fase (9 views: por Fase, Crítico `★`, Paralelizáveis, Kanban, Prioridade, Por Dono, Portfolio, Bloqueadas, Gaps).
