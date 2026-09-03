@@ -6,7 +6,7 @@ You can delete the whole `Canvas Bases/` folder when you are done. Canvas Bases 
 
 ## 1. See linked notes
 
-![[Canvas Bases/Views/Getting Started.base]]
+![[Getting Started.base]]
 
 This first view is a live Canvas Bases layout backed by a Base. The Base selects the demo notes tagged `canvas-bases-demo`, groups them by `status`, and sorts them by status and file name.
 
@@ -25,7 +25,7 @@ If the property already has a value, Canvas Bases appends the new link instead o
 
 ## 2. Try active zones and grouping
 
-![[Canvas Bases/Views/Getting Started.base#Assignment zones]]
+![[Getting Started.base#Assignment zones]]
 
 The `Assignment zones` view uses the same Base results, but switches the board to columns and turns each `status` group into an active assignment zone. Dragging a card into another status group writes that status back to the note frontmatter.
 

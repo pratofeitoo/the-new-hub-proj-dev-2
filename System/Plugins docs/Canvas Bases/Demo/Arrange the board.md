@@ -4,7 +4,7 @@ tags:
 status: 2. Arrange
 area: Board
 related:
-  - "[[Canvas Bases/Demo/Create a Canvas snapshot]]"
+  - "[[Create a Canvas snapshot]]"
 ---
 
 # Arrange the board

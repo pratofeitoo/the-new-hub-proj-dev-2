@@ -12,7 +12,7 @@ formulas:
   urgencyScore: if(due.isEmpty() && scheduled.isEmpty(), formula.priorityWeight, formula.priorityWeight + max(0, 10 - if(formula.daysUntilDue, formula.daysUntilDue, 0)))
 views:
   - type: tasknotesKanban
-    name: "Kanban — por Status"
+    name: Kanban — por Status
     groupBy:
       property: status
       direction: ASC
@@ -35,7 +35,7 @@ views:
       hideEmptyColumns: false
     columnOrder: '{"note.status":["open","pendente","in-progress","em-revisao","done","concluido","none"]}'
   - type: tasknotesKanban
-    name: "Kanban — por Horizonte"
+    name: Kanban — por Horizonte
     groupBy:
       property: formula.horizon
       direction: DESC
@@ -57,7 +57,7 @@ views:
       hideEmptyColumns: false
     columnOrder: '{"formula.horizon":["AGORA — antes do CNPJ","0-6M — empresa operando","6-18M — captação/escala","Sem horizonte"]}'
   - type: tasknotesTaskList
-    name: "Lista — Prioridade AGORA primeiro"
+    name: Lista — Prioridade AGORA primeiro
     groupBy:
       property: formula.horizon
       direction: DESC
@@ -77,7 +77,7 @@ views:
       - property: due
         direction: ASC
   - type: tasknotesTaskList
-    name: "Bloqueados — precisa liberar GOV-001"
+    name: Bloqueados — precisa liberar GOV-001
     filters:
       and:
         - file.hasTag("documentacao-oficial")
@@ -95,7 +95,7 @@ views:
       - property: due
         direction: ASC
   - type: tasknotesTaskList
-    name: "Epic + Subtasks"
+    name: Epic + Subtasks
     groupBy:
       property: projects
       direction: ASC
@@ -109,3 +109,76 @@ views:
     sort:
       - property: due
         direction: ASC
+  - type: canvas-bases
+    name: Canvas — Documentação Oficial
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - status
+      - priority
+      - due
+      - scheduled
+      - projects
+      - contexts
+      - blockedBy
+      - file.tasks
+      - owner
+    sort:
+      - property: formula.urgencyScore
+        direction: DESC
+    canvasBasesLayout: columns
+    canvasBasesEdgeMode: properties
+    canvasBasesEdgeProperties: blockedBy
+    canvasBasesShowBodyEditor: false
+    canvasBasesNodeWidth: 360
+    canvasBasesNodeHeight: 200
+    canvasBasesPreservePositions: true
+    canvasBasesRemoveMissingNodes: true
+    canvasBasesLinkedCanvasPath: TaskNotes/Views/documentacao-oficial.canvas
+    canvasBasesZones:
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: open
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: pendente
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: in-progress
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: em-revisao
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: done
+        updateMode: replace
+        valueType: string
+      - origin: bases
+        action: set-property
+        property: note.status
+        value: concluido
+        updateMode: replace
+        valueType: string
+      - origin: custom
+        id: bloqueado
+        label: ⛔ Bloqueado
+        action: set-property
+        property: note.status
+        value: bloqueado
+        updateMode: replace
+        valueType: string
+        color: "#ef4444"

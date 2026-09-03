@@ -4,7 +4,7 @@ tags:
 status: 1. Choose
 area: Setup
 related:
-  - "[[Canvas Bases/Demo/Arrange the board]]"
+  - "[[Arrange the board]]"
 ---
 
 # Choose notes with a Base

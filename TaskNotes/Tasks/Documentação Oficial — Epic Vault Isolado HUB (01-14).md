@@ -1,5 +1,4 @@
 ---
-title: "Documentação Oficial — Epic Vault Isolado HUB (01-14)"
 status: open
 priority: high
 dateCreated: 2026-09-02T18:30:00.000-03:00
@@ -18,6 +17,7 @@ contexts:
 timeEstimate: 480
 due: 2026-09-30
 scheduled: 2026-09-03
+dateModified: 2026-09-02T18:06:50.622-03:00
 ---
 
 # Documentação Oficial — Epic Vault Isolado HUB (01-14)
@@ -46,7 +46,7 @@ Este epic agrupa:
 - **Agenda:** `due` e `scheduled` aparecem em `agenda-default.base` e `calendar-default.base`
 
 ## Checklist epic
-- [ ] Vault isolado criado (prompt v2 executado)
+- [x] Vault isolado criado (prompt v2 executado)
 - [ ] 59 arquivos .md gerados a partir dos 2 templates
 - [ ] GOV-001 decidido e registrado em `00-controle/03-decisao-GOV-001-estrutura-societaria.md`
 - [ ] 7 docs AGORA em `aprovado/em_uso`

@@ -3,14 +3,14 @@ title: Painel de Tarefas
 tags:
   - dashboard
   - tasknotes
-description: Painel unificado — Dataview + Obsidian Charts sobre TaskNotes/Tasks (operacional, 26 notas) + 04-project-management/tarefas (blueprint/P01-P07, 64 notas)
+description: Painel unificado — Dataview + Obsidian Charts sobre TaskNotes/Tasks (operacional, 31 notas) + 04-project-management/tarefas (blueprint/P01-P07, 64 notas)
 ---
 
 # Painel de Tarefas — Unificado (Operacional + Blueprint)
 
 > Visão ao vivo de **dois sistemas de tarefas** renderizada com **Dataview** + **Obsidian Charts** (`dataviewjs` + `window.renderChart`):
-> - `TaskNotes/Tasks` — tarefas operacionais (26 notas, plugin TaskNotes, `status: open/in-progress/em-revisao`, `priority: high/normal`, `owner`, `due`, `dateCreated`)
-> - `04-project-management/tarefas` — tarefas de blueprint e fases (64 notas: `BP-001..008` + `P01-T01..P07-T07`, `status: concluido/em-revisao/pendente`, `priority: critica/alta/critical/high`, `phase: P01..P07`, `layer: blueprint/refining/approval`, `gap_ids`)
+> - `TaskNotes/Tasks` — tarefas operacionais (31 notas, plugin TaskNotes, `status: open/in-progress/em-revisao`, `priority: high/normal`, `owner`, `due`, `dateCreated`) — inclui epic `Documentação Oficial (01-14)` + 4 subtasks `GOV-001/AGORA/01-08/09-14`
+> - `04-project-management/tarefas` — tarefas de blueprint e fases (64 notas: `BP-001..008` + `P01-T01..P07-T07`, `status: em-revisao/sem status`, `priority: critica/alta/critical/high`, `phase: P01..P07`, `layer: blueprint/refining/approval`, `gap_ids`)
 > Veja [[System/Plugins docs/Charts Plugin Docs/Basics|Basics]] e [[System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian|Creating Dynamic Graphs]] para os padrões subjacentes.
 
 ## Pré-requisitos
@@ -29,7 +29,7 @@ description: Painel unificado — Dataview + Obsidian Charts sobre TaskNotes/Tas
 
 ```dataview
 TABLE WITHOUT ID
-  length(rows) as "Total (90)",
+  length(rows) as "Total (95)",
   length(filter(rows, (r) => contains(string(r.status), "open"))) as "Abertas (ops)",
   length(filter(rows, (r) => contains(string(r.status), "in-progress"))) as "Em Progresso",
   length(filter(rows, (r) => contains(string(r.status), "em-revisao"))) as "Em Revisão",
@@ -47,7 +47,7 @@ const ops = dv.pages('"TaskNotes/Tasks"');
 const bp = dv.pages('"04-project-management/tarefas"');
 const by = (pages, fn) => pages.where(fn).length;
 
-dv.paragraph(`**Unificado (90):** Total ${all.length} · Abertas ${by(all, p=>normStatus(p)==="open")} · Em Progresso ${by(all, p=>normStatus(p)==="in-progress")} · Em Revisão ${by(all, p=>normStatus(p)==="em-revisao")} · Pendentes ${by(all, p=>normStatus(p)==="pendente")} · Concluídas ${by(all, p=>normStatus(p)==="concluido")} — **Ops:** ${ops.length} · **Blueprint/P0x:** ${bp.length}`);
+dv.paragraph(`**Unificado (95):** Total ${all.length} · Abertas ${by(all, p=>normStatus(p)==="open")} · Em Progresso ${by(all, p=>normStatus(p)==="in-progress")} · Em Revisão ${by(all, p=>normStatus(p)==="em-revisao")} · Pendentes ${by(all, p=>normStatus(p)==="pendente")} · Concluídas ${by(all, p=>normStatus(p)==="concluido")} — **Ops:** ${ops.length} · **Blueprint/P0x:** ${bp.length}`);
 ```
 
 ### Detalhamento por fonte
@@ -80,16 +80,16 @@ GROUP BY true
 
 ## Gráficos — Estáticos (somente plugin Charts, sem JS)
 
-> Fallback quando o DataviewJS está desativado. Valores = vault em 2026-09-02: **26 ops + 64 blueprint = 90 total**. Todo o texto em branco para tema escuro.
+> Fallback quando o DataviewJS está desativado. Valores = vault em 2026-09-02 18:30: **31 ops + 64 blueprint = 95 total** (ops: 19 open, 6 in-progress, 6 em-revisao; blueprint: 56 sem status, 8 em-revisao). Todo o texto em branco para tema escuro.
 
 ### Status unificado — rosca
 
 ```chart
 type: doughnut
-labels: [open, "em-revisao", "in-progress", pendente, concluido]
+labels: [open, "em-revisao", "in-progress", none]
 series:
   - title: Unificado por status
-    data: [18, 22, 3, 34, 13]
+    data: [19, 6, 6, 56]
 width: 60%
 labelColors: false
 legend: true
@@ -108,7 +108,7 @@ type: bar
 labels: ["TaskNotes/Tasks", "04-project-management/tarefas"]
 series:
   - title: Tarefas por fonte
-    data: [26, 64]
+    data: [31, 64]
 beginAtZero: true
 yTitle: Tarefas
 options:
@@ -176,7 +176,7 @@ type: bar
 labels: [critica, alta, critical, high, normal]
 series:
   - title: Unificado por prioridade (bruto)
-    data: [25, 31, 5, 8, 21]
+    data: [25, 31, 5, 12, 22]
 beginAtZero: true
 yTitle: Tarefas
 options:
@@ -370,7 +370,8 @@ LIMIT 15
 
 - **Kanban Ops (TaskNotes):** ![[TaskNotes/Views/kanban-default.base]]
 - **Agenda Ops:** ![[TaskNotes/Views/agenda-default.base]]
-- **Lista Ops:** ![[TaskNotes/Views/tasks-default.base]]
+- **Lista Ops:** ![[TaskNotes/Views/tasks-default.base]] — agora 4 views: Today / Next 7 Days / Backlog / All Tasks
+- **Documentação Oficial — Kanban + Horizonte + Canvas:** ![[TaskNotes/Views/documentacao-oficial.base]] — 6 views: Kanban por Status, Kanban por Horizonte, Lista AGORA, Bloqueados (GOV-001), Epic + Subtasks, Canvas — Documentação Oficial (columns + edges `blockedBy`)
 - **Blueprint — todas P01..P07 (64 tarefas + 8 BP):** ![[04-project-management/tarefas/HUB_Tarefas_Projeto.base]]
 - **Blueprint — quadro de execução (56 tarefas de fase, 9 visões):** ![[04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base]]
 
@@ -387,5 +388,6 @@ LIMIT 15
 
 1. Abra esta nota no **modo Leitura**.
 2. Confirme que os 7 gráficos dinâmicos renderizam (rosca, barras empilhadas, barras por fase, rosca por camada, barras por prioridade, barras por responsável, linha) — todos os rótulos/ticks/legendas em branco.
-3. Os KPIs no topo devem mostrar `Total 90` (26 ops + 64 blueprint) — ajuste após adicionar/arquivar tarefas.
+3. Os KPIs no topo devem mostrar `Total 95` (31 ops + 64 blueprint — ops: 19 open/6 in-progress/6 em-revisao; blueprint: 56 sem status/8 em-revisao) — ajuste após adicionar/arquivar tarefas.
 4. Se os gráficos ficarem em branco: verifique o Console do Desenvolvedor por `window.renderChart is not a function` → instale/ative Obsidian Charts e Dataview (JS Queries ON).
+5. Valide que `![[TaskNotes/Views/documentacao-oficial.base]]` mostra 6 views e que `Canvas — Documentação Oficial` desenha edges `GOV-001 → AGORA → 01-08 → 09-14` via `blockedBy`.

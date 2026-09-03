@@ -35,6 +35,32 @@
             }
           },
           {
+            "id": "8f416cef3f87ebda",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/tasks-default.base",
+                "viewName": "Today"
+              },
+              "icon": "tasknotes-simple",
+              "title": "tasks-default"
+            }
+          },
+          {
+            "id": "07d3621d8e71f362",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/documentacao-oficial.base",
+                "viewName": "Kanban — por Status"
+              },
+              "icon": "tasknotes-simple",
+              "title": "documentacao-oficial"
+            }
+          },
+          {
             "id": "f7eb9cf3a221d908",
             "type": "leaf",
             "state": {
@@ -54,14 +80,13 @@
               "type": "bases",
               "state": {
                 "file": "TaskNotes/Views/documentacao-oficial.base",
-                "viewName": "Epic + Subtasks"
+                "viewName": "Kanban — por Status"
               },
               "icon": "tasknotes-simple",
               "title": "documentacao-oficial"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -245,17 +270,23 @@
       "tasknotes:Open Kanban board": false,
       "tasknotes:Open Pomodoro timer": true,
       "tasknotes:Open Pomodoro statistics": true,
-      "tasknotes:Create new task": false,
-      "webpage-html-export:Export as HTML": false
+      "tasknotes:Create new task": false
     }
   },
-  "active": "dc1ec606c47091ac",
+  "active": "fdb4515863ea1f32",
   "lastOpenFiles": [
-    "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Views/documentacao-oficial.base",
-    "project-map.md",
+    "state.md",
+    "session-log.md",
     "00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base",
+    "00-project-control/registro-lacunas/HUB_Gaps.canvas",
+    "TaskNotes/Views/tasks-default.base",
     "02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md",
+    "TaskNotes/Views/kanban-default.base",
+    "TaskNotes/Task Dashboard.md",
+    "02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md",
+    "TaskNotes/Views/relationships.base",
+    "project-map.md",
     "02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md",
     "00-project-control/registro-lacunas/lacunas/GOV-001.md",
     "TaskNotes/Tasks/Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M.md",
@@ -263,31 +294,24 @@
     "TaskNotes/Tasks/Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ.md",
     "TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs).md",
     "TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14).md",
-    "02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md",
-    "TaskNotes/Views/tasks-default.base",
     "04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base",
     "TaskNotes/Archive/Configurar um diretório dedicado para documentações oficiais e formas do projeto.md",
-    "session-log.md",
-    "state.md",
     "04-project-management/HUB_Log_Tarefas_Progresso.md",
-    "00-project-control/registro-lacunas/HUB_Gaps.canvas",
     "04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.canvas",
-    "TaskNotes/Task Dashboard.md",
-    "Canvas Bases/Views/Getting Started.base",
+    "System/Plugins docs/Canvas Bases/Views/Getting Started.base",
     "System/Plugins docs/Task Notes/Canvas Bases.md",
-    "Canvas Bases/Start Here.md",
+    "System/Plugins docs/Canvas Bases/Start Here.md",
     "System/Plugins docs/Task Notes/TaskNotes Obsidian CLI.md",
     "System/Plugins docs/Task Notes/mdbase-tasknotes CLI.md",
     "System/Plugins docs/Task Notes/Integrations Settings.md",
     "System/Plugins docs/Task Notes/Companion Plugins.md",
-    "Canvas Bases/Demo/Create a Canvas snapshot.md",
-    "Canvas Bases/Demo/Arrange the board.md",
-    "Canvas Bases/Demo/Choose notes with a Base.md",
-    "Canvas Bases/Demo",
-    "Canvas Bases/Views",
-    "Canvas Bases/Canvases",
-    "Canvas Bases",
+    "System/Plugins docs/Canvas Bases/Demo/Create a Canvas snapshot.md",
+    "System/Plugins docs/Canvas Bases/Demo/Arrange the board.md",
+    "System/Plugins docs/Canvas Bases/Demo/Choose notes with a Base.md",
+    "System/Plugins docs/Canvas Bases/Demo",
+    "System/Plugins docs/Canvas Bases/Views",
+    "System/Plugins docs/Canvas Bases/Canvases",
     "TaskNotes/Tasks/Preparar slide valor piloto (valor fechado, sem breakdown).md",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais/ChatGPT Image 29 de ago. de 2026, 12_25_24.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",

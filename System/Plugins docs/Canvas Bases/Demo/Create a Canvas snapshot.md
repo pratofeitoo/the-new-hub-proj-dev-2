@@ -4,7 +4,7 @@ tags:
 status: 3. Snapshot
 area: Canvas
 related:
-  - "[[Canvas Bases/Demo/Choose notes with a Base]]"
+  - "[[Choose notes with a Base]]"
 ---
 
 # Create a Canvas snapshot

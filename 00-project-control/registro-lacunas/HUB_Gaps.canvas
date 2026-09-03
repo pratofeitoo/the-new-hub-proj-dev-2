@@ -1,716 +1,83 @@
 {
-  "nodes": [
-    {
-      "id": "legend-gaps",
-      "type": "text",
-      "x": 0,
-      "y": -260,
-      "width": 3500,
-      "height": 200,
-      "text": "# HUB — Gap Portfolio  —  Canvas Bases snapshot (68 gaps)\n**Source:** `00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base`  ·  **Groups:** domain (5-data-and-intelligence, etc)  ·  **Edges:** `related_tasks` → BP tasks (add BP file nodes to see edges, or open HUB_Tarefas_Projeto.canvas alongside)\n> Use **Create canvas from current bases view** to regenerate after adding gaps."
-    },
-    {
-      "id": "group-10-brand-and-communications",
-      "type": "group",
-      "x": 0,
-      "y": 0,
-      "width": 1860,
-      "height": 400,
-      "label": "10-brand-and-communications — 4 gaps",
-      "color": "5"
-    },
-    {
-      "id": "group-11-launch-and-readiness",
-      "type": "group",
-      "x": 1890,
-      "y": 0,
-      "width": 1860,
-      "height": 540,
-      "label": "11-launch-and-readiness — 7 gaps",
-      "color": "1"
-    },
-    {
-      "id": "group-3-strategy-and-business-model",
-      "type": "group",
-      "x": 3780,
-      "y": 0,
-      "width": 1860,
-      "height": 540,
-      "label": "3-strategy-and-business-model — 8 gaps",
-      "color": "1"
-    },
-    {
-      "id": "group-4-product-and-operations",
-      "type": "group",
-      "x": 5670,
-      "y": 0,
-      "width": 1860,
-      "height": 540,
-      "label": "4-product-and-operations — 8 gaps",
-      "color": "1"
-    },
-    {
-      "id": "group-5-data-and-intelligence",
-      "type": "group",
-      "x": 7560,
-      "y": 0,
-      "width": 1860,
-      "height": 780,
-      "label": "5-data-and-intelligence — 10 gaps",
-      "color": "1"
-    },
-    {
-      "id": "group-6-technology-and-integrations",
-      "type": "group",
-      "x": 9450,
-      "y": 0,
-      "width": 1860,
-      "height": 540,
-      "label": "6-technology-and-integrations — 7 gaps",
-      "color": "1"
-    },
-    {
-      "id": "group-7-finance-and-value",
-      "type": "group",
-      "x": 11340,
-      "y": 0,
-      "width": 1860,
-      "height": 540,
-      "label": "7-finance-and-value — 7 gaps",
-      "color": "1"
-    },
-    {
-      "id": "group-8-governance-legal-and-trust",
-      "type": "group",
-      "x": 13230,
-      "y": 0,
-      "width": 1860,
-      "height": 780,
-      "label": "8-governance-legal-and-trust — 10 gaps",
-      "color": "1"
-    },
-    {
-      "id": "group-9-market-gtm-and-partnerships",
-      "type": "group",
-      "x": 15120,
-      "y": 0,
-      "width": 1860,
-      "height": 540,
-      "label": "9-market-gtm-and-partnerships — 7 gaps",
-      "color": "1"
-    },
-    {
-      "id": "gap-brd-001",
-      "type": "file",
-      "x": 20,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/BRD-001.md"
-    },
-    {
-      "id": "gap-brd-002",
-      "type": "file",
-      "x": 480,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/BRD-002.md"
-    },
-    {
-      "id": "gap-brd-003",
-      "type": "file",
-      "x": 940,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/BRD-003.md"
-    },
-    {
-      "id": "gap-brd-004",
-      "type": "file",
-      "x": 1400,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/BRD-004.md"
-    },
-    {
-      "id": "gap-lch-001",
-      "type": "file",
-      "x": 1910,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/LCH-001.md"
-    },
-    {
-      "id": "gap-lch-002",
-      "type": "file",
-      "x": 2370,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/LCH-002.md"
-    },
-    {
-      "id": "gap-lch-003",
-      "type": "file",
-      "x": 2830,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/LCH-003.md"
-    },
-    {
-      "id": "gap-lch-004",
-      "type": "file",
-      "x": 3290,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/LCH-004.md"
-    },
-    {
-      "id": "gap-lch-005",
-      "type": "file",
-      "x": 1910,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/LCH-005.md"
-    },
-    {
-      "id": "gap-lch-006",
-      "type": "file",
-      "x": 2370,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/LCH-006.md"
-    },
-    {
-      "id": "gap-lch-007",
-      "type": "file",
-      "x": 2830,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/LCH-007.md"
-    },
-    {
-      "id": "gap-str-001",
-      "type": "file",
-      "x": 3800,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-001.md"
-    },
-    {
-      "id": "gap-str-002",
-      "type": "file",
-      "x": 4260,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-002.md"
-    },
-    {
-      "id": "gap-str-003",
-      "type": "file",
-      "x": 4720,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-003.md"
-    },
-    {
-      "id": "gap-str-004",
-      "type": "file",
-      "x": 5180,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-004.md"
-    },
-    {
-      "id": "gap-str-005",
-      "type": "file",
-      "x": 3800,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-005.md"
-    },
-    {
-      "id": "gap-str-006",
-      "type": "file",
-      "x": 4260,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-006.md"
-    },
-    {
-      "id": "gap-str-007",
-      "type": "file",
-      "x": 4720,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-007.md"
-    },
-    {
-      "id": "gap-str-008",
-      "type": "file",
-      "x": 5180,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/STR-008.md"
-    },
-    {
-      "id": "gap-prd-001",
-      "type": "file",
-      "x": 5690,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-001.md"
-    },
-    {
-      "id": "gap-prd-002",
-      "type": "file",
-      "x": 6150,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-002.md"
-    },
-    {
-      "id": "gap-prd-003",
-      "type": "file",
-      "x": 6610,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-003.md"
-    },
-    {
-      "id": "gap-prd-004",
-      "type": "file",
-      "x": 7070,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-004.md"
-    },
-    {
-      "id": "gap-prd-005",
-      "type": "file",
-      "x": 5690,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-005.md"
-    },
-    {
-      "id": "gap-prd-006",
-      "type": "file",
-      "x": 6150,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-006.md"
-    },
-    {
-      "id": "gap-prd-007",
-      "type": "file",
-      "x": 6610,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-007.md"
-    },
-    {
-      "id": "gap-prd-008",
-      "type": "file",
-      "x": 7070,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/PRD-008.md"
-    },
-    {
-      "id": "gap-dat-001",
-      "type": "file",
-      "x": 7580,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-001.md"
-    },
-    {
-      "id": "gap-dat-002",
-      "type": "file",
-      "x": 8040,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-002.md"
-    },
-    {
-      "id": "gap-dat-003",
-      "type": "file",
-      "x": 8500,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-003.md"
-    },
-    {
-      "id": "gap-dat-004",
-      "type": "file",
-      "x": 8960,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-004.md"
-    },
-    {
-      "id": "gap-dat-005",
-      "type": "file",
-      "x": 7580,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-005.md"
-    },
-    {
-      "id": "gap-dat-006",
-      "type": "file",
-      "x": 8040,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-006.md"
-    },
-    {
-      "id": "gap-dat-007",
-      "type": "file",
-      "x": 8500,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-007.md"
-    },
-    {
-      "id": "gap-dat-008",
-      "type": "file",
-      "x": 8960,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-008.md"
-    },
-    {
-      "id": "gap-dat-009",
-      "type": "file",
-      "x": 7580,
-      "y": 560,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-009.md"
-    },
-    {
-      "id": "gap-dat-010",
-      "type": "file",
-      "x": 8040,
-      "y": 560,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/DAT-010.md"
-    },
-    {
-      "id": "gap-tec-001",
-      "type": "file",
-      "x": 9470,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/TEC-001.md"
-    },
-    {
-      "id": "gap-tec-002",
-      "type": "file",
-      "x": 9930,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/TEC-002.md"
-    },
-    {
-      "id": "gap-tec-003",
-      "type": "file",
-      "x": 10390,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/TEC-003.md"
-    },
-    {
-      "id": "gap-tec-004",
-      "type": "file",
-      "x": 10850,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/TEC-004.md"
-    },
-    {
-      "id": "gap-tec-005",
-      "type": "file",
-      "x": 9470,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/TEC-005.md"
-    },
-    {
-      "id": "gap-tec-006",
-      "type": "file",
-      "x": 9930,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/TEC-006.md"
-    },
-    {
-      "id": "gap-tec-007",
-      "type": "file",
-      "x": 10390,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/TEC-007.md"
-    },
-    {
-      "id": "gap-fin-001",
-      "type": "file",
-      "x": 11360,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/FIN-001.md"
-    },
-    {
-      "id": "gap-fin-002",
-      "type": "file",
-      "x": 11820,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/FIN-002.md"
-    },
-    {
-      "id": "gap-fin-003",
-      "type": "file",
-      "x": 12280,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/FIN-003.md"
-    },
-    {
-      "id": "gap-fin-004",
-      "type": "file",
-      "x": 12740,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/FIN-004.md"
-    },
-    {
-      "id": "gap-fin-005",
-      "type": "file",
-      "x": 11360,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/FIN-005.md"
-    },
-    {
-      "id": "gap-fin-006",
-      "type": "file",
-      "x": 11820,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/FIN-006.md"
-    },
-    {
-      "id": "gap-fin-007",
-      "type": "file",
-      "x": 12280,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/FIN-007.md"
-    },
-    {
-      "id": "gap-gov-001",
-      "type": "file",
-      "x": 13250,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-001.md"
-    },
-    {
-      "id": "gap-gov-002",
-      "type": "file",
-      "x": 13710,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-002.md"
-    },
-    {
-      "id": "gap-gov-003",
-      "type": "file",
-      "x": 14170,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-003.md"
-    },
-    {
-      "id": "gap-gov-004",
-      "type": "file",
-      "x": 14630,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-004.md"
-    },
-    {
-      "id": "gap-gov-005",
-      "type": "file",
-      "x": 13250,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-005.md"
-    },
-    {
-      "id": "gap-gov-006",
-      "type": "file",
-      "x": 13710,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-006.md"
-    },
-    {
-      "id": "gap-gov-007",
-      "type": "file",
-      "x": 14170,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-007.md"
-    },
-    {
-      "id": "gap-gov-008",
-      "type": "file",
-      "x": 14630,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-008.md"
-    },
-    {
-      "id": "gap-gov-009",
-      "type": "file",
-      "x": 13250,
-      "y": 560,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-009.md"
-    },
-    {
-      "id": "gap-gov-010",
-      "type": "file",
-      "x": 13710,
-      "y": 560,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GOV-010.md"
-    },
-    {
-      "id": "gap-gtm-001",
-      "type": "file",
-      "x": 15140,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GTM-001.md"
-    },
-    {
-      "id": "gap-gtm-002",
-      "type": "file",
-      "x": 15600,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GTM-002.md"
-    },
-    {
-      "id": "gap-gtm-003",
-      "type": "file",
-      "x": 16060,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GTM-003.md"
-    },
-    {
-      "id": "gap-gtm-004",
-      "type": "file",
-      "x": 16520,
-      "y": 80,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GTM-004.md"
-    },
-    {
-      "id": "gap-gtm-005",
-      "type": "file",
-      "x": 15140,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GTM-005.md"
-    },
-    {
-      "id": "gap-gtm-006",
-      "type": "file",
-      "x": 15600,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GTM-006.md"
-    },
-    {
-      "id": "gap-gtm-007",
-      "type": "file",
-      "x": 16060,
-      "y": 320,
-      "width": 420,
-      "height": 200,
-      "file": "00-project-control/registro-lacunas/lacunas/GTM-007.md"
-    }
-  ],
-  "edges": []
+	"nodes":[
+		{"id":"legend-gaps","type":"text","x":0,"y":-260,"width":3500,"height":200,"text":"# HUB — Gap Portfolio  —  Canvas Bases snapshot (68 gaps)\n**Source:** `00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base`  ·  **Groups:** domain (5-data-and-intelligence, etc)  ·  **Edges:** `related_tasks` → BP tasks (add BP file nodes to see edges, or open HUB_Tarefas_Projeto.canvas alongside)\n> Use **Create canvas from current bases view** to regenerate after adding gaps."},
+		{"id":"group-10-brand-and-communications","type":"group","x":0,"y":0,"width":1860,"height":400,"label":"10-brand-and-communications — 4 gaps","color":"5"},
+		{"id":"group-11-launch-and-readiness","type":"group","x":1890,"y":0,"width":1860,"height":540,"label":"11-launch-and-readiness — 7 gaps","color":"1"},
+		{"id":"group-3-strategy-and-business-model","type":"group","x":3780,"y":0,"width":1860,"height":540,"label":"3-strategy-and-business-model — 8 gaps","color":"1"},
+		{"id":"group-4-product-and-operations","type":"group","x":5670,"y":0,"width":1860,"height":540,"label":"4-product-and-operations — 8 gaps","color":"1"},
+		{"id":"group-5-data-and-intelligence","type":"group","x":7560,"y":0,"width":1860,"height":780,"label":"5-data-and-intelligence — 10 gaps","color":"1"},
+		{"id":"group-6-technology-and-integrations","type":"group","x":9450,"y":0,"width":1860,"height":540,"label":"6-technology-and-integrations — 7 gaps","color":"1"},
+		{"id":"group-7-finance-and-value","type":"group","x":11340,"y":0,"width":1860,"height":540,"label":"7-finance-and-value — 7 gaps","color":"1"},
+		{"id":"group-8-governance-legal-and-trust","type":"group","x":13230,"y":0,"width":1860,"height":780,"label":"8-governance-legal-and-trust — 10 gaps","color":"1"},
+		{"id":"group-9-market-gtm-and-partnerships","type":"group","x":15120,"y":0,"width":1860,"height":540,"label":"9-market-gtm-and-partnerships — 7 gaps","color":"1"},
+		{"id":"gap-brd-001","type":"file","x":20,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/BRD-001.md"},
+		{"id":"gap-brd-002","type":"file","x":480,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/BRD-002.md"},
+		{"id":"gap-brd-003","type":"file","x":940,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/BRD-003.md"},
+		{"id":"gap-brd-004","type":"file","x":1400,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/BRD-004.md"},
+		{"id":"gap-lch-001","type":"file","x":1910,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/LCH-001.md"},
+		{"id":"gap-lch-002","type":"file","x":2370,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/LCH-002.md"},
+		{"id":"gap-lch-003","type":"file","x":2830,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/LCH-003.md"},
+		{"id":"gap-lch-004","type":"file","x":3290,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/LCH-004.md"},
+		{"id":"gap-lch-005","type":"file","x":1910,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/LCH-005.md"},
+		{"id":"gap-lch-006","type":"file","x":2370,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/LCH-006.md"},
+		{"id":"gap-lch-007","type":"file","x":2830,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/LCH-007.md"},
+		{"id":"gap-str-001","type":"file","x":3800,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-001.md"},
+		{"id":"gap-str-002","type":"file","x":4260,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-002.md"},
+		{"id":"gap-str-003","type":"file","x":4720,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-003.md"},
+		{"id":"gap-str-004","type":"file","x":5180,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-004.md"},
+		{"id":"gap-str-005","type":"file","x":3800,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-005.md"},
+		{"id":"gap-str-006","type":"file","x":4260,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-006.md"},
+		{"id":"gap-str-007","type":"file","x":4720,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-007.md"},
+		{"id":"gap-str-008","type":"file","x":5180,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/STR-008.md"},
+		{"id":"gap-prd-001","type":"file","x":5690,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-001.md"},
+		{"id":"gap-prd-002","type":"file","x":6150,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-002.md"},
+		{"id":"gap-prd-003","type":"file","x":6610,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-003.md"},
+		{"id":"gap-prd-004","type":"file","x":7070,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-004.md"},
+		{"id":"gap-prd-005","type":"file","x":5690,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-005.md"},
+		{"id":"gap-prd-006","type":"file","x":6150,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-006.md"},
+		{"id":"gap-prd-007","type":"file","x":6610,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-007.md"},
+		{"id":"gap-prd-008","type":"file","x":7070,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/PRD-008.md"},
+		{"id":"gap-dat-001","type":"file","x":7580,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-001.md"},
+		{"id":"gap-dat-002","type":"file","x":8040,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-002.md"},
+		{"id":"gap-dat-003","type":"file","x":8500,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-003.md"},
+		{"id":"gap-dat-004","type":"file","x":8960,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-004.md"},
+		{"id":"gap-dat-005","type":"file","x":7580,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-005.md"},
+		{"id":"gap-dat-006","type":"file","x":8040,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-006.md"},
+		{"id":"gap-dat-007","type":"file","x":8500,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-007.md"},
+		{"id":"gap-dat-008","type":"file","x":8960,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-008.md"},
+		{"id":"gap-dat-009","type":"file","x":7580,"y":560,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-009.md"},
+		{"id":"gap-dat-010","type":"file","x":8040,"y":560,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/DAT-010.md"},
+		{"id":"gap-tec-001","type":"file","x":9470,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/TEC-001.md"},
+		{"id":"gap-tec-002","type":"file","x":9930,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/TEC-002.md"},
+		{"id":"gap-tec-003","type":"file","x":10390,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/TEC-003.md"},
+		{"id":"gap-tec-004","type":"file","x":10850,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/TEC-004.md"},
+		{"id":"gap-tec-005","type":"file","x":9470,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/TEC-005.md"},
+		{"id":"gap-tec-006","type":"file","x":9930,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/TEC-006.md"},
+		{"id":"gap-tec-007","type":"file","x":10390,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/TEC-007.md"},
+		{"id":"gap-fin-001","type":"file","x":11360,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/FIN-001.md"},
+		{"id":"gap-fin-002","type":"file","x":11820,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/FIN-002.md"},
+		{"id":"gap-fin-003","type":"file","x":12280,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/FIN-003.md"},
+		{"id":"gap-fin-004","type":"file","x":12740,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/FIN-004.md"},
+		{"id":"gap-fin-005","type":"file","x":11360,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/FIN-005.md"},
+		{"id":"gap-fin-006","type":"file","x":11820,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/FIN-006.md"},
+		{"id":"gap-fin-007","type":"file","x":12280,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/FIN-007.md"},
+		{"id":"gap-gov-001","type":"file","x":13250,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-001.md"},
+		{"id":"gap-gov-002","type":"file","x":13710,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-002.md"},
+		{"id":"gap-gov-003","type":"file","x":14170,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-003.md"},
+		{"id":"gap-gov-004","type":"file","x":14630,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-004.md"},
+		{"id":"gap-gov-005","type":"file","x":13250,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-005.md"},
+		{"id":"gap-gov-006","type":"file","x":13710,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-006.md"},
+		{"id":"gap-gov-007","type":"file","x":14170,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-007.md"},
+		{"id":"gap-gov-008","type":"file","x":14630,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-008.md"},
+		{"id":"gap-gov-009","type":"file","x":13250,"y":560,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-009.md"},
+		{"id":"gap-gov-010","type":"file","x":13710,"y":560,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GOV-010.md"},
+		{"id":"gap-gtm-001","type":"file","x":15140,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GTM-001.md"},
+		{"id":"gap-gtm-002","type":"file","x":15600,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GTM-002.md"},
+		{"id":"gap-gtm-003","type":"file","x":16060,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GTM-003.md"},
+		{"id":"gap-gtm-004","type":"file","x":16520,"y":80,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GTM-004.md"},
+		{"id":"gap-gtm-005","type":"file","x":15140,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GTM-005.md"},
+		{"id":"gap-gtm-006","type":"file","x":15600,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GTM-006.md"},
+		{"id":"gap-gtm-007","type":"file","x":16060,"y":320,"width":420,"height":200,"file":"00-project-control/registro-lacunas/lacunas/GTM-007.md"}
+	],
+	"edges":[]
 }
