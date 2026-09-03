@@ -16,6 +16,8 @@ tags:
 
 > **Status:** rascunho para validação Dados+Tech · **G03.C1** · Nenhuma métrica crítica com definição alternativa; catálogo permanece artefato de definição, sem certificação produção.
 > **Fontes:** `04_Indicadores_Master.csv` (73 linhas), `05_Arvore_de_Valor`, `06_Simulador_ROI`, `07_Visoes_Dashboard`, `13_Matriz_Integracao` + sínteses [[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency|indicator-financial-consistency]].
+>
+> **Matriz unificada:** [[05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz Convergencia]] — 73→16 KPIs, 25→23 nós, 12→8 módulos e M0-M4→F0-MVP4.
 
 ## 1. Resumo — 73 indicadores
 

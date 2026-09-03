@@ -17,7 +17,9 @@ tags:
 > **Status:** rascunho para validação Dados+Tech · **G03.B1** · Produtores/consumidores de teste devem passar em contrato+replay antes de promoção.
 > **Depende de:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `canonical_id`, temporalidade.
 
-## 1. Envelope canônico (obrigatório em todo evento)
+## 1. Envelope canônico v1 (obrigatório em todo evento, incluindo SRC-12)
+
+O envelope mínimo consolidado é: `event_id`, `event_type`, `schema_version`, `occurred_at`, `recorded_at`, `tenant_id`, `purpose`, `idempotency_key` e `lineage`. Os campos de domínio abaixo permanecem obrigatórios quando aplicáveis.
 
 | Campo | Tipo | Regra |
 |---|---|---|

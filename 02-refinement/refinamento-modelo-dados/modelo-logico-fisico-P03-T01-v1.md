@@ -17,7 +17,7 @@ tags:
 > **Status:** rascunho para revisão Arquitetura de Dados · **G03.A1** · Não constitui aprovação. Revisão por Dados + Tech requerida antes de promover para `03-approval`.
 > **Origem:** síntese de [[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] + blueprint [[01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]].
 
-## 1. Entidades canônicas (25) — PK estável
+## 1. Entidades canônicas (26) — PK estável
 
 Cada entidade tem `canonical_id` imutável (PK lógica), `tenant_id`, `object_type`, `created_at`, `updated_at`, `valid_from`, `valid_to`, `record_status`, `provenance_ref`. IDs de origem ficam em `identity_alias` (externo → interno).
 
@@ -50,6 +50,16 @@ Cada entidade tem `canonical_id` imutável (PK lógica), `tenant_id`, `object_ty
 | 25 | ModelVersion | `model_version_id` | — | Governança e inteligência | `trained_from/to`, `valid_from/to` |
 
 > **Regra G03.A1:** nenhuma entidade acima fica sem `canonical_id` estável. Chaves naturais (e-mail, registro fiscal, `contract_number`) são apenas aliases em `identity_alias`.
+
+### N24 Consentimento — bloqueador LGPD
+
+`N24` é um nó bloqueador: sem consentimento válido para a finalidade, ficam bloqueadas a leitura, utilização e derivação de dados sensíveis (incluindo `FLD-005`, `FLD-006`, `FLD-007` e `FLD-028`). O registro mínimo é `consent_id`, `purpose`, `legal_basis`, `titular_id`, `version`, `valid_from/to`, `status` e `revogado_em`; revogação deve propagar para derivados em até **5 minutos**, com log CMP auditável.
+
+### N26 Decisão
+
+`N26 Decision` é entidade operacional com `decision_id` (FLD-021), `recommendation_id`, `estimated_value` (FLD-022) e `realized_value` (FLD-023). Liga alerta/recomendação a ação humana e ao ledger de valor; toda decisão exige motivo, decisor e evidência.
+
+> Campos N01 `nome_social` e localização sensível dependem de N24; o gate também se aplica ao `fact_person_skill`, `fact_event` e `fact_match` quando houver finalidade sensível.
 
 ## 2. Relacionamentos — PK/FK, cardinalidade, temporalidade
 

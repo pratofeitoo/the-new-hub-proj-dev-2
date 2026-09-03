@@ -21,6 +21,13 @@ tags:
 
 Definir regras de **matching**, **merge**, **alias**, **survivorship** e **correção com reversibilidade**, testáveis em dataset sintético com métricas **FP** (falso positivo = merge indevido) e **FN** (falso negativo = match perdido).
 
+## 1.1 canonical_id vs alias
+
+- **canonical_id** (`person_id` UUID HUB) é a PK lógica, imutável, com `tenant_id`, `valid_from/to`, `record_status` e referência de proveniência.
+- **workday_id** (FLD-002) é **alias**: `{source_system: "Workday", source_id: workday_id, canonical_id: person_id}`; nunca é PK nem FK direta.
+- Todo acesso por `workday_id` resolve para `canonical_id` via `identity_alias` namespaced por `source_system` e `tenant_id`.
+- Novos campos de contrato: `consent_id` (FLD-024), `tenant_id` (FLD-040), `valid_from/to` (FLD-041), `event_id` (FLD-042), `recommendation_id` (FLD-046) e `match_id` (FLD-047).
+
 ## 2. Modelo de dados — `identity_alias` (já definido em P03-T01 v1)
 
 | Campo | Tipo | Regra |

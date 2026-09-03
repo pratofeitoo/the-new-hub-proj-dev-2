@@ -203,7 +203,7 @@ A lógica comercial completa é, portanto: implementação paga cria valor confi
 
 **ARR (KPI gerencial):** receita recorrente anualizada, não conclusão de reconhecimento contábil. Incluir somente contraprestação recorrente contratada, ativa e atribuível a serviço recorrente iniciado, com período, unidade contratante e limite de serviço identificados. Excluir implementação, projetos, eventos, uso eventual, taxas transacionais, repasses, valores variáveis não comprometidos, funding restrito, créditos, descontos não normalizados e renovações ainda não contratadas. Registrar fórmula, data de medição e tratamento de cancelamentos, expansão e contração.
 
-Os exemplos reproduzíveis e os campos mínimos para cenários estão em [[05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1|HUB_Taxonomia_Receita_Reconhecimento_v1]]. A tabela deve ser reconciliada com cada linha da matriz de ofertas §2.1 e com os cenários de contrato antes do gate P01.
+Os exemplos reproduzíveis e os campos mínimos para cenários estão em [[02-refinement/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1|HUB_Taxonomia_Receita_Reconhecimento_v1]]. A tabela deve ser reconciliada com cada linha da matriz de ofertas §2.1 e com os cenários de contrato antes do gate P01.
 
 ## 4. Classificações de receita e fronteiras de titularidade
 

@@ -17,7 +17,7 @@ tags:
 > **Status:** rascunho para revisão Dados+Tech · **G03.B2** é bloqueador mínimo para liberar P03. Automação e cobertura adicional são extensões pós-MVP.
 > **Depende de:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — 25 entidades com `canonical_id`.
 
-## 1. Resumo — 16 tabelas físicas → entidades canônicas (41 campos)
+## 1. Resumo — 17 tabelas físicas → entidades canônicas (47 campos)
 
 | Tabela física | Campos | Entidade(s) canônica(s) | PK lógica | Propósito |
 |---|---|---|---|---|
@@ -37,8 +37,20 @@ tags:
 | `fact_transaction` | 1 | Transaction | `transaction_id` | Transação reconhecida |
 | `fact_business_metric` | 3 | BusinessMetric | `metric_id`+`period`+`cohort` | Métrica negócio |
 | `fact_financial_value` | 4 | FinancialValue (deriv. BusinessMetric+Contract) | `financial_value_id` | Valor financeiro estados |
+| `dim_consent` | 4 | Consent (N24) | `consent_id` | Bloqueador LGPD — finalidade, versão e revogação |
 
-**Total:** 41 campos auditados em `08_Dicionario_Dados.csv` (linhas 5–45).
+**Total:** 47 campos auditados no dicionário canônico; a expansão inclui `dim_consent` (N24) e campos do envelope/evento.
+
+### Gate de consentimento N24
+
+| Tabela | Campo | Tipo | Chave | Entidade.Atributo canônico | Temporal |
+|---|---|---|---|---|---|
+| dim_consent | consent_id | UUID | PK | Consent.consent_id | `valid_from/to`, `version` |
+| dim_consent | purpose | enum | — | Consent.purpose | `valid_from/to` |
+| dim_consent | legal_basis | enum | — | Consent.legal_basis | `valid_from/to` |
+| dim_consent | titular_id | UUID | FK → dim_person | Consent.titular_id | `consent_status`, `revogado_em` |
+
+`N24` é bloqueador: revogação propaga em até **5 minutos** para `fact_person_skill`, `fact_event` e `fact_match`; sem consentimento válido, novos usos e leituras sensíveis são rejeitados e registrados no CMP log.
 
 ## 2. Detalhamento — 41 campos → atributo canônico
 

@@ -30,6 +30,10 @@ tags:
 
 ## 2. Políticas de cálculo, atribuição, deduplicação e contrafactual
 
+### Estados financeiros canônicos congelados
+
+`Potencial → Influenciado → Validado → Realizado`. Cada transição exige evidência; nenhum valor pode pular estados. `Realizado` só entra no ledger após validação Financeiro e reconciliação contábil.
+
 ### 2.1 Cálculo
 
 - Fórmula versionada (`formula_version`) + `run_id` por execução; denominador, `period`, `cohort_id`, `population` explícitos.
@@ -49,6 +53,7 @@ Todo valor `influenciado→validado` exige método declarado; `realizado` exige 
 
 - Registro `financial_claims` indexado por `(beneficiário, alavanca, period, intervenção, origem)`.
 - Regras: `produtividade × retenção × contratação` → decompor mecanismo/população/janela + teto por pessoa/período; `compras × margem` → reconciliação contábil; `pipeline` nunca soma com `receita`.
+- Ledger único de benefícios é a fonte da verdade; deduplicação obrigatória por `beneficiário × alavanca × período × intervenção`, com teto por população e `haircut DAT-08` aplicado conforme confiança do impacto.
 
 ### 2.4 Temporais
 

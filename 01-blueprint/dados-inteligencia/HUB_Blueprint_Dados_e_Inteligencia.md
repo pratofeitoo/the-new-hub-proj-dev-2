@@ -78,6 +78,8 @@ Indicadores antecedentes (atividade, adoção, conclusão), indicadores operacio
 
 ## 3. Versionamento de eventos, indicadores, taxonomias, fórmulas, modelos e evidências
 
+> **M0 táticos promovidos do recorte Monks (P03-T05):** `KPI-PERF-01 Atingimento (PES-02 proxy)`, `KPI-PERF-02 Qualidade meta (DAT-01 proxy)`, `KPI-ALO-01 Alocação (RH-09 proxy)`, `KPI-ALO-02 Receita perdida (FIN-06 proxy)` — definições congeladas em [[02-refinement/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1|Glossário Financeiro Congelado v1]].
+
 O versionamento faz parte do significado. Nenhum produtor, dashboard, decisão ou alegação pública pode depender de um schema de evento, definição de indicador, taxonomia, fórmula, modelo ou interpretação de evidência sem versão.
 
 ### Envelope canônico de evento
