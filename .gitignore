@@ -1,2 +1,32 @@
 .DS_Store
 audio.mp3
+*.mp3
+*.mp4
+.mdbase/cache.sqlite
+.logs/
+
+# Inactive Obsidian themes (active: March) — reinstall from marketplace
+.obsidian/themes/Blossom/
+.obsidian/themes/Dark Moss/
+.obsidian/themes/Dracula + LYT/
+.obsidian/themes/Glass Robo/
+.obsidian/themes/Modern GenZ Vibedose/
+.obsidian/themes/Nebula/
+.obsidian/themes/Royal Velvet/
+.obsidian/themes/Slytherin/
+.obsidian/themes/Sodalite/
+.obsidian/themes/Terminal2K/
+.obsidian/themes/Vicious/
+.obsidian/themes/WY Console/
+# Disabled Obsidian plugins (see .obsidian/community-plugins.json) — reinstall from marketplace
+.obsidian/plugins/advanced-canvas/
+.obsidian/plugins/better-export-pdf/
+.obsidian/plugins/canvas-export/
+.obsidian/plugins/canvas2document/
+.obsidian/plugins/colored-bases-properties/
+.obsidian/plugins/obsidian-chartsview-plugin/
+.obsidian/plugins/oz-image-plugin/
+.obsidian/plugins/pretty-properties/
+.obsidian/plugins/terminal/
+.obsidian/plugins/text-extractor/
+.obsidian/plugins/webpage-html-export/
