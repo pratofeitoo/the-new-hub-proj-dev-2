@@ -1,10 +1,10 @@
 ---
-status: open
+status: em-revisao
 priority: normal
 projects:
   - "[[Definir arquitetura financeira]]"
 dateCreated: 2026-09-01T23:33:04.987-03:00
-dateModified: 2026-09-01T23:35:13.193-03:00
+dateModified: 2026-09-02T23:28:45.352-03:00
 tags:
   - task
 owner:

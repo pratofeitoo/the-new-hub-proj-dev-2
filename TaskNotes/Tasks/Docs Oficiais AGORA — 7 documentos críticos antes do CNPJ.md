@@ -1,6 +1,5 @@
 ---
-title: "Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ"
-status: open
+status: in-progress
 priority: high
 dateCreated: 2026-09-02T18:32:00.000-03:00
 tags:
@@ -21,6 +20,7 @@ scheduled: 2026-09-04
 blockedBy:
   - uid: "[[TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs)]]"
     reltype: FINISHTOSTART
+dateModified: 2026-09-02T23:26:23.879-03:00
 ---
 
 # Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ

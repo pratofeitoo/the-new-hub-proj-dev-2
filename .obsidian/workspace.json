@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.76171875
+    "width": 333.76171875,
+    "collapsed": true
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -235,7 +236,7 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "aa7b9d1bda30d77d",
+  "active": "108b413f58344ed0",
   "lastOpenFiles": [
     "05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md",
     "05-resources/Processar/Plataforma HUB/03-analises-processadas/Relatorio_Consistencia_Especificacao_vs_Planilha_HUB.md",

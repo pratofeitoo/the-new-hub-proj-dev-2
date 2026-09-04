@@ -1,6 +1,5 @@
 ---
-title: "GOV-001 — Decidir estrutura societária (quantos CNPJs)"
-status: open
+status: em-revisao
 priority: high
 dateCreated: 2026-09-02T18:31:00.000-03:00
 tags:
@@ -20,6 +19,7 @@ timeEstimate: 120
 due: 2026-09-10
 scheduled: 2026-09-03
 blockedBy: []
+dateModified: 2026-09-02T23:25:15.827-03:00
 ---
 
 # GOV-001 — Decidir estrutura societária (quantos CNPJs)
