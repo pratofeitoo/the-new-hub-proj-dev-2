@@ -1,5 +1,5 @@
 ---
-title: Painel de Tarefas
+title: TaskNotes Dashboard
 tags:
   - dashboard
   - tasknotes

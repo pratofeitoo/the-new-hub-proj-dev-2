@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TaskNotes/Task Dashboard.md",
+                "file": "project-map.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Task Dashboard"
+              "title": "project-map"
+            }
+          },
+          {
+            "id": "1b67b669dc5a4061",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "310f66f76c24ec5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-project-control/registro-mudancas/2026-09-02-poda-estrutura-repositorio-fases-1-3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-09-02-poda-estrutura-repositorio-fases-1-3"
             }
           },
           {
@@ -110,8 +138,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.76171875,
-    "collapsed": true
+    "width": 333.76171875
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -236,8 +263,12 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "108b413f58344ed0",
+  "active": "1b67b669dc5a4061",
   "lastOpenFiles": [
+    "00-project-control/registro-mudancas/2026-09-02-poda-estrutura-repositorio-fases-1-3.md",
+    "project-map.md",
+    "TaskNotes/Task Dashboard.md",
+    "TaskNotes/Views/kanban-default.base",
     "05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md",
     "05-resources/Processar/Plataforma HUB/03-analises-processadas/Relatorio_Consistencia_Especificacao_vs_Planilha_HUB.md",
     "05-resources/Processar/Plataforma HUB/03-analises-processadas/Relatorio_CrossReview_Blueprint_vs_Especificacao_Planilha_HUB.md",
@@ -256,7 +287,6 @@
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/notas/HUB_Portfolio_Produtos_Primeiro_Momento.md",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/fontes/HUB_Portfolio_Produtos_Primeiro_Momento.docx",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",
-    "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/fontes/HUB_MVP_Monks_Custos_Fundadores_v2.xlsx",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/README.md",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/visuais/ChatGPT Image 29 de ago. de 2026, 12_33_20.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/README.md",
@@ -281,9 +311,6 @@
     "05-resources/Processar/Plataforma HUB/00-entrada/02-especificacao-mestra/Especificacao_Mestra_Inteligencia_HUB 3.md",
     "05-resources/Processar/Plataforma HUB/00-entrada/01-acordo-parceria/Acordo_Parceria_Tecnologica_DiverCidade_HUB.md",
     "05-resources/Processar/Plataforma HUB/_templates/cartao-processamento.md",
-    "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/README.md",
-    "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/06_Estimativa_Build.md",
-    "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/05_Premissas_CAPEX_OPEX.md",
     "00-project-control/registro-lacunas/HUB_Gaps.canvas",
     "04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.canvas",

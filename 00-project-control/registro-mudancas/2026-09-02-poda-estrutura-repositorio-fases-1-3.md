@@ -10,7 +10,8 @@ tags:
 related_notes: []
 author:
   - PF Rezende
-commits: []
+commits:
+  - e1853fb
 ---
 
 # Registro de Mudança — poda da estrutura do repositório (fases 1–3)
@@ -25,7 +26,7 @@ commits: []
 
 Poda da estrutura em 3 fases executadas e 1 fase cancelada após verificação: (1) arquivos pesados desversionados e `.gitignore` ampliado; (2) 18 diretórios vazios colapsados; (3) 12 temas e 11 plugins inativos desvendorizados + docs duplicadas removidas; (4) arquivamento do `bloqueado/modelo-indicadores` e dedup de views **cancelados** — verificação mostrou que são trabalho ativo (evidências P03 em revisão, views editadas em 02/09).
 
-**Resultado:** 135 caminhos staged (~131 mil linhas removidas, majoritariamente binários compilados de plugins/temas), ~56 MB + cache 3,3 MB fora do índice, árvore com 18 pastas vazias a menos. Tudo staged, **não commitado**; branch de segurança `backup/pre-prune-2026-09-03` criada antes de qualquer alteração.
+**Resultado:** 135 caminhos alterados (~131 mil linhas removidas, majoritariamente binários compilados de plugins/temas), ~56 MB + cache 3,3 MB fora do índice, árvore com 18 pastas vazias a menos. A poda foi commitada em `e1853fb` (`chore: prune repository structure (phases 1-3) + change record`); a branch de segurança `backup/pre-prune-2026-09-03` foi criada antes de qualquer alteração.
 
 ## 2. Contexto e motivação
 
@@ -37,13 +38,13 @@ Poda da estrutura em 3 fases executadas e 1 fase cancelada após verificação: 
 
 ### 3.1 Fase 1 — peso morto do índice
 
-| Caminho | Ação |
-|---|---|
-| `System/attachments/reuniao plataforma-sebrae.mp3` (50 MB) | `git rm --cached` — mantido local, fora do git |
-| `.mdbase/cache.sqlite` (3,3 MB) | `git rm --cached` — mantido local, fora do git |
-| `System/attachments/audio.mp3` (110 MB) | já era ignorado; agora explicitamente em `.gitignore` |
-| 10× `.gitkeep` em pastas com conteúdo (`00-project-control/{decisoes,escopo,registro-mudancas}`, `04-project-management/{atas-reuniao,cronogramas,marcos,planos-fase,planos-mestres,registros-trabalho,relatorios-status}`) | `git rm` |
-| `.gitignore` | + `*.mp3`, `*.mp4`, `.mdbase/cache.sqlite`, `.logs/` (verificado com `git check-ignore`) |
+| Caminho                                                                                                                                                                                                                     | Ação                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `System/attachments/reuniao plataforma-sebrae.mp3` (50 MB)                                                                                                                                                                  | `git rm --cached` — mantido local, fora do git                                           |
+| `.mdbase/cache.sqlite` (3,3 MB)                                                                                                                                                                                             | `git rm --cached` — mantido local, fora do git                                           |
+| `System/attachments/audio.mp3` (110 MB)                                                                                                                                                                                     | já era ignorado; agora explicitamente em `.gitignore`                                    |
+| 10× `.gitkeep` em pastas com conteúdo (`00-project-control/{decisoes,escopo,registro-mudancas}`, `04-project-management/{atas-reuniao,cronogramas,marcos,planos-fase,planos-mestres,registros-trabalho,relatorios-status}`) | `git rm`                                                                                 |
+| `.gitignore`                                                                                                                                                                                                                | + `*.mp3`, `*.mp4`, `.mdbase/cache.sqlite`, `.logs/` (verificado com `git check-ignore`) |
 
 ### 3.2 Fase 2 — colapso de 18 diretórios vazios (só `.gitkeep`)
 
@@ -88,17 +89,17 @@ Dirs **preservados** por terem conteúdo real (só o `.gitkeep` saiu): `03-appro
 - **Impacto no escopo:** nenhum — só higiene de índice; nenhum conteúdo de negócio movido ou apagado.
 - **Impacto operacional:** clones futuros baixam ~70 MB a menos; Obsidian local inalterado (temas/plugins seguem no disco).
 - **Impacto técnico ou de dados:** `.obsidian/` rastreado agora = JSONs de config + `March` + 10 plugins ativos.
-- **Rastreabilidade:** pedido (avaliação de estrutura) → fases 1–3 executadas + fase 4 cancelada com evidência → este registro → commit pendente.
+- **Rastreabilidade:** pedido (avaliação de estrutura) → fases 1–3 executadas + fase 4 cancelada com evidência → este registro → commit `e1853fb`.
 
 ## 5. Validação e sincronização
 
 - **Validação realizada:** `git check-ignore` nos padrões novos; `git ls-files` confirma temas (só `March`) e plugins (só os 10 habilitados); `diff -q` nos gêmeos antes de apagar; `ls -la` em cada diretório candidato antes do `rm`.
-- **Resultado:** staged, **não commitado** — `git diff --cached --stat`: 135 arquivos, ~131 mil deleções.
+- **Resultado:** commitado em `e1853fb` — 135 arquivos, ~131 mil deleções.
 - **Arquivos vivos sincronizados:** pendente — `project-map.md` e `README.md` precisam de refresh (seção 3.2).
 
 ## 6. Próximos passos
 
-- [ ] Revisar `git diff --cached --stat` e commitar a poda
+- [x] Revisar e commitar a poda (`e1853fb`)
 - [ ] Atualizar `project-map.md` (pastas fantasmas, contagens, hashes) e trechos voláteis do `README.md`
 - [ ] Após aprovação P03: arquivar `03-approval/bloqueado/.../indicadores-xlsx/` em `99-archive/superado/`
 - [ ] Confirmar no Obsidian o bug de filtro `status` lista vs escalar antes de qualquer correção em massa
