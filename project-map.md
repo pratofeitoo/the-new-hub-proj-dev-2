@@ -22,8 +22,8 @@ com domínios como segundo eixo:
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
 | `01-work/` | Elaboração em 4 temas: `mercado-e-direcao/` (`estrategia/`, `modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`), `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`), `dados-tech-financas/` (`dados-inteligencia/` + análises, CSVs em `05-resources/fontes/`, `tecnologia/`, `modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). |
 | `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/` (submetidos 2026-09-05, `em-revisao`). |
-| `03-approved/` | `cenarios/` P01-S01…S06, `nucleo-inteligencia/` (conceito + inventário + prova, gate 2026-09-05, `aprovado` + histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
-| `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários (ponteiro para `03-approved/`), planos unificados e logs de progresso. |
+| `03-approved/` | `matriz-de-oferta-e-comprador-cenarios/cenarios/` P01-S01…S06, `nucleo-inteligencia/` (conceito + inventário + prova, gate 2026-09-05, `aprovado` + histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
+| `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, planos unificados e logs de progresso. |
 | `05-resources/` | `inbox/` (fila de triagem; MVPs, visão e acordo submetidos a `02-review/` em 2026-09-05) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
 | `99-archive/` | `origens/primeiro-rascunho-projeto/`, `backups/`, `documentos-oficiais/` (descontinuado/rejeitado/superado), `instantaneos-historicos/`, `superado/`. |
 | `01-blueprint/`, `02-refinement/` | Aposentadas em 2026-09-05, stubs removidos; ver `git log --follow`. |
@@ -64,9 +64,9 @@ com domínios como segundo eixo:
 │   ├── 02-visao-plataforma/         — tese de longo prazo, submetida 2026-09-05
 │   └── 01-acordo-parceria/          — acordo DiverCidade×HUB, submetido 2026-09-05
 ├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
-│   ├── Matriz de Oferta e Comprador - Cenários/cenarios/ — P01-S01…S06 assinados
+│   ├── matriz-de-oferta-e-comprador-cenarios/cenarios/ — P01-S01…S06 assinados
 │   ├── nucleo-inteligencia/         — conceito + inventário + prova, gate 2026-09-05
-│   │   ├── especificacao-conceitual-inteligência-plataforma/ — especificação v1.0 (.md + .docx)
+│   │   ├── especificacao-conceitual-inteligencia-plataforma/ — especificação v1.0 (.md + .docx)
 │   │   ├── planilha-tecnica-completa-desenvolvimento/ — fonte + planejamento + validações
 │   │   └── analises-processadas/    — matriz de convergência + relatórios
 ├── 04-project-management/           — execução P01→P07
@@ -108,7 +108,7 @@ O fluxo de execução é:
 
 `P01 Oferta & Negócio` → `P02 Produto & Operação` → `P03 Dados Canônicos` → `P04 Governança` ↔ `P05 Tecnologia` → `P06 Economia & GTM` → `P07 Portão de Lançamento`.
 
-- P01: 7 tarefas concluídas; cenários S01…S06 assinados em `03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/`.
+- P01: 7 tarefas concluídas; cenários S01…S06 assinados em `03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/`.
 - P02: 6 tarefas concluídas.
 - P03: 9 itens + gate em elaboração em `01-work/dados-tech-financas/refinamento-modelo-dados/` (todos `rascunho`).
 - P04–P07: 34 tarefas pendentes.

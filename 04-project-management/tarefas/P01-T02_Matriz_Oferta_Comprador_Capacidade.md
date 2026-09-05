@@ -86,6 +86,6 @@ As fichas operacionais completas (17 ofertas), a matriz de prontidão e os cená
 
 - **Fichas operacionais (17):** [[01-work/produto-e-operacao/refinamento-produto/fichas-operacionais-P01-T02-v1|fichas-operacionais-P01-T02-v1.md]] — JTBD, comprador, parceiros, riscos e critérios de sucesso por oferta (Mídia 5, Impacto 6, Ecossistemas 6).
 - **Matriz de prontidão:** incluída no mesmo arquivo — `17/17 fichas completas em v1`.
-- **Cenários de teste (SEG-01..06):** [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador|SEG-01]] a [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma|SEG-06]] — permanecem em `hypothesis`.
+- **Cenários de teste (SEG-01..06):** [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador|SEG-01]] a [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma|SEG-06]] — permanecem em `hypothesis`.
 
 > Esta nota mantém apenas o resumo executivo (Execução + Verificação). O histórico completo vive em `01-work/produto-e-operacao/refinamento-produto/` e nos arquivos de cenário; não duplique conteúdo — vincule.

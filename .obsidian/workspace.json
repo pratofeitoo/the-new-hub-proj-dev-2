@@ -22,20 +22,16 @@
             }
           },
           {
-            "id": "cff84ae1483643b7",
+            "id": "31594fdb65729088",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "bases",
               "state": {
-                "file": "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
-                "viewState": {
-                  "x": 3041.0606708729447,
-                  "y": 256.22529325029643,
-                  "zoom": -1.854761108297379
-                }
+                "file": "TaskNotes/Views/documentacao-oficial.base",
+                "viewName": "Kanban — por Status"
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Fases_Projeto"
+              "icon": "tasknotes-simple",
+              "title": "documentacao-oficial"
             }
           },
           {
@@ -63,19 +59,9 @@
               "icon": "tasknotes-simple",
               "title": "tasks-default"
             }
-          },
-          {
-            "id": "2a7ff5bdcbf38cf4",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -262,8 +248,24 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "aa7b9d1bda30d77d",
+  "active": "31594fdb65729088",
   "lastOpenFiles": [
+    "project-map.md",
+    "03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/README.md",
+    "03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB 3.docx",
+    "03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB 3.md",
+    "03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/README.md",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma.md",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao.md",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto.md",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH.md",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios",
+    "03-approved/matriz-de-oferta-e-comprador-cenarios",
+    "TaskNotes/Views/kanban-default.base",
+    "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "02-review/02-visao-plataforma/LEIAME-origem-inbox.md",
     "02-review/01-mvps/LEIAME-origem-inbox.md",
     "00-project-control/registro-mudancas/2026-09-05-submissao-mvps-visao-acordo.md",
@@ -274,11 +276,6 @@
     "02-review/01-acordo-parceria",
     "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/03_Resumo_Modulos.csv",
     "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/10_CAPEX_por_Modulo.csv",
-    "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/11_OPEX_Mensal.csv",
-    "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/09_Estimativa_96_Telas.csv",
-    "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/07_Base_Para_Precificacao.csv",
-    "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/02_Inventario_96_Telas.csv",
-    "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/12_Dashboard_Custos.csv",
     "02-review/02-visao-plataforma/Portfólio de Produtos/notas/Portfolio de Produtos.md",
     "02-review/02-visao-plataforma/Portfólio de Produtos/notas/HUB para empresas_ portfólio completo.md",
     "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/README.md",
@@ -290,15 +287,8 @@
     "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/01_Visao_Geral_Modulos.md",
     "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/00_HUB_Arquitetura_Custos_Dashboard.md",
     "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/README.md",
-    "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/HUB_Arquitetura_Custos_FULLFIDELITY.md",
-    "02-review/02-visao-plataforma/Estrutura de Liderança e Atribuições/notas/Estrutura e Atribuições.md",
     "02-review/02-visao-plataforma/Exemplo de Deck/visuais/ChatGPT Image 29 de ago. de 2026, 12_09_50.png",
-    "02-review/02-visao-plataforma/Portfólio de Produtos/README.md",
     "02-review/02-visao-plataforma/visuais/Visão geral.jpeg",
-    "02-review/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma/README.md",
-    "02-review/02-visao-plataforma/Estrutura de Liderança e Atribuições/README.md",
-    "02-review/02-visao-plataforma/Modelo Financeiro para Investidores/README.md",
-    "02-review/02-visao-plataforma/README.md",
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (1).jpeg",
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30.jpeg",
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (3).jpeg",
@@ -306,11 +296,7 @@
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (1).jpeg",
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29.jpeg",
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (2).jpeg",
-    "02-review/01-mvps/Visão de Comunidades/notas/Comunidades.md",
-    "02-review/01-mvps/MVP - Eventos/Ativações/README.md",
     "02-review/01-mvps/MVP - Eventos/visuais/ChatGPT Image 29 de ago. de 2026, 12_35_54.png",
-    "02-review/01-mvps/MVP - Estratégia e Dados/notas/HUB_Portfolio_Produtos_Primeiro_Momento.md",
-    "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "00-project-control/registro-lacunas/HUB_Gaps.canvas",
     "04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.canvas",

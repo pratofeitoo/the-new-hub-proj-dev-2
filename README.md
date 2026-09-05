@@ -63,7 +63,7 @@ Pastas aposentadas em 2026-09-05: `01-blueprint/` → `01-work/`, `02-refinement
 
 ## Estado atual
 
-- P01 (Oferta & Negócio): 7 tarefas concluídas; cenários P01-S01…S06 assinados em [`03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/`](03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/).
+- P01 (Oferta & Negócio): 7 tarefas concluídas; cenários P01-S01…S06 assinados em [`03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/`](03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/).
 - P02 (Produto & Operação): 6 tarefas concluídas.
 - P03 (Dados Canônicos): 9 itens + gate em elaboração em [`01-work/dados-tech-financas/refinamento-modelo-dados/`](01-work/dados-tech-financas/refinamento-modelo-dados/) — todos `rascunho`, nada em revisão.
 - P04–P07: 34 tarefas pendentes.
