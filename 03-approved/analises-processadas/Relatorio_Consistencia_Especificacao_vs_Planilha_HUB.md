@@ -1,3 +1,7 @@
+---
+status: aprovado
+---
+
 # Relatório de Consistência — Especificação Mestra vs Planilha Técnica HUB
 
 **Data:** 2026-09-02
@@ -188,3 +192,10 @@ Pequenas divergências que viram dívida técnica: `Margem bruta` vs `Margem bru
 Este relatório documenta a inconsistência original; a planilha e a especificação agora carregam as correções acima e já não devem ser lidas como espelho do estado anterior.
 
 *Gerado por Sisyphus — OhMyOpenCode · 2026-09-02 · pt-BR*
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

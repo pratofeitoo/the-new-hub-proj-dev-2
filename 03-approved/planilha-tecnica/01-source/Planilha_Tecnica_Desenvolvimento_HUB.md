@@ -1,7 +1,8 @@
 ---
+status: aprovado
 title: Planilha Técnica — Desenvolvimento HUB
 source: Planilha_Tecnica_Desenvolvimento_HUB.xlsx
-source_path: 05-resources/inbox/Plataforma HUB/00-entrada/03-planilha-tecnica/Planilha_Tecnica_Desenvolvimento_HUB.xlsx
+source_path: 03-approved/planilha-tecnica/01-source/Planilha_Tecnica_Desenvolvimento_HUB.xlsx
 sheets: 15
 linhas_dados: 185
 idioma: pt-BR
@@ -511,3 +512,10 @@ aliases:
 - **Validação:** comparar este `.md` com o `.xlsx` aba a aba; qualquer divergência é bug do extrator — reporte.
 
 *Gerado automaticamente em 2026-09-02 a partir de `Planilha_Tecnica_Desenvolvimento_HUB.xlsx` produtomodelo.*
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

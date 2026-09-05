@@ -77,3 +77,10 @@ A validação confirmou equivalência tabular e semântica dos dados, mantendo o
 ## Conclusão
 
 Em 2026-09-02, a conversão de `Planilha_Tecnica_Desenvolvimento_HUB.xlsx` para `Planilha_Tecnica_Desenvolvimento_HUB.md` foi validada e aprovada para uso no Obsidian, com o conteúdo original em português brasileiro e os dados tabulares preservados.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

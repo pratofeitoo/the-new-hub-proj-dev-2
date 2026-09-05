@@ -1,4 +1,5 @@
 ---
+status: aprovado
 title: Matriz de Convergência — 73→16 + 25→23 + 12→8 + M0-M4→F0-MVP4
 tipo: matriz_convergencia
 versao: 1.0
@@ -176,3 +177,10 @@ Fontes: BP-002 e [[01-work/mercado-e-direcao/visao-lancamento/HUB_Blueprint_Lanc
 ## 5. Rastreabilidade
 
 [[01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|Catálogo P03-T05]] · [[01-work/dados-tech-financas/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|Taxonomia de estados de valor]] · gaps `DAT-006`, `DAT-010`, `PRD-001`. Os 57 indicadores restantes permanecem M1/M2; a matriz é insumo do gate M0.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

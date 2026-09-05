@@ -1,3 +1,7 @@
+---
+status: aprovado
+---
+
 **HUB CORE**
 
 **Especificação-mestra da inteligência do HUB**
@@ -1310,3 +1314,10 @@ acessos diários sem decisão.
 - Rituais semanais/mensais e responsáveis por aprovar recomendações.
 
 - Critérios de aceite do MVP e plano de comunicação/confiança.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

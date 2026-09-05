@@ -1,3 +1,7 @@
+---
+status: aprovado
+---
+
 # Relatório Cross-Review — Blueprint (01-blueprint) vs Especificação + Planilha (00-entrada/02 e 03)
 
 **Data:** 2026-09-02
@@ -417,3 +421,10 @@ Todos os gaps de §4, Anexo A e Anexo C agora com status **Coberto** ou **Gate p
 
 *Gerado por Sisyphus — OhMyOpenCode · 2026-09-02 · pt-BR — atualizado 2026-09-02 21:42 para v1.1 com Apêndice D.*
 *Relatório anterior: [[Relatorio_Consistencia_Especificacao_vs_Planilha_HUB]] — este é o relatório cross-grupo complementar.*
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

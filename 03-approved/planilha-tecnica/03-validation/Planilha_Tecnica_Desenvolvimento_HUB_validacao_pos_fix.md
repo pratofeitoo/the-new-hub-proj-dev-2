@@ -76,3 +76,10 @@ Correção executada conforme [PLANO_FIX_XLSX_a_partir_MD.md](./PLANO_FIX_XLSX_a
 ## Conclusão
 
 Em 2026-09-03, o `Planilha_Tecnica_Desenvolvimento_HUB.xlsx` foi alinhado 100% ao `Planilha_Tecnica_Desenvolvimento_HUB.md`. O XLSX é novamente a representação fiel e editável da especificação — pronto para uso no desenvolvimento e no piloto Monks.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

@@ -5,7 +5,7 @@ target_xlsx: Planilha_Tecnica_Desenvolvimento_HUB.xlsx
 sheets: 15
 linhas_dados_md: 185
 idioma: pt-BR
-status: plano — aguardando aprovação
+status: aprovado
 criado_em: 2026-09-03
 autor: Sisyphus
 tags:
@@ -218,3 +218,10 @@ Levantamento automatizado via `openpyxl` comparando cabeçalhos e cada célula (
 - [ ] Autorizar execução do script. Após aprovação, a implementação é mecânica — sem decisões de conteúdo adicionais.
 
 > Quando aprovado, digo `implementar` e executo exatamente os passos acima, com verificação ponta-a-ponta via re-extração e abertura do xlsx corrigido.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** decisão direta do usuário (teste do ritual; bypass de `02-review/` registrado e aceito)
+- **Decisão:** promovido de `05-resources/inbox/Plataforma HUB/` para `03-approved/` como final compartilhável.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-gate-planilhas-mestras.md`

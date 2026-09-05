@@ -22,7 +22,7 @@ com domínios como segundo eixo:
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
 | `01-work/` | Elaboração em 4 temas: `mercado-e-direcao/` (`estrategia/`, `modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`), `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`), `dados-tech-financas/` (`dados-inteligencia/` + análises, CSVs em `05-resources/fontes/`, `tecnologia/`, `modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). |
 | `02-review/` | `pacotes/` (aceite P01 cross-functional, `em-revisao`) e `bloqueado/` (modelo de indicadores + derivados). |
-| `03-approved/` | `cenarios/` P01-S01…S06 assinados (`aprovado` + bloco de histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
+| `03-approved/` | `cenarios/` P01-S01…S06, `especificacao-mestra/`, `planilha-tecnica/`, `analises-processadas/` (gate 2026-09-05, `aprovado` + histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
 | `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários (ponteiro para `03-approved/`), planos unificados e logs de progresso. |
 | `05-resources/` | `inbox/` (fila de triagem, ex-`Processar/`, 7 MVPs + visão de plataforma) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
 | `99-archive/` | `origens/primeiro-rascunho-projeto/`, `backups/`, `documentos-oficiais/` (descontinuado/rejeitado/superado), `instantaneos-historicos/`, `superado/`. |
@@ -62,10 +62,12 @@ com domínios como segundo eixo:
 │   └── bloqueado/                   — modelo de indicadores e derivados de validação
 ├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
 │   ├── cenarios/                    — P01-S01…S06 assinados
+│   ├── especificacao-mestra/        — especificação v1.0 (.md + .docx), gate 2026-09-05
+│   ├── planilha-tecnica/            — fonte + planejamento + validações, gate 2026-09-05
+│   ├── analises-processadas/        — matriz de convergência + relatórios, gate 2026-09-05
 │   └── documentos-oficiais/         — reservado; vazio até o primeiro gate legal
 ├── 04-project-management/           — execução P01→P07
 │   ├── atas-reuniao/                — atas estruturadas e templates
-│   ├── cenarios/                    — (removido; finais em 03-approved/cenarios/)
 │   ├── cronogramas/                 — cronograma Bases
 │   ├── marcos/                      — M00→M07 e sub-gates M03.A/B
 │   ├── planos-fase/                 — P01→P07
