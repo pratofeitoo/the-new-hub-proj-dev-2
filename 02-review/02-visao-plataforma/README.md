@@ -1,3 +1,7 @@
+---
+status: em-revisao
+---
+
 # Visão de Plataforma — tese de longo prazo congelada para gate
 
 > **Fronteira:** `02-review/` — `em-revisao`. Congelado desde 2026-09-05: sem edições, só decisão do gate.

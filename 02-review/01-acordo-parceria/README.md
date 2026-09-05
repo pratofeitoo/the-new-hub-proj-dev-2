@@ -1,3 +1,7 @@
+---
+status: em-revisao
+---
+
 # Acordo de Parceria — documento congelado para gate
 
 > **Fronteira:** `02-review/` — `em-revisao`. Congelado desde 2026-09-05: sem edições, só decisão do gate.
