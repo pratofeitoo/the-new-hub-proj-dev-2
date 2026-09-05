@@ -1,5 +1,5 @@
 ---
-status: in-progress
+status: open
 priority: high
 dateCreated: 2026-09-02T18:30:00.000-03:00
 tags:
@@ -17,7 +17,7 @@ contexts:
 timeEstimate: 480
 due: 2026-09-30
 scheduled: 2026-09-03
-dateModified: 2026-09-02T23:24:49.414-03:00
+dateModified: 2026-09-05T08:51:35.770-03:00
 ---
 
 # Documentação Oficial — Epic Vault Isolado HUB (01-14)
