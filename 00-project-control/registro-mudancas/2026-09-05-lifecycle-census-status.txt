@@ -1,0 +1,21 @@
+  68 status: open
+  63 status:
+  28 status: rascunho
+  11 status: em-revisao
+   7 status: draft
+   6 status: hypothesis
+   4 status: ativo
+   2 status: registrado
+   2 status: estruturada
+   2 status: active
+   1 status: rascunho pronto para investidores — validação necessária
+   1 status: rascunho # rascunho | estruturada | validada
+   1 status: pending
+   1 status: pendente
+   1 status: hipotese # hipotese | em_elaboracao | aprovado | em_uso | adiado
+   1 status: hipotese # hipotese | em_contratacao | registrado | aprovado | bloqueado | nao_aplicavel
+   1 status: documento de trabalho
+   1 status: deprecated
+   1 status: congelado para refinement
+   1 status: blueprint
+   1 status: "proposta — aguardando aprovação de Governança"

@@ -1,0 +1,592 @@
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acad\303\252mico/README.md"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acad\303\252mico/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acad\303\252mico/visuais/ChatGPT Image 29 de ago. de 2026, 12_33_20.png"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estrat\303\251gia e Dados/README.md"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estrat\303\251gia e Dados/fontes/HUB_MVP_Monks_Custos_Fundadores_v2.xlsx"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estrat\303\251gia e Dados/fontes/HUB_Portfolio_Produtos_Primeiro_Momento.docx"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estrat\303\251gia e Dados/notas/HUB_Portfolio_Produtos_Primeiro_Momento.md"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estrat\303\251gia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/README.md"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (1).jpeg"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (2).jpeg"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/visuais/WhatsApp Image 2026-08-29 at 12.42.29.jpeg"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (1).jpeg"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (2).jpeg"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (3).jpeg"
+"05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/Ativa\303\247\303\265es/visuais/WhatsApp Image 2026-08-29 at 12.42.30.jpeg"
+"05-resources/Processar/Plataforma HUB/01-mvps/Vis\303\243o de Comunidades/README.md"
+"05-resources/Processar/Plataforma HUB/01-mvps/Vis\303\243o de Comunidades/fontes/Comunidades.docx"
+"05-resources/Processar/Plataforma HUB/01-mvps/Vis\303\243o de Comunidades/notas/Comunidades.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Estrutura de Lideran\303\247a e Atribui\303\247\303\265es/README.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Estrutura de Lideran\303\247a e Atribui\303\247\303\265es/Remunera\303\247\303\243o dos S\303\263cios (p\303\263s MVP)/HUB_Pos_MVP_Remuneracao_Socios_Escala_Clientes_v2.xlsx"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Estrutura de Lideran\303\247a e Atribui\303\247\303\265es/fontes/Estrutura e Atribui\303\247\303\265es.docx"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Estrutura de Lideran\303\247a e Atribui\303\247\303\265es/notas/Estrutura e Atribui\303\247\303\265es.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Portf\303\263lio de Produtos/README.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Portf\303\263lio de Produtos/fontes/HUB para empresas_ portf\303\263lio completo.docx"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Portf\303\263lio de Produtos/fontes/Portfolio de Produtos.docx"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Portf\303\263lio de Produtos/notas/HUB para empresas_ portf\303\263lio completo.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Portf\303\263lio de Produtos/notas/Portfolio de Produtos.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/00_HUB_Arquitetura_Custos_Dashboard.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/01_Visao_Geral_Modulos.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/02_Inventario.base"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/02_Inventario_96_Telas.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/03_Matriz_Integracoes.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/04_Cenarios_Implantacao.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/05_Premissas_CAPEX_OPEX.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/06_Estimativa_Build.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/README.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/02_Inventario_96_Telas.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/09_Estimativa_96_Telas.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/10_CAPEX_por_Modulo.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/11_OPEX_Mensal.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/HUB_Arquitetura_Custos_FULLFIDELITY.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/README.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/01_Visao_Geral.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/02_Inventario_Paginas.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/03_Resumo_Modulos.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/04_Matriz_Integracoes.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/05_Fluxos_Diretos.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/06_Cenarios_Implantacao.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/07_Base_Para_Precificacao.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/08_Premissas_Custos.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/09_Estimativa_96_Telas.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/10_CAPEX_por_Modulo.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/11_OPEX_Mensal.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/12_Dashboard_Custos.csv"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/README.md"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/Proje\303\247\303\243o de arquitetura e custos - Plataforma/fontes/Arquitetura e Custos Totais.xlsx"
+"05-resources/Processar/Plataforma HUB/02-visao-plataforma/visuais/Vis\303\243o geral.jpeg"
+"05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/Sugest\303\243o de vis\303\265es /WhatsApp Image 2026-08-27 at 19.26.05 (1).jpeg"
+"99-archive/instantaneos-historicos/Invent\303\241rio dos arquivos de valor.md"
+"TaskNotes/Archive/Configurar um diret\303\263rio dedicado para documenta\303\247\303\265es oficiais e formas do projeto.md"
+"TaskNotes/Tasks/Ajustes Jur\303\255dicos.md"
+"TaskNotes/Tasks/Calcular valorhr dos s\303\263cios.md"
+"TaskNotes/Tasks/Criar conven\303\247\303\243o de uso do Drive compartilhado.md"
+"TaskNotes/Tasks/Docs N\303\243o-Obrigat\303\263rios 09-14 \342\200\224 Planejar horizontes 0-6M e 6-18M.md"
+"TaskNotes/Tasks/Docs Oficiais 01-08 \342\200\224 Validar obrigat\303\263rios com advogado e contador.md"
+"TaskNotes/Tasks/Docs Oficiais AGORA \342\200\224 7 documentos cr\303\255ticos antes do CNPJ.md"
+"TaskNotes/Tasks/Documenta\303\247\303\243o Oficial \342\200\224 Epic Vault Isolado HUB (01-14).md"
+"TaskNotes/Tasks/GOV-001 \342\200\224 Decidir estrutura societ\303\241ria (quantos CNPJs).md"
+"TaskNotes/Tasks/Gest\303\243o de Projeto e Governan\303\247a.md"
+"TaskNotes/Tasks/Preparar NDA padr\303\243o + configurar bloqueio de grava\303\247\303\243oprint no Meet-2.md"
+"TaskNotes/Tasks/Revis\303\243o Completa do Task Database.md"
+"TaskNotes/Tasks/Revisar os diret\303\263rios com os MVPs das Empresas Selecionadas.md"
+"TaskNotes/Tasks/Validar custos n\303\243o-hora da planilha.md"
+.agents/skills/canvas-bases/SKILL.md
+.agents/skills/canvas-bases/evals/evals.json
+.agents/skills/canvas-bases/references/vault.md
+.gitignore
+.logs/subtask2.log
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/bookmarks.json
+.obsidian/community-plugins.json
+.obsidian/core-plugins.json
+.obsidian/plugins/canvas-bases/data.json
+.obsidian/plugins/canvas-bases/main.js
+.obsidian/plugins/canvas-bases/manifest.json
+.obsidian/plugins/canvas-bases/styles.css
+.obsidian/plugins/dataview/data.json
+.obsidian/plugins/dataview/main.js
+.obsidian/plugins/dataview/manifest.json
+.obsidian/plugins/dataview/styles.css
+.obsidian/plugins/editor-width-slider/data.json
+.obsidian/plugins/editor-width-slider/main.js
+.obsidian/plugins/editor-width-slider/manifest.json
+.obsidian/plugins/editor-width-slider/styles.css
+.obsidian/plugins/obsidian-charts/main.js
+.obsidian/plugins/obsidian-charts/manifest.json
+.obsidian/plugins/obsidian-charts/styles.css
+.obsidian/plugins/obsidian-file-color/data.json
+.obsidian/plugins/obsidian-file-color/main.js
+.obsidian/plugins/obsidian-file-color/manifest.json
+.obsidian/plugins/obsidian-file-color/styles.css
+.obsidian/plugins/obsidian-icon-folder/data.json
+.obsidian/plugins/obsidian-icon-folder/main.js
+.obsidian/plugins/obsidian-icon-folder/manifest.json
+.obsidian/plugins/obsidian-icon-folder/styles.css
+.obsidian/plugins/omni-viewer/main.js
+.obsidian/plugins/omni-viewer/manifest.json
+.obsidian/plugins/omni-viewer/styles.css
+.obsidian/plugins/powerbases/main.js
+.obsidian/plugins/powerbases/manifest.json
+.obsidian/plugins/powerbases/styles.css
+.obsidian/plugins/tasknotes-project-colors/main.js
+.obsidian/plugins/tasknotes-project-colors/manifest.json
+.obsidian/plugins/tasknotes-project-colors/styles.css
+.obsidian/plugins/tasknotes/data.json
+.obsidian/plugins/tasknotes/main.js
+.obsidian/plugins/tasknotes/manifest.json
+.obsidian/plugins/tasknotes/styles.css
+.obsidian/themes/March/manifest.json
+.obsidian/themes/March/theme.css
+.obsidian/types.json
+.obsidian/workspace.json
+00-project-control/README.md
+00-project-control/decisoes/template-decisao.md
+00-project-control/escopo/fases-projeto/Fases_Projeto.canvas
+00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md
+00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.pdf
+00-project-control/registro-lacunas/HUB_Gaps.canvas
+00-project-control/registro-lacunas/HUB_Lacunas_Projeto.base
+00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md
+00-project-control/registro-lacunas/README.md
+00-project-control/registro-lacunas/lacunas/BRD-001.md
+00-project-control/registro-lacunas/lacunas/BRD-002.md
+00-project-control/registro-lacunas/lacunas/BRD-003.md
+00-project-control/registro-lacunas/lacunas/BRD-004.md
+00-project-control/registro-lacunas/lacunas/DAT-001.md
+00-project-control/registro-lacunas/lacunas/DAT-002.md
+00-project-control/registro-lacunas/lacunas/DAT-003.md
+00-project-control/registro-lacunas/lacunas/DAT-004.md
+00-project-control/registro-lacunas/lacunas/DAT-005.md
+00-project-control/registro-lacunas/lacunas/DAT-006.md
+00-project-control/registro-lacunas/lacunas/DAT-007.md
+00-project-control/registro-lacunas/lacunas/DAT-008.md
+00-project-control/registro-lacunas/lacunas/DAT-009.md
+00-project-control/registro-lacunas/lacunas/DAT-010.md
+00-project-control/registro-lacunas/lacunas/FIN-001.md
+00-project-control/registro-lacunas/lacunas/FIN-002.md
+00-project-control/registro-lacunas/lacunas/FIN-003.md
+00-project-control/registro-lacunas/lacunas/FIN-004.md
+00-project-control/registro-lacunas/lacunas/FIN-005.md
+00-project-control/registro-lacunas/lacunas/FIN-006.md
+00-project-control/registro-lacunas/lacunas/FIN-007.md
+00-project-control/registro-lacunas/lacunas/GOV-001.md
+00-project-control/registro-lacunas/lacunas/GOV-002.md
+00-project-control/registro-lacunas/lacunas/GOV-003.md
+00-project-control/registro-lacunas/lacunas/GOV-004.md
+00-project-control/registro-lacunas/lacunas/GOV-005.md
+00-project-control/registro-lacunas/lacunas/GOV-006.md
+00-project-control/registro-lacunas/lacunas/GOV-007.md
+00-project-control/registro-lacunas/lacunas/GOV-008.md
+00-project-control/registro-lacunas/lacunas/GOV-009.md
+00-project-control/registro-lacunas/lacunas/GOV-010.md
+00-project-control/registro-lacunas/lacunas/GTM-001.md
+00-project-control/registro-lacunas/lacunas/GTM-002.md
+00-project-control/registro-lacunas/lacunas/GTM-003.md
+00-project-control/registro-lacunas/lacunas/GTM-004.md
+00-project-control/registro-lacunas/lacunas/GTM-005.md
+00-project-control/registro-lacunas/lacunas/GTM-006.md
+00-project-control/registro-lacunas/lacunas/GTM-007.md
+00-project-control/registro-lacunas/lacunas/LCH-001.md
+00-project-control/registro-lacunas/lacunas/LCH-002.md
+00-project-control/registro-lacunas/lacunas/LCH-003.md
+00-project-control/registro-lacunas/lacunas/LCH-004.md
+00-project-control/registro-lacunas/lacunas/LCH-005.md
+00-project-control/registro-lacunas/lacunas/LCH-006.md
+00-project-control/registro-lacunas/lacunas/LCH-007.md
+00-project-control/registro-lacunas/lacunas/PRD-001.md
+00-project-control/registro-lacunas/lacunas/PRD-002.md
+00-project-control/registro-lacunas/lacunas/PRD-003.md
+00-project-control/registro-lacunas/lacunas/PRD-004.md
+00-project-control/registro-lacunas/lacunas/PRD-005.md
+00-project-control/registro-lacunas/lacunas/PRD-006.md
+00-project-control/registro-lacunas/lacunas/PRD-007.md
+00-project-control/registro-lacunas/lacunas/PRD-008.md
+00-project-control/registro-lacunas/lacunas/STR-001.md
+00-project-control/registro-lacunas/lacunas/STR-002.md
+00-project-control/registro-lacunas/lacunas/STR-003.md
+00-project-control/registro-lacunas/lacunas/STR-004.md
+00-project-control/registro-lacunas/lacunas/STR-005.md
+00-project-control/registro-lacunas/lacunas/STR-006.md
+00-project-control/registro-lacunas/lacunas/STR-007.md
+00-project-control/registro-lacunas/lacunas/STR-008.md
+00-project-control/registro-lacunas/lacunas/TEC-001.md
+00-project-control/registro-lacunas/lacunas/TEC-002.md
+00-project-control/registro-lacunas/lacunas/TEC-003.md
+00-project-control/registro-lacunas/lacunas/TEC-004.md
+00-project-control/registro-lacunas/lacunas/TEC-005.md
+00-project-control/registro-lacunas/lacunas/TEC-006.md
+00-project-control/registro-lacunas/lacunas/TEC-007.md
+00-project-control/registro-mudancas/2026-08-26-faseamento-P01-P07-cronograma-marcos.md
+00-project-control/registro-mudancas/2026-08-26-tarefas-56-execucao-base.md
+00-project-control/registro-mudancas/2026-08-27-remocao-receita-marketplace.md
+00-project-control/registro-mudancas/2026-08-31-diretorio-arquivos-filtrados.md
+00-project-control/registro-mudancas/2026-09-02-poda-estrutura-repositorio-fases-1-3.md
+00-project-control/registro-mudancas/template-registro-mudanca.md
+01-blueprint/README.md
+01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/00-manifesto/manifest.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/00_Leia-me/00_Leia-me.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/00_Leia-me/00_Leia-me_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/01_Mapa_Visual/01_Mapa_Visual.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/01_Mapa_Visual/01_Mapa_Visual_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/02_Nos_de_Dados/02_Nos_de_Dados.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/02_Nos_de_Dados/02_Nos_de_Dados_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/03_Conexoes/03_Conexoes.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/03_Conexoes/03_Conexoes_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/04_Indicadores_Master/04_Indicadores_Master.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/04_Indicadores_Master/04_Indicadores_Master_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/05_Arvore_de_Valor/05_Arvore_de_Valor.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/05_Arvore_de_Valor/05_Arvore_de_Valor_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/06_Simulador_ROI/06_Simulador_ROI.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/06_Simulador_ROI/06_Simulador_ROI_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/07_Visoes_Dashboard/07_Visoes_Dashboard.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/07_Visoes_Dashboard/07_Visoes_Dashboard_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/08_Dicionario_Dados/08_Dicionario_Dados.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/08_Dicionario_Dados/08_Dicionario_Dados_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/09_Eventos_Produto/09_Eventos_Produto.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/09_Eventos_Produto/09_Eventos_Produto_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/10_Integracoes/10_Integracoes.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/10_Integracoes/10_Integracoes_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/11_Governanca_LGPD/11_Governanca_LGPD.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/11_Governanca_LGPD/11_Governanca_LGPD_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/12_Roadmap/12_Roadmap.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/12_Roadmap/12_Roadmap_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/13_Matriz_Integracao/13_Matriz_Integracao.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/13_Matriz_Integracao/13_Matriz_Integracao_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/14_RACI/14_RACI.csv
+01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/14_RACI/14_RACI_analise.md
+01-blueprint/dados-inteligencia/modelo-indicadores/pastas-trabalho/HUB_Mapa_Inteligencia_Dados_Indicadores.xlsx
+01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md
+01-blueprint/estrategia/primeiro-rascunho-projeto/00-origem/HUB_Escopo_Estrategico_Documento_Mae_v1.docx
+01-blueprint/estrategia/primeiro-rascunho-projeto/00-origem/HUB_Escopo_Estrategico_Documento_Mae_v1.md
+01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
+01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
+01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md
+01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md
+01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
+01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
+02-refinement/README.md
+02-refinement/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1.md
+02-refinement/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1.md
+02-refinement/modelos-financeiros/registro-premissas-v0.md
+02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos.md
+02-refinement/pesquisa/log-evidencias-GTM.md
+02-refinement/pesquisa/piloto-firjan-processamento.md
+02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md
+02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md
+02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md
+02-refinement/refinamento-governanca/matriz-dados-finalidade-P03-T08-v1.md
+02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md
+02-refinement/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1.md
+02-refinement/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1.md
+02-refinement/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1.md
+02-refinement/refinamento-modelo-dados/fluxos-linhagem-replay-dsar-P03-T09-v1.md
+02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md
+02-refinement/refinamento-modelo-dados/promocao-M0-gate-P03-v1.md
+02-refinement/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1.md
+02-refinement/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1.md
+02-refinement/refinamento-produto/RACI_v1.md
+02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1.md
+02-refinement/refinamento-produto/filas-revisao-overrides.md
+02-refinement/refinamento-produto/matriz-autorizacao-tenancy.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/00-manifest/manifest.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/00_Leia-me/00_Leia-me.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/01_Mapa_Visual/01_Mapa_Visual.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/02_Nos_de_Dados/02_Nos_de_Dados.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/03_Conexoes/03_Conexoes.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/04_Indicadores_Master/04_Indicadores_Master.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/05_Arvore_de_Valor/05_Arvore_de_Valor.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/06_Simulador_ROI/06_Simulador_ROI.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/07_Visoes_Dashboard/07_Visoes_Dashboard.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/08_Dicionario_Dados/08_Dicionario_Dados.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/09_Eventos_Produto/09_Eventos_Produto.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/10_Integracoes/10_Integracoes.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/11_Governanca_LGPD/11_Governanca_LGPD.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/12_Roadmap/12_Roadmap.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/13_Matriz_Integracao/13_Matriz_Integracao.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/14_RACI/14_RACI.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/README.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/approval.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/corrections.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/entity-key-crosswalk.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/event-integration-crosswalk.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/governance-control-register.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/indicator-crosswalk.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/roadmap-raci-register.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/roi-assumption-register.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/source-fingerprints.csv
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_UNAPPROVED_DRAFT_v0.xlsx
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/05-pastas-trabalho-rascunho/README.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/baseline-inventory.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/corrected-csv-validation-P03-T09.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/corrected-csv-validation.json
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/corrected-csv-validation.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/entity-key-validation-P03-T09.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/entity-key-validation.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/roi-recalculation-P03-T09.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/roi-recalculation.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/14_RACI/RACI_v1.md
+03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/build_baseline.py
+03-approval/pacotes-revisao/P01-aceite-cross-functional-v1.md
+04-project-management/HUB_Log_Tarefas_Progresso.md
+04-project-management/atas-reuniao/Transcript Alinhamento - Plataforma.md
+04-project-management/atas-reuniao/Transcript meeting SEBRAE 02-09-2026.docx
+04-project-management/atas-reuniao/Transcript meeting SEBRAE 02-09-2026.md
+04-project-management/atas-reuniao/_template-ata.md
+04-project-management/atas-reuniao/template-reuniao.md
+04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador.md
+04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes.md
+04-project-management/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH.md
+04-project-management/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto.md
+04-project-management/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao.md
+04-project-management/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma.md
+04-project-management/cronogramas/cronograma-fases-v1.base
+04-project-management/marcos/marcos-fases-v1.md
+04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio.md
+04-project-management/planos-fase/P02_Produto_Operacao.md
+04-project-management/planos-fase/P03_Dados_Canonicos.md
+04-project-management/planos-fase/P04_Governanca_Confianca.md
+04-project-management/planos-fase/P05_Tecnologia_Contratual.md
+04-project-management/planos-fase/P06_Economia_GTM_Evidencia.md
+04-project-management/planos-fase/P07_Portao_Lancamento.md
+04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md
+04-project-management/planos-mestres/HUB_Plano_Fases_v1.md
+04-project-management/registro-mestre/matriz-fases-tarefas-v1.md
+04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas
+04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base
+04-project-management/registros-trabalho/logs-progresso/P01-entregaveis-arquitetura-oferta-negocio-2026-08-29.md
+04-project-management/registros-trabalho/logs-progresso/P02-entregaveis-produto-operacao-2026-08-29.md
+04-project-management/registros-trabalho/logs-progresso/P03-entregaveis-dados-canonicos-spine-2026-08-29.md
+04-project-management/registros-trabalho/logs-progresso/Sat 29 Aug 2026.md
+04-project-management/relatorios-status/template-relatorio-status.md
+04-project-management/tarefas/BP-001_HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+04-project-management/tarefas/BP-002_HUB_Blueprint_Produto_e_Capacidades.md
+04-project-management/tarefas/BP-003_HUB_Blueprint_Dados_e_Inteligencia.md
+04-project-management/tarefas/BP-004_HUB_Blueprint_Arquitetura_Tecnologica.md
+04-project-management/tarefas/BP-005_HUB_Blueprint_Modelo_Operacional.md
+04-project-management/tarefas/BP-006_HUB_Blueprint_Governanca_e_Juridico.md
+04-project-management/tarefas/BP-007_HUB_Blueprint_Marca_e_Mercado.md
+04-project-management/tarefas/BP-008_HUB_Blueprint_Lancamento_e_Evolucao.md
+04-project-management/tarefas/HUB_Tarefas_Projeto.base
+04-project-management/tarefas/HUB_Tarefas_Projeto.canvas
+04-project-management/tarefas/P01-T01_Matriz_4_Unidades.md
+04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md
+04-project-management/tarefas/P01-T03_Taxonomia_Receita.md
+04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores.md
+04-project-management/tarefas/P01-T05_Log_Evidencias_GTM.md
+04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros.md
+04-project-management/tarefas/P01-T07_Roadmap_Gates.md
+04-project-management/tarefas/P02-T01_Taxonomia_Capacidades.md
+04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos.md
+04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy.md
+04-project-management/tarefas/P02-T04_SOPs_CAOS.md
+04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides.md
+04-project-management/tarefas/P02-T06_RACI_Accountable_Unico.md
+04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico.md
+04-project-management/tarefas/P03-T02_Servico_Identidade_Matching.md
+04-project-management/tarefas/P03-T03_Envelope_Evento_Schema.md
+04-project-management/tarefas/P03-T04_Dicionario_Fisico_Mapping.md
+04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo.md
+04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias.md
+04-project-management/tarefas/P03-T07_Taxonomia_Estados_Valor.md
+04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade.md
+04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR.md
+04-project-management/tarefas/P04-T01_Arquitetura_Entidades.md
+04-project-management/tarefas/P04-T02_Mapa_Governanca_Dados_Fluxo.md
+04-project-management/tarefas/P04-T03_Charter_Selo_Independencia.md
+04-project-management/tarefas/P04-T04_Matriz_Responsabilidade_Seguros.md
+04-project-management/tarefas/P04-T05_Registro_PI.md
+04-project-management/tarefas/P04-T06_Testes_Retencao_DSAR.md
+04-project-management/tarefas/P04-T07_RACI_v2_Direitos_Decisao.md
+04-project-management/tarefas/P04-T08_Revisao_Inteligencia_Responsavel.md
+04-project-management/tarefas/P05-T01_Arquitetura_Solucao_Ambientes.md
+04-project-management/tarefas/P05-T02_Contratos_Integracao.md
+04-project-management/tarefas/P05-T03_Mapa_Identidade_Sistemas.md
+04-project-management/tarefas/P05-T04_Baseline_Tecnico_Capacidade.md
+04-project-management/tarefas/P05-T05_Threat_Model_Controles.md
+04-project-management/tarefas/P05-T06_SLOs_Runbooks_Recuperacao.md
+04-project-management/tarefas/P05-T07_Processo_Release_Rollback.md
+04-project-management/tarefas/P06-T01_Registro_Premissas.md
+04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios.md
+04-project-management/tarefas/P06-T03_Ponte_Valor_Produto_Receita.md
+04-project-management/tarefas/P06-T04_Separacao_Comercial_Restrito.md
+04-project-management/tarefas/P06-T05_Modelo_Capital_Tranches.md
+04-project-management/tarefas/P06-T06_Dicionario_KPIs_Financeiros.md
+04-project-management/tarefas/P06-T07_Modelo_Mercado_BottomUp.md
+04-project-management/tarefas/P06-T08_Log_Evidencias_GTM_Alternativas.md
+04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao.md
+04-project-management/tarefas/P06-T10_Matriz_Afirmacao_Evidencia.md
+04-project-management/tarefas/P06-T11_Arquitetura_Marca_WhiteLabel.md
+04-project-management/tarefas/P06-T12_Teste_Moat_Defensibilidade.md
+04-project-management/tarefas/P07-T01_Portao_Mestre_Grafo.md
+04-project-management/tarefas/P07-T02_Plano_Operacoes_Lancamento.md
+04-project-management/tarefas/P07-T03_Workflow_Aprovacao.md
+04-project-management/tarefas/P07-T04_Matriz_Rastreabilidade.md
+04-project-management/tarefas/P07-T05_Registro_Riscos_Premissas_Dependencias.md
+04-project-management/tarefas/P07-T06_Checklist_Lancamento_Comercial.md
+04-project-management/tarefas/P07-T07_Ciclo_Vida_Artefatos.md
+04-project-management/tarefas/README.md
+05-resources/Processar/Plataforma HUB/00-entrada/01-acordo-parceria/Acordo_Parceria_Tecnologica_DiverCidade_HUB.docx
+05-resources/Processar/Plataforma HUB/00-entrada/01-acordo-parceria/Acordo_Parceria_Tecnologica_DiverCidade_HUB.md
+05-resources/Processar/Plataforma HUB/00-entrada/02-especificacao-mestra/Especificacao_Mestra_Inteligencia_HUB 3.docx
+05-resources/Processar/Plataforma HUB/00-entrada/02-especificacao-mestra/Especificacao_Mestra_Inteligencia_HUB 3.md
+05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md
+05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/01-source/Planilha_Tecnica_Desenvolvimento_HUB.xlsx
+05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/02-planning/PLANO_FIX_XLSX_a_partir_MD.md
+05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/03-validation/Planilha_Tecnica_Desenvolvimento_HUB_validacao.md
+05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/03-validation/Planilha_Tecnica_Desenvolvimento_HUB_validacao_pos_fix.md
+05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/04-backups/Planilha_Tecnica_Desenvolvimento_HUB.bak.2026-09-02_2208.xlsx
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Candidatos/README.md
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Candidatos/visuais/ChatGPT Image 29 de ago. de 2026, 12_28_29.png
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Colaboradores + Dados/README.md
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Colaboradores + Dados/fontes/HUB_MVP_Bblend_80_Colaboradores_Meu_Time_Estrategia_Dados.xlsx
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Colaboradores + Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_23_14.png
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/README.md
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/fontes/HUB_MVP_Eventos_1000_Pessoas_10_Marcas.xlsx
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Eventos/visuais/ChatGPT Image 29 de ago. de 2026, 12_35_54.png
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/README.md
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/fontes/HUB_MVP_Sebrae_GINGA_100_Fornecedores_100_Compradores.xlsx
+05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais/ChatGPT Image 29 de ago. de 2026, 12_25_24.png
+05-resources/Processar/Plataforma HUB/01-mvps/README.md
+05-resources/Processar/Plataforma HUB/02-visao-plataforma/Exemplo de Deck/visuais/ChatGPT Image 29 de ago. de 2026, 12_09_50.png
+05-resources/Processar/Plataforma HUB/02-visao-plataforma/Modelo Financeiro para Investidores/README.md
+05-resources/Processar/Plataforma HUB/02-visao-plataforma/Modelo Financeiro para Investidores/fontes/Modelo Financeiro.xlsx
+05-resources/Processar/Plataforma HUB/02-visao-plataforma/README.md
+05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md
+05-resources/Processar/Plataforma HUB/03-analises-processadas/Relatorio_Consistencia_Especificacao_vs_Planilha_HUB.md
+05-resources/Processar/Plataforma HUB/03-analises-processadas/Relatorio_CrossReview_Blueprint_vs_Especificacao_Planilha_HUB.md
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/ChatGPT Image 29 de ago. de 2026, 12_47_53.png
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.34 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.34.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.35 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.35 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.35 (3).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.35.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.36 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.36 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.36 (3).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.36.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.37 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.37 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.37.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.38 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.38 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.38 (3).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.38.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.39 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.39 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.39 (3).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.39 (4).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.39 (5).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.39.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.40 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.40 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.40 (3).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.40 (4).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.40 (5).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.40 (6).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.40.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.41 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.41 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.41 (3).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.41 (4).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.41 (5).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.41.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.42 (1).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.42 (2).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.42 (3).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.42 (4).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.42 (5).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.42 (6).jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/WhatsApp Image 2026-08-29 at 12.47.42.jpeg
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/AVALIACAO 2.pdf
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/HUB_EVENTOS_12_SLIDES(1).pptx
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/HUB_MACKENZIE_ACADEMICO_11_SLIDES.pdf
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/HUB_MONKS_12_SLIDES.pdf
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/[FIRJAN] Deck - Plataforma HUB.pdf
+05-resources/Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/capa.pdf
+05-resources/Processar/Plataforma HUB/HUB_Fila_Processamento.base
+05-resources/Processar/Plataforma HUB/README.md
+05-resources/Processar/Plataforma HUB/_templates/cartao-processamento.md
+05-resources/Processar/Plataforma HUB/manifesto-processamento.md
+05-resources/README.md
+06-deliverables/.gitkeep
+99-archive/superado/Fases_Projeto_v0_clusters_tematicos.canvas
+README.md
+System/Plugins docs/Canvas Bases/Start Here.md
+System/Plugins docs/Canvas Bases/Views/Getting Started.base
+System/Plugins docs/Charts Plugin Docs/Bar Chart.md
+System/Plugins docs/Charts Plugin Docs/Basics.md
+System/Plugins docs/Charts Plugin Docs/COLOR_FIX_GUIDE.md
+System/Plugins docs/Charts Plugin Docs/Chart from Table.md
+System/Plugins docs/Charts Plugin Docs/Charts Documentation.md
+System/Plugins docs/Charts Plugin Docs/Customization.md
+System/Plugins docs/Charts Plugin Docs/Dataview Integration.md
+System/Plugins docs/Charts Plugin Docs/Line Chart.md
+System/Plugins docs/Charts Plugin Docs/Modifiers.md
+System/Plugins docs/Charts Plugin Docs/Pie and Donut Chart.md
+System/Plugins docs/Charts Plugin Docs/Polar Area Chart.md
+System/Plugins docs/Charts Plugin Docs/Radar Chart.md
+System/Plugins docs/Charts Plugin Docs/Types.md
+System/Plugins docs/Charts Plugin Docs/charts_cheatsheets pt-br.md
+System/Plugins docs/Charts Plugin Docs/charts_cheatsheets.md
+System/Plugins docs/Dataview Charts/Creating Dynamic Graphs in Obsidian.md
+System/Plugins docs/Dataview Charts/DataviewJS & Charts, how to get a cumulative line chart out of daily outcome values - Help.md
+System/Plugins docs/Dataview Charts/Plotting Task Completions with DataviewJS and Obsidian Charts.md
+System/Plugins docs/JSON Canvas Spec.md
+System/Plugins docs/Obsidian Base/Bases Toolbox 1.md
+System/Plugins docs/Obsidian Base/Bases Toolbox.md
+System/Plugins docs/Obsidian Base/Bases syntax.md
+System/Plugins docs/Obsidian Base/Create a base.md
+System/Plugins docs/Obsidian Base/Dataview vs Datacore vs Obsidian Bases.md
+System/Plugins docs/Obsidian Base/Formulas.md
+System/Plugins docs/Obsidian Base/Functions.md
+System/Plugins docs/Obsidian Base/List view.md
+System/Plugins docs/Obsidian Base/Obsidian cheat sheet Bases vs Dataview.md
+System/Plugins docs/Obsidian Base/Table view.md
+System/Plugins docs/Obsidian Base/Views.md
+System/Plugins docs/Task Notes/0. Overview.md
+System/Plugins docs/Task Notes/1. Terminology.md
+System/Plugins docs/Task Notes/10. Dependencies and Reminders.md
+System/Plugins docs/Task Notes/11. Links.md
+System/Plugins docs/Task Notes/2. Model and Field Mapping.md
+System/Plugins docs/Task Notes/3. Temporal Semantics.md
+System/Plugins docs/Task Notes/4. Recurrence.md
+System/Plugins docs/Task Notes/5. Operations.md
+System/Plugins docs/Task Notes/6. Validation.md
+System/Plugins docs/Task Notes/7. Conformance.md
+System/Plugins docs/Task Notes/9. Configuration.md
+System/Plugins docs/Task Notes/Adopt TaskNotes in an existing vault.md
+System/Plugins docs/Task Notes/Build a custom Base.md
+System/Plugins docs/Task Notes/Canvas Bases.md
+System/Plugins docs/Task Notes/Command reference.md
+System/Plugins docs/Task Notes/Companion Plugins.md
+System/Plugins docs/Task Notes/Core Concepts.md
+System/Plugins docs/Task Notes/Features Settings.md
+System/Plugins docs/Task Notes/Inline Task Integration.md
+System/Plugins docs/Task Notes/Integrations Settings.md
+System/Plugins docs/Task Notes/Mobile guide.md
+System/Plugins docs/Task Notes/Modal Fields Settings.md
+System/Plugins docs/Task Notes/Property Types Reference.md
+System/Plugins docs/Task Notes/Property-based Task Identification.md
+System/Plugins docs/Task Notes/Task Management.md
+System/Plugins docs/Task Notes/Task Properties Settings.md
+System/Plugins docs/Task Notes/Task Reminders.md
+System/Plugins docs/Task Notes/TaskNotes HTTP API.md
+System/Plugins docs/Task Notes/TaskNotes JavaScript Runtime API.md
+System/Plugins docs/Task Notes/TaskNotes NLP API.md
+System/Plugins docs/Task Notes/TaskNotes Obsidian CLI.md
+System/Plugins docs/Task Notes/TaskNotes Webhooks.md
+System/Plugins docs/Task Notes/Template Variables Reference.md
+System/Plugins docs/Task Notes/Time Management.md
+System/Plugins docs/Task Notes/User Fields.md
+System/Plugins docs/Task Notes/Workflows.md
+System/Plugins docs/Task Notes/mdbase-tasknotes CLI.md
+TaskNotes/Archive/Selecionar mais 2 ou 3 empresas.md
+TaskNotes/Start Here.md
+TaskNotes/Task Dashboard.md
+TaskNotes/Tasks/Ajustes de UI e Design.md
+TaskNotes/Tasks/Consolidar a proposta de valor da plataforma.md
+TaskNotes/Tasks/Definir arquitetura financeira.md
+TaskNotes/Tasks/Desenho de arquitetura + custos.md
+TaskNotes/Tasks/Desenvolvimento do MVP.md
+TaskNotes/Tasks/Fases 01-07.md
+TaskNotes/Tasks/Levantar proposta de sociedade.md
+TaskNotes/Tasks/Refinar os dados do Blueprint.md
+TaskNotes/Tasks/Solucionar o live sync do obsidian vault PF e Tamara.md
+TaskNotes/Views/agenda-default.base
+TaskNotes/Views/calendar-default.base
+TaskNotes/Views/documentacao-oficial.base
+TaskNotes/Views/kanban-default.base
+TaskNotes/Views/mini-calendar-default.base
+TaskNotes/Views/pomodoro-stats.base
+TaskNotes/Views/relationships.base
+TaskNotes/Views/tasks-default.base
+mdbase.yaml
+project-map.md
