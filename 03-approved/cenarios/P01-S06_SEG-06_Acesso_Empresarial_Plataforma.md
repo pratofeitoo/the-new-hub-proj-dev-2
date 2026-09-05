@@ -3,7 +3,7 @@ title: P01-S06 — SEG-06 Acesso Empresarial à Plataforma
 type: test-scenario
 segment: SEG-06
 source_task: "[[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade]]"
-status: hypothesis
+status: aprovado
 tags:
   - fase-P01
   - scenario
@@ -89,3 +89,10 @@ Todos os parceiros acima são hipóteses de capacidade; nenhum parceiro, canal, 
 - O piloto conclui onboarding e configuração dentro do escopo, com eventos de acesso, consentimento, uso, tickets e marcos de implementação reproduzíveis e auditáveis.
 - Usuários autorizados utilizam os módulos contratados para um fluxo operacional definido, com qualidade de dados, incidentes, suporte e limitações documentados; adoção não será interpretada isoladamente como valor financeiro.
 - Há decisão documentada de continuar, ajustar ou encerrar baseada em custo de entrega, capacidade de suporte, segurança, adequação ao problema e evidência observada. Uma renovação ou contratação recorrente somente será evidência se houver compromisso real formalizado; nenhuma dessas evidências existe neste cenário hipotético.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** P01/P02 (fases iniciais assinadas)
+- **Decisão:** promovido de `04-project-management/cenarios/` para `03-approved/cenarios/` na reestruturação lifecycle-first como entregável final assinado.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-reestruturacao-fronteiras-lifecycle.md`

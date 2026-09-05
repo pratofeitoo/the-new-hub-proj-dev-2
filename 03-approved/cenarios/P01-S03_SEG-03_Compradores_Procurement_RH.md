@@ -3,7 +3,7 @@ title: P01-S03 — SEG-03 Compradores corporativos de procurement e RH
 type: test-scenario
 segment: SEG-03
 source_task: "[[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade]]"
-status: hypothesis
+status: aprovado
 tags:
   - fase-P01
   - scenario
@@ -90,3 +90,10 @@ O comprador pode ter processos fragmentados para mapear necessidades, encontrar 
 - O cliente fornece evidência comparável de mudança no processo escolhido (por exemplo, completude dos registros, tempo de ciclo ou conclusão de capacitação), com baseline, período, método e limitações documentados.
 - O sponsor avalia os entregáveis e decide explicitamente entre parar, ajustar, expandir ou contratar continuidade; uma renovação só conta como hipótese de demanda quando houver registro escrito e termos correspondentes.
 - Segurança, privacidade, responsabilidades, custos de suporte e critérios de aceite são revisados antes de qualquer rollout ou serviço recorrente.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** P01/P02 (fases iniciais assinadas)
+- **Decisão:** promovido de `04-project-management/cenarios/` para `03-approved/cenarios/` na reestruturação lifecycle-first como entregável final assinado.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-reestruturacao-fronteiras-lifecycle.md`

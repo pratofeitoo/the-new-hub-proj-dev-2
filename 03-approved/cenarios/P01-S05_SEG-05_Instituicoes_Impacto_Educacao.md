@@ -3,7 +3,7 @@ title: P01-S05 — SEG-05 Instituições com agenda de impacto e educação
 type: test-scenario
 segment: SEG-05
 source_task: "[[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade]]"
-status: hypothesis
+status: aprovado
 tags:
   - fase-P01
   - scenario
@@ -93,3 +93,10 @@ Capacidades de impacto e educação podem estar distribuídas entre áreas, com 
 - Comparação pré/pós de indicadores de capacidade previamente definidos, com denominador, fonte, limitações e revisão humana; não tratar mudança observada como impacto causal sem método aprovado.
 - Relatório aceito pela instituição e registro de decisão de continuidade, redesenho ou encerramento; eventual renovação somente se houver evidência de uso e economia de entrega.
 - Reconciliação financeira separando contraprestação comercial, funding restrito, custos elegíveis, custos de parceiros e demais repasses, sem reclassificação silenciosa.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** P01/P02 (fases iniciais assinadas)
+- **Decisão:** promovido de `04-project-management/cenarios/` para `03-approved/cenarios/` na reestruturação lifecycle-first como entregável final assinado.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-reestruturacao-fronteiras-lifecycle.md`

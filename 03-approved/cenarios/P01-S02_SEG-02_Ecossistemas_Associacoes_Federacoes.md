@@ -3,7 +3,7 @@ title: "P01-S02 — SEG-02: Ecossistemas, associações e federações"
 type: test-scenario
 segment: SEG-02
 source_task: "[[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade]]"
-status: hypothesis
+status: aprovado
 tags:
   - fase-P01
   - scenario
@@ -91,3 +91,10 @@ O dono do ecossistema pode ter demandas dispersas, critérios inconsistentes par
 - Comparação entre linha de base e medidas acordadas, como participação, conclusão, tempo de ciclo, qualidade de dados e conexões aceitas, com limitações documentadas.
 - Decisão registrada de continuar, ajustar ou encerrar após revisão humana; repetição ou renovação só conta como evidência adicional quando houver novo registro contratual ou comportamento de compra.
 - Ausência de alegações de tração, contratos, impacto causal ou comprador real até que as evidências correspondentes sejam verificadas e registradas.
+
+## Histórico de aprovação
+
+- **Data:** 2026-09-05
+- **Gate:** P01/P02 (fases iniciais assinadas)
+- **Decisão:** promovido de `04-project-management/cenarios/` para `03-approved/cenarios/` na reestruturação lifecycle-first como entregável final assinado.
+- **Ref:** `00-project-control/registro-mudancas/2026-09-05-reestruturacao-fronteiras-lifecycle.md`
