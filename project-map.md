@@ -108,12 +108,13 @@ O fluxo de execução é:
 - P03: 9 itens + gate em elaboração em `01-work/refinamento-modelo-dados/` (todos `rascunho`).
 - P04–P07: 34 tarefas pendentes.
 - `GOV-001` (estrutura societária/CNPJs) continua sendo o bloqueador principal da documentação oficial.
-- Drive `THE NEW HUB/` = espelho somente-leitura de `03-approved/` + `README-DRIVE-MIRROR.md`; pastas legadas (`Obsidian Inventory/`, `Reviewed and Approved Files/`, `Documentações Oficiais/`) pendentes de aposentadoria.
+- Drive `THE NEW HUB/` = espelho somente-leitura de `03-approved/` + `README-DRIVE-MIRROR.md`; pastas legadas aposentadas em 2026-09-05.
 
 ## Guia de roteamento
 
 | Intenção | Ler | Escrever |
 |---|---|---|
+| Agente antes de mover/promover arquivo | `00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md` (declarar a transição) | conforme a transição declarada |
 | Entender regras e decisões | `00-project-control/` | `decisoes/` ou `registro-lacunas/` |
 | Elaborar conteúdo | `01-work/<domínio>/` | subpasta de `01-work/` correspondente (`rascunho`/`em-elaboracao`) |
 | Submeter a gate | `02-review/README.md` | congelar + mover para `02-review/` com dono e data |

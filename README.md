@@ -28,6 +28,7 @@ Depois disso:
 
 1. Leia [`project-map.md`](project-map.md) para a estrutura atual.
 2. Abra o framework em [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md).
+3. **Agentes: antes de criar, mover ou promover qualquer arquivo**, leia o contrato normativo em [`HUB_Framework_Fronteiras_Lifecycle.md`](00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md) e declare qual transição está executando.
 3. Leia a fundação em [`HUB_Fundacao_Blueprint_Projeto.md`](01-work/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
 4. Consulte o registro de lacunas em [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md).
 5. Para a ordem de execução, abra [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md).
