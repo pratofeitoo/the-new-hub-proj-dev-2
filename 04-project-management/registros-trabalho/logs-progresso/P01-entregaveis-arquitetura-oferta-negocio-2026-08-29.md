@@ -16,11 +16,11 @@ tags:
 
 ### P01-T01 — Matriz 4 Unidades
 - **Description:** Tabela e diagrama Mermaid de capacidades por unidade, distinguindo capacidades compartilhadas e específicas.
-- **File:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
+- **File:** [[99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|Blueprint de Oferta e Arquitetura de Receita (V1 arquivada)]]
 
 ### P01-T02 — Matriz Oferta × Comprador × Capacidade (v1)
 - **Description:** Matriz das 17 ofertas com unidade dona, comprador primário, JTBD, troca de valor, motor de receita e premissas abertas.
-- **File:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
+- **File:** [[99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|Blueprint de Oferta e Arquitetura de Receita (V1 arquivada)]]
 
 ### P01-T02 — Fichas Operacionais (refinement)
 - **Description:** 17 fichas detalhadas com JTBD, comprador, parceiros, riscos e critérios de sucesso.
@@ -28,11 +28,11 @@ tags:
 
 ### P01-T03 — Taxonomia de Receita e Regras de Reconhecimento
 - **Description:** Seção de Receita no blueprint e tabela de taxonomia e reconhecimento.
-- **Files:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]] e [[05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1]]
+- **Files:** [[99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|Blueprint de Oferta e Arquitetura de Receita (V1 arquivada)]] e [[05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1]]
 
 ### P01-T04 — Segmentos e Orçamentos de Compradores
 - **Description:** Tabela de seis segmentos (SEG-01 a SEG-06) com orçamento estimado.
-- **File:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
+- **File:** [[99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|Blueprint de Oferta e Arquitetura de Receita (V1 arquivada)]]
 
 ### P01-T05 — Log de Evidências GTM
 - **Description:** Registro de rota, parceiro, status, evidência, link e fallback, distinguindo hipótese de tração.
@@ -48,11 +48,15 @@ tags:
 
 ### P01-T02 — Cenários de Teste por Segmento
 - **Description:** Seis cenários (SEG-01 a SEG-06) com oferta, JTBD, comprador, usuário, problema, fluxo C.A.O.S., parceiros, entregáveis, custo/esforço e evidência esperada.
+
+## Relações e reconciliação
+
+- [[04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint|Classificação das 20 relações Blueprint — plano de solução]]
 - **Files:** [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador]], [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes]], [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH]], [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto]], [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao]] e [[03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma]]
 
 ## Notes
 
-- **Core blueprint**: [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB Blueprint Oferta e Arquitetura de Receita]] contains the primary deliverables for T01–T04.
+- **Core blueprint**: [[99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB Blueprint Oferta e Arquitetura de Receita (V1 arquivada)]] contains the primary deliverables for T01–T04.
 - **Refinement artifacts**: [[01-work/produto-e-operacao/refinamento-produto/fichas-operacionais-P01-T02-v1|Fichas operacionais P01-T02 v1]] and [[01-work/pesquisa-e-confianca/pesquisa/log-evidencias-GTM|Log de Evidências GTM]]. P01-T06 is documented in [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros|its task note]]; no dedicated artifact file was located.
 - **Cenários operacionais** (derived from T02 fichas) are linked individually in the list above.
 - **All 7 tasks are marked `concluido`** as of 2026-08-29.

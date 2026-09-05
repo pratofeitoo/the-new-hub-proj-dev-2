@@ -40,3 +40,7 @@ tags:
 - **9 tasks**
 - **18 listed deliverable files/artifacts**
 - **P03-T04** is the explicit blocking gate for completing the P03 spine.
+
+## Relações e reconciliação
+
+- [[04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint|Classificação das 20 relações Blueprint — plano de solução]]
