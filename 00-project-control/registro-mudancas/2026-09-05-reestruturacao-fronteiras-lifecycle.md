@@ -68,8 +68,7 @@ Migração de organização por domínio para lifecycle-first com 3 fronteiras (
 - [x] Fases 1–5: esqueleto, moves `01-work`/`02-review`/`03-approved`, ponteiros, carimbos
 - [x] Fase 6 (completa): import shell documentos-oficiais, espelho Drive, aposentadoria de `Obsidian Inventory/`, `Reviewed and Approved Files/`, `Documentações Oficiais/` no Drive executada em 2026-09-05 com aprovação explícita do usuário
 - [x] Fase 7: README + project-map reescritos, sweep de links, verificação por fronteira
-- [ ] Decisão futura: remover stubs `01-blueprint/`, `02-refinement/`, `04-project-management/cenarios/README.md` (próximo ciclo)
-- [ ] Decisão futura: normalizar campo legado `layer:` (`blueprint|refinement|approval` → `work|review|approved`) e tipos `hypothesis` em cenários aprovados
+- [x] Pós-ciclo (2026-09-05): stubs `01-blueprint/`, `02-refinement/`, `04-project-management/cenarios/README.md` removidos; auditoria `layer:` concluiu que é taxonomia ortogonal saudável (`cross-cutting`, `governance`, `refining` descrevem papel do conteúdo; `layer: blueprint/approval` em tarefas descreve a camada-alvo da tarefa, não lifecycle) — **nenhuma normalização aplicada, por decisão evidenciada**; `hypothesis` restantes em `03-approved/cenarios/` são rotulagem honesta de estimativas, não status — mantidos
 
 ## 7. Referências
 

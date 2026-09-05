@@ -26,7 +26,7 @@ com domínios como segundo eixo:
 | `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários (ponteiro para `03-approved/`), planos unificados e logs de progresso. |
 | `05-resources/` | `inbox/` (fila de triagem, ex-`Processar/`, 7 MVPs + visão de plataforma) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
 | `99-archive/` | `origens/primeiro-rascunho-projeto/`, `backups/`, `documentos-oficiais/` (descontinuado/rejeitado/superado), `instantaneos-historicos/`, `superado/`. |
-| `01-blueprint/`, `02-refinement/` | Stubs de redirecionamento (um ciclo). Conteúdo migrado para `01-work/`. |
+| `01-blueprint/`, `02-refinement/` | Aposentadas em 2026-09-05, stubs removidos; ver `git log --follow`. |
 | `TaskNotes/` | Notas operacionais, `Archive/` e visualizações Bases. |
 | `System/` | Documentação local de plugins em 5 famílias. `attachments/` é local e não rastreado. |
 | `.obsidian/` | Configuração do vault, 10 plugins habilitados/rastreados e tema `March` rastreado. |
@@ -80,7 +80,7 @@ com domínios como segundo eixo:
 ├── 99-archive/                      — histórico
 │   ├── origens/primeiro-rascunho-projeto/
 │   ├── backups/  documentos-oficiais/  instantaneos-historicos/  superado/
-├── 01-blueprint/ 02-refinement/      — stubs de redirecionamento (remover próximo ciclo)
+├── 01-blueprint/ 02-refinement/      — removidas em 2026-09-05 (era stubs; conteúdo em 01-work/)
 ├── System/Plugins docs/             — 5 famílias de docs locais (69 arquivos)
 ├── System/attachments/              — anexos locais ignorados pelo Git
 ├── TaskNotes/                       — tarefas operacionais, Archive/ e Views/

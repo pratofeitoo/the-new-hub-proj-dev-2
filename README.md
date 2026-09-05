@@ -58,7 +58,7 @@ flowchart LR
 | [`System/`](System/) | Documentação local de plugins; anexos ficam fora do Git. |
 | [`.agents/`](.agents/) | Skills e artefatos de agentes versionados no projeto. |
 
-Pastas aposentadas em 2026-09-05: `01-blueprint/` → `01-work/`, `02-refinement/` → `01-work/`, `03-approval/` → `02-review/`, `06-deliverables/` → `03-approved/`, `05-resources/Processar/` → `05-resources/inbox/`. Stubs de redirecionamento permanecem por um ciclo; histórico preservado via `git log --follow`.
+Pastas aposentadas em 2026-09-05: `01-blueprint/` → `01-work/`, `02-refinement/` → `01-work/`, `03-approval/` → `02-review/`, `06-deliverables/` → `03-approved/`, `05-resources/Processar/` → `05-resources/inbox/`. Histórico preservado via `git log --follow` (stubs de redirecionamento removidos em 2026-09-05).
 
 ## Estado atual
 
