@@ -1,0 +1,173 @@
+{
+  "evidence_type": "synthetic_dry_run_local_only",
+  "verdict": "PASS_PILOT_PROCEDURE_ONLY",
+  "not_claimed": [
+    "production_execution",
+    "full_validation",
+    "legal_approval",
+    "promotion"
+  ],
+  "inputs": {
+    "corrections_csv": {
+      "path": "02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/corrections.csv",
+      "sha256": "851a3aee52b188d1734ccdf88425e977e039e063193c6feac73f706fef2eeeeb",
+      "rows": 14,
+      "dat010_rows": 4
+    },
+    "source_fingerprints_csv": {
+      "path": "02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/source-fingerprints.csv",
+      "sha256": "57e2befd8eab1b79c816f24241d9fa3fb630359ff3da1202cd66465c8ff77387",
+      "rows": 17
+    },
+    "pilot_spine": "01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md",
+    "event_envelope": "01-work/dados-tech-financas/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1.md",
+    "corrected_csv_root": "02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido",
+    "corrected_csv_count": 15,
+    "workbook": {
+      "path": "02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx",
+      "sha256": "ee4aa74ee8f231fca76bc7c5857d32da913f1447f9a2b4235505c86b311bf2a2",
+      "size_bytes": 62939
+    }
+  },
+  "workbook_scope": {
+    "visible_worksheet_count": 16,
+    "worksheet_names": [
+      "00_DRAFT_NOTICE",
+      "00_Leia-me",
+      "01_Mapa_Visual",
+      "02_Nos_de_Dados",
+      "03_Conexoes",
+      "04_Indicadores_Master",
+      "05_Arvore_de_Valor",
+      "06_Simulador_ROI",
+      "07_Visoes_Dashboard",
+      "08_Dicionario_Dados",
+      "09_Eventos_Produto",
+      "10_Integracoes",
+      "11_Governanca_LGPD",
+      "12_Roadmap",
+      "13_Matriz_Integracao",
+      "14_RACI"
+    ],
+    "functional_csv_count": 15,
+    "draft_notice_present": true,
+    "functional_sheet_names_from_workbook": [
+      "00_Leia-me",
+      "01_Mapa_Visual",
+      "02_Nos_de_Dados",
+      "03_Conexoes",
+      "04_Indicadores_Master",
+      "05_Arvore_de_Valor",
+      "06_Simulador_ROI",
+      "07_Visoes_Dashboard",
+      "08_Dicionario_Dados",
+      "09_Eventos_Produto",
+      "10_Integracoes",
+      "11_Governanca_LGPD",
+      "12_Roadmap",
+      "13_Matriz_Integracao",
+      "14_RACI"
+    ],
+    "functional_sheet_names_from_csv": [
+      "00_Leia-me",
+      "01_Mapa_Visual",
+      "02_Nos_de_Dados",
+      "03_Conexoes",
+      "04_Indicadores_Master",
+      "05_Arvore_de_Valor",
+      "06_Simulador_ROI",
+      "07_Visoes_Dashboard",
+      "08_Dicionario_Dados",
+      "09_Eventos_Produto",
+      "10_Integracoes",
+      "11_Governanca_LGPD",
+      "12_Roadmap",
+      "13_Matriz_Integracao",
+      "14_RACI"
+    ],
+    "csv_files": [
+      "00_Leia-me.csv",
+      "01_Mapa_Visual.csv",
+      "02_Nos_de_Dados.csv",
+      "03_Conexoes.csv",
+      "04_Indicadores_Master.csv",
+      "05_Arvore_de_Valor.csv",
+      "06_Simulador_ROI.csv",
+      "07_Visoes_Dashboard.csv",
+      "08_Dicionario_Dados.csv",
+      "09_Eventos_Produto.csv",
+      "10_Integracoes.csv",
+      "11_Governanca_LGPD.csv",
+      "12_Roadmap.csv",
+      "13_Matriz_Integracao.csv",
+      "14_RACI.csv"
+    ],
+    "scope_pass": true
+  },
+  "runs": {
+    "run_001": {
+      "run_id": "run_001",
+      "counts_by_entity": {
+        "fornecedor": 1,
+        "comprador": 1,
+        "oportunidade": 1,
+        "inscricao": 1,
+        "diagnostico": 1,
+        "match": 1,
+        "reuniao": 1,
+        "proposta": 1,
+        "contrato": 1,
+        "receita_reportada": 1,
+        "consentimento": 1,
+        "historico_alteracoes": 1
+      },
+      "event_count": 12,
+      "key_count": 24,
+      "keys_sha256": "b568fa1728718bc65d22d27453ac33a3e6798ebdca75ae132bbf5c0d504585b7",
+      "total_brl": 12500,
+      "duplicates": 0,
+      "late_events": 0,
+      "expected_delta_brl": 0
+    },
+    "run_002": {
+      "run_id": "run_002",
+      "counts_by_entity": {
+        "fornecedor": 1,
+        "comprador": 1,
+        "oportunidade": 1,
+        "inscricao": 1,
+        "diagnostico": 1,
+        "match": 1,
+        "reuniao": 1,
+        "proposta": 1,
+        "contrato": 1,
+        "receita_reportada": 1,
+        "consentimento": 1,
+        "historico_alteracoes": 1
+      },
+      "event_count": 12,
+      "key_count": 24,
+      "keys_sha256": "b568fa1728718bc65d22d27453ac33a3e6798ebdca75ae132bbf5c0d504585b7",
+      "total_brl": 12500,
+      "duplicates": 0,
+      "late_events": 0,
+      "expected_delta_brl": 0
+    }
+  },
+  "reconciliation": {
+    "counts_equal": true,
+    "keys_equal": true,
+    "totals_equal": true,
+    "duplicates_equal": true,
+    "late_events_equal": true,
+    "expected_delta_equal": true
+  },
+  "reconciliation_pass": true,
+  "blocking_status": {
+    "status": "em-revisao",
+    "DAT-009": "blocking: yes",
+    "DAT-010": "blocking: yes",
+    "promotion": "not performed"
+  },
+  "verification_command": "python3 02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/pilot-replay-reconciliation-P03-T09.py && git diff --check"
+}

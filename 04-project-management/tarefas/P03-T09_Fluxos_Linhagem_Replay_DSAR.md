@@ -90,7 +90,8 @@ Prototipar fluxos de linhagem/correção/replay/DSAR/portabilidade e reconstruir
 - **Entregável produzido:** [[01-work/dados-tech-financas/refinamento-modelo-dados/fluxos-linhagem-replay-dsar-P03-T09-v1|fluxos-linhagem-replay-dsar-P03-T09-v1.md]] — fluxos Mermaid `origem→correção→alias→evento→métrica→valor→dashboard` + `correção` (DAT010-001..004) + `replay` (`run_001→run_002`) + `DSAR` (acesso/exclusão/portabilidade) + `portabilidade`; XLSX [[02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx|RECONSTRUIDO_P03-T09_v1.xlsx]] (41 campos corrigidos, 16 worksheets: 15 abas funcionais + `00_DRAFT_NOTICE`, 73 indicadores).
 - **Validações:** `06-relatorios-validacao/entity-key-validation-P03-T09.md` **PASS** (45 entidades, 0 órfão) + `roi-recalculation-P03-T09.md` **PASS reproduzível** (R$1.220k bruto / R$270k líquido / ROI 28,42%) + `corrected-csv-validation-P03-T09.md` **PASS** (15/15 CSVs 16 cols).
 - **Resultado:** fluxos prototipados com `run_id` + reconciliação `counts/keys/totals/duplicates`; XLSX reconstruído como insumo **não aprovado**.
-- **Próximo:** executar `build_baseline.py` com dados sintéticos e aprovação Dados+Tech+LGPD em `DEC-P03-T09.md` antes de promover.
+- **Evidência mínima adicional — 2026-09-05:** `06-relatorios-validacao/pilot-replay-reconciliation-P03-T09.py` executado localmente gerou JSON/MD determinísticos para replay sintético/dry-run `run_001→run_002`; counts/keys/totals/duplicatas/eventos tardios reconciliaram, e a inspeção ZIP confirmou `16` worksheets visíveis (`15` funcionais + `00_DRAFT_NOTICE`) sem alterar o XLSX. Isto não é execução de produção nem validação full.
+- **Próximo:** aprovação Dados+Tech+LGPD em `DEC-P03-T09.md` antes de promover; `DAT-009`/`DAT-010` permanecem `blocking: yes`.
 
 ## Verificação G03.C4/C5 — 2026-08-29
 

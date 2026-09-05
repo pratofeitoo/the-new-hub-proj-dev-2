@@ -145,6 +145,13 @@ tags:
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
 
+### 2026-09-05 — Evidências mínimas P03-T08/P03-T09 executadas como dry-run
+
+- **P03-T08:** criada evidência sintética determinística `propagation-pilot-evidence-2026-09-05.md` para `consent.revoked → quarantine` (45s, 7 destinos, 7 IDs de quarentena, replay idempotente) e `CMP-DSAR-manual-pilot-2026-09-05.md` com 3 casos DSAR manuais. O resultado é `DRY-RUN / NÃO EXECUTADO`; não mede runtime real nem encerra `DAT-008`.
+- **P03-T09:** criado harness `pilot-replay-reconciliation-P03-T09.py` + JSON/MD. Fixture mínima reconciliou `run_001 → run_002`: 12 eventos, 24 chaves, R$12.500, 0 duplicatas, 0 eventos tardios, delta esperado 0. XLSX confirmado como 16 worksheets visíveis (15 funcionais + `00_DRAFT_NOTICE`), SHA-256 registrado; binário não alterado.
+- **Decisão de evidência:** resultados são evidência de procedimento piloto, não execução de produção/full, aprovação LGPD ou promoção. `DAT-008`, `DAT-009` e `DAT-010` permanecem abertos/blocking; P03-T08/P03-T09 permanecem `em-revisao`.
+- **Próximo passo:** executar os mesmos procedimentos em runtime/infraestrutura real, obter logs assinados e revisões Dados+Tech+LGPD antes de qualquer DEC ou promoção.
+
 ### 2026-09-05 — Sprint piloto P03-T01/T08/T09 executado em paralelo
 
 - **Dispatch:** três lanes independentes foram executadas em paralelo com `openai/gpt-5.6-luna`, após verificação de `~/.config/opencode/opencode.json` antes e depois do dispatch. Cada lane teve escopo de arquivo disjunto; commits dos lanes foram integrados seletivamente.
