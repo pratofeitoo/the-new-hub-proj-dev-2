@@ -17,7 +17,7 @@ tags:
 > **Status:** rascunho para revisão Arquitetura de Dados · **G03.A1** · Não constitui aprovação. Revisão por Dados + Tech requerida antes de promover para `03-approval`.
 > **Origem:** síntese de [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] + blueprint [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]].
 
-## 1. Entidades canônicas (26) — PK estável
+## 1. Entidades canônicas (25) — PK estável
 
 Cada entidade tem `canonical_id` imutável (PK lógica), `tenant_id`, `object_type`, `created_at`, `updated_at`, `valid_from`, `valid_to`, `record_status`, `provenance_ref`. IDs de origem ficam em `identity_alias` (externo → interno).
 
@@ -53,9 +53,9 @@ Cada entidade tem `canonical_id` imutável (PK lógica), `tenant_id`, `object_ty
 
 ### N24 Consentimento — bloqueador LGPD
 
-`N24` é um nó bloqueador: sem consentimento válido para a finalidade, ficam bloqueadas a leitura, utilização e derivação de dados sensíveis (incluindo `FLD-005`, `FLD-006`, `FLD-007` e `FLD-028`). O registro mínimo é `consent_id`, `purpose`, `legal_basis`, `titular_id`, `version`, `valid_from/to`, `status` e `revogado_em`; revogação deve propagar para derivados em até **5 minutos**, com log CMP auditável.
+`N24` é um nó bloqueador: sem consentimento válido para a finalidade, ficam bloqueadas a leitura, utilização e derivação de dados sensíveis (incluindo `FLD-005`, `FLD-006`, `FLD-007` e `FLD-028`). O registro mínimo é `consent_id`, `person_id`, `purpose`, `legal_basis`, `version`, `valid_from/to`, `status` e `revogado_em`; `titular_id` é apenas alias legado. Revogação deve propagar para derivados em até **5 minutos**, com log CMP auditável.
 
-### N26 Decisão
+### Decisão operacional (fora da lista das 25 entidades canônicas)
 
 `N26 Decision` é entidade operacional com `decision_id` (FLD-021), `recommendation_id`, `estimated_value` (FLD-022) e `realized_value` (FLD-023). Liga alerta/recomendação a ação humana e ao ledger de valor; toda decisão exige motivo, decisor e evidência.
 
@@ -65,7 +65,7 @@ Cada entidade tem `canonical_id` imutável (PK lógica), `tenant_id`, `object_ty
 
 | Relação | Tabela / Bridge | FKs | Cardinalidade | Temporal |
 |---|---|---|---|---|
-| Person–Company | `rel_person_company` | `person_id` → `dim_person`, `company_id` → `dim_company` | N:N temporal, sem sobreposição incompatível | `valid_from/to`, `relationship_type=employment` |
+| Person–Company | `rel_person_company` | `relationship_id` PK; `person_id` → `dim_person`; `company_id` → `dim_company`; nullable `manager_id` → `dim_person.person_id`; `tenant_id`; `provenance_ref` | N:N temporal, sem sobreposição incompatível | `valid_from` inclusive / `valid_to` exclusivo, `relationship_type=employment` |
 | Company–Entity | `rel_company_entity` | `company_id`, `entity_id` | N:N contratual | `valid_from/to` |
 | Person–Skill | `fact_person_skill` | `person_id`, `skill_id`, `evidence_id` | N:N com score | `assessed_at`, `valid_to`, `skill_version` |
 | Opportunity–Need | `rel_opportunity_need` | `opportunity_id`, `skill_id` | 1:N requisitos | `weight`, `mandatory`, `need_version` |
@@ -97,6 +97,8 @@ Cada entidade tem `canonical_id` imutável (PK lógica), `tenant_id`, `object_ty
 - Eventos atrasados mantêm `occurred_at` original; `recorded_at` registra chegada.
 - Correções criam nova versão com `valid_from` novo; histórico preservado (não overwrite).
 - Relações Pessoa–Empresa, Consentimento, Participação, Contrato exigem intervalo de vigência explícito.
+- `rel_person_company.manager_id` é nullable e referencia `dim_person.person_id`; manager e vínculo devem pertencer ao mesmo `tenant_id` e ter intervalos sobrepostos.
+- A ausência de sobreposição incompatível para `employment` (por `tenant_id`, `person_id`, `relationship_type`) é requisito de aceitação física ainda não implementado/aprovado.
 
 ## 5. Diagrama ER (lógico)
 
@@ -127,7 +129,7 @@ erDiagram
 
     PERSON { string person_id PK "canonical, imutável" }
     COMPANY { string company_id PK }
-    REL_PERSON_COMPANY { string relationship_id PK string person_id FK string company_id FK date valid_from date valid_to }
+    REL_PERSON_COMPANY { string relationship_id PK string tenant_id string person_id FK string company_id FK string manager_id FK string relationship_type string provenance_ref date valid_from date valid_to }
     SKILL { string skill_id PK }
     FACT_PERSON_SKILL { string person_id FK string skill_id FK string evidence_id FK date assessed_at }
     OPPORTUNITY { string opportunity_id PK }

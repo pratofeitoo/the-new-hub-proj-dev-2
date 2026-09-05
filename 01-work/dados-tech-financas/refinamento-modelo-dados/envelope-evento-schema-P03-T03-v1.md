@@ -24,7 +24,7 @@ O envelope mínimo consolidado é: `event_id`, `event_type`, `schema_version`, `
 | Campo | Tipo | Regra |
 |---|---|---|
 | `event_id` | UUID v4 | único por ocorrência; nunca reutilizado |
-| `event_type` | string | `domain.verb` ex: `identity.merged`, `journey.started`, `match.proposed` |
+| `event_type` | string | `domain.verb` ex: `identity.merged`, `journey.started`, `match.proposed`; `consent.revoked` é event_type válido e obrigatório para revogação |
 | `schema_version` | semver `major.minor` | `major` = breaking/semântica, `minor` = compatível/aditiva |
 | `producer` | string | `hub.journey`, `crm`, `ats`, `lms` — deve publicar contrato |
 | `tenant_id` / `ecosystem` | string | `tenant_id` canônico; `ecosystem` quando cross-tenant com finalidade declarada |
@@ -67,6 +67,35 @@ O envelope mínimo consolidado é: `event_id`, `event_type`, `schema_version`, `
 }
 ```
 
+**Exemplo CMP — revogação de consentimento (schema v1.0):**
+
+```json
+{
+  "event_id": "evt_consent_revoked_001",
+  "event_type": "consent.revoked",
+  "schema_version": "1.0",
+  "producer": "hub.cmp",
+  "tenant_id": "tenant_001",
+  "subject_canonical_id": "person_001",
+  "object_type": "Consent",
+  "occurred_at": "2026-08-29T14:00:00Z",
+  "recorded_at": "2026-08-29T14:00:02Z",
+  "valid_from": "2026-08-29T14:00:00Z",
+  "valid_to": "2026-08-29T14:00:00Z",
+  "payload": {
+    "consent_id": "cons_001",
+    "person_id": "person_001",
+    "purpose": "matching",
+    "version": "1",
+    "revoked_at": "2026-08-29T14:00:00Z"
+  },
+  "consent_ref": {"consent_id": "cons_001", "purpose": "matching", "version": "1"},
+  "idempotency_key": "hub.cmp:consent.revoked:person_001:cons_001:matching:2026-08-29T14:00:00Z",
+  "quality_status": "valid",
+  "security_class": "restricted"
+}
+```
+
 ## 2. Schema Registry
 
 Local lógico: `01-work/dados-tech-financas/refinamento-modelo-dados/schema-registry/` (futuro físico: Apicurio/Confluent).
@@ -89,6 +118,12 @@ Local lógico: `01-work/dados-tech-financas/refinamento-modelo-dados/schema-regi
 - Chave = `producer + event_type + subject_canonical_id + occurred_at + hash(payload)` (documentado por produtor).
 - Duplicata não cria atividade duplicada; consumidor deve deduplicar por `idempotency_key` antes de mutação.
 - Retentativa com mesma chave = reenvio idempotente.
+
+### Eventos de vínculo Pessoa–Empresa (E01)
+
+Os tipos `relationship.started` e `relationship.ended` são válidos no registry v1. Ambos usam o envelope canônico e `object_type=Relationship`, com `subject_canonical_id=relationship_id`, `tenant_id`, `occurred_at`, `recorded_at`, `valid_from`, `valid_to`, `source_ref`, `provenance_ref` e `idempotency_key` obrigatórios.
+
+Payload mínimo: `relationship_id`, `person_id`, `company_id`, `manager_id` (nullable), `relationship_type=employment`, `valid_from`, `valid_to`; o evento `relationship.ended` também exige `end_reason`. O consumidor deduplica por `idempotency_key` antes de mutar estado; replays preservam tempos e payload originais.
 
 ## 4. Regras temporais (alinhadas a P03-T01 v1)
 

@@ -17,13 +17,14 @@ tags:
 > **Status:** rascunho para revisão Dados+Tech · **G03.B2** é bloqueador mínimo para liberar P03. Automação e cobertura adicional são extensões pós-MVP.
 > **Depende de:** [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — 25 entidades com `canonical_id`.
 
-## 1. Resumo — 17 tabelas físicas → entidades canônicas (47 campos)
+## 1. Resumo — 18 tabelas físicas → entidades canônicas (54 campos)
 
 | Tabela física | Campos | Entidade(s) canônica(s) | PK lógica | Propósito |
 |---|---|---|---|---|
 | `dim_person` | 4 | Person | `person_id` | Identidade pessoa pseudônima |
 | `dim_company` | 3 | Company | `company_id` | Organização contratante |
 | `dim_entity` | 1 | Entity | `entity_id` | Rede/entidade HUB |
+| `rel_company_entity` | 6 | Company + Entity | `(tenant_id, company_id, entity_id, valid_from)` | Bridge N:N contratual, temporal e auditável |
 | `dim_skill` | 2 | Skill | `skill_id` + `skill_version` | Taxonomia capacidade |
 | `dim_cohort` | 1 | Cohort | `cohort_id` | População comparação |
 | `dim_model_version` | 1 | ModelVersion | `model_version_id` | Versão modelo |
@@ -33,13 +34,15 @@ tags:
 | `fact_opportunity` | 3 | Opportunity + Need | `opportunity_id` | Oportunidade + requisitos |
 | `fact_match` | 3 | Match | `match_id` | Candidato matching |
 | `fact_participation` | 2 | Participation | `participation_id` | Jornada/programa |
-| `fact_contract` | 2 | Contract | `contract_id` | Contrato assinado |
+| `fact_contract` | 3 | Contract | `contract_id` | Contrato assinado; `company_id` é o papel Cliente |
 | `fact_transaction` | 1 | Transaction | `transaction_id` | Transação reconhecida |
 | `fact_business_metric` | 3 | BusinessMetric | `metric_id`+`period`+`cohort` | Métrica negócio |
 | `fact_financial_value` | 4 | FinancialValue (deriv. BusinessMetric+Contract) | `financial_value_id` | Valor financeiro estados |
 | `dim_consent` | 4 | Consent (N24) | `consent_id` | Bloqueador LGPD — finalidade, versão e revogação |
 
-**Total:** 47 campos auditados no dicionário canônico; a expansão inclui `dim_consent` (N24) e campos do envelope/evento.
+**Total:** 54 campos auditados no dicionário canônico; a expansão inclui `rel_company_entity` (bridge de primeira classe), `fact_contract.company_id` (papel Cliente), `dim_consent` (N24) e campos do envelope/evento.
+
+**Regra Empresa–Entidade (E02):** `Company` ≠ `Entity`. Não existe FK direta entre as dimensões; toda ligação é lida e escrita exclusivamente em `rel_company_entity`. A bridge exige `tenant_id`, `provenance_ref`, `valid_from` e `valid_to`, com PK `(tenant_id, company_id, entity_id, valid_from)`, FKs para ambas as dimensões e `CHECK (valid_from < valid_to)`. Inclusões e encerramentos devem emitir `company_entity.linked`/`company_entity.unlinked` em `fact_event`; a evidência de tenant scoping, constraints e auditoria será publicada em `06-relatorios-validacao/entity-key-validation`.
 
 ### Gate de consentimento N24
 
@@ -48,11 +51,11 @@ tags:
 | dim_consent | consent_id | UUID | PK | Consent.consent_id | `valid_from/to`, `version` |
 | dim_consent | purpose | enum | — | Consent.purpose | `valid_from/to` |
 | dim_consent | legal_basis | enum | — | Consent.legal_basis | `valid_from/to` |
-| dim_consent | titular_id | UUID | FK → dim_person | Consent.titular_id | `consent_status`, `revogado_em` |
+| dim_consent | person_id | UUID | FK → dim_person.person_id | Consent.person_id (`titular_id` é alias legado) | `consent_status`, `revogado_em` |
 
-`N24` é bloqueador: revogação propaga em até **5 minutos** para `fact_person_skill`, `fact_event` e `fact_match`; sem consentimento válido, novos usos e leituras sensíveis são rejeitados e registrados no CMP log.
+`N24` é bloqueador: a coluna física canônica é `fact_consent.person_id` (`titular_id` é apenas alias legado); revogação propaga em até **5 minutos** para `fact_person_skill`, `fact_event` e `fact_match`; sem consentimento válido, novos usos e leituras sensíveis são rejeitados e registrados no CMP log.
 
-## 2. Detalhamento — 41 campos → atributo canônico
+## 2. Detalhamento — 48 campos → atributo canônico
 
 | Tabela | Campo | Tipo | Chave | Entidade.Atributo canônico | Temporal |
 |---|---|---|---|---|---|
@@ -61,9 +64,14 @@ tags:
 | dim_person | consent_status | enum | — | Consent.status (por `purpose`) | `valid_from/to`, `version` |
 | dim_person | profile_segment | string | — | Person.profile_segment | `valid_from/to` |
 | dim_company | company_id | UUID | PK | Company.company_id | `valid_from/to` |
-| dim_company | entity_id | UUID | FK → dim_entity | Entity.entity_id (via `rel_company_entity`) | `valid_from/to` |
 | dim_company | segment | enum | — | Company.segment | taxonomia versionada |
 | dim_entity | entity_id | UUID | PK | Entity.entity_id | `valid_from/to` |
+| rel_company_entity | company_id | UUID | FK → dim_company | Company.company_id (bridge) | `valid_from/to` |
+| rel_company_entity | entity_id | UUID | FK → dim_entity | Entity.entity_id (bridge) | `valid_from/to` |
+| rel_company_entity | tenant_id | UUID | escopo obrigatório | Tenant scoping da relação | toda vigência |
+| rel_company_entity | valid_from | timestamp | PK componente | Início do vínculo contratual | obrigatório; UTC |
+| rel_company_entity | valid_to | timestamp | — | Fim do vínculo contratual | obrigatório; UTC |
+| rel_company_entity | provenance_ref | string | auditoria obrigatória | Referência da origem/evidência | imutável por versão |
 | dim_skill | skill_id | UUID | PK | Skill.skill_id | `skill_version` |
 | dim_skill | skill_version | string | — | Skill.version | `valid_from/to` |
 | dim_cohort | cohort_id | UUID | PK | Cohort.cohort_id | `valid_from/to` |
@@ -88,6 +96,7 @@ tags:
 | fact_participation | participation_id | UUID | PK | Participation.participation_id | `enrolled_at`/`completed_at` |
 | fact_participation | person_id | UUID | FK | Person.person_id | `valid_from/to` |
 | fact_contract | contract_id | UUID | PK | Contract.contract_id | `signed_at`, `valid_from/to` |
+| fact_contract | company_id | UUID | FK → dim_company; obrigatório | Company.company_id como papel Cliente | `signed_at`, `valid_from/to` |
 | fact_contract | opportunity_id | UUID | FK | Opportunity.opportunity_id | `valid_from/to` |
 | fact_transaction | transaction_id | UUID | PK | Transaction.transaction_id | `recognized_at` |
 | fact_business_metric | metric_id | UUID | PK parcial | BusinessMetric.metric_id | `definition_version`, `period` |
@@ -97,6 +106,8 @@ tags:
 | fact_financial_value | state | enum | — | FinancialValue.state (`potencial/influenciado/validado/realizado`) | `valid_from/to` |
 | fact_financial_value | amount | decimal | — | FinancialValue.amount | `competence_date` |
 | fact_financial_value | contract_id | UUID | FK | Contract.contract_id | `recognized_at` |
+
+> **Contrato–Cliente (E02):** `fact_contract.company_id` é obrigatório e, junto de `contract_id`, materializa `Company` no papel `Cliente`; não é uma entidade `Cliente` adicional. A relação deve respeitar `tenant_id` e a vigência contratual da bridge quando houver vínculo Company–Entity.
 
 ## 3. Contradições `abas-origem/` vs `03-csv-corrigido/` — resolvidas
 
@@ -118,7 +129,9 @@ erDiagram
     DIM_PERSON ||--o{ FACT_PERSON_SKILL : "1:N"
     DIM_SKILL ||--o{ FACT_PERSON_SKILL : "1:N"
     DIM_PERSON ||--o{ DIM_COMPANY : "FK vigente"
-    DIM_COMPANY ||--o{ DIM_ENTITY : "FK"
+    DIM_COMPANY ||--o{ REL_COMPANY_ENTITY : "N:N contratual"
+    DIM_ENTITY ||--o{ REL_COMPANY_ENTITY : "N:N contratual"
+    DIM_COMPANY ||--o{ FACT_CONTRACT : "1:N cliente"
     FACT_ASSESSMENT ||--o{ FACT_PERSON_SKILL : "avalia"
     FACT_EVENT ||--o{ FACT_OPPORTUNITY : "origina"
     FACT_OPPORTUNITY ||--o{ FACT_MATCH : "candidato"

@@ -41,8 +41,8 @@ related_notes:
 
 | Item | Contrato |
 |---|---|
-| Chaves | `dim_consent.consent_id` PK; FK `titular_id → dim_person.person_id`; `fact_consent(person_id, purpose, consent_id)` 1:N por finalidade |
-| Campos mínimos | `consent_id`, `titular_id`, `purpose` (enum), `legal_basis` (enum), `version`, `status` (`granted/revoked/expired`), `valid_from/to`, `revogado_em` |
+| Chaves | `dim_consent.consent_id` PK; `person_id → dim_person.person_id` FK (`titular_id` é alias legado); `fact_consent(person_id, purpose, consent_id)` 1:N por finalidade |
+| Campos mínimos | `consent_id`, `person_id`, `purpose` (enum), `legal_basis` (enum), `version`, `status` (`granted/revoked/expired`), `valid_from/to`, `revogado_em` |
 | Bloqueio | Sem `consent` válido para a finalidade, bloqueados leitura/uso/derivação de sensíveis (`FLD-005/006/007`, `FLD-028`, `nome_social`, localização sensível) em `fact_person_skill`, `fact_event`, `fact_match` |
 | Revogação | `consent_status=revoked` → evento `consent.revoked` → pipeline bloqueia novos `fact_*` com `purpose` revogado em ≤5 min; derivados materializados vão para fila `quarantine`; `CMP log + propagation test` |
 | Retenção/DSAR | Vault 60 meses; analítico 24–36 meses; audit append-only 60 meses; DSAR exporta `person_id` + aliases + `consent`; exclusão cobre aliases, `dim_*`, `fact_*`, features, caches, exports |
@@ -54,12 +54,12 @@ related_notes:
 
 | Item | Contrato |
 |---|---|
-| Chaves | `relationship_id` PK; `person_id → dim_person`, `company_id → dim_company`; `relationship_type=employment` |
-| Temporalidade | `valid_from/to` obrigatórios; `manager_id` (FLD-003) como atributo do vínculo, não da pessoa; `dim_person.company_id` lido sempre via vínculo vigente |
-| Regras | Proíbe dois vínculos `employment` vigentes sobrepostos para o mesmo `person_id` (incompatível); admissão/desligamento = abre/encerra linha, nunca update in place; `tenant_id` + `valid_from/to` em toda leitura operacional |
-| Auditoria | `provenance_ref`; eventos `relationship.started/ended` no envelope (`event_id`, `event_type`, `schema_version`, `occurred_at`) |
-| Aceite F1 (A1–A3) | A1 `REL-03` declarado parcial por escrito; A2 `relationship_id` + temporalidade reservados e validados em amostra; A3 aceite ou devolução registrada no gate — sem afirmação de cobertura plena |
+| Chaves | `relationship_id` PK; `person_id → dim_person`, `company_id → dim_company`; `manager_id → dim_person.person_id` nullable FK; `relationship_type=employment` |
+| Temporalidade | `valid_from/to` obrigatórios; `manager_id` (FLD-003) é atributo do vínculo, não da pessoa; `dim_person.company_id` lido sempre via vínculo vigente |
+| Regras | Proíbe dois vínculos `employment` vigentes sobrepostos para o mesmo `person_id` (incompatível); admissão/desligamento = abre/encerra linha, nunca update in place; `tenant_id` + `valid_from/to` em toda leitura operacional; manager deve ser do mesmo tenant e ter vigência sobreposta |
+| Auditoria | `provenance_ref`; eventos `relationship.started/ended` no envelope (`event_id`, `event_type`, `schema_version`, `occurred_at`, `tenant_id`, `idempotency_key`) |
+| Aceite F1 (A1–A3) | A1 PASS (`REL-03` parcial); A2 PASS no nível documental via SPEC/fixture reprodutível em `06-relatorios-validacao/E01-temporal-acceptance-v1.md`; A3 `pending physical validation`, sem alegação de execução |
 
 ## Liberação F2
 
-F2 (E03–E05, E10–E12, E17) só abre quando: E02 sem colisão `company_id/entity_id` + `tenant_id` validado; E20 com teste de propagação ≤5 min aprovado por LGPD; E01 com A1–A3 registrados. Pendência restante vira M1/M2, nunca compromisso de MVP.
+F2 (E03–E05, E10–E12, E17) só abre quando houver evidência executada: E02 sem colisão `company_id/entity_id` + `tenant_id` validado; E20 com teste de propagação ≤5 min aprovado por LGPD; E01 com A1–A3 registrados e A3 fisicamente validado. SPEC/fixture documental não substitui execução. Pendência restante vira M1/M2, nunca compromisso de MVP.

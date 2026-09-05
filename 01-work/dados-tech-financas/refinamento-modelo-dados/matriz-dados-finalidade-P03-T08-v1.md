@@ -29,6 +29,10 @@ tags:
 
 ## 2. Matriz — campo → finalidade → base legal → retenção → propagação → exclusão
 
+### 2.1 Identidade canônica do titular
+
+O titular é sempre identificado por `person_id`, com FK para `dim_person.person_id`. `titular_id` ≡ `person_id` é somente um alias legado de documentação/integração; não é uma coluna ou chave concorrente. A coluna física canônica é `fact_consent.person_id`, em conjunto com `consent_id` e `purpose` para representar o consentimento ternário.
+
 | Tabela.Campo | Finalidade | Base legal | Retenção | Propagação consentimento | Exclusão / DSAR | Evidência |
 |---|---|---|---|---|---|---|
 | dim_person.person_id | Identificação pseudônima | Execução contrato / consentimento | 60 meses vault; TTL analítico por finalidade | revogação bloqueia novos usos <=5 min; propaga para `fact_person_skill`, `fact_event`, derivados | vault + alias preservado pseudônimo; DSAR exporta `person_id` + aliases |
@@ -49,6 +53,8 @@ tags:
 1. Todo campo com `sensibilidade Alta/Crítica` exige `consent_id` + `purpose` + `version`.
 2. Revogação (`consent_status=revoked`) cria evento `consent.revoked` → pipeline bloqueia novos `fact_*` com `purpose` revogado em ≤5 min; derivados já materializados entram em fila `quarantine`.
 3. Métricas, modelos, caches, exports parceiros reavaliam `purpose` antes de uso; sem `purpose` válido = `quarantined`.
+
+> **Bloqueio obrigatório por finalidade:** `FLD-024 (consent_id)`, `FLD-025 (purpose)`, `FLD-026 (legal_basis)` e `FLD-005/006/007/028` ficam bloqueados sem consentimento válido para a finalidade solicitada. Cada uso carrega `consent_id + purpose + version` e é validado antes de leitura, uso ou derivação; ausência, expiração ou revogação resulta em `quarantined`.
 
 ## 4. Retenção / Exclusão / Portabilidade
 
@@ -76,7 +82,8 @@ Exclusão abrange `identity_alias`, `dim_*`, `fact_*`, features, caches, índice
 
 ## 7. Pendências G03.C4
 
-- [ ] Teste propagação `consent.revoked → fact_event quaratine` em `06-relatorios-validacao/`.
+- [ ] Executar o **propagation test** ponta a ponta `consent.revoked → quarantine` conforme o SPEC [[01-work/dados-tech-financas/refinamento-modelo-dados/06-relatorios-validacao/propagation-test-E20-v1|propagation-test-E20-v1]] (rascunho/SPEC de desenho; não é aprovação).
+- [ ] Executar e preencher o log CMP conforme o SPEC [[01-work/dados-tech-financas/refinamento-modelo-dados/06-relatorios-validacao/CMP-log-E20-v1|CMP-log-E20-v1]] (rascunho/SPEC de desenho; não é evidência executada).
 - [ ] Aprovação conjunta LGPD+Gov Dados deste mapa em `00-project-control/decisoes/DEC-P03-T08.md`.
 
 ## 8. Rastreabilidade
