@@ -13,7 +13,7 @@
 
 ## Verificação
 
-- 15 abas de CSV corrigido carregadas, mais `00_DRAFT_NOTICE`
+- 15 abas funcionais de CSV corrigido carregadas, mais a folha visível `00_DRAFT_NOTICE` (16 worksheets no total; não é oculta/helper de dados)
 - `officecli view ... outline` reporta todas as 16 abas com abas de dados populadas
 - `officecli view ... issues` reporta 0 problemas
 - `officecli validate` passa sem erros

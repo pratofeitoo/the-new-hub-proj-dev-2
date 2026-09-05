@@ -6,6 +6,9 @@
   "inventory": {
     "source_tabs": 15,
     "corrected_tabs": 15,
+    "workbook_worksheets": 16,
+    "workbook_notice_sheet": "00_DRAFT_NOTICE",
+    "workbook_notice_sheet_state": "visible_notice_not_data_helper",
     "byte_identical_tabs": 8,
     "corrected_tabs_with_differences": [
       "08_Dicionario_Dados",

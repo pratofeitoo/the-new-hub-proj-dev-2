@@ -74,7 +74,7 @@ Revogação de consentimento gera `consent.revoked` e marcação de quarentena m
 
 ## 6. XLSX reconstruído — evidência não aprovada
 
-O arquivo foi reconstruído manualmente a partir de `03-csv-corrigido/` e `04-registro-correcoes/corrections.csv`, preservando a contradição 12/16 colunas para revisão. O escopo **full declarado** (41 campos, 15 abas, 73 indicadores) é **não aprovado/deferred**; não pertence ao mínimo de 12 entidades/métricas do piloto e não pode ser promovido. A inspeção local do XLSX como ZIP encontrou 16 arquivos `xl/worksheets/sheet*.xml` (não 15 abas), portanto a contagem de abas permanece uma discrepância de validação e não é tratada como PASS.
+O arquivo foi reconstruído manualmente a partir de `03-csv-corrigido/` e `04-registro-correcoes/corrections.csv`, preservando a contradição 12/16 colunas para revisão. O escopo **full declarado** (41 campos, 15 abas de dados, 73 indicadores) é **não aprovado/deferred**; não pertence ao mínimo de 12 entidades/métricas do piloto e não pode ser promovido. A inspeção local do XLSX como ZIP encontrou 16 arquivos `xl/worksheets/sheet*.xml`, correspondentes a 16 planilhas visíveis: as 15 abas funcionais do manifesto (`00_Leia-me` até `14_RACI`) mais `00_DRAFT_NOTICE`. `00_DRAFT_NOTICE` é uma folha visível de aviso de rascunho, não oculta nem helper de dados; portanto a divergência era de escopo/nomenclatura (15 abas de dados versus 16 planilhas no pacote), não uma planilha XML órfã. A contagem autoritativa do workbook é **16 worksheets (15 funcionais + 1 aviso)**.
 
 Arquivo: `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx`.
 

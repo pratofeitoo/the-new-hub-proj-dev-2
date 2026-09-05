@@ -6,7 +6,7 @@
 
 ## Inventário determinístico
 
-- Foram encontradas 15 abas de origem e 15 abas corrigidas.
+- Foram encontradas 15 abas de origem e 15 abas corrigidas no manifesto CSV. O workbook reconstruído contém 16 worksheets visíveis: essas 15 abas funcionais mais `00_DRAFT_NOTICE` (folha de aviso, não oculta/helper de dados).
 - Contagens de linhas corrigidas (linhas de dados após o preâmbulo de título/cabeçalho): nós 25, indicadores 73, dicionário 41, eventos 27, integrações 15, governança 23, roadmap 5, RACI 20.
 - A camada corrigida é byte-idêntica à origem para 00–07 e 13. As abas 08, 09, 10, 11, 12 e 14 diferem da origem e são, portanto, tratadas como artefatos corrigidos, não cópias literais.
 - `corrections.csv` tem 10 linhas de problemas cobrindo todas as seis abas divergentes mais registros consolidados de bloqueadores. Cada valor alterado possui CSV/linha/coluna de origem, ponteiro de evidência, severidade e status.
