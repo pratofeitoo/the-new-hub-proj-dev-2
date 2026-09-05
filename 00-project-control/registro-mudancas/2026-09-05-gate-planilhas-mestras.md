@@ -16,13 +16,14 @@ gate: decisão direta do usuário (teste do ritual; bypass de `02-review/` regis
 
 > [!info] Decisão
 > - **Data:** 2026-09-05
-> - **Gate:** usuário (dono do projeto), via instrução direta — primeiro teste do ritual de promoção.
-> - **Rota:** `05-resources/inbox/Plataforma HUB/` → `03-approved/` (bypass de `02-review/` consciente e registrado aqui).
+> - **Gate:** usuário (dono do projeto) — revisão manual prévia pelo usuário; este registro formaliza a promoção.
+> - **Rota:** `05-resources/inbox/Plataforma HUB/` → `03-approved/` direto (revisão já realizada, sem passagem por `02-review/`).
 > - **Resultado:** aprovado.
+> - **Pós-gate (mesmo dia):** as três pastas reagrupadas em `03-approved/nucleo-inteligencia/` (nome escolhido pelo usuário).
 
 ## Arquivos promovidos
 
-| Destino em `03-approved/` | Arquivos | Formatos |
+| Destino em `03-approved/nucleo-inteligencia/` | Arquivos | Formatos |
 |---|---|---|
 | `especificacao-mestra/` | Especificação-mestra v1.0 | `.md` + `.docx` (mesmo conteúdo) |
 | `planilha-tecnica/01-source/` | Planilha canônica | `.md` + `.xlsx` |

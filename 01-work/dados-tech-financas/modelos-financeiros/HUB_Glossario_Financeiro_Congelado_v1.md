@@ -39,6 +39,6 @@ tags: [financeiro, glossario, m0, valor]
 
 ## Rastreabilidade
 
-- Matriz: [[03-approved/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz de Convergência]].
+- Matriz: [[03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz de Convergência]].
 - Ledger e estados: [[01-work/dados-tech-financas/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|Taxonomia de estados de valor]].
 - Simulador: `06_Simulador_ROI_analise.md`; deduplicação: BP-003 cap.4 e `DAT-006`.
