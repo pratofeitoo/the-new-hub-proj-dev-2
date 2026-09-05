@@ -12,7 +12,7 @@
 - `03-planilha-tecnica/Planilha_Tecnica_Desenvolvimento_HUB.md` (extração fiel de `Planilha_Tecnica_Desenvolvimento_HUB.xlsx` — 15 abas, 185 linhas, 20 BL, 23 FLD, 16 KPI, 9 REL, 8 INT, 12 GOV)
 
 **Grupo 2 — Camada estratégica (blueprint):**
-- `01-blueprint/` — 11 pastas, 25+ `.md` (README + 9 domínios: `estrategia`, `produto`, `tecnologia`, `dados-inteligencia`, `modelo-negocio`, `marca-mercado`, `governanca-juridico`, `visao-lancamento`, `operacoes`)
+- `01-work/` — 11 pastas, 25+ `.md` (README + 9 domínios: `estrategia`, `produto`, `tecnologia`, `dados-inteligencia`, `modelo-negocio`, `marca-mercado`, `governanca-juridico`, `visao-lancamento`, `operacoes`)
 - `dados-inteligencia/modelo-indicadores/abas-origem/` — 15 análises de abas (00 a 14), incluindo `04_Indicadores_Master` (73 indicadores), `02_Nos_de_Dados` (25 nós), `06_Simulador_ROI`
 
 **Objetivo:** medir similaridade e divergência entre dois conjuntos criados separadamente com objetivo similar; identificar o que é convergente, o que é complementar e o que precisa de convergência antes de virar backlog único.
@@ -25,7 +25,7 @@
 |---|---|
 | **São sobre a mesma coisa?** | **Sim — ~85% da tese é idêntica.** Mesma promessa ("Diferenças que movimentam negócios"), mesma cadeia `fontes → identidades → sinais → inteligência → ação → resultado → valor financeiro` e mesma jornada `diagnosticar → planejar → conectar → implementar → medir → reconhecer → evoluir`. |
 | **São redundantes?** | **Não. São camadas diferentes do mesmo projeto.** Grupo 2 é `blueprint` — hipótese estruturada, explicitamente **não validada, não implementada, não aprovada** (todos os `BP-002` a `BP-008` com `gap_ids` em aberto). Grupo 1 é **recorte vendável** — primeira fatia `performance × finanças` para piloto Monks, já com IDs, fórmulas, thresholds e SLAs. |
-| **Qual a relação correta?** | `01-blueprint/README.md` já prescreve: *blueprint propõe o sistema completo; refinement testa e estreita; gates aprovam.* **Grupo 1 = M0 do Grupo 2.** |
+| **Qual a relação correta?** | `01-work/README.md` já prescreve: *blueprint propõe o sistema completo; refinement testa e estreita; gates aprovam.* **Grupo 1 = M0 do Grupo 2.** |
 | **Risco se mantiver separados?** | Drift de vocabulário (`Valor gerado vs realizado`, `73 vs 16 KPIs`, `25 vs 23 nós`), perda de rastreabilidade (`workday_id` vs `canonical_id`, `SRC-04/09/10/11` sem `INT-*`) e dupla contagem financeira. |
 
 **Similaridade por dimensão:**
@@ -178,7 +178,7 @@ Estratificação: **M0 20 / M1 27 / M2 26** (`README` e `04_Indicadores_Master_a
 
 1.  ✅ **Camada semântica única** (`BP-003` + `05_DICIONARIO`): `canonical_id` + alias namespaced, `envelope` e `FLD-024→047` implementados — ver Apêndice D.1.
 2.  ✅ **Matriz de correspondência** `73 → 16 KPIs` + `25 → 23 nós` + `12 → 8 módulos` + `M0-M4 → F0-MVP4` e glossário congelado publicados — ver Apêndice D.2 e [[Matriz_Convergencia_73_16_25_23_12_8]].
-3.  ✅ **Apenas `M0/F0+MVP1` promovido para `refinement`** — Gate G03.B2 publicado em `01-blueprint/README.md` + `promocao-M0-gate-P03-v1.md`; `M1-M4` mantidos como `blueprint draft` — ver Apêndice D.3.
+3.  ✅ **Apenas `M0/F0+MVP1` promovido para `refinement`** — Gate G03.B2 publicado em `01-work/README.md` + `promocao-M0-gate-P03-v1.md`; `M1-M4` mantidos como `blueprint draft` — ver Apêndice D.3.
 
 ---
 
@@ -359,9 +359,9 @@ Estratificação: **M0 20 / M1 27 / M2 26** (`README` e `04_Indicadores_Master_a
 
 | Gap do relatório | Correção aplicada | Arquivo(s) | Validação |
 |---|---|---|---|
-| `FLD-024→041` P0-F0 ausentes (N24 + N01 + N16/N15 + temporalidade) | 18 FLDs criados: `FLD-024 consent_id, FLD-025 purpose, FLD-026 legal_basis` (N24) + `FLD-027 nome, 028 nome_social, 029 email, 030 telefone, 031 localizacao, 032 idioma, 033 disponibilidade` (N01 núcleo comum) + `FLD-034 nivel, 035 area, 036 centro_custo, 037 admissao, 038 contract_id, 039 program_id, 040 tenant_id, 041 valid_from/to` | `05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/Planilha_Tecnica_Desenvolvimento_HUB.md` + `.xlsx` aba `05_DICIONARIO` | `grep -c "FLD-0" = 47` · `openpyxl: 47 IDs únicos` · `01_PAINEL Campos=47` |
-| `FLD-042→047` P1-MVP1 ausentes (envelope + IDs reservados) | 6 FLDs criados: `FLD-042 event_id, 043 event_type, 044 schema_version, 045 occurred_at` (N10 envelope) + `FLD-046 recommendation_id` (N12) + `FLD-047 match_id` (N13) | mesmos + `envelope-evento-schema-P03-T03-v1.md` em `02-refinement/refinamento-modelo-dados/` | `grep FLD-042 = 1` · `FLD-047 = 1` |
-| `workday_id` como PK (conflito com `canonical_id`) | Corrigido para `alias (source_system=Workday, source_id) → canonical_id` — nunca FK direta; §1.1 em P03-T02 | `Planilha 05_DICIONARIO FLD-002` + `02-refinement/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1.md` §1.1 | `grep "canonical_id" >=3` |
+| `FLD-024→041` P0-F0 ausentes (N24 + N01 + N16/N15 + temporalidade) | 18 FLDs criados: `FLD-024 consent_id, FLD-025 purpose, FLD-026 legal_basis` (N24) + `FLD-027 nome, 028 nome_social, 029 email, 030 telefone, 031 localizacao, 032 idioma, 033 disponibilidade` (N01 núcleo comum) + `FLD-034 nivel, 035 area, 036 centro_custo, 037 admissao, 038 contract_id, 039 program_id, 040 tenant_id, 041 valid_from/to` | `05-resources/inbox/Plataforma HUB/00-entrada/03-planilha-tecnica/Planilha_Tecnica_Desenvolvimento_HUB.md` + `.xlsx` aba `05_DICIONARIO` | `grep -c "FLD-0" = 47` · `openpyxl: 47 IDs únicos` · `01_PAINEL Campos=47` |
+| `FLD-042→047` P1-MVP1 ausentes (envelope + IDs reservados) | 6 FLDs criados: `FLD-042 event_id, 043 event_type, 044 schema_version, 045 occurred_at` (N10 envelope) + `FLD-046 recommendation_id` (N12) + `FLD-047 match_id` (N13) | mesmos + `envelope-evento-schema-P03-T03-v1.md` em `01-work/refinamento-modelo-dados/` | `grep FLD-042 = 1` · `FLD-047 = 1` |
+| `workday_id` como PK (conflito com `canonical_id`) | Corrigido para `alias (source_system=Workday, source_id) → canonical_id` — nunca FK direta; §1.1 em P03-T02 | `Planilha 05_DICIONARIO FLD-002` + `01-work/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1.md` §1.1 | `grep "canonical_id" >=3` |
 | N24 Consentimento como coluna (risco LGPD) | Promovido a **nó bloqueador** com `consent_id+purpose+legal_basis+titular+versão+revogação <=5min + propagação para derivados + CMP log`; `FLD-005/006/007/028` bloqueados sem consent | `modelo-logico-fisico-P03-T01-v1.md` (N24 + N26) + `dicionario-fisico-mapping-P03-T04-v1.md` (`dim_consent` 4 campos + propagação) + `Planilha 11_SEGURANCA GOV-04` | `grep N24 >=3` · `grep consent_id >=1` |
 | `decision_id` sem entidade canônica | Criada entidade **N26 Decision** (`decision_id + recommendation_id + estimated_value + realized_value`, 1 decisão por alerta) — operacionalização `ALT-* → Decisão → Valor` | `modelo-logico-fisico-P03-T01-v1.md` + `dicionario-fisico-mapping-P03-T04-v1.md` | `grep N26 = 2` |
 | `SRC-12 Telemetria` sem contrato; `14_ROI` sem estados/ledger | Envelope canônico mínimo (`event_id, event_type, schema_version, occurred_at, recorded_at, tenant_id, purpose, idempotency_key, lineage`) + 4 estados `Potencial→Influenciado→Validado→Realizado` com `ledger único + deduplicação beneficiário×alavanca×período×intervenção + teto + haircut DAT-08` + `INT-09→12` para `SRC-04/09/10/11` | `envelope-evento-schema-P03-T03-v1.md` + `taxonomia-estados-valor-P03-T07-v1.md` + `Planilha 04_FONTES/08_INTEGRACOES/14_ROI/11_SEGURANCA` | `grep schema_version >=3` · `grep Potencial.*Influenciado.*Validado.*Realizado = 1` · `openpyxl INT-09..12 = 4` · `15 abas preservadas` |
@@ -370,14 +370,14 @@ Estratificação: **M0 20 / M1 27 / M2 26** (`README` e `04_Indicadores_Master_a
 
 | Gap | Correção | Arquivo(s) | Validação |
 |---|---|---|---|
-| Sem matriz unificada 73→16 / 25→23 / 12→8 / M0-M4→F0-MVP4 | **Matriz criada** com 73 linhas KPI numeradas 1-73 (Anexo A normalizado) + C.2/C.3/C.4 + MOD-01→09 (decisão MOD-09) + M0-M4→F0-MVP4 + rastreabilidade wikilinks | `05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md` **NOVO** | `rows=73 unique=73 range 1-73` · `PES-01/04=1 COM-06=1 N01/N24=3 MOD-01=1 M0=29 F0=10` |
-| Sem glossário financeiro congelado; `PERF-01/02` e `ALO-01/02` fora do Blueprint | **Glossário v1 criado** (termos `Potencial/Influenciado/Validado/Realizado`, 5 regras: dupla contagem proibida, ledger único, teto, haircut DAT-08, 14_ROI zerado) + 4 KPIs táticos promovidos a M0 com fórmulas | `02-refinement/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1.md` **NOVO** + `01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md` + `02-refinement/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1.md` | `grep Potencial=1 PERF-01=1` · `blueprint PERF-01=1` |
+| Sem matriz unificada 73→16 / 25→23 / 12→8 / M0-M4→F0-MVP4 | **Matriz criada** com 73 linhas KPI numeradas 1-73 (Anexo A normalizado) + C.2/C.3/C.4 + MOD-01→09 (decisão MOD-09) + M0-M4→F0-MVP4 + rastreabilidade wikilinks | `05-resources/inbox/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md` **NOVO** | `rows=73 unique=73 range 1-73` · `PES-01/04=1 COM-06=1 N01/N24=3 MOD-01=1 M0=29 F0=10` |
+| Sem glossário financeiro congelado; `PERF-01/02` e `ALO-01/02` fora do Blueprint | **Glossário v1 criado** (termos `Potencial/Influenciado/Validado/Realizado`, 5 regras: dupla contagem proibida, ledger único, teto, haircut DAT-08, 14_ROI zerado) + 4 KPIs táticos promovidos a M0 com fórmulas | `01-work/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1.md` **NOVO** + `01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md` + `01-work/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1.md` | `grep Potencial=1 PERF-01=1` · `blueprint PERF-01=1` |
 
 ### D.3 — Fix 3: Gate + Backlog — ✅ concluído
 
 | Gap | Correção | Arquivo(s) | Validação |
 |---|---|---|---|
-| Sem gate `M0≈F0+MVP1 → refinement` vs `M1-M4 draft` | **Gate G03.B2 publicado**: `M0≈F0 4-6s + MVP1 8-12s → P03` com critérios `>80% FLD M0, >60% KPIs, 5-10 recomendações, ≥2 casos` + `M1≈MVP2, M2≈MVP3, M3-M4≈MVP4 draft` com `gap_ids` | `01-blueprint/README.md` § Gate congelado 2026-09-02 + `02-refinement/refinamento-modelo-dados/promocao-M0-gate-P03-v1.md` **NOVO** (7 itens G03.B2) | `grep "M0 ≈ F0" = 1` |
+| Sem gate `M0≈F0+MVP1 → refinement` vs `M1-M4 draft` | **Gate G03.B2 publicado**: `M0≈F0 4-6s + MVP1 8-12s → P03` com critérios `>80% FLD M0, >60% KPIs, 5-10 recomendações, ≥2 casos` + `M1≈MVP2, M2≈MVP3, M3-M4≈MVP4 draft` com `gap_ids` | `01-work/README.md` § Gate congelado 2026-09-02 + `01-work/refinamento-modelo-dados/promocao-M0-gate-P03-v1.md` **NOVO** (7 itens G03.B2) | `grep "M0 ≈ F0" = 1` |
 | `BL-002→005` sem FLD/N24/envelope nos aceites; `SRC-04/09/10/11` sem INT | **BLs atualizados**: `FLD-024/025/040/041 + N24 + envelope FLD-042→045` + detalhes por BL (BL-002 pessoa FLD-027→033 etc.) — **4 INT novos**: `INT-09 SRC-04 HRIS, INT-10 SRC-09 ATS, INT-11 SRC-10 SPEND, INT-12 SRC-11 ERP cliente` com `OAuth2/vault, retry/DLQ, reconciliação/rollback, SLA D+1/D+2` | `Planilha 12_BACKLOG` + `08_INTEGRACOES` (MD + XLSX) + `00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md` + `lacunas/DAT-006, DAT-010, PRD-001, TEC-001, GOV-004` nota `Atualizado 2026-09-02` | `grep FLD-024 + INT-09 + BL-002 = PASS` · `openpyxl 12_BACKLOG BL=36 N24=4` |
 
 ### D.4 — Arquivos alterados (20) e memória
@@ -386,7 +386,7 @@ Ver `aivectormemory` `ea98554b466b` (`convergencia-blueprint-especificacao, fix1
 
 **7 Fix1:** `Planilha .md/.xlsx` + `P03-T02/T03/T04/T01/T07`
 **5 Fix2:** `Matriz_Convergencia` (NOVO) + `HUB_Glossario` (NOVO) + `P03-T05` + `HUB_Blueprint_Dados_e_Inteligencia` + `HUB_Taxonomia_Receita`
-**8 Fix3:** `01-blueprint/README` + `promocao-M0-gate` (NOVO) + `HUB_Registro_Lacunas` + `lacunas DAT-006/010/PRD-001/TEC-001/GOV-004` + `Planilha 12_BACKLOG/08_INTEGRACOES`
+**8 Fix3:** `01-work/README` + `promocao-M0-gate` (NOVO) + `HUB_Registro_Lacunas` + `lacunas DAT-006/010/PRD-001/TEC-001/GOV-004` + `Planilha 12_BACKLOG/08_INTEGRACOES`
 
 Todos os gaps de §4, Anexo A e Anexo C agora com status **Coberto** ou **Gate publicado** — pronto para promoção P03 do backlog `BL-002→005`.
 
@@ -399,7 +399,7 @@ Todos os gaps de §4, Anexo A e Anexo C agora com status **Coberto** ou **Gate p
 - `Planilha_Tecnica_Desenvolvimento_HUB.md` (438 linhas, 15 abas)
 
 **Grupo 2:**
-- `01-blueprint/README.md`
+- `01-work/README.md`
 - `estrategia/HUB_Fundacao_Blueprint_Projeto.md`
 - `produto/HUB_Blueprint_Produto_e_Capacidades.md` (BP-002)
 - `tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md` (BP-004)

@@ -15,9 +15,9 @@ tags:
 # Catálogo Canônico + Grafo v1 — P03-T05 (M03.C / G03.C1)
 
 > **Status:** rascunho para validação Dados+Tech · **G03.C1** · Nenhuma métrica crítica com definição alternativa; catálogo permanece artefato de definição, sem certificação produção.
-> **Fontes:** `04_Indicadores_Master.csv` (73 linhas), `05_Arvore_de_Valor`, `06_Simulador_ROI`, `07_Visoes_Dashboard`, `13_Matriz_Integracao` + sínteses [[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency|indicator-financial-consistency]].
+> **Fontes:** `04_Indicadores_Master.csv` (73 linhas), `05_Arvore_de_Valor`, `06_Simulador_ROI`, `07_Visoes_Dashboard`, `13_Matriz_Integracao` + sínteses [[01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency|indicator-financial-consistency]].
 >
-> **Matriz unificada:** [[05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz Convergencia]] — 73→16 KPIs, 25→23 nós, 12→8 módulos e M0-M4→F0-MVP4.
+> **Matriz unificada:** [[05-resources/inbox/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz Convergencia]] — 73→16 KPIs, 25→23 nós, 12→8 módulos e M0-M4→F0-MVP4.
 
 ## 1. Resumo — 73 indicadores
 
@@ -146,12 +146,12 @@ flowchart TD
 ## 5. Pendências G03.C1 → G03.C2
 
 - [ ] Validar com Dados+Tech as 73 fórmulas e 12 alavancas contra `06_Simulador_ROI` (corrigir H20 payback bruto vs líquido).
-- [ ] Resolver `03-approval/bloqueado` gaps: 4 colunas retenção/governança já adicionadas em P03-T04; validar consistência financeira.
+- [ ] Resolver `02-review/bloqueado` gaps: 4 colunas retenção/governança já adicionadas em P03-T04; validar consistência financeira.
 - [ ] Publicar `08_Dicionario_Dados` com chaves e `13_Matriz_Integracao` com nós canônicos antes de P05.
 
 ## 6. Rastreabilidade
 
 - Tarefa: [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo|P03-T05]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-005]]
-- Blueprint: [[01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#2. Arquitetura de indicadores de origem conectada às capacidades do produto e aos resultados de negócio|BP-003 §2]]
-- Síntese: [[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency|indicator-financial-consistency]]
+- Blueprint: [[01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#2. Arquitetura de indicadores de origem conectada às capacidades do produto e aos resultados de negócio|BP-003 §2]]
+- Síntese: [[01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency|indicator-financial-consistency]]

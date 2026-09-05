@@ -15,4 +15,4 @@ tasknotes_manual_order: tnkkkkkkkkkk
 due: 2026-09-11
 ---
 
-[[01-blueprint/]]
+[[01-work/]]

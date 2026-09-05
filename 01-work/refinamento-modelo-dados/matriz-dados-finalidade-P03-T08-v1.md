@@ -15,7 +15,7 @@ tags:
 # Matriz Dados-Finalidade + Ciclo Vida v1 — P03-T08 (G03.C4 parcial)
 
 > **Status:** rascunho para revisão LGPD/Governança · **G03.C4 parcial** · Mapa ponta a ponta para decisão Camada 3; não aprovado.
-> **Depende de:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — 25 entidades; [[02-refinement/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1|dicionario-fisico-mapping-P03-T04-v1]] — 41 campos.
+> **Depende de:** [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — 25 entidades; [[01-work/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1|dicionario-fisico-mapping-P03-T04-v1]] — 41 campos.
 
 ## 1. Fluxos de lançamento cobertos
 
@@ -83,5 +83,5 @@ Exclusão abrange `identity_alias`, `dim_*`, `fact_*`, features, caches, índice
 
 - Tarefa: [[04-project-management/tarefas/P03-T08_Matriz_Dados_Finalidade|P03-T08]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-008]]
-- Dicionário: [[02-refinement/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1|P03-T04 v1]] — 41 campos
-- Modelo: [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — `valid_from/to`
+- Dicionário: [[01-work/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1|P03-T04 v1]] — 41 campos
+- Modelo: [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — `valid_from/to`

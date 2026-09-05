@@ -14,7 +14,7 @@ gap_ids:
 dependencies:
   - P05-T01
   - P03-T01
-target_file: 02-refinement/testes-experimentos/
+target_file: 01-work/testes-experimentos/
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-001]]"

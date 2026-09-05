@@ -17,7 +17,7 @@ tags:
 # Fluxos Linhagem/Correção/Replay/DSAR + XLSX Reconstruído v1 — P03-T09 (G03.C4/C5)
 
 > **Status:** rascunho para validação Dados+Tech · **G03.C4/C5** · Prototipado/testado; XLSX reconstruído como insumo para revisão Camada 3; não aprovado.
-> **Depende de:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — `canonical_id`; [[02-refinement/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|P03-T03 v1]] — envelope + replay; [[02-refinement/refinamento-governanca/matriz-dados-finalidade-P03-T08-v1|P03-T08 v1]] — retenção/DSAR.
+> **Depende de:** [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — `canonical_id`; [[01-work/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|P03-T03 v1]] — envelope + replay; [[01-work/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1|P03-T08 v1]] — retenção/DSAR.
 
 ## 1. Fluxo — Linhagem ponta a ponta
 
@@ -35,7 +35,7 @@ flowchart LR
     EVENT -. replay .-> REPLAY[Snapshot run_id]
 ```
 
-Cada aresta registra `transformation, version, actor, time, quality, authorization, run_id` (ver [[02-refinement/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|P03-T06 v1]]).
+Cada aresta registra `transformation, version, actor, time, quality, authorization, run_id` (ver [[01-work/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|P03-T06 v1]]).
 
 ## 2. Fluxo — Correção (DAT-010)
 
@@ -58,7 +58,7 @@ Cada aresta registra `transformation, version, actor, time, quality, authorizati
 | Exclusão | `dsar.delete` | `identity_alias`, `dim_person`, `fact_*`, features, caches, índices, backups, exports parceiros | `lifecycle_job` com `valid_to`; agregados compartilhados anonimizados + risco residual |
 | Portabilidade | `dsar.portability` | `consent` com finalidade | schema + `provenance` + `valid_from/to` |
 
-Regra: `consent.revoked` → `event consent.revoked` → `quarantine` derivados em ≤5 min (testado em [[02-refinement/refinamento-governanca/matriz-dados-finalidade-P03-T08-v1|P03-T08 v1]] §3).
+Regra: `consent.revoked` → `event consent.revoked` → `quarantine` derivados em ≤5 min (testado em [[01-work/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1|P03-T08 v1]] §3).
 
 ## 5. Fluxo — Portabilidade
 
@@ -66,12 +66,12 @@ Exporta `person_id` + `aliases` + `consents` + `outcomes` em JSON com `schema_ve
 
 ## 6. XLSX Reconstruído
 
-**Fonte:** `03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/` (15 CSVs, 16 cols em `08_Dicionario_Dados`) + `04-registro-correcoes/corrections.csv` (DAT010-001..004).
+**Fonte:** `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/03-csv-corrigido/` (15 CSVs, 16 cols em `08_Dicionario_Dados`) + `04-registro-correcoes/corrections.csv` (DAT010-001..004).
 
 **Processo (script `build_baseline.py` adaptado):**
 
 ```bash
-python3 03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/rebuild.py \
+python3 02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/rebuild.py \
   --source 03-csv-corrigido \
   --corrections 04-registro-correcoes/corrections.csv \
   --out 05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx
@@ -90,11 +90,11 @@ python3 03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indica
 ## 7. Pendências G03.C4/C5
 
 - [ ] Executar `build_baseline.py` real com dados sintéticos e gerar `06-relatorios-validacao/corrected-csv-validation.json` atualizado.
-- [ ] Aprovação Dados+Tech+LGPD deste arquivo + `DEC-P03-T09.md` antes de promover para `03-approval/aprovado/`.
+- [ ] Aprovação Dados+Tech+LGPD deste arquivo + `DEC-P03-T09.md` antes de promover para `02-review/aprovado/`.
 
 ## 8. Rastreabilidade
 
 - Tarefa: [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR|P03-T09]]
 - Gaps: [[00-project-control/registro-lacunas/lacunas/DAT-009]], [[00-project-control/registro-lacunas/lacunas/DAT-010]]
-- Base: [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] + [[02-refinement/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|P03-T03 v1]] + [[02-refinement/refinamento-governanca/matriz-dados-finalidade-P03-T08-v1|P03-T08 v1]]
-- Blueprint: [[01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#5. Resolução de identidade, linhagem, consentimento, retenção, exclusão, replay e conceitos de correção|BP-003 §5]]
+- Base: [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] + [[01-work/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|P03-T03 v1]] + [[01-work/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1|P03-T08 v1]]
+- Blueprint: [[01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#5. Resolução de identidade, linhagem, consentimento, retenção, exclusão, replay e conceitos de correção|BP-003 §5]]

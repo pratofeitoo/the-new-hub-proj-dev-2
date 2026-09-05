@@ -10,7 +10,7 @@ status: processed
 
 # HUB — Arquitetura e Custos Totais
 
-> **Fonte:** `05-resources/Processar/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura e Custos Totais.xlsx` — 12 abas · 96 telas mapeadas · modelo inicial para decisão (calibrar com arquitetura técnica escolhida).
+> **Fonte:** `05-resources/inbox/Plataforma HUB/Plataforma Completa/Projeção de arquitetura e custos - Plataforma/Arquitetura e Custos Totais.xlsx` — 12 abas · 96 telas mapeadas · modelo inicial para decisão (calibrar com arquitetura técnica escolhida).
 
 ## Navegação
 

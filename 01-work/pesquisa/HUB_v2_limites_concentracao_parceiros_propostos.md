@@ -1,7 +1,7 @@
 ---
 title: "Limites de concentração de parceiros — hipóteses propostas"
 date: 2026-08-27
-status: "proposta — aguardando aprovação de Governança"
+status: em-elaboracao
 language: pt-BR
 owner: "Governança (a designar)"
 source_tasks:
@@ -11,8 +11,8 @@ dependencies:
 gap_ids:
   - "[[00-project-control/registro-lacunas/lacunas/GTM-006|GTM-006]]"
 related_notes:
-  - "[[02-refinement/pesquisa/segundo-rascunho-projeto/HUB_v2_gtm_partnerships_research|Pesquisa de GTM e parcerias]]"
-  - "[[02-refinement/pesquisa/segundo-rascunho-projeto/HUB_v2_governance_legal_research|Pesquisa de governança e dados]]"
+  - "[[01-work/pesquisa/segundo-rascunho-projeto/HUB_v2_gtm_partnerships_research|Pesquisa de GTM e parcerias]]"
+  - "[[01-work/pesquisa/segundo-rascunho-projeto/HUB_v2_governance_legal_research|Pesquisa de governança e dados]]"
 tags:
   - governance
   - parceiros
@@ -54,7 +54,7 @@ Este documento transforma [[00-project-control/registro-lacunas/lacunas/GTM-006|
 1. O owner registra cada cruzamento no registro de riscos, identifica causa, parceiro afetado, período, evidência e plano de retorno ao warning em até **5 dias úteis**.
 2. Um cruzamento **critical** em duas dimensões, ou em dados/reputação isoladamente, bloqueia expansão do canal até decisão documentada de Governança.
 3. Os cálculos devem ser reproduzíveis; alterações de atribuição, denominador ou janela exigem versionamento e justificativa.
-4. Nenhum plano de mitigação pode tratar presença em evento, logotipo, entusiasmo verbal ou conversa como receita, tração ou evidência de parceiro; ver [[02-refinement/pesquisa/segundo-rascunho-projeto/HUB_v2_gtm_partnerships_research|pesquisa de GTM e parcerias]].
+4. Nenhum plano de mitigação pode tratar presença em evento, logotipo, entusiasmo verbal ou conversa como receita, tração ou evidência de parceiro; ver [[01-work/pesquisa/segundo-rascunho-projeto/HUB_v2_gtm_partnerships_research|pesquisa de GTM e parcerias]].
 5. O relatório trimestral deve recomendar manter, melhorar, escalar, pausar ou parar a rota; a recomendação não substitui a aprovação formal.
 
 ## 5. Exceções e governança

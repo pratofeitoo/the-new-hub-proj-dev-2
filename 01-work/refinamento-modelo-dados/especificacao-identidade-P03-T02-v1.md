@@ -15,7 +15,7 @@ tags:
 # Especificação Identidade — Matching/Merging/Survivorship v1 — P03-T02 (G03.A2)
 
 > **Status:** rascunho para validação Arquitetura de Dados · **G03.A2** · Não aprovado. Dataset sintético incluso para medir FP/FN e reversibilidade.
-> **Depende de:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `identity_alias` e 25 entidades com `canonical_id`.
+> **Depende de:** [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `identity_alias` e 25 entidades com `canonical_id`.
 
 ## 1. Objetivo (DAT-002 / G03.A2)
 
@@ -92,7 +92,7 @@ Nenhum fato conflitante da origem é apagado; campo sobrevivente é flag `is_sur
 
 ## 6. Dataset sintético — P03-T02
 
-Local: `02-refinement/refinamento-modelo-dados/modelo-indicadores/dataset-identidade-sintetico-P03-T02.csv` (20 pessoas, 12 empresas, 40 aliases, 15 pares candidatos rotulados).
+Local: `01-work/refinamento-modelo-dados/modelo-indicadores/dataset-identidade-sintetico-P03-T02.csv` (20 pessoas, 12 empresas, 40 aliases, 15 pares candidatos rotulados).
 
 | Col | Descrição |
 |---|---|
@@ -122,5 +122,5 @@ Script de validação (futuro): comparar `predicted_hub_id` vs `expected_hub_id`
 
 - Tarefa: [[04-project-management/tarefas/P03-T02_Servico_Identidade_Matching|P03-T02]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-002]]
-- Modelo base: [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — `identity_alias` e temporalidade
-- Síntese: [[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] §7.116-119
+- Modelo base: [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — `identity_alias` e temporalidade
+- Síntese: [[01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] §7.116-119

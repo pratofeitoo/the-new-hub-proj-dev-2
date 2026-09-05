@@ -61,8 +61,8 @@ Consulte o [[manifesto-processamento]] e a [[HUB_Fila_Processamento]] antes de m
 
 | Destino | Encaminhar quando o resultado for… |
 |---|---|
-| `01-blueprint/` | arquitetura, estratégia, modelo de negócio, produto, tecnologia, governança ou lançamento consolidados. |
-| `02-refinement/` | requisito, fluxo, jornada, pesquisa, hipótese validada, especificação ou decisão operacional refinada. |
+| `01-work/` | arquitetura, estratégia, modelo de negócio, produto, tecnologia, governança ou lançamento consolidados. |
+| `01-work/` | requisito, fluxo, jornada, pesquisa, hipótese validada, especificação ou decisão operacional refinada. |
 | `04-project-management/` | plano, responsável, marco, risco, dependência, cronograma, custo aprovado ou acompanhamento de execução. |
 | `99-arquivo/` | fonte substituída, hipótese encerrada, versão antiga ou material preservado apenas para histórico. |
 

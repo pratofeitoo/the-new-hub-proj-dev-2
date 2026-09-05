@@ -9,7 +9,7 @@ tags: [hub, convergencia, matriz, m0, blueprint]
 
 # Matriz de Convergência
 
-Matriz auditável entre [[01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/04_Indicadores_Master/04_Indicadores_Master_analise|04 Indicadores Master]], [[01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/02_Nos_de_Dados/02_Nos_de_Dados_analise|02 Nós de Dados]], BP-002, BP-008 e `06_KPIS`.
+Matriz auditável entre [[01-work/dados-inteligencia/modelo-indicadores/abas-origem/04_Indicadores_Master/04_Indicadores_Master_analise|04 Indicadores Master]], [[01-work/dados-inteligencia/modelo-indicadores/abas-origem/02_Nos_de_Dados/02_Nos_de_Dados_analise|02 Nós de Dados]], BP-002, BP-008 e `06_KPIS`.
 
 ## 1. 73→16 KPIs
 
@@ -147,7 +147,7 @@ Matriz auditável entre [[01-blueprint/dados-inteligencia/modelo-indicadores/aba
 
 ## 3. 12→8 módulos
 
-Fontes: BP-002 e [[01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao|BP-008]].
+Fontes: BP-002 e [[01-work/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao|BP-008]].
 
 |Especificação (12 entregas)|BP-002 (6 módulos + núcleo)|Planilha 8 MOD|Decisão|
 |---|---|---|---|
@@ -175,4 +175,4 @@ Fontes: BP-002 e [[01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evol
 
 ## 5. Rastreabilidade
 
-[[02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|Catálogo P03-T05]] · [[02-refinement/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|Taxonomia de estados de valor]] · gaps `DAT-006`, `DAT-010`, `PRD-001`. Os 57 indicadores restantes permanecem M1/M2; a matriz é insumo do gate M0.
+[[01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|Catálogo P03-T05]] · [[01-work/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|Taxonomia de estados de valor]] · gaps `DAT-006`, `DAT-010`, `PRD-001`. Os 57 indicadores restantes permanecem M1/M2; a matriz é insumo do gate M0.

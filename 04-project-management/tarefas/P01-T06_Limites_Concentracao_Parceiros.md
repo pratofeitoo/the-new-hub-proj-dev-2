@@ -13,7 +13,7 @@ gap_ids:
   - GTM-006
 dependencies:
   - P01-T02
-target_file: 02-refinement/pesquisa/segundo-rascunho-projeto/
+target_file: 01-work/pesquisa/segundo-rascunho-projeto/
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-006]]"
@@ -32,7 +32,7 @@ dateModified: 2026-09-01T19:45:22.873-03:00
 Propor e documentar thresholds numéricos para concentração de receita/roadmap/capacidade/dados/reputação e política de escalonamento, como hipótese de governança para o refinamento.
 
 ## Entregável
-Tabela de limites propostos em `02-refinement/pesquisa/`, linkada ao portfólio de parceiros e encaminhada para revisão posterior de Governança.
+Tabela de limites propostos em `01-work/pesquisa/`, linkada ao portfólio de parceiros e encaminhada para revisão posterior de Governança.
 
 ## Dependências
 - [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade|P01-T02]]
@@ -45,7 +45,7 @@ Hipóteses registradas com métricas, denominadores e escalonamento explícitos,
 
 ## Execução
 
-- **Entregável produzido:** [[02-refinement/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos|matriz de limites de concentração de parceiros — hipóteses propostas]].
+- **Entregável produzido:** [[01-work/pesquisa/HUB_v2_limites_concentracao_parceiros_propostos|matriz de limites de concentração de parceiros — hipóteses propostas]].
 - **Cobertura:** thresholds warning/critical para receita, roadmap, capacidade, dados e reputação, com métrica/denominador, escalonamento, fallback, cadência, owner e fonte de evidência.
 - **Governança:** todos os valores estão explicitamente marcados como propostos/hipóteses controladas; revisão e eventual aprovação permanecem pendentes e não são promovidas nesta etapa.
 - **Encaminhamento:** [[04-project-management/tarefas/P06-T09_Estrategia_Canais_Concentracao|P06-T09]] usa esta matriz como insumo; a conexão com P07 permanece sujeita à verificação composta do roadmap, sem aprovação automática.

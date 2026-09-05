@@ -15,7 +15,7 @@ gap_ids:
 dependencies:
   - P03-T09
   - P04-T02
-target_file: 02-refinement/refinamento-governanca/
+target_file: 01-work/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-007]]"
@@ -34,7 +34,7 @@ dateModified: 2026-09-01T19:27:40.306-03:00
 Executar testes ponta a ponta de retenção, DSAR, exclusão, portabilidade cobrindo derivados, backups, caches, fornecedores e saídas de parceiros.
 
 ## Entregável
-Relatórios de teste planejados ou realizados, com resultados, evidências e lacunas para revisão posterior, em `02-refinement/refinamento-governanca/` + `03-approval/evidencias/`.
+Relatórios de teste planejados ou realizados, com resultados, evidências e lacunas para revisão posterior, em `01-work/documentos-oficiais/_controle/` + `02-review/evidencias/`.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR|P03-T09]]

@@ -75,7 +75,7 @@ layer: blueprint/refining
 owner: [Dados]
 gap_ids: [DAT-001]
 dependencies: [P02-T01]
-target_file: "01-blueprint/..."
+target_file: "01-work/..."
 tags: [task, fase-P03]
 related_notes: [[P03_Dados_Canonicos]] · [[lacunas/DAT-001]]
 ```

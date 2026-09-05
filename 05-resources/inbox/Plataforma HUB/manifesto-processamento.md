@@ -12,7 +12,7 @@ Este manifesto controla como materiais entram, são analisados, revisados e enca
 
 ## Escopo
 
-O fluxo aplica-se a materiais Markdown e binários recebidos ou produzidos em `05-resources/Processar/Plataforma HUB/`. Cada arquivo ou lote coerente deve ter um cartão de processamento estável em `00-entrada/`; o arquivo original não é apagado, renomeado ou movido durante o processamento.
+O fluxo aplica-se a materiais Markdown e binários recebidos ou produzidos em `05-resources/inbox/Plataforma HUB/`. Cada arquivo ou lote coerente deve ter um cartão de processamento estável em `00-entrada/`; o arquivo original não é apagado, renomeado ou movido durante o processamento.
 
 ## Fluxo visual
 

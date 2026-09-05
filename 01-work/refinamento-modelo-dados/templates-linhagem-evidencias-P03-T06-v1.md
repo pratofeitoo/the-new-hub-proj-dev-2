@@ -15,7 +15,7 @@ tags:
 # Templates Linhagem + Registro Evidências v1 — P03-T06 (G03.C2)
 
 > **Status:** rascunho para validação Dados+Tech · **G03.C2** · Linhagem reproduzível para revisão; não constitui aceite financeiro ou liberação produção.
-> **Depende de:** [[02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1]] — 73 indicadores; [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — entidades.
+> **Depende de:** [[01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1]] — 73 indicadores; [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — entidades.
 
 ## 1. Template — Linhagem `origem → métrica → ação → resultado → valor`
 
@@ -49,9 +49,9 @@ tags:
 
 | Passo | Dado | Cálculo | Evidência |
 |---|---|---|---|
-| 1. Origem | HRIS 12 pessoas + diagnóstico `assessment_id=a_001` | — | `02-refinement/.../dataset-identidade-sintetico-P03-T02.csv` (hub_p_001..012) |
+| 1. Origem | HRIS 12 pessoas + diagnóstico `assessment_id=a_001` | — | `01-work/.../dataset-identidade-sintetico-P03-T02.csv` (hub_p_001..012) |
 | 2. Métrica | `PES-02` prontidão média 3.2 → 4.1 (cohort onboarding_2026) | Σ nível×peso/Σpesos, `run_id=run_pes02_001` | `catalogo-metricas-grafo-P03-T05-v1.md` §2 |
-| 3. Ação | `journey_id=j_001` — 12 trilhas Academy + curadoria | — | `02-refinement/refinamento-produto/RACI_v1.md` |
+| 3. Ação | `journey_id=j_001` — 12 trilhas Academy + curadoria | — | `01-work/refinamento-produto/RACI_v1.md` |
 | 4. Resultado | `time-to-productivity` 45d → 32d (-13d, p=0.04, n=12) | `run_id=run_rh06_001`, `formula_version=v1` | `fact_person_skill.confidence` 0.82 média |
 | 5. Valor | `R$ 18.500` `influenciado` (13d × R$ 1.423/dia custo evitado) | `amount = delta_days × daily_cost`, `attribution=0.6` | `contract_id=c_001`, `transaction_id=t_001`, estado **não** `realizado` (aguarda `FIN-004` e ledger) |
 
@@ -81,11 +81,11 @@ run_id=run_rh06_001 python calc_rh06.py --baseline 45d --observed 32d
 
 - [ ] Aprovar templates com Dados+Tech; testar `run_id` reproduzível em `06-relatorios-validacao/`.
 - [ ] Promover 1 caminho para `validado` com protocolo comparação/holdout e revisão Finanças+Gov Dados (G03.C3).
-- [ ] Registrar `evidence_id` de cada passo em `03-approval/evidencias/` antes de `realizado`.
+- [ ] Registrar `evidence_id` de cada passo em `02-review/evidencias/` antes de `realizado`.
 
 ## 6. Rastreabilidade
 
 - Tarefa: [[04-project-management/tarefas/P03-T06_Templates_Linhagem_Evidencias|P03-T06]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-004]]
-- Catálogo: [[02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1]] — 73 indicadores
-- Modelo: [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `hub_id`
+- Catálogo: [[01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1]] — 73 indicadores
+- Modelo: [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `hub_id`

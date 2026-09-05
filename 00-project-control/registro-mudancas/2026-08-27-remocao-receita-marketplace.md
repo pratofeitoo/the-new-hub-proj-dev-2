@@ -8,7 +8,7 @@ tags:
   - projeto/registro-mudanca
   - projeto/gestao
 related_notes:
-  - "[[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
+  - "[[01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
 author:
   - PF Rezende
 commits: []
@@ -38,7 +38,7 @@ commits: []
 
 ### 3.1 Artefatos criados ou atualizados
 
-[[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB_Blueprint_Oferta_e_Arquitetura_Receita]]HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+[[01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB_Blueprint_Oferta_e_Arquitetura_Receita]]HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 
 | Arquivo | Papel | Gaps / requisitos | Links |
 |---|---|---|---|

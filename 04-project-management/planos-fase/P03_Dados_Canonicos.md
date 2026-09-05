@@ -29,9 +29,9 @@ gap_ids:
 bp_tasks:
   - BP-003
 related_notes:
-  - "[[01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia]]"
-  - "[[01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem]]"
-  - "[[03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx]]"
+  - "[[01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia]]"
+  - "[[01-work/dados-inteligencia/modelo-indicadores/abas-origem]]"
+  - "[[02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx]]"
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[04-project-management/planos-mestres/HUB_Plano_Fases_v1]]"
 created: 2026-08-26
@@ -45,7 +45,7 @@ updated: 2026-08-26
 
 ## 1. Objetivo
 
-Produzir o modelo canônico de dados, eventos, métricas e valor do HUB — com chaves estáveis, contratos versionados, linhagem ponta a ponta e distinção formal entre valor potencial/influenciado/validado/realizado — desbloqueando a correção do modelo de indicadores bloqueado em `03-approval/bloqueado/`.
+Produzir o modelo canônico de dados, eventos, métricas e valor do HUB — com chaves estáveis, contratos versionados, linhagem ponta a ponta e distinção formal entre valor potencial/influenciado/validado/realizado — desbloqueando a correção do modelo de indicadores bloqueado em `02-review/bloqueado/`.
 
 ## 2. Gaps que esta fase fecha
 
@@ -73,7 +73,7 @@ Produzir o modelo canônico de dados, eventos, métricas e valor do HUB — com 
 5. Catálogo canônico de métricas + grafo de dependências (DAT-005) — resolver definições alternativas.
 6. Taxonomia estados de valor (`potencial → influenciado → validado → realizado`) + políticas cálculo/atribuição/deduplicação/contrafactual (DAT-006).
 7. Matriz dados-finalidade + ciclo de vida + fluxos DSAR/exclusão/portabilidade (DAT-008/009).
-8. **Desbloqueio do XLSX bloqueado:** reconciliar `01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/` vs `03-approval/bloqueado/.../03-csv-corrigido/` vs `02-refinement/refinamento-modelo-dados/modelo-indicadores/` e promover via `04-registro-correcoes/` + `06-relatorios-validacao/`.
+8. **Desbloqueio do XLSX bloqueado:** reconciliar `01-work/dados-inteligencia/modelo-indicadores/abas-origem/` vs `02-review/bloqueado/.../03-csv-corrigido/` vs `01-work/refinamento-modelo-dados/modelo-indicadores/` e promover via `04-registro-correcoes/` + `06-relatorios-validacao/`.
 
 ### Fora
 - Contratos jurídicos de controlador/operador por fluxo (P04)
@@ -83,23 +83,23 @@ Produzir o modelo canônico de dados, eventos, métricas e valor do HUB — com 
 ## 4. Entradas
 
 - Saídas de **P01** (oferta) + **P02** (fronteiras módulos + jornada com eventos)
-- [`HUB_Blueprint_Dados_e_Inteligencia.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md)
-- Mirror completo: [`01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem) (14 abas `00–14` + `analise.md`)
-- XLSX bloqueado + CSVs corrigidos: [`03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx) (`03-csv-corrigido/`, `04-registro-correcoes/`, `06-relatorios-validacao/`)
-- XLSX melhorado [`02-refinement/refinamento-modelo-dados/modelo-indicadores/pastas-trabalho/MELHORADO_v1.1.xlsx`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-refinement/refinamento-modelo-dados/modelo-indicadores/pastas-trabalho) + [`sintese-entre-abas/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas)
+- [`HUB_Blueprint_Dados_e_Inteligencia.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md)
+- Mirror completo: [`01-work/dados-inteligencia/modelo-indicadores/abas-origem/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/dados-inteligencia/modelo-indicadores/abas-origem) (14 abas `00–14` + `analise.md`)
+- XLSX bloqueado + CSVs corrigidos: [`02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx) (`03-csv-corrigido/`, `04-registro-correcoes/`, `06-relatorios-validacao/`)
+- XLSX melhorado [`01-work/refinamento-modelo-dados/modelo-indicadores/pastas-trabalho/MELHORADO_v1.1.xlsx`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/refinamento-modelo-dados/modelo-indicadores/pastas-trabalho) + [`sintese-entre-abas/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas)
 
 ## 5. Saídas
 
 | Artefato | Onde vive | Camada |
 |---|---|---|
-| Modelo lógico + físico aprovado (PK/FK/cardinalidade/tipos) | `01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `02-refinement/refinamento-modelo-dados/` | blueprint→refining |
-| Serviço identidade (regras matching/survivorship) | `02-refinement/refinamento-modelo-dados/modelo-indicadores/` | refining |
+| Modelo lógico + físico aprovado (PK/FK/cardinalidade/tipos) | `01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `01-work/refinamento-modelo-dados/` | blueprint→refining |
+| Serviço identidade (regras matching/survivorship) | `01-work/refinamento-modelo-dados/modelo-indicadores/` | refining |
 | Envelope evento canônico + schema registry | mesmo | refining |
 | Catálogo métricas canônico + grafo dependências | mesmo + `sintese-entre-abas/` | refining |
 | Taxonomia estados valor | mesmo | refining |
-| Matriz dados-finalidade + fluxos DSAR/replay | `02-refinement/refinamento-governanca/` (linkado) | refining |
-| XLSX validado (reconstruído a partir dos `03-csv-corrigido/` validados) | `03-approval/bloqueado/.../indicadores-xlsx/` → `03-approval/pacotes-revisao/P03-Dados-Canonicos.md` → `03-approval/aprovado/` | approval |
-| Pacote revisão P03 | `03-approval/pacotes-revisao/P03-Dados-Canonicos.md` | approval |
+| Matriz dados-finalidade + fluxos DSAR/replay | `01-work/documentos-oficiais/_controle/` (linkado) | refining |
+| XLSX validado (reconstruído a partir dos `03-csv-corrigido/` validados) | `02-review/bloqueado/.../indicadores-xlsx/` → `02-review/pacotes/P03-Dados-Canonicos.md` → `02-review/aprovado/` | approval |
+| Pacote revisão P03 | `02-review/pacotes/P03-Dados-Canonicos.md` | approval |
 
 ## 6. Critérios de saída (gate P03 — com sub-gates)
 

@@ -16,7 +16,7 @@ gap_ids:
   - STR-006
 dependencies:
   - P06-T08
-target_file: 02-refinement/pesquisa/segundo-rascunho-projeto/
+target_file: 01-work/pesquisa/segundo-rascunho-projeto/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/STR-004]]"

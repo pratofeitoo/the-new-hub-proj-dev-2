@@ -22,7 +22,7 @@ related_notes:
   - "[[project-map]]"
   - "[[README]]"
   - "[[00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas]]"
-  - "[[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 author:
   - PF Rezende
@@ -59,14 +59,14 @@ O projeto saiu de uma organização **temática** (`Fases_Projeto.canvas` com cl
 
 | Arquivo | Papel | Gaps / BP | Links |
 |---|---|---|---|
-| [[04-project-management/planos-mestres/HUB_Plano_Fases_v1|HUB_Plano_Fases_v1.md]] | Plano diretor: 7 fases + alternativa 4-fases, M0–M4 mapping, RACI provisório, cronograma indicativo | `STR→LCH`, `BP-001..008` | [[00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas|Framework]] · [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto|Fundação]] · [[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto|Gaps]] |
-| [[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio|P01_Arquitetura_Oferta_Negocio.md]] | Oferta & negócio: matriz oferta-comprador, taxonomia receita | `STR-001/002/003`, `FIN-002`, `GTM-001` → `BP-001` | [[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|Oferta e Receita]] |
-| [[04-project-management/planos-fase/P02_Produto_Operacao|P02_Produto_Operacao.md]] | Produto & operação: fronteiras 6 módulos + SOPs C.A.O.S. | `PRD-001..007`, `STR-007/008`, `GOV-008` → `BP-002`+`BP-005` | [[01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades|Produto]] · [[01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional|Operações]] |
-| [[04-project-management/planos-fase/P03_Dados_Canonicos|P03_Dados_Canonicos.md]] | **Spine** dados canônicos: entidades, eventos, métricas, estados de valor + desbloqueio XLSX bloqueado | `DAT-001..010` → `BP-003` | [[01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia|Dados]] · [[03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx|indicadores-xlsx bloqueado]] |
-| [[04-project-management/planos-fase/P04_Governanca_Confianca|P04_Governanca_Confianca.md]] | Governança & confiança: entidades, LGPD, Selo charter | `GOV-001..009` → `BP-006` | [[01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico|Governança]] |
-| [[04-project-management/planos-fase/P05_Tecnologia_Contratual|P05_Tecnologia_Contratual.md]] | Tecnologia contratual: contratos, SLOs, threat model | `TEC-001..007` → `BP-004` | [[01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica|Tecnologia]] |
-| [[04-project-management/planos-fase/P06_Economia_GTM_Evidencia|P06_Economia_GTM_Evidencia.md]] | Economia & GTM com evidência: financeiro reconstruído + claim library | `FIN/GTM/BRD` → `BP-007` | [[01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado|Marca]] |
-| [[04-project-management/planos-fase/P07_Portao_Lancamento|P07_Portao_Lancamento.md]] | Portão de lançamento: checklist integrado + runbook | `LCH-001..007` → `BP-008` | [[01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao|Lançamento]] · [[03-approval/portao-lancamento|portao-lancamento]] |
+| [[04-project-management/planos-mestres/HUB_Plano_Fases_v1|HUB_Plano_Fases_v1.md]] | Plano diretor: 7 fases + alternativa 4-fases, M0–M4 mapping, RACI provisório, cronograma indicativo | `STR→LCH`, `BP-001..008` | [[00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas|Framework]] · [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto|Fundação]] · [[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto|Gaps]] |
+| [[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio|P01_Arquitetura_Oferta_Negocio.md]] | Oferta & negócio: matriz oferta-comprador, taxonomia receita | `STR-001/002/003`, `FIN-002`, `GTM-001` → `BP-001` | [[01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|Oferta e Receita]] |
+| [[04-project-management/planos-fase/P02_Produto_Operacao|P02_Produto_Operacao.md]] | Produto & operação: fronteiras 6 módulos + SOPs C.A.O.S. | `PRD-001..007`, `STR-007/008`, `GOV-008` → `BP-002`+`BP-005` | [[01-work/produto/HUB_Blueprint_Produto_e_Capacidades|Produto]] · [[01-work/operacoes/HUB_Blueprint_Modelo_Operacional|Operações]] |
+| [[04-project-management/planos-fase/P03_Dados_Canonicos|P03_Dados_Canonicos.md]] | **Spine** dados canônicos: entidades, eventos, métricas, estados de valor + desbloqueio XLSX bloqueado | `DAT-001..010` → `BP-003` | [[01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia|Dados]] · [[02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx|indicadores-xlsx bloqueado]] |
+| [[04-project-management/planos-fase/P04_Governanca_Confianca|P04_Governanca_Confianca.md]] | Governança & confiança: entidades, LGPD, Selo charter | `GOV-001..009` → `BP-006` | [[01-work/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico|Governança]] |
+| [[04-project-management/planos-fase/P05_Tecnologia_Contratual|P05_Tecnologia_Contratual.md]] | Tecnologia contratual: contratos, SLOs, threat model | `TEC-001..007` → `BP-004` | [[01-work/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica|Tecnologia]] |
+| [[04-project-management/planos-fase/P06_Economia_GTM_Evidencia|P06_Economia_GTM_Evidencia.md]] | Economia & GTM com evidência: financeiro reconstruído + claim library | `FIN/GTM/BRD` → `BP-007` | [[01-work/marca-mercado/HUB_Blueprint_Marca_e_Mercado|Marca]] |
+| [[04-project-management/planos-fase/P07_Portao_Lancamento|P07_Portao_Lancamento.md]] | Portão de lançamento: checklist integrado + runbook | `LCH-001..007` → `BP-008` | [[01-work/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao|Lançamento]] · [[02-review/portao-lancamento|portao-lancamento]] |
 | [[04-project-management/cronogramas/cronograma-fases-v1.base|cronograma-fases-v1.base]] | Cronograma Bases com 6 views (Timeline, Caminho Crítico, Paralelizáveis, Por Dono, Portfolio, Gaps) | lê `planos-fase/*.md` via `phase` | [[04-project-management/marcos/marcos-fases-v1|marcos-fases-v1]] |
 | [[04-project-management/marcos/marcos-fases-v1|marcos-fases-v1.md]] | Marcos M00→M07 + sub-gates M03.A/B com critérios G01.x→G07.x | `M00` (scope) → `M07` (LAUNCH APPROVED) | [[00-project-control/decisoes/template-decisao|template-decisao]] |
 
@@ -100,7 +100,7 @@ Todos com push para `origin/main` (`github.com/pratofeitoo/the-new-hub-proj-dev-
 - **Regra de sequenciamento:** nenhuma fase avança sem gate aprovado. P03 é gargalo — possui sub-gates `M03.A` (entidades → libera P04) e `M03.B` (eventos → libera P05 detalhar payloads). P04 e P05 são paralelizáveis após `M03.A/B`.
 - **Camadas preservadas:** cada fase atravessa `01-blueprint → 02-refinement → 03-approval`. O faseamento orquestra **ordem entre fases**, não dentro da fase.
 - **Rastreabilidade:** requisito → evidência → entregável cobrada em `[[04-project-management/marcos/marcos-fases-v1|M07 G07.4]]`.
-- **O que não muda:** escopo de negócio (4 unidades, 6 módulos, M0–M4) permanece como em [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto|Fundação]]; apenas a ordem de prova muda.
+- **O que não muda:** escopo de negócio (4 unidades, 6 módulos, M0–M4) permanece como em [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto|Fundação]]; apenas a ordem de prova muda.
 
 ## 6. O que fica para depois
 
@@ -112,7 +112,7 @@ Todos com push para `origin/main` (`github.com/pratofeitoo/the-new-hub-proj-dev-
 ## 7. Referências
 
 - [[00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas|Framework de Três Camadas]]
-- [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto|Fundação do Blueprint]]
+- [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto|Fundação do Blueprint]]
 - [[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto|Registro de Lacunas]] — 68 gaps (24 críticos), §12 Espinha dorsal, §14 Definição de fechamento
 - [[04-project-management/tarefas/HUB_Tarefas_Projeto.base|HUB_Tarefas_Projeto.base]] — BP-001..008
 - [[04-project-management/planos-mestres/HUB_Plano_Fases_v1|HUB_Plano_Fases_v1.md]] + `planos-fase/P01..P07`

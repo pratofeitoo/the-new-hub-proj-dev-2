@@ -46,8 +46,8 @@ Founder patrocina e desbloqueia excepcional; owners delegados mantêm backlog, g
 
 ## 5. Localização artefato aprovado
 
-- Rascunho: este arquivo (`02-refinement/refinamento-produto/RACI_v1.md`)
-- Proposta bloqueada: `03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/14_RACI/RACI_v1.md` (cópia para pacote revisão)
+- Rascunho: este arquivo (`01-work/refinamento-produto/RACI_v1.md`)
+- Proposta bloqueada: `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/14_RACI/RACI_v1.md` (cópia para pacote revisão)
 
 ## 6. Rastreabilidade
 

@@ -76,7 +76,7 @@ flowchart LR
 | **Libera** | P02 (duro) · P06 hipóteses (soft) |
 | **Dono (A)** | PF Rezende (Estratégia) + Finanças |
 | **Gaps** | `STR-001,002,003` · `FIN-002` · `GTM-001` |
-| **Pacote revisão** | `03-approval/pacotes-revisao/P01-Oferta-Negocio.md` |
+| **Pacote revisão** | `02-review/pacotes/P01-Oferta-Negocio.md` |
 | **Decisão** | `00-project-control/decisoes/DEC-M01-*.md` |
 
 - [ ] **G01.1** Ofertas com unidade dona única, comprador, troca valor e premissa linkada a gap
@@ -102,7 +102,7 @@ flowchart LR
 | **Libera** | P03 |
 | **Dono (A)** | Produto |
 | **Gaps** | `PRD-001,002,003,004,005,007` · `STR-007/008` · `GOV-008` |
-| **Pacote revisão** | `03-approval/pacotes-revisao/P02-Produto-Operacao.md` |
+| **Pacote revisão** | `02-review/pacotes/P02-Produto-Operacao.md` |
 
 - [ ] **G02.1** 6 módulos com fronteira `núcleo / oferta-específico / serviço-humano`
 - [ ] **G02.2** Jornada com estados+eventos+regra manual/assistido/automatizado
@@ -148,7 +148,7 @@ flowchart LR
 | **Depende de** | M03.B |
 | **Libera** | P06 |
 | **Gaps** | `DAT-004,005,006,008,009` |
-| **Pacote revisão** | `03-approval/pacotes-revisao/P03-Dados-Canonicos.md` |
+| **Pacote revisão** | `02-review/pacotes/P03-Dados-Canonicos.md` |
 | **Decisão** | `00-project-control/decisoes/DEC-M03-*.md` |
 
 - [ ] **G03.C1** Catálogo 73 indicadores sem definição alternativa
@@ -168,7 +168,7 @@ flowchart LR
 | **Paralelo com** | M05 |
 | **Dono (A)** | Jurídico |
 | **Gaps** | `GOV-001..009` |
-| **Pacote revisão** | `03-approval/pacotes-revisao/P04-Governanca-Confianca.md` |
+| **Pacote revisão** | `02-review/pacotes/P04-Governanca-Confianca.md` |
 
 - [ ] **G04.1** Estrutura 4 unidades aprovada (parecer jurídico, não slide)
 - [ ] **G04.2** Fluxos com controller/processor + base legal + retenção (LGPD libera)
@@ -191,7 +191,7 @@ flowchart LR
 | **Paralelo com** | M04 |
 | **Dono (A)** | Tech |
 | **Gaps** | `TEC-001..007`; `TEC-005` e `TEC-007` (**blocking: yes** nos G05.4/G05.7) |
-| **Pacote revisão** | `03-approval/pacotes-revisao/P05-Tecnologia.md` |
+| **Pacote revisão** | `02-review/pacotes/P05-Tecnologia.md` |
 
 - [ ] **G05.1** Arquitetura-alvo aprovada
 - [ ] **G05.2** Contratos M0 com review contrato+segurança
@@ -212,7 +212,7 @@ flowchart LR
 | **Libera** | M07 |
 | **Dono (A)** | Finanças |
 | **Gaps** | `FIN-001,003..007` · `GTM-002..007` · `BRD-001..003` · `STR-004..006` |
-| **Pacote revisão** | `03-approval/pacotes-revisao/P06-Economia-GTM.md` |
+| **Pacote revisão** | `02-review/pacotes/P06-Economia-GTM.md` |
 
 > **Backlog pós-MVP:** `BRD-004` (governança de idioma, localização e terminologia) não compõe o conjunto de gaps nem o gate M06.
 
@@ -241,7 +241,7 @@ flowchart LR
 | **Depende de** | M06 + M04 (gov) |
 | **Dono (A)** | Controle Projeto |
 | **Gaps** | `LCH-001..007` · `STR-003`; `LCH-007` (**blocking: yes** no G07.7) |
-| **Artefatos** | `03-approval/portao-lancamento/portao-mestre-v1.md` + runbook + matriz rastreabilidade |
+| **Artefatos** | `02-review/portao-lancamento/portao-mestre-v1.md` + runbook + matriz rastreabilidade |
 
 - [ ] **G07.1** Portão mestre sem crítico em `blueprint`
 - [ ] **G07.2** Produto implantável + rollback exercitados
@@ -249,7 +249,7 @@ flowchart LR
 - [ ] **G07.4** Rastreabilidade sem órfão crítico
 - [ ] **G07.5** Riscos com dono+limiar+tratamento
 - [ ] **G07.6** Checklist comercial (contratos, preço, privacidade, suporte)
-- [ ] **G07.7** Artefatos com status válido; `06-deliverables/` só pós-aprovação (**LCH-007; blocking: yes**)
+- [ ] **G07.7** Artefatos com status válido; `03-approved/` só pós-aprovação (**LCH-007; blocking: yes**)
 - [ ] **G07.8** Roadmap sem contradição
 
 > **Definição de completo:** `M07 Launch Approved` = `M01..M06` aprovados + G07.1..8 + sistema coerente (framework Definição de conclusão). Piloto isolado não é lançamento.
@@ -261,7 +261,7 @@ flowchart LR
 ## Como registrar cada marco
 
 1. Crie `00-project-control/decisoes/DEC-M0X-YYYY-MM-DD.md` a partir de [`template-decisao.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/decisoes/template-decisao.md) quando o gate for votado.
-2. Anexe `03-approval/pacotes-revisao/P0X-*.md` como evidência.
+2. Anexe `02-review/pacotes/P0X-*.md` como evidência.
 3. Atualize `status` no arquivo `P0x_*.md` correspondente (`rascunho` → `em-execucao` → `em-revisao` → `aprovado`).
 4. Marque o checkbox aqui + atualize [`cronograma-fases-v1.base`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/cronogramas/cronograma-fases-v1.base) — o status propaga para as views.
 5. Registre em `04-project-management/atas-reuniao/` a ata do gate.

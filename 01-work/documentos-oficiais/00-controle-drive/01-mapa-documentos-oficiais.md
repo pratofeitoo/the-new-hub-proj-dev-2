@@ -11,7 +11,7 @@ tags: [mapa, canonico, GOV-001, GOV-002, GOV-003, LGPD]
 # HUB — Mapa de Documentos Oficiais v1 (cópia canônica)
 
 > **Fonte da verdade** para `doc_id`, `pasta`, `gatilho` e `gap_id`. Todo arquivo em `HUB_Documentos_Oficiais/` deve ter `doc_id` idêntico a este mapa.
-> Mapa original esperado em `02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md` — não encontrado no momento da criação do vault (2026-09-02). Esta cópia foi reconstruída a partir da árvore detalhada de `HUB_Instrucao_Vault_Documentos_Oficiais.md §1` e deve ser reconciliada quando o mapa original for localizado.
+> Mapa original esperado em `01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md` — não encontrado no momento da criação do vault (2026-09-02). Esta cópia foi reconstruída a partir da árvore detalhada de `HUB_Instrucao_Vault_Documentos_Oficiais.md §1` e deve ser reconciliada quando o mapa original for localizado.
 
 ## Total
 **8 blocos → 37 documentos** (5+5+5+8+5+5+5+4) + 4 arquivos de controle + 1 template = **42 artefatos no vault**.

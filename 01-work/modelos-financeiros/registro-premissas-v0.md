@@ -14,8 +14,8 @@ depends_on:
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-001]]"
-  - "[[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency]]"
-  - "[[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/sintese-entre-abas/README|Catálogo canônico P03]]"
+  - "[[01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency]]"
+  - "[[01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/sintese-entre-abas/README|Catálogo canônico P03]]"
   - "[[05-resources/planilhas/HUB_Mapa_Financeiro_Patrocinadores_Investidores.xlsx]]"
 target_layer: refining
 review_date: a-definir
@@ -37,10 +37,10 @@ tags:
 
 Este registro operacionaliza [[04-project-management/tarefas/P06-T01_Registro_Premissas|P06-T01]] e alimenta [[04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios|P06-T02]] (3 cenários). Ele é a **camada de proveniência** entre os dois insumos travados em `P03/P05` e o modelo financeiro.
 
-- **P03-T05** → `02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/` — 73 indicadores com fórmula/dimensão/owner. Toda premissa de *valor/resultado* deve apontar para um `indicador_id` canônico.
-- **P05-T04** → `02-refinement/modelos-financeiros/` (baseline M0–M2) — custo, latência, volume, rate-limit por integração. Toda premissa de *custo/capacidade* deve apontar para uma linha do baseline.
+- **P03-T05** → `01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/` — 73 indicadores com fórmula/dimensão/owner. Toda premissa de *valor/resultado* deve apontar para um `indicador_id` canônico.
+- **P05-T04** → `01-work/modelos-financeiros/` (baseline M0–M2) — custo, latência, volume, rate-limit por integração. Toda premissa de *custo/capacidade* deve apontar para uma linha do baseline.
 
-Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) permanece **não auditável** — ver [[02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency#6. Severidade e readiness|severidade crítica: soma de 6 alavancas sem ledger]].
+Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) permanece **não auditável** — ver [[01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency#6. Severidade e readiness|severidade crítica: soma de 6 alavancas sem ledger]].
 
 ## Como usar
 
@@ -64,7 +64,7 @@ Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) p
 | FIN-P009 | _[adicione premissa de atribuição HUB]_ | TBD | % | TBD | — | TBD | TBD | `PRO-08` (âncora experimental) | — | TBD | FIN-001 | bloqueada | Definir método/teto aprovado; unidade de análise + comparador | a definir |
 | FIN-P010 | _[adicione premissa de baseline/comparador]_ | TBD | TBD | TBD | — | TBD | TBD | `DAT-001/002/003` | — | TBD | FIN-001 | bloqueada | Baseline, janela, coorte, denominador e versão da fórmula | a definir |
 
-> **Regra de preenchimento:** não apague linhas `TBD` — elas documentam lacunas para `P07-T05`. Uma premissa só sai de `hipótese/bloqueada` quando `fonte + data + confiança + dono + próxima evidência` estiverem preenchidos e a evidência estiver linkada em `05-resources/planilhas/` ou `02-refinement/`.
+> **Regra de preenchimento:** não apague linhas `TBD` — elas documentam lacunas para `P07-T05`. Uma premissa só sai de `hipótese/bloqueada` quando `fonte + data + confiança + dono + próxima evidência` estiverem preenchidos e a evidência estiver linkada em `05-resources/planilhas/` ou `01-work/`.
 
 ## Wiring explícito — P03 (métricas) e P05 (baseline)
 
@@ -76,7 +76,7 @@ Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) p
 | FIN-P002 | `PRO-*`, `RH-06`, `RH-07`, `ENT-*` | idem | idem | idem | Dados (a designar) | estimado |
 | FIN-P00X | _preencher_ | _fórmula vX_ | _mensal/trimestral_ | _baseline + comparador_ | _owner_ | estimado → validado → realizado |
 
-> Fonte canônica: `02-refinement/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/` + `HUB_Mapa_Inteligencia_Dados_Indicadores_MELHORADO_v1.1.xlsx`. Se o indicador não existir no Master, registre a lacuna em `DAT-005` antes de usar.
+> Fonte canônica: `01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/` + `HUB_Mapa_Inteligencia_Dados_Indicadores_MELHORADO_v1.1.xlsx`. Se o indicador não existir no Master, registre a lacuna em `DAT-005` antes de usar.
 
 ### P05-T04 → qual baseline cada premissa consome
 
@@ -85,7 +85,7 @@ Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) p
 | FIN-P004 | CRM / plataforma / warehouse / consentimento (a detalhar) | `P05-T04` Tabela de baseline | TBD | TBD | TBD | TBD | TBD | a definir | a definir |
 | FIN-P00X | _M0/M1/M2_ | _linha da tabela_ | _R$_ | _ms_ | _req/mês_ | _req/s_ | _%_ | _link_ | _data_ |
 
-> Fonte canônica: `02-refinement/modelos-financeiros/` — tabela de baseline por integração (P05-T02 → P05-T04). Sem essa linha, P06-T01 não pode fechar `G05.4` e P07 não passa em `G07.4`.
+> Fonte canônica: `01-work/modelos-financeiros/` — tabela de baseline por integração (P05-T02 → P05-T04). Sem essa linha, P06-T01 não pode fechar `G05.4` e P07 não passa em `G07.4`.
 
 ## Tabela de proveniência e confiança
 

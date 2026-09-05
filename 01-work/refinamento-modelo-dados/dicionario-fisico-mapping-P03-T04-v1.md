@@ -15,7 +15,7 @@ tags:
 # Dicionário Físico Mapping v1 — P03-T04 (M03.B / G03.B2 **blocking: yes**)
 
 > **Status:** rascunho para revisão Dados+Tech · **G03.B2** é bloqueador mínimo para liberar P03. Automação e cobertura adicional são extensões pós-MVP.
-> **Depende de:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — 25 entidades com `canonical_id`.
+> **Depende de:** [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — 25 entidades com `canonical_id`.
 
 ## 1. Resumo — 17 tabelas físicas → entidades canônicas (47 campos)
 
@@ -109,7 +109,7 @@ tags:
 | `fact_event` | 4 campos sem retenção | + `36 meses`, `restricted event role`, `ID uniqueness + DSAR link` | Retenção e DSAR auditáveis |
 | Linhas | 41 campos (linhas 5–45) idênticas em conteúdo base | mesmas 41 linhas + metadados governança | Nenhuma divergência de Tipo/Definição/Chave; apenas metadados adicionados |
 
-**Registro auditável:** `03-approval/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/corrections.csv` — 4 novas entradas `DAT010-001` a `DAT010-004` (categoria `governanca`, `schema`, `evidencias`) com `source_csv`=`08_Dicionario_Dados.csv`, `status=proposed` → `aprovado` após revisão Dados+Tech.
+**Registro auditável:** `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/corrections.csv` — 4 novas entradas `DAT010-001` a `DAT010-004` (categoria `governanca`, `schema`, `evidencias`) com `source_csv`=`08_Dicionario_Dados.csv`, `status=proposed` → `aprovado` após revisão Dados+Tech.
 
 ## 4. Diagrama físico simplificado
 
@@ -138,5 +138,5 @@ erDiagram
 
 - Tarefa: [[04-project-management/tarefas/P03-T04_Dicionario_Fisico_Mapping|P03-T04]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-010]] — blocking: yes em G03.B2
-- Modelo: [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — 25 entidades
-- Fontes: `01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/08_Dicionario_Dados.csv` (12 cols, espelho) vs `03-approval/bloqueado/.../03-csv-corrigido/08_Dicionario_Dados.csv` (16 cols, fonte para reconstrução)
+- Modelo: [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — 25 entidades
+- Fontes: `05-resources/fontes/modelo-indicadores/08_Dicionario_Dados.csv` (12 cols, espelho) vs `02-review/bloqueado/.../03-csv-corrigido/08_Dicionario_Dados.csv` (16 cols, fonte para reconstrução)

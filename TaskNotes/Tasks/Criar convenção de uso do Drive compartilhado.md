@@ -31,7 +31,7 @@ projects:
 `/Shared drives/DiverCidade HUB/2026/THE NEW HUB/Obsidian Inventory/05-resources`
 
 ##### Revisar o Manifesto de Processamento:
-`/Shared drives/DiverCidade HUB/2026/THE NEW HUB/Obsidian Inventory/05-resources/Processar/Plataforma HUB/manifesto-processamento.md`
+`/Shared drives/DiverCidade HUB/2026/THE NEW HUB/Obsidian Inventory/05-resources/inbox/Plataforma HUB/manifesto-processamento.md`
 
 
 ---

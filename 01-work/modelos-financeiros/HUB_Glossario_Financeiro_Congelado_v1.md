@@ -3,7 +3,7 @@ title: Glossário Financeiro Congelado v1 — HUB
 tipo: glossario_financeiro
 versao: 1.0
 fase: M0
-status: congelado para refinement
+status: em-elaboracao
 data: 2026-09-02
 fonte: Relatorio_CrossReview cap.6 + BP-003 cap.4 + taxonomia-estados-valor-P03-T07
 tags: [financeiro, glossario, m0, valor]
@@ -39,6 +39,6 @@ tags: [financeiro, glossario, m0, valor]
 
 ## Rastreabilidade
 
-- Matriz: [[05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz de Convergência]].
-- Ledger e estados: [[02-refinement/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|Taxonomia de estados de valor]].
+- Matriz: [[05-resources/inbox/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz de Convergência]].
+- Ledger e estados: [[01-work/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|Taxonomia de estados de valor]].
 - Simulador: `06_Simulador_ROI_analise.md`; deduplicação: BP-003 cap.4 e `DAT-006`.

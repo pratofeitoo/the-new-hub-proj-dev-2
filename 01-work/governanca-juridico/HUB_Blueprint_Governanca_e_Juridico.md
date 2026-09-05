@@ -17,7 +17,7 @@ gap_ids: [GOV-001, GOV-002, GOV-003, GOV-004, GOV-005, GOV-006, GOV-007, GOV-008
 
 ## 1. Responsibilities and boundaries of the four conceptual units
 
-As quatro unidades são fronteiras conceituais, não evidência de que quatro entidades legais já existam. [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]] identifica seus papéis pretendidos, enquanto [[00-project-control/registro-lacunas/lacunas/GOV-001|GOV-001]] permanece aberto. O Refinamento deve decidir se cada unidade é uma entidade separada, uma marca, um centro de custo, um papel contratual ou outra estrutura.
+As quatro unidades são fronteiras conceituais, não evidência de que quatro entidades legais já existam. [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]] identifica seus papéis pretendidos, enquanto [[00-project-control/registro-lacunas/lacunas/GOV-001|GOV-001]] permanece aberto. O Refinamento deve decidir se cada unidade é uma entidade separada, uma marca, um centro de custo, um papel contratual ou outra estrutura.
 
 | Conceptual unit | Governance responsibility | Boundary and prohibited assumption | Required interface |
 |---|---|---|---|
@@ -141,7 +141,7 @@ Essas premissas são deliberadamente visíveis. Nenhuma é aprovação, conclus�
 
 ## 7. Dependências entre Blueprints
 
-- **[[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]:** fonte da arquitetura de quatro unidades, C.A.O.S., módulos da plataforma, maturidade de valor/evidências e sensibilidade do Selo; este blueprint adiciona controles sem converter conceitos em fatos.
+- **[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]:** fonte da arquitetura de quatro unidades, C.A.O.S., módulos da plataforma, maturidade de valor/evidências e sensibilidade do Selo; este blueprint adiciona controles sem converter conceitos em fatos.
 - **BP-001 / arquitetura de negócios e ofertas:** deve especificar quem compra, contrata e recebe cada oferta, fronteiras de receita, promessas ao cliente e superfícies de alegações. As fronteiras de governança alimentam termos das ofertas e promessas proibidas.
 - **BP-002 / blueprint de produto:** deve converter módulos da plataforma, permissões, revisão humana, eventos de auditoria, portões de publicação e comportamento de exportação/exclusão em requisitos de produto. A governança aprova fronteiras; não inventa UX ou detalhes de implementação.
 - **BP-003 / blueprint de dados e inteligência:** deve fornecer entidades canônicas, linhagem de dados, mapa finalidade-para-campo, versões de modelos, estados de evidência e métricas de inteligência responsável necessários para GOV-002, GOV-005, GOV-007 e GOV-009.

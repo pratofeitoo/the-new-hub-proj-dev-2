@@ -15,7 +15,7 @@ gap_ids:
 dependencies:
   - P06-T02
   - P04-T01
-target_file: 03-approval/portao-lancamento/portao-mestre-v1.md
+target_file: 02-review/portao-lancamento/portao-mestre-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-001]]"
@@ -35,7 +35,7 @@ dateModified: 2026-09-01T19:29:19.432-03:00
 Construir portão mestre com checklist integrado (negócio, produto, dados, tech, jurídico, finanças, ops, comunicações) + grafo P01→P07.
 
 ## Entregável
-`portao-mestre-v1.md` em `03-approval/portao-lancamento/` com status `aprovado/condicional/bloqueado` por item; sem crítico em `blueprint` (G07.1).
+`portao-mestre-v1.md` em `02-review/portao-lancamento/` com status `aprovado/condicional/bloqueado` por item; sem crítico em `blueprint` (G07.1).
 
 ## Dependências
 - [[04-project-management/tarefas/P06-T02_Modelo_Financeiro_3_Cenarios|P06-T02]] — economia validada (M06)

@@ -15,7 +15,7 @@ tags:
 # Envelope Canônico + Schema Registry v1 — P03-T03 (M03.B / G03.B1)
 
 > **Status:** rascunho para validação Dados+Tech · **G03.B1** · Produtores/consumidores de teste devem passar em contrato+replay antes de promoção.
-> **Depende de:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `canonical_id`, temporalidade.
+> **Depende de:** [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `canonical_id`, temporalidade.
 
 ## 1. Envelope canônico v1 (obrigatório em todo evento, incluindo SRC-12)
 
@@ -69,7 +69,7 @@ O envelope mínimo consolidado é: `event_id`, `event_type`, `schema_version`, `
 
 ## 2. Schema Registry
 
-Local lógico: `02-refinement/refinamento-modelo-dados/schema-registry/` (futuro físico: Apicurio/Confluent).
+Local lógico: `01-work/refinamento-modelo-dados/schema-registry/` (futuro físico: Apicurio/Confluent).
 
 | Artefato | Conteúdo | Regra promoção/rollback |
 |---|---|---|
@@ -121,7 +121,7 @@ Local lógico: `02-refinement/refinamento-modelo-dados/schema-registry/` (futuro
 | `matching` | deduplica por `idempotency_key`; mantém `occurred_at` em atraso |
 | `replay` | reprocessa snapshot `run_001` → novo `run_002` com mesmos deltas |
 
-**Fixtures:** `02-refinement/refinamento-modelo-dados/schema-registry/fixtures/` — JSON válidos/inválidos por `schema_version`; teste `contract: valid → accepted`, `invalid → quarantined`, `duplicate key → deduped`.
+**Fixtures:** `01-work/refinamento-modelo-dados/schema-registry/fixtures/` — JSON válidos/inválidos por `schema_version`; teste `contract: valid → accepted`, `invalid → quarantined`, `duplicate key → deduped`.
 
 ## 7. Pendências G03.B1
 
@@ -133,5 +133,5 @@ Local lógico: `02-refinement/refinamento-modelo-dados/schema-registry/` (futuro
 
 - Tarefa: [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema|P03-T03]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-003]]
-- Modelo base: [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — temporalidade e `canonical_id`
-- Blueprint: [[01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#3. Versionamento de eventos, indicadores, taxonomias, fórmulas, modelos e evidências|BP-003 §3]]
+- Modelo base: [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — temporalidade e `canonical_id`
+- Blueprint: [[01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#3. Versionamento de eventos, indicadores, taxonomias, fórmulas, modelos e evidências|BP-003 §3]]

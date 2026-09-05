@@ -10,7 +10,7 @@ tags:
 gap_ids:
   - FIN-002
 related_notes:
-  - "[[01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
+  - "[[01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
   - "[[04-project-management/tarefas/P01-T03_Taxonomia_Receita]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-002]]"
 ---
@@ -20,7 +20,7 @@ related_notes:
 > [!warning] Uso controlado
 > Exemplo de cenários para Blueprint. Não é política contábil, fiscal ou jurídica e não substitui a aprovação de Finanças em `FIN-002`.
 
-> **Vocabulário financeiro congelado:** usar os estados **Potencial → Influenciado → Validado → Realizado**, ledger único, teto por população e haircut DAT-08 conforme [[02-refinement/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1|Glossário Financeiro Congelado v1]]. `14_ROI` permanece zerado até baseline Monks.
+> **Vocabulário financeiro congelado:** usar os estados **Potencial → Influenciado → Validado → Realizado**, ledger único, teto por população e haircut DAT-08 conforme [[01-work/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1|Glossário Financeiro Congelado v1]]. `14_ROI` permanece zerado até baseline Monks.
 
 ## Regras de classificação
 

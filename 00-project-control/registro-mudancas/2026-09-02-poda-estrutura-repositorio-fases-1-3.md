@@ -50,13 +50,13 @@ Poda da estrutura em 3 fases executadas e 1 fase cancelada após verificação: 
 
 | Removidos | Mantido no lugar |
 |---|---|
-| `06-deliverables/{dados,governanca,investidor,lancamento,negocio,produto}/` | `06-deliverables/.gitkeep` (pasta aspiracional, flat) |
-| `03-approval/{aprovado,aprovado-condicionalmente,criterios-aprovacao,evidencias,portao-lancamento}/` | `03-approval/` = `bloqueado/` + `pacotes-revisao/` |
+| `03-approved/{dados,governanca,investidor,lancamento,negocio,produto}/` | `03-approved/.gitkeep` (pasta aspiracional, flat) |
+| `02-review/{aprovado,aprovado-condicionalmente,criterios-aprovacao,evidencias,portao-lancamento}/` | `02-review/` = `bloqueado/` + `pacotes-revisao/` |
 | `00-project-control/{dependencias,indices,premissas,riscos}/` | — (pai tem conteúdo) |
 | `99-archive/{descontinuado,rejeitado}/` | `99-archive/` = `instantaneos-historicos/` + `superado/` |
 | `04-project-management/retrospectivas/` | — (recriar na primeira retro) |
 
-Dirs **preservados** por terem conteúdo real (só o `.gitkeep` saiu): `03-approval/pacotes-revisao/` (`P01-aceite-cross-functional-v1.md`), `99-archive/instantaneos-historicos/` (`Inventário dos arquivos de valor.md`), `99-archive/superado/` (canvas `Fases_Projeto_v0`).
+Dirs **preservados** por terem conteúdo real (só o `.gitkeep` saiu): `02-review/pacotes/` (`P01-aceite-cross-functional-v1.md`), `99-archive/instantaneos-historicos/` (`Inventário dos arquivos de valor.md`), `99-archive/superado/` (canvas `Fases_Projeto_v0`).
 
 ### 3.3 Fase 3 — desvendorização Obsidian + docs
 
@@ -71,8 +71,8 @@ Dirs **preservados** por terem conteúdo real (só o `.gitkeep` saiu): `03-appro
 
 ### 3.4 Fase 4 — cancelada (nada movido, nada apagado)
 
-- Arquivamento de `03-approval/bloqueado/.../indicadores-xlsx/` → **cancelado**: são 432 KB de evidências P03-T09 (`RECONSTRUIDO_P03-T09_v1.xlsx` de 29/08 + relatórios `*-P03-T09`) referenciados por ~10 notas vivas; P03 está `em-revisao`. Gatilho correto: **após aprovação P03**.
-- Suposta duplicação tripla do modelo de indicadores → **inexistente**: `02-refinement/.../modelo-indicadores/` e `MELHORADO_v1.1.xlsx` não estão no disco (mapa desatualizado); par restante (`abas-origem` vs `03-csv-corrigido`) é antes/depois de correção — trilha de auditoria, manter.
+- Arquivamento de `02-review/bloqueado/.../indicadores-xlsx/` → **cancelado**: são 432 KB de evidências P03-T09 (`RECONSTRUIDO_P03-T09_v1.xlsx` de 29/08 + relatórios `*-P03-T09`) referenciados por ~10 notas vivas; P03 está `em-revisao`. Gatilho correto: **após aprovação P03**.
+- Suposta duplicação tripla do modelo de indicadores → **inexistente**: `01-work/.../modelo-indicadores/` e `MELHORADO_v1.1.xlsx` não estão no disco (mapa desatualizado); par restante (`abas-origem` vs `03-csv-corrigido`) é antes/depois de correção — trilha de auditoria, manter.
 - Dedup de views/dashboard → **cancelado**: `kanban/tasks/agenda/relationships/documentacao-oficial` + dashboard editados em 02/09 — apagar seria destruir trabalho de ontem por ~20 KB.
 - Correção `status` lista→escalar nas tarefas → **adiada**: 56+ frontmatters em revisão + comportamento de Base não verificado no Obsidian.
 - Bônus executado: varredura de 46 `.DS_Store` do disco (nenhum era rastreado).
@@ -80,8 +80,8 @@ Dirs **preservados** por terem conteúdo real (só o `.gitkeep` saiu): `03-appro
 ### 3.2 Decisões e regras afetadas
 
 - Plugins/temas inativos saem do git mas ficam locais — reinstalação via marketplace se necessário.
-- `06-deliverables/` volta a ser flat; subpastas se recriam na primeira entrega aprovada.
-- `project-map.md` está desatualizado em: pastas `02-refinement/{prototipos,revisoes,revisoes-iteradas,testes-experimentos}` e `05-resources/{conjuntos-dados,materiais-origem,modelos,referencias-externas}` (não existem no disco), `MELHORADO_v1.1.xlsx`, contagens e hashes — **atualização pendente, fora deste registro**.
+- `03-approved/` volta a ser flat; subpastas se recriam na primeira entrega aprovada.
+- `project-map.md` está desatualizado em: pastas `01-work/{prototipos,revisoes,revisoes-iteradas,testes-experimentos}` e `05-resources/{conjuntos-dados,materiais-origem,modelos,referencias-externas}` (não existem no disco), `MELHORADO_v1.1.xlsx`, contagens e hashes — **atualização pendente, fora deste registro**.
 - Alterações `TaskNotes/` pré-existentes (working tree já sujo antes da poda) **não foram tocadas**.
 
 ## 4. Impactos e rastreabilidade
@@ -101,7 +101,7 @@ Dirs **preservados** por terem conteúdo real (só o `.gitkeep` saiu): `03-appro
 
 - [x] Revisar e commitar a poda (`e1853fb`)
 - [ ] Atualizar `project-map.md` (pastas fantasmas, contagens, hashes) e trechos voláteis do `README.md`
-- [ ] Após aprovação P03: arquivar `03-approval/bloqueado/.../indicadores-xlsx/` em `99-archive/superado/`
+- [ ] Após aprovação P03: arquivar `02-review/bloqueado/.../indicadores-xlsx/` em `99-archive/superado/`
 - [ ] Confirmar no Obsidian o bug de filtro `status` lista vs escalar antes de qualquer correção em massa
 
 ## 7. Referências

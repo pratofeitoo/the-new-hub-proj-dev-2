@@ -4,13 +4,13 @@ tipo: resultado-processamento
 destino: 02-refinement
 classe: derivado
 data-revisao: 2026-08-31
-fonte-original: "[[05-resources/Processar/Plataforma HUB/01-mvps/MVP - Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx|HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx]]"
-cartao-processamento: "[[05-resources/Processar/Plataforma HUB/00-entrada/piloto-firjan-processamento.md|piloto-firjan-processamento]]"
+fonte-original: "[[05-resources/inbox/Plataforma HUB/01-mvps/MVP - Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx|HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx]]"
+cartao-processamento: "[[05-resources/inbox/Plataforma HUB/00-entrada/piloto-firjan-processamento.md|piloto-firjan-processamento]]"
 ---
 
 # Piloto Firjan — processamento refinado
 
-Resultado refinado do piloto controlado de processamento dos materiais do MVP Firjan. O documento foi criado diretamente em `02-refinement/pesquisa/`, conforme o destino aprovado, sem mover ou alterar o workbook original.
+Resultado refinado do piloto controlado de processamento dos materiais do MVP Firjan. O documento foi criado diretamente em `01-work/pesquisa/`, conforme o destino aprovado, sem mover ou alterar o workbook original.
 
 ## Fatos
 
@@ -25,13 +25,13 @@ Resultado refinado do piloto controlado de processamento dos materiais do MVP Fi
 
 - Os volumes, taxas e custos do workbook são premissas editáveis a validar com Firjan e empresas participantes, não resultados observados nem promessa de contratação.
 - O destino `02-refinement` é adequado porque o resultado refina fluxo, critérios de matching, indicadores e perguntas de validação operacional.
-- A criação direta desta nota em `02-refinement/pesquisa/` atende ao encaminhamento do artefato aprovado sem exigir a movimentação do workbook-fonte.
+- A criação direta desta nota em `01-work/pesquisa/` atende ao encaminhamento do artefato aprovado sem exigir a movimentação do workbook-fonte.
 
 ## Decisões
 
 - Manter o workbook original no caminho atual em `01-mvps/MVP - Candidatos/fontes/` durante este piloto.
 - Registrar o cartão em `00-entrada/` e marcar `concluido` somente após verificar o artefato roteado, os links e a permanência da fonte.
-- Encaminhar o resultado refinado para `02-refinement/pesquisa/` após revisão humana.
+- Encaminhar o resultado refinado para `01-work/pesquisa/` após revisão humana.
 - Tratar o workbook como fonte de planejamento (`classe: fonte`) e preservar a distinção entre capacidade projetada e evidência real.
 
 ## Lacunas e bloqueios
@@ -44,8 +44,8 @@ Resultado refinado do piloto controlado de processamento dos materiais do MVP Fi
 
 ## Relações
 
-- Cartão de processamento: [[05-resources/Processar/Plataforma HUB/00-entrada/piloto-firjan-processamento.md|piloto-firjan-processamento]]
-- Fonte original: [[05-resources/Processar/Plataforma HUB/01-mvps/MVP - Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx|HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx]]
+- Cartão de processamento: [[05-resources/inbox/Plataforma HUB/00-entrada/piloto-firjan-processamento.md|piloto-firjan-processamento]]
+- Fonte original: [[05-resources/inbox/Plataforma HUB/01-mvps/MVP - Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx|HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx]]
 - Contexto do MVP: [[MVP - Candidatos]]
 - Manifesto: [[manifesto-processamento]]
 - Fila: [[HUB_Fila_Processamento]]

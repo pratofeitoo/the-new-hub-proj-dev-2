@@ -15,7 +15,7 @@ tags:
 # Taxonomia Estados Valor v1 — P03-T07 (G03.C3)
 
 > **Status:** rascunho para parecer Finanças + Governança de Dados · **G03.C3** · Insumo para decisão Camada 3; não aprovado.
-> **Depende de:** [[02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1]] — 73 indicadores; [[02-refinement/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|templates-linhagem-P03-T06]] — `influenciado`.
+> **Depende de:** [[01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1]] — 73 indicadores; [[01-work/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|templates-linhagem-P03-T06]] — `influenciado`.
 
 ## 1. Estados — definição canônica
 
@@ -82,5 +82,5 @@ Todo valor `influenciado→validado` exige método declarado; `realizado` exige 
 
 - Tarefa: [[04-project-management/tarefas/P03-T07_Taxonomia_Estados_Valor|P03-T07]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-006]]
-- Catálogo: [[02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo 73]]
-- Templates: [[02-refinement/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|templates G03.C2]]
+- Catálogo: [[01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo 73]]
+- Templates: [[01-work/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|templates G03.C2]]

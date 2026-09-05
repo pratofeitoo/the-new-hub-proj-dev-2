@@ -1,7 +1,7 @@
 # HUB · MVP + Estrutura
 
 > Um conjunto de MVPs para testar, em contextos reais, como pessoas, capacidades, oportunidades e dados podem gerar resultado para organizações e ecossistemas.
-> **Local atual:** `05-resources/Processar/Plataforma HUB/01-mvps/` · movido de `MVP + Estrutura/` em 2026-08-31 (Fases 1–2). Conteúdo interno preservado.
+> **Local atual:** `05-resources/inbox/Plataforma HUB/01-mvps/` · movido de `MVP + Estrutura/` em 2026-08-31 (Fases 1–2). Conteúdo interno preservado.
 
 Esta pasta reúne os artefatos de definição, escopo, dimensionamento, custo e validação dos primeiros MVPs da HUB. O objetivo não é construir toda a plataforma de uma vez, mas transformar a visão ampla em casos concretos, mensuráveis e progressivamente replicáveis.
 

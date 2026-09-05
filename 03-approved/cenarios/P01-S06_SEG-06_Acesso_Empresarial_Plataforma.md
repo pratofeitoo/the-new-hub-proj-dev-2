@@ -94,5 +94,5 @@ Todos os parceiros acima são hipóteses de capacidade; nenhum parceiro, canal, 
 
 - **Data:** 2026-09-05
 - **Gate:** P01/P02 (fases iniciais assinadas)
-- **Decisão:** promovido de `04-project-management/cenarios/` para `03-approved/cenarios/` na reestruturação lifecycle-first como entregável final assinado.
+- **Decisão:** promovido de `03-approved/cenarios/` para `03-approved/cenarios/` na reestruturação lifecycle-first como entregável final assinado.
 - **Ref:** `00-project-control/registro-mudancas/2026-09-05-reestruturacao-fronteiras-lifecycle.md`

@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("05-resources/Processar/Plataforma HUB/00-entrada")
+    - file.inFolder("05-resources/inbox/Plataforma HUB/00-entrada")
     - file.ext == "md"
     - tipo == "cartao-processamento"
 formulas:

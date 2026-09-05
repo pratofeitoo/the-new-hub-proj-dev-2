@@ -149,7 +149,7 @@ Todas as premissas abaixo permanecem abertas e estão vinculadas aos gap IDs for
 
 | Dependência | Impacto operacional | Regra de coordenação |
 |---|---|---|
-| [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]] | Fornece C.A.O.S., unidades, módulos, atores, limite de maturidade e princípios de evidência. | Este documento operacionaliza a fundação; decisões de estratégia aprovadas posteriormente substituem as premissas aqui. |
+| [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]] | Fornece C.A.O.S., unidades, módulos, atores, limite de maturidade e princípios de evidência. | Este documento operacionaliza a fundação; decisões de estratégia aprovadas posteriormente substituem as premissas aqui. |
 | BP-001 — offer/revenue blueprint | Define comprador, oferta, tipo de receita, pricing e economia da entrega. | Alinhar qualificação, escopo, cost-to-serve, renovação e evidências financeiras; não inventar preços finais ou regras de reconhecimento. |
 | BP-002 — product/journey blueprint | Define jornadas de usuário, limites do produto e comportamento dos módulos. | Traduzir estados da jornada em filas, SOPs, critérios de aceitação e limites humano/automação; resolver [[PRD-005]] e [[PRD-007]] conjuntamente. |
 | BP-003 — data/intelligence blueprint | Define entidades canônicas, eventos, métricas, lineage e controles de modelo. | Alinhar evidências operacionais e vocabulário de eventos; não tratar eventos conceituais como capacidade implementada. |

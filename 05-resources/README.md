@@ -8,11 +8,11 @@
 
 Esta pasta não é apenas um depósito de anexos. Ela preserva a memória de como uma hipótese nasceu, quais formatos foram utilizados, que premissas foram consideradas e quais artefatos podem alimentar as áreas refinadas do projeto.
 
-### `Processar/` versus material refinado
+### `inbox/` versus material refinado
 
 | Espaço | Função | Tratamento esperado |
 |---|---|---|
-| `Processar/` | Inbox e triagem de documentos, imagens, apresentações, planilhas e rascunhos. | Ler, classificar, extrair decisões e encaminhar para a área adequada. |
+| `inbox/` | Inbox e triagem de documentos, imagens, apresentações, planilhas e rascunhos. | Ler, classificar, extrair decisões e encaminhar para a área adequada. |
 | `00-entrada/` | Entrada de novos materiais antes da classificação. | Classificar em `01-mvps`, `02-visao-plataforma`, `03-analises-processadas` ou `99-arquivo`. |
 | `01-mvps/` | Casos concretos, delimitados e mensuráveis para testar a tese. | Usar como ponte entre hipótese, execução e evidência. |
 | `02-visao-plataforma/` | Visão de longo prazo, arquitetura, portfólio, finanças e organização. | Consultar como referência estratégica; validar premissas antes de divulgar. |
@@ -28,10 +28,10 @@ O conteúdo aqui pode conter hipóteses, números ilustrativos e decisões provi
 flowchart LR
     A[Rascunhos] --> B[02-visao-plataforma]
     B --> C[01-mvps]
-    C --> D[Refinamento - 02]
-    D --> E[Blueprint - 01]
+    C --> D[01-work]
+    D --> E[02-review]
+    E --> F[03-approved]
     D -. evidências e decisões .-> B
-    E -. padrões e escopo aprovados .-> C
 ```
 
 O fluxo é orientador, não uma regra de movimento automático. Um documento só deve migrar quando tiver propósito, proprietário, status e fonte claramente registrados.
@@ -64,7 +64,7 @@ flowchart TB
     MV --> MC[Visão de Comunidades]
 ```
 
-## 4. `Processar/Plataforma HUB/99-arquivo/Rascunhos iniciais/`
+## 4. `inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/`
 
 Este diretório reúne a primeira camada de exploração visual e conceitual da HUB.
 
@@ -82,7 +82,7 @@ Quando um rascunho contiver uma decisão ainda relevante, registrar a decisão e
 
 Exemplos de conteúdo encontrado incluem sequências de imagens de WhatsApp, visuais de sugestão de visões, decks iniciais e exportações de protótipos.
 
-## 5. `Processar/Plataforma HUB/02-visao-plataforma/`
+## 5. `inbox/Plataforma HUB/02-visao-plataforma/`
 
 Esta é a visão de longo prazo: descreve o ecossistema que a HUB poderá construir depois que as hipóteses mais importantes forem validadas em casos reais.
 
@@ -94,7 +94,7 @@ O desenho enfatiza um CORE compartilhado, verticais com conhecimento específico
 
 O README local funciona como síntese; `Estrutura e Atribuições.docx` e a planilha de remuneração permanecem como fontes editáveis.
 
-→ [Síntese de liderança e atribuições](Processar/Plataforma%20HUB/02-visao-plataforma/Estrutura%20de%20Liderança%20e%20Atribuições/README.md)
+→ [Síntese de liderança e atribuições](inbox/Plataforma%20HUB/02-visao-plataforma/Estrutura%20de%20Liderança%20e%20Atribuições/README.md)
 
 ### 5.2 Modelo Financeiro para Investidores
 
@@ -106,7 +106,7 @@ Os indicadores do cenário-base incluem receita, EBITDA, empresas ativas, ARR, b
 
 Os números são saídas dependentes de premissas editáveis; precisam ser substituídos por contratos, propostas, custos de cloud, CAC, churn e dados operacionais antes de qualquer uso externo.
 
-→ [Síntese do modelo financeiro](Processar/Plataforma%20HUB/02-visao-plataforma/Modelo%20Financeiro%20para%20Investidores/README.md)
+→ [Síntese do modelo financeiro](inbox/Plataforma%20HUB/02-visao-plataforma/Modelo%20Financeiro%20para%20Investidores/README.md)
 
 ### 5.3 Portfólio de Produtos
 
@@ -118,7 +118,7 @@ Na jornada Empresas, transforma dados de pessoas, mercado e ecossistema em estra
 
 Os documentos detalham produtos de inteligência, performance, saúde de times, talentos, desenvolvimento, carreira, mérito e impacto de negócio.
 
-→ [Síntese do portfólio](Processar/Plataforma%20HUB/02-visao-plataforma/Portfólio%20de%20Produtos/README.md)
+→ [Síntese do portfólio](inbox/Plataforma%20HUB/02-visao-plataforma/Portfólio%20de%20Produtos/README.md)
 
 ### 5.4 Projeção de arquitetura e custos
 
@@ -130,13 +130,13 @@ As verticais — Estratégia & Dados, Colaboradores, Candidatos, Fornecedores, A
 
 O modelo não é orçamento definitivo: é instrumento para priorizar, comparar reutilização e calibrar custo com volume, integrações, segurança e equipe.
 
-→ [Síntese de arquitetura e custos](Processar/Plataforma%20HUB/02-visao-plataforma/Projeção%20de%20arquitetura%20e%20custos%20-%20Plataforma/README.md)
+→ [Síntese de arquitetura e custos](inbox/Plataforma%20HUB/02-visao-plataforma/Projeção%20de%20arquitetura%20e%20custos%20-%20Plataforma/README.md)
 
 ### 5.5 Exemplo de Deck
 
 Contém referência visual para apresentações e comunicação da tese. Use como inspiração de narrativa e linguagem visual, não como especificação funcional.
 
-## 6. `Processar/Plataforma HUB/01-mvps/`
+## 6. `inbox/Plataforma HUB/01-mvps/`
 
 Esta é a área central de validação. Os MVPs não tentam construir toda a plataforma de uma vez; testam hipóteses em contextos reais, com escopo limitado, curadoria humana, regras simples e medição de resultado.
 
@@ -144,7 +144,7 @@ O padrão comum é: contexto → dados → diagnóstico → prioridade → açã
 
 O README detalhado desta pasta documenta fluxos, escopos, KPIs, governança, fases de execução, decisões adiadas e relação com a arquitetura completa.
 
-→ [README detalhado de MVPs](Processar/Plataforma%20HUB/01-mvps/README.md)
+→ [README detalhado de MVPs](inbox/Plataforma%20HUB/01-mvps/README.md)
 
 ### Síntese dos seis MVPs
 
@@ -165,7 +165,7 @@ Primeiro laboratório da frente Estratégia & Dados, com upload e padronização
 
 O case deve provar utilidade da leitura, qualidade dos cruzamentos, adoção das ações, evolução dos indicadores, economia de análise manual e disposição para pagar.
 
-→ [README do MVP Monks](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Estratégia%20e%20Dados/README.md)
+→ [README do MVP Monks](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Estratégia%20e%20Dados/README.md)
 
 ### 6.2 Colaboradores + Dados — Bblend
 
@@ -173,7 +173,7 @@ Conecta resultado do negócio, perfis, competências, gaps, oportunidades intern
 
 O dimensionamento de referência considera 80 colaboradores, 8 gestores, 6 áreas, 12 oportunidades e aproximadamente 60 matches.
 
-→ [README do MVP Bblend](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Colaboradores%20%2B%20Dados/README.md)
+→ [README do MVP Bblend](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Colaboradores%20%2B%20Dados/README.md)
 
 ### 6.3 Candidatos — Firjan
 
@@ -181,7 +181,7 @@ Conecta pessoas formadas às vagas de empresas associadas e acompanha shortlist,
 
 Os indicadores principais incluem aderência, tempo até oportunidade, conversões do funil, lacunas de competências e motivos de não avanço.
 
-→ [README do MVP Firjan](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Candidatos/README.md)
+→ [README do MVP Firjan](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Candidatos/README.md)
 
 ### 6.4 Fornecedores — Sebrae/GINGA
 
@@ -189,7 +189,7 @@ Testa diagnóstico de maturidade, demandas, matching, curadoria, reuniões, nego
 
 O foco de escala é a operação, a curadoria e o acompanhamento do funil, e não a infraestrutura bruta para 200 usuários.
 
-→ [README do MVP Sebrae/GINGA](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Fornecedores/README.md)
+→ [README do MVP Sebrae/GINGA](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Fornecedores/README.md)
 
 ### 6.5 Acadêmico — Mackenzie
 
@@ -197,7 +197,7 @@ Usa a estrutura de Candidatos como referência para conectar alunos, docentes, p
 
 Deve começar por um caso institucional bem delimitado, mantendo o módulo independente até que integrações demonstrem valor.
 
-→ [README do MVP Acadêmico](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Acadêmico/README.md)
+→ [README do MVP Acadêmico](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Acadêmico/README.md)
 
 ### 6.6 Eventos
 
@@ -205,7 +205,7 @@ Deve começar por um caso institucional bem delimitado, mantendo o módulo indep
 
 O MVP mede ativações, experiência, acessibilidade, segurança, leads consentidos, valor movimentado e intenção de renovação.
 
-→ [README do MVP Eventos](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Eventos/README.md)
+→ [README do MVP Eventos](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Eventos/README.md)
 
 ### 6.7 Visão de Comunidades
 
@@ -213,13 +213,13 @@ Comunidades é uma camada de pertencimento e continuidade que nasce das relaçõ
 
 Perfil, consentimento e histórico devem permanecer conectados ao CORE para evitar recadastro e reinício de jornada.
 
-→ [README da Visão de Comunidades](Processar/Plataforma%20HUB/01-mvps/Visão%20de%20Comunidades/README.md)
+→ [README da Visão de Comunidades](inbox/Plataforma%20HUB/01-mvps/Visão%20de%20Comunidades/README.md)
 
 ## 7. Apoios tabulares e taxonomias
 
 Os apoios tabulares e taxonomias devem permanecer em `planilhas/` quando forem auxiliares e não pertencerem a uma camada de refinamento específica.
 
-`HUB_Taxonomia_Receita_Reconhecimento_v1.md` foi movido para `02-refinement/modelos-financeiros/`, onde passa a ser o artefato de refinamento financeiro ligado ao `FIN-002` e à tarefa `P01-T03`.
+`HUB_Taxonomia_Receita_Reconhecimento_v1.md` foi movido para `01-work/modelos-financeiros/`, onde passa a ser o artefato de refinamento financeiro ligado ao `FIN-002` e à tarefa `P01-T03`.
 
 Ao adicionar uma planilha ou tabela, informe no nome a versão, registre a finalidade e indique se é fonte, cópia de trabalho ou saída.
 
@@ -235,19 +235,19 @@ Ao adicionar uma planilha ou tabela, informe no nome a versão, registre a final
 
 ## 9. Arquivos-chave
 
-- [Índice de MVPs](Processar/Plataforma%20HUB/01-mvps/README.md)
-- [Portfólio completo](Processar/Plataforma%20HUB/02-visao-plataforma/Portfólio%20de%20Produtos/README.md)
-- [Modelo financeiro](Processar/Plataforma%20HUB/02-visao-plataforma/Modelo%20Financeiro%20para%20Investidores/README.md)
-- [Liderança e atribuições](Processar/Plataforma%20HUB/02-visao-plataforma/Estrutura%20de%20Liderança%20e%20Atribuições/README.md)
-- [Arquitetura e custos](Processar/Plataforma%20HUB/02-visao-plataforma/Projeção%20de%20arquitetura%20e%20custos%20-%20Plataforma/README.md)
-- [MVP Monks](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Estratégia%20e%20Dados/README.md)
-- [MVP Bblend](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Colaboradores%20%2B%20Dados/README.md)
-- [MVP Firjan](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Candidatos/README.md)
-- [MVP Sebrae/GINGA](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Fornecedores/README.md)
-- [MVP Mackenzie](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Acadêmico/README.md)
-- [MVP Eventos](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Eventos/README.md)
-- [Visão de Comunidades](Processar/Plataforma%20HUB/01-mvps/Visão%20de%20Comunidades/README.md)
-- [Taxonomia de receita e reconhecimento](../02-refinement/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1.md)
+- [Índice de MVPs](inbox/Plataforma%20HUB/01-mvps/README.md)
+- [Portfólio completo](inbox/Plataforma%20HUB/02-visao-plataforma/Portfólio%20de%20Produtos/README.md)
+- [Modelo financeiro](inbox/Plataforma%20HUB/02-visao-plataforma/Modelo%20Financeiro%20para%20Investidores/README.md)
+- [Liderança e atribuições](inbox/Plataforma%20HUB/02-visao-plataforma/Estrutura%20de%20Liderança%20e%20Atribuições/README.md)
+- [Arquitetura e custos](inbox/Plataforma%20HUB/02-visao-plataforma/Projeção%20de%20arquitetura%20e%20custos%20-%20Plataforma/README.md)
+- [MVP Monks](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Estratégia%20e%20Dados/README.md)
+- [MVP Bblend](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Colaboradores%20%2B%20Dados/README.md)
+- [MVP Firjan](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Candidatos/README.md)
+- [MVP Sebrae/GINGA](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Fornecedores/README.md)
+- [MVP Mackenzie](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Acadêmico/README.md)
+- [MVP Eventos](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Eventos/README.md)
+- [Visão de Comunidades](inbox/Plataforma%20HUB/01-mvps/Visão%20de%20Comunidades/README.md)
+- [Taxonomia de receita e reconhecimento](../01-work/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1.md)
 
 Os arquivos binários correspondentes ficam nas mesmas pastas dos READMEs. Ao referenciá-los, manter o nome exato e codificar espaços como `%20` quando o consumidor exigir URL.
 
@@ -262,19 +262,18 @@ Os arquivos binários correspondentes ficam nas mesmas pastas dos READMEs. Ao re
 5. Visuais que explicam uma hipótese, jornada ou proposta.
 6. Artefatos cuja origem, versão ou status ainda precisam de triagem.
 
-### Deve migrar para `01-blueprint`
+### Deve migrar para `01-work`
 
-1. Arquitetura e escopo aprovados como referência estrutural.
+1. Arquitetura e escopo consolidados como referência estrutural.
 2. Contratos de módulos, entidades, integrações e decisões técnicas consolidadas.
-3. Regras de governança que deixaram de ser hipótese.
-4. Blueprint de execução que possa orientar construção sem reler todo o acervo.
+3. Requisitos, fluxos, jornadas e critérios de aceite refinados.
+4. Aprendizados de entrevistas, pilotos e testes convertidos em decisões operacionais.
+5. Regras de governança que deixaram de ser hipótese.
 
-### Deve migrar para `02-refinement`
+### Deve migrar para `02-review` / `03-approved`
 
-1. Requisitos, fluxos, jornadas e critérios de aceite refinados.
-2. Aprendizados de entrevistas, pilotos e testes convertidos em decisões operacionais.
-3. Escopos de MVP revisados, priorizados e prontos para execução.
-4. Hipóteses que passaram a ter evidência suficiente para especificação.
+1. Pacotes congelados de revisão com gate, dono e data (`02-review/`).
+2. Finais assinados pelo gate, nunca editados no lugar (`03-approved/`).
 
 ### Deve migrar para `04-project-management`
 
@@ -295,17 +294,17 @@ Processe quando houver uma decisão implícita, dado novo, proposta comercial, m
 
 O processamento mínimo é: identificar origem, resumir conteúdo, classificar status, extrair decisões, apontar lacunas e criar link para o documento refinado.
 
-O fluxo operacional é controlado pelo [Manifesto de Processamento](Processar/Plataforma%20HUB/manifesto-processamento.md) e pela [Fila de Processamento](Processar/Plataforma%20HUB/HUB_Fila_Processamento.base).
+O fluxo operacional é controlado pelo [Manifesto de Processamento](inbox/Plataforma%20HUB/manifesto-processamento.md) e pela [Fila de Processamento](inbox/Plataforma%20HUB/HUB_Fila_Processamento.base).
 
 ### Piloto verificado
 
 O caminho completo do piloto Firjan pode ser percorrido a partir desta página:
 
-1. [Manifesto de Processamento](Processar/Plataforma%20HUB/manifesto-processamento.md)
-2. [Fila de Processamento](Processar/Plataforma%20HUB/HUB_Fila_Processamento.base)
-3. [Cartão do piloto Firjan](Processar/Plataforma%20HUB/00-entrada/piloto-firjan-processamento.md)
-4. [Fonte original — workbook Firjan](Processar/Plataforma%20HUB/01-mvps/MVP%20-%20Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx)
-5. [Resultado refinado do piloto](../02-refinement/pesquisa/piloto-firjan-processamento.md)
+1. [Manifesto de Processamento](inbox/Plataforma%20HUB/manifesto-processamento.md)
+2. [Fila de Processamento](inbox/Plataforma%20HUB/HUB_Fila_Processamento.base)
+3. [Cartão do piloto Firjan](inbox/Plataforma%20HUB/00-entrada/piloto-firjan-processamento.md)
+4. [Fonte original — workbook Firjan](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx)
+5. [Resultado refinado do piloto](../01-work/pesquisa/piloto-firjan-processamento.md)
 
 O cartão mantém os vínculos recíprocos com a fonte e o resultado; o workbook permanece preservado no caminho original.
 
@@ -337,7 +336,7 @@ Qualquer formalização deve ser avaliada e registrada separadamente com orienta
 - [ ] As premissas foram separadas de fatos observados?
 - [ ] Os números indicam unidade, período e fonte?
 - [ ] Dados pessoais ou confidenciais estão protegidos?
-- [ ] O material precisa migrar para 01, 02 ou 04?
+- [ ] O material precisa migrar para 01-work, 02-review, 03-approved ou 04-project-management?
 - [ ] Os links relativos foram testados a partir deste README?
 
-> **Regra de ouro:** `05-resources` conserva o caminho da descoberta; `01`, `02` e `04` transformam essa descoberta em arquitetura, decisão refinada e execução governável.
+> **Regra de ouro:** `05-resources` conserva o caminho da descoberta; `01-work`, `02-review` e `03-approved` transformam essa descoberta em elaboração, decisão de gate e final compartilhável. `04-project-management` governa a execução.

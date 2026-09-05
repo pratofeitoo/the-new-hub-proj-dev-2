@@ -15,7 +15,7 @@ gap_ids:
 dependencies:
   - P04-T02
   - P02-T03
-target_file: 02-refinement/refinamento-governanca/
+target_file: 01-work/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-004]]"

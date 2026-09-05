@@ -4,7 +4,7 @@ instruction_id: VAULT-OFICIAL-002
 status: rascunho
 created: 2026-09-02
 updated: 2026-09-02
-origem: "[[02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1]] + [[02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
+origem: "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]] + [[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
 destino_vault: "HUB_Documentos_Oficiais (vault separado, sem vínculo com The New HUB dev-2)"
 finalidade: "Evitar contaminação de dados — 01-08 obrigatórios + 09-14 não-obrigatórios mas requeridos para virar empresa"
 versao: "2.0 - completo (59+ docs)"
@@ -16,7 +16,7 @@ tags: [instrucao, vault-isolado, documentos-oficiais, handoff, completo]
 > **Para colar em nova sessão:** copie o bloco `PROMPT PARA O AGENTE (COMPLETO)` ao final desta nota. Ele contém tudo para criar o vault do zero com 01-08 + 09-14.
 
 > [!danger] Regra de isolamento
-> Este vault **NÃO** sincroniza com `The New HUB dev-2`. Não copie `TaskNotes`, `05-resources/Processar`, datasets ou `System/attachments`. Apenas os dois mapas entram como referência inicial.
+> Este vault **NÃO** sincroniza com `The New HUB dev-2`. Não copie `TaskNotes`, `05-resources/inbox`, datasets ou `System/attachments`. Apenas os dois mapas entram como referência inicial.
 
 > [!info] Dois mapas canônicos
 > - `GOV-MAP-001` → `HUB_Mapa_Documentos_Oficiais_v1.md` → pastas `01-08` (32 docs obrigatórios)
@@ -291,9 +291,9 @@ OBJETIVO: Criar a estrutura COMPLETA de pastas e arquivos para documentação 01
 DATA BASE: 2026-09-02, Brasil.
 
 REFERÊNCIAS CANÔNICAS (vault de projeto):
-- 02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md (GOV-MAP-001) → 01-08, 32 docs OBRIGATÓRIOS
-- 02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md (GOV-MAP-002) → 09-14, 27 docs NÃO-OBRIGATÓRIOS MAS REQUERIDOS
-- 02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md (esta instrução, v2)
+- 01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md (GOV-MAP-001) → 01-08, 32 docs OBRIGATÓRIOS
+- 01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md (GOV-MAP-002) → 09-14, 27 docs NÃO-OBRIGATÓRIOS MAS REQUERIDOS
+- 01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md (esta instrução, v2)
 
 ESTRUTURA A CRIAR (15 pastas + 64 arquivos):
 
@@ -326,7 +326,7 @@ TAREFAS:
 6. Criar 00-controle/03-decisao-GOV-001-estrutura-societaria.md com pergunta bloqueadora: quantos CNPJs? (1/2/3/4)
 
 REGRAS:
-- Vault isolado: não copiar TaskNotes, 05-resources/Processar ou datasets.
+- Vault isolado: não copiar TaskNotes, 05-resources/inbox ou datasets.
 - 09.01, 09.02, 10.01, 10.02, 11.01, 11.04, 12.01 = AGORA — criar primeiro, status hipotese mas prioridade AGORA.
 - Documentos 03.05 e 04.08 começam como bloqueado (GOV-003 Selo).
 - Frontmatter deve ter doc_id igual ao mapa e tipo correto.
@@ -345,6 +345,6 @@ find HUB_Documentos_Oficiais -type f -name "*.md" | wc -l  # deve retornar 69 (5
 tree HUB_Documentos_Oficiais -L 2
 ```
 
-> Instrução v2 salva em: `02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md` (substitui v1)
+> Instrução v2 salva em: `01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md` (substitui v1)
 > Mapa obrigatório: `HUB_Mapa_Documentos_Oficiais_v1.md` (GOV-MAP-001, 01-08)
 > Mapa não-obrigatório: `HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` (GOV-MAP-002, 09-14)

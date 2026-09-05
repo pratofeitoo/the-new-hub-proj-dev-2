@@ -9,8 +9,8 @@ created: 2026-09-02
 updated: 2026-09-02
 base_legal_data: 2026-09-02
 jurisdicao: Brasil - prática de mercado + legislação de referência em 2026-09-02
-blueprint_ref: "[[01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
-map_obrigatorio_ref: "[[02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1]]"
+blueprint_ref: "[[01-work/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
+map_obrigatorio_ref: "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
 gap_ids: [GOV-001, GOV-004, GOV-005, GOV-006, GOV-008, GOV-009, STR-001, STR-002, STR-003, FIN-002, GTM-001]
 tarefas_ref: [P04-T01, P04-T03, P06-T02, P06-T04]
 tags: [governanca, nao-obrigatorio, empresa, escala, brasil-2026]
@@ -27,7 +27,7 @@ tags: [governanca, nao-obrigatorio, empresa, escala, brasil-2026]
 ## Como usar
 
 - **Prioridade:** `AGORA` = antes do CNPJ | `0-6M` = empresa operando | `6-18M` = captação/escala. Preencha `Status`: `hipotese → em_elaboracao → aprovado → em_uso`.
-- **Regra:** só promova para `06-deliverables/` ou para o vault isolado quando houver dono e evidência. Não confunda com documentos obrigatórios (`01-08`).
+- **Regra:** só promova para `03-approved/` ou para o vault isolado quando houver dono e evidência. Não confunda com documentos obrigatórios (`01-08`).
 - **Pergunta-gatilho para cada linha:** *Quem vai pedir isso a seguir?* Se for banco/investidor/cliente enterprise/primeiro CLT — a linha vira `requerido`.
 
 ---
@@ -118,4 +118,4 @@ tags: [governanca, nao-obrigatorio, empresa, escala, brasil-2026]
 
 - 2026-09-02 v1 — 27 linhas não-obrigatórias mapeadas (09.01-14.05) como extensão do GOV-MAP-001. Pendente validação com jurídico/financeiro/RH.
 
-> Onde esta nota vive: `02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` — refinamento, não evidência aprovada.
+> Onde esta nota vive: `01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` — refinamento, não evidência aprovada.

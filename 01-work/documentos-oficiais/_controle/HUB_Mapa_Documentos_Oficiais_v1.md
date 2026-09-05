@@ -9,7 +9,7 @@ created: 2026-09-02
 updated: 2026-09-02
 base_legal_data: 2026-09-02
 jurisdicao: Brasil - legislação federal vigente em 2026-09-02
-blueprint_ref: "[[01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
+blueprint_ref: "[[01-work/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
 gap_ids: [GOV-001, GOV-002, GOV-003, GOV-004, GOV-005, GOV-006, GOV-007, GOV-008, GOV-009, STR-001, FIN-002]
 tarefas_ref: [P04-T01, P04-T02, P05-T01]
 tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
@@ -25,8 +25,8 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 
 ## Como usar
 
-1. Preencha `Status`: `hipótese` → `em contratação` → `registrado` → `aprovado`. Só `aprovado` com evidência vai para `03-approval/aprovado/` → `06-deliverables/governanca/`.
-2. Preencha `Evidência / Arquivo`: número do protocolo, livro/folha, `Nº INPI`, ou link para PDF em `05-resources/documentos/` ou `06-deliverables/governanca/`.
+1. Preencha `Status`: `hipótese` → `em contratação` → `registrado` → `aprovado`. Só `aprovado` com evidência vai para `02-review/aprovado/` → `03-approved/governanca/`.
+2. Preencha `Evidência / Arquivo`: número do protocolo, livro/folha, `Nº INPI`, ou link para PDF em `05-resources/documentos/` ou `03-approved/governanca/`.
 3. Regra: **leia na camada mais madura, escreva na menos madura**. Não edite este mapa para "corrigir" o blueprint; abra refinamento e promova via aprovação.
 4. Atualize `base_legal_data` quando a lei mudar (ex: virada IBS/CBS 2027).
 
@@ -120,20 +120,20 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 
 - [ ] Decidir GOV-001: quantos CNPJs? (1 / 2 / 3 / 4) — registrar em `00-project-control/decisoes/`
 - [ ] Para cada linha com `hipótese`, atribuir `dono` (nome) e `data-alvo` em `04-project-management/tarefas/P04-T01` e `P05-T01`
-- [ ] Anexar evidência em `05-resources/documentos/` enquanto for rascunho; mover para `06-deliverables/governanca/` só após `03-approval/aprovado/`
+- [ ] Anexar evidência em `05-resources/documentos/` enquanto for rascunho; mover para `03-approved/governanca/` só após `02-review/aprovado/`
 - [ ] Validar reforma tributária (linha 7.04) com contador — ERP já precisa carregar IBS/CBS em 2026
-- [ ] Validar LGPD (linhas 6.01-6.03) fluxo a fluxo com `02-refinement/refinamento-governanca/matriz-dados-finalidade-P03-T08-v1.md`
+- [ ] Validar LGPD (linhas 6.01-6.03) fluxo a fluxo com `01-work/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md`
 - [ ] Bloquear qualquer uso comercial do Selo (linhas 3.05, 4.08) até GOV-003 aprovado com revisão independente
 
 ## 10. Próximos artefatos a derivar deste mapa
 
 | Artefato | Onde criar | Depende de |
 |---|---|---|
-| `HUB_Contrato_Social_v0.md` (minuta) | `02-refinement/refinamento-governanca/` → promover | Linha 1.01 + parecer societário |
-| `HUB_Estatuto_Instituto_v0.md` | `02-refinement/refinamento-governanca/` → promover | Linha 1.02 + parecer terceiro setor |
-| `HUB_DPA_Template_v0.md` | `02-refinement/refinamento-governanca/` | Linha 4.04 + matriz P03-T08 |
-| `HUB_Politica_Privacidade_v0.md` | `02-refinement/refinamento-governanca/` | Linha 6.02 |
-| `HUB_Matriz_Oferta_CNPJ_Receita.md` | `04-project-management/tarefas/` + `01-blueprint/modelo-negocio/` | GOV-001 + BP-001 §2.1 |
+| `HUB_Contrato_Social_v0.md` (minuta) | `01-work/documentos-oficiais/_controle/` → promover | Linha 1.01 + parecer societário |
+| `HUB_Estatuto_Instituto_v0.md` | `01-work/documentos-oficiais/_controle/` → promover | Linha 1.02 + parecer terceiro setor |
+| `HUB_DPA_Template_v0.md` | `01-work/documentos-oficiais/_controle/` | Linha 4.04 + matriz P03-T08 |
+| `HUB_Politica_Privacidade_v0.md` | `01-work/documentos-oficiais/_controle/` | Linha 6.02 |
+| `HUB_Matriz_Oferta_CNPJ_Receita.md` | `04-project-management/tarefas/` + `01-work/modelo-negocio/` | GOV-001 + BP-001 §2.1 |
 
 ---
 
@@ -142,4 +142,4 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 - 2026-09-02 v1 — esqueleto inicial com 32 linhas obrigatórias mapeadas na base legal de 2026-09-02. Criado a partir de `HUB_Blueprint_Governanca_e_Juridico.md` (BP-006) e `HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (BP-001). Pendente validação profissional.
 
 > [!note] Onde esta nota vive
-> `02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md` — refinamento, não evidência aprovada. Quando aprovado, promover cópia para `03-approval/aprovado/` e distribuir em `06-deliverables/governanca/`.
+> `01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md` — refinamento, não evidência aprovada. Quando aprovado, promover cópia para `02-review/aprovado/` e distribuir em `03-approved/governanca/`.

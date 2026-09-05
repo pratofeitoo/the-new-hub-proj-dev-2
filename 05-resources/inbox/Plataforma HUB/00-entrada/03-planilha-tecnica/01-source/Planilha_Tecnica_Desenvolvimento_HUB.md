@@ -1,7 +1,7 @@
 ---
 title: Planilha Técnica — Desenvolvimento HUB
 source: Planilha_Tecnica_Desenvolvimento_HUB.xlsx
-source_path: 05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica/Planilha_Tecnica_Desenvolvimento_HUB.xlsx
+source_path: 05-resources/inbox/Plataforma HUB/00-entrada/03-planilha-tecnica/Planilha_Tecnica_Desenvolvimento_HUB.xlsx
 sheets: 15
 linhas_dados: 185
 idioma: pt-BR

@@ -14,7 +14,7 @@ gap_ids:
   - PRD-007
 dependencies:
   - P02-T01
-target_file: 01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md
+target_file: 01-work/produto/HUB_Blueprint_Produto_e_Capacidades.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-004]]"
@@ -34,7 +34,7 @@ dateModified: 2026-09-01T19:45:35.638-03:00
 Especificar jornada `configurar oportunidade → ... → evoluir` com estados, transições, eventos, auditoria e regra manual/assistido/automatizado por passo.
 
 ## Entregável
-Diagrama mermaid + tabela de estados em `HUB_Blueprint_Produto_e_Capacidades.md` e detalhe em `02-refinement/refinamento-produto/`.
+Diagrama mermaid + tabela de estados em `HUB_Blueprint_Produto_e_Capacidades.md` e detalhe em `01-work/refinamento-produto/`.
 
 ## Dependências
 - [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades|P02-T01]]
@@ -47,5 +47,5 @@ Transições + eventos + auditoria + fila revisão para passos alto impacto.
 
 ## Execução
 
-- **Entregável produzido:** Cap.3 Jornada (9 etapas) + Cap.4 Console/Exceções em [[01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades]] e [[01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional]].
+- **Entregável produzido:** Cap.3 Jornada (9 etapas) + Cap.4 Console/Exceções em [[01-work/produto/HUB_Blueprint_Produto_e_Capacidades]] e [[01-work/operacoes/HUB_Blueprint_Modelo_Operacional]].
 - **Resultado:** transições+eventos+auditoria+fila por passo alto impacto descritos.

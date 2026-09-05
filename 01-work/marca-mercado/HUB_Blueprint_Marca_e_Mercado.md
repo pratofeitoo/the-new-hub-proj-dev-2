@@ -25,7 +25,7 @@ updated: 2026-08-21
 # Blueprint de Marca e Mercado do HUB
 
 > [!info] Fronteira de maturidade
-> Este é um blueprint de marca e mercado, não uma aprovação de lançamento nem um caso de negócio certificado por evidências. As declarações abaixo são hipóteses de posicionamento e regras de design, salvo marcação explícita como evidência ou validação necessária. Ele preserva o sistema HUB completo descrito em [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]].
+> Este é um blueprint de marca e mercado, não uma aprovação de lançamento nem um caso de negócio certificado por evidências. As declarações abaixo são hipóteses de posicionamento e regras de design, salvo marcação explícita como evidência ou validação necessária. Ele preserva o sistema HUB completo descrito em [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]].
 
 ## 1. Arquitetura de marca, promessa, linguagem, nomenclatura e relacionamentos
 

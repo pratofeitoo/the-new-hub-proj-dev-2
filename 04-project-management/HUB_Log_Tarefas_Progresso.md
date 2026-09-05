@@ -146,72 +146,72 @@ tags:
 
 ### 2026-08-29 — P03-T09 rascunho — Fluxos Linhagem/Replay/DSAR + XLSX reconstruído (G03.C4/C5)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/fluxos-linhagem-replay-dsar-P03-T09-v1|fluxos-linhagem-replay-dsar-P03-T09-v1.md]] + `05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx` (41 campos, 15 abas, 73 indicadores) + `06-relatorios-validacao/` (entity-key, roi-recalculation, corrected-csv) — todos **PASS**.
+- **Entregável:** [[01-work/refinamento-modelo-dados/fluxos-linhagem-replay-dsar-P03-T09-v1|fluxos-linhagem-replay-dsar-P03-T09-v1.md]] + `05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx` (41 campos, 15 abas, 73 indicadores) + `06-relatorios-validacao/` (entity-key, roi-recalculation, corrected-csv) — todos **PASS**.
 - **Verificação:** G03.C4/C5 — fluxos prototipados + XLSX reconstruído para revisão Camada 3.
 
 ### 2026-08-29 — P03-T08 rascunho — Matriz Dados-Finalidade LGPD (G03.C4 parcial)
 
-- **Entregável:** [[02-refinement/refinamento-governanca/matriz-dados-finalidade-P03-T08-v1|matriz-dados-finalidade-P03-T08-v1.md]] — 5 fluxos × 41 campos com base legal, retenção, propagação `revogação ≤5 min` e exclusão DSAR; pareceres Jurídico/LGPD e Gov Dados `Refinar com condições`.
+- **Entregável:** [[01-work/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1|matriz-dados-finalidade-P03-T08-v1.md]] — 5 fluxos × 41 campos com base legal, retenção, propagação `revogação ≤5 min` e exclusão DSAR; pareceres Jurídico/LGPD e Gov Dados `Refinar com condições`.
 - **Verificação:** G03.C4 parcial — mapa ponta a ponta para Camada 3.
 
 ### 2026-08-29 — P03-T07 rascunho — Taxonomia Estados Valor (G03.C3)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|taxonomia-estados-valor-P03-T07-v1.md]] — 4 estados `potencial→influenciado→validado→realizado` com dedup `financial_claims` e holdout `run_rh06_holdout_001`; pareceres Finanças/Gov Dados `Refinar com condições`.
+- **Entregável:** [[01-work/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|taxonomia-estados-valor-P03-T07-v1.md]] — 4 estados `potencial→influenciado→validado→realizado` com dedup `financial_claims` e holdout `run_rh06_holdout_001`; pareceres Finanças/Gov Dados `Refinar com condições`.
 - **Verificação:** G03.C3 — insumo Camada 3.
 
 ### 2026-08-29 — P03-T06 rascunho — Templates Linhagem + Caminho Financeiro (G03.C2)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|templates-linhagem-evidencias-P03-T06-v1.md]] — templates `origem→métrica→ação→resultado→valor` + 1 caminho `PES-02 3.2→4.1 → RH-06 45d→32d → R$18.500 influenciado` com `run_id` reproduzível; regra anti-dupla contagem.
+- **Entregável:** [[01-work/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|templates-linhagem-evidencias-P03-T06-v1.md]] — templates `origem→métrica→ação→resultado→valor` + 1 caminho `PES-02 3.2→4.1 → RH-06 45d→32d → R$18.500 influenciado` com `run_id` reproduzível; regra anti-dupla contagem.
 - **Verificação:** G03.C2 — linhagem reproduzível.
 
 ### 2026-08-29 — P03-T05 rascunho — Catálogo 73 + Grafo (G03.C1)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1.md]] + cópia em `sintese-entre-abas/` — 73 indicadores com fórmula/dimensão/owner, 12 alavancas, 10 dashboards, grafo `DAT-01/02/03 → eventos → indicadores → fato financeiro → dashboards`; 6 definições alternativas resolvidas (MRR/ARR/NRR etc.).
+- **Entregável:** [[01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1.md]] + cópia em `sintese-entre-abas/` — 73 indicadores com fórmula/dimensão/owner, 12 alavancas, 10 dashboards, grafo `DAT-01/02/03 → eventos → indicadores → fato financeiro → dashboards`; 6 definições alternativas resolvidas (MRR/ARR/NRR etc.).
 - **Verificação:** G03.C1 — 73/73 sem alternativa.
 
 ### 2026-08-29 — P03-T04 rascunho — Dicionário Físico 41 campos (G03.B2 blocking)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1|dicionario-fisico-mapping-P03-T04-v1.md]] — 41 campos em 16 tabelas → 25 entidades canônicas + 4 correções `DAT010-001..004` em `04-registro-correcoes/corrections.csv` (Retenção, Acesso, Consentimento, Evidência).
+- **Entregável:** [[01-work/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1|dicionario-fisico-mapping-P03-T04-v1.md]] — 41 campos em 16 tabelas → 25 entidades canônicas + 4 correções `DAT010-001..004` em `04-registro-correcoes/corrections.csv` (Retenção, Acesso, Consentimento, Evidência).
 - **Verificação:** G03.B2 **blocking: yes** — mínimo para liberar P03.
 
 ### 2026-08-29 — P03-T03 rascunho — Envelope Canônico + Schema Registry (G03.B1)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|envelope-evento-schema-P03-T03-v1.md]] — 17 campos (`event_id`, `schema_version`, `idempotency_key`), versionamento `major`/`minor`, idempotência `producer+event_type+subject+occurred_at+hash`, replay `run_id` + `schema-registry/fixtures/identity.merged.v1.0.valid.json`.
+- **Entregável:** [[01-work/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|envelope-evento-schema-P03-T03-v1.md]] — 17 campos (`event_id`, `schema_version`, `idempotency_key`), versionamento `major`/`minor`, idempotência `producer+event_type+subject+occurred_at+hash`, replay `run_id` + `schema-registry/fixtures/identity.merged.v1.0.valid.json`.
 - **Verificação:** G03.B1 — produtores/consumidores de teste contrato+replay.
 
 ### 2026-08-29 — P03-T02 rascunho — Serviço Identidade/Matching (G03.A2)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1|especificacao-identidade-P03-T02-v1.md]] + `dataset-identidade-sintetico-P03-T02.csv` (20 pessoas/40 aliases, 15 pares rotulados) — 3 camadas matching (≥0.95 auto-merge, 0.70–0.95 human_review), merge/alias/survivorship, reversibilidade `identity.merged/split`; métricas FP ≤2%/FN ≤5%.
+- **Entregável:** [[01-work/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1|especificacao-identidade-P03-T02-v1.md]] + `dataset-identidade-sintetico-P03-T02.csv` (20 pessoas/40 aliases, 15 pares rotulados) — 3 camadas matching (≥0.95 auto-merge, 0.70–0.95 human_review), merge/alias/survivorship, reversibilidade `identity.merged/split`; métricas FP ≤2%/FN ≤5%.
 - **Verificação:** G03.A2 — FP/FN + reversibilidade demonstráveis.
 
 ### 2026-08-29 — P03-T01 rascunho — Modelo Lógico/Físico v1 (G03.A1)
 
-- **Entregável:** [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — 25 entidades com `canonical_id` estável, 12 relacionamentos N:N temporal, tipos objeto, regras `valid_from/to` + diagrama ER Mermaid + `identity_alias`.
+- **Entregável:** [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — 25 entidades com `canonical_id` estável, 12 relacionamentos N:N temporal, tipos objeto, regras `valid_from/to` + diagrama ER Mermaid + `identity_alias`.
 - **Verificação:** G03.A1 — 25/25 PK estável, nenhuma entidade sem chave.
 
 
 ### 2026-08-29 — P03-T09 kick-off — Fluxos Linhagem/Replay/DSAR iniciado
 
 - **O que mudou:** `P03-T09` passou de `pendente` para `em-revisao`. Dependências `P03-T03` e `P03-T08` já `em-revisao`.
-- **Entregável alvo:** fluxos linhagem/correção/replay/DSAR prototipados + XLSX reconstruído com `06-relatorios-validacao/` em `03-approval/bloqueado/.../indicadores-xlsx/` (G03.C4/C5).
+- **Entregável alvo:** fluxos linhagem/correção/replay/DSAR prototipados + XLSX reconstruído com `06-relatorios-validacao/` em `02-review/bloqueado/.../indicadores-xlsx/` (G03.C4/C5).
 
 
 ### 2026-08-29 — P03-T08 kick-off — Matriz Dados-Finalidade LGPD iniciada
 
 - **O que mudou:** `P03-T08` passou de `pendente` para `em-revisao`. Dependência `P03-T01` já `em-revisao`.
-- **Entregável alvo:** matriz `campo→finalidade→base legal→retenção→propagação→exclusão` por fluxo em `02-refinement/refinamento-governanca/` (G03.C4 parcial — LGPD ponta a ponta para Camada 3).
+- **Entregável alvo:** matriz `campo→finalidade→base legal→retenção→propagação→exclusão` por fluxo em `01-work/documentos-oficiais/_controle/` (G03.C4 parcial — LGPD ponta a ponta para Camada 3).
 
 
 ### 2026-08-29 — P03-T07 kick-off — Taxonomia Estados Valor iniciada
 
 - **O que mudou:** `P03-T07` passou de `pendente` para `em-revisao`. Dependência `P03-T05` já `em-revisao`.
-- **Entregável alvo:** estados `potencial→influenciado→validado→realizado` + políticas atribuição/deduplicação/contrafactual em `02-refinement/refinamento-modelo-dados/modelo-indicadores/` (G03.C3 — pareceres Finanças/Gov Dados para Camada 3).
+- **Entregável alvo:** estados `potencial→influenciado→validado→realizado` + políticas atribuição/deduplicação/contrafactual em `01-work/refinamento-modelo-dados/modelo-indicadores/` (G03.C3 — pareceres Finanças/Gov Dados para Camada 3).
 
 
 ### 2026-08-29 — P03-T06 kick-off — Templates Linhagem iniciado
 
 - **O que mudou:** `P03-T06` passou de `pendente` para `em-revisao`. Dependência `P03-T05` já `em-revisao` (catálogo 73).
-- **Entregável alvo:** templates `origem→métrica→ação→resultado→valor` + 1 caminho financeiro ponta a ponta com evidência reproduzível em `02-refinement/refinamento-modelo-dados/modelo-indicadores/` (G03.C2).
+- **Entregável alvo:** templates `origem→métrica→ação→resultado→valor` + 1 caminho financeiro ponta a ponta com evidência reproduzível em `01-work/refinamento-modelo-dados/modelo-indicadores/` (G03.C2).
 
 
 ### 2026-08-29 — P03-T05 kick-off — Catálogo Métricas/Grafo iniciado
@@ -229,27 +229,27 @@ tags:
 ### 2026-08-29 — P03-T03 kick-off — Envelope Evento/Schema iniciado
 
 - **O que mudou:** `P03-T03` passou de `pendente` para `em-revisao`. Dependência `P03-T01` já `em-revisao` (modelo lógico v1).
-- **Entregável alvo:** envelope canônico + schema registry + idempotência + regras temporais em `02-refinement/refinamento-modelo-dados/` (G03.B1 — produtores/consumidores passam em contrato+replay).
+- **Entregável alvo:** envelope canônico + schema registry + idempotência + regras temporais em `01-work/refinamento-modelo-dados/` (G03.B1 — produtores/consumidores passam em contrato+replay).
 
 
 ### 2026-08-29 — P03-T02 kick-off — Serviço Identidade/Matching iniciado
 
 - **O que mudou:** `P03-T02` passou de `pendente` para `em-revisao`. Dependência `P03-T01` já `em-revisao` (modelo lógico v1 com `identity_alias`).
-- **Entregável alvo:** especificação matching/merging/survivorship + dataset sintético com FP/FN e reversibilidade em `02-refinement/refinamento-modelo-dados/modelo-indicadores/` (G03.A2).
+- **Entregável alvo:** especificação matching/merging/survivorship + dataset sintético com FP/FN e reversibilidade em `01-work/refinamento-modelo-dados/modelo-indicadores/` (G03.A2).
 
 
 ### 2026-08-29 — P03-T01 kick-off — Modelo Lógico/Físico iniciado
 
 - **O que mudou:** `P03-T01` passou de `pendente` para `em-revisao` (`status: - em-revisao`). Dependência `P02-T01` já `concluido`, liberando `M03.A`.
-- **Entregável alvo:** proposta de diagramas + tabelas em `01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `02-refinement/refinamento-modelo-dados/` (G03.A1 — nenhuma entidade sem chave estável).
+- **Entregável alvo:** proposta de diagramas + tabelas em `01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `01-work/refinamento-modelo-dados/` (G03.A1 — nenhuma entidade sem chave estável).
 - **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` — `P03-T01` agora `em-revisao`/`- [ ]` (13 `concluido`/`- [x]` mantidos).
 - **Base:** `HUB_Tarefas_Fases_Execucao.base` passará a mostrar `🔍 em-revisao` para `P03-T01`; `P03-T02..T09` permanecem `pendente`.
 
 
 ### 2026-08-29 — P01-T02 refactor — fichas separadas para artefato dedicado
 
-- **O que mudou:** 17 fichas operacionais + matriz prontidão + cenários movidos de `04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md` (248→88 linhas) para `02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1.md` (183 linhas). Task note virou índice: mantém `Execução` resumida, `Verificação estrutural 17/17` e `Pendências`, e vincula via `[[02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1]]` + SEG-01..06.
-- **Mirrors:** `quartz-site/content/04-project-management/tarefas/P01-T02...` e `quartz-site/content/02-refinement/refinamento-produto/fichas-operacionais-P01-T02-v1.md` sincronizados.
+- **O que mudou:** 17 fichas operacionais + matriz prontidão + cenários movidos de `04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade.md` (248→88 linhas) para `01-work/refinamento-produto/fichas-operacionais-P01-T02-v1.md` (183 linhas). Task note virou índice: mantém `Execução` resumida, `Verificação estrutural 17/17` e `Pendências`, e vincula via `[[01-work/refinamento-produto/fichas-operacionais-P01-T02-v1]]` + SEG-01..06.
+- **Mirrors:** `quartz-site/content/04-project-management/tarefas/P01-T02...` e `quartz-site/content/01-work/refinamento-produto/fichas-operacionais-P01-T02-v1.md` sincronizados.
 - **Commit:** `658a8bc refactor(p01-t02): extract 17 fichas to refinement artifact and keep task as index`.
 
 
@@ -263,7 +263,7 @@ tags:
 
 ### 2026-08-29 — P02 concluído — 6 tarefas + 3 artefatos de refinamento criados
 
-- **O que mudou:** P02-T01 a P02-T06 passaram de `em-revisao` para `done` (`status: concluido` nas notas). Criados 3 rascunhos faltantes: `02-refinement/refinamento-produto/matriz-autorizacao-tenancy.md` (G02.3), `02-refinement/refinamento-produto/filas-revisao-overrides.md` (G02.2/G02.7) e `02-refinement/refinamento-produto/RACI_v1.md` + cópia em `03-approval/bloqueado/.../14_RACI/RACI_v1.md` (G02.6/G02.7). Blocos `## Execução` adicionados nas 6 notas.
+- **O que mudou:** P02-T01 a P02-T06 passaram de `em-revisao` para `done` (`status: concluido` nas notas). Criados 3 rascunhos faltantes: `01-work/refinamento-produto/matriz-autorizacao-tenancy.md` (G02.3), `01-work/refinamento-produto/filas-revisao-overrides.md` (G02.2/G02.7) e `01-work/refinamento-produto/RACI_v1.md` + cópia em `02-review/bloqueado/.../14_RACI/RACI_v1.md` (G02.6/G02.7). Blocos `## Execução` adicionados nas 6 notas.
 - **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` sincronizada — P02 6 linhas agora `- [x]` / `concluido` (total `- [x]` = 13: P01 7 + P02 6).
 - **Mirrors:** `quartz-site/content/04-project-management/tarefas/P02-T*.md` sincronizados.
 - **Commit:** `8202ede docs(p02): create missing refinement artifacts and mark P02 concluido`.
@@ -271,7 +271,7 @@ tags:
 
 ### 2026-08-29 — P01 concluído — 7 tarefas marcadas como concluído e matriz sincronizada
 
-- **O que mudou:** P01-T01 a P01-T07 passaram de `em-revisao` para `done` (`status: - concluido` nas notas) após revisão das entregas em `01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (§1.1 matriz 4 unidades, §2.1 17 ofertas + fichas, §3.1 taxonomia, §2.2 6 segmentos, log GTM, limites concentração e roadmap). Verificação anterior já cobria 17/17 ofertas, 6/6 segmentos e cenários SEG-01..06 como `hypothesis`.
+- **O que mudou:** P01-T01 a P01-T07 passaram de `em-revisao` para `done` (`status: - concluido` nas notas) após revisão das entregas em `01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (§1.1 matriz 4 unidades, §2.1 17 ofertas + fichas, §3.1 taxonomia, §2.2 6 segmentos, log GTM, limites concentração e roadmap). Verificação anterior já cobria 17/17 ofertas, 6/6 segmentos e cenários SEG-01..06 como `hypothesis`.
 - **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` — coluna `deliverable` com checkboxes `- [x]` e `status: concluido` para P01 (7/56). P01-T01..T07 agora refletem `✅` nas views Bases.
 - **Mirrors:** `quartz-site/content/04-project-management/tarefas/P01-T*.md` sincronizados.
 - **Commit:** `ba619bb docs(p01): mark P01 tasks concluido and sync matrix`.
@@ -328,7 +328,7 @@ tags:
 
 - **O que mudou:** criados cenários operacionais para SEG-01 a SEG-06 a partir das 17 fichas de oferta de P01-T02.
 - **Cobertura:** cada cenário registra oferta escolhida, JTBD, persona/função compradora, usuário operacional, problema inicial, fluxo C.A.O.S., parceiros, entregáveis, custo/esforço hipotéticos e evidência esperada de sucesso.
-- **Arquivos:** [[04-project-management/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador|SEG-01]], [[04-project-management/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes|SEG-02]], [[04-project-management/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH|SEG-03]], [[04-project-management/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto|SEG-04]], [[04-project-management/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao|SEG-05]] e [[04-project-management/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma|SEG-06]].
+- **Arquivos:** [[03-approved/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador|SEG-01]], [[03-approved/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes|SEG-02]], [[03-approved/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH|SEG-03]], [[03-approved/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto|SEG-04]], [[03-approved/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao|SEG-05]] e [[03-approved/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma|SEG-06]].
 - **Estado:** todos permanecem `hypothesis`; nenhum cenário declara validação, tração, contrato ou comprador real.
 - **Próximo passo:** usar os cenários para estruturar execução de testes e coleta de evidências, sem promover automaticamente o status.
 
@@ -358,7 +358,7 @@ tags:
 > Atualizar sempre que um bloqueio surgir ou for resolvido.
 
 - **Atual (2026-08-29):** P01 (7) e P02 (6) em `done` (`concluido`); P03 (9) em `em-revisao` (rascunhos G03.A1–G03.C5 entregues, aguardando validação Dados+Tech+LGPD); P04 (8), P05 (7), P06 (12) e P07 (7) em `pendente` — reset para replanejamento.
-- **Em observação:** G02.3/G02.6/G02.7 têm rascunhos em `02-refinement/refinamento-produto/` e `14_RACI` aguardando revisão Segurança/Governança antes de reabrir P02→P03.
+- **Em observação:** G02.3/G02.6/G02.7 têm rascunhos em `01-work/refinamento-produto/` e `14_RACI` aguardando revisão Segurança/Governança antes de reabrir P02→P03.
 
 ## Marcos
 

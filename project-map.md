@@ -1,44 +1,45 @@
-<!-- git-hash: 12668de -->
-<!-- last-synced: 2026-09-04 -->
+<!-- branch: restructure/lifecycle-borders -->
+<!-- last-synced: 2026-09-05 -->
 
 # Mapa do Projeto
 
 ## Modelo operacional
 
-O repositório é gerenciado como um sistema completo de negócio e produto por meio de três camadas:
+O repositório é gerenciado por **fronteiras de lifecycle** (onde a pasta = nível de confiança)
+com domínios como segundo eixo:
 
-1. **Blueprint** — conceitos, premissas e arquitetura geral.
-2. **Refinamento** — pesquisa, testes, protótipos, melhorias e substituições.
-3. **Aprovação** — revisão baseada em evidências e decisão de gate.
+1. **Work (`01-work/`)** — elaboração editável por domínio. `status: rascunho | em-elaboracao`.
+2. **Review (`02-review/`)** — pacotes congelados aguardando gate. `status: em-revisao`.
+3. **Approved (`03-approved/`)** — só finais assinados, nunca editados no lugar. `status: aprovado`. Espelhado no Drive.
 
-`00-project-control/`, `04-project-management/`, `05-resources/`, `06-deliverables/` e `99-archive/` apoiam o fluxo transversalmente.
+`00-project-control/`, `04-project-management/`, `05-resources/`, `99-archive/` apoiam o fluxo transversalmente
+(controle, execução, matéria-prima, histórico). Promoção = mover + carimbar; mudança em aprovado = nova versão em `01-work/`.
 
 ## Estrutura atual
 
 | Área | Papel atual |
 |---|---|
-| `00-project-control/` | Framework, escopo, decisões, gaps (68 notas) e registros de mudança (5 registros + template). Pastas vazias de dependências, índices, premissas e riscos foram removidas na poda. |
-| `01-blueprint/` | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança, operações e lançamento (9 domínios). |
-| `02-refinement/` | Refinamento estratégico, pesquisa, governança, produto, finanças e spine de dados P03 com 9 entregáveis em revisão. A governança contém a matriz P03-T08 mais os mapas de documentos oficiais restaurados (`HUB_Mapa_Documentos_Oficiais_v1.md`, `HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md`, `HUB_Instrucao_Vault_Documentos_Oficiais.md`); as antigas pastas vazias de protótipos e revisões foram removidas. |
-| `03-approval/` | `bloqueado/` e `pacotes-revisao/`; as áreas vazias de aprovação foram removidas. O modelo de indicadores continua bloqueado enquanto P03 está em revisão. |
-| `04-project-management/` | Planos mestre e de fase P01–P07, 56 tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários, planos unificados e logs de progresso. Retrospectivas vazias foram removidas. |
-| `05-resources/` | Fila de processamento `Processar/Plataforma HUB/`, com 143 arquivos rastreados: 7 MVPs, visão de plataforma, Arquitetura e Custos (96 telas), análises e arquivo. |
-| `06-deliverables/` | Pasta flat reservada para saídas finais; atualmente contém apenas `.gitkeep`. |
-| `99-archive/` | Histórico preservado em `instantaneos-historicos/` e `superado/`; áreas vazias de descontinuado e rejeitado foram removidas. |
-| `TaskNotes/` | 22 notas operacionais atuais, 2 notas em `Archive/` e visualizações Bases, incluindo `documentacao-oficial`. |
-| `System/` | 69 arquivos em 5 famílias de documentação local: Charts, Dataview Charts, JSON Canvas Spec, Obsidian Base e Task Notes. `attachments/` é local e não rastreado. |
-| `.obsidian/` | Configuração do vault, 10 plugins habilitados/rastreados e tema `March` rastreado; outros 12 temas e 11 plugins inativos permanecem apenas localmente. |
+| `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
+| `01-work/` | Elaboração por domínio: `estrategia/`, `produto/`, `tecnologia/`, `dados-inteligencia/` (+`modelo-indicadores/` e `analises-abas/`), `modelo-negocio/`, `marca-mercado/`, `governanca-juridico/`, `operacoes/`, `visao-lancamento/`, `pesquisa/`, `refinamento-produto/`, `refinamento-modelo-dados/` (spine P03, 9 itens + gate, todos rascunho), `modelos-financeiros/`, `documentos-oficiais/` (shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). |
+| `02-review/` | `pacotes/` (aceite P01 cross-functional, `em-revisao`) e `bloqueado/` (modelo de indicadores + derivados). |
+| `03-approved/` | `cenarios/` P01-S01…S06 assinados (`aprovado` + bloco de histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
+| `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários (ponteiro para `03-approved/`), planos unificados e logs de progresso. |
+| `05-resources/` | `inbox/` (fila de triagem, ex-`Processar/`, 7 MVPs + visão de plataforma) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
+| `99-archive/` | `origens/primeiro-rascunho-projeto/`, `backups/`, `documentos-oficiais/` (descontinuado/rejeitado/superado), `instantaneos-historicos/`, `superado/`. |
+| `01-blueprint/`, `02-refinement/` | Stubs de redirecionamento (um ciclo). Conteúdo migrado para `01-work/`. |
+| `TaskNotes/` | Notas operacionais, `Archive/` e visualizações Bases. |
+| `System/` | Documentação local de plugins em 5 famílias. `attachments/` é local e não rastreado. |
+| `.obsidian/` | Configuração do vault, 10 plugins habilitados/rastreados e tema `March` rastreado. |
 | `.agents/` | Skills e artefatos de agentes versionados no projeto. |
 | `.logs/` | Logs de execução de subtasks e agentes. |
 
 ## Árvore de diretórios versionada
 
-> A árvore abaixo descreve o estado rastreado no commit `12668de`. Assets locais ignorados, como plugins/temas desvendorizados, cache e áudios, são indicados separadamente.
+> Estado no branch `restructure/lifecycle-borders`. Histórico de moves preservado (`git log --follow`).
 
 ```
 .
 ├── .agents/                         — skills e configuração de agentes do projeto
-├── .git/                            — histórico e metadados do Git
 ├── .logs/                           — logs de subtasks e agentes
 ├── .obsidian/                       — configuração do vault
 │   ├── plugins/                     — 10 plugins habilitados/rastreados
@@ -46,25 +47,25 @@ O repositório é gerenciado como um sistema completo de negócio e produto por 
 ├── 00-project-control/              — controle, framework, escopo, gaps e decisões
 │   ├── escopo/fases-projeto/        — canvas do faseamento P00→P07
 │   ├── framework/                   — framework das três camadas
-│   ├── registro-lacunas/lacunas/    — gaps BRD/DAT/FIN/GOV/TEC (68 notas)
-│   └── registro-mudancas/           — registros estruturais e decisórios
-├── 01-blueprint/                    — estratégia, produto, negócio, dados, tech, governança e lançamento
-│   ├── dados-inteligencia/          — modelo semântico e indicadores
-│   ├── estrategia/                  — fundação e primeiro rascunho
-│   └── governanca-juridico/         — governança e fundamentos jurídicos
-├── 02-refinement/                   — pesquisas, refinamentos e evidências em evolução
-│   ├── estrategia/                  — refinamento estratégico
-│   ├── modelos-financeiros/         — área reservada
-│   ├── pesquisa/                    — pesquisas por domínio
-│   ├── refinamento-governanca/      — LGPD e mapas de documentação oficial
-│   ├── refinamento-modelo-dados/    — spine P03-T01..T09 e schema registry
-│   └── refinamento-produto/         — escopo, fluxo, tenancy, filas e RACI
-├── 03-approval/                     — revisão e bloqueios
-│   ├── bloqueado/                   — modelo de indicadores e derivados de validação
-│   └── pacotes-revisao/             — pacotes para stakeholders
+│   ├── registro-lacunas/lacunas/    — gaps BRD/DAT/FIN/GOV/TEC e registros
+│   └── registro-mudancas/           — registros estruturais e decisórios (incl. lifecycle 2026-09-05 + censos)
+├── 01-work/                         — ELABORAÇÃO (rascunho | em-elaboracao)
+│   ├── estrategia/                  — fundação + ponteiro de origem
+│   ├── produto/ tecnologia/ modelo-negocio/ marca-mercado/
+│   ├── governanca-juridico/ operacoes/ visao-lancamento/
+│   ├── dados-inteligencia/          — narrativa + modelo-indicadores (análises; CSVs em 05-resources/fontes)
+│   ├── pesquisa/ refinamento-produto/ modelos-financeiros/
+│   ├── refinamento-modelo-dados/    — spine P03-T01..T09 + gate M0 (todos rascunho)
+│   └── documentos-oficiais/         — shell 01–14 + _controle/ + README de aviso (nada oficial)
+├── 02-review/                       — REVISÃO (em-revisao, congelado)
+│   ├── pacotes/                     — pacotes para stakeholders
+│   └── bloqueado/                   — modelo de indicadores e derivados de validação
+├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
+│   ├── cenarios/                    — P01-S01…S06 assinados
+│   └── documentos-oficiais/         — reservado; vazio até o primeiro gate legal
 ├── 04-project-management/           — execução P01→P07
 │   ├── atas-reuniao/                — atas estruturadas e templates
-│   ├── cenarios/                    — 6 cenários P01-S01→S06
+│   ├── cenarios/                    — ponteiro para 03-approved/cenarios/
 │   ├── cronogramas/                 — cronograma Bases
 │   ├── marcos/                      — M00→M07 e sub-gates M03.A/B
 │   ├── planos-fase/                 — P01→P07
@@ -72,13 +73,14 @@ O repositório é gerenciado como um sistema completo de negócio e produto por 
 │   ├── registro-mestre/             — matriz canônica de tarefas
 │   ├── registros-trabalho/          — base de execução e logs
 │   ├── relatorios-status/           — relatórios e template
-│   └── tarefas/                     — 8 BP + 56 tarefas de fase
-├── 05-resources/Processar/          — fila de processamento
-│   └── Plataforma HUB/              — 7 MVPs + visão de plataforma e análises
-├── 06-deliverables/                 — reservado; atualmente flat
-├── 99-archive/                      — snapshots históricos e material superado
-│   ├── instantaneos-historicos/
-│   └── superado/
+│   └── tarefas/                     — BP + tarefas de fase
+├── 05-resources/                    — matéria-prima
+│   ├── inbox/                       — fila de triagem (ex-Processar/Plataforma HUB/)
+│   └── fontes/modelo-indicadores/   — CSVs-fonte do workbook
+├── 99-archive/                      — histórico
+│   ├── origens/primeiro-rascunho-projeto/
+│   ├── backups/  documentos-oficiais/  instantaneos-historicos/  superado/
+├── 01-blueprint/ 02-refinement/      — stubs de redirecionamento (remover próximo ciclo)
 ├── System/Plugins docs/             — 5 famílias de docs locais (69 arquivos)
 ├── System/attachments/              — anexos locais ignorados pelo Git
 ├── TaskNotes/                       — tarefas operacionais, Archive/ e Views/
@@ -91,7 +93,8 @@ O repositório é gerenciado como um sistema completo de negócio e produto por 
 
 - `.mdbase/cache.sqlite` permanece local e ignorado.
 - `System/attachments/` contém os áudios locais, fora do índice Git.
-- Temas Obsidian inativos (12) e plugins inativos (11) foram removidos do índice, mas não apagados do vault local.
+- `.obsidian/graph.json` fora do índice (cache local).
+- Temas Obsidian inativos e plugins inativos permanecem apenas localmente.
 - `_types/` e `.omo/` não existem no estado atual do repositório, embora `mdbase.yaml` ainda contenha referências a `_types/`; isso precisa ser resolvido antes de depender desse diretório como fonte de tipos.
 
 ## Faseamento e estado do trabalho
@@ -100,30 +103,30 @@ O fluxo de execução é:
 
 `P01 Oferta & Negócio` → `P02 Produto & Operação` → `P03 Dados Canônicos` → `P04 Governança` ↔ `P05 Tecnologia` → `P06 Economia & GTM` → `P07 Portão de Lançamento`.
 
-- P01: 7 tarefas concluídas.
+- P01: 7 tarefas concluídas; cenários S01…S06 assinados em `03-approved/cenarios/`.
 - P02: 6 tarefas concluídas.
-- P03: 9 tarefas em revisão.
+- P03: 9 itens + gate em elaboração em `01-work/refinamento-modelo-dados/` (todos `rascunho`).
 - P04–P07: 34 tarefas pendentes.
 - `GOV-001` (estrutura societária/CNPJs) continua sendo o bloqueador principal da documentação oficial.
-- O epic do vault isolado de documentos oficiais permanece em andamento; suas notas de controle estão em `TaskNotes/Tasks/` e os mapas/instrução foram restaurados em `02-refinement/refinamento-governanca/`.
+- Drive `THE NEW HUB/` = espelho somente-leitura de `03-approved/` + `README-DRIVE-MIRROR.md`; pastas legadas (`Obsidian Inventory/`, `Reviewed and Approved Files/`, `Documentações Oficiais/`) pendentes de aposentadoria.
 
 ## Guia de roteamento
 
 | Intenção | Ler | Escrever |
 |---|---|---|
 | Entender regras e decisões | `00-project-control/` | `decisoes/` ou `registro-lacunas/` |
-| Entender o que está sendo proposto | `01-blueprint/` | domínio correspondente do blueprint |
-| Pesquisar ou refinar | `02-refinement/` | subpasta de refinamento correspondente |
-| Preparar revisão | `03-approval/bloqueado/` e `pacotes-revisao/` | pacote de revisão/evidência |
-| Executar o plano | `04-project-management/` | tarefas, marcos, atas, logs e cenários |
-| Consultar fontes | `05-resources/Processar/Plataforma HUB/` | manter a fila de processamento |
+| Elaborar conteúdo | `01-work/<domínio>/` | subpasta de `01-work/` correspondente (`rascunho`/`em-elaboracao`) |
+| Submeter a gate | `02-review/README.md` | congelar + mover para `02-review/` com dono e data |
+| Consumir/compartilhar finais | `03-approved/` | nunca editar aqui; nova versão começa em `01-work/` |
+| Executar o plano | `04-project-management/` | tarefas, marcos, atas, logs e cenários (ponteiro) |
+| Consultar fontes | `05-resources/inbox/`, `05-resources/fontes/` | manter a fila de triagem; extrair para `01-work/` |
 | Consultar tarefas operacionais | `TaskNotes/` | `TaskNotes/Tasks/` e `TaskNotes/Views/` |
 | Consultar histórico | `99-archive/` | não continuar trabalho ativo aqui |
 
 ## Regras de manutenção
 
-- Não trate blueprint ou refinamento como aprovação, contrato ou evidência de produção.
-- Não arquive P03 nem deduplicate views enquanto o trabalho estiver em revisão ou tiver uso ativo.
+- `status:` deve ser igual ao da pasta (`01-work`: rascunho/em-elaboracao; `02-review`: em-revisao; `03-approved`: aprovado; `99-archive`: superado/rejeitado/descontinuado). Exceção documentada: `01-work/documentos-oficiais/` usa o vocabulário próprio herdado (`hipotese|em_elaboracao|...`), sempre abaixo de aprovado.
+- Não edite aprovados no lugar; não arquive P03 enquanto estiver em elaboração ativa.
 - Atualize este mapa e o `README.md` quando a estrutura de pastas mudar.
 - Arquivos compilados de plugins não devem ser editados manualmente.
 - Assets locais ignorados devem permanecer fora do Git; reinstalação de plugins/temas ocorre pelo marketplace quando necessário.

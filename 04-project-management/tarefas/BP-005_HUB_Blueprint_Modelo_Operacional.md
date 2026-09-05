@@ -9,7 +9,7 @@ area: operations
 sequence: 5
 owner:
   - PF Rezende
-target_file: 01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md
+target_file: 01-work/operacoes/HUB_Blueprint_Modelo_Operacional.md
 dependencies:
   - BP-001
   - BP-002
@@ -21,7 +21,7 @@ gap_ids:
   - GOV-008
   - LCH-002
 related_notes:
-  - "[[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

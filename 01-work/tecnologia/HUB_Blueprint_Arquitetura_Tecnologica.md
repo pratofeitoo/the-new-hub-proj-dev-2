@@ -13,7 +13,7 @@ gap_ids: [TEC-001, TEC-002, TEC-003, TEC-004, TEC-005, TEC-006, TEC-007]
 # BP-004 — Blueprint de Arquitetura de Tecnologia do HUB
 
 > [!warning] Limite de maturidade
-> Este é um blueprint de arquitetura-alvo. Ele descreve fronteiras, responsabilidades e requisitos para refinamento; não descreve um sistema implantado, fornecedores selecionados, um compromisso de implementação ou prontidão para produção. A evidência atual afirma explicitamente que nenhuma implementação de produção está evidenciada em [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]].
+> Este é um blueprint de arquitetura-alvo. Ele descreve fronteiras, responsabilidades e requisitos para refinamento; não descreve um sistema implantado, fornecedores selecionados, um compromisso de implementação ou prontidão para produção. A evidência atual afirma explicitamente que nenhuma implementação de produção está evidenciada em [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]].
 
 ## 1. Fronteiras de plataforma, warehouse/lakehouse, inteligência, consentimento e integração
 

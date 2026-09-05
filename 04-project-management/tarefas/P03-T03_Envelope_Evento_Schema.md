@@ -14,7 +14,7 @@ gap_ids:
   - DAT-003
 dependencies:
   - P03-T01
-target_file: 02-refinement/refinamento-modelo-dados/modelo-indicadores/
+target_file: 01-work/refinamento-modelo-dados/modelo-indicadores/
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-003]]"
@@ -46,7 +46,7 @@ A proposta deve permitir avaliar produtores/consumidores de teste em contrato+re
 
 ## Execução
 
-- **Entregável produzido:** [[02-refinement/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|envelope-evento-schema-P03-T03-v1.md]] — envelope com 17 campos (`event_id`, `schema_version`, `idempotency_key`, `correlation_id`, etc.), schema registry com regras `major`/`minor`, idempotência `producer+event_type+subject+occurred_at+hash`, regras temporais UTC e replay com `run_id` + reconciliação.
+- **Entregável produzido:** [[01-work/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|envelope-evento-schema-P03-T03-v1.md]] — envelope com 17 campos (`event_id`, `schema_version`, `idempotency_key`, `correlation_id`, etc.), schema registry com regras `major`/`minor`, idempotência `producer+event_type+subject+occurred_at+hash`, regras temporais UTC e replay com `run_id` + reconciliação.
 - **Testes contrato+replay:** 3 produtores (`hub.identity`, `hub.journey`, `crm`) e 3 consumidores (`analytics`, `matching`, `replay`) com fixtures em `schema-registry/fixtures/` — `valid→accepted`, `invalid→quarantined`, `duplicate→deduped`.
 - **Resultado:** consumidores rejeitam `v2.0` sem adaptador e aceitam `v1.1` compatível; atrasados mantêm `occurred_at`.
 - **Próximo:** publicar 3 schemas iniciais, executar testes contrato/replay e registrar aprovação Dados+Tech.

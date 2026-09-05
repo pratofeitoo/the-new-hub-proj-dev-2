@@ -13,7 +13,7 @@ gap_ids:
   - PRD-007
 dependencies:
   - P02-T02
-target_file: 02-refinement/refinamento-produto/
+target_file: 01-work/refinamento-produto/
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-007]]"
@@ -32,7 +32,7 @@ dateModified: 2026-09-01T19:45:48.305-03:00
 Definir filas human-in-the-loop, direitos de override, recursos e trilha de auditoria para decisões de alto impacto.
 
 ## Entregável
-Rascunho de especificação de filas + audit trail em `02-refinement/refinamento-produto/`, para revisão posterior.
+Rascunho de especificação de filas + audit trail em `01-work/refinamento-produto/`, para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos|P02-T02]]
@@ -45,6 +45,6 @@ A proposta não deve deixar passo de alto impacto sem fila + dono; lacunas perma
 
 ## Execução
 
-- **Entregável produzido:** [[02-refinement/refinamento-produto/filas-revisao-overrides|filas-revisao-overrides.md]] com 6 filas + regra assistido + overrides + appeals + audit trail append-only.
+- **Entregável produzido:** [[01-work/refinamento-produto/filas-revisao-overrides|filas-revisao-overrides.md]] com 6 filas + regra assistido + overrides + appeals + audit trail append-only.
 - **Resultado:** nenhum alto impacto sem fila+dono; trilha com actor/scope/reason/timestamp/prev→next.
 - **Próximo:** nomear donos e exercitar 1 fluxo por fila.

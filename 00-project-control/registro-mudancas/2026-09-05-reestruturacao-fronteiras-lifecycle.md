@@ -59,15 +59,17 @@ Migração de organização por domínio para lifecycle-first com 3 fronteiras (
 
 ## 5. Validação e sincronização
 
-- **Validação realizada:** branch + tag + censo (Fase 0).
-- **Resultado:** em andamento.
-- **Arquivos vivos sincronizados:** este registro; `project-map.md` e `README.md` na Fase 7.
+- **Validação realizada (2026-09-05, Fase 7):** sweep de links — zero refs a paths antigos fora de stubs/histórico/arquivo (as 2 ocorrências restantes em `README.md`/`project-map.md` são prosa intencional sobre pastas aposentadas); histograma `status:` por fronteira — `03-approved/` 100% `aprovado`, `02-review/pacotes/` `em-revisao`, `01-work/` em `rascunho|em-elaboracao` exceto o vocabulário próprio herdado de `documentos-oficiais/` (`hipotese|...`, sempre abaixo de aprovado); espelho Drive `03-approved/` idêntico ao iCloud (`diff -rq` limpo).
+- **Resultado:** concluído, exceto aposentadorias no Drive (pendentes de confirmação — deletes em shared drive).
+- **Arquivos vivos sincronizados:** `README.md`, `project-map.md`, `05-resources/README.md`, READMEs de fronteira, este registro.
 
 ## 6. Próximos passos
 
-- [ ] Fases 1–5: esqueleto, moves `01-work`/`02-review`/`03-approved`, ponteiros, carimbos
-- [ ] Fase 6: import shell documentos-oficiais, espelho Drive, aposentar Inventory/Reviewed (confirmar cada delete)
-- [ ] Fase 7: reescrever README + project-map, sweep de links, histograma final zerado
+- [x] Fases 1–5: esqueleto, moves `01-work`/`02-review`/`03-approved`, ponteiros, carimbos
+- [x] Fase 6 (parcial): import shell documentos-oficiais, espelho Drive; **falta: aposentar `Obsidian Inventory/`, `Reviewed and Approved Files/`, fonte `Documentações Oficiais/` no Drive (confirmar cada delete — shared drive, irreversível)**
+- [x] Fase 7: README + project-map reescritos, sweep de links, verificação por fronteira
+- [ ] Decisão futura: remover stubs `01-blueprint/`, `02-refinement/`, `04-project-management/cenarios/README.md` (próximo ciclo)
+- [ ] Decisão futura: normalizar campo legado `layer:` (`blueprint|refinement|approval` → `work|review|approved`) e tipos `hypothesis` em cenários aprovados
 
 ## 7. Referências
 

@@ -27,9 +27,9 @@ gap_ids:
 bp_tasks:
   - BP-008
 related_notes:
-  - "[[01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao]]"
+  - "[[01-work/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao]]"
   - "[[04-project-management/planos-mestres/HUB_Plano_Fases_v1]]"
-  - "[[03-approval/portao-lancamento]]"
+  - "[[02-review/portao-lancamento]]"
 created: 2026-08-26
 updated: 2026-08-26
 ---
@@ -37,7 +37,7 @@ updated: 2026-08-26
 # P07 — Portão de Lançamento
 
 > [!info] Papel no sequenciamento
-> **Fase final.** Consolida todas as anteriores em um checklist integrado e workflow de aprovação auditável. Não cria especificação nova — **verifica** que P01–P06 existem, estão conectadas e têm evidência. Só então libera `06-deliverables/`.
+> **Fase final.** Consolida todas as anteriores em um checklist integrado e workflow de aprovação auditável. Não cria especificação nova — **verifica** que P01–P06 existem, estão conectadas e têm evidência. Só então libera `03-approved/`.
 
 ## 1. Objetivo
 
@@ -65,17 +65,17 @@ Construir e operar o portão mestre de lançamento do sistema completo — cobri
 4. Matriz rastreabilidade requisitos→evidência→entregável (LCH-004).
 5. Registro riscos/premissas/dependências operacionalizado com dono, data, limiar, escalonamento, decisão (LCH-005 + `00-project-control/riscos/` + `premissas/` + `dependencias/`).
 6. Pacote lançamento por oferta/mercado: onboarding, contratos, precificação, aviso privacidade, suporte, alegações comerciais (LCH-006).
-7. Ciclo vida artefatos + regras promoção: quando e como `blocked/refining` → `aprovado/condicionalmente-aprovado` → `06-deliverables/` (LCH-007 + framework § Regras).
+7. Ciclo vida artefatos + regras promoção: quando e como `blocked/refining` → `aprovado/condicionalmente-aprovado` → `03-approved/` (LCH-007 + framework § Regras).
 8. Roadmap coerente final via gates P01→P07 (STR-003).
 
 ### Fora
-- Qualquer liberação que ignore gate: `06-deliverables/` só recebe o que saiu de `03-approval/aprovado/`
+- Qualquer liberação que ignore gate: `03-approved/` só recebe o que saiu de `02-review/aprovado/`
 - Expansão M3/M4 (modelos, marketplace nacional) — fica pós-lançamento com novos gates
 
 ## 4. Entradas
 
 - Gates **P01→P06** (todos aprovados ou condicionalmente aprovados com plano de remediação)
-- [`HUB_Blueprint_Lancamento_e_Evolucao.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md) + [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) (portões ilustrativos §3)
+- [`HUB_Blueprint_Lancamento_e_Evolucao.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md) + [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) (portões ilustrativos §3)
 - [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) §14 Marcos (gates meses 0-18)
 - Gaps `LCH-*`
 
@@ -83,13 +83,13 @@ Construir e operar o portão mestre de lançamento do sistema completo — cobri
 
 | Artefato | Onde vive | Camada |
 |---|---|---|
-| Portão mestre + grafo dependências | `03-approval/portao-lancamento/portao-mestre-v1.md` | approval |
-| Plano operações lançamento + runbook release | `03-approval/portao-lancamento/` + `04-project-management/planos-fase/` | approval→gestão |
-| Workflow aprovação + templates pacote revisão | `03-approval/criterios-aprovacao/` + `03-approval/pacotes-revisao/` | approval |
-| Matriz rastreabilidade requisitos→evidência | `03-approval/evidencias/` | approval |
+| Portão mestre + grafo dependências | `02-review/portao-lancamento/portao-mestre-v1.md` | approval |
+| Plano operações lançamento + runbook release | `02-review/portao-lancamento/` + `04-project-management/planos-fase/` | approval→gestão |
+| Workflow aprovação + templates pacote revisão | `02-review/criterios-aprovacao/` + `02-review/pacotes/` | approval |
+| Matriz rastreabilidade requisitos→evidência | `02-review/evidencias/` | approval |
 | Registro riscos/premissas/dependências operacionalizado | `00-project-control/riscos/` + `premissas/` + `dependencias/` + `registro-lacunas/` | controle |
-| Checklist lançamento comercial por oferta | `03-approval/portao-lancamento/` + `06-deliverables/lancamento/` (após aprovação) | approval→deliverable |
-| Ciclo vida artefatos + regras promoção | `03-approval/portao-lancamento/` | approval |
+| Checklist lançamento comercial por oferta | `02-review/portao-lancamento/` + `03-approved/lancamento/` (após aprovação) | approval→deliverable |
+| Ciclo vida artefatos + regras promoção | `02-review/portao-lancamento/` | approval |
 | Marcos fases v1 | `04-project-management/marcos/` | gestão |
 | Cronograma fases v1 | `04-project-management/cronogramas/` | gestão |
 
@@ -123,7 +123,7 @@ Construir e operar o portão mestre de lançamento do sistema completo — cobri
 | Risco | Mitigação |
 |---|---|
 | Lançar com gate condicional sem plano | G07.1 exige plano remediação datado para todo `condicional` |
-| Deliverable sem aprovação | G07.7: `06-deliverables/` bloqueado até `03-approval/aprovado/` |
+| Deliverable sem aprovação | G07.7: `03-approved/` bloqueado até `02-review/aprovado/` |
 | Gate vira formalidade | G07.3: trilha auditável + aprovação por papel, não por pessoa |
 
 ## 9. Referências

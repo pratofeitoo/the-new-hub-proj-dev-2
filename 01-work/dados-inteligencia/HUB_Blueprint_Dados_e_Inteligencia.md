@@ -17,7 +17,7 @@ gap_ids: [DAT-001, DAT-002, DAT-003, DAT-004, DAT-005, DAT-006, DAT-008, DAT-010
 
 ## 1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais
 
-O sistema de dados representa a cadeia `fontes → identidades → sinais → inteligência → ação → resultado → valor financeiro` nos seis módulos conceituais de [[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto|HUB Intelligence, HUB Journey, HUB Solutions, HUB Connections, HUB Academy and HUB Recognition]]. Os objetos canônicos são governados por significado e propriedade, não por um banco de dados, fornecedor ou padrão de armazenamento específico.
+O sistema de dados representa a cadeia `fontes → identidades → sinais → inteligência → ação → resultado → valor financeiro` nos seis módulos conceituais de [[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto|HUB Intelligence, HUB Journey, HUB Solutions, HUB Connections, HUB Academy and HUB Recognition]]. Os objetos canônicos são governados por significado e propriedade, não por um banco de dados, fornecedor ou padrão de armazenamento específico.
 
 ### Famílias de objetos canônicos
 
@@ -51,7 +51,7 @@ O modelo separa **tempo de validade** (quando um fato é verdadeiro no mundo rep
 
 Este contrato lógico aborda [[00-project-control/registro-lacunas/lacunas/DAT-001|DAT-001]], mas não afirma que chaves primárias, chaves estrangeiras, índices ou tabelas de armazenamento físicas estejam aprovados. O entregável de refinamento é um modelo lógico e físico aprovado; a aprovação da arquitetura de dados continua pendente.
 
-> **Refinamento P03-T01 (M03.A):** proposta detalhada com 25 entidades (PK estável), 12 relacionamentos com cardinalidade/temporalidade, tipos de objeto e diagrama ER em [[02-refinement/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — atende G03.A1 para revisão Dados+Tech.
+> **Refinamento P03-T01 (M03.A):** proposta detalhada com 25 entidades (PK estável), 12 relacionamentos com cardinalidade/temporalidade, tipos de objeto e diagrama ER em [[01-work/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — atende G03.A1 para revisão Dados+Tech.
 
 ## 2. Arquitetura de indicadores de origem conectada às capacidades do produto e aos resultados de negócio
 
@@ -78,7 +78,7 @@ Indicadores antecedentes (atividade, adoção, conclusão), indicadores operacio
 
 ## 3. Versionamento de eventos, indicadores, taxonomias, fórmulas, modelos e evidências
 
-> **M0 táticos promovidos do recorte Monks (P03-T05):** `KPI-PERF-01 Atingimento (PES-02 proxy)`, `KPI-PERF-02 Qualidade meta (DAT-01 proxy)`, `KPI-ALO-01 Alocação (RH-09 proxy)`, `KPI-ALO-02 Receita perdida (FIN-06 proxy)` — definições congeladas em [[02-refinement/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1|Glossário Financeiro Congelado v1]].
+> **M0 táticos promovidos do recorte Monks (P03-T05):** `KPI-PERF-01 Atingimento (PES-02 proxy)`, `KPI-PERF-02 Qualidade meta (DAT-01 proxy)`, `KPI-ALO-01 Alocação (RH-09 proxy)`, `KPI-ALO-02 Receita perdida (FIN-06 proxy)` — definições congeladas em [[01-work/modelos-financeiros/HUB_Glossario_Financeiro_Congelado_v1|Glossário Financeiro Congelado v1]].
 
 O versionamento faz parte do significado. Nenhum produtor, dashboard, decisão ou alegação pública pode depender de um schema de evento, definição de indicador, taxonomia, fórmula, modelo ou interpretação de evidência sem versão.
 

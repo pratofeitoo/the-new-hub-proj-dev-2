@@ -18,7 +18,7 @@ tags:
   - blueprint
 related_notes:
   - "[[00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas]]"
-  - "[[01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
   - "[[04-project-management/tarefas/HUB_Tarefas_Projeto.base]]"
   - "[[Fases_Projeto.canvas]]"
@@ -27,10 +27,10 @@ related_notes:
 # HUB — Plano Diretor de Fases v1
 
 > [!info] Propósito
-> Transformar o inventário atual (~115 pastas, 68 gaps, 8 tarefas BP) em **7 fases sequenciais com gates verificáveis**. Cada fase fecha um conjunto de gaps antes de liberar trabalho downstream — evita retrabalho financeiro/tecnológico antes da semântica de dados estar travada. Este plano complementa (não substitui) o [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) e o [`HUB_Fundacao_Blueprint_Projeto`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
+> Transformar o inventário atual (~115 pastas, 68 gaps, 8 tarefas BP) em **7 fases sequenciais com gates verificáveis**. Cada fase fecha um conjunto de gaps antes de liberar trabalho downstream — evita retrabalho financeiro/tecnológico antes da semântica de dados estar travada. Este plano complementa (não substitui) o [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) e o [`HUB_Fundacao_Blueprint_Projeto`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
 
 > [!warning] Maturidade
-> Plano de gestão (`04-project-management/`), não evidência aprovada. Cada fase permanece `blueprint` até passar por `02-refinement/` → `03-approval/` → `06-deliverables/`. Nenhum gate é auto-aprovado.
+> Plano de gestão (`04-project-management/`), não evidência aprovada. Cada fase permanece `blueprint` até passar por `01-work/` → `02-review/` → `03-approved/`. Nenhum gate é auto-aprovado.
 
 ---
 
@@ -125,7 +125,7 @@ flowchart TD
 | `DAT-010` | P03 **G03.B2** | **blocking: yes** | Dicionário físico mapeado e fonte de verdade/proveniência reconciliada entre origem e corrigido, com registro auditável. | Automação de reconciliação e cobertura adicional de fontes. |
 | `TEC-005` | P05 **G05.4** | **blocking: yes** | Baseline por integração (custo, latência, volume e rate-limit) publicado e integrado ao modelo financeiro P06. | Otimização avançada, capacity planning preditivo e novas integrações. |
 | `TEC-007` | P05 **G05.7** | **blocking: yes** | Processo de release/rollback, ambientes e suporte aprovados e testados antes do lançamento. | Automação/expansão de ambientes e estratégias avançadas de progressive delivery. |
-| `LCH-007` | P07 **G07.7** | **blocking: yes** | Todo artefato de lançamento tem status/proveniência válidos e segue a regra de promoção até `06-deliverables/`. | Retenção histórica ampliada e automações de ciclo de vida. |
+| `LCH-007` | P07 **G07.7** | **blocking: yes** | Todo artefato de lançamento tem status/proveniência válidos e segue a regra de promoção até `03-approved/`. | Retenção histórica ampliada e automações de ciclo de vida. |
 
 **Regra:** o mínimo de aceite do gate é bloqueador; somente as extensões explicitamente listadas como opcionais podem permanecer pós-MVP. `LCH-007` é a grafia canônica.
 
@@ -226,9 +226,9 @@ flowchart LR
 4. Tarefas operacionais curtas (≤1 semana) ficam em [`TaskNotes/Tasks/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/TaskNotes/Tasks) com link para a tarefa BP/phase correspondente.
 
 ### Para refinar & aprovar
-- Escreva refinamento em `02-refinement/<dominio>/` citando `P0x` + gap.
-- Monte pacote em `03-approval/pacotes-revisao/P0x-*.md`.
-- Só mova para `03-approval/aprovado/` via gate de `P0x`. Nunca pule gate.
+- Escreva refinamento em `01-work/<dominio>/` citando `P0x` + gap.
+- Monte pacote em `02-review/pacotes/P0x-*.md`.
+- Só mova para `02-review/aprovado/` via gate de `P0x`. Nunca pule gate.
 
 ### Para status & retrospectiva
 - Atualize [`04-project-management/relatorios-status/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/relatorios-status) por fase (não por domínio).
@@ -261,7 +261,7 @@ flowchart LR
 ## 10. Referências
 
 - [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — regras das 3 camadas
-- [`HUB_Fundacao_Blueprint_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — identidade, 4 unidades, 6 módulos, roadmap M0–M4
+- [`HUB_Fundacao_Blueprint_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — identidade, 4 unidades, 6 módulos, roadmap M0–M4
 - [`HUB_Registro_Lacunas_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) §2 Resumo + §12 Espinha dorsal — dependências e 68 gaps
 - [`HUB_Tarefas_Projeto.base`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/tarefas/HUB_Tarefas_Projeto.base) — 8 BP tasks (BP-001..008)
 - [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) — tese investidor (não validada)

@@ -14,7 +14,7 @@ gap_ids:
   - STR-008
 dependencies:
   - P02-T02
-target_file: 01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md
+target_file: 01-work/operacoes/HUB_Blueprint_Modelo_Operacional.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-005]]"
@@ -34,7 +34,7 @@ dateModified: 2026-09-01T19:45:43.405-03:00
 Mapear SOPs por estágio Contexto→Arquitetura→Operação→Sustentação cobrindo vendas, onboarding, diagnóstico, curadoria, matching, implementação, medição, suporte, exceção, escalonamento — com dono e SLA.
 
 ## Entregável
-SOPs em `HUB_Blueprint_Modelo_Operacional.md` + `02-refinement/refinamento-produto/`.
+SOPs em `HUB_Blueprint_Modelo_Operacional.md` + `01-work/refinamento-produto/`.
 
 ## Dependências
 - [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos|P02-T02]]
@@ -47,5 +47,5 @@ SOPs com dono e tempo alvo; rastreabilidade C.A.O.S.→módulos documentada como
 
 ## Execução
 
-- **Entregável produzido:** Cap.1–2 em [[01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional]] com SOPs C.A.O.S. (vendas→escalonamento) + dono/SLA + rastreabilidade C.A.O.S.→módulos.
+- **Entregável produzido:** Cap.1–2 em [[01-work/operacoes/HUB_Blueprint_Modelo_Operacional]] com SOPs C.A.O.S. (vendas→escalonamento) + dono/SLA + rastreabilidade C.A.O.S.→módulos.
 - **Resultado:** SOPs cobrindo 9 áreas com regra manual/partner/automação futura.

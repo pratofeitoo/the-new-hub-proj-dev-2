@@ -33,7 +33,7 @@ O case deve acompanhar aderência das oportunidades, tempo até a primeira oport
 
 ## Resultado refinado do piloto
 
-Este README é o documento-resultado inicial do cartão [[05-resources/Processar/Plataforma HUB/00-entrada/piloto-firjan-processamento.md|piloto-firjan-processamento]]. O workbook original permanece preservado em `fontes/` e não foi movido.
+Este README é o documento-resultado inicial do cartão [[05-resources/inbox/Plataforma HUB/00-entrada/piloto-firjan-processamento.md|piloto-firjan-processamento]]. O workbook original permanece preservado em `fontes/` e não foi movido.
 
 ### Fatos observados
 

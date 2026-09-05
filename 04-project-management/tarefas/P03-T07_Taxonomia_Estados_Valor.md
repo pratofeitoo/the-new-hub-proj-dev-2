@@ -14,7 +14,7 @@ gap_ids:
   - DAT-006
 dependencies:
   - P03-T05
-target_file: 02-refinement/refinamento-modelo-dados/modelo-indicadores/
+target_file: 01-work/refinamento-modelo-dados/modelo-indicadores/
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-006]]"
@@ -46,7 +46,7 @@ Pareceres de Finanças e Governança de Dados registrados para subsidiar a aprov
 
 ## Execução
 
-- **Entregável produzido:** [[02-refinement/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|taxonomia-estados-valor-P03-T07-v1.md]] — 4 estados com caminho evidências, políticas cálculo/atribuição/deduplicação/contrafactual + exemplo `PES-02→RH-06→R$18.500 influenciado` com regra promoção para `validado` (holdout) e `realizado` (`contract_id`+ledger).
+- **Entregável produzido:** [[01-work/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1|taxonomia-estados-valor-P03-T07-v1.md]] — 4 estados com caminho evidências, políticas cálculo/atribuição/deduplicação/contrafactual + exemplo `PES-02→RH-06→R$18.500 influenciado` com regra promoção para `validado` (holdout) e `realizado` (`contract_id`+ledger).
 - **Pareceres:** Finanças e Gov Dados ambos `Refinar com condições` — `influenciado` operacional vs `realizado` ledger; `DAT-006` aberto até Camada 3.
 - **Resultado:** nenhum valor `influenciado` entra em demonstrativo sem `contract_id`; duplicação bloqueada por `financial_claims` indexado.
 - **Próximo:** protocolo holdout `run_rh06_holdout_001` e decisão `DEC-P03-T07.md`.

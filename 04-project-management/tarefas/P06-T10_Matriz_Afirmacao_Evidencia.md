@@ -15,7 +15,7 @@ gap_ids:
   - GTM-007
 dependencies:
   - P06-T01
-target_file: 02-refinement/refinamento-governanca/
+target_file: 01-work/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/BRD-002]]"

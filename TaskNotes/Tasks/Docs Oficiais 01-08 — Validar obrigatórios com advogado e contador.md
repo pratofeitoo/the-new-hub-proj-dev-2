@@ -9,7 +9,7 @@ tags:
   - vault-isolado
   - obrigatorio
 projects:
-  - "[[02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1]]"
+  - "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
   - "[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]"
 contexts:
   - "@juridico"
@@ -29,7 +29,7 @@ Validação profissional dos 32 docs obrigatórios (`GOV-MAP-001`) antes de regi
 
 **Foco crítico 2026-09-02:**
 - **07.04 IBS/CBS (EC 132/2023 + LC 214/2025)** — ERP já precisa carregar teste CBS 0,9% + IBS 0,1% em 2026, vira obrigatório 2027
-- **06.01 ROPA + 06.02 DPO + 06.03 RIPD + 04.04 DPA** — fluxo a fluxo vs `[[02-refinement/refinamento-governanca/matriz-dados-finalidade-P03-T08-v1]]`
+- **06.01 ROPA + 06.02 DPO + 06.03 RIPD + 04.04 DPA** — fluxo a fluxo vs `[[01-work/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1]]`
 - **01.01 Contrato Social / 01.02 Estatuto** — minuta v0.1
 - **03.05 / 04.08 Selo** — manter `bloqueado` por `GOV-003`
 

@@ -13,7 +13,7 @@ gap_ids:
   - LCH-003
 dependencies:
   - P07-T01
-target_file: 03-approval/criterios-aprovacao/
+target_file: 02-review/criterios-aprovacao/
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-003]]"
@@ -32,7 +32,7 @@ dateModified: 2026-09-01T19:29:28.335-03:00
 Formalizar autoridade de aprovação, pacote evidências, cadência review, bloqueadores, reentrada e trilha auditoria auditável.
 
 ## Entregável
-Workflow + templates em `03-approval/criterios-aprovacao/` e `pacotes-revisao/`.
+Workflow + templates em `02-review/criterios-aprovacao/` e `pacotes-revisao/`.
 
 ## Dependências
 - [[04-project-management/tarefas/P07-T01_Portao_Mestre_Grafo|P07-T01]]

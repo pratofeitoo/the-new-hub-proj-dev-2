@@ -13,7 +13,7 @@ gap_ids:
   - TEC-003
 dependencies:
   - P03-T03
-target_file: 01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
+target_file: 01-work/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-003]]"
