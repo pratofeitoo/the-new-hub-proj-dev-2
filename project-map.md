@@ -21,7 +21,7 @@ com domínios como segundo eixo:
 |---|---|
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
 | `01-work/` | Elaboração em 3 temas: `produto-e-operacao/` (`refinamento-produto/`), `dados-tech-financas/` (`modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho; CSVs em `05-resources/fontes/`), `pesquisa-e-confianca/` (`pesquisa/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). 9 domínios blueprint submetidos a `02-review/01-blueprint/`. |
-| `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/`, `01-blueprint/` (9 domínios; submetidos 2026-09-05, `em-revisao`), `02-reconciliacao-blueprint/` (6 reconciliadas + mapeamento; submetidas 2026-09-05, `em-revisao`). |
+| `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/`, `02-reconciliacao-blueprint/` (6 reconciliadas + mapeamento; submetidas 2026-09-05, `em-revisao`, em espera — v1 aposentada em `99-archive/superado/`). |
 | `03-approved/` | `matriz-de-oferta-e-comprador-cenarios/cenarios/` P01-S01…S06, `nucleo-inteligencia/` (conceito + inventário + prova, gate 2026-09-05, `aprovado` + histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
 | `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, planos unificados e logs de progresso. |
 | `05-resources/` | `inbox/` (fila de triagem; MVPs, visão e acordo submetidos a `02-review/` em 2026-09-05) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
@@ -61,8 +61,7 @@ com domínios como segundo eixo:
 │   ├── 01-mvps/                     — 6 MVPs + Comunidades, submetido 2026-09-05
 │   ├── 02-visao-plataforma/         — tese de longo prazo, submetida 2026-09-05
 │   ├── 01-acordo-parceria/          — acordo DiverCidade×HUB, submetido 2026-09-05
-│   ├── 01-blueprint/                — 9 domínios submetidos 2026-09-05 (narrativas + análises)
-│   └── 02-reconciliacao-blueprint/  — 6 versões reconciliadas + mapeamento, submetidas 2026-09-05
+│   └── 02-reconciliacao-blueprint/  — 6 versões reconciliadas + mapeamento, submetidas 2026-09-05, em espera (v1 aposentada em 99-archive/superado/)
 ├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
 │   ├── matriz-de-oferta-e-comprador-cenarios/cenarios/ — P01-S01…S06 assinados
 │   ├── nucleo-inteligencia/         — conceito + inventário + prova, gate 2026-09-05
