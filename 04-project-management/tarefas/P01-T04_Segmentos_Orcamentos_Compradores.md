@@ -2,13 +2,15 @@
 title: P01-T04 — Segmentos e orçamentos de compradores de lançamento
 task_id: P01-T04
 phase: P01
-status: concluido
+status: em-revisao
 priority: alta
 area: gtm
 layer: blueprint
 owner:
-  - GTM (a designar)
+  - Tamara // blocked: aguardando nomeação GTM até 2026-10-15
   - PF Rezende
+blocked_reason: aguardando nomeação GTM
+blocked_until: 2026-10-15
 gap_ids:
   - GTM-001
 dependencies:

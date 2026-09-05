@@ -2,13 +2,15 @@
 title: P02-T03 — Matriz autorização & tenancy (ator×permissão)
 task_id: P02-T03
 phase: P02
-status: concluido
+status: em-revisao
 priority: critica
 area: product
 layer: refining
 owner:
-  - Produto (a designar)
-  - Jurídico (a designar)
+  - PF Rezende // blocked: aguardando nomeação Produto até 2026-10-15
+  - PF Rezende // blocked: aguardando nomeação Jurídico até 2026-10-15
+blocked_reason: aguardando nomeação Produto + Jurídico — matriz autorização PRD-003
+blocked_until: 2026-10-15
 gap_ids:
   - PRD-003
 dependencies:

@@ -2,12 +2,14 @@
 title: P02-T01 — Taxonomia de capacidades + contratos de módulos
 task_id: P02-T01
 phase: P02
-status: concluido
+status: em-revisao
 priority: critica
 area: product
 layer: blueprint
 owner:
-  - Produto (a designar)
+  - PF Rezende // blocked: aguardando nomeação Produto até 2026-10-15
+blocked_reason: aguardando nomeação Produto — taxonomia capacidades PRD-001
+blocked_until: 2026-10-15
 gap_ids:
   - PRD-001
 dependencies:

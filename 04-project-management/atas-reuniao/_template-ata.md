@@ -17,6 +17,12 @@ tags:
   - ata
 related:
   - "[[Plataforma Ruby]]"
+# --- Task 9B sync — rastreabilidade gate/evidência (no network, lifecycle task→plano→marcos→log→matriz) ---
+evidence_required: [] # ex: ["01-work/dados-tech-financas/.../modelo-logico-P03-T01-v1.md", "02-review/pacotes/P03-Dados-Canonicos.md"]
+gate: "" # ex: "G03.A1", "G05.4/TEC-005 blocking: yes", "G07.7/LCH-007 blocking: yes"
+dec_link: "" # ex: "[[00-project-control/decisoes/DEC-M03-2026-10-15]]" — vazio até gate aprovado; 03-approved/ só com DEC-M*
+blocked_until: "" # ex: "2026-10-15" se aguardando nomeação; usar com blocked_reason
+blocked_reason: "" # ex: "aguardando nomeação Tech — TEC-005"
 ---
 
 # Ata — {{title}} — {{date:YYYY-MM-DD HH:mm}}
@@ -102,6 +108,24 @@ related:
 - Canva: —
 - Forms: —
 - Infra: Hostinger VPS KVM-8 —
+
+---
+
+## 🔒 Gate, Evidência e Rastreabilidade (Task 9B — lifecycle)
+
+> Preencha para toda ata que registra gate, decisão ou bloqueio. Preserva hierarquia `task frontmatter → plano → marcos → log → matriz`. Sem `DEC-M*` + pacote `02-review/pacotes/`, nenhum gate sai de `em-revisao`.
+
+| Campo | Valor | Exemplo |
+|---|---|---|
+| **evidence_required** | <!-- lista de paths/canonical links; ver frontmatter --> | `01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md`, `02-review/pacotes/P03-Dados-Canonicos.md` |
+| **gate** | <!-- gate canônico + lacuna --> | `G03.B2/DAT-010 blocking: yes`, `G05.4/TEC-005 blocking: yes`, `G05.7/TEC-007 blocking: yes`, `G07.7/LCH-007 blocking: yes`, `G06.10/BRD-002/GTM-007 blocking: yes` |
+| **DEC-* link** | <!-- link DEC-M* quando aprovado; vazio = gate pendente --> | `[[00-project-control/decisoes/DEC-M03-2026-10-15]]`, `[[00-project-control/decisoes/DEC-M07-2026-12-05]]` — se vazio, `ls 00-project-control/decisoes/DEC-M*.md ==0` |
+| **blocked_until** | <!-- YYYY-MM-DD se aguardando nomeação; usar com blocked_reason --> | `2026-10-15` + `blocked_reason: "aguardando nomeação Tech"` — padrão `Tarefa_Executavel_Definicao.md §9` |
+| **Cronograma** | <!-- View A Estratégico vs View B Operacional --> | View A: `P00→P07 Gates 15/10, 28/10, 28/11, 05/12` · View B: `Piloto SEBRAE 28/10 Prep 03/09–27/10 → Evento 28/10 → Follow-up → Relatório 28/11 → Decisão 05/12` |
+| **Verificação** | <!-- comando local sem rede --> | `grep -c "a designar" 04-project-management/tarefas/P03*.md ==0; ls <evidence_required> && grep -c "G03\.\|TEC-\|LCH-\|BRD-" <ata> ` |
+
+- **Regra lifecycle:** task (`P0*.md` com `owner`, `evidence_required`, `gate`, `DEC-*`, `blocked_until`) → plano fase → `marcos-fases-v1.md` (M01→M07) → `HUB_Log_Tarefas_Progresso.md` → `matriz-fases-tarefas-v1.md`. Ata só marca gate como aprovado com `DEC-M*` + pacote `02-review/pacotes/P0X-*.md`.
+- **Bloqueio preservado:** `DAT-010/G03.B2`, `TEC-005/G05.4`, `TEC-007/G05.7`, `LCH-007/G07.7`, `BRD-002/GTM-007` permanecem `blocking: yes` até evidência + revisão + DEC — registrar `blocked_until` e `blocked_reason` quando aplicável.
 
 ---
 

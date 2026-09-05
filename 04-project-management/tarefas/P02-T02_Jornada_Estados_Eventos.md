@@ -2,12 +2,14 @@
 title: P02-T02 — Jornada estados/eventos + trilha de auditoria
 task_id: P02-T02
 phase: P02
-status: concluido
+status: em-revisao
 priority: critica
 area: product
 layer: blueprint
 owner:
-  - Produto (a designar)
+  - PF Rezende // blocked: aguardando nomeação Produto até 2026-10-15
+blocked_reason: aguardando nomeação Produto — jornada estados/eventos PRD-004
+blocked_until: 2026-10-15
 gap_ids:
   - PRD-004
   - PRD-007

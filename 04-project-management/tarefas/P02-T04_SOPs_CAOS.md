@@ -2,12 +2,14 @@
 title: P02-T04 — SOPs por estágio C.A.O.S. (vendas→escalonamento)
 task_id: P02-T04
 phase: P02
-status: concluido
+status: em-revisao
 priority: alta
 area: operations
 layer: blueprint
 owner:
-  - Operações (a designar)
+  - PF Rezende // blocked: aguardando nomeação Operações até 2026-10-15
+blocked_reason: aguardando nomeação Operações — SOPs CAOS PRD-005
+blocked_until: 2026-10-15
 gap_ids:
   - PRD-005
   - STR-008

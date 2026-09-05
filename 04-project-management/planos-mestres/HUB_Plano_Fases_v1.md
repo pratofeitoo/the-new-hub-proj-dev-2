@@ -326,3 +326,121 @@ flowchart LR
 | **TEC-001**           | Contrato de integração — bloqueado até DAT aprovado |
 | **BRD-002**           | Alegação de valor — bloqueada até DAT aprovado      |
 | **LCH-007**           | Ciclo de vida de artefatos — bloqueador do G07.7; extensões pós-MVP |
+
+---
+
+## 12. Anexo — Cronogramas separados (Task 8 — Piloto SEBRAE 28/10)
+
+> **Dual-track:** Este anexo separa **Estratégico (P00→P07 Gates & Dependências)** de **Operacional (Piloto SEBRAE 28/10)** sem duplicar gates. O cronograma dual vive em [`cronograma-fases-v1.base`](../cronogramas/cronograma-fases-v1.base) — View A "Estratégico — P00→P07 Gates & Dependências (datas-âncora)" + View B "Operacional — Piloto SEBRAE 28/10 (Prep → Evento → Follow-up → Decisão)". **Regra:** Tempos operacionais do piloto **não alteram** a ordem de dependência P00→P07 (§2.1); apenas ancoram o MVP em datas reais.
+
+### 12.1 Referências canônicas (links obrigatórios)
+
+- **Charter único do piloto:** [`HUB_Charter_Piloto_SEBRAE_2026-10-28.md`](./HUB_Charter_Piloto_SEBRAE_2026-10-28.md) — 15 campos, evento-âncora **28/10/2026**, coorte 30 fornecedores, IN/OUT, dados+base legal, métricas, orçamento, responsáveis nominais, datas-âncora e gate decisão (**campo 13:** Prep 03/09–27/10, Evento 28/10, Follow-up 29/10–27/11, Relatório **28/11**, Decisão **05/12**; **campo 10** métricas mínimas; **campo 14** sucesso/fracasso binário).
+- **Spine mínimo do piloto:** [`spine-piloto-minimo-v1.md`](../../01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md) — 12 entidades mínimas + 12 métricas mínimas + envelope mínimo + deferred list; limite ≤12 imposto pelo charter.
+- **Marcos & Gates:** [`marcos-fases-v1.md`](../marcos/marcos-fases-v1.md) (M00→M07) + [`cronograma-fases-v1.base`](../cronogramas/cronograma-fases-v1.base) Views A/B — datas-âncora **15/10** (Acordo LGPD go/no-go), **28/10** (Evento), **28/11** (Relatório), **05/12** (Decisão gate).
+
+> Datas-âncora Task 8: **15/10** Acordo Cooperação + Matriz dados-finalidade assinados (go/no-go LGPD) · **28/10** Evento Piloto SEBRAE-SP · **28/11** Relatório pós-piloto (owner Tamara Braga + PF Rezende) · **05/12** Decisão gate (A Repetir / B Escalar p/ programa / C Pausar) — ver charter campo 13/15.
+
+### 12.2 Must-have do Piloto — 9 itens bloqueadores (o piloto NÃO opera sem eles)
+
+> Cada item tem **owner nominal** (sem "a designar") + `target_file` + `evidence_required` auditável. Bloqueio até 15/10 = piloto não coleta dados. Itens 1–6 = P03 spine reduzido; 7–9 = operação SEBRAE.
+
+| # | Must-have (9) | ID / Tarefa | Owner nominal (Accountable) | Apoio / Consulted | Evidence required (path auditável) | Gate / Data |
+|---|---|---|---|---|---|---|
+| 1 | **Modelo lógico/físico 12 entidades piloto** | `P03-T01` — Modelo lógico/físico com PK/FK/cardinalidade | **Ana Silva** (Dados) — interino PF Rezende até 15/10 | PF Rezende | `01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md` + `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §1 | M03.A — até 15/10 |
+| 2 | **Envelope evento + schema registry** | `P03-T03` — Envelope canônico + replay | **Marcos** (Infra/Plataforma) — PF Rezende interino | Ana Silva | `01-work/dados-tech-financas/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1.md` + `01-work/dados-tech-financas/refinamento-modelo-dados/schema-registry/fixtures/identity.merged.v1.0.valid.json` | M03.B — até 15/10 |
+| 3 | **Dicionário físico 12 campos mapeados** | `P03-T04` — Dicionário físico mapping | **PF Rezende** (Dados interino) + **Ana Silva** revisora | Marcos | `01-work/dados-tech-financas/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1.md` + `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/corrections.csv` | M03.B — G03.B2 (DAT-010 blocking) |
+| 4 | **Catálogo métricas + grafo (12 piloto / 73 full)** | `P03-T05` — Catálogo canônico métricas | **PF Rezende** (Dados interino) | Tamara Braga | `01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md` + `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §2 | M03.C — até 28/11 |
+| 5 | **Matriz dados-finalidade + Acordo LGPD** | `P03-T08` — Matriz LGPD + ciclo de vida | **PF Rezende** (DPO interino) + **Bruno Brigida** (SEBRAE — jurídico acionado) | Tamara Braga, Marcos | `01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/acordo-cooperacao-SEBRAE-HUB-2026-10-15.md` | **15/10** go/no-go (charter c5/c9) |
+| 6 | **Fluxos linhagem / replay / DSAR + XLSX reconstruído** | `P03-T09` — Linhagem + DSAR | **Marcos** (Tech) + **PF Rezende** | Ana Silva | `01-work/dados-tech-financas/refinamento-modelo-dados/fluxos-linhagem-replay-dsar-P03-T09-v1.md` + `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/` | M03.C — até 28/11 |
+| 7 | **Infra MVP (Hostinger VPS KVM-8 + logs)** | `Infra MVP` — VPS + storage + custo | **Marcos** (Infra) | PF Rezende | `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §3 + `06-relatorios-validacao/esforco-h-2026-11-28.csv` + charter campo 11 (Hostinger) | até 04/09 valor + 28/10 operação |
+| 8 | **Workshop pitch + match curado (30 fornecedores)** | `Workshop match` — Workshop 21/10 + match manual + 15+15 pitches 28/10 | **Tamara Braga** (Lead operacional) + **Bruno Brigida** (Sponsor SEBRAE) | **Pedro Naegele** (apoio), Marcos | `06-relatorios-validacao/match-log-2026-10-28.csv` + `06-relatorios-validacao/reuniao-log-2026-10-28.csv` + `01-work/dados-tech-financas/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1.md` § match | 21/10 workshop · 28/10 evento |
+| 9 | **Fluxo medição + Relatório 28/11 + Decisão 05/12** | `Fluxo medição` — Funil 7 + esforço 2 + satisfação 3 + template relatório | **Tamara Braga** + **PF Rezende** (Accountable geral) | **Pedro Naegele**, Marcos, Bruno Brigida | `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §2 (12 métricas) + `06-relatorios-validacao/pesquisa-satisfacao-*.csv` + `06-relatorios-validacao/receita-reportada-2026-11-28.csv` | **28/11** relatório · **05/12** gate |
+
+**Checklist must-have (9 — bloqueadores; marque somente com evidence linkada):**
+
+- [ ] **P03-T01** — Modelo lógico/físico 12 entidades piloto — owner **Ana Silva** — evidence `01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md`
+- [ ] **P03-T03** — Envelope evento/schema — owner **Marcos** — evidence `01-work/dados-tech-financas/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1.md`
+- [ ] **P03-T04** — Dicionário físico 12 campos — owner **PF Rezende** — evidence `01-work/dados-tech-financas/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1.md`
+- [ ] **P03-T05** — Catálogo métricas + grafo — owner **PF Rezende** — evidence `01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md`
+- [ ] **P03-T08** — Matriz dados-finalidade + Acordo LGPD até **15/10** — owners **PF Rezende + Bruno Brigida** — evidence `01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md`
+- [ ] **P03-T09** — Fluxos linhagem/replay/DSAR — owner **Marcos** — evidence `01-work/dados-tech-financas/refinamento-modelo-dados/fluxos-linhagem-replay-dsar-P03-T09-v1.md`
+- [ ] **Infra MVP** — Hostinger VPS KVM-8 + storage — owner **Marcos** — evidence `06-relatorios-validacao/esforco-h-2026-11-28.csv` (charter c11)
+- [ ] **Workshop match** — Workshop 21/10 + match curado 28/10 — owners **Tamara Braga + Pedro Naegele + Bruno Brigida** — evidence `06-relatorios-validacao/match-log-2026-10-28.csv`
+- [ ] **Fluxo medição** — Funil + esforço + relatório **28/11** → decisão **05/12** — owners **Tamara Braga + PF Rezende + Pedro Naegele** — evidence `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §2 + `06-relatorios-validacao/receita-reportada-2026-11-28.csv`
+
+### 12.3 Métricas do Piloto — 12 mínimas (charter campo 10 → spine §2 → relatório 28/11)
+
+> **Fonte canônica:** `HUB_Charter_Piloto_SEBRAE_2026-10-28.md` **campo 10** (funil 7 + operação 2 + qualitativo 2 + intenção) detalhado em `spine-piloto-minimo-v1.md` **§2 Métricas mínimas — 12/12** (fórmula, target_file, evidence_required). Todas com denominador, fonte primária e planilha auditável — sem "% conversão" sem denominador.
+
+| # | Métrica (12) | Fórmula (charter c10 / spine §2) | Target_file | Evidence 28/11 |
+|---|---|---|---|---|
+| 1 | **inscritos** | `count(inscricao where evento=2026-10-28)` | `catalogo-metricas-grafo-P03-T05-v1.md` § inscritos | `06-relatorios-validacao/metrica-inscritos-2026-10-28.csv` |
+| 2 | **qualificados** | `count(fornecedor where diagnostico.maturidade >= threshold)` | `catalogo-metricas-grafo-P03-T05-v1.md` § qualificados | `modelo-logico-fisico-P03-T01-v1.md` + `taxonomia-estados-valor-P03-T07-v1.md` |
+| 3 | **matches** | `count(match where evento=2026-10-28)` | `catalogo-metricas-grafo-P03-T05-v1.md` § matches | `06-relatorios-validacao/match-log-2026-10-28.csv` |
+| 4 | **reunioes_realizadas** | `count(reuniao where status=realizada)` | `catalogo-metricas-grafo-P03-T05-v1.md` § reunioes | `06-relatorios-validacao/reuniao-log-2026-10-28.csv` |
+| 5 | **propostas_enviadas** | `count(proposta where enviada=true)` | `catalogo-metricas-grafo-P03-T05-v1.md` § propostas | `06-relatorios-validacao/proposta-contrato-log.csv` |
+| 6 | **contratos_fechados** | `count(contrato where assinado=true)` | `catalogo-metricas-grafo-P03-T05-v1.md` § contratos | `taxonomia-estados-valor-P03-T07-v1.md` + `proposta-contrato-log.csv` |
+| 7 | **receita_reportada_total** | `sum(receita_reportada.valor_reportado)` | `catalogo-metricas-grafo-P03-T05-v1.md` § receita | `06-relatorios-validacao/receita-reportada-2026-11-28.csv` |
+| 8 | **esforco_h_por_fornecedor** | `sum(horas_operacao) / count(inscritos)` | `templates-linhagem-evidencias-P03-T06-v1.md` § esforço | `06-relatorios-validacao/esforco-h-2026-11-28.csv` (Tamara/Pedro/Marcos) |
+| 9 | **esforco_h_por_reuniao** | `sum(horas_curadoria+evento+followup) / count(reunioes)` | `templates-linhagem-evidencias-P03-T06-v1.md` § esforço | `esforco-h-2026-11-28.csv` |
+| 10 | **satisfacao_fornecedor** | `avg(CSAT 1-10) + NPS fornecedor` | `catalogo-metricas-grafo-P03-T05-v1.md` § satisfacao | `06-relatorios-validacao/pesquisa-satisfacao-fornecedor-2026-11-28.csv` |
+| 11 | **satisfacao_comprador** | `avg(CSAT 1-10 comprador)` | `catalogo-metricas-grafo-P03-T05-v1.md` § satisfacao | `06-relatorios-validacao/pesquisa-satisfacao-comprador-2026-11-28.csv` |
+| 12 | **intencao_repetir** | `count(sim)/count(respostas)` fornecedor & comprador | `catalogo-metricas-grafo-P03-T05-v1.md` § intencao | `pesquisa-satisfacao-*.csv` campo `intencao_repetir` |
+
+Taxas derivadas (não contam no limite 12; charter c10 nota): `taxa_match=matches/qualificados`, `taxa_reuniao=reunioes/matches`, `taxa_proposta=propostas/reunioes`, `taxa_contrato=contratos/propostas`, `taxa_conversao_ponta_a_ponta=contratos/inscritos` — reportadas no relatório 28/11.
+
+### 12.4 Template do Relatório pós-piloto — 28/11 (charter campo 10 + campo 14)
+
+> **Owner:** Tamara Braga + PF Rezende · **Deadline:** **28/11/2026** · **Gate seguinte:** decisão **05/12** (charter campo 15) com PF Rezende + Tamara Braga + Bruno Brigida · **Registro:** `04-project-management/relatorios-status/relatorio-piloto-SEBRAE-2026-11-28.md` + `04-project-management/atas-reuniao/` + `00-project-control/decisoes/DEC-PILOTO-2026-12-05.md` (se A/B).
+
+**Template — estrutura mínima (linka charter campo 10 e campo 14):**
+
+```markdown
+# Relatório Piloto SEBRAE 28/10 — 28/11/2026
+Owner: Tamara Braga + PF Rezende | Charter: HUB_Charter_Piloto_SEBRAE_2026-10-28.md c10/c14 | Spine: spine-piloto-minimo-v1.md §2
+
+## 1. Funil (7) — charter c10
+| etapa | n | taxa | denominador | fonte primária |
+|---|---|---|---|---|
+| inscritos |  | — | evento=2026-10-28 | inscricao log |
+| qualificados |  | inscritos | diagnostico OK | diagnostico |
+| match → reuniao → proposta → contrato → receita (R$) |  | ver taxas derivadas | match/reuniao/proposta logs | 06-relatorios-validacao/*.csv |
+
+## 2. Esforço & Custo (2) — charter c10/c11
+- esforco_h_por_fornecedor, esforco_h_por_reuniao, esforco_h_por_contrato (custo/hora + custo/match)
+- infra Hostinger VPS (Marcos) — custo realizado
+
+## 3. Satisfação & Intenção (3) — charter c10
+- NPS/CSAT fornecedor (≥7 para sucesso), CSAT comprador, intencao_repetir ≥50% (campo 14)
+
+## 4. Classificação binária — charter c14 (sem zona cinza)
+- SUCESSO se: ≥20% reuniões (≥6/30) + ≥10% propostas (≥3/30) + ≥1 contrato/receita auditável + esforço documentado + NPS ≥7 + intencao ≥50% + LGPD 15/10 OK
+- FRACASSO se: qualquer um (<10% reuniões OU 0 propostas OU 0 contrato/receita OU esforço >40h/reuniao OU satisfação <6 OU LGPD não assinado até 15/10)
+
+## 5. Decisão recomendada (05/12 — charter c15)
+- ( ) A Repetir piloto (ajustes, custo marginal menor)
+- ( ) B Escalar para programa (cofinanciamento conteúdo/eventos + orçamento SEBRAE 2026)
+- ( ) C Pausar/encerrar (documentar aprendizado)
+Evidência: logs 06-relatorios-validacao/*.csv + pesquisa-satisfacao + esforço-h
+```
+
+**Critério de aceite do relatório (charter campo 14 — binário, sem zona cinza):**
+
+- **Sucesso (todos devem ocorrer):** ≥6/30 reuniões + ≥3/30 propostas + ≥1 contrato/receita auditável + esforço/h por contrato documentado + NPS ≥7 + intenção repetir ≥50% + acordo LGPD até 15/10.
+- **Fracasso (qualquer um):** <10% reuniões OU 0 propostas em 30d OU 0 contrato/receita OU esforço >40h/reunião sem queda projetável OU satisfação <6 OU LGPD/acordo não assinado até 15/10 (piloto não opera).
+
+### 12.5 Como usar este anexo no dia a dia
+
+1. **View Estratégico vs Operacional:** View A para gates P00→P07 (dependências); View B para tracking diário do piloto (Prep→Evento→Follow-up→Decisão) com filtro P03/P04/P05.
+2. **Check must-have:** os 9 itens acima são **bloqueadores** — qualquer um pendente em 15/10 impede coleta de dados pessoais (LGPD).
+3. **Relatório 28/11:** template §12.4 deve sair com **12 métricas + classificação binária charter c14**; sem ele, gate 05/12 não delibera.
+4. **Decisão 05/12:** registrar em `00-project-control/decisoes/DEC-PILOTO-2026-12-05.md` + ata SEBRAE; sem prorrogação tácita.
+
+> **Verificação Task 8:**
+> ```bash
+> grep -n "28/10" 04-project-management/cronogramas/cronograma-fases-v1.base  # >0
+> python3 -c "import yaml; print(len(yaml.safe_load(open('04-project-management/cronogramas/cronograma-fases-v1.base'))['views']))"  # ==8
+> grep -n "Cronogramas separados" 04-project-management/planos-mestres/HUB_Plano_Fases_v1.md  # §12
+> grep -c "^- \[ \]" 04-project-management/planos-mestres/HUB_Plano_Fases_v1.md  # >=9 no §12
+> ```

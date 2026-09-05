@@ -1,3 +1,5 @@
+# Pilot distinction: P03 spine mínimo 12 entidades/métricas (spine-piloto-minimo-v1.md §1-2) vs full 25/73 — ver 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md
+# Owners: nominal (Ana Silva, PF Rezende interino, Tamara) — grep -R "a designar" ==0 for P03-P07 (verified 2026-09-05)
 filters:
   and:
     - file.hasTag("task")
@@ -116,9 +118,9 @@ views:
       - dependencies
       - gap_ids
     sort:
-      - column: formula.priority_rank
+      - property: formula.priority_rank
         direction: ASC
-      - column: sequence
+      - property: sequence
         direction: ASC
     canvasBasesLayout: grid
     canvasBasesEdgeMode: properties
@@ -126,7 +128,18 @@ views:
     canvasBasesShowBodyEditor: false
     canvasBasesNodeWidth: 380
     canvasBasesNodeHeight: 220
-    canvasBasesLinkedCanvasPath: "04-project-management/tarefas/HUB_Tarefas_Projeto.canvas"
+    canvasBasesLinkedCanvasPath: 04-project-management/tarefas/HUB_Tarefas_Projeto.canvas
     canvasBasesPreservePositions: true
     canvasBasesRemoveMissingNodes: true
     canvasBasesTaskNotesMode: off
+    canvasBasesNodePositions:
+      canvas-bases-file-1isa5lm:
+        x: 395
+        y: 710
+        width: 380
+        height: 220
+      canvas-bases-file-1c6wvdq:
+        x: 0
+        y: 0
+        width: 380
+        height: 220

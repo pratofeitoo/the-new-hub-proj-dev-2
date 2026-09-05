@@ -107,10 +107,10 @@ O fluxo de execução é:
 
 `P01 Oferta & Negócio` → `P02 Produto & Operação` → `P03 Dados Canônicos` → `P04 Governança` ↔ `P05 Tecnologia` → `P06 Economia & GTM` → `P07 Portão de Lançamento`.
 
-- P01: 7 tarefas concluídas; cenários S01…S06 assinados em `03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/`.
-- P02: 6 tarefas concluídas.
-- P03: 9 itens + gate em elaboração em `01-work/dados-tech-financas/refinamento-modelo-dados/` (todos `rascunho`).
-- P04–P07: 34 tarefas pendentes.
+- P01: 7 tarefas **`em-revisao`** (reclassificadas 2026-09-05 de `concluido`; **M01 não aprovado — sem `DEC-M01` nem `02-review/pacotes/P01-Oferta-Negocio.md`** até gate). Artefatos em `01-work/`+`01-work/pesquisa-e-confianca/` (rascunho) e `99-archive/superado/` (blueprint v1 superado); cenários S01…S06 permanecem `hypothesis` em `03-approved/` (única exceção pré-lifecycle), não conferem gate.
+- P02: 6 tarefas **`em-revisao`** (reclassificadas 2026-09-05; **M02 não aprovado — sem `DEC-M02` nem `02-review/pacotes/P02-Produto-Operacao.md`**). Depende de **M01**. Rascunhos em `01-work/produto-e-operacao/refinamento-produto/` aguardando revisão Segurança/Governança (G02.3/G02.6/G02.7).
+- P03: 9 itens + gate em elaboração em `01-work/dados-tech-financas/refinamento-modelo-dados/` (todos `rascunho`/`em-revisao`; M03.A/B/C pendentes).
+- P04–P07: 34 tarefas `pendente`. **Hierarquia canônica:** `matriz-fases-tarefas-v1.md` § Hierarquia: task → plano fase → marcos → log → matriz; `status: concluido` só após `DEC-M*` (ver `marcos-fases-v1.md` M01/M02 + auditoria 2026-09-05 §7).
 - `GOV-001` (estrutura societária/CNPJs) continua sendo o bloqueador principal da documentação oficial.
 - Drive `THE NEW HUB/` = espelho somente-leitura de `03-approved/` + `README-DRIVE-MIRROR.md`; pastas legadas aposentadas em 2026-09-05.
 

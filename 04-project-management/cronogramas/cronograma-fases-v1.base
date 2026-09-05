@@ -1,3 +1,7 @@
+# HUB Cronograma Fases v1 — Dual-track (Task 8 — Piloto SEBRAE 28/10)
+# View A: Estratégico — P00→P07 Gates & Dependências — datas-âncora: 15/10 (LGPD/acordo), 28/10 (Evento SEBRAE), 28/11 (Relatório), 05/12 (Decisão gate)
+# View B: Operacional — Piloto SEBRAE 28/10 (Prep 03/09–27/10 → Evento 28/10 → Follow-up 29/10–27/11 → Relatório 28/11 → Decisão 05/12) — refs: charter HUB_Charter_Piloto_SEBRAE_2026-10-28.md c13 + spine-piloto-minimo-v1.md §1-§2
+# Datas-âncora operacionais: 28/10 Evento SEBRAE-SP (âncora), 28/11 Relatório pós-piloto, 05/12 Decisão gate, 15/10 Acordo LGPD (go/no-go)
 filters:
   and:
     - file.inFolder("04-project-management/planos-fase")
@@ -127,3 +131,52 @@ views:
       - priority
     summaries:
       formula.gap_count: Sum
+  # --- Task 8 dual-track: 2 new views (A Estratégico + B Operacional) — datas-âncora 28/10, 28/11, 05/12, 15/10 ---
+  - type: table
+    name: "Estratégico — P00→P07 Gates & Dependências (datas-âncora)"
+    # View A — Estratégico: ordem P00→P07 + gates & dependências; datas-âncora 15/10 (Acordo LGPD go/no-go), 28/10 (Evento SEBRAE), 28/11 (Relatório), 05/12 (Decisão gate)
+    # Depends: M00→M01→M02→M03.A→M03.B→M03→M04+M05→M06→M07; spine P03 crítico; refs marcos-fases-v1.md + HUB_Plano_Fases_v1.md §2.1
+    filters:
+      and:
+        - file.inFolder("04-project-management/planos-fase")
+        - file.ext == "md"
+        - phase != ""
+    order:
+      - phase
+      - formula.status_icon
+      - file.name
+      - status
+      - priority
+      - owner
+      - gap_ids
+      - formula.is_critical_path
+      - formula.can_parallel
+      - related_notes
+    columnSize:
+      phase: 70
+      formula.status_icon: 40
+      file.name: 320
+      formula.is_critical_path: 60
+  - type: table
+    name: "Operacional — Piloto SEBRAE 28/10 (Prep → Evento → Follow-up → Decisão)"
+    # View B — Operacional: Piloto SEBRAE 28/10 — Prep 03/09–27/10 → Evento 28/10 (SEBRAE-SP) → Follow-up 29/10–27/11 → Relatório 28/11 → Decisão 05/12; go/no-go 15/10 (Acordo LGPD)
+    # Charter HUB_Charter_Piloto_SEBRAE_2026-10-28.md c13 + spine-piloto-minimo-v1.md §1-§2; foco P03 spine reduzido + P04 LGPD + Infra + Workshop
+    filters:
+      or:
+        - phase == "P03"
+        - phase == "P04"
+        - phase == "P05"
+    order:
+      - phase
+      - formula.status_icon
+      - file.name
+      - status
+      - owner
+      - gap_ids
+      - priority
+      - related_notes
+    columnSize:
+      phase: 70
+      formula.status_icon: 40
+      file.name: 330
+      owner: 160

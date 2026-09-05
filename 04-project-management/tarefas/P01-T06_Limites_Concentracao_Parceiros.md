@@ -2,12 +2,14 @@
 title: P01-T06 — Limites de concentração de parceiros (thresholds)
 task_id: P01-T06
 phase: P01
-status: concluido
+status: em-revisao
 priority: alta
 area: gtm
 layer: governance
 owner:
-  - Governança (a designar)
+  - PF Rezende // blocked: aguardando nomeação Governança até 2026-10-15
+blocked_reason: aguardando nomeação Governança — limites concentração GTM-006
+blocked_until: 2026-10-15
 gap_ids:
   - GTM-006
 dependencies:

@@ -2,12 +2,14 @@
 title: P02-T05 — Filas de revisão + overrides + trilha auditoria
 task_id: P02-T05
 phase: P02
-status: concluido
+status: em-revisao
 priority: alta
 area: operations
 layer: refining
 owner:
-  - Operações (a designar)
+  - PF Rezende // blocked: aguardando nomeação Operações até 2026-10-15
+blocked_reason: aguardando nomeação Operações — filas revisão PRD-007
+blocked_until: 2026-10-15
 gap_ids:
   - PRD-007
 dependencies:

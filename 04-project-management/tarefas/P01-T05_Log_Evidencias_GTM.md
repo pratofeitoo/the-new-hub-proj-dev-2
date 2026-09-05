@@ -2,12 +2,14 @@
 title: P01-T05 — Log de evidências por rota GTM (hipótese vs tração)
 task_id: P01-T05
 phase: P01
-status: concluido
+status: em-revisao
 priority: alta
 area: gtm
 layer: refinement
 owner:
-  - GTM (a designar)
+  - Tamara // blocked: aguardando nomeação GTM até 2026-10-15
+blocked_reason: aguardando nomeação GTM
+blocked_until: 2026-10-15
 gap_ids:
   - GTM-002
 dependencies:

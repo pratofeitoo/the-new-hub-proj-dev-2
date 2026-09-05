@@ -1,3 +1,4 @@
+# Owners nominal (Task 4) — linked gaps reference tarefas with PF Rezende/Tamara/Ana Silva; pilot vs full via spine-piloto-minimo
 filters:
   and:
     - file.inFolder("00-project-control/registro-lacunas")

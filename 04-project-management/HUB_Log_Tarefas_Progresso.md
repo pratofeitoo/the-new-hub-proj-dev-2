@@ -27,8 +27,9 @@ tags:
 |---|---|
 | `pendente` | Não iniciada; aguardando início ou dependência |
 | `em-andamento` | Trabalho ativo em execução |
-| `em-revisao` | Entregável produzido; aguardando revisão/aceite |
-| `done` | Concluída e aceita |
+| `em-revisao` | Entregável produzido; aguardando revisão/aceite. **Regra de gate:** P01/P02 só saem de `em-revisao` após `DEC-M01`/`DEC-M02` + pacote `02-review/pacotes/P01-Oferta-Negocio.md`/`P02-Produto-Operacao.md` |
+| `concluido` | **Sinônimo de `done` — Concluída e aceita APÓS decisão nominal `DEC-M*` + pacote `02-review/pacotes/`. Sem DEC, task permanece `em-revisao`** |
+| `done` | Concluída e aceita (legado — usar `concluido` nas tarefas `P*.md`) |
 | `bloqueada` | Travada por dependência, decisão ou recurso; registrar motivo no log |
 | `cancelada` | Não será executada / descartada |
 
@@ -51,24 +52,24 @@ tags:
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades\|P01-T01]] Matriz das 4 Unidades | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade\|P01-T02]] Matriz Oferta × Comprador × Capacidade | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T03_Taxonomia_Receita\|P01-T03]] Taxonomia de Receita | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores\|P01-T04]] Segmentos, Orçamentos e Compradores | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T05_Log_Evidencias_GTM\|P01-T05]] Log de Evidências GTM | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros\|P01-T06]] Limites de Concentração de Parceiros | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P01-T07_Roadmap_Gates\|P01-T07]] Roadmap e Gates | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P01-T01_Matriz_4_Unidades\|P01-T01]] Matriz das 4 Unidades | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P01-T02_Matriz_Oferta_Comprador_Capacidade\|P01-T02]] Matriz Oferta × Comprador × Capacidade | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P01-T03_Taxonomia_Receita\|P01-T03]] Taxonomia de Receita | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P01-T04_Segmentos_Orcamentos_Compradores\|P01-T04]] Segmentos, Orçamentos e Compradores | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P01-T05_Log_Evidencias_GTM\|P01-T05]] Log de Evidências GTM | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros\|P01-T06]] Limites de Concentração de Parceiros | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P01-T07_Roadmap_Gates\|P01-T07]] Roadmap e Gates | `em-revisao` | 2026-09-05 |
 
 ### P02 — Produto e Operação
 
 | Tarefa | Status | Última atualização |
 |---|---|---|
-| [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades\|P02-T01]] Taxonomia de Capacidades | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos\|P02-T02]] Jornada, Estados e Eventos | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy\|P02-T03]] Matriz de Autorização e Tenancy | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T04_SOPs_CAOS\|P02-T04]] SOPs e CAOS | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides\|P02-T05]] Filas de Revisão e Overrides | `done` | 2026-08-29 |
-| [[04-project-management/tarefas/P02-T06_RACI_Accountable_Unico\|P02-T06]] RACI — Accountable Único | `done` | 2026-08-29 |
+| [[04-project-management/tarefas/P02-T01_Taxonomia_Capacidades\|P02-T01]] Taxonomia de Capacidades | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P02-T02_Jornada_Estados_Eventos\|P02-T02]] Jornada, Estados e Eventos | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy\|P02-T03]] Matriz de Autorização e Tenancy | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P02-T04_SOPs_CAOS\|P02-T04]] SOPs e CAOS | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides\|P02-T05]] Filas de Revisão e Overrides | `em-revisao` | 2026-09-05 |
+| [[04-project-management/tarefas/P02-T06_RACI_Accountable_Unico\|P02-T06]] RACI — Accountable Único | `em-revisao` | 2026-09-05 |
 
 ### P03 — Dados Canônicos
 
@@ -143,6 +144,25 @@ tags:
 ## Log cronológico
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
+
+### 2026-09-05 — Task 7 — P01/P02 reclassificadas para `em-revisao` (M01/M02 sem DEC)
+
+- **O que mudou:** 13 tarefas `P01-T01..T07` (7) + `P02-T01..T06` (6) reclassificadas de `concluido`/`done` → `em-revisao`. Frontmatter `status: em-revisao` + tabelas Registro por fase atualizadas para `2026-09-05`.
+- **Motivo / Hierarquia respeitada:** `matriz-fases-tarefas-v1.md` § Hierarquia (task → plano fase → marcos → log → matriz) + `marcos-fases-v1.md` M01/M02 exigem `DEC-M01`/`DEC-M02` + pacote `02-review/pacotes/P01-Oferta-Negocio.md`/`P02-Produto-Operacao.md`. Auditoria `auditoria-tarefas-executavel-2026-09-05.md` §7 acusou 13 `status: concluido` órfãos (`grep concluido ==13` vs `ls DEC-M*.md ==0`); nenhum `03-approved/` nem `DEC-M*.md` existe — gate não aprovado.
+- **Decisão tomada:** **reclassificar** (não criar DEC). `ls 00-project-control/decisoes/DEC-M*.md` → 0; `ls 02-review/pacotes/P0*-*.md` → só `P01-aceite-cross-functional-v1.md` (pacote parcial, não pacote canônico M01/M02). Criar DEC sem evidência violaria `marcos-fases-v1.md` § "Sem gate aprovado, próxima fase não inicia" e `project-map.md` lifecycle.
+- **Legenda atualizada:** adicionado `concluido` (= `done` pós-DEC) e regra `em-revisao` só sai com `DEC-M*` + pacote; evita novo "concluído sem gate".
+- **Bloqueios:** atualizado para `P01/P02 em em-revisao aguardando DEC-M01/M02`. P03 em `em-revisao` (spine), P04–P07 `pendente`.
+- **Verificação:** `grep -c "status: concluido" 04-project-management/tarefas/P01*.md P02*.md` == 0; `ls 00-project-control/decisoes/DEC-M*.md` == 0; `project-map.md` § Faseamento reflete M01/M02 pendentes.
+
+### 2026-09-05 — Tasks 4–8 — Framework executável: owners normalizados + critérios P03/P04-P07 + dual cronograma (retry, no network)
+
+- **Task 4 — Owners P03–P06 normalizados (0 a designar):** `grep -R "a designar" 04-project-management/tarefas/P03*.md` == 0; `P04*.md` == 0; `P05*.md` == 0; `P06*.md` == 0 (verificação local). Frente: `P03-T01..T09` com `owner: [Ana Silva]` / `PF Rezende (interino)` + `accountable` nominal + `blocked_reason: "aguardando contratação..."` + `blocked_until: 2026-10-10/15` onde nomeação pendente (cf. `Tarefa_Executavel_Definicao.md §9` — proibição "a designar"; `README.md §6` MUST `owner` nominal). `P04-T01..T08` (GOV) → `PF Rezende (interino — Jurídico/DPO)` + `blocked_until: 2026-10-10/15`; `P05-T01..T07` (Tech) → `PF Rezende // blocked: aguardando nomeação Tech até 2026-10-15` + `blocked_until: 2026-10-15`; `P06-T01..T12` (Finanças/GTM) → `Tamara`/`PF Rezende` provisional + `blocked_until: 2026-10-12/15` para `FIN-001`/`BRD-002`. Lifecycle preservado: `owner` em task → plano (`P03_Dados_Canonicos.md` ownership) → marcos → log → matriz (`matriz-fases-tarefas-v1.md` 56 tarefas atualizada — zero "a designar" para P03–P06).
+- **Task 5 — Critérios P03 (G03.A1–C5):** 9 tarefas `P03-T01..T09` reescritas com `Acceptance criteria` testável + `evidence_required` + `verification` (comando `ls`/`grep` local). Ex: `P03-T01` 25/25 `canonical_id` + 12/12 FK/temporalidade (G03.A1 DAT-001), `P03-T04` 41 campos/16 tabelas + `DAT-010/G03.B2 blocking: yes` (corrections.csv), `P03-T08` 5 fluxos × 41 campos LGPD, `P03-T09` fluxos + XLSX + `06-relatorios-validacao/` PASS. Cada `target_file` aponta `01-work/dados-tech-financas/refinamento-modelo-dados/` (não `99-archive/superado` sem nota). Verificação: `grep -L "Acceptance criteria" 04-project-management/tarefas/P03*.md` == 0; `grep -R "G03\." 04-project-management/tarefas/P03*.md | wc -l` ≥ 9.
+- **Task 6 — Critérios P04–P07 (34 tarefas pendentes, gates blocking):** `P04-T01..T08` (G04.1–G04.9 GOV-001 blocking até parecer jurídico), `P05-T01..T07` (G05.1–G05.7; `TEC-005/G05.4` e `TEC-007/G05.7` **blocking: yes** — baseline custo/latência + release/rollback), `P06-T01..T12` (G06.1–G06.12; `BRD-002/GTM-007/G06.10` **blocking: yes** — nenhum claim > evidência, rótulo `Ilustrativo — não validado`), `P07-T01..T07` (G07.1–G07.8; `LCH-007/G07.7` **blocking: yes** — `03-approved/` só com `DEC-M07`). Cada task com `evidence_required` auditável (`01-work/pesquisa-e-confianca/...`, `02-review/portao-lancamento/`, `05-resources/...`) e `verification` com `grep -c "TBD|a definir|a designar" target_file ==0` + `diff` matriz vs decks onde aplicável. P07 owner corrigido: `P07-T07` já `PF Rezende` nominal; demais `P07-T*` normalizados `PF Rezende`/`Tamara` provisional com `blocked_until` — `grep -R "a designar" 04-project-management/tarefas/P07*.md` == 0 após fix.
+- **Tasks 7–8 — Dual cronograma + templates sync:** `04-project-management/cronogramas/cronograma-fases-v1.base` dual-track validado — **View A Estratégico** (P00→P07 Gates & Dependências; dependência `M00→M01→M02→M03.A→M03.B→M03→M04+M05→M06→M07`; datas-âncora `15/10 Acordo LGPD go/no-go`, `28/10 Evento SEBRAE-SP`, `28/11 Relatório`, `05/12 Decisão gate`) + **View B Operacional** (Piloto SEBRAE 28/10: Prep 03/09–27/10 → Evento 28/10 → Follow-up 29/10–27/11 → Relatório 28/11 → Decisão 05/12; refs `HUB_Charter_Piloto_SEBRAE_2026-10-28.md c13` + `spine-piloto-minimo-v1.md §1–§2`). Pilot vs full separado: full = 25 entidades + 41 campos + 73 métricas; piloto = 12 entidades mínimas `spine-piloto-minimo-v1.md`. Templates: `atas-reuniao/_template-ata.md` + `relatorios-status/template-relatorio-status.md` receberam `owner`, `evidence_required`, `gate`, `DEC-*` link, `blocked_until` (frontmatter + seção/tabela rastreabilidade).
+- **Tabelas Registro por fase:** P01 (7) + P02 (6) permanecem `em-revisao` (2026-09-05) — aguardando `DEC-M01`/`DEC-M02` + pacotes (lifecycle hierarchy preservada, sem promoção para `concluido`). P03–P07 mantêm `em-revisao`/`pendente` conforme execução, mas com frontmatter executável completo.
+- **Verificação geral (no network, local only):** `grep -R "a designar" 04-project-management/tarefas/P03*.md P04*.md P05*.md P06*.md | wc -l` == 0 (P07 ==0 após fix); `grep -R "evidence_required:" 04-project-management/tarefas/P03*.md P04*.md P05*.md P06*.md P07*.md | wc -l` == 56; `ls 04-project-management/cronogramas/cronograma-fases-v1.base && grep -c "Estratégico\|Operacional.*Piloto SEBRAE 28/10" 04-project-management/cronogramas/cronograma-fases-v1.base` == 2; `grep -c "TBD\|a definir" 04-project-management/tarefas/P03-T01*.md` == 0; `ls 00-project-control/decisoes/DEC-M*.md` == 0 (gates blocking preservados).
+- **Bloqueios atualizados:** ver § Bloqueios e pontos de atenção (P03–P06 0 a designar, P07 0 após fix; `DAT-010/G03.B2`, `TEC-005/G05.4`, `TEC-007/G05.7`, `LCH-007/G07.7`, `BRD-002/GTM-007` blocking).
 
 ### 2026-08-29 — P03-T09 rascunho — Fluxos Linhagem/Replay/DSAR + XLSX reconstruído (G03.C4/C5)
 
@@ -357,8 +377,17 @@ tags:
 
 > Atualizar sempre que um bloqueio surgir ou for resolvido.
 
-- **Atual (2026-08-29):** P01 (7) e P02 (6) em `done` (`concluido`); P03 (9) em `em-revisao` (rascunhos G03.A1–G03.C5 entregues, aguardando validação Dados+Tech+LGPD); P04 (8), P05 (7), P06 (12) e P07 (7) em `pendente` — reset para replanejamento.
-- **Em observação:** G02.3/G02.6/G02.7 têm rascunhos em `01-work/produto-e-operacao/refinamento-produto/` e `14_RACI` aguardando revisão Segurança/Governança antes de reabrir P02→P03.
+- **Atual (2026-09-05) — pós Tasks 4–8 retry (no network):** P01 (7) e P02 (6) em `em-revisao` — **aguardando `DEC-M01`/`DEC-M02` + pacotes `02-review/pacotes/P01-Oferta-Negocio.md`/`P02-Produto-Operacao.md`** (13 reclassificadas de `concluido`; §7 auditoria 13 órfãos; lifecycle `task → plano fase → marcos → log → matriz` preservado; `ls 00-project-control/decisoes/DEC-M*.md ==0` confirma gate não aprovado). P03 (9) em `em-revisao` (rascunhos G03.A1–G03.C5 entregues, aguardando validação Dados+Tech+LGPD). P04 (8), P05 (7), P06 (12) e P07 (7) em `pendente` — mas com frontmatter executável completo (owners nominais + `evidence_required` + `gate` + `blocked_until`).
+- **Owners — 0 a designar (Task 4 normalização):** `grep -R "a designar" 04-project-management/tarefas/P03*.md` == 0; `P04*.md` == 0; `P05*.md` == 0; `P06*.md` == 0; `P07*.md` == 0 após fix (P07 corrigido). Padrão `Tarefa_Executavel_Definicao.md §9` + `tarefas/README.md §6`: `owner` é pessoa nominal (`Ana Silva`, `Tamara`, `PF Rezende (interino)`) ou `blocked: aguardando nomeação + blocked_until`. Ex: `P03-T01 owner: [Ana Silva + PF Rezende (interino)] blocked_until: 2026-10-15`, `P04-T01..T08` → `PF Rezende (interino — Jurídico/DPO) blocked_until: 2026-10-10/15`, `P05-T*` → `PF Rezende // blocked: aguardando nomeação Tech até 2026-10-15` + `blocked_until: 2026-10-15`, `P06-T01` → `Finanças (interino)` + `blocked_until: 2026-10-12`, `P06-T10` → `Tamara + PF Rezende provisional blocked_until: 2026-10-15`. Verificação local sem rede: `grep -L "^owner:" tarefas/P*.md` == 0; `grep -R "a designar" tarefas/P*.md | wc -l` == 0.
+- **Gates blocking preservados (não bypassáveis, Tasks 5–6):**
+  - `DAT-010/G03.B2` — **blocking: yes** em `P03-T04` (Dicionário físico 41 campos/16 tabelas + `04-registro-correcoes/corrections.csv` DAT010-001..004) — libera só com `G03.B2` PASS + `06-relatorios-validacao/` PASS (M03.B).
+  - `TEC-005/G05.4` — **blocking: yes** em `P05-T04` (Baseline técnico custo/latência/volume/rate-limit M0) — `01-work/dados-tech-financas/modelos-financeiros/baseline-tecnico-capacidade-P05-T04-v1.{md,csv}` publicado + integrado em `modelo-financeiro-P06-T02-v1.xlsx` § premissas técnicas + parecer `02-review/pacotes/P05-Tecnologia.md §G05.4`; sem baseline, M05 não aprova e P06 não inicia.
+  - `TEC-007/G05.7` — **blocking: yes** em `P05-T07` (Processo release/rollback + controles ambiente + modelo suporte) — `02-review/01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md` + runbook aprovado.
+  - `LCH-007/G07.7` — **blocking: yes** em `P07-T07` (Ciclo vida artefatos `blocked/refining → aprovado → 03-approved/` — política `02-review/portao-lancamento/ciclo-vida-artefatos-v1.md`); `test -z "$(ls 03-approved/lancamento/ 2>/dev/null)"` == 0 até `DEC-M07` (`03-approved/` só com `02-review/aprovado/` + `DEC-M07`).
+  - `BRD-002/GTM-007/G06.10` — **blocking: yes** em `P06-T10` (Matriz afirmação-evidência) + `P06-T01` (premissas `Ilustrativo — não validado`) — nenhum claim > evidência; decks em `05-resources/apresentacoes/pitch-decks/RECONCILIADO_P06-T10/` só com review evidência+jurídico; `STR-003` permanece blocking até evidência+responsável+decisão interdomínios.
+- **Lifecycle hierarchy preservada (Do NOT bypass):** `task frontmatter (owner, evidence_required, gate, DEC-*, blocked_until)` → `plano fase (P01_Arquitetura... P07_Portao_Lancamento.md)` → `marcos (marcos-fases-v1.md M01→M07, G01.1..G07.8)` → `log (este arquivo)` → `matriz (matriz-fases-tarefas-v1.md 56 tarefas, zero "a designar" P03–P07)`. Nenhum `status: concluido` sem `DEC-M*` + pacote `02-review/pacotes/P0X-*.md` (regra `em-revisao` só sai com DEC).
+- **Dual cronograma (Task 8):** `04-project-management/cronogramas/cronograma-fases-v1.base` — **View A Estratégico** (P00→P07 Gates & Dependências; `M00→M01→M02→M03.A→M03.B→M03→M04+M05→M06→M07`; datas-âncora `15/10 Acordo LGPD go/no-go`, `28/10 Evento SEBRAE-SP`, `28/11 Relatório`, `05/12 Decisão gate`) + **View B Operacional** (Piloto SEBRAE 28/10: Prep 03/09–27/10 → Evento 28/10 → Follow-up 29/10–27/11 → Relatório 28/11 → Decisão 05/12; refs `HUB_Charter_Piloto_SEBRAE_2026-10-28.md c13` + `spine-piloto-minimo-v1.md §1–§2`). Pilot vs full separado — full 25/41/73, piloto 12 entidades mínimas; sem `00-project-control/decisoes/DEC-M*.md`, ambos os cronogramas permanecem em `em-revisao`/`pendente`.
+- **Em observação:** G02.3/G02.6/G02.7 têm rascunhos em `01-work/produto-e-operacao/refinamento-produto/` e `14_RACI` aguardando revisão Segurança/Governança antes de liberar M02; M01 depende de G01.1–G01.7 + revisão Estratégia/Finanças/Jurídico/Ops. `03-approved/lancamento/` vazio até `DEC-M07` (G07.7); `02-review/pacotes/P01-Oferta-Negocio.md` e `P02-Produto-Operacao.md` vazios até revisão M01/M02.
 
 ## Marcos
 

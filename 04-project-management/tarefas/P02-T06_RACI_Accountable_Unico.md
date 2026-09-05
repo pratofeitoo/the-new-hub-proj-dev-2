@@ -2,13 +2,15 @@
 title: P02-T06 — RACI v1 com accountable único + autoridade delegada
 task_id: P02-T06
 phase: P02
-status: concluido
+status: em-revisao
 priority: critica
 area: operations
 layer: blueprint
 owner:
-  - Operações (a designar)
+  - PF Rezende // blocked: aguardando nomeação Operações até 2026-10-15
   - PF Rezende
+blocked_reason: aguardando nomeação Operações — RACI GOV-008
+blocked_until: 2026-10-15
 gap_ids:
   - GOV-008
   - STR-007
