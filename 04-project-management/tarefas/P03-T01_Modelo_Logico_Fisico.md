@@ -2,8 +2,7 @@
 title: P03-T01 — Modelo lógico/físico com PK/FK/cardinalidade (M03.A)
 task_id: P03-T01
 phase: P03
-status:
-  - em-revisao
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: blueprint
@@ -13,7 +12,7 @@ gap_ids:
   - DAT-001
 dependencies:
   - P02-T01
-target_file: 02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-001]]"
@@ -46,7 +45,7 @@ A proposta não deve manter entidade sem chave estável; a validação por arqui
 ## Execução
 
 - **Entregável produzido:** [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — 25 entidades com `canonical_id` (PK estável), 12 relacionamentos com PK/FK/cardinalidade/temporalidade, tipos de objeto por família, regras temporais e diagrama ER Mermaid; crosswalk `identity_alias` com `hub_id`/`external_id`/`source_system`.
-- **Blueprint atualizado:** [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]] vinculado ao rascunho (G03.A1).
+- **Blueprint atualizado:** [[99-archive/superado/01-blueprint-v1-submissao-superada/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]] vinculado ao rascunho (G03.A1).
 - **Resultado:** nenhuma entidade sem chave estável; `relationship_id` e bridges N:N temporal formalizados; `valid_from/to` e `occurred_at`/`recorded_at` padronizados (UTC).
 - **Próximo:** revisão Dados+Tech, popular `identity_alias` com dataset representativo, constraints físicas e testes de órfãos/unicidade antes de G03.A2.
 

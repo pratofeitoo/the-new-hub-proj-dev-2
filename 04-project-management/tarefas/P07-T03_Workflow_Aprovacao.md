@@ -2,8 +2,7 @@
 title: P07-T03 — Workflow de aprovação + templates pacote revisão
 task_id: P07-T03
 phase: P07
-status:
-  - pendente
+status: pendente
 priority: critica
 area: launch-vision
 layer: approval
@@ -13,7 +12,7 @@ gap_ids:
   - LCH-003
 dependencies:
   - P07-T01
-target_file: 02-review/criterios-aprovacao/
+target_file: 02-review/pacotes/
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-003]]"

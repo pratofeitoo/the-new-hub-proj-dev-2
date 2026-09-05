@@ -2,8 +2,7 @@
 title: P02-T01 — Taxonomia de capacidades + contratos de módulos
 task_id: P02-T01
 phase: P02
-status:
-  - concluido
+status: concluido
 priority: critica
 area: product
 layer: blueprint
@@ -13,7 +12,7 @@ gap_ids:
   - PRD-001
 dependencies:
   - P01-T02
-target_file: 02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/produto/HUB_Blueprint_Produto_e_Capacidades.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-001]]"
@@ -45,5 +44,5 @@ Tabela com contrato por módulo (entradas, saídas, dependências, dono) em `HUB
 
 ## Execução
 
-- **Entregável produzido:** §1.1–1.2 em [[02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades]] com 6 módulos + núcleo (contratos entradas/saídas/dependências/dono).
+- **Entregável produzido:** §1.1–1.2 em [[99-archive/superado/01-blueprint-v1-submissao-superada/produto/HUB_Blueprint_Produto_e_Capacidades]] com 6 módulos + núcleo (contratos entradas/saídas/dependências/dono).
 - **Resultado:** fronteira núcleo/oferta/serviço escrita e auditável.

@@ -1,14 +1,15 @@
 ---
 task_id: BP-001
-task_type: blueprint-document
+task_type: blueprint
 status: em-revisao
-priority: critical
+priority: critica
+phase: P01
 layer: blueprint
 area: business-model
 sequence: 1
 owner:
   - PF Rezende
-target_file: 02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 dependencies: []
 gap_ids:
   - STR-001
@@ -17,7 +18,7 @@ gap_ids:
   - FIN-002
   - GTM-001
 related_notes:
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

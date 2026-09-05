@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-019
+task_type: operational
 status: in-progress
 priority: normal
 contexts:

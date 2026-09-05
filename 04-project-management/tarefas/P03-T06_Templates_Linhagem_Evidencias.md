@@ -2,8 +2,7 @@
 title: P03-T06 — Templates de linhagem + registro de evidências
 task_id: P03-T06
 phase: P03
-status:
-  - em-revisao
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: refining
@@ -13,7 +12,7 @@ gap_ids:
   - DAT-004
 dependencies:
   - P03-T05
-target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/
+target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-004]]"

@@ -2,8 +2,7 @@
 title: P07-T04 — Matriz rastreabilidade requisito→evidência→entregável
 task_id: P07-T04
 phase: P07
-status:
-  - pendente
+status: pendente
 priority: alta
 area: launch-vision
 layer: approval
@@ -13,7 +12,7 @@ gap_ids:
   - LCH-004
 dependencies:
   - P07-T01
-target_file: 02-review/evidencias/
+target_file: 04-project-management/registros-trabalho/
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-004]]"

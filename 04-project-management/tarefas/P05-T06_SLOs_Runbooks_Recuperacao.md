@@ -2,8 +2,7 @@
 title: P05-T06 — SLOs + on-call + runbooks + testes de recuperação
 task_id: P05-T06
 phase: P05
-status:
-  - pendente
+status: pendente
 priority: alta
 area: technology
 layer: refining
@@ -13,7 +12,7 @@ gap_ids:
   - TEC-002
 dependencies:
   - P05-T01
-target_file: 01-work/testes-experimentos/
+target_file: 01-work/produto-e-operacao/refinamento-produto/
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-002]]"

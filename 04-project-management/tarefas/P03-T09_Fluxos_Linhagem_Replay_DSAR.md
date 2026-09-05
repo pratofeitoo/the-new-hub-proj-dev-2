@@ -2,8 +2,7 @@
 title: P03-T09 — Fluxos linhagem/correção/replay/DSAR + reconstrução de XLSX
 task_id: P03-T09
 phase: P03
-status:
-  - em-revisao
+status: em-revisao
 priority: alta
 area: data-intelligence
 layer: refining

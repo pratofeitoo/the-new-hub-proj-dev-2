@@ -2,8 +2,7 @@
 title: P03-T08 — Matriz dados-finalidade + ciclo de vida (LGPD)
 task_id: P03-T08
 phase: P03
-status:
-  - em-revisao
+status: em-revisao
 priority: alta
 area: data-intelligence
 layer: refining

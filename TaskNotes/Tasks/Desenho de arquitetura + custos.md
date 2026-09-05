@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-006
+task_type: operational
 status: em-revisao
 priority: normal
 projects:

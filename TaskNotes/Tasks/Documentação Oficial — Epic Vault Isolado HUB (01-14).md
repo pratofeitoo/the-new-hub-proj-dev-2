@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-011
+task_type: operational
 status: open
 priority: high
 dateCreated: 2026-09-02T18:30:00.000-03:00

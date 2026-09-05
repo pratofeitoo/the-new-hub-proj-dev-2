@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-014
+task_type: operational
 status: in-progress
 priority: normal
 dateCreated: 2026-09-02T01:32:37.444-03:00

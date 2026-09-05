@@ -2,8 +2,7 @@
 title: P03-T05 — Catálogo canônico de métricas + grafo de dependências
 task_id: P03-T05
 phase: P03
-status:
-  - em-revisao
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: refining
@@ -14,7 +13,7 @@ gap_ids:
 dependencies:
   - P03-T01
   - P03-T03
-target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/
+target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-005]]"

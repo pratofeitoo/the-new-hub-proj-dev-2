@@ -2,8 +2,7 @@
 title: P04-T08 — Revisão inteligência responsável (model cards/fairness/drift)
 task_id: P04-T08
 phase: P04
-status:
-  - pendente
+status: pendente
 priority: alta
 area: governance-legal
 layer: refining

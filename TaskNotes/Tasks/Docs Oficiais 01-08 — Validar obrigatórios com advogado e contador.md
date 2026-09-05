@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-009
+task_type: operational
 title: "Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador"
 status: open
 priority: high

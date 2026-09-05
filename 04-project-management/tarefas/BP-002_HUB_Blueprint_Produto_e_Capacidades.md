@@ -1,15 +1,16 @@
 ---
 title: BP-002 — Blueprint de Produto e Capacidades do HUB
 task_id: BP-002
-task_type: blueprint-document
+task_type: blueprint
 status: em-revisao
-priority: critical
+priority: critica
+phase: P02
 layer: blueprint
 area: product
 sequence: 2
 owner:
   - PF Rezende
-target_file: 02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/produto/HUB_Blueprint_Produto_e_Capacidades.md
 dependencies:
   - BP-001
 gap_ids:
@@ -20,7 +21,7 @@ gap_ids:
   - PRD-005
   - PRD-007
 related_notes:
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

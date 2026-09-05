@@ -2,8 +2,7 @@
 title: P03-T02 — Serviço de identidade (matching/merging/survivorship)
 task_id: P03-T02
 phase: P03
-status:
-  - em-revisao
+status: em-revisao
 priority: critica
 area: data-intelligence
 layer: refining
@@ -13,7 +12,7 @@ gap_ids:
   - DAT-002
 dependencies:
   - P03-T01
-target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/
+target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-002]]"

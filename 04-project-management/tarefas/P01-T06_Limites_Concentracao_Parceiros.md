@@ -2,8 +2,7 @@
 title: P01-T06 — Limites de concentração de parceiros (thresholds)
 task_id: P01-T06
 phase: P01
-status:
-  - concluido
+status: concluido
 priority: alta
 area: gtm
 layer: governance
@@ -13,7 +12,7 @@ gap_ids:
   - GTM-006
 dependencies:
   - P01-T02
-target_file: 01-work/pesquisa-e-confianca/pesquisa/segundo-rascunho-projeto/
+target_file: 01-work/pesquisa-e-confianca/pesquisa/
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-006]]"

@@ -1,15 +1,16 @@
 ---
 title: BP-003 — Blueprint de Dados e Inteligência do HUB
 task_id: BP-003
-task_type: blueprint-document
+task_type: blueprint
 status: em-revisao
-priority: critical
+priority: critica
+phase: P03
 layer: blueprint
 area: data-intelligence
 sequence: 3
 owner:
   - PF Rezende
-target_file: 02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
 dependencies:
   - BP-001
   - BP-002
@@ -23,7 +24,7 @@ gap_ids:
   - DAT-008
   - DAT-010
 related_notes:
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

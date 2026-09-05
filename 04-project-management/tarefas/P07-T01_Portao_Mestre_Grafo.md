@@ -2,8 +2,7 @@
 title: P07-T01 — Portão mestre + grafo de dependências (LCH-001)
 task_id: P07-T01
 phase: P07
-status:
-  - pendente
+status: pendente
 priority: critica
 area: launch-vision
 layer: approval
@@ -15,7 +14,7 @@ gap_ids:
 dependencies:
   - P06-T02
   - P04-T01
-target_file: 02-review/portao-lancamento/portao-mestre-v1.md
+target_file: 04-project-management/marcos/marcos-fases-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-001]]"

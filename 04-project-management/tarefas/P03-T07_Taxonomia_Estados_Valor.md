@@ -2,8 +2,7 @@
 title: P03-T07 — Taxonomia estados de valor (potencial→realizado)
 task_id: P03-T07
 phase: P03
-status:
-  - em-revisao
+status: em-revisao
 priority: alta
 area: data-intelligence
 layer: refining
@@ -14,7 +13,7 @@ gap_ids:
   - DAT-006
 dependencies:
   - P03-T05
-target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/
+target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-006]]"

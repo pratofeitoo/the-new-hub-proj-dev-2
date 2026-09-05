@@ -2,8 +2,7 @@
 title: P06-T03 — Ponte produto→valor→receita (árvore de valor)
 task_id: P06-T03
 phase: P06
-status:
-  - pendente
+status: pendente
 priority: alta
 area: business-model
 layer: refining

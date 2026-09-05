@@ -44,7 +44,7 @@ views:
     name: Subtasks
     filters:
       and:
-        - file.hasTag("task")
+        - file.hasTag("task") && file.inFolder("TaskNotes/Tasks")
         - file.hasLink(this.file) && list(note.projects).map(file(value.replace(/^\[[^\]]+\]\((.*)\)$/, "$1").replace(/%20/g, " ")).asLink()).contains(this.file.asLink())
     groupBy:
       property: status
@@ -69,7 +69,7 @@ views:
     name: Occurrences
     filters:
       and:
-        - file.hasTag("task")
+        - file.hasTag("task") && file.inFolder("TaskNotes/Tasks")
         - file.hasLink(this.file) && note.recurrence_parent && file(note.recurrence_parent.replace(/^\[[^\]]+\]\((.*)\)$/, "$1").replace(/%20/g, " ")).asLink() == this.file.asLink()
     order:
       - status
@@ -109,7 +109,7 @@ views:
     name: Blocked By
     filters:
       and:
-        - file.hasTag("task")
+        - file.hasTag("task") && file.inFolder("TaskNotes/Tasks")
         - list(this.note.blockedBy).map(file(if(value.isType("object"), value.uid, value)).asLink()).contains(file.asLink())
     order:
       - status
@@ -131,7 +131,7 @@ views:
     name: Blocking
     filters:
       and:
-        - file.hasTag("task")
+        - file.hasTag("task") && file.inFolder("TaskNotes/Tasks")
         - list(note.blockedBy).map(file(if(value.isType("object"), value.uid, value)).asLink()).contains(this.file.asLink())
     groupBy:
       property: status

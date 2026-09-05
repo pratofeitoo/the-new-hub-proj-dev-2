@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-005
+task_type: operational
 status: open
 priority: high
 dateCreated: 2026-08-26T17:12:38.043-03:00

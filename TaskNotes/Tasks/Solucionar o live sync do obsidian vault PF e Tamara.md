@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-020
+task_type: operational
 status: open
 priority: normal
 contexts:

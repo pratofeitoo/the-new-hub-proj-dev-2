@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-008
+task_type: operational
 title: "Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M"
 status: open
 priority: normal

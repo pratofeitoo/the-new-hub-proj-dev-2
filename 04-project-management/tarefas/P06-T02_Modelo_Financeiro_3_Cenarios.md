@@ -2,8 +2,7 @@
 title: P06-T02 — Modelo financeiro 3 cenários (timing/ramp/payback)
 task_id: P06-T02
 phase: P06
-status:
-  - pendente
+status: pendente
 priority: critica
 area: business-model
 layer: refining

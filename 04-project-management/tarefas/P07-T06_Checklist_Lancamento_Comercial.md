@@ -2,8 +2,7 @@
 title: P07-T06 — Checklist lançamento comercial (onboarding/contratos/preço)
 task_id: P07-T06
 phase: P07
-status:
-  - pendente
+status: pendente
 priority: alta
 area: launch-vision
 layer: approval
@@ -15,7 +14,7 @@ gap_ids:
 dependencies:
   - P06-T02
   - P04-T02
-target_file: 02-review/portao-lancamento/
+target_file: 04-project-management/planos-fase/
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-006]]"

@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-007
+task_type: operational
 status: em-revisao
 priority: high
 dateCreated: 2026-08-26T17:14:02.443-03:00

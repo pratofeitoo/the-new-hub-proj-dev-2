@@ -2,8 +2,7 @@
 title: P06-T05 — Modelo de capital (tranches/runway/downside)
 task_id: P06-T05
 phase: P06
-status:
-  - pendente
+status: pendente
 priority: alta
 area: business-model
 layer: refining

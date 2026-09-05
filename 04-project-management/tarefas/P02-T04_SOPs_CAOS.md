@@ -2,8 +2,7 @@
 title: P02-T04 — SOPs por estágio C.A.O.S. (vendas→escalonamento)
 task_id: P02-T04
 phase: P02
-status:
-  - concluido
+status: concluido
 priority: alta
 area: operations
 layer: blueprint
@@ -14,7 +13,7 @@ gap_ids:
   - STR-008
 dependencies:
   - P02-T02
-target_file: 02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/operacoes/HUB_Blueprint_Modelo_Operacional.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-005]]"
@@ -47,5 +46,5 @@ SOPs com dono e tempo alvo; rastreabilidade C.A.O.S.→módulos documentada como
 
 ## Execução
 
-- **Entregável produzido:** Cap.1–2 em [[02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional]] com SOPs C.A.O.S. (vendas→escalonamento) + dono/SLA + rastreabilidade C.A.O.S.→módulos.
+- **Entregável produzido:** Cap.1–2 em [[99-archive/superado/01-blueprint-v1-submissao-superada/operacoes/HUB_Blueprint_Modelo_Operacional]] com SOPs C.A.O.S. (vendas→escalonamento) + dono/SLA + rastreabilidade C.A.O.S.→módulos.
 - **Resultado:** SOPs cobrindo 9 áreas com regra manual/partner/automação futura.

@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-003
+task_type: operational
 status: in-progress
 priority: high
 dateCreated: 2026-08-26T17:08:02.918-03:00

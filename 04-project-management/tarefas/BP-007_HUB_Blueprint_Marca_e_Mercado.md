@@ -1,15 +1,16 @@
 ---
 title: BP-007 — Blueprint de Marca e Mercado do HUB
 task_id: BP-007
-task_type: blueprint-document
+task_type: blueprint
 status: em-revisao
-priority: high
+priority: alta
+phase: P06
 layer: blueprint
 area: brand-market
 sequence: 7
 owner:
   - PF Rezende
-target_file: 02-review/01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
 dependencies:
   - BP-001
   - BP-002
@@ -27,7 +28,7 @@ gap_ids:
   - BRD-002
   - BRD-003
 related_notes:
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

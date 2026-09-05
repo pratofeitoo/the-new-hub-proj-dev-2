@@ -2,8 +2,7 @@
 title: P02-T06 — RACI v1 com accountable único + autoridade delegada
 task_id: P02-T06
 phase: P02
-status:
-  - concluido
+status: concluido
 priority: critica
 area: operations
 layer: blueprint
@@ -16,7 +15,7 @@ gap_ids:
 dependencies:
   - P02-T01
   - P02-T04
-target_file: 02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-008]]"

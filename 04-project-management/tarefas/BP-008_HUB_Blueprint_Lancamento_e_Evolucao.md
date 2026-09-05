@@ -1,15 +1,16 @@
 ---
 title: BP-008 — Blueprint de Lançamento e Evolução do HUB
 task_id: BP-008
-task_type: blueprint-document
+task_type: blueprint
 status: em-revisao
-priority: critical
+priority: critica
+phase: P07
 layer: blueprint
 area: launch-vision
 sequence: 8
 owner:
   - PF Rezende
-target_file: 02-review/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
 dependencies:
   - BP-001
   - BP-002
@@ -28,7 +29,7 @@ gap_ids:
   - LCH-006
   - LCH-007
 related_notes:
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

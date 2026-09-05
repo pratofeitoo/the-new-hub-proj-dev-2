@@ -2,8 +2,7 @@
 title: P06-T11 — Arquitetura de marca + regras white-label
 task_id: P06-T11
 phase: P06
-status:
-  - pendente
+status: pendente
 priority: alta
 area: brand-market
 layer: blueprint
@@ -15,7 +14,7 @@ gap_ids:
   - BRD-003
 dependencies:
   - P01-T01
-target_file: 02-review/01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/BRD-001]]"

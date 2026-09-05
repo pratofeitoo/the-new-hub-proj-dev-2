@@ -1,15 +1,16 @@
 ---
 title: BP-004 — Blueprint de Arquitetura de Tecnologia do HUB
 task_id: BP-004
-task_type: blueprint-document
+task_type: blueprint
 status: em-revisao
-priority: high
+priority: alta
+phase: P05
 layer: blueprint
 area: technology
 sequence: 4
 owner:
   - PF Rezende
-target_file: 02-review/01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
 dependencies:
   - BP-002
   - BP-003
@@ -22,7 +23,7 @@ gap_ids:
   - TEC-006
   - TEC-007
 related_notes:
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

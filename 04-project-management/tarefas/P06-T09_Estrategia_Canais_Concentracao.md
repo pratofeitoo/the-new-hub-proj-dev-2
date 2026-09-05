@@ -2,8 +2,7 @@
 title: P06-T09 — Estratégia de canais + limites de concentração
 task_id: P06-T09
 phase: P06
-status:
-  - pendente
+status: pendente
 priority: alta
 area: gtm
 layer: refining
@@ -15,7 +14,7 @@ gap_ids:
   - GTM-006
 dependencies:
   - P01-T06
-target_file: 01-work/pesquisa-e-confianca/pesquisa/segundo-rascunho-projeto/
+target_file: 01-work/pesquisa-e-confianca/pesquisa/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-003]]"

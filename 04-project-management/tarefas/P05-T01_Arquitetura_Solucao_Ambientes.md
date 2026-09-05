@@ -2,8 +2,7 @@
 title: P05-T01 — Arquitetura solução + estratégia de ambientes (NFRs)
 task_id: P05-T01
 phase: P05
-status:
-  - pendente
+status: pendente
 priority: critica
 area: technology
 layer: blueprint
@@ -13,7 +12,7 @@ gap_ids:
   - TEC-003
 dependencies:
   - P03-T03
-target_file: 02-review/01-blueprint/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-003]]"

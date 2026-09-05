@@ -2,8 +2,7 @@
 title: P01-T01 — Matriz 4 Unidades (capacidades compartilhadas vs específicas)
 task_id: P01-T01
 phase: P01
-status:
-  - concluido
+status: concluido
 priority: critica
 area: business-model
 layer: blueprint
@@ -13,10 +12,10 @@ owner:
 gap_ids:
   - STR-001
 dependencies: []
-target_file: 02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/lacunas/STR-001]]"
 created: 2026-08-26
 tags:
@@ -47,7 +46,7 @@ Quatro unidades com proprietário único por capacidade; sem sobreposição não
 
 ## Execução
 
-- **Entregável produzido:** matriz 4×N e diagrama Mermaid adicionados em [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#1.1 Matriz de capacidades das quatro unidades]].
+- **Entregável produzido:** matriz 4×N e diagrama Mermaid adicionados em [[99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#1.1 Matriz de capacidades das quatro unidades]].
 - **Resultado:** cada capacidade possui um proprietário único (A único); capacidades compartilhadas e específicas estão explicitamente classificadas.
 - **Próximo ciclo de refinamento:** revisão de coerência por Estratégia, Operações, Jurídico e Finanças, conforme as necessidades de investigação de [[00-project-control/registro-lacunas/lacunas/STR-001]].
 

@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-017
+task_type: operational
 status: em-revisao
 priority: normal
 dateCreated: 2026-08-26T17:30:19.241-03:00

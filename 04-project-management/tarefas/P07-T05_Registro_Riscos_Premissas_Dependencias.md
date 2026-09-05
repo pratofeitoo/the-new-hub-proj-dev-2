@@ -2,8 +2,7 @@
 title: P07-T05 — Registro riscos/premissas/dependências operacionalizado
 task_id: P07-T05
 phase: P07
-status:
-  - pendente
+status: pendente
 priority: alta
 area: launch-vision
 layer: approval
@@ -13,7 +12,7 @@ gap_ids:
   - LCH-005
 dependencies:
   - P07-T01
-target_file: 00-project-control/riscos/
+target_file: 00-project-control/registro-lacunas/
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-005]]"

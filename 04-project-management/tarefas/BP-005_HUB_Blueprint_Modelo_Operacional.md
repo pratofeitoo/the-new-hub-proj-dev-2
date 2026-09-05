@@ -1,19 +1,19 @@
 ---
 title: BP-005 — Blueprint do Modelo Operacional do HUB
 task_id: BP-005
-task_type: blueprint-document
+task_type: blueprint
 status: em-revisao
-priority: high
+priority: alta
+phase: P02
 layer: blueprint
 area: operations
 sequence: 5
 owner:
   - PF Rezende
-target_file: 02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/operacoes/HUB_Blueprint_Modelo_Operacional.md
 dependencies:
   - BP-001
   - BP-002
-  - BP-006
 gap_ids:
   - STR-007
   - PRD-005
@@ -21,7 +21,7 @@ gap_ids:
   - GOV-008
   - LCH-002
 related_notes:
-  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[99-archive/superado/01-blueprint-v1-submissao-superada/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

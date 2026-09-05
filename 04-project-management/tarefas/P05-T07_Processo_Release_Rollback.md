@@ -2,8 +2,7 @@
 title: P05-T07 — Processo release/rollback + ambientes + suporte
 task_id: P05-T07
 phase: P05
-status:
-  - pendente
+status: pendente
 priority: alta
 area: technology
 layer: refining
@@ -14,7 +13,7 @@ gap_ids:
 dependencies:
   - P05-T01
   - P05-T06
-target_file: 02-review/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-007]]"

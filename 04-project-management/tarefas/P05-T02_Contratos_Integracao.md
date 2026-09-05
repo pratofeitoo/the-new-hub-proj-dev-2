@@ -2,8 +2,7 @@
 title: P05-T02 — Contratos de integração + matriz system-of-record
 task_id: P05-T02
 phase: P05
-status:
-  - pendente
+status: pendente
 priority: critica
 area: technology
 layer: refining
@@ -14,7 +13,7 @@ gap_ids:
 dependencies:
   - P05-T01
   - P03-T01
-target_file: 01-work/testes-experimentos/
+target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-001]]"

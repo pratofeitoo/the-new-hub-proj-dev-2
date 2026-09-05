@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-002
+task_type: operational
 title: Calcular valor/hr dos sócios
 status: open
 priority: high

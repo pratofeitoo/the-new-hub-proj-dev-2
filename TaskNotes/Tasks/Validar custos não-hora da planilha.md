@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-021
+task_type: operational
 status: open
 priority: normal
 dateCreated: 2026-09-01T23:33:44.738-03:00

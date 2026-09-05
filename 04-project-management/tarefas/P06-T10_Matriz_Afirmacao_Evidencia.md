@@ -2,8 +2,7 @@
 title: P06-T10 — Matriz afirmação-evidência + governança de claims (BRD)
 task_id: P06-T10
 phase: P06
-status:
-  - pendente
+status: pendente
 priority: alta
 area: brand-market
 layer: refining

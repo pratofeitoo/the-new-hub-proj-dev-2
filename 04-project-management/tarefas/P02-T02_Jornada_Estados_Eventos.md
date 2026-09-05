@@ -2,8 +2,7 @@
 title: P02-T02 — Jornada estados/eventos + trilha de auditoria
 task_id: P02-T02
 phase: P02
-status:
-  - concluido
+status: concluido
 priority: critica
 area: product
 layer: blueprint
@@ -14,7 +13,7 @@ gap_ids:
   - PRD-007
 dependencies:
   - P02-T01
-target_file: 02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/produto/HUB_Blueprint_Produto_e_Capacidades.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/PRD-004]]"
@@ -47,5 +46,5 @@ Transições + eventos + auditoria + fila revisão para passos alto impacto.
 
 ## Execução
 
-- **Entregável produzido:** Cap.3 Jornada (9 etapas) + Cap.4 Console/Exceções em [[02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades]] e [[02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional]].
+- **Entregável produzido:** Cap.3 Jornada (9 etapas) + Cap.4 Console/Exceções em [[99-archive/superado/01-blueprint-v1-submissao-superada/produto/HUB_Blueprint_Produto_e_Capacidades]] e [[99-archive/superado/01-blueprint-v1-submissao-superada/operacoes/HUB_Blueprint_Modelo_Operacional]].
 - **Resultado:** transições+eventos+auditoria+fila por passo alto impacto descritos.

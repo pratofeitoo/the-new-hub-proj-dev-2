@@ -2,8 +2,7 @@
 title: P07-T02 — Plano operações de lançamento + runbook release
 task_id: P07-T02
 phase: P07
-status:
-  - pendente
+status: pendente
 priority: critica
 area: launch-vision
 layer: approval
@@ -15,7 +14,7 @@ gap_ids:
 dependencies:
   - P05-T07
   - P02-T04
-target_file: 02-review/portao-lancamento/
+target_file: 04-project-management/planos-fase/
 related_notes:
   - "[[04-project-management/planos-fase/P07_Portao_Lancamento]]"
   - "[[00-project-control/registro-lacunas/lacunas/LCH-002]]"

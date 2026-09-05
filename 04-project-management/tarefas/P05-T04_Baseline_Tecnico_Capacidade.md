@@ -2,8 +2,7 @@
 title: P05-T04 — Baseline técnico (custo/latência/volume/rate-limit)
 task_id: P05-T04
 phase: P05
-status:
-  - pendente
+status: pendente
 priority: alta
 area: technology
 layer: refining

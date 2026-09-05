@@ -2,8 +2,7 @@
 title: P04-T06 — Testes retenção/DSAR/exclusão (derivados/backups)
 task_id: P04-T06
 phase: P04
-status:
-  - pendente
+status: pendente
 priority: alta
 area: governance-legal
 layer: refining

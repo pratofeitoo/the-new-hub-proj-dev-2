@@ -1,4 +1,6 @@
 ---
+ops_id: OPS-018
+task_type: operational
 status: em-revisao
 priority: high
 dateCreated: 2026-08-26T17:25:22.051-03:00

@@ -2,8 +2,7 @@
 title: P01-T02 — Matriz oferta × comprador × capacidade (v1)
 task_id: P01-T02
 phase: P01
-status:
-  - concluido
+status: concluido
 priority: critica
 area: business-model
 layer: blueprint
@@ -14,7 +13,7 @@ gap_ids:
   - STR-002
 dependencies:
   - P01-T01
-target_file: 02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+target_file: 99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/STR-002]]"
@@ -47,7 +46,7 @@ Nenhuma oferta em 2 unidades sem regra de propriedade + acordo intragrupo anotad
 
 ## Execução
 
-- **Entregável produzido:** matriz oferta → comprador → unidade → capacidade → operação → receita → gap adicionada em [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.1 Matriz oferta → comprador → unidade → capacidade → operação → receita → gap]].
+- **Entregável produzido:** matriz oferta → comprador → unidade → capacidade → operação → receita → gap adicionada em [[99-archive/superado/01-blueprint-v1-submissao-superada/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.1 Matriz oferta → comprador → unidade → capacidade → operação → receita → gap]].
 - **Cobertura:** 17 ofertas candidatas nas frentes Mídia e Experiências, Impacto Financiável e Ecossistemas Empresariais.
 - **Resultado:** cada linha possui unidade dona, capacidade principal, operação/troca de valor, motor de receita e gap vinculado.
 - **Próximo ciclo de refinamento:** investigar compradores, JTBD, parceiros, riscos e classificação de receita; manter hipóteses explícitas e não tratá-las como decisões finais.
