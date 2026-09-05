@@ -1,6 +1,6 @@
 {
   "cascadeColors": false,
-  "colorBackground": false,
+  "colorBackground": true,
   "palette": [
     {
       "id": "wjJ23l_fzF_FcvSbqb-MI",
@@ -28,5 +28,146 @@
       "value": "#fff700"
     }
   ],
-  "fileColors": []
+  "fileColors": [
+    {
+      "path": "01-blueprint",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "00-project-control/registro-lacunas",
+      "color": "AZzTLUPnmG6GoWUa0O8f-"
+    },
+    {
+      "path": "00-project-control/registro-mudancas",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "00-project-control/framework",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "02-refinement",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "04-project-management/cenarios",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "04-project-management/atas-reuniao",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "04-project-management/planos-fase",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "04-project-management/planos-mestres",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "04-project-management/registros-trabalho",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "00-project-control/escopo",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "00-project-control/escopo/fases-projeto",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "03-approval",
+      "color": "AZzTLUPnmG6GoWUa0O8f-"
+    },
+    {
+      "path": "04-project-management/registro-mestre",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "04-project-management/registro-mestre/matriz-fases-tarefas-v1.md",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/00-entrada/01-acordo-parceria",
+      "color": "EjnlfzqvpLwXHyVE2heo8"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/00-entrada/02-especificacao-mestra",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/00-entrada/03-planilha-tecnica",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/01-mvps",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/03-analises-processadas",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/03-analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/03-analises-processadas/Relatorio_Consistencia_Especificacao_vs_Planilha_HUB.md",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/03-analises-processadas/Relatorio_CrossReview_Blueprint_vs_Especificacao_Planilha_HUB.md",
+      "color": "Ca_nKK_TiHST_uOzTBvPL"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/02-visao-plataforma",
+      "color": "AZzTLUPnmG6GoWUa0O8f-"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Estrutura de Liderança e Atribuições",
+      "color": "AZzTLUPnmG6GoWUa0O8f-"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Exemplo de Deck",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Modelo Financeiro para Investidores",
+      "color": "AZzTLUPnmG6GoWUa0O8f-"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Portfólio de Produtos",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/02-visao-plataforma/Projeção de arquitetura e custos - Plataforma",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/00-entrada",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    },
+    {
+      "path": "05-resources/Processar/Plataforma HUB/02-visao-plataforma/visuais",
+      "color": "AZzTLUPnmG6GoWUa0O8f-"
+    },
+    {
+      "path": "05-resources",
+      "color": "AZzTLUPnmG6GoWUa0O8f-"
+    },
+    {
+      "path": "04-project-management/tarefas",
+      "color": "JLYL8yO9kD0wI37FUK4z5"
+    }
+  ]
 }
