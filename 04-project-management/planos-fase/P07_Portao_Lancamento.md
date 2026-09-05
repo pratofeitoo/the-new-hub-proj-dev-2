@@ -27,7 +27,7 @@ gap_ids:
 bp_tasks:
   - BP-008
 related_notes:
-  - "[[01-work/mercado-e-direcao/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao]]"
+  - "[[02-review/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao]]"
   - "[[04-project-management/planos-mestres/HUB_Plano_Fases_v1]]"
   - "[[02-review/portao-lancamento]]"
 created: 2026-08-26
@@ -75,7 +75,7 @@ Construir e operar o portão mestre de lançamento do sistema completo — cobri
 ## 4. Entradas
 
 - Gates **P01→P06** (todos aprovados ou condicionalmente aprovados com plano de remediação)
-- [`HUB_Blueprint_Lancamento_e_Evolucao.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/mercado-e-direcao/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md) + [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) (portões ilustrativos §3)
+- [`HUB_Blueprint_Lancamento_e_Evolucao.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md) + [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) (portões ilustrativos §3)
 - [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) §14 Marcos (gates meses 0-18)
 - Gaps `LCH-*`
 

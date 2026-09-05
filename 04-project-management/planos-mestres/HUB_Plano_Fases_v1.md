@@ -18,7 +18,7 @@ tags:
   - blueprint
 related_notes:
   - "[[00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas]]"
-  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
   - "[[04-project-management/tarefas/HUB_Tarefas_Projeto.base]]"
   - "[[Fases_Projeto.canvas]]"
@@ -27,7 +27,7 @@ related_notes:
 # HUB — Plano Diretor de Fases v1
 
 > [!info] Propósito
-> Transformar o inventário atual (~115 pastas, 68 gaps, 8 tarefas BP) em **7 fases sequenciais com gates verificáveis**. Cada fase fecha um conjunto de gaps antes de liberar trabalho downstream — evita retrabalho financeiro/tecnológico antes da semântica de dados estar travada. Este plano complementa (não substitui) o [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) e o [`HUB_Fundacao_Blueprint_Projeto`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
+> Transformar o inventário atual (~115 pastas, 68 gaps, 8 tarefas BP) em **7 fases sequenciais com gates verificáveis**. Cada fase fecha um conjunto de gaps antes de liberar trabalho downstream — evita retrabalho financeiro/tecnológico antes da semântica de dados estar travada. Este plano complementa (não substitui) o [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) e o [`HUB_Fundacao_Blueprint_Projeto`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
 
 > [!warning] Maturidade
 > Plano de gestão (`04-project-management/`), não evidência aprovada. Cada fase permanece `blueprint` até passar por `01-work/` → `02-review/` → `03-approved/`. Nenhum gate é auto-aprovado.
@@ -261,7 +261,7 @@ flowchart LR
 ## 10. Referências
 
 - [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — regras das 3 camadas
-- [`HUB_Fundacao_Blueprint_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — identidade, 4 unidades, 6 módulos, roadmap M0–M4
+- [`HUB_Fundacao_Blueprint_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — identidade, 4 unidades, 6 módulos, roadmap M0–M4
 - [`HUB_Registro_Lacunas_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) §2 Resumo + §12 Espinha dorsal — dependências e 68 gaps
 - [`HUB_Tarefas_Projeto.base`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/tarefas/HUB_Tarefas_Projeto.base) — 8 BP tasks (BP-001..008)
 - [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) — tese investidor (não validada)

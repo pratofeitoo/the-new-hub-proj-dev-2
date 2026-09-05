@@ -16,11 +16,11 @@ tags:
 
 ### P01-T01 — Matriz 4 Unidades
 - **Description:** Tabela e diagrama Mermaid de capacidades por unidade, distinguindo capacidades compartilhadas e específicas.
-- **File:** [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
+- **File:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
 
 ### P01-T02 — Matriz Oferta × Comprador × Capacidade (v1)
 - **Description:** Matriz das 17 ofertas com unidade dona, comprador primário, JTBD, troca de valor, motor de receita e premissas abertas.
-- **File:** [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
+- **File:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
 
 ### P01-T02 — Fichas Operacionais (refinement)
 - **Description:** 17 fichas detalhadas com JTBD, comprador, parceiros, riscos e critérios de sucesso.
@@ -28,11 +28,11 @@ tags:
 
 ### P01-T03 — Taxonomia de Receita e Regras de Reconhecimento
 - **Description:** Seção de Receita no blueprint e tabela de taxonomia e reconhecimento.
-- **Files:** [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]] e [[05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1]]
+- **Files:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]] e [[05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1]]
 
 ### P01-T04 — Segmentos e Orçamentos de Compradores
 - **Description:** Tabela de seis segmentos (SEG-01 a SEG-06) com orçamento estimado.
-- **File:** [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
+- **File:** [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]
 
 ### P01-T05 — Log de Evidências GTM
 - **Description:** Registro de rota, parceiro, status, evidência, link e fallback, distinguindo hipótese de tração.
@@ -52,7 +52,7 @@ tags:
 
 ## Notes
 
-- **Core blueprint**: [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB Blueprint Oferta e Arquitetura de Receita]] contains the primary deliverables for T01–T04.
+- **Core blueprint**: [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita|HUB Blueprint Oferta e Arquitetura de Receita]] contains the primary deliverables for T01–T04.
 - **Refinement artifacts**: [[01-work/produto-e-operacao/refinamento-produto/fichas-operacionais-P01-T02-v1|Fichas operacionais P01-T02 v1]] and [[01-work/pesquisa-e-confianca/pesquisa/log-evidencias-GTM|Log de Evidências GTM]]. P01-T06 is documented in [[04-project-management/tarefas/P01-T06_Limites_Concentracao_Parceiros|its task note]]; no dedicated artifact file was located.
 - **Cenários operacionais** (derived from T02 fichas) are linked individually in the list above.
 - **All 7 tasks are marked `concluido`** as of 2026-08-29.

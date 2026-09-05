@@ -16,7 +16,7 @@ gap_ids:
 dependencies:
   - P02-T01
   - P02-T04
-target_file: 01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
+target_file: 02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-008]]"

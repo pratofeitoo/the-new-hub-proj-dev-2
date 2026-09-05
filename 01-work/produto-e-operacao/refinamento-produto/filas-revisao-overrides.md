@@ -63,4 +63,4 @@ Cada transição registra: `actor, scope (tenant/workspace/caso), reason, timest
 
 - Tarefa: [[04-project-management/tarefas/P02-T05_Filas_Revisao_Overrides|P02-T05]]
 - Gaps: [[00-project-control/registro-lacunas/lacunas/PRD-007]]
-- Referência: [[01-work/produto-e-operacao/produto/HUB_Blueprint_Produto_e_Capacidades#5. Atividades conduzidas por humanos, assistidas e de automação futura|BP-002 §5]] e [[01-work/produto-e-operacao/operacoes/HUB_Blueprint_Modelo_Operacional#2. Responsabilidades por vendas, onboarding, diagnóstico, curadoria, matching, implementação, medição, suporte e escalonamento|BP-005 §2]]
+- Referência: [[02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades#5. Atividades conduzidas por humanos, assistidas e de automação futura|BP-002 §5]] e [[02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional#2. Responsabilidades por vendas, onboarding, diagnóstico, curadoria, matching, implementação, medição, suporte e escalonamento|BP-005 §2]]

@@ -97,4 +97,4 @@ python3 02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicado
 - Tarefa: [[04-project-management/tarefas/P03-T09_Fluxos_Linhagem_Replay_DSAR|P03-T09]]
 - Gaps: [[00-project-control/registro-lacunas/lacunas/DAT-009]], [[00-project-control/registro-lacunas/lacunas/DAT-010]]
 - Base: [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] + [[01-work/dados-tech-financas/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1|P03-T03 v1]] + [[01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1|P03-T08 v1]]
-- Blueprint: [[01-work/dados-tech-financas/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#5. Resolução de identidade, linhagem, consentimento, retenção, exclusão, replay e conceitos de correção|BP-003 §5]]
+- Blueprint: [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#5. Resolução de identidade, linhagem, consentimento, retenção, exclusão, replay e conceitos de correção|BP-003 §5]]

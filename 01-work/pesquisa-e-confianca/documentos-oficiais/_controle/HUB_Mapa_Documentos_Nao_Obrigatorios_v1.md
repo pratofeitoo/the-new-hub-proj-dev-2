@@ -9,7 +9,7 @@ created: 2026-09-02
 updated: 2026-09-02
 base_legal_data: 2026-09-02
 jurisdicao: Brasil - prática de mercado + legislação de referência em 2026-09-02
-blueprint_ref: "[[01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
+blueprint_ref: "[[02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
 map_obrigatorio_ref: "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
 gap_ids: [GOV-001, GOV-004, GOV-005, GOV-006, GOV-008, GOV-009, STR-001, STR-002, STR-003, FIN-002, GTM-001]
 tarefas_ref: [P04-T01, P04-T03, P06-T02, P06-T04]

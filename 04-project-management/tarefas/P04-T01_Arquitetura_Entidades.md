@@ -15,7 +15,7 @@ gap_ids:
 dependencies:
   - P03-T01
   - P01-T01
-target_file: 01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
+target_file: 02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-001]]"
@@ -34,7 +34,7 @@ dateModified: 2026-09-01T19:27:17.944-03:00
 Definir, como proposta para refinamento, constituição, propriedade, contas, tributos e acordos intragrupo (HUB marca, Negócios, Instituto, Plataforma), para posterior revisão jurídica e financeira.
 
 ## Entregável
-Matriz de entidades + minutas de acordos em `01-work/pesquisa-e-confianca/governanca-juridico/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/`, como insumos de Blueprint e Refinamento para revisão posterior.
+Matriz de entidades + minutas de acordos em `02-review/01-blueprint/governanca-juridico/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/`, como insumos de Blueprint e Refinamento para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]] (entidades)

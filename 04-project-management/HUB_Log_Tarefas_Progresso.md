@@ -241,7 +241,7 @@ tags:
 ### 2026-08-29 — P03-T01 kick-off — Modelo Lógico/Físico iniciado
 
 - **O que mudou:** `P03-T01` passou de `pendente` para `em-revisao` (`status: - em-revisao`). Dependência `P02-T01` já `concluido`, liberando `M03.A`.
-- **Entregável alvo:** proposta de diagramas + tabelas em `01-work/dados-tech-financas/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `01-work/dados-tech-financas/refinamento-modelo-dados/` (G03.A1 — nenhuma entidade sem chave estável).
+- **Entregável alvo:** proposta de diagramas + tabelas em `02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md` + `01-work/dados-tech-financas/refinamento-modelo-dados/` (G03.A1 — nenhuma entidade sem chave estável).
 - **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` — `P03-T01` agora `em-revisao`/`- [ ]` (13 `concluido`/`- [x]` mantidos).
 - **Base:** `HUB_Tarefas_Fases_Execucao.base` passará a mostrar `🔍 em-revisao` para `P03-T01`; `P03-T02..T09` permanecem `pendente`.
 
@@ -271,7 +271,7 @@ tags:
 
 ### 2026-08-29 — P01 concluído — 7 tarefas marcadas como concluído e matriz sincronizada
 
-- **O que mudou:** P01-T01 a P01-T07 passaram de `em-revisao` para `done` (`status: - concluido` nas notas) após revisão das entregas em `01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (§1.1 matriz 4 unidades, §2.1 17 ofertas + fichas, §3.1 taxonomia, §2.2 6 segmentos, log GTM, limites concentração e roadmap). Verificação anterior já cobria 17/17 ofertas, 6/6 segmentos e cenários SEG-01..06 como `hypothesis`.
+- **O que mudou:** P01-T01 a P01-T07 passaram de `em-revisao` para `done` (`status: - concluido` nas notas) após revisão das entregas em `02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (§1.1 matriz 4 unidades, §2.1 17 ofertas + fichas, §3.1 taxonomia, §2.2 6 segmentos, log GTM, limites concentração e roadmap). Verificação anterior já cobria 17/17 ofertas, 6/6 segmentos e cenários SEG-01..06 como `hypothesis`.
 - **Matriz:** `04-project-management/registro-mestre/matriz-fases-tarefas-v1.md` — coluna `deliverable` com checkboxes `- [x]` e `status: concluido` para P01 (7/56). P01-T01..T07 agora refletem `✅` nas views Bases.
 - **Mirrors:** `quartz-site/content/04-project-management/tarefas/P01-T*.md` sincronizados.
 - **Commit:** `ba619bb docs(p01): mark P01 tasks concluido and sync matrix`.

@@ -10,7 +10,7 @@ tags: [hub, convergencia, matriz, m0, blueprint]
 
 # Matriz de Convergência
 
-Matriz auditável entre [[01-work/dados-tech-financas/dados-inteligencia/modelo-indicadores/abas-origem/04_Indicadores_Master/04_Indicadores_Master_analise|04 Indicadores Master]], [[01-work/dados-tech-financas/dados-inteligencia/modelo-indicadores/abas-origem/02_Nos_de_Dados/02_Nos_de_Dados_analise|02 Nós de Dados]], BP-002, BP-008 e `06_KPIS`.
+Matriz auditável entre [[02-review/01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/04_Indicadores_Master/04_Indicadores_Master_analise|04 Indicadores Master]], [[02-review/01-blueprint/dados-inteligencia/modelo-indicadores/abas-origem/02_Nos_de_Dados/02_Nos_de_Dados_analise|02 Nós de Dados]], BP-002, BP-008 e `06_KPIS`.
 
 ## 1. 73→16 KPIs
 
@@ -148,7 +148,7 @@ Matriz auditável entre [[01-work/dados-tech-financas/dados-inteligencia/modelo-
 
 ## 3. 12→8 módulos
 
-Fontes: BP-002 e [[01-work/mercado-e-direcao/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao|BP-008]].
+Fontes: BP-002 e [[02-review/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao|BP-008]].
 
 |Especificação (12 entregas)|BP-002 (6 módulos + núcleo)|Planilha 8 MOD|Decisão|
 |---|---|---|---|

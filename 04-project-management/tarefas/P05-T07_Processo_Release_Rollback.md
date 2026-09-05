@@ -14,7 +14,7 @@ gap_ids:
 dependencies:
   - P05-T01
   - P05-T06
-target_file: 01-work/mercado-e-direcao/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
+target_file: 02-review/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-007]]"

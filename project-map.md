@@ -20,8 +20,8 @@ com domínios como segundo eixo:
 | Área | Papel atual |
 |---|---|
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
-| `01-work/` | Elaboração em 4 temas: `mercado-e-direcao/` (`estrategia/`, `modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`), `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`), `dados-tech-financas/` (`dados-inteligencia/` + análises, CSVs em `05-resources/fontes/`, `tecnologia/`, `modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). |
-| `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/` (submetidos 2026-09-05, `em-revisao`). |
+| `01-work/` | Elaboração em 3 temas: `produto-e-operacao/` (`refinamento-produto/`), `dados-tech-financas/` (`modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho; CSVs em `05-resources/fontes/`), `pesquisa-e-confianca/` (`pesquisa/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). 9 domínios blueprint submetidos a `02-review/01-blueprint/`. |
+| `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/`, `01-blueprint/` (9 domínios; submetidos 2026-09-05, `em-revisao`). |
 | `03-approved/` | `matriz-de-oferta-e-comprador-cenarios/cenarios/` P01-S01…S06, `nucleo-inteligencia/` (conceito + inventário + prova, gate 2026-09-05, `aprovado` + histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
 | `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, planos unificados e logs de progresso. |
 | `05-resources/` | `inbox/` (fila de triagem; MVPs, visão e acordo submetidos a `02-review/` em 2026-09-05) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
@@ -49,20 +49,19 @@ com domínios como segundo eixo:
 │   ├── framework/                   — framework das três camadas
 │   ├── registro-lacunas/lacunas/    — gaps BRD/DAT/FIN/GOV/TEC e registros
 │   └── registro-mudancas/           — registros estruturais e decisórios (incl. lifecycle 2026-09-05 + censos)
-├── 01-work/                         — ELABORAÇÃO (rascunho | em-elaboracao), 4 temas
-│   ├── mercado-e-direcao/           — estrategia/ modelo-negocio/ marca-mercado/ visao-lancamento/
-│   ├── produto-e-operacao/          — produto/ operacoes/ refinamento-produto/
-│   ├── dados-tech-financas/         — dados-inteligencia/ (análises; CSVs em 05-resources/fontes)
-│   │                                  tecnologia/ modelos-financeiros/
+├── 01-work/                         — ELABORAÇÃO (rascunho | em-elaboracao), 3 temas
+│   ├── produto-e-operacao/          — refinamento-produto/ (produto/ e operacoes/ submetidos ao gate)
+│   ├── dados-tech-financas/         — modelos-financeiros/
 │   │                                  refinamento-modelo-dados/ (spine P03-T01..T09 + gate M0, rascunho)
-│   └── pesquisa-e-confianca/        — pesquisa/ governanca-juridico/
+│   └── pesquisa-e-confianca/        — pesquisa/
 │                                      documentos-oficiais/ (shell 01–14 + _controle/, nada oficial)
 ├── 02-review/                       — REVISÃO (em-revisao, congelado)
 │   ├── pacotes/                     — pacotes para stakeholders
 │   ├── bloqueado/                   — modelo de indicadores e derivados de validação
 │   ├── 01-mvps/                     — 6 MVPs + Comunidades, submetido 2026-09-05
 │   ├── 02-visao-plataforma/         — tese de longo prazo, submetida 2026-09-05
-│   └── 01-acordo-parceria/          — acordo DiverCidade×HUB, submetido 2026-09-05
+│   ├── 01-acordo-parceria/          — acordo DiverCidade×HUB, submetido 2026-09-05
+│   └── 01-blueprint/                — 9 domínios submetidos 2026-09-05 (narrativas + análises)
 ├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
 │   ├── matriz-de-oferta-e-comprador-cenarios/cenarios/ — P01-S01…S06 assinados
 │   ├── nucleo-inteligencia/         — conceito + inventário + prova, gate 2026-09-05

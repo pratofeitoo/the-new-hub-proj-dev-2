@@ -13,7 +13,7 @@ gap_ids:
   - GOV-003
 dependencies:
   - P04-T01
-target_file: 01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
+target_file: 02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-003]]"

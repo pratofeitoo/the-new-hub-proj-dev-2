@@ -2,8 +2,9 @@
 
 > **Fronteira:** trabalho editável. Nada aqui é revisado, aprovado ou compartilhável como final.
 > **Status permitido:** `rascunho | em-elaboracao` — e a pasta deve ser verdade.
-> **Organização:** 4 temas com README próprio — `mercado-e-direcao/`, `produto-e-operacao/`,
-> `dados-tech-financas/`, `pesquisa-e-confianca/` — cada um com seus domínios (nomes preservados).
+> **Organização:** 3 temas com README próprio — `produto-e-operacao/`, `dados-tech-financas/`,
+> `pesquisa-e-confianca/` (o tema `mercado-e-direcao/` foi dissolvido: seus domínios submetidos ao gate
+> em `02-review/01-blueprint/`).
 
 ## Regras
 

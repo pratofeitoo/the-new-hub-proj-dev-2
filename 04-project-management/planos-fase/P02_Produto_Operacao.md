@@ -30,8 +30,8 @@ bp_tasks:
   - BP-002
   - BP-005
 related_notes:
-  - "[[01-work/produto-e-operacao/produto/HUB_Blueprint_Produto_e_Capacidades]]"
-  - "[[01-work/produto-e-operacao/operacoes/HUB_Blueprint_Modelo_Operacional]]"
+  - "[[02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades]]"
+  - "[[02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional]]"
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[04-project-management/planos-mestres/HUB_Plano_Fases_v1]]"
 created: 2026-08-26
@@ -82,7 +82,7 @@ Definir o produto HUB como sistema de capacidades conectadas (HUB Intelligence, 
 ## 4. Entradas
 
 - Saída de **P01** (matriz oferta-comprador + taxonomia receita)
-- [`HUB_Blueprint_Produto_e_Capacidades.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/produto-e-operacao/produto/HUB_Blueprint_Produto_e_Capacidades.md) + [`HUB_Blueprint_Modelo_Operacional.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/produto-e-operacao/operacoes/HUB_Blueprint_Modelo_Operacional.md)
+- [`HUB_Blueprint_Produto_e_Capacidades.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades.md) + [`HUB_Blueprint_Modelo_Operacional.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional.md)
 - Esboços de UI em [`05-resources/imagens/esbocos-ui/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/05-resources/imagens/esbocos-ui) (tratar como blueprint, não entregável)
 - [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) §4 Solução (fluxo piloto) + §10 Roadmap MVP
 
@@ -90,12 +90,12 @@ Definir o produto HUB como sistema de capacidades conectadas (HUB Intelligence, 
 
 | Artefato | Onde vive | Camada |
 |---|---|---|
-| Taxonomia capacidades + contratos de módulos | `01-work/produto-e-operacao/produto/` | blueprint |
+| Taxonomia capacidades + contratos de módulos | `02-review/01-blueprint/produto/` | blueprint |
 | Jornada ponta a ponta (estados, transições, eventos, auditoria) | mesmo doc + `01-work/produto-e-operacao/refinamento-produto/` | blueprint→refining |
 | Matriz autorização & tenancy | `01-work/produto-e-operacao/refinamento-produto/` (ou `refinamento-governanca/` se LGPD) | refining |
-| SOPs C.A.O.S. por estágio | `01-work/produto-e-operacao/operacoes/` + `01-work/produto-e-operacao/refinamento-produto/` | blueprint→refining |
-| Mapa rastreabilidade C.A.O.S. → sistema | `01-work/produto-e-operacao/operacoes/` | blueprint |
-| RACI v1 (com A único por atividade crítica) | `02-review/bloqueado/.../14_RACI/` (corrigido) + `01-work/pesquisa-e-confianca/governanca-juridico/` | refining |
+| SOPs C.A.O.S. por estágio | `02-review/01-blueprint/operacoes/` + `01-work/produto-e-operacao/refinamento-produto/` | blueprint→refining |
+| Mapa rastreabilidade C.A.O.S. → sistema | `02-review/01-blueprint/operacoes/` | blueprint |
+| RACI v1 (com A único por atividade crítica) | `02-review/bloqueado/.../14_RACI/` (corrigido) + `02-review/01-blueprint/governanca-juridico/` | refining |
 | Protótipo de fluxo controlado (clickable, não produção) | `01-work/prototipos/` | refining |
 | Pacote revisão P02 | `02-review/pacotes/P02-Produto-Operacao.md` | approval |
 

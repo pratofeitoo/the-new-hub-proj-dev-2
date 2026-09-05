@@ -14,7 +14,7 @@ gap_ids:
   - GTM-001
 dependencies:
   - P01-T02
-target_file: 01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+target_file: 02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-001]]"
@@ -46,6 +46,6 @@ Segmentos, papéis, faixas e processos de compra descritos como hipóteses de la
 
 ## Execução
 
-- **Entregável produzido:** tabela de seis segmentos de lançamento, papéis `quem assina / quem paga / quem opera`, processos de compra e faixas de orçamento adicionada em [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.2 Segmentos e orçamentos de compradores de lançamento v1]].
+- **Entregável produzido:** tabela de seis segmentos de lançamento, papéis `quem assina / quem paga / quem opera`, processos de compra e faixas de orçamento adicionada em [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.2 Segmentos e orçamentos de compradores de lançamento v1]].
 - **Resultado:** segmentos e orçamentos estão documentados como hipóteses qualificáveis, sem tratar faixas como preço, TAM ou tração.
 - **Próximo refinamento:** revisar as hipóteses com Finanças, Jurídico e Operações e registrar evidências de comprador e orçamento no log GTM-002 antes de classificar qualquer segmento como tração.

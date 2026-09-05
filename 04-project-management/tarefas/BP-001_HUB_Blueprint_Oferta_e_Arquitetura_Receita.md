@@ -8,7 +8,7 @@ area: business-model
 sequence: 1
 owner:
   - PF Rezende
-target_file: 01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+target_file: 02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 dependencies: []
 gap_ids:
   - STR-001
@@ -17,7 +17,7 @@ gap_ids:
   - FIN-002
   - GTM-001
 related_notes:
-  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

@@ -15,7 +15,7 @@ tags:
 # Modelo Lógico/Físico v1 — P03-T01 (M03.A)
 
 > **Status:** rascunho para revisão Arquitetura de Dados · **G03.A1** · Não constitui aprovação. Revisão por Dados + Tech requerida antes de promover para `03-approval`.
-> **Origem:** síntese de [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] + blueprint [[01-work/dados-tech-financas/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]].
+> **Origem:** síntese de [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] + blueprint [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]].
 
 ## 1. Entidades canônicas (26) — PK estável
 
@@ -165,5 +165,5 @@ Regra: nunca fazer join direto entre IDs externos; sempre resolver via `hub_id`.
 
 - Tarefa: [[04-project-management/tarefas/P03-T01_Modelo_Logico_Fisico|P03-T01]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-001]]
-- Blueprint: [[01-work/dados-tech-financas/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]]
+- Blueprint: [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]]
 - Síntese: [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] §10–12

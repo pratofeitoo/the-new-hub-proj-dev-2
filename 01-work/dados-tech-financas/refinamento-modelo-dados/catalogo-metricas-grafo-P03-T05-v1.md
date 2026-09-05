@@ -153,5 +153,5 @@ flowchart TD
 
 - Tarefa: [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo|P03-T05]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-005]]
-- Blueprint: [[01-work/dados-tech-financas/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#2. Arquitetura de indicadores de origem conectada às capacidades do produto e aos resultados de negócio|BP-003 §2]]
+- Blueprint: [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#2. Arquitetura de indicadores de origem conectada às capacidades do produto e aos resultados de negócio|BP-003 §2]]
 - Síntese: [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency|indicator-financial-consistency]]

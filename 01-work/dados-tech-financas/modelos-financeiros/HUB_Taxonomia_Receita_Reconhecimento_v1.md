@@ -10,7 +10,7 @@ tags:
 gap_ids:
   - FIN-002
 related_notes:
-  - "[[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
+  - "[[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
   - "[[04-project-management/tarefas/P01-T03_Taxonomia_Receita]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-002]]"
 ---

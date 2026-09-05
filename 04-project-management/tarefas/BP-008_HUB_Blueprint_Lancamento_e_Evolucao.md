@@ -9,7 +9,7 @@ area: launch-vision
 sequence: 8
 owner:
   - PF Rezende
-target_file: 01-work/mercado-e-direcao/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
+target_file: 02-review/01-blueprint/visao-lancamento/HUB_Blueprint_Lancamento_e_Evolucao.md
 dependencies:
   - BP-001
   - BP-002
@@ -28,7 +28,7 @@ gap_ids:
   - LCH-006
   - LCH-007
 related_notes:
-  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

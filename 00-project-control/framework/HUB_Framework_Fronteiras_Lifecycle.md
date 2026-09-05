@@ -67,12 +67,11 @@ Exceções documentadas (SHOULD NOT estender sem registro):
 
 ## 4. Contrato de diretórios (normativo)
 
-- `01-work/<tema>/<domínio>/` — MUST conter só elaboração editável, em 4 temas com README próprio:
-  `mercado-e-direcao/` (`estrategia/`, `modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`),
-  `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`),
-  `dados-tech-financas/` (`dados-inteligencia/`, `tecnologia/`, `modelos-financeiros/`,
-  `refinamento-modelo-dados/`), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`,
-  `documentos-oficiais/`). Arquivo novo nasce aqui com `rascunho`. Nomes de domínio MUST NOT mudar
+- `01-work/<tema>/<domínio>/` — MUST conter só elaboração editável, em 3 temas com README próprio:
+  `produto-e-operacao/` (`refinamento-produto/`), `dados-tech-financas/` (`modelos-financeiros/`,
+  `refinamento-modelo-dados/`), `pesquisa-e-confianca/` (`pesquisa/`, `documentos-oficiais/`).
+  (Os 9 domínios blueprint foram submetidos ao gate em `02-review/01-blueprint/` em 2026-09-05.)
+  Arquivo novo nasce aqui com `rascunho`. Nomes de domínio MUST NOT mudar
   sem registro; temas novos exigem decisão do usuário.
 - `02-review/pacotes/` — MUST conter só pacotes congelados com gate, dono e data. `02-review/bloqueado/`
   MUST registrar o motivo do bloqueio. Nada aqui é editado.

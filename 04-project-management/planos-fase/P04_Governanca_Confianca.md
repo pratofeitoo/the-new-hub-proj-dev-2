@@ -31,7 +31,7 @@ gap_ids:
 bp_tasks:
   - BP-006
 related_notes:
-  - "[[01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
+  - "[[02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[04-project-management/planos-mestres/HUB_Plano_Fases_v1]]"
 created: 2026-08-26
@@ -86,19 +86,19 @@ Definir e validar a arquitetura de entidades, governança de dados, propriedade 
 
 - Sub-gate **S3A** de P03 (entidades + identidade travadas)
 - Saída de **P01** (oferta/unidades) + **P02** (papéis/permissões/RACI v1)
-- [`HUB_Blueprint_Governanca_e_Juridico.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md) + [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) §12 (questões jurídico/dados/PI)
+- [`HUB_Blueprint_Governanca_e_Juridico.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md) + [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) §12 (questões jurídico/dados/PI)
 - Gaps `GOV-*` + `STR-007`
 
 ## 5. Saídas
 
 | Artefato | Onde vive | Camada |
 |---|---|---|
-| Matriz entidades + acordos intragrupo | `01-work/pesquisa-e-confianca/governanca-juridico/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | blueprint→refining |
+| Matriz entidades + acordos intragrupo | `02-review/01-blueprint/governanca-juridico/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | blueprint→refining |
 | Mapa governança dados fluxo a fluxo | mesmo | refining |
-| Carta independência Selo + controles operacionais | mesmo + `01-work/pesquisa-e-confianca/governanca-juridico/` | refining |
+| Carta independência Selo + controles operacionais | mesmo + `02-review/01-blueprint/governanca-juridico/` | refining |
 | Matriz responsabilidade + seguros | mesmo | refining |
 | Registro PI + acordos | mesmo | refining |
-| RACI v2 + matriz direitos decisão | `01-work/pesquisa-e-confianca/governanca-juridico/` + `00-project-control/registro-lacunas/lacunas/GOV-008.md` | refining |
+| RACI v2 + matriz direitos decisão | `02-review/01-blueprint/governanca-juridico/` + `00-project-control/registro-lacunas/lacunas/GOV-008.md` | refining |
 | Testes de controle (evidência operação) | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` + `02-review/evidencias/` | refining→approval |
 | Pacote revisão P04 | `02-review/pacotes/P04-Governanca-Confianca.md` | approval |
 

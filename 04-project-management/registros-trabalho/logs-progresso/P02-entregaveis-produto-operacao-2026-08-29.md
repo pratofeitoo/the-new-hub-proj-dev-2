@@ -14,10 +14,10 @@ tags:
 
 | Task | File Title | Brief Description | File Path |
 |---|---|---|---|
-| **P02-T01** | Blueprint de Produto e Capacidades | Taxonomia de capacidades e contratos dos módulos, incluindo entradas, saídas, dependências e owners. | [[01-work/produto-e-operacao/produto/HUB_Blueprint_Produto_e_Capacidades]] |
-| **P02-T02** | Jornada, Estados e Eventos | Diagrama Mermaid e tabela de estados/eventos, com trilha de auditoria. | [[01-work/produto-e-operacao/produto/HUB_Blueprint_Produto_e_Capacidades]] |
+| **P02-T01** | Blueprint de Produto e Capacidades | Taxonomia de capacidades e contratos dos módulos, incluindo entradas, saídas, dependências e owners. | [[02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades]] |
+| **P02-T02** | Jornada, Estados e Eventos | Diagrama Mermaid e tabela de estados/eventos, com trilha de auditoria. | [[02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades]] |
 | **P02-T03** | Matriz de Autorização e Tenancy | Matriz ator × permissão para autorização, tenancy e revisão conjunta de Segurança/Governança. | [[01-work/produto-e-operacao/refinamento-produto/matriz-autorizacao-tenancy]] |
-| **P02-T04** | SOPs C.A.O.S. | Procedimentos operacionais por estágio, de vendas a escalonamento. | [[01-work/produto-e-operacao/operacoes/HUB_Blueprint_Modelo_Operacional]] |
+| **P02-T04** | SOPs C.A.O.S. | Procedimentos operacionais por estágio, de vendas a escalonamento. | [[02-review/01-blueprint/operacoes/HUB_Blueprint_Modelo_Operacional]] |
 | **P02-T05** | Filas de Revisão e Overrides | Especificação de filas de revisão, overrides e trilha de auditoria. | [[01-work/produto-e-operacao/refinamento-produto/filas-revisao-overrides]] |
 | **P02-T06** | RACI v1 | RACI com accountable único e autoridade delegada. | [[01-work/produto-e-operacao/refinamento-produto/RACI_v1]] |
 | **P02-T06** | RACI v1 — Cópia para Aprovação | Cópia do RACI mantida no pacote de aprovação bloqueado para revisão posterior. | [[02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/14_RACI/RACI_v1]] |

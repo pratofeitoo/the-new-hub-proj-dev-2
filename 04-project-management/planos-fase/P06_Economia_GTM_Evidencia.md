@@ -40,8 +40,8 @@ bp_tasks:
   - BP-001
   - BP-007
 related_notes:
-  - "[[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
-  - "[[01-work/mercado-e-direcao/marca-mercado/HUB_Blueprint_Marca_e_Mercado]]"
+  - "[[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
+  - "[[02-review/01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado]]"
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
@@ -102,7 +102,7 @@ Produzir economia verificável, modelo de mercado bottom-up, estratégia GTM seq
 ## 4. Entradas
 
 - Gates **P01+P03(S3C)+P04+P05** aprovados (P06 sem eles = hipótese)
-- [`HUB_Blueprint_Marca_e_Mercado.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/mercado-e-direcao/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md) + [`HUB_Blueprint_Oferta_e_Arquitetura_Receita.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md)
+- [`HUB_Blueprint_Marca_e_Mercado.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md) + [`HUB_Blueprint_Oferta_e_Arquitetura_Receita.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md)
 - [`01-work/pesquisa-e-confianca/pesquisa/segundo-rascunho-projeto/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/pesquisa-e-confianca/pesquisa/segundo-rascunho-projeto) (6 pesquisas v2) — tratar como `Observado/Hipótese`, não `Comprovado`
 - [`HUB_Mapa_Financeiro_Patrocinadores_Investidores.xlsx`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/05-resources/planilhas) + pitch decks ([`05-resources/apresentacoes/pitch-decks/`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/05-resources/apresentacoes/pitch-decks)) — reconciliar com registro premissas
 
@@ -115,7 +115,7 @@ Produzir economia verificável, modelo de mercado bottom-up, estratégia GTM seq
 | Modelo mercado bottom-up + testes cenários | `01-work/pesquisa-e-confianca/pesquisa/` + `05-resources/conjuntos-dados/` | refining |
 | Log evidências GTM por rota | `01-work/pesquisa-e-confianca/pesquisa/` | refining |
 | Matriz alternativa buyer-ranked | mesmo | refining |
-| Arquitetura marca + matriz afirmação-evidência + glossário | `01-work/mercado-e-direcao/marca-mercado/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | blueprint→refining |
+| Arquitetura marca + matriz afirmação-evidência + glossário | `02-review/01-blueprint/marca-mercado/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | blueprint→refining |
 | Decks/pitch reconciliados com evidência | `05-resources/apresentacoes/` → `02-review/pacotes/` | approval |
 | Pacote revisão P06 | `02-review/pacotes/P06-Economia-GTM.md` | approval |
 

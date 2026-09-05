@@ -59,5 +59,5 @@ tags:
 ## 6. Rastreabilidade
 
 - Tarefa: [[04-project-management/tarefas/P02-T03_Matriz_Autorizacao_Tenancy|P02-T03]]
-- Blueprint: [[01-work/produto-e-operacao/produto/HUB_Blueprint_Produto_e_Capacidades#2. Atores, papéis, tenants, entidades, permissões e visibilidade de dados|BP-002 §2]]
+- Blueprint: [[02-review/01-blueprint/produto/HUB_Blueprint_Produto_e_Capacidades#2. Atores, papéis, tenants, entidades, permissões e visibilidade de dados|BP-002 §2]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/PRD-003]]

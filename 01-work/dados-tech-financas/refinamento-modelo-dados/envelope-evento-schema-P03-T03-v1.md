@@ -134,4 +134,4 @@ Local lógico: `01-work/dados-tech-financas/refinamento-modelo-dados/schema-regi
 - Tarefa: [[04-project-management/tarefas/P03-T03_Envelope_Evento_Schema|P03-T03]]
 - Gap: [[00-project-control/registro-lacunas/lacunas/DAT-003]]
 - Modelo base: [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|P03-T01 v1]] — temporalidade e `canonical_id`
-- Blueprint: [[01-work/dados-tech-financas/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#3. Versionamento de eventos, indicadores, taxonomias, fórmulas, modelos e evidências|BP-003 §3]]
+- Blueprint: [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#3. Versionamento de eventos, indicadores, taxonomias, fórmulas, modelos e evidências|BP-003 §3]]

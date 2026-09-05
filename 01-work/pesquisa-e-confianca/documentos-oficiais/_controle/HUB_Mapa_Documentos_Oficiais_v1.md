@@ -9,7 +9,7 @@ created: 2026-09-02
 updated: 2026-09-02
 base_legal_data: 2026-09-02
 jurisdicao: Brasil - legislação federal vigente em 2026-09-02
-blueprint_ref: "[[01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
+blueprint_ref: "[[02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
 gap_ids: [GOV-001, GOV-002, GOV-003, GOV-004, GOV-005, GOV-006, GOV-007, GOV-008, GOV-009, STR-001, FIN-002]
 tarefas_ref: [P04-T01, P04-T02, P05-T01]
 tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
@@ -133,7 +133,7 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 | `HUB_Estatuto_Instituto_v0.md` | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` → promover | Linha 1.02 + parecer terceiro setor |
 | `HUB_DPA_Template_v0.md` | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | Linha 4.04 + matriz P03-T08 |
 | `HUB_Politica_Privacidade_v0.md` | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | Linha 6.02 |
-| `HUB_Matriz_Oferta_CNPJ_Receita.md` | `04-project-management/tarefas/` + `01-work/mercado-e-direcao/modelo-negocio/` | GOV-001 + BP-001 §2.1 |
+| `HUB_Matriz_Oferta_CNPJ_Receita.md` | `04-project-management/tarefas/` + `02-review/01-blueprint/modelo-negocio/` | GOV-001 + BP-001 §2.1 |
 
 ---
 

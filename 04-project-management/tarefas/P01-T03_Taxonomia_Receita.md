@@ -14,7 +14,7 @@ gap_ids:
   - FIN-002
 dependencies:
   - P01-T02
-target_file: 01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+target_file: 02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-002]]"
@@ -46,7 +46,7 @@ Taxonomia de Blueprint distingue implementação, licença/plataforma, assinatur
 
 ## Execução
 
-- **Entregável produzido:** taxonomia e regras de reconhecimento adicionadas em [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#3.1 Taxonomia operacional e regra de reconhecimento v1]].
+- **Entregável produzido:** taxonomia e regras de reconhecimento adicionadas em [[02-review/01-blueprint/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#3.1 Taxonomia operacional e regra de reconhecimento v1]].
 - **Tabela de cenários:** [[05-resources/planilhas/HUB_Taxonomia_Receita_Reconhecimento_v1]].
 - **Cobertura G01.3:** implementação, licença/plataforma, assinatura, marketplace adiado, mídia/projetos e funding restrito, com distinção entre receita pontual, ARR potencial e receita restrita.
 - **Resultado:** regras conceituais de gatilho, exclusões de ARR e controles mínimos documentadas; nenhuma regra contábil ou fiscal foi tratada como aprovada.
