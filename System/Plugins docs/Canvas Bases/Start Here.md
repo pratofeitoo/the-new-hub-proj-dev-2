@@ -18,7 +18,7 @@ When you drag a link from one card to another and choose `related`, Canvas Bases
 
 ```yaml
 related:
-  - "[[Canvas Bases/Demo/Arrange the board]]"
+  - "[[System/Plugins docs/Canvas Bases/Views/Getting Started]]"
 ```
 
 If the property already has a value, Canvas Bases appends the new link instead of replacing the existing links.
@@ -36,5 +36,5 @@ Grouping still comes from the Base view. Change the Base's `groupBy` property to
 ## Files in this folder
 
 - `Views/Getting Started.base` selects notes tagged `canvas-bases-demo` and opens them with the Canvas Bases layout.
-- `Demo/` contains the sample notes and their `related` links.
+- `Demo/` was removed; its sample notes and their `related` links are no longer in the vault.
 - `Canvases/` is where the linked Canvas snapshot is written when you create it.
