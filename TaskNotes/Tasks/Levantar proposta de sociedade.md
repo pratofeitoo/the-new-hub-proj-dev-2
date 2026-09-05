@@ -4,7 +4,7 @@ task_type: operational
 status: em-revisao
 priority: normal
 dateCreated: 2026-09-01T23:36:28.641-03:00
-dateModified: 2026-09-05T08:54:42.405-03:00
+dateModified: 2026-09-05T20:29:50.400-03:00
 tags:
   - task
 owner:
@@ -24,3 +24,6 @@ Levantar proposta de sociedade + faixa salarial (mín/méd/máx) com 1/2/3 clien
 02-review/01-acordo-parceria/ (submetido ao gate em 2026-09-05; antes em `05-resources/inbox/Plataforma HUB/00-entrada/01-acordo-parceria`)
 
 [[Acordo_Parceria_Tecnologica_DiverCidade_HUB]]
+
+
+`/Users/paulorezende/Library/Mobile Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The New HUB dev-2/02-review/02-visao-plataforma/Estrutura de Liderança e Atribuições`

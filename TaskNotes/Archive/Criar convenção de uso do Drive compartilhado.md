@@ -1,18 +1,20 @@
 ---
 ops_id: OPS-004
 task_type: operational
-status: open
+status: done
 priority: normal
 dateCreated: 2026-09-01T23:34:36.272-03:00
-dateModified: 2026-09-05T17:21:39.577-03:00
+dateModified: 2026-09-05T20:25:22.063-03:00
 tags:
   - task
+  - archived
 owner:
   - PF Rezende
 contexts:
   - "@G-drive"
 projects:
   - "[[Gestão de Projeto e Governança]]"
+completedDate: 2026-09-05
 ---
 
 (regra Inbox→processado, o que é `sandbox`, onde entra arquivo novo) — @PF Rezende — **esta semana**
