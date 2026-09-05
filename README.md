@@ -63,7 +63,7 @@ flowchart LR
 - P03 (Dados Canônicos): 9 tarefas em revisão.
 - P04–P07: 34 tarefas pendentes.
 - `GOV-001` — decisão sobre a estrutura societária/CNPJs — é o principal bloqueador da documentação oficial.
-- O epic do vault isolado de documentos oficiais está em andamento; suas notas de controle permanecem em `TaskNotes/Tasks/`, enquanto os mapas de documentos não estão presentes no estado atual do repositório.
+- O epic do vault isolado de documentos oficiais está em andamento; suas notas de controle permanecem em `TaskNotes/Tasks/` e os mapas/instrução foram restaurados em `02-refinement/refinamento-governanca/`.
 
 O faseamento completo é: `P01` → `P02` → `P03` (spine de dados) → `P04` ↔ `P05` → `P06` → `P07`.
 
@@ -75,6 +75,9 @@ O faseamento completo é: `P01` → `P02` → `P03` (spine de dados) → `P04` �
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor P01→P07.
 - [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — coordenação das tarefas de fase.
 - [`HUB_Tarefas_Fases_Execucao.base`](04-project-management/registros-trabalho/HUB_Tarefas_Fases_Execucao.base) — execução em 9 views Bases.
+- [`HUB_Mapa_Documentos_Oficiais_v1.md`](02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Oficiais_v1.md) — matriz dos documentos obrigatórios.
+- [`HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md`](02-refinement/refinamento-governanca/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md) — matriz dos documentos requeridos não obrigatórios.
+- [`HUB_Instrucao_Vault_Documentos_Oficiais.md`](02-refinement/refinamento-governanca/HUB_Instrucao_Vault_Documentos_Oficiais.md) — instrução do vault isolado.
 - `TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14).md` — epic de controle do vault isolado de documentos oficiais.
 - `TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs).md` — decisão bloqueadora para a documentação oficial.
 

@@ -19,7 +19,7 @@ O repositório é gerenciado como um sistema completo de negócio e produto por 
 |---|---|
 | `00-project-control/` | Framework, escopo, decisões, gaps (68 notas) e registros de mudança (5 registros + template). Pastas vazias de dependências, índices, premissas e riscos foram removidas na poda. |
 | `01-blueprint/` | Visão-base estratégica, arquitetura de produto, negócio, dados, tecnologia, governança, operações e lançamento (9 domínios). |
-| `02-refinement/` | Refinamento estratégico, pesquisa, governança, produto, finanças e spine de dados P03 com 9 entregáveis em revisão. A governança atualmente contém a matriz P03-T08; as antigas pastas vazias de protótipos e revisões foram removidas. |
+| `02-refinement/` | Refinamento estratégico, pesquisa, governança, produto, finanças e spine de dados P03 com 9 entregáveis em revisão. A governança contém a matriz P03-T08 mais os mapas de documentos oficiais restaurados (`HUB_Mapa_Documentos_Oficiais_v1.md`, `HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md`, `HUB_Instrucao_Vault_Documentos_Oficiais.md`); as antigas pastas vazias de protótipos e revisões foram removidas. |
 | `03-approval/` | `bloqueado/` e `pacotes-revisao/`; as áreas vazias de aprovação foram removidas. O modelo de indicadores continua bloqueado enquanto P03 está em revisão. |
 | `04-project-management/` | Planos mestre e de fase P01–P07, 56 tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários, planos unificados e logs de progresso. Retrospectivas vazias foram removidas. |
 | `05-resources/` | Fila de processamento `Processar/Plataforma HUB/`, com 143 arquivos rastreados: 7 MVPs, visão de plataforma, Arquitetura e Custos (96 telas), análises e arquivo. |
@@ -105,7 +105,7 @@ O fluxo de execução é:
 - P03: 9 tarefas em revisão.
 - P04–P07: 34 tarefas pendentes.
 - `GOV-001` (estrutura societária/CNPJs) continua sendo o bloqueador principal da documentação oficial.
-- O epic do vault isolado de documentos oficiais permanece em andamento; suas notas de controle estão em `TaskNotes/Tasks/`, mas os mapas de documentos não estão presentes no estado atual do repositório.
+- O epic do vault isolado de documentos oficiais permanece em andamento; suas notas de controle estão em `TaskNotes/Tasks/` e os mapas/instrução foram restaurados em `02-refinement/refinamento-governanca/`.
 
 ## Guia de roteamento
 
