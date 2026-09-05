@@ -40,6 +40,14 @@ depois aninhados em `02-review/01-blueprint/`:
 Tema `mercado-e-direcao/` dissolvido (esvaziado); demais temas permanecem com o restante.
 Labels dos domínios atualizados para a fronteira `02-review/`.
 
+## Proveniência (declarada pelo usuário em 2026-09-05)
+
+Os 9 domínios foram previamente refinados **a partir dos dados das planilhas em
+`03-approved/nucleo-inteligencia/`** (especificação conceitual + planilha técnica + análises) —
+portanto supostamente alinhados à mais alta fonte de verdade vigente. Falta apenas a **revisão
+humana final**, que decide a saída: devolução a `01-work/` (se houver divergência) ou promoção
+a `03-approved/` (se confirmado o alinhamento).
+
 ## Regras do freeze
 
 - Nada aqui é editado enquanto `em-revisao`. Correção = nova versão em `01-work/` → re-submissão.
