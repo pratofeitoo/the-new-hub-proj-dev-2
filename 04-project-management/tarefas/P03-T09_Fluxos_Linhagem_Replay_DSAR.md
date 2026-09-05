@@ -84,6 +84,9 @@ Prototipar fluxos de linhagem/correção/replay/DSAR/portabilidade e reconstruir
 
 ## Execução
 
+- **Sprint piloto — 2026-09-05:** fluxo mínimo SEBRAE explicitado com 12 entidades, envelope de 8 campos + `consentimento_id` condicional, replay manual `run_001→run_002`, reconciliação `counts/keys/totals` e DSAR manual. A inspeção local encontrou 16 worksheets XML no XLSX declarado como 15 abas; discrepância registrada, não tratada como PASS.
+- **Estado do gate:** `em-revisao`; `DAT-009` e `DAT-010` continuam `blocking: yes`. Não houve criação de `DEC-P03-T09` nem promoção para `02-review/aprovado`/`03-approved`; os três relatórios históricos permanecem insuficientes para promoção full.
+
 - **Entregável produzido:** [[01-work/dados-tech-financas/refinamento-modelo-dados/fluxos-linhagem-replay-dsar-P03-T09-v1|fluxos-linhagem-replay-dsar-P03-T09-v1.md]] — fluxos Mermaid `origem→correção→alias→evento→métrica→valor→dashboard` + `correção` (DAT010-001..004) + `replay` (`run_001→run_002`) + `DSAR` (acesso/exclusão/portabilidade) + `portabilidade`; XLSX [[02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/05-pastas-trabalho-rascunho/HUB_Mapa_Inteligencia_Dados_Indicadores_RECONSTRUIDO_P03-T09_v1.xlsx|RECONSTRUIDO_P03-T09_v1.xlsx]] (41 campos corrigidos, 15 abas, 73 indicadores).
 - **Validações:** `06-relatorios-validacao/entity-key-validation-P03-T09.md` **PASS** (45 entidades, 0 órfão) + `roi-recalculation-P03-T09.md` **PASS reproduzível** (R$1.220k bruto / R$270k líquido / ROI 28,42%) + `corrected-csv-validation-P03-T09.md` **PASS** (15/15 CSVs 16 cols).
 - **Resultado:** fluxos prototipados com `run_id` + reconciliação `counts/keys/totals/duplicates`; XLSX reconstruído como insumo **não aprovado**.

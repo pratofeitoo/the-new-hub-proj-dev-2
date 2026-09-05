@@ -47,9 +47,10 @@ Produzir modelo canônico de 25 entidades com PK estável, FK, cardinalidade, ti
 
 ## Acceptance criteria (G03.A1 — DAT-001)
 
-- [ ] 25/25 entidades com `canonical_id` (PK estável, imutável) — tabela §1 do `target_file`; zero placeholder pendente; verificado por `grep -c "canonical_id"` ≥25
+- [ ] 25/25 entidades com `canonical_id` (PK estável, imutável) — tabela §1 do `target_file`; zero placeholder pendente; verificado extraindo somente as 25 linhas numeradas da tabela §1 e contando `canonical_id` == 25
 - [ ] 12/12 relacionamentos com FK + cardinalidade + temporalidade (`valid_from` inclusive / `valid_to` exclusivo, `occurred_at`/`recorded_at` UTC) — tabela §2 + §4 do `target_file`
 - [ ] 6 famílias de tipos de objeto mapeadas (§3) + `identity_alias` crosswalk `hub_id`/`external_id`/`source_system` com `valid_from/to` + diagrama ER Mermaid renderiza sem erro (§5–§6)
+- [ ] Subconjunto piloto SEBRAE explicitamente rastreado como 12/12 objetos do charter em §1.1, com `canonical_id`, FK e regra mínima; modelo full 25/25 permanece obrigatório e itens fora do spine ficam deferred.
 
 > **Pilot vs Full:** Piloto SEBRAE 28/10 requer apenas subset — 12 entidades mínimas — ver `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §1 (fornecedor→historico_alteracoes). Plataforma full = 25/25 entidades + 73 métricas. Este critério valida full (25/25); piloto pode operar com 12/12 mas evidência full permanece obrigatória para M03.A.
 
@@ -61,9 +62,9 @@ Produzir modelo canônico de 25 entidades com PK estável, FK, cardinalidade, ti
 
 ## Verification
 
-- [ ] `ls 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md && grep -c "canonical_id" 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md` — esperado 25
+- [ ] `ls 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md && awk '/^\\| # \\| Entidade/{p=1;next} p && /^\\| [0-9]+ \\|/{print} p && /^$/{exit}' 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md | grep -c canonical_id` — esperado 25 (somente tabela full §1)
 - [ ] `grep -c "valid_from" 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md | awk '{print ($1>=12)?"PASS 12/12 FK+temporalidade":"FAIL"}' && grep -c "relationship_id\|rel_person\|fact_" 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md` — valida §2+§4
-- [ ] `grep -c "a desi""gnar" 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md | grep -q "^0$" && echo "PASS sem placeholder" || echo "FAIL"; ls 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md && grep -c "^| [0-9]" 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` — diagrama ER abre no Obsidian sem erro + pilot subset 12 entidades
+- [ ] `if grep -q "a desi""gnar" 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md; then echo "FAIL"; else echo "PASS sem placeholder"; fi; ls 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md && grep -c "^| [0-9]" 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` — diagrama ER abre no Obsidian sem erro + pilot subset 12 entidades
 
 ## Dependências
 
@@ -75,6 +76,9 @@ Produzir modelo canônico de 25 entidades com PK estável, FK, cardinalidade, ti
 - [[00-project-control/registro-lacunas/lacunas/DAT-001]]
 
 ## Execução
+
+- **Sprint piloto — 2026-09-05:** recorte SEBRAE 28/10 explicitado em `modelo-logico-fisico-P03-T01-v1.md` §1.1, com mapeamento 12/12 entidades do spine para os objetos canônicos full. A verificação reproduziu 25 `canonical_id`, 12 relações/temporalidade e 24 linhas de entidades+métricas no spine.
+- **Estado do gate:** `em-revisao`; `DAT-001` e contratação/revisão Dados+Tech permanecem pendentes. Não houve promoção nem criação de decisão.
 
 - **Entregável produzido:** [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — 25 entidades com `canonical_id` (PK estável), 12 relacionamentos com PK/FK/cardinalidade/temporalidade, tipos de objeto por família, regras temporais e diagrama ER Mermaid; crosswalk `identity_alias` com `hub_id`/`external_id`/`source_system`.
 - **Blueprint atualizado:** [[99-archive/superado/01-blueprint-v1-submissao-superada/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]] vinculado ao rascunho (G03.A1).

@@ -16,40 +16,62 @@ tags:
 
 > **Status:** rascunho para revisão Arquitetura de Dados · **G03.A1** · Não constitui aprovação. Revisão por Dados + Tech requerida antes de promover para `03-approval`.
 > **Origem:** síntese de [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/entity-key-crosswalk|entity-key-crosswalk]] + blueprint [[02-review/01-blueprint/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia#1. Entidades canônicas, nós, relacionamentos, chaves, tipos de objeto e regras temporais|BP-003 §1]].
+> **Reconciliação:** [[01-work/dados-tech-financas/refinamento-modelo-dados/reconciliacao-fonte-aprovada-P03-v1|crosswalk da fonte aprovada]]. A matriz aprovada usa 25→23 nós; `N26 Decision` é operacional e não altera a contagem das 25 entidades canônicas.
 
 ## 1. Entidades canônicas (25) — PK estável
 
 Cada entidade tem `canonical_id` imutável (PK lógica), `tenant_id`, `object_type`, `created_at`, `updated_at`, `valid_from`, `valid_to`, `record_status`, `provenance_ref`. IDs de origem ficam em `identity_alias` (externo → interno).
 
-| # | Entidade | PK lógica | FKs principais | Tipo objeto | Temporalidade |
-|---|---|---|---|---|---|
-| 1 | Person | `person_id` | — | Identidade e organização | `valid_from/to` + `observed_at` |
-| 2 | Company | `company_id` | — | Identidade e organização | `valid_from/to` |
-| 3 | Entity (HUB) | `entity_id` | — | Identidade e organização | `valid_from/to` |
-| 4 | Institution | `institution_id` | `entity_id` FK | Identidade e organização | `valid_from/to` |
-| 5 | Supplier | `supplier_id` | `company_id` (opcional) | Identidade e organização | `valid_from/to` + homologação |
-| 6 | Specialist | `specialist_id` | `person_id` FK | Identidade e organização | `valid_from/to` |
-| 7 | Relationship | `relationship_id` | `person_id`, `company_id`, `entity_id` | Identidade e organização | `valid_from/to`, `relationship_type` |
-| 8 | Skill | `skill_id` | — | Capacidade e evidência | `skill_version`, `valid_from/to` |
-| 9 | SkillEvidence | `evidence_id` | `person_id`, `skill_id` | Capacidade e evidência | `assessed_at`, `valid_to`, `instrument_version` |
-| 10 | Assessment | `assessment_id` | `person_id`, `instrument_version` | Capacidade e evidência | `assessed_at`, `valid_to` |
-| 11 | Cohort | `cohort_id` | — | Capacidade e evidência | `valid_from/to`, `cohort_version` |
-| 12 | Opportunity | `opportunity_id` | `company_id`, `institution_id` | Oportunidade e interação | `valid_from/to`, `lifecycle_status` |
-| 13 | Need | `need_id` | `opportunity_id`, `skill_id` | Oportunidade e interação | `valid_from/to`, requisito ponderado |
-| 14 | Match | `match_id` | `opportunity_id`, `model_version_id` | Oportunidade e interação | `generated_at`, `expires_at`, `confidence` |
-| 15 | Introduction | `introduction_id` | `match_id` | Oportunidade e interação | `occurred_at`, `accepted_at` |
-| 16 | Participation | `participation_id` | `person_id`, `program_id` | Oportunidade e interação | `enrolled_at`, `completed_at`, `status` |
-| 17 | Journey | `journey_id` | `person_id`, `program_id` | Entrega e oferta | `valid_from/to`, `version`, `status` |
-| 18 | Program | `program_id` | `institution_id` | Entrega e oferta | `valid_from/to` |
-| 19 | Solution | `solution_id` | `supplier_id` | Entrega e oferta | `valid_from/to` |
-| 20 | Contract | `contract_id` | `opportunity_id`, `company_id` | Comercial e resultados | `signed_at`, `valid_from/to` |
-| 21 | Transaction | `transaction_id` | `contract_id` | Comercial e resultados | `recognized_at`, `competence_date` |
-| 22 | BusinessMetric | `metric_id` | — | Comercial e resultados | `definition_version`, `period`, `cohort_id` |
-| 23 | Consent | `consent_id` | `person_id`, `purpose` | Governança e inteligência | `valid_from/to`, `version`, `status` |
-| 24 | Event | `event_id` | `subject_canonical_id` | Governança e inteligência | `occurred_at`, `recorded_at`, `schema_version` |
-| 25 | ModelVersion | `model_version_id` | — | Governança e inteligência | `trained_from/to`, `valid_from/to` |
+| # | Entidade | PK lógica | `canonical_id` explícito | FKs principais | Tipo objeto | Temporalidade |
+|---|---|---|---|---|---|---|
+| 1 | Person | `person_id` | `canonical_id` = `person_id` | — | Identidade e organização | `valid_from/to` + `observed_at` |
+| 2 | Company | `company_id` | `canonical_id` = `company_id` | — | Identidade e organização | `valid_from/to` |
+| 3 | Entity (HUB) | `entity_id` | `canonical_id` = `entity_id` | — | Identidade e organização | `valid_from/to` |
+| 4 | Institution | `institution_id` | `canonical_id` = `institution_id` | `entity_id` FK | Identidade e organização | `valid_from/to` |
+| 5 | Supplier | `supplier_id` | `canonical_id` = `supplier_id` | `company_id` (opcional) | Identidade e organização | `valid_from/to` + homologação |
+| 6 | Specialist | `specialist_id` | `canonical_id` = `specialist_id` | `person_id` FK | Identidade e organização | `valid_from/to` |
+| 7 | Relationship | `relationship_id` | `canonical_id` = `relationship_id` | `person_id`, `company_id`, `entity_id` | Identidade e organização | `valid_from/to`, `relationship_type` |
+| 8 | Skill | `skill_id` | `canonical_id` = `skill_id` | — | Capacidade e evidência | `skill_version`, `valid_from/to` |
+| 9 | SkillEvidence | `evidence_id` | `canonical_id` = `evidence_id` | `person_id`, `skill_id` | Capacidade e evidência | `assessed_at`, `valid_to`, `instrument_version` |
+| 10 | Assessment | `assessment_id` | `canonical_id` = `assessment_id` | `person_id`, `instrument_version` | Capacidade e evidência | `assessed_at`, `valid_to` |
+| 11 | Cohort | `cohort_id` | `canonical_id` = `cohort_id` | — | Capacidade e evidência | `valid_from/to`, `cohort_version` |
+| 12 | Opportunity | `opportunity_id` | `canonical_id` = `opportunity_id` | `company_id`, `institution_id` | Oportunidade e interação | `valid_from/to`, `lifecycle_status` |
+| 13 | Need | `need_id` | `canonical_id` = `need_id` | `opportunity_id`, `skill_id` | Oportunidade e interação | `valid_from/to`, requisito ponderado |
+| 14 | Match | `match_id` | `canonical_id` = `match_id` | `opportunity_id`, `model_version_id` | Oportunidade e interação | `generated_at`, `expires_at`, `confidence` |
+| 15 | Introduction | `introduction_id` | `canonical_id` = `introduction_id` | `match_id` | Oportunidade e interação | `occurred_at`, `accepted_at` |
+| 16 | Participation | `participation_id` | `canonical_id` = `participation_id` | `person_id`, `program_id` | Oportunidade e interação | `enrolled_at`, `completed_at`, `status` |
+| 17 | Journey | `journey_id` | `canonical_id` = `journey_id` | `person_id`, `program_id` | Entrega e oferta | `valid_from/to`, `version`, `status` |
+| 18 | Program | `program_id` | `canonical_id` = `program_id` | `institution_id` | Entrega e oferta | `valid_from/to` |
+| 19 | Solution | `solution_id` | `canonical_id` = `solution_id` | `supplier_id` | Entrega e oferta | `valid_from/to` |
+| 20 | Contract | `contract_id` | `canonical_id` = `contract_id` | `opportunity_id`, `company_id` | Comercial e resultados | `signed_at`, `valid_from/to` |
+| 21 | Transaction | `transaction_id` | `canonical_id` = `transaction_id` | `contract_id` | Comercial e resultados | `recognized_at`, `competence_date` |
+| 22 | BusinessMetric | `metric_id` | `canonical_id` = `metric_id` | — | Comercial e resultados | `definition_version`, `period`, `cohort_id` |
+| 23 | Consent | `consent_id` | `canonical_id` = `consent_id` | `person_id`, `purpose` | Governança e inteligência | `valid_from/to`, `version`, `status` |
+| 24 | Event | `event_id` | `canonical_id` = `event_id` | `subject_canonical_id` | Governança e inteligência | `occurred_at`, `recorded_at`, `schema_version` |
+| 25 | ModelVersion | `model_version_id` | `canonical_id` = `model_version_id` | — | Governança e inteligência | `trained_from/to`, `valid_from/to` |
 
 > **Regra G03.A1:** nenhuma entidade acima fica sem `canonical_id` estável. Chaves naturais (e-mail, registro fiscal, `contract_number`) são apenas aliases em `identity_alias`.
+
+### 1.1 Subconjunto piloto SEBRAE — 12/12 entidades
+
+O evento SEBRAE de 28/10 opera somente o spine abaixo; o modelo full de 25 entidades continua obrigatório para a plataforma e para G03.A1. A coluna `canonical_id` é a chave HUB de cada entidade piloto (os nomes do charter são aliases de domínio):
+
+| # | Nome no charter | Entidade canônica | `canonical_id` | Regra mínima / FK |
+|---|---|---|---|---|
+| 1 | fornecedor | Supplier | `supplier_id` | `company_id` opcional |
+| 2 | comprador | Company | `company_id` | identidade do comprador |
+| 3 | oportunidade | Opportunity | `opportunity_id` | FK `company_id` |
+| 4 | inscricao | Participation | `participation_id` | FK `person_id`, `program_id`; evento SEBRAE |
+| 5 | diagnostico | Assessment | `assessment_id` | FK `person_id`; `valid_from/to` |
+| 6 | match | Match | `match_id` | FK `opportunity_id`; curadoria manual |
+| 7 | reuniao | Introduction | `introduction_id` | FK `match_id`; `occurred_at` UTC |
+| 8 | proposta | Contract | `contract_id` | FK `opportunity_id`; proposta como estado/evento |
+| 9 | contrato | Contract | `contract_id` | FK `opportunity_id`; `valid_from/to` |
+| 10 | receita_reportada | Transaction | `transaction_id` | FK `contract_id`; BRL |
+| 11 | consentimento | Consent | `consent_id` | FK `person_id`; `purpose`, `legal_basis` |
+| 12 | historico_alteracoes | Event | `event_id` | `subject_canonical_id`; `occurred_at/recorded_at` UTC |
+
+> **Nota de reconciliação:** `proposta` e `contrato` são dois estados do mesmo agregado comercial `Contract` no piloto, não duas entidades full adicionais. `inscricao`, `diagnostico`, `reuniao` e `historico_alteracoes` são projeções de `Participation`, `Assessment`, `Introduction` e `Event`; seus eventos preservam o `canonical_id` do agregado e o `provenance_ref`. A lista normativa do piloto é [[01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1|spine-piloto-minimo-v1]] §1.
 
 ### N24 Consentimento — bloqueador LGPD
 
@@ -129,14 +151,48 @@ erDiagram
 
     PERSON { string person_id PK "canonical, imutável" }
     COMPANY { string company_id PK }
-    REL_PERSON_COMPANY { string relationship_id PK string tenant_id string person_id FK string company_id FK string manager_id FK string relationship_type string provenance_ref date valid_from date valid_to }
+    REL_PERSON_COMPANY {
+        string relationship_id PK
+        string tenant_id
+        string person_id FK
+        string company_id FK
+        string manager_id FK
+        string relationship_type
+        string provenance_ref
+        date valid_from
+        date valid_to
+    }
     SKILL { string skill_id PK }
-    FACT_PERSON_SKILL { string person_id FK string skill_id FK string evidence_id FK date assessed_at }
+    FACT_PERSON_SKILL {
+        string person_id FK
+        string skill_id FK
+        string evidence_id FK
+        date assessed_at
+    }
     OPPORTUNITY { string opportunity_id PK }
-    MATCH { string match_id PK string opportunity_id FK string model_version_id FK }
-    JOURNEY { string journey_id PK string person_id FK string program_id FK }
-    CONSENT { string consent_id PK string person_id FK string purpose date valid_from date valid_to }
-    EVENT { string event_id PK string subject_canonical_id FK datetime occurred_at datetime recorded_at }
+    MATCH {
+        string match_id PK
+        string opportunity_id FK
+        string model_version_id FK
+    }
+    JOURNEY {
+        string journey_id PK
+        string person_id FK
+        string program_id FK
+    }
+    CONSENT {
+        string consent_id PK
+        string person_id FK
+        string purpose
+        date valid_from
+        date valid_to
+    }
+    EVENT {
+        string event_id PK
+        string subject_canonical_id FK
+        datetime occurred_at
+        datetime recorded_at
+    }
 ```
 
 ## 6. Crosswalk externo → interno (identidade)

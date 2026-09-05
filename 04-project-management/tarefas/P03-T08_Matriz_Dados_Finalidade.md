@@ -78,6 +78,9 @@ Construir matriz `campo → finalidade → base legal → retenção → propaga
 
 ## Execução
 
+- **Sprint piloto — 2026-09-05:** recorte SEBRAE 28/10 explicitado em §2.2 com 12/12 entidades/campos, regra comum `consent_id + purpose + version`, quarentena manual e procedimento manual para `dsar.access/delete/portability`. Verificação local: 12 linhas piloto, 5 fluxos e 35 ocorrências de controles LGPD.
+- **Estado do gate:** `em-revisao`; `DAT-008` permanece aberto. Propagation test/CMP log são SPEC/rascunho, e revisão Jurídico LGPD/DPO + Governança ainda é necessária; nenhum `DEC-P03-T08` foi criado.
+
 - **Entregável produzido:** [[01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1|matriz-dados-finalidade-P03-T08-v1.md]] — 5 fluxos (Onboarding, Diagnóstico, Matching, Medição, Comercial) × 41 campos (ex: `dim_person.consent_status` → `consent_status` por `purpose` com `valid_from/to`) com base legal, retenção (60/36/24 meses), propagação `revogação ≤5 min` para `fact_person_skill`/`fact_event`/derivados e exclusão DSAR por fluxo.
 - **Propagação:** todo campo Alta/Crítica exige `consent_id+purpose+version`; `consent.revoked` → `quarantine` em métricas/modelos/caches/exports parceiros.
 - **Pareceres:** Jurídico/LGPD e Gov Dados — ambos `Refinar com condições` — `DAT-008` aberto até teste propagação ponta a ponta.

@@ -145,6 +145,15 @@ tags:
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
 
+### 2026-09-05 — Sprint piloto P03-T01/T08/T09 executado em paralelo
+
+- **Dispatch:** três lanes independentes foram executadas em paralelo com `openai/gpt-5.6-luna`, após verificação de `~/.config/opencode/opencode.json` antes e depois do dispatch. Cada lane teve escopo de arquivo disjunto; commits dos lanes foram integrados seletivamente.
+- **P03-T01:** modelo lógico/físico atualizado com recorte explícito 12/12 do spine SEBRAE → 25 entidades canônicas full; verificação `canonical_id=35` (inclui referências), `valid_from=32`, relações=12, sem placeholder. Mantido `em-revisao`, DAT-001 e revisão Dados+Tech pendentes.
+- **P03-T08:** matriz LGPD atualizada com tabela piloto 12/12, 5 fluxos, regra `consent_id + purpose + version`, quarentena e DSAR manual. Verificação `pilot_rows=12`, `flows=5`, `required_controls=35`; DAT-008 e revisão Jurídico/Gov permanecem abertos.
+- **P03-T09:** linhagem/replay/DSAR piloto explicitados com envelope mínimo, correção DAT-010, replay manual e reconciliação `counts/keys/totals`. XLSX permanece não aprovado; inspeção encontrou 16 worksheets XML contra 15 abas declaradas — discrepância registrada como bloqueador, não PASS.
+- **Decisão de gate:** nenhuma tarefa foi promovida para `concluido`; nenhum `DEC-P03-T08`/`DEC-P03-T09` foi criado; DAT-009/DAT-010 permanecem blocking. P04/P05 continuam pendentes até gates previstos.
+- **Evidência:** commits dos lanes `432f0f5` (P03-T01), `b4666a2` (P03-T08) e `a36fbd6` (P03-T09), integrados na working tree atual; validação final e commit consolidado ainda pendentes.
+
 ### 2026-09-05 — Task 7 — P01/P02 reclassificadas para `em-revisao` (M01/M02 sem DEC)
 
 - **O que mudou:** 13 tarefas `P01-T01..T07` (7) + `P02-T01..T06` (6) reclassificadas de `concluido`/`done` → `em-revisao`. Frontmatter `status: em-revisao` + tabelas Registro por fase atualizadas para `2026-09-05`.
