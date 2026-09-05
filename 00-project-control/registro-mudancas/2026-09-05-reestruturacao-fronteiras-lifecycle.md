@@ -66,7 +66,7 @@ Migração de organização por domínio para lifecycle-first com 3 fronteiras (
 ## 6. Próximos passos
 
 - [x] Fases 1–5: esqueleto, moves `01-work`/`02-review`/`03-approved`, ponteiros, carimbos
-- [x] Fase 6 (parcial): import shell documentos-oficiais, espelho Drive; **falta: aposentar `Obsidian Inventory/`, `Reviewed and Approved Files/`, fonte `Documentações Oficiais/` no Drive (confirmar cada delete — shared drive, irreversível)**
+- [x] Fase 6 (completa): import shell documentos-oficiais, espelho Drive, aposentadoria de `Obsidian Inventory/`, `Reviewed and Approved Files/`, `Documentações Oficiais/` no Drive executada em 2026-09-05 com aprovação explícita do usuário
 - [x] Fase 7: README + project-map reescritos, sweep de links, verificação por fronteira
 - [ ] Decisão futura: remover stubs `01-blueprint/`, `02-refinement/`, `04-project-management/cenarios/README.md` (próximo ciclo)
 - [ ] Decisão futura: normalizar campo legado `layer:` (`blueprint|refinement|approval` → `work|review|approved`) e tipos `hypothesis` em cenários aprovados
