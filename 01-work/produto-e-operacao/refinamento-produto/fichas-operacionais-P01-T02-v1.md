@@ -173,11 +173,11 @@ As fichas não encerram o refinamento de `STR-002`: perfil de comprador, evidên
 
 | Segmento | Cenário | Oferta escolhida | Arquivo |
 |---|---|---|---|
-| SEG-01 | Empresas com agenda de marca, comunicação ou empregador | Ativação de empregador ou marca | [[03-approved/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador\|P01-S01]] |
-| SEG-02 | Donos de ecossistemas, associações e federações | Programas de procurement e capacidades | [[03-approved/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes\|P01-S02]] |
-| SEG-03 | Compradores corporativos de procurement e RH | Programas de procurement e capacidades | [[03-approved/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH\|P01-S03]] |
-| SEG-04 | Fundações e financiadores de interesse público | Arquitetura de programa | [[03-approved/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto\|P01-S04]] |
-| SEG-05 | Instituições com agenda de impacto e educação | Academia de capacidades | [[03-approved/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao\|P01-S05]] |
-| SEG-06 | Empresas e instituições compradoras de acesso à Plataforma | Acesso empresarial à Plataforma | [[03-approved/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma\|P01-S06]] |
+| SEG-01 | Empresas com agenda de marca, comunicação ou empregador | Ativação de empregador ou marca | [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador\|P01-S01]] |
+| SEG-02 | Donos de ecossistemas, associações e federações | Programas de procurement e capacidades | [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes\|P01-S02]] |
+| SEG-03 | Compradores corporativos de procurement e RH | Programas de procurement e capacidades | [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH\|P01-S03]] |
+| SEG-04 | Fundações e financiadores de interesse público | Arquitetura de programa | [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto\|P01-S04]] |
+| SEG-05 | Instituições com agenda de impacto e educação | Academia de capacidades | [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao\|P01-S05]] |
+| SEG-06 | Empresas e instituições compradoras de acesso à Plataforma | Acesso empresarial à Plataforma | [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma\|P01-S06]] |
 
 Os cenários permanecem no estado `hypothesis`. A execução futura deve registrar entradas, observações, resultados e aprendizados sem converter automaticamente o cenário em validação ou tração.

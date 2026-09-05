@@ -2,7 +2,7 @@
 status: aprovado
 title: Planilha Técnica — Desenvolvimento HUB
 source: Planilha_Tecnica_Desenvolvimento_HUB.xlsx
-source_path: 03-approved/nucleo-inteligencia/planilha-tecnica/01-source/Planilha_Tecnica_Desenvolvimento_HUB.xlsx
+source_path: 03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.xlsx
 sheets: 15
 linhas_dados: 185
 idioma: pt-BR

@@ -61,12 +61,11 @@ com domínios como segundo eixo:
 │   ├── pacotes/                     — pacotes para stakeholders
 │   └── bloqueado/                   — modelo de indicadores e derivados de validação
 ├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
-│   ├── cenarios/                    — P01-S01…S06 assinados
+│   ├── Matriz de Oferta e Comprador - Cenários/cenarios/ — P01-S01…S06 assinados
 │   ├── nucleo-inteligencia/         — conceito + inventário + prova, gate 2026-09-05
-│   │   ├── especificacao-mestra/    — especificação v1.0 (.md + .docx)
-│   │   ├── planilha-tecnica/        — fonte + planejamento + validações
+│   │   ├── especificacao-conceitual-inteligência-plataforma/ — especificação v1.0 (.md + .docx)
+│   │   ├── planilha-tecnica-completa-desenvolvimento/ — fonte + planejamento + validações
 │   │   └── analises-processadas/    — matriz de convergência + relatórios
-│   └── documentos-oficiais/         — reservado; vazio até o primeiro gate legal
 ├── 04-project-management/           — execução P01→P07
 │   ├── atas-reuniao/                — atas estruturadas e templates
 │   ├── cronogramas/                 — cronograma Bases
@@ -106,7 +105,7 @@ O fluxo de execução é:
 
 `P01 Oferta & Negócio` → `P02 Produto & Operação` → `P03 Dados Canônicos` → `P04 Governança` ↔ `P05 Tecnologia` → `P06 Economia & GTM` → `P07 Portão de Lançamento`.
 
-- P01: 7 tarefas concluídas; cenários S01…S06 assinados em `03-approved/cenarios/`.
+- P01: 7 tarefas concluídas; cenários S01…S06 assinados em `03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/`.
 - P02: 6 tarefas concluídas.
 - P03: 9 itens + gate em elaboração em `01-work/dados-tech-financas/refinamento-modelo-dados/` (todos `rascunho`).
 - P04–P07: 34 tarefas pendentes.

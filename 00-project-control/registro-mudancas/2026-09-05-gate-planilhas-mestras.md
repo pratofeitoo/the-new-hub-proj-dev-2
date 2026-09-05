@@ -25,11 +25,15 @@ gate: decisão direta do usuário (teste do ritual; bypass de `02-review/` regis
 
 | Destino em `03-approved/nucleo-inteligencia/` | Arquivos | Formatos |
 |---|---|---|
-| `especificacao-mestra/` | Especificação-mestra v1.0 | `.md` + `.docx` (mesmo conteúdo) |
-| `planilha-tecnica/01-source/` | Planilha canônica | `.md` + `.xlsx` |
-| `planilha-tecnica/02-planning/` | Plano de correção XLSX | `.md` |
-| `planilha-tecnica/03-validation/` | Validação + validação pós-fix | `.md` + `.md` |
-| `analises-processadas/` | Matriz de convergência + 2 relatórios | `.md` × 3 |
+| `nucleo-inteligencia/especificacao-conceitual-inteligência-plataforma/` | Especificação-mestra v1.0 | `.md` + `.docx` (mesmo conteúdo) |
+| `nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/` | Planilha canônica | `.md` + `.xlsx` |
+| `nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/02-planning/` | Plano de correção XLSX | `.md` |
+| `nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/03-validation/` | Validação + validação pós-fix | `.md` + `.md` |
+| `nucleo-inteligencia/analises-processadas/` | Matriz de convergência + 2 relatórios | `.md` × 3 |
+
+> **Nota (mesmo dia):** destinos renomeados pelo usuário no Drive e clonados para cá — `especificacao-mestra/` →
+> `especificacao-conceitual-inteligência-plataforma/`, `planilha-tecnica/` → `planilha-tecnica-completa-desenvolvimento/`,
+> `cenarios/` → `Matriz de Oferta e Comprador - Cenários/cenarios/`, `documentos-oficiais/` (reserva vazia) removido.
 
 Todos os `.md` carimbados `status: aprovado` + bloco `## Histórico de aprovação`.
 Binários (`.docx`, `.xlsx`) cobertos por este registro + READMEs das pastas.

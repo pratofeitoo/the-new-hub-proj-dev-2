@@ -48,7 +48,7 @@ tags:
 
 ### P01-T02 — Cenários de Teste por Segmento
 - **Description:** Seis cenários (SEG-01 a SEG-06) com oferta, JTBD, comprador, usuário, problema, fluxo C.A.O.S., parceiros, entregáveis, custo/esforço e evidência esperada.
-- **Files:** [[03-approved/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador]], [[03-approved/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes]], [[03-approved/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH]], [[03-approved/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto]], [[03-approved/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao]] e [[03-approved/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma]]
+- **Files:** [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador]], [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S02_SEG-02_Ecossistemas_Associacoes_Federacoes]], [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S03_SEG-03_Compradores_Procurement_RH]], [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S04_SEG-04_Fundacoes_Financiadores_Impacto]], [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S05_SEG-05_Instituicoes_Impacto_Educacao]] e [[03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma]]
 
 ## Notes
 
