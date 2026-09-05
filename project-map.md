@@ -21,10 +21,10 @@ com domínios como segundo eixo:
 |---|---|
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
 | `01-work/` | Elaboração em 4 temas: `mercado-e-direcao/` (`estrategia/`, `modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`), `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`), `dados-tech-financas/` (`dados-inteligencia/` + análises, CSVs em `05-resources/fontes/`, `tecnologia/`, `modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). |
-| `02-review/` | `pacotes/` (aceite P01 cross-functional, `em-revisao`) e `bloqueado/` (modelo de indicadores + derivados). |
+| `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/` (submetidos 2026-09-05, `em-revisao`). |
 | `03-approved/` | `cenarios/` P01-S01…S06, `nucleo-inteligencia/` (conceito + inventário + prova, gate 2026-09-05, `aprovado` + histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
 | `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários (ponteiro para `03-approved/`), planos unificados e logs de progresso. |
-| `05-resources/` | `inbox/` (fila de triagem, ex-`Processar/`, 7 MVPs + visão de plataforma) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
+| `05-resources/` | `inbox/` (fila de triagem; MVPs, visão e acordo submetidos a `02-review/` em 2026-09-05) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
 | `99-archive/` | `origens/primeiro-rascunho-projeto/`, `backups/`, `documentos-oficiais/` (descontinuado/rejeitado/superado), `instantaneos-historicos/`, `superado/`. |
 | `01-blueprint/`, `02-refinement/` | Aposentadas em 2026-09-05, stubs removidos; ver `git log --follow`. |
 | `TaskNotes/` | Notas operacionais, `Archive/` e visualizações Bases. |
@@ -59,7 +59,10 @@ com domínios como segundo eixo:
 │                                      documentos-oficiais/ (shell 01–14 + _controle/, nada oficial)
 ├── 02-review/                       — REVISÃO (em-revisao, congelado)
 │   ├── pacotes/                     — pacotes para stakeholders
-│   └── bloqueado/                   — modelo de indicadores e derivados de validação
+│   ├── bloqueado/                   — modelo de indicadores e derivados de validação
+│   ├── 01-mvps/                     — 6 MVPs + Comunidades, submetido 2026-09-05
+│   ├── 02-visao-plataforma/         — tese de longo prazo, submetida 2026-09-05
+│   └── 01-acordo-parceria/          — acordo DiverCidade×HUB, submetido 2026-09-05
 ├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
 │   ├── Matriz de Oferta e Comprador - Cenários/cenarios/ — P01-S01…S06 assinados
 │   ├── nucleo-inteligencia/         — conceito + inventário + prova, gate 2026-09-05

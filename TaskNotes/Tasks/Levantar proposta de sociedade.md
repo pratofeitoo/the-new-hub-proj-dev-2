@@ -17,4 +17,4 @@ Levantar proposta de sociedade + faixa salarial (mín/méd/máx) com 1/2/3 clien
 
 
 ## Arquivo criado em:
-/Shared drives/DiverCidade HUB/2026/THE NEW HUB/Obsidian Inventory/05-resources/inbox/Plataforma HUB/00-entrada/01-acordo-parceria
+02-review/01-acordo-parceria/ (submetido ao gate em 2026-09-05; antes em `05-resources/inbox/Plataforma HUB/00-entrada/01-acordo-parceria`)

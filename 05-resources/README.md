@@ -1,6 +1,11 @@
 # 05 — Recursos: Arquivos de Processamento, MVPs e Memória do Projeto
 
 > Staging de materiais brutos, rascunhos arquivados, hipóteses de MVP e artefatos da visão completa da Plataforma HUB.
+>
+> > [!info] Submissão 2026-09-05
+> > `inbox/Plataforma HUB/01-mvps/`, `02-visao-plataforma/` e `00-entrada/01-acordo-parceria/` foram
+> > submetidos ao gate e vivem agora em `02-review/` (congelados, `em-revisao`). As seções abaixo que
+> > os descrevem permanecem como catálogo; os links apontam para o endereço atual.
 
 ## 1. Propósito desta pasta
 
@@ -82,7 +87,7 @@ Quando um rascunho contiver uma decisão ainda relevante, registrar a decisão e
 
 Exemplos de conteúdo encontrado incluem sequências de imagens de WhatsApp, visuais de sugestão de visões, decks iniciais e exportações de protótipos.
 
-## 5. `inbox/Plataforma HUB/02-visao-plataforma/`
+## 5. `../02-review/02-visao-plataforma/`
 
 Esta é a visão de longo prazo: descreve o ecossistema que a HUB poderá construir depois que as hipóteses mais importantes forem validadas em casos reais.
 
@@ -136,7 +141,7 @@ O modelo não é orçamento definitivo: é instrumento para priorizar, comparar 
 
 Contém referência visual para apresentações e comunicação da tese. Use como inspiração de narrativa e linguagem visual, não como especificação funcional.
 
-## 6. `inbox/Plataforma HUB/01-mvps/`
+## 6. `../02-review/01-mvps/`
 
 Esta é a área central de validação. Os MVPs não tentam construir toda a plataforma de uma vez; testam hipóteses em contextos reais, com escopo limitado, curadoria humana, regras simples e medição de resultado.
 
