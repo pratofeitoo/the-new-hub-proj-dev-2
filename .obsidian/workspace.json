@@ -75,7 +75,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -262,8 +262,10 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "aa7b9d1bda30d77d",
+  "active": "108b413f58344ed0",
   "lastOpenFiles": [
+    "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
+    "03-approved/documentos-oficiais/README.md",
     "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/02-planning/PLANO_FIX_XLSX_a_partir_MD.md",
     "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/03-validation/Planilha_Tecnica_Desenvolvimento_HUB_validacao.md",
     "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.xlsx",
@@ -298,9 +300,6 @@
     "03-approved/nucleo-inteligencia/planilha-tecnica/README.md",
     "03-approved/nucleo-inteligencia/analises-processadas/Relatorio_CrossReview_Blueprint_vs_Especificacao_Planilha_HUB.md",
     "03-approved/nucleo-inteligencia/analises-processadas/README.md",
-    "03-approved/nucleo-inteligencia/analises-processadas/Relatorio_Consistencia_Especificacao_vs_Planilha_HUB.md",
-    "03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md",
-    "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Fornecedores/visuais/ChatGPT Image 29 de ago. de 2026, 12_25_24.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Estratégia e Dados/visuais/ChatGPT Image 29 de ago. de 2026, 12_22_47.png",
     "05-resources/Processar/Plataforma HUB/01-mvps/MVP - Acadêmico/visuais/ChatGPT Image 29 de ago. de 2026, 12_33_20.png",

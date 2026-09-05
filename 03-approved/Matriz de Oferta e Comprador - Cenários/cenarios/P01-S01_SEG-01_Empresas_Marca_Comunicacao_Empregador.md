@@ -72,5 +72,5 @@ Hipótese para um primeiro projeto delimitado: 4–8 semanas, com 1 responsável
 
 - **Data:** 2026-09-05
 - **Gate:** P01/P02 (fases iniciais assinadas)
-- **Decisão:** promovido de `03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/` para `03-approved/Matriz de Oferta e Comprador - Cenários/cenarios/` na reestruturação lifecycle-first como entregável final assinado.
+- **Decisão:** promovido de `04-project-management/cenarios/` para `03-approved/` (endereço atual via reorganizações 2026-09-05) na reestruturação lifecycle-first como entregável final assinado.
 - **Ref:** `00-project-control/registro-mudancas/2026-09-05-reestruturacao-fronteiras-lifecycle.md`
