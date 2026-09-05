@@ -9,8 +9,8 @@ tags:
   - GOV-001
   - bloqueador
 projects:
-  - "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
-  - "[[01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]"
+  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
+  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]"
   - "[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]"
 contexts:
   - "@juridico"

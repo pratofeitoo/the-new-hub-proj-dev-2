@@ -56,7 +56,7 @@ e qualquer edição dentro de `03-approved/` ou `02-review/`.
 
 Exceções documentadas (SHOULD NOT estender sem registro):
 
-- `01-work/documentos-oficiais/` usa o vocabulário herdado do shell (`hipotese | em_elaboracao | ...`),
+- `01-work/pesquisa-e-confianca/documentos-oficiais/` usa o vocabulário herdado do shell (`hipotese | em_elaboracao | ...`),
   sempre abaixo de aprovado. Nada ali é oficial (bloqueador GOV-001). Cada saída exige evidência
   legal individual via `02-review/`.
 - `layer:` (`cross-cutting | governance | refining | blueprint | approval | ...`) é taxonomia de
@@ -67,10 +67,13 @@ Exceções documentadas (SHOULD NOT estender sem registro):
 
 ## 4. Contrato de diretórios (normativo)
 
-- `01-work/<domínio>/` — MUST conter só elaboração editável (`estrategia/`, `produto/`, `tecnologia/`,
-  `dados-inteligencia/`, `modelo-negocio/`, `marca-mercado/`, `governanca-juridico/`, `operacoes/`,
-  `visao-lancamento/`, `pesquisa/`, `refinamento-produto/`, `refinamento-modelo-dados/`,
-  `modelos-financeiros/`, `documentos-oficiais/`). Arquivo novo nasce aqui com `rascunho`.
+- `01-work/<tema>/<domínio>/` — MUST conter só elaboração editável, em 4 temas com README próprio:
+  `mercado-e-direcao/` (`estrategia/`, `modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`),
+  `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`),
+  `dados-tech-financas/` (`dados-inteligencia/`, `tecnologia/`, `modelos-financeiros/`,
+  `refinamento-modelo-dados/`), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`,
+  `documentos-oficiais/`). Arquivo novo nasce aqui com `rascunho`. Nomes de domínio MUST NOT mudar
+  sem registro; temas novos exigem decisão do usuário.
 - `02-review/pacotes/` — MUST conter só pacotes congelados com gate, dono e data. `02-review/bloqueado/`
   MUST registrar o motivo do bloqueio. Nada aqui é editado.
 - `03-approved/<domínio>/` — MUST conter só finais gate-assinados com bloco `## Histórico de aprovação`

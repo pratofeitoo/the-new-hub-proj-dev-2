@@ -20,7 +20,7 @@ com domínios como segundo eixo:
 | Área | Papel atual |
 |---|---|
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
-| `01-work/` | Elaboração por domínio: `estrategia/`, `produto/`, `tecnologia/`, `dados-inteligencia/` (+`modelo-indicadores/` e `analises-abas/`), `modelo-negocio/`, `marca-mercado/`, `governanca-juridico/`, `operacoes/`, `visao-lancamento/`, `pesquisa/`, `refinamento-produto/`, `refinamento-modelo-dados/` (spine P03, 9 itens + gate, todos rascunho), `modelos-financeiros/`, `documentos-oficiais/` (shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). |
+| `01-work/` | Elaboração em 4 temas: `mercado-e-direcao/` (`estrategia/`, `modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`), `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`), `dados-tech-financas/` (`dados-inteligencia/` + análises, CSVs em `05-resources/fontes/`, `tecnologia/`, `modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). |
 | `02-review/` | `pacotes/` (aceite P01 cross-functional, `em-revisao`) e `bloqueado/` (modelo de indicadores + derivados). |
 | `03-approved/` | `cenarios/` P01-S01…S06 assinados (`aprovado` + bloco de histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
 | `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, cenários (ponteiro para `03-approved/`), planos unificados e logs de progresso. |
@@ -49,14 +49,14 @@ com domínios como segundo eixo:
 │   ├── framework/                   — framework das três camadas
 │   ├── registro-lacunas/lacunas/    — gaps BRD/DAT/FIN/GOV/TEC e registros
 │   └── registro-mudancas/           — registros estruturais e decisórios (incl. lifecycle 2026-09-05 + censos)
-├── 01-work/                         — ELABORAÇÃO (rascunho | em-elaboracao)
-│   ├── estrategia/                  — fundação + ponteiro de origem
-│   ├── produto/ tecnologia/ modelo-negocio/ marca-mercado/
-│   ├── governanca-juridico/ operacoes/ visao-lancamento/
-│   ├── dados-inteligencia/          — narrativa + modelo-indicadores (análises; CSVs em 05-resources/fontes)
-│   ├── pesquisa/ refinamento-produto/ modelos-financeiros/
-│   ├── refinamento-modelo-dados/    — spine P03-T01..T09 + gate M0 (todos rascunho)
-│   └── documentos-oficiais/         — shell 01–14 + _controle/ + README de aviso (nada oficial)
+├── 01-work/                         — ELABORAÇÃO (rascunho | em-elaboracao), 4 temas
+│   ├── mercado-e-direcao/           — estrategia/ modelo-negocio/ marca-mercado/ visao-lancamento/
+│   ├── produto-e-operacao/          — produto/ operacoes/ refinamento-produto/
+│   ├── dados-tech-financas/         — dados-inteligencia/ (análises; CSVs em 05-resources/fontes)
+│   │                                  tecnologia/ modelos-financeiros/
+│   │                                  refinamento-modelo-dados/ (spine P03-T01..T09 + gate M0, rascunho)
+│   └── pesquisa-e-confianca/        — pesquisa/ governanca-juridico/
+│                                      documentos-oficiais/ (shell 01–14 + _controle/, nada oficial)
 ├── 02-review/                       — REVISÃO (em-revisao, congelado)
 │   ├── pacotes/                     — pacotes para stakeholders
 │   └── bloqueado/                   — modelo de indicadores e derivados de validação
@@ -65,7 +65,7 @@ com domínios como segundo eixo:
 │   └── documentos-oficiais/         — reservado; vazio até o primeiro gate legal
 ├── 04-project-management/           — execução P01→P07
 │   ├── atas-reuniao/                — atas estruturadas e templates
-│   ├── cenarios/                    — ponteiro para 03-approved/cenarios/
+│   ├── cenarios/                    — (removido; finais em 03-approved/cenarios/)
 │   ├── cronogramas/                 — cronograma Bases
 │   ├── marcos/                      — M00→M07 e sub-gates M03.A/B
 │   ├── planos-fase/                 — P01→P07
@@ -105,7 +105,7 @@ O fluxo de execução é:
 
 - P01: 7 tarefas concluídas; cenários S01…S06 assinados em `03-approved/cenarios/`.
 - P02: 6 tarefas concluídas.
-- P03: 9 itens + gate em elaboração em `01-work/refinamento-modelo-dados/` (todos `rascunho`).
+- P03: 9 itens + gate em elaboração em `01-work/dados-tech-financas/refinamento-modelo-dados/` (todos `rascunho`).
 - P04–P07: 34 tarefas pendentes.
 - `GOV-001` (estrutura societária/CNPJs) continua sendo o bloqueador principal da documentação oficial.
 - Drive `THE NEW HUB/` = espelho somente-leitura de `03-approved/` + `README-DRIVE-MIRROR.md`; pastas legadas aposentadas em 2026-09-05.
@@ -116,7 +116,7 @@ O fluxo de execução é:
 |---|---|---|
 | Agente antes de mover/promover arquivo | `00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md` (declarar a transição) | conforme a transição declarada |
 | Entender regras e decisões | `00-project-control/` | `decisoes/` ou `registro-lacunas/` |
-| Elaborar conteúdo | `01-work/<domínio>/` | subpasta de `01-work/` correspondente (`rascunho`/`em-elaboracao`) |
+| Elaborar conteúdo | `01-work/<tema>/<domínio>/` | subpasta correspondente (`rascunho`/`em-elaboracao`) |
 | Submeter a gate | `02-review/README.md` | congelar + mover para `02-review/` com dono e data |
 | Consumir/compartilhar finais | `03-approved/` | nunca editar aqui; nova versão começa em `01-work/` |
 | Executar o plano | `04-project-management/` | tarefas, marcos, atas, logs e cenários (ponteiro) |
@@ -126,7 +126,7 @@ O fluxo de execução é:
 
 ## Regras de manutenção
 
-- `status:` deve ser igual ao da pasta (`01-work`: rascunho/em-elaboracao; `02-review`: em-revisao; `03-approved`: aprovado; `99-archive`: superado/rejeitado/descontinuado). Exceção documentada: `01-work/documentos-oficiais/` usa o vocabulário próprio herdado (`hipotese|em_elaboracao|...`), sempre abaixo de aprovado.
+- `status:` deve ser igual ao da pasta (`01-work`: rascunho/em-elaboracao; `02-review`: em-revisao; `03-approved`: aprovado; `99-archive`: superado/rejeitado/descontinuado). Exceção documentada: `01-work/pesquisa-e-confianca/documentos-oficiais/` usa o vocabulário próprio herdado (`hipotese|em_elaboracao|...`), sempre abaixo de aprovado.
 - Não edite aprovados no lugar; não arquive P03 enquanto estiver em elaboração ativa.
 - Atualize este mapa e o `README.md` quando a estrutura de pastas mudar.
 - Arquivos compilados de plugins não devem ser editados manualmente.

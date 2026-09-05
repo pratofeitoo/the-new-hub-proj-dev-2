@@ -15,7 +15,7 @@ gap_ids:
   - GOV-005
 dependencies:
   - P04-T02
-target_file: 01-work/documentos-oficiais/_controle/
+target_file: 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-009]]"

@@ -13,7 +13,7 @@ gap_ids:
   - FIN-006
 dependencies:
   - P06-T02
-target_file: 01-work/modelos-financeiros/
+target_file: 01-work/dados-tech-financas/modelos-financeiros/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-006]]"

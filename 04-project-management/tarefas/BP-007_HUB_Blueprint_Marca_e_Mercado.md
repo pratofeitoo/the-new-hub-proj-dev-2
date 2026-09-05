@@ -9,7 +9,7 @@ area: brand-market
 sequence: 7
 owner:
   - PF Rezende
-target_file: 01-work/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
+target_file: 01-work/mercado-e-direcao/marca-mercado/HUB_Blueprint_Marca_e_Mercado.md
 dependencies:
   - BP-001
   - BP-002
@@ -27,7 +27,7 @@ gap_ids:
   - BRD-002
   - BRD-003
 related_notes:
-  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

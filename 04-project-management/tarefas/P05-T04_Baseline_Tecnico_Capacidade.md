@@ -13,7 +13,7 @@ gap_ids:
   - TEC-005
 dependencies:
   - P05-T02
-target_file: 01-work/modelos-financeiros/
+target_file: 01-work/dados-tech-financas/modelos-financeiros/
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-005]]"

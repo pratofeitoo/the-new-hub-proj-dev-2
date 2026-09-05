@@ -14,7 +14,7 @@ gap_ids:
 dependencies:
   - P03-T01
   - P03-T03
-target_file: 01-work/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/
+target_file: 01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-005]]"
@@ -47,7 +47,7 @@ Nenhuma métrica crítica com definição alternativa; este critério orienta o 
 
 ## Execução
 
-- **Entregável produzido:** [[01-work/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1.md]] (73 indicadores) + cópia em `sintese-entre-abas/` — catálogo com fórmula/dimensão/owner/tipo/alavanca + grafo `DAT-01/02/03 → eventos → indicadores → contrato/transação → fato financeiro → dashboards` (Mermaid) + resolução 6 definições alternativas (MRR/ARR/NRR, retenções, etc.).
+- **Entregável produzido:** [[01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1.md]] (73 indicadores) + cópia em `sintese-entre-abas/` — catálogo com fórmula/dimensão/owner/tipo/alavanca + grafo `DAT-01/02/03 → eventos → indicadores → contrato/transação → fato financeiro → dashboards` (Mermaid) + resolução 6 definições alternativas (MRR/ARR/NRR, retenções, etc.).
 - **Cobertura:** 8 vertentes (Pessoas 10, Empresas/RH 10, Produto 10, etc.), 12 alavancas Árvore de Valor, 10 visões Dashboard, 12 famílias Matriz Integração.
 - **Resultado:** 73/73 com fórmula única, dimensão e dependência; nenhuma métrica crítica com definição alternativa após §4.
 - **Próximo:** validar 73 fórmulas vs `06_Simulador_ROI` (H20 payback bruto vs líquido) e `08_Dicionario_Dados` chaves antes de G03.C2.

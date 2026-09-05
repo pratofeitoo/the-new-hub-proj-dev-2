@@ -14,7 +14,7 @@ gap_ids:
 dependencies:
   - P03-T05
   - P05-T04
-target_file: 01-work/modelos-financeiros/
+target_file: 01-work/dados-tech-financas/modelos-financeiros/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-001]]"
@@ -33,7 +33,7 @@ dateModified: 2026-09-01T19:28:23.353-03:00
 Transformar premissas ilustrativas (ROI 28,42% etc.) em registro com fonte, data, confiança, dono e próxima evidência. Sem TBD em premissa crítica.
 
 ## Entregável
-Registro auditável em `01-work/modelos-financeiros/` + `05-resources/planilhas/`, como insumo de refinamento para revisão posterior.
+Registro auditável em `01-work/dados-tech-financas/modelos-financeiros/` + `05-resources/planilhas/`, como insumo de refinamento para revisão posterior.
 
 ## Dependências
 - [[04-project-management/tarefas/P03-T05_Catalogo_Metricas_Grafo|P03-T05]] (métricas)

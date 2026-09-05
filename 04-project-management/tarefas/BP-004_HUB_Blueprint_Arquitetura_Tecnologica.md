@@ -9,7 +9,7 @@ area: technology
 sequence: 4
 owner:
   - PF Rezende
-target_file: 01-work/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
+target_file: 01-work/dados-tech-financas/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md
 dependencies:
   - BP-002
   - BP-003
@@ -22,7 +22,7 @@ gap_ids:
   - TEC-006
   - TEC-007
 related_notes:
-  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

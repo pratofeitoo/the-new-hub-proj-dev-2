@@ -29,7 +29,7 @@ Depois disso:
 1. Leia [`project-map.md`](project-map.md) para a estrutura atual.
 2. Abra o framework em [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md).
 3. **Agentes: antes de criar, mover ou promover qualquer arquivo**, leia o contrato normativo em [`HUB_Framework_Fronteiras_Lifecycle.md`](00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md) e declare qual transição está executando.
-3. Leia a fundação em [`HUB_Fundacao_Blueprint_Projeto.md`](01-work/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
+3. Leia a fundação em [`HUB_Fundacao_Blueprint_Projeto.md`](01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
 4. Consulte o registro de lacunas em [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md).
 5. Para a ordem de execução, abra [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md).
 
@@ -65,22 +65,22 @@ Pastas aposentadas em 2026-09-05: `01-blueprint/` → `01-work/`, `02-refinement
 
 - P01 (Oferta & Negócio): 7 tarefas concluídas; cenários P01-S01…S06 assinados em [`03-approved/cenarios/`](03-approved/cenarios/).
 - P02 (Produto & Operação): 6 tarefas concluídas.
-- P03 (Dados Canônicos): 9 itens + gate em elaboração em [`01-work/refinamento-modelo-dados/`](01-work/refinamento-modelo-dados/) — todos `rascunho`, nada em revisão.
+- P03 (Dados Canônicos): 9 itens + gate em elaboração em [`01-work/dados-tech-financas/refinamento-modelo-dados/`](01-work/dados-tech-financas/refinamento-modelo-dados/) — todos `rascunho`, nada em revisão.
 - P04–P07: 34 tarefas pendentes.
 - `GOV-001` — decisão sobre a estrutura societária/CNPJs — é o principal bloqueador da documentação oficial.
-- O shell de documentos oficiais vive em [`01-work/documentos-oficiais/`](01-work/documentos-oficiais/) (taxonomia 01–14 preservada como forma do futuro).
+- O shell de documentos oficiais vive em [`01-work/pesquisa-e-confianca/documentos-oficiais/`](01-work/pesquisa-e-confianca/documentos-oficiais/) (taxonomia 01–14 preservada como forma do futuro).
 
 O faseamento completo é: `P01` → `P02` → `P03` (spine de dados) → `P04` ↔ `P05` → `P06` → `P07`.
 
 ## Arquivos-chave
 
 - [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — processo central.
-- [`HUB_Fundacao_Blueprint_Projeto.md`](01-work/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — fundação consolidada.
+- [`HUB_Fundacao_Blueprint_Projeto.md`](01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — fundação consolidada.
 - [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — gaps, riscos e pendências.
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor P01→P07.
 - [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — coordenação das tarefas de fase.
-- [`HUB_Mapa_Documentos_Oficiais_v1.md`](01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md) — matriz dos documentos obrigatórios (rascunho).
-- [`HUB_Instrucao_Vault_Documentos_Oficiais.md`](01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md) — instrução do vault de documentos oficiais.
+- [`HUB_Mapa_Documentos_Oficiais_v1.md`](01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md) — matriz dos documentos obrigatórios (rascunho).
+- [`HUB_Instrucao_Vault_Documentos_Oficiais.md`](01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md) — instrução do vault de documentos oficiais.
 - [`2026-09-05-reestruturacao-fronteiras-lifecycle.md`](00-project-control/registro-mudancas/2026-09-05-reestruturacao-fronteiras-lifecycle.md) — registro desta reestruturação.
 
 ## Regras de navegação

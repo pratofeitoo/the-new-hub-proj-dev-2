@@ -27,8 +27,8 @@ gap_ids:
 bp_tasks:
   - BP-001
 related_notes:
-  - "[[01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
-  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita]]"
+  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
   - "[[04-project-management/planos-mestres/HUB_Plano_Fases_v1]]"
 created: 2026-08-26
@@ -81,8 +81,8 @@ Definir como o sistema completo do HUB — marca, HUB Negócios, Instituto HUB e
 
 ## 4. Entradas
 
-- [`HUB_Fundacao_Blueprint_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/estrategia/HUB_Fundacao_Blueprint_Projeto.md) §3 Arquitetura de negócios (§4 unidades, §3 frentes) + §8 Blueprint comercial
-- [`HUB_Blueprint_Oferta_e_Arquitetura_Receita.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md) (alvo `BP-001`)
+- [`HUB_Fundacao_Blueprint_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto.md) §3 Arquitetura de negócios (§4 unidades, §3 frentes) + §8 Blueprint comercial
+- [`HUB_Blueprint_Oferta_e_Arquitetura_Receita.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md) (alvo `BP-001`)
 - [`HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/04-project-management/planos-mestres/HUB_Escopo_Estrategico_Documento_Mae_v2_Pronta_Investidor_pt-BR.md) §8 Modelo de Negócio (pacotes a testar)
 - Gaps `STR-*`, `FIN-002`, `GTM-001/002` em [`HUB_Registro_Lacunas_Projeto.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md)
 
@@ -90,11 +90,11 @@ Definir como o sistema completo do HUB — marca, HUB Negócios, Instituto HUB e
 
 | Artefato | Onde vive | Camada |
 |---|---|---|
-| Matriz oferta–comprador–capacidade v1 | `01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (atualizado) | blueprint |
+| Matriz oferta–comprador–capacidade v1 | `01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (atualizado) | blueprint |
 | Diagrama 4 unidades + frentes + ofertas | mesmo doc (anexo mermaid) | blueprint |
 | Taxonomia de receita (primária/secundária/expansão + comercial vs restrita) | mesmo doc § Receita + `05-resources/planilhas/` (tabela) | blueprint |
-| Arquitetura de compradores de lançamento (segmentos, papéis, hipóteses de orçamento) | mesmo doc + `01-work/pesquisa/` (se entrevistas) | refining |
-| Portfólio de parceiros + matriz dependências | `01-work/pesquisa/` + `00-project-control/dependencias/` | refining |
+| Arquitetura de compradores de lançamento (segmentos, papéis, hipóteses de orçamento) | mesmo doc + `01-work/pesquisa-e-confianca/pesquisa/` (se entrevistas) | refining |
+| Portfólio de parceiros + matriz dependências | `01-work/pesquisa-e-confianca/pesquisa/` + `00-project-control/dependencias/` | refining |
 | Roadmap P01–P07 atualizado | `HUB_Plano_Fases_v1.md` + `04-project-management/cronogramas/` | gestão |
 | Pacote de revisão P01 | `02-review/pacotes/P01-Oferta-Negocio.md` | approval |
 | Decisão registrada | `00-project-control/decisoes/DEC-P01-*.md` | gestão |

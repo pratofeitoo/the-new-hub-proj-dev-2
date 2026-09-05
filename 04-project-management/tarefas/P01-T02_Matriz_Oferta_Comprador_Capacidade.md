@@ -14,7 +14,7 @@ gap_ids:
   - STR-002
 dependencies:
   - P01-T01
-target_file: 01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
+target_file: 01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita.md
 related_notes:
   - "[[04-project-management/planos-fase/P01_Arquitetura_Oferta_Negocio]]"
   - "[[00-project-control/registro-lacunas/lacunas/STR-002]]"
@@ -47,7 +47,7 @@ Nenhuma oferta em 2 unidades sem regra de propriedade + acordo intragrupo anotad
 
 ## Execução
 
-- **Entregável produzido:** matriz oferta → comprador → unidade → capacidade → operação → receita → gap adicionada em [[01-work/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.1 Matriz oferta → comprador → unidade → capacidade → operação → receita → gap]].
+- **Entregável produzido:** matriz oferta → comprador → unidade → capacidade → operação → receita → gap adicionada em [[01-work/mercado-e-direcao/modelo-negocio/HUB_Blueprint_Oferta_e_Arquitetura_Receita#2.1 Matriz oferta → comprador → unidade → capacidade → operação → receita → gap]].
 - **Cobertura:** 17 ofertas candidatas nas frentes Mídia e Experiências, Impacto Financiável e Ecossistemas Empresariais.
 - **Resultado:** cada linha possui unidade dona, capacidade principal, operação/troca de valor, motor de receita e gap vinculado.
 - **Próximo ciclo de refinamento:** investigar compradores, JTBD, parceiros, riscos e classificação de receita; manter hipóteses explícitas e não tratá-las como decisões finais.
@@ -84,8 +84,8 @@ O inventário foi reconciliado com a matriz §2.1 e com os segmentos de lançame
 
 As fichas operacionais completas (17 ofertas), a matriz de prontidão e os cenários de teste foram movidos para arquivo dedicado para manter esta nota como índice de resultados.
 
-- **Fichas operacionais (17):** [[01-work/refinamento-produto/fichas-operacionais-P01-T02-v1|fichas-operacionais-P01-T02-v1.md]] — JTBD, comprador, parceiros, riscos e critérios de sucesso por oferta (Mídia 5, Impacto 6, Ecossistemas 6).
+- **Fichas operacionais (17):** [[01-work/produto-e-operacao/refinamento-produto/fichas-operacionais-P01-T02-v1|fichas-operacionais-P01-T02-v1.md]] — JTBD, comprador, parceiros, riscos e critérios de sucesso por oferta (Mídia 5, Impacto 6, Ecossistemas 6).
 - **Matriz de prontidão:** incluída no mesmo arquivo — `17/17 fichas completas em v1`.
 - **Cenários de teste (SEG-01..06):** [[03-approved/cenarios/P01-S01_SEG-01_Empresas_Marca_Comunicacao_Empregador|SEG-01]] a [[03-approved/cenarios/P01-S06_SEG-06_Acesso_Empresarial_Plataforma|SEG-06]] — permanecem em `hypothesis`.
 
-> Esta nota mantém apenas o resumo executivo (Execução + Verificação). O histórico completo vive em `01-work/refinamento-produto/` e nos arquivos de cenário; não duplique conteúdo — vincule.
+> Esta nota mantém apenas o resumo executivo (Execução + Verificação). O histórico completo vive em `01-work/produto-e-operacao/refinamento-produto/` e nos arquivos de cenário; não duplique conteúdo — vincule.

@@ -9,7 +9,7 @@ tags:
   - vault-isolado
   - nao-obrigatorio
 projects:
-  - "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
+  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
   - "[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]"
 contexts:
   - "@governanca"

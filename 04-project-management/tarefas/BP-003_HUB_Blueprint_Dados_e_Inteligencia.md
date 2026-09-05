@@ -9,7 +9,7 @@ area: data-intelligence
 sequence: 3
 owner:
   - PF Rezende
-target_file: 01-work/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
+target_file: 01-work/dados-tech-financas/dados-inteligencia/HUB_Blueprint_Dados_e_Inteligencia.md
 dependencies:
   - BP-001
   - BP-002
@@ -23,7 +23,7 @@ gap_ids:
   - DAT-008
   - DAT-010
 related_notes:
-  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21

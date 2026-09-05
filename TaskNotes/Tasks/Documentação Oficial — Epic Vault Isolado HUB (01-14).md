@@ -8,9 +8,9 @@ tags:
   - vault-isolado
   - epic
 projects:
-  - "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
-  - "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
-  - "[[01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]"
+  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
+  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
+  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]"
 contexts:
   - "@juridico"
   - "@governanca"
@@ -25,9 +25,9 @@ dateModified: 2026-09-02T23:24:49.414-03:00
 Epic para tracking de toda documentação oficial no vault isolado `HUB_Documentos_Oficiais`.
 
 **Fonte da verdade:**
-- `GOV-MAP-001` → `01-08` (32 docs obrigatórios) → `[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]`
-- `GOV-MAP-002` → `09-14` (27 docs não-obrigatórios mas requeridos) → `[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]`
-- Instrução visual v2 → `[[01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]`
+- `GOV-MAP-001` → `01-08` (32 docs obrigatórios) → `[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]`
+- `GOV-MAP-002` → `09-14` (27 docs não-obrigatórios mas requeridos) → `[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]`
+- Instrução visual v2 → `[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]`
 
 **Estrutura destino:** `HUB_Documentos_Oficiais/00-controle` + `01-08` + `09-14` + `99-arquivo` = 15 pastas, 59 docs + 5 controle
 

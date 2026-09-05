@@ -16,7 +16,7 @@ gap_ids:
 dependencies:
   - P02-T01
   - P02-T04
-target_file: 01-work/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
+target_file: 01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 related_notes:
   - "[[04-project-management/planos-fase/P02_Produto_Operacao]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-008]]"
@@ -50,6 +50,6 @@ O rascunho não deve manter atividade crítica com >1 A ou sem dono; decisões c
 
 ## Execução
 
-- **Entregável produzido:** [[01-work/refinamento-produto/RACI_v1|RACI_v1.md]] + cópia em `02-review/bloqueado/.../14_RACI/RACI_v1.md` com 1 A por atividade + direitos decisão + escalonamento founder→delegado.
+- **Entregável produzido:** [[01-work/produto-e-operacao/refinamento-produto/RACI_v1|RACI_v1.md]] + cópia em `02-review/bloqueado/.../14_RACI/RACI_v1.md` com 1 A por atividade + direitos decisão + escalonamento founder→delegado.
 - **Resultado:** delegação válida exige autoridade/competência/capacidade/acesso/orçamento/backup/rotação registrados.
 - **Próximo:** nomear pessoa física por A + simulação sem founder + aprovação Governança.

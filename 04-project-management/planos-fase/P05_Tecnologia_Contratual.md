@@ -26,7 +26,7 @@ gap_ids:
 bp_tasks:
   - BP-004
 related_notes:
-  - "[[01-work/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica]]"
+  - "[[01-work/dados-tech-financas/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica]]"
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[04-project-management/planos-mestres/HUB_Plano_Fases_v1]]"
@@ -76,20 +76,20 @@ Definir a arquitetura-alvo, contratos de integração, requisitos não funcionai
 - Sub-gate **S3B** de P03 (envelope evento + dicionário físico)
 - P02 (jornada + matriz permissão)
 - P04 em paralelo (requisitos LGPD/tenancy/IAM)
-- [`HUB_Blueprint_Arquitetura_Tecnologica.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md) + `01-work/dados-inteligencia/modelo-indicadores/10_Integracoes/`
+- [`HUB_Blueprint_Arquitetura_Tecnologica.md`](file:///Users/paulorezende/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The%20New%20HUB%20dev-2/01-work/dados-tech-financas/tecnologia/HUB_Blueprint_Arquitetura_Tecnologica.md) + `01-work/dados-tech-financas/dados-inteligencia/modelo-indicadores/10_Integracoes/`
 - Gaps `TEC-*`
 
 ## 5. Saídas
 
 | Artefato | Onde vive | Camada |
 |---|---|---|
-| Arquitetura solução + estratégia ambientes | `01-work/tecnologia/` | blueprint |
+| Arquitetura solução + estratégia ambientes | `01-work/dados-tech-financas/tecnologia/` | blueprint |
 | Contratos integração + matriz system-of-record | `01-work/testes-experimentos/` ou `tecnologia/` | refining |
 | Mapa identidade entre sistemas | mesmo + link para P03 | refining |
-| Modelo capacidade técnica (custo/latência/volume) | `01-work/modelos-financeiros/` (insumo para P06) | refining |
-| Threat model + matriz controles segurança | `01-work/documentos-oficiais/_controle/` | refining |
-| SLOs + runbooks + plano recuperação | `01-work/tecnologia/` + `01-work/testes-experimentos/` | refining |
-| Processo release + runbook lançamento | `01-work/visao-lancamento/` + `04-project-management/planos-fase/` | refining |
+| Modelo capacidade técnica (custo/latência/volume) | `01-work/dados-tech-financas/modelos-financeiros/` (insumo para P06) | refining |
+| Threat model + matriz controles segurança | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | refining |
+| SLOs + runbooks + plano recuperação | `01-work/dados-tech-financas/tecnologia/` + `01-work/testes-experimentos/` | refining |
+| Processo release + runbook lançamento | `01-work/mercado-e-direcao/visao-lancamento/` + `04-project-management/planos-fase/` | refining |
 | Pacote revisão P05 | `02-review/pacotes/P05-Tecnologia.md` | approval |
 
 ## 6. Critérios de saída (gate P05)

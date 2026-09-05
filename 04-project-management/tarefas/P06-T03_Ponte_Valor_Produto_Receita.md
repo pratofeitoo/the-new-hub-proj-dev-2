@@ -14,7 +14,7 @@ gap_ids:
   - FIN-004
 dependencies:
   - P03-T06
-target_file: 01-work/modelos-financeiros/
+target_file: 01-work/dados-tech-financas/modelos-financeiros/
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/FIN-004]]"

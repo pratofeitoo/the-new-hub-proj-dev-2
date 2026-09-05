@@ -219,7 +219,7 @@ Perfil, consentimento e histórico devem permanecer conectados ao CORE para evit
 
 Os apoios tabulares e taxonomias devem permanecer em `planilhas/` quando forem auxiliares e não pertencerem a uma camada de refinamento específica.
 
-`HUB_Taxonomia_Receita_Reconhecimento_v1.md` foi movido para `01-work/modelos-financeiros/`, onde passa a ser o artefato de refinamento financeiro ligado ao `FIN-002` e à tarefa `P01-T03`.
+`HUB_Taxonomia_Receita_Reconhecimento_v1.md` foi movido para `01-work/dados-tech-financas/modelos-financeiros/`, onde passa a ser o artefato de refinamento financeiro ligado ao `FIN-002` e à tarefa `P01-T03`.
 
 Ao adicionar uma planilha ou tabela, informe no nome a versão, registre a finalidade e indique se é fonte, cópia de trabalho ou saída.
 
@@ -247,7 +247,7 @@ Ao adicionar uma planilha ou tabela, informe no nome a versão, registre a final
 - [MVP Mackenzie](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Acadêmico/README.md)
 - [MVP Eventos](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Eventos/README.md)
 - [Visão de Comunidades](inbox/Plataforma%20HUB/01-mvps/Visão%20de%20Comunidades/README.md)
-- [Taxonomia de receita e reconhecimento](../01-work/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1.md)
+- [Taxonomia de receita e reconhecimento](../01-work/dados-tech-financas/modelos-financeiros/HUB_Taxonomia_Receita_Reconhecimento_v1.md)
 
 Os arquivos binários correspondentes ficam nas mesmas pastas dos READMEs. Ao referenciá-los, manter o nome exato e codificar espaços como `%20` quando o consumidor exigir URL.
 
@@ -304,7 +304,7 @@ O caminho completo do piloto Firjan pode ser percorrido a partir desta página:
 2. [Fila de Processamento](inbox/Plataforma%20HUB/HUB_Fila_Processamento.base)
 3. [Cartão do piloto Firjan](inbox/Plataforma%20HUB/00-entrada/piloto-firjan-processamento.md)
 4. [Fonte original — workbook Firjan](inbox/Plataforma%20HUB/01-mvps/MVP%20-%20Candidatos/fontes/HUB_MVP_Firjan_10_Empresas_1000_Candidatos.xlsx)
-5. [Resultado refinado do piloto](../01-work/pesquisa/piloto-firjan-processamento.md)
+5. [Resultado refinado do piloto](../01-work/pesquisa-e-confianca/pesquisa/piloto-firjan-processamento.md)
 
 O cartão mantém os vínculos recíprocos com a fonte e o resultado; o workbook permanece preservado no caminho original.
 

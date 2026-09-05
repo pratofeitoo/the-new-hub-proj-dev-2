@@ -9,7 +9,7 @@ area: governance-legal
 sequence: 6
 owner:
   - PF Rezende
-target_file: 01-work/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
+target_file: 01-work/pesquisa-e-confianca/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 dependencies:
   - BP-001
   - BP-002
@@ -26,7 +26,7 @@ gap_ids:
   - GOV-008
   - GOV-009
 related_notes:
-  - "[[01-work/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
+  - "[[01-work/mercado-e-direcao/estrategia/HUB_Fundacao_Blueprint_Projeto]]"
   - "[[00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto]]"
 created: 2026-08-20
 updated: 2026-08-21
