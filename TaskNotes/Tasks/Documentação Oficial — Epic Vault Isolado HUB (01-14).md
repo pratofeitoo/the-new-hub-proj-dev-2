@@ -19,7 +19,7 @@ contexts:
 timeEstimate: 480
 due: 2026-09-30
 scheduled: 2026-09-03
-dateModified: 2026-09-05T08:51:35.770-03:00
+dateModified: 2026-09-05T17:23:26.955-03:00
 ---
 
 # Documentação Oficial — Epic Vault Isolado HUB (01-14)

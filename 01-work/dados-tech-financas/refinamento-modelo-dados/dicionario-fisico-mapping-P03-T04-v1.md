@@ -16,12 +16,15 @@ tags:
 
 > **Status:** rascunho para revisão Dados+Tech · **G03.B2** é bloqueador mínimo para liberar P03. Automação e cobertura adicional são extensões pós-MVP.
 > **Depende de:** [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — 25 entidades com `canonical_id`.
+> **Reconciliação:** [[01-work/dados-tech-financas/refinamento-modelo-dados/reconciliacao-fonte-aprovada-P03-v1|crosswalk da fonte aprovada]].
 
-## 1. Resumo — 18 tabelas físicas → entidades canônicas (54 campos)
+## 1. Resumo — 18 tabelas físicas → entidades canônicas (54 campos físicos auditados)
+
+> **Camadas de contagem:** `47 FLD-*` = contrato canônico aprovado; `54` = campos físicos auditados neste escopo; `48` = linhas do detalhamento físico; `41` = linhas-base do CSV histórico. As contagens não são intercambiáveis.
 
 | Tabela física | Campos | Entidade(s) canônica(s) | PK lógica | Propósito |
 |---|---|---|---|---|
-| `dim_person` | 4 | Person | `person_id` | Identidade pessoa pseudônima |
+| `dim_person` | 4 | Person | `person_id` | Identidade pessoa pseudônima; `company_id` é projeção legada |
 | `dim_company` | 3 | Company | `company_id` | Organização contratante |
 | `dim_entity` | 1 | Entity | `entity_id` | Rede/entidade HUB |
 | `rel_company_entity` | 6 | Company + Entity | `(tenant_id, company_id, entity_id, valid_from)` | Bridge N:N contratual, temporal e auditável |
@@ -60,7 +63,7 @@ tags:
 | Tabela | Campo | Tipo | Chave | Entidade.Atributo canônico | Temporal |
 |---|---|---|---|---|---|
 | dim_person | person_id | UUID | PK | Person.person_id | `valid_from/to` |
-| dim_person | company_id | UUID | FK → dim_company | Relationship.person_id+company_id | `valid_from/to` (via `rel_person_company`) |
+| dim_person | company_id | UUID | projeção legada/derivada | Relationship.person_id+company_id via `rel_person_company` | `valid_from/to` do vínculo; sem FK canônica |
 | dim_person | consent_status | enum | — | Consent.status (por `purpose`) | `valid_from/to`, `version` |
 | dim_person | profile_segment | string | — | Person.profile_segment | `valid_from/to` |
 | dim_company | company_id | UUID | PK | Company.company_id | `valid_from/to` |
@@ -114,11 +117,11 @@ tags:
 | Aspecto | `abas-origem/08_Dicionario_Dados.csv` (12 cols) | `03-csv-corrigido/08_Dicionario_Dados.csv` (16 cols) | Resolução (DAT-010) |
 |---|---|---|---|
 | Colunas | Tabela, Campo, Tipo, Definição, Chave, Obrigatório, Exemplo, Sensibilidade, Base legal, Origem, Frequência, Regra qualidade | + **Retenção, Controle de acesso, Consentimento/revogação, Evidência** | 4 colunas adicionadas são **mínimo bloqueador G03.B2** para lineage auditável; `abas-origem` é espelho histórico |
-| `dim_person.company_id` | FK sem retenção declarada | + `60 meses ou contrato + obrigação legal`, `purpose-scoped RBAC` | Alinhado a LGPD — retenção por finalidade, não global |
+| `dim_person.company_id` | Projeção legada, sem FK canônica | Retenção e `purpose-scoped RBAC` a validar por finalidade | Vínculo autoritativo permanece em `rel_person_company`; não fixar prazo global |
 | `dim_person.consent_status` | sem propagação | + `revogação bloqueia novos usos <=5 min`, `CMP log + propagation test` | Propagação finalidade derivada exigida por DAT-008/010 |
 | `fact_person_skill` | nível/confiança sem evidência | + `consent event + load scan`, `range test + lineage` | Evidência reproduzível exigida |
-| `fact_event` | 4 campos sem retenção | + `36 meses`, `restricted event role`, `ID uniqueness + DSAR link` | Retenção e DSAR auditáveis |
-| Linhas | 41 campos (linhas 5–45) idênticas em conteúdo base | mesmas 41 linhas + metadados governança | Nenhuma divergência de Tipo/Definição/Chave; apenas metadados adicionados |
+| `fact_event` | 4 campos sem retenção | + retenção a validar, `restricted event role`, `ID uniqueness + DSAR link` | Retenção e DSAR auditáveis |
+| Linhas-base | 41 campos (linhas 5–45) idênticos em conteúdo base | mesmas 41 linhas + metadados de governança | Nenhuma divergência de Tipo/Definição/Chave; apenas metadados adicionados |
 
 **Registro auditável:** `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/04-registro-correcoes/corrections.csv` — 4 novas entradas `DAT010-001` a `DAT010-004` (categoria `governanca`, `schema`, `evidencias`) com `source_csv`=`08_Dicionario_Dados.csv`, `status=proposed` → `aprovado` após revisão Dados+Tech.
 
@@ -128,7 +131,8 @@ tags:
 erDiagram
     DIM_PERSON ||--o{ FACT_PERSON_SKILL : "1:N"
     DIM_SKILL ||--o{ FACT_PERSON_SKILL : "1:N"
-    DIM_PERSON ||--o{ DIM_COMPANY : "FK vigente"
+    DIM_PERSON ||--o{ REL_PERSON_COMPANY : "vínculo vigente"
+    DIM_COMPANY ||--o{ REL_PERSON_COMPANY : "vínculo vigente"
     DIM_COMPANY ||--o{ REL_COMPANY_ENTITY : "N:N contratual"
     DIM_ENTITY ||--o{ REL_COMPANY_ENTITY : "N:N contratual"
     DIM_COMPANY ||--o{ FACT_CONTRACT : "1:N cliente"

@@ -7,7 +7,13 @@ updated: 2026-09-02
 
 # Gate M0 → P03
 
+> **Reconciliação:** [[01-work/dados-tech-financas/refinamento-modelo-dados/reconciliacao-fonte-aprovada-P03-v1|crosswalk da fonte aprovada]]. O crosswalk não altera o gate nem substitui evidência.
+
 > **Estado: BLOQUEADO.** A promoção para P03 exige que todos os itens abaixo estejam concluídos e tenham evidência rastreável. Os artefatos de convergência já foram publicados; a validação formal do gate permanece pendente até a evidência do piloto Monks.
+
+> **Achado de verificação (2026-09-05):** os relatórios P03-T09 existem em `02-review/.../06-relatorios-validacao/`, mas não liberam o gate: o relatório de entidades contradiz a bridge E02, o recálculo ROI usa premissas ilustrativas e a validação CSV é somente estrutural. Portanto, a ausência que resta é evidência executada/revisada — não um checkbox ou link faltante.
+
+> **Evidência de ensaio (2026-09-05):** [[01-work/dados-tech-financas/refinamento-modelo-dados/evidencias-piloto-monks-dry-run/evidence-report|dry-run sintético Monks]]. O ensaio reproduz os cálculos 24/24 FLD, 10/16 KPIs, 5 recomendações e 2 casos financeiros, mas todos os registros são `synthetic=true`; não satisfaz evidência de piloto real e não altera o estado do gate.
 
 - [ ] **FLD-024→041** criados e validados: `consent_id`, `purpose`, `legal_basis`, núcleo Pessoa, IDs canônicos, `tenant_id` e temporalidade.
 - [ ] **FLD-042→047 + `canonical_id`/alias** validados: envelope, `recommendation_id`, `match_id` e `workday_id` como alias namespaced.

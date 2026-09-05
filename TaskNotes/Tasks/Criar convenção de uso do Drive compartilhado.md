@@ -1,10 +1,10 @@
 ---
 ops_id: OPS-004
 task_type: operational
-status: in-progress
+status: open
 priority: normal
 dateCreated: 2026-09-01T23:34:36.272-03:00
-dateModified: 2026-09-02T17:07:47.040-03:00
+dateModified: 2026-09-05T17:21:39.577-03:00
 tags:
   - task
 owner:

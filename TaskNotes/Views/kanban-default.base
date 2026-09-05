@@ -21,10 +21,12 @@ views:
       - priority
       - due
       - projects
+      - owner
+      - status
     sort:
       - property: formula.urgencyScore
         direction: DESC
     config:
       columnWidth: 300
       hideEmptyColumns: true
-    columnOrder: '{"note.status":["open","pendente","em-revisao","in-progress","done","concluido","none"]}'
+    columnOrder: '{"note.status":["open","pendente","in-progress","em-revisao","done","concluido","none"]}'

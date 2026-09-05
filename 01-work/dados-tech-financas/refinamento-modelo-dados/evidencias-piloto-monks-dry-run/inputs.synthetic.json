@@ -1,0 +1,363 @@
+{
+  "schema_version": "synthetic-monks-dry-run-v1",
+  "artifact_type": "pilot_evidence_inputs",
+  "synthetic": true,
+  "source_type": "synthetic",
+  "run_id": "run-synthetic-monks-001",
+  "pilot_id": "pilot-synthetic-fixture-001",
+  "milestone": "M0",
+  "scope_note": "Deterministic fixture only; contains no real Monks records, observations, outcomes, or performance claims.",
+  "coverage": {
+    "fld_m0": {
+      "required_count": 24,
+      "covered_count": 24,
+      "coverage": "24/24",
+      "field_ids": [
+        "FLD-001",
+        "FLD-002",
+        "FLD-003",
+        "FLD-004",
+        "FLD-005",
+        "FLD-006",
+        "FLD-007",
+        "FLD-008",
+        "FLD-009",
+        "FLD-010",
+        "FLD-011",
+        "FLD-012",
+        "FLD-013",
+        "FLD-014",
+        "FLD-015",
+        "FLD-016",
+        "FLD-017",
+        "FLD-018",
+        "FLD-019",
+        "FLD-020",
+        "FLD-021",
+        "FLD-022",
+        "FLD-023",
+        "FLD-024"
+      ]
+    },
+    "kpi_m0": {
+      "required_count": 16,
+      "connected_count": 10,
+      "coverage": "10/16",
+      "connected_kpi_ids": [
+        "KPI-PERF-01",
+        "KPI-PERF-02",
+        "KPI-ALO-01",
+        "KPI-ALO-02",
+        "KPI-FIN-01",
+        "KPI-FIN-02",
+        "KPI-FIN-03",
+        "KPI-FIN-04",
+        "KPI-FIN-05",
+        "KPI-FIN-06"
+      ],
+      "unconnected_kpi_ids": [
+        "KPI-FIN-07",
+        "KPI-FIN-08",
+        "KPI-FIN-09",
+        "KPI-FIN-10",
+        "KPI-FIN-11",
+        "KPI-FIN-12"
+      ]
+    }
+  },
+  "fields": [
+    {
+      "field_id": "FLD-001",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-001"
+    },
+    {
+      "field_id": "FLD-002",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-002"
+    },
+    {
+      "field_id": "FLD-003",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-003"
+    },
+    {
+      "field_id": "FLD-004",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-004"
+    },
+    {
+      "field_id": "FLD-005",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-005"
+    },
+    {
+      "field_id": "FLD-006",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-006"
+    },
+    {
+      "field_id": "FLD-007",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-007"
+    },
+    {
+      "field_id": "FLD-008",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-008"
+    },
+    {
+      "field_id": "FLD-009",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-009"
+    },
+    {
+      "field_id": "FLD-010",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-010"
+    },
+    {
+      "field_id": "FLD-011",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-011"
+    },
+    {
+      "field_id": "FLD-012",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-012"
+    },
+    {
+      "field_id": "FLD-013",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-013"
+    },
+    {
+      "field_id": "FLD-014",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-014"
+    },
+    {
+      "field_id": "FLD-015",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-015"
+    },
+    {
+      "field_id": "FLD-016",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-016"
+    },
+    {
+      "field_id": "FLD-017",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-017"
+    },
+    {
+      "field_id": "FLD-018",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-018"
+    },
+    {
+      "field_id": "FLD-019",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-019"
+    },
+    {
+      "field_id": "FLD-020",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-020"
+    },
+    {
+      "field_id": "FLD-021",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-021"
+    },
+    {
+      "field_id": "FLD-022",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-022"
+    },
+    {
+      "field_id": "FLD-023",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-023"
+    },
+    {
+      "field_id": "FLD-024",
+      "m0_required": true,
+      "present": true,
+      "value": "synthetic-value-024"
+    }
+  ],
+  "kpis": [
+    {
+      "kpi_id": "KPI-PERF-01",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-PERF-02",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-ALO-01",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-ALO-02",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-FIN-01",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-FIN-02",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-FIN-03",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-FIN-04",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-FIN-05",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-FIN-06",
+      "m0_required": true,
+      "connected": true,
+      "value_status": "synthetic_fixture"
+    },
+    {
+      "kpi_id": "KPI-FIN-07",
+      "m0_required": true,
+      "connected": false,
+      "value_status": "not_connected_in_dry_run"
+    },
+    {
+      "kpi_id": "KPI-FIN-08",
+      "m0_required": true,
+      "connected": false,
+      "value_status": "not_connected_in_dry_run"
+    },
+    {
+      "kpi_id": "KPI-FIN-09",
+      "m0_required": true,
+      "connected": false,
+      "value_status": "not_connected_in_dry_run"
+    },
+    {
+      "kpi_id": "KPI-FIN-10",
+      "m0_required": true,
+      "connected": false,
+      "value_status": "not_connected_in_dry_run"
+    },
+    {
+      "kpi_id": "KPI-FIN-11",
+      "m0_required": true,
+      "connected": false,
+      "value_status": "not_connected_in_dry_run"
+    },
+    {
+      "kpi_id": "KPI-FIN-12",
+      "m0_required": true,
+      "connected": false,
+      "value_status": "not_connected_in_dry_run"
+    }
+  ],
+  "recommendations": [
+    {
+      "recommendation_id": "REC-SYN-001",
+      "synthetic": true,
+      "source_type": "synthetic",
+      "status": "fixture_only"
+    },
+    {
+      "recommendation_id": "REC-SYN-002",
+      "synthetic": true,
+      "source_type": "synthetic",
+      "status": "fixture_only"
+    },
+    {
+      "recommendation_id": "REC-SYN-003",
+      "synthetic": true,
+      "source_type": "synthetic",
+      "status": "fixture_only"
+    },
+    {
+      "recommendation_id": "REC-SYN-004",
+      "synthetic": true,
+      "source_type": "synthetic",
+      "status": "fixture_only"
+    },
+    {
+      "recommendation_id": "REC-SYN-005",
+      "synthetic": true,
+      "source_type": "synthetic",
+      "status": "fixture_only"
+    }
+  ],
+  "financial_cases": [
+    {
+      "financial_case_id": "FC-SYN-001",
+      "synthetic": true,
+      "source_type": "synthetic",
+      "included_in_two_case_count": true
+    },
+    {
+      "financial_case_id": "FC-SYN-002",
+      "synthetic": true,
+      "source_type": "synthetic",
+      "included_in_two_case_count": true
+    }
+  ],
+  "join_keys": {
+    "recommendation_id": "recommendations[].recommendation_id",
+    "financial_case_id": "financial_cases[].financial_case_id",
+    "run_id": "run_id"
+  }
+}

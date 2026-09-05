@@ -1,10 +1,10 @@
 ---
 ops_id: OPS-005
 task_type: operational
-status: open
+status: in-progress
 priority: high
 dateCreated: 2026-08-26T17:12:38.043-03:00
-dateModified: 2026-09-02T00:05:16.422-03:00
+dateModified: 2026-09-05T17:21:06.955-03:00
 tags:
   - task
   - project

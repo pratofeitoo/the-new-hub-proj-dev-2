@@ -51,18 +51,18 @@ Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) p
 
 ## Tabela principal — premissas com proveniência
 
-| premissa_id | descrição | valor_atual (ilustrativo) | unidade | fonte | data_fonte | confiança | dono | indicador_P03 | baseline_P05 | alavanca árvore valor | gap | status | próxima evidência | data revisão |
+| premissa_id | descrição | valor_atual (ilustrativo) | unidade | fonte | data_fonte | confiança | dono | indicador_P03 (ID técnico `KPI-*`) | baseline_P05 | alavanca árvore valor | gap | status | próxima evidência | data revisão |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| FIN-P001 | ROI ilustrativo do simulador | 28,42% | % | `06_Simulador_ROI` H20 (antes do ledger) | 2026-08-20 | baixa — ilustrativa, sem ledger deduplicado | Finanças (a designar) | `FIN-10` / `PRO-08` (a vincular) | — | 6 alavancas somadas (produtividade+contratação+retenção+compras+risco+margem) | FIN-001 / FIN-003 | hipótese | Substituir por ledger de benefícios deduplicado por `contrato_id+alavanca+período`; reconciliar com Finanças | a definir |
-| FIN-P002 | Benefício bruto anual (soma 6 alavancas) | R$ 1.220.000 | R$ | `06_Simulador_ROI` H16 | 2026-08-20 | baixa — sem teste de independência | Finanças (a designar) | `DAT-01/02/03` → `PRO-*` / `RH-*` (a vincular) | — | H16 soma sem exclusividade | FIN-001 / FIN-003 | bloqueada — sobreposição não testada | Matriz de exclusividade + teto por pessoa/período; decompor por alavanca | a definir |
+| FIN-P001 | ROI ilustrativo do simulador | 28,42% | % | `06_Simulador_ROI` H20 (antes do ledger) | 2026-08-20 | baixa — ilustrativa, sem ledger deduplicado | Finanças (a designar) | `KPI-HUB-04` (blueprint FIN-03; PRO-08 é futuro) | — | 6 alavancas somadas (produtividade+contratação+retenção+compras+risco+margem) | FIN-001 / FIN-003 | hipótese | Substituir por ledger de benefícios deduplicado por `contract_id+alavanca+período`; reconciliar com Finanças | a definir |
+| FIN-P002 | Benefício bruto anual (soma 6 alavancas) | R$ 1.220.000 | R$ | `06_Simulador_ROI` H16 | 2026-08-20 | baixa — sem teste de independência | Finanças (a designar) | `KPI-*` a vincular; IDs `DAT-*`/`PRO-*` são blueprint | — | H16 soma sem exclusividade | FIN-001 / FIN-003 | bloqueada — sobreposição não testada | Matriz de exclusividade + teto por pessoa/período; decompor por alavanca | a definir |
 | FIN-P003 | Benefício líquido | R$ 270.000 | R$ | `06_Simulador_ROI` (H16 - investimento) | 2026-08-20 | baixa | Finanças (a designar) | — | — | — | FIN-001 | hipótese | Reconciliar com fato financeiro único (contrato/transação) | a definir |
 | FIN-P004 | Investimento total | R$ 950.000 | R$ | `06_Simulador_ROI` | 2026-08-20 | baixa — one-off+recorrente misturados | Finanças (a designar) | — | `TEC-005` (a vincular custo/latência) | — | FIN-001 / FIN-006 | hipótese | Separar one-off vs. recorrente; curva mensal de desembolso/ramp | a definir |
 | FIN-P005 | Payback apresentado | 9,34 meses | meses | `06_Simulador_ROI` H20 (bruto) | 2026-08-20 | baixa — bruto vs. líquido | Finanças (a designar) | — | — | — | FIN-003 | hipótese | Recalcular com fluxos líquidos/mensais; explicitar "payback bruto" vs. caixa | a definir |
-| FIN-P006 | LTV/CAC HUB | 5,33x | x | `06_Simulador_ROI` bloco unit economics | 2026-08-20 | baixa — sem ponte cliente→receita HUB | Finanças (a designar) | `FIN-10` | — | — | FIN-001 | hipótese | Construir ponte: valor cliente → receita HUB → custo servir → margem HUB | a definir |
+| FIN-P006 | LTV/CAC HUB | 5,33x | x | `06_Simulador_ROI` bloco unit economics | 2026-08-20 | baixa — sem ponte cliente→receita HUB | Finanças (a designar) | `KPI-*` não disponível no catálogo técnico; blueprint FIN-10 | — | — | FIN-001 | hipótese | Construir ponte: valor cliente → receita HUB → custo servir → margem HUB | a definir |
 | FIN-P007 | Payback CAC | 9,38 meses | meses | `06_Simulador_ROI` | 2026-08-20 | baixa | Finanças (a designar) | — | — | — | FIN-001 | hipótese | Enriquecer com expansão/churn por coorte + custos variáveis | a definir |
 | FIN-P008 | _[adicione premissa de timing/ramp]_ | TBD | TBD | TBD — **bloqueada se TBD** | — | TBD | TBD | TBD | `P05-T04` linha M0/M1/M2 | TBD | FIN-003 | bloqueada | Fonte, janela e método causal (baseline/holdout) | a definir |
-| FIN-P009 | _[adicione premissa de atribuição HUB]_ | TBD | % | TBD | — | TBD | TBD | `PRO-08` (âncora experimental) | — | TBD | FIN-001 | bloqueada | Definir método/teto aprovado; unidade de análise + comparador | a definir |
-| FIN-P010 | _[adicione premissa de baseline/comparador]_ | TBD | TBD | TBD | — | TBD | TBD | `DAT-001/002/003` | — | TBD | FIN-001 | bloqueada | Baseline, janela, coorte, denominador e versão da fórmula | a definir |
+| FIN-P009 | _[adicione premissa de atribuição HUB]_ | TBD | % | TBD | — | TBD | TBD | `KPI-*` a definir (blueprint PRO-08 é referência experimental) | — | TBD | FIN-001 | bloqueada | Definir método/teto aprovado; unidade de análise + comparador | a definir |
+| FIN-P010 | _[adicione premissa de baseline/comparador]_ | TBD | TBD | TBD | — | TBD | TBD | `KPI-*` a definir (blueprint DAT-01/02/03 é referência) | — | TBD | FIN-001 | bloqueada | Baseline, janela, coorte, denominador e versão da fórmula | a definir |
 
 > **Regra de preenchimento:** não apague linhas `TBD` — elas documentam lacunas para `P07-T05`. Uma premissa só sai de `hipótese/bloqueada` quando `fonte + data + confiança + dono + próxima evidência` estiverem preenchidos e a evidência estiver linkada em `05-resources/planilhas/` ou `01-work/`.
 
@@ -70,11 +70,11 @@ Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) p
 
 ### P03-T05 → quais indicadores cada premissa consome
 
-| premissa_id | indicador_P03 (ID canônico Master) | fórmula/versão | janela/período | baseline | owner P03 | estado do dado |
+| premissa_id | indicador_P03 (ID técnico `KPI-*`) | fórmula/versão | janela/período | baseline | owner P03 | estado do dado |
 |---|---|---|---|---|---|---|
-| FIN-P001 | `FIN-10` (ROI) + `PRO-08` (experimento) | a vincular à versão do catálogo | a definir | a definir | Dados (a designar) | estimado |
-| FIN-P002 | `PRO-*`, `RH-06`, `RH-07`, `ENT-*` | idem | idem | idem | Dados (a designar) | estimado |
-| FIN-P00X | _preencher_ | _fórmula vX_ | _mensal/trimestral_ | _baseline + comparador_ | _owner_ | estimado → validado → realizado |
+| FIN-P001 | `KPI-HUB-04` (blueprint FIN-03; PRO-08 é futuro) | a vincular à versão do catálogo | a definir | a definir | Dados (a designar) | Potencial |
+| FIN-P002 | `KPI-*` a vincular; `PRO-*`, `RH-*`, `ENT-*` apenas no crosswalk blueprint | idem | idem | idem | Dados (a designar) | Potencial |
+| FIN-P00X | _preencher com ID `KPI-*` aprovado_ | _fórmula vX_ | _mensal/trimestral_ | _baseline + comparador_ | _owner_ | Potencial → Influenciado → Validado → Realizado |
 
 > Fonte canônica: `01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/` + `HUB_Mapa_Inteligencia_Dados_Indicadores_MELHORADO_v1.1.xlsx`. Se o indicador não existir no Master, registre a lacuna em `DAT-005` antes de usar.
 
@@ -94,7 +94,7 @@ Sem esse duplo vínculo, qualquer ROI (ex.: `28,42%` ilustrativo do simulador) p
 | FIN-P001 | `06_Simulador_ROI` | `01-tabs-csv/06_Simulador_ROI/` | 2026-08-20 | desatualizado | 73 indicadores sem ledger | — | estimado | baixa | Soma sem exclusividade; sem fato financeiro único |
 | FIN-P00X | _ex.: CRM billing_ | _path_ | _YYYY-MM-DD_ | _dias_ | _%_ | _coorte_ | _estimado/validado/realizado_ | _alta/média/baixa_ | _ex.: pipeline ≠ receita_ |
 
-Estados de valor: `estimado` → `validado` → `realizado` → `revertido`. Só `realizado` com `contrato_id/transacao_id` entra no fato financeiro deduplicado.
+Estados de valor operacionais: `Potencial` → `Influenciado` → `Validado` → `Realizado`. Só `Realizado` com `contract_id`/`transaction_id` entra no fato financeiro deduplicado; `expirado` e `rejeitado` são terminais não promovíveis.
 
 ## Critério de aceite — G06.1
 

@@ -16,6 +16,7 @@ tags:
 
 > **Status:** rascunho para validação Arquitetura de Dados · **G03.A2** · Não aprovado. Dataset sintético incluso para medir FP/FN e reversibilidade.
 > **Depende de:** [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1]] — `identity_alias` e 25 entidades com `canonical_id`.
+> **Reconciliação:** [[01-work/dados-tech-financas/refinamento-modelo-dados/reconciliacao-fonte-aprovada-P03-v1|crosswalk da fonte aprovada]]. Limiar, alvo FP/FN e dataset são critérios propostos, não resultados aprovados.
 
 ## 1. Objetivo (DAT-002 / G03.A2)
 
@@ -103,7 +104,7 @@ Local: `01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/
 | `expected_hub_id` | `hub_id` esperado (ground truth) |
 | `pair_label` | `match` / `no_match` / `needs_review` (rótulo do par sintético) |
 
-**Métricas:**
+**Métricas propostas para validação:**
 
 - **FP = merges indevidos / pares `no_match` candidatos** — alvo ≤2%
 - **FN = matches perdidos / pares `match` reais** — alvo ≤5%

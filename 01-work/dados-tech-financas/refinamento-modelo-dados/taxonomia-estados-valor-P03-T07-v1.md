@@ -16,6 +16,7 @@ tags:
 
 > **Status:** rascunho para parecer Finanças + Governança de Dados · **G03.C3** · Insumo para decisão Camada 3; não aprovado.
 > **Depende de:** [[01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1|catalogo-metricas-grafo-P03-T05-v1]] — 73 indicadores; [[01-work/dados-tech-financas/refinamento-modelo-dados/templates-linhagem-evidencias-P03-T06-v1|templates-linhagem-P03-T06]] — `influenciado`.
+> **Reconciliação:** [[01-work/dados-tech-financas/refinamento-modelo-dados/reconciliacao-fonte-aprovada-P03-v1|crosswalk da fonte aprovada]].
 
 ## 1. Estados — definição canônica
 
@@ -27,6 +28,16 @@ tags:
 | **Realizado** | Valor validado reconhecido em registro operacional/financeiro oficial, líquido de custos, timing e duplicações. | Reporte aprovado Finanças, sujeito a entidade e contabilidade. | Validado → contrato/livro operacional → reconciliação → aprovação Finanças |
 
 > **Regra de ouro:** nenhum estado é convertido automaticamente; promoção exige evidência `period`, `cohort`, `definition_version`, `formula_version`, `run_id`.
+
+### Mapeamento da especificação conceitual para o enum operacional
+
+| Status conceitual aprovado | Estado operacional do ledger | Condição |
+|---|---|---|
+| `identificado`, `estimado` | `Potencial` | Cenário ou hipótese; não é ROI realizado. |
+| `aprovado`, `em realização` | `Influenciado` | Intervenção associada; ainda sem reconhecimento financeiro final. |
+| `validado` | `Validado` | Protocolo, cálculo reproduzível e revisão independente concluídos. |
+| `realizado` | `Realizado` | Ledger reconciliado com `contract_id` + `transaction_id` e aprovação Financeiro. |
+| `expirado`, `rejeitado` | Terminal não promovível | Não pode ser promovido nem somado. |
 
 ## 2. Políticas de cálculo, atribuição, deduplicação e contrafactual
 
@@ -62,7 +73,7 @@ Todo valor `influenciado→validado` exige método declarado; `realizado` exige 
 
 ## 3. Exemplo — mesmo caminho P03-T06
 
-`PES-02 3.2→4.1 (potencial 30% → influenciado)` → `RH-06 45d→32d (influenciado, p=0.04)` → `R$ 18.500 influenciado (13d×custo, atribuição 60%)` → **promotion para `validado` exige** holdout n=24, protocolo aprovado, `run_id=run_rh06_holdout_001`; **para `realizado` exige** `contract_id=c_001` + ledger + Finanças.
+Exemplo ilustrativo, não evidência: `PES-02 3.2→4.1 (Potencial → Influenciado)` → `RH-06 45d→32d (Influenciado)` → valor estimado. A promoção para `Validado` exige protocolo aprovado, comparador e `run_id`; a promoção para `Realizado` exige `contract_id` + `transaction_id` + ledger + Finanças.
 
 ## 4. Pareceres registrados (insumo Camada 3)
 

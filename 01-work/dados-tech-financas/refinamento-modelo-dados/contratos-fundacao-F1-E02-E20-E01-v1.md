@@ -20,7 +20,8 @@ related_notes:
 # Contratos Fundação F1 — E02, E20, E01 v1
 
 > **Status:** rascunho para revisão Arquitetura de Dados + LGPD/DPO. Não altera `03-approved`. Libera F2 somente após aprovação dos três.
-> **Base:** P03-T01 (25 entidades, `rel_person_company`, `rel_company_entity`, `fact_consent`, N24 bloqueador), P03-T04 (`dim_company.entity_id` FK, `dim_consent` 4 campos, revogação ≤5 min), P03-T08 (propagação + quarentena + CMP log).
+> **Base:** P03-T01 (25 entidades, `rel_person_company`, `rel_company_entity`, `fact_consent`, N24 bloqueador), P03-T04 (FKs em `rel_company_entity`, `dim_consent` 4 campos, revogação ≤5 min), P03-T08 (propagação + quarentena + CMP log).
+> **Reconciliação:** [[01-work/dados-tech-financas/refinamento-modelo-dados/reconciliacao-fonte-aprovada-P03-v1|crosswalk da fonte aprovada]].
 
 ## E02 — Empresa ≠ Cliente ≠ Entidade
 
@@ -45,7 +46,7 @@ related_notes:
 | Campos mínimos | `consent_id`, `person_id`, `purpose` (enum), `legal_basis` (enum), `version`, `status` (`granted/revoked/expired`), `valid_from/to`, `revogado_em` |
 | Bloqueio | Sem `consent` válido para a finalidade, bloqueados leitura/uso/derivação de sensíveis (`FLD-005/006/007`, `FLD-028`, `nome_social`, localização sensível) em `fact_person_skill`, `fact_event`, `fact_match` |
 | Revogação | `consent_status=revoked` → evento `consent.revoked` → pipeline bloqueia novos `fact_*` com `purpose` revogado em ≤5 min; derivados materializados vão para fila `quarantine`; `CMP log + propagation test` |
-| Retenção/DSAR | Vault 60 meses; analítico 24–36 meses; audit append-only 60 meses; DSAR exporta `person_id` + aliases + `consent`; exclusão cobre aliases, `dim_*`, `fact_*`, features, caches, exports |
+| Retenção/DSAR | Prazos de vault, analítico e auditoria a validar por finalidade com LGPD/Finanças; DSAR exporta `person_id` + aliases + `consent`; exclusão cobre aliases, `dim_*`, `fact_*`, features, caches, exports |
 | Aceite F1 (gate LGPD) | Teste ponta a ponta `consent.revoked → fact_event quarantine` ≤5 min em `06-relatorios-validacao/`; aprovação conjunta LGPD+Gov Dados; sem este gate, F2 não abre |
 
 ## E01 — Vínculo Pessoa–Empresa temporal

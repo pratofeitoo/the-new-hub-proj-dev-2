@@ -11,6 +11,8 @@ tags: [financeiro, glossario, m0, valor]
 
 # Glossário Financeiro Congelado v1
 
+> **Reconciliação:** [[01-work/dados-tech-financas/refinamento-modelo-dados/reconciliacao-fonte-aprovada-P03-v1|crosswalk da fonte aprovada]]. Este glossário permanece `em-elaboracao` até validação financeira.
+
 ## Termos canônicos (usar exatamente assim)
 
 |Termo|Definição|Quando usar|
@@ -35,7 +37,19 @@ tags: [financeiro, glossario, m0, valor]
 |**KPI-PERF-01** Atingimento|`Σ progresso×peso / Σ peso`|PES-02 proxy|**Novo M0** — Qulture/Workday|
 |**KPI-PERF-02** Qualidade da meta|`pontos / pontos possíveis`|DAT-01 proxy|**Novo M0** — Nota Qualidade|
 |**KPI-ALO-01** Alocação faturável|`billable / available`|RH-09 proxy|**Novo M0** — antecipado de M2|
-|**KPI-ALO-02** Receita potencial perdida|`horas ociosas × taxa`|FIN-06 proxy|**Novo M0** — antecipado de M2|
+|**KPI-ALO-02** Receita disponível perdida|`horas ociosas × taxa`|FIN-06 proxy|**Novo M0** — antecipado de M2|
+
+## Mapeamento de estados
+
+Os oito status conceituais da especificação são mapeados ao enum operacional de quatro estados usado pelo ledger:
+
+| Status conceitual | Estado operacional | Regra |
+|---|---|---|
+| `identificado`, `estimado` | `Potencial` | Hipótese ou cenário; não entra no ROI realizado. |
+| `aprovado`, `em realização` | `Influenciado` | Intervenção associada, ainda sem reconhecimento financeiro final. |
+| `validado` | `Validado` | Protocolo e revisão independente concluídos. |
+| `realizado` | `Realizado` | Ledger, `contract_id`, `transaction_id` e aprovação Financeiro. |
+| `expirado`, `rejeitado` | Terminal não promovível | Não pode ser promovido nem somado ao valor realizado. |
 
 ## Rastreabilidade
 

@@ -1,0 +1,6 @@
+synthetic,source_type,run_id,recommendation_id,kpi_id,priority,recommendation_text,status,claim_status
+True,synthetic,run-synthetic-monks-001,REC-SYN-001,KPI-PERF-01,high,Fixture recommendation for throughput review,fixture_only,not_a_claim
+True,synthetic,run-synthetic-monks-001,REC-SYN-002,KPI-PERF-02,medium,Fixture recommendation for quality review,fixture_only,not_a_claim
+True,synthetic,run-synthetic-monks-001,REC-SYN-003,KPI-ALO-01,high,Fixture recommendation for allocation review,fixture_only,not_a_claim
+True,synthetic,run-synthetic-monks-001,REC-SYN-004,KPI-FIN-01,medium,Fixture recommendation for value attribution review,fixture_only,not_a_claim
+True,synthetic,run-synthetic-monks-001,REC-SYN-005,KPI-FIN-02,low,Fixture recommendation for ledger review,fixture_only,not_a_claim

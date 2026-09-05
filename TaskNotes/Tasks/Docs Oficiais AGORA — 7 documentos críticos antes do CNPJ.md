@@ -17,12 +17,10 @@ contexts:
   - "@juridico"
   - "@governanca"
 timeEstimate: 240
-due: 2026-09-15
-scheduled: 2026-09-04
 blockedBy:
   - uid: "[[TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs)]]"
     reltype: FINISHTOSTART
-dateModified: 2026-09-05T08:51:46.802-03:00
+dateModified: 2026-09-05T17:16:18.791-03:00
 ---
 
 # Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ

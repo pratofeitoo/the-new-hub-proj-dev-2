@@ -12,16 +12,16 @@ tags:
   - DAT-005
 ---
 
-# Catálogo Canônico + Grafo v1 — P03-T05 (M03.C / G03.C1)
+# Inventário de Indicadores Blueprint + Grafo v1 — P03-T05 (M03.C / G03.C1)
 
-> **Status:** rascunho para validação Dados+Tech · **G03.C1** · Nenhuma métrica crítica com definição alternativa; catálogo permanece artefato de definição, sem certificação produção.
+> **Status:** rascunho para validação Dados+Tech · **G03.C1** · Este arquivo inventaria os 73 indicadores de blueprint; os 16 KPIs técnicos governados são os IDs `KPI-*` da planilha aprovada. Nenhuma métrica tem certificação de produção.
 > **Fontes:** `04_Indicadores_Master.csv` (73 linhas), `05_Arvore_de_Valor`, `06_Simulador_ROI`, `07_Visoes_Dashboard`, `13_Matriz_Integracao` + sínteses [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-indicadores/sintese-entre-abas/indicator-financial-consistency|indicator-financial-consistency]].
 >
-> **Matriz unificada:** [[03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz Convergencia]] — 73→16 KPIs, 25→23 nós, 12→8 módulos e M0-M4→F0-MVP4.
+> **Matriz unificada:** [[03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz Convergencia]] — 73 indicadores de blueprint → 16 KPIs técnicos, 25→23 nós, 12→8 módulos e M0-M4→F0-MVP4.
 
-## 1. Resumo — 73 indicadores
+## 1. Resumo — 73 indicadores de blueprint
 
-**Total:** 73 indicadores em 8 vertentes: Pessoas 10, Empresas / RH 10, Compras / Fornecedores 9, Entidades / Ecossistema 8, Marketing / Mídia 8, Produto / Plataforma 10, Financeiro / Impacto 10, Inteligência / Dados 8.
+**Total:** 73 indicadores de blueprint em 8 vertentes: Pessoas 10, Empresas / RH 10, Compras / Fornecedores 9, Entidades / Ecossistema 8, Marketing / Mídia 8, Produto / Plataforma 10, Financeiro / Impacto 10, Inteligência / Dados 8. Eles não substituem o catálogo técnico governado de 16 KPIs.
 
 | Vertente | Qtd | Prioridade M0 | Prioridade M1 | Prioridade M2 |
 |---|---:|---|---|---|
@@ -35,6 +35,8 @@ tags:
 | Inteligência / Dados | 8 | 3 | 5 | 0 |
 
 ## 2. Catálogo — ID | Indicador | Fórmula | Unidade | Dimensões | Owner | Tipo | Alavanca
+
+> Os IDs `PES-*`, `RH-*`, `COM-*`, `ENT-*`, `MKT-*`, `PRO-*`, `FIN-*` e `DAT-*` são IDs de blueprint. Os IDs técnicos governados usam `KPI-*`; não há equivalência implícita entre namespaces.
 
 | ID | Indicador | Fórmula | Unidade | Dimensões / cortes | Owner | Tipo | Alavanca financeira |
 |---|---|---|---|---|---|---|---|

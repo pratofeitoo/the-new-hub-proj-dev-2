@@ -4,7 +4,7 @@
   "archiveFolder": "TaskNotes/Archive",
   "taskTag": "task",
   "taskIdentificationMethod": "tag",
-  "hideIdentifyingTagsInCards": false,
+  "hideIdentifyingTagsInCards": true,
   "hideIdentifyingTagsMode": "all",
   "taskPropertyName": "",
   "taskPropertyValue": "",
@@ -47,7 +47,7 @@
     "scrollTime": "08:00:00",
     "firstDay": 1,
     "timeFormat": "24",
-    "showWeekends": true,
+    "showWeekends": false,
     "locale": "",
     "defaultShowScheduled": true,
     "defaultShowDue": true,
@@ -145,7 +145,7 @@
     "propertyValue": ""
   },
   "inlineTaskConvertFolder": "{{currentNotePath}}",
-  "disableNoteIndexing": false,
+  "disableNoteIndexing": true,
   "suggestionDebounceMs": 0,
   "fieldMapping": {
     "title": "title",
@@ -313,9 +313,9 @@
   "showTaskCardInNote": true,
   "showCompletedTaskStrikethrough": true,
   "showExpandableSubtasks": true,
-  "expandSubtasksByDefault": true,
+  "expandSubtasksByDefault": false,
   "subtaskChevronPosition": "right",
-  "viewsButtonAlignment": "right",
+  "viewsButtonAlignment": "left",
   "hideCompletedFromOverdue": true,
   "icsIntegration": {
     "defaultNoteTemplate": "",
@@ -502,10 +502,10 @@
     "scheduled",
     "projects",
     "contexts",
-    "tags",
     "blocked",
     "blocking",
-    "user:field_1787774953681"
+    "user:field_1787774953681",
+    "checklistProgress"
   ],
   "inlineVisibleProperties": [
     "status",

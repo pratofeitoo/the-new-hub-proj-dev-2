@@ -2,5 +2,6 @@
   "cssTheme": "March",
   "accentColor": "#58df93",
   "baseFontSizeAction": true,
-  "translucency": true
+  "translucency": true,
+  "baseFontSize": 14
 }

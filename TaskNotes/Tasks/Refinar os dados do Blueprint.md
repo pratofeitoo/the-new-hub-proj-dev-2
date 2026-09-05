@@ -4,7 +4,7 @@ task_type: operational
 status: em-revisao
 priority: normal
 dateCreated: 2026-08-26T17:30:19.241-03:00
-dateModified: 2026-09-02T01:30:27.628-03:00
+dateModified: 2026-09-05T17:37:25.871-03:00
 tags:
   - task
   - project
@@ -17,4 +17,7 @@ tasknotes_manual_order: tnkkkkkkkkkk
 due: 2026-09-11
 ---
 
-[[01-work/]]
+### BLUEPRINTS RECONCILIADAS COM OS DADOS REFERÊNCIA DA INTELIGÊNCIA DA PLATAFORMA.
+
+##### V2 reconciliada no path:
+`02-review/02-reconciliacao-blueprint`
