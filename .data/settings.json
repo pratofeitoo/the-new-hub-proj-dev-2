@@ -6,7 +6,6 @@
   "gitlabUsername": "",
   "githubCustomImageRepo": "",
   "currentTagId": 1,
-  "mainImageHosting": "github",
   "markDescModel": "note-gen-chat",
   "canvasGridStyle": "dots",
   "chatToolbarConfigMobile": [
@@ -73,99 +72,9 @@
   "currentPromptId": "0",
   "giteaCustomUrl": "",
   "gitlabAutoSync": "disabled",
-  "useImageRepo": false,
   "sttModel": "note-gen-free-note-gen-stt",
-  "githubImageAccessToken": "",
-  "accessToken": "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",
   "recordTextSize": "sm",
   "version": "0.36.0",
-  "aiModelList": [
-    {
-      "apiKeyUrl": "https://aistudio.google.com/app/apikey",
-      "baseURL": "https://generativelanguage.googleapis.com/v1beta/openai",
-      "icon": "https://s2.loli.net/2025/06/25/JU2jVxLFsW4lB6S.png",
-      "key": "38abe7cf-392a-4e2a-b84e-2937f832f1a4",
-      "modelType": "chat",
-      "templateKey": "gemini",
-      "templateSource": "builtin",
-      "title": "Gemini"
-    },
-    {
-      "apiKey": "sk-1eaNsBvrfrF4hpwdo6AiQlFzcEtZK7GUpBlOcg03Dm3xunbQ",
-      "baseURL": "https://api.notegen.top/v1",
-      "key": "note-gen-free",
-      "models": [
-        {
-          "enableStream": true,
-          "id": "note-gen-chat",
-          "model": "Qwen/Qwen3-8B",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "id": "note-gen-embedding",
-          "model": "BAAI/bge-m3",
-          "modelType": "embedding"
-        },
-        {
-          "id": "note-gen-vlm",
-          "model": "Qwen/Qwen3.5-4B",
-          "modelType": "chat"
-        },
-        {
-          "id": "note-gen-stt",
-          "model": "FunAudioLLM/SenseVoiceSmall",
-          "modelType": "stt"
-        }
-      ],
-      "title": "NoteGen Free"
-    },
-    {
-      "apiKey": "sk-1eaNsBvrfrF4hpwdo6AiQlFzcEtZK7GUpBlOcg03Dm3xunbQ",
-      "baseURL": "https://api.notegen.top/v1",
-      "key": "note-gen-limited",
-      "models": [
-        {
-          "enableStream": true,
-          "id": "note-gen-limited-deepseek-ai/DeepSeek-V3.2",
-          "model": "deepseek-ai/DeepSeek-V3.2",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        }
-      ],
-      "title": "NoteGen Limited"
-    },
-    {
-      "apiKeyUrl": "https://platform.openai.com/api-keys",
-      "baseURL": "https://api.openai.com/v1",
-      "icon": "https://s2.loli.net/2025/06/25/cVMf586WTBYAju4.png",
-      "key": "fe9c5565-63d5-4a7b-8541-cde90d5d200a",
-      "modelType": "chat",
-      "templateKey": "chatgpt",
-      "templateSource": "builtin",
-      "title": "ChatGPT"
-    },
-    {
-      "baseURL": "http://localhost:11434/v1",
-      "icon": "https://s2.loli.net/2025/06/25/legkEpHACDBQ5Xz.png",
-      "key": "5dd96fb9-7261-419e-ba2b-93a32e57b5fb",
-      "modelType": "chat",
-      "templateKey": "ollama",
-      "templateSource": "builtin",
-      "title": "Ollama"
-    },
-    {
-      "baseURL": "http://localhost:1234/v1",
-      "icon": "https://s2.loli.net/2025/06/25/IifFV4HTQ9dpGZE.png",
-      "key": "c7bb02e5-efe9-4308-8281-9c1b37703703",
-      "modelType": "chat",
-      "templateKey": "lmstudio",
-      "templateSource": "builtin",
-      "title": "LM Studio"
-    }
-  ],
   "editorModel": "note-gen-chat",
   "autoPullOnOpen": true,
   "placeholderModel": "",
@@ -178,9 +87,7 @@
   "inspirationModel": "note-gen-chat",
   "recordSortMode": "newest",
   "keepLatestCount": 4,
-  "contentTextScale": 107,
   "enableImageRecognition": true,
-  "primaryBackupMethod": "github",
   "agentSystemPromptExtension": "",
   "fileManagerTextSize": "sm",
   "githubUsername": "pratofeitoo",
@@ -197,7 +104,6 @@
   "recordCompletionBehavior": "highlight",
   "commitModel": "note-gen-chat",
   "globalSearchFilter": "all",
-  "giteeAccessToken": "",
   "canvasManagerSortMode": "updated",
   "darkMode": "system",
   "chatToolbarConfigPc": [
@@ -282,19 +188,15 @@
       "title": "写作助手"
     }
   ],
-  "appFontFamily": "__notegen_system_font__",
   "autoPullOnSwitch": true,
   "autoUpdate": true,
   "imageMethodModel": "",
   "canvasInsertBehavior": "select",
   "agentCorePromptVersion": 4,
-  "uiScale": 100,
   "primaryModel": "note-gen-chat",
-  "giteaAccessToken": "",
   "condenseMaxLength": 100,
   "canvasGridGap": 20,
   "agentPermissionMode": "ask",
-  "gitlabAccessToken": "",
   "canvasGridVisible": true,
   "completionModel": "note-gen-chat",
   "editorSourceWrap": true,
