@@ -1,7 +1,7 @@
 ---
 ops_id: OPS-009
 task_type: operational
-title: "Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador"
+title: Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador
 status: open
 priority: high
 dateCreated: 2026-09-02T18:33:00.000-03:00
@@ -23,6 +23,7 @@ scheduled: 2026-09-05
 blockedBy:
   - uid: "[[TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs)]]"
     reltype: FINISHTOSTART
+googleCalendarEventId: o547nkgv2ss1b5a8np9me07orc
 ---
 
 # Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador

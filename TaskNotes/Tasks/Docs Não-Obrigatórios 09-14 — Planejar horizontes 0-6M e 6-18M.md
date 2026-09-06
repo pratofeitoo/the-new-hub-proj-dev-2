@@ -1,7 +1,7 @@
 ---
 ops_id: OPS-008
 task_type: operational
-title: "Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M"
+title: Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M
 status: open
 priority: normal
 dateCreated: 2026-09-02T18:34:00.000-03:00
@@ -22,6 +22,7 @@ scheduled: 2026-09-15
 blockedBy:
   - uid: "[[TaskNotes/Tasks/Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ]]"
     reltype: FINISHTOSTART
+googleCalendarEventId: r5hf7cafu5p5jpf6nlrukmekn4
 ---
 
 # Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M

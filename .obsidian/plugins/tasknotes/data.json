@@ -534,14 +534,14 @@
   "useFrontmatterMarkdownLinks": false,
   "enableGoogleCalendar": false,
   "enableMicrosoftCalendar": false,
-  "disableCalendarOnMobile": false,
+  "disableCalendarOnMobile": true,
   "enabledGoogleCalendars": [],
   "googleCalendarSyncTokens": {},
   "enabledMicrosoftCalendars": [],
   "microsoftCalendarSyncTokens": {},
   "googleCalendarExport": {
-    "enabled": false,
-    "targetCalendarId": "",
+    "enabled": true,
+    "targetCalendarId": "pfrezendehs@gmail.com",
     "syncOnTaskCreate": true,
     "syncOnTaskUpdate": true,
     "syncOnTaskComplete": true,
@@ -551,7 +551,7 @@
     "eventColorId": null,
     "syncTrigger": "scheduled",
     "createAsAllDay": true,
-    "defaultEventDuration": 60,
+    "defaultEventDuration": 15,
     "includeObsidianLink": true,
     "defaultReminderMinutes": null
   },
@@ -563,5 +563,37 @@
     "timeRemaining": 1500
   },
   "lastPomodoroDate": "2026-09-01",
-  "autoArchiveQueue": []
+  "autoArchiveQueue": [],
+  "googleCalendarEventIndex": [
+    {
+      "taskPath": "TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs).md",
+      "calendarId": "pfrezendehs@gmail.com",
+      "eventId": "i5gjbl89v21vn3hd3qmpnaknu0",
+      "updatedAt": 1788652711000
+    },
+    {
+      "taskPath": "TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14).md",
+      "calendarId": "pfrezendehs@gmail.com",
+      "eventId": "788oqvmsbcl7r7sai16stmo4n8",
+      "updatedAt": 1788652712408
+    },
+    {
+      "taskPath": "TaskNotes/Tasks/Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador.md",
+      "calendarId": "pfrezendehs@gmail.com",
+      "eventId": "o547nkgv2ss1b5a8np9me07orc",
+      "updatedAt": 1788652713864
+    },
+    {
+      "taskPath": "TaskNotes/Tasks/Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M.md",
+      "calendarId": "pfrezendehs@gmail.com",
+      "eventId": "r5hf7cafu5p5jpf6nlrukmekn4",
+      "updatedAt": 1788652715348
+    }
+  ],
+  "googleCalendarTaskFingerprints": {
+    "TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs).md": "{\"title\":\"GOV-001 — Decidir estrutura societária (quantos CNPJs)\",\"status\":\"open\",\"priority\":\"high\",\"archived\":false,\"scheduled\":\"2026-09-03\",\"due\":\"2026-09-10\",\"timeEstimate\":120,\"recurrence\":null,\"recurrence_anchor\":null,\"complete_instances\":[],\"skipped_instances\":[],\"reminders\":[],\"tags\":[\"task\",\"documentacao-oficial\",\"vault-isolado\",\"GOV-001\",\"bloqueador\"],\"contexts\":[\"@juridico\",\"@fiscal\"],\"projects\":[\"[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]\",\"[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]\",\"[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]\"]}",
+    "TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14).md": "{\"title\":\"Documentação Oficial — Epic Vault Isolado HUB (01-14)\",\"status\":\"open\",\"priority\":\"high\",\"archived\":false,\"scheduled\":\"2026-09-03\",\"due\":\"2026-09-30\",\"timeEstimate\":480,\"recurrence\":null,\"recurrence_anchor\":null,\"complete_instances\":[],\"skipped_instances\":[],\"reminders\":[],\"tags\":[\"task\",\"documentacao-oficial\",\"vault-isolado\",\"epic\"],\"contexts\":[\"@juridico\",\"@governanca\"],\"projects\":[\"[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]\",\"[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]\",\"[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]\"]}",
+    "TaskNotes/Tasks/Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador.md": "{\"title\":\"Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador\",\"status\":\"open\",\"priority\":\"high\",\"archived\":false,\"scheduled\":\"2026-09-05\",\"due\":\"2026-09-20\",\"timeEstimate\":300,\"recurrence\":null,\"recurrence_anchor\":null,\"complete_instances\":[],\"skipped_instances\":[],\"reminders\":[],\"tags\":[\"task\",\"documentacao-oficial\",\"vault-isolado\",\"obrigatorio\"],\"contexts\":[\"@juridico\",\"@fiscal\",\"@LGPD\"],\"projects\":[\"[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]\",\"[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]\"]}",
+    "TaskNotes/Tasks/Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M.md": "{\"title\":\"Docs Não-Obrigatórios 09-14 — Planejar horizontes 0-6M e 6-18M\",\"status\":\"open\",\"priority\":\"normal\",\"archived\":false,\"scheduled\":\"2026-09-15\",\"due\":\"2026-10-15\",\"timeEstimate\":360,\"recurrence\":null,\"recurrence_anchor\":null,\"complete_instances\":[],\"skipped_instances\":[],\"reminders\":[],\"tags\":[\"task\",\"documentacao-oficial\",\"vault-isolado\",\"nao-obrigatorio\"],\"contexts\":[\"@governanca\",\"@operacoes\"],\"projects\":[\"[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]\",\"[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]\"]}"
+  }
 }

@@ -22,6 +22,7 @@ due: 2026-09-10
 scheduled: 2026-09-03
 blockedBy: []
 dateModified: 2026-09-05T08:50:55.085-03:00
+googleCalendarEventId: i5gjbl89v21vn3hd3qmpnaknu0
 ---
 
 # GOV-001 — Decidir estrutura societária (quantos CNPJs)
