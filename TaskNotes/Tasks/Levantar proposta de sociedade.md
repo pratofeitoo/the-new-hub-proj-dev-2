@@ -4,7 +4,7 @@ task_type: operational
 status: em-revisao
 priority: normal
 dateCreated: 2026-09-01T23:36:28.641-03:00
-dateModified: 2026-09-05T20:29:50.400-03:00
+dateModified: 2026-09-06T11:34:55.663-03:00
 tags:
   - task
 owner:
@@ -15,6 +15,8 @@ projects:
   - "[[Ajustes Jurídicos]]"
 contexts:
   - "@juridico"
+due: 2026-09-21
+googleCalendarEventId: 3m1mecr5vjk9tmer4oa9cuq918
 ---
 
 Levantar proposta de sociedade + faixa salarial (mín/méd/máx) com 1/2/3 clientes** — @Tamara + @Marcos + @PF — **após SEBRAE**

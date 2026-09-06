@@ -33,8 +33,7 @@
               "title": "calendar-default"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,12 +220,12 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "f66429da5596f57c",
+  "active": "8f416cef3f87ebda",
   "lastOpenFiles": [
+    "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Views/documentacao-oficial.base",
     "TaskNotes/Views/mini-calendar-default.base",
-    "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Views/agenda-default.base",
     "wiki/wiki-folder-map.md.tmp.3eb3161c-7daf-4b01-83e8-ff188c744281",
     "00-project-control/registro-lacunas/lacunas/DAT-010.md.tmp.a15d82ef-a3d9-4f6a-ab79-a9435533b672",

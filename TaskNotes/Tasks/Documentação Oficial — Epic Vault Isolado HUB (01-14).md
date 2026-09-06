@@ -18,8 +18,7 @@ contexts:
   - "@governanca"
 timeEstimate: 480
 due: 2026-09-30
-scheduled: 2026-09-03
-dateModified: 2026-09-05T17:23:26.955-03:00
+dateModified: 2026-09-06T11:31:43.727-03:00
 googleCalendarEventId: 788oqvmsbcl7r7sai16stmo4n8
 ---
 

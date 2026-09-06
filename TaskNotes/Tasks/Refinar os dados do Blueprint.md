@@ -15,6 +15,7 @@ projects:
   - "[[Consolidar a proposta de valor da plataforma]]"
 tasknotes_manual_order: tnkkkkkkkkkk
 due: 2026-09-11
+googleCalendarEventId: t78lf2730pnmu15n86i9c0ikas
 ---
 
 ### BLUEPRINTS RECONCILIADAS COM OS DADOS REFERÊNCIA DA INTELIGÊNCIA DA PLATAFORMA.

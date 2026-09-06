@@ -18,12 +18,13 @@ contexts:
   - "@fiscal"
   - "@LGPD"
 timeEstimate: 300
-due: 2026-09-20
+due: 2026-09-30
 scheduled: 2026-09-05
 blockedBy:
   - uid: "[[TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs)]]"
     reltype: FINISHTOSTART
 googleCalendarEventId: o547nkgv2ss1b5a8np9me07orc
+dateModified: 2026-09-06T11:32:15.413-03:00
 ---
 
 # Docs Oficiais 01-08 — Validar obrigatórios com advogado e contador
