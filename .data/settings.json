@@ -5,6 +5,7 @@
   "markDescModel": "note-gen-vlm",
   "syncStaticAssets": false,
   "sttModel": "note-gen-free-note-gen-stt",
+  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:TaskNotes%2FStart%20Here.md": false,
   "ragAgentStrategy": "balanced",
   "gitlabCustomUrl": "",
   "gitlabInstanceType": "gitlab.com",
@@ -93,11 +94,12 @@
     "activeGroupId": "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3",
     "groups": {
       "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3": {
-        "activeTabId": "1788681950087-6gb0sprzk",
+        "activeTabId": "1788691533901-4rgvncfgq",
         "id": "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3",
         "tabIds": [
-          "1788681941302-p7lipep83",
-          "1788681950087-6gb0sprzk"
+          "1788691528293-coq4uany2",
+          "1788691533901-4rgvncfgq",
+          "1788691547269-wx8b4ylsz"
         ]
       }
     },
@@ -510,5 +512,5 @@
   "giteaCustomUrl": "",
   "autoDataSyncInitialChoice:github": true,
   "autoSync": "5",
-  "rerankingModel": ""
+  "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479"
 }
