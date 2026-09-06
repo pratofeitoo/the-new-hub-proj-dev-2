@@ -213,168 +213,40 @@
   "autoSync": "5",
   "customThemeColors": {
     "dark": {
-      "accent": [
-        38,
-        92,
-        50
-      ],
-      "accentForeground": [
-        48,
-        11,
-        9
-      ],
-      "background": [
-        48,
-        11,
-        9
-      ],
-      "border": [
-        50,
-        5,
-        22
-      ],
-      "card": [
-        50,
-        8,
-        15
-      ],
-      "cardForeground": [
-        214,
-        32,
-        91
-      ],
-      "foreground": [
-        214,
-        32,
-        91
-      ],
-      "muted": [
-        50,
-        8,
-        15
-      ],
-      "mutedForeground": [
-        46,
-        97,
-        65
-      ],
-      "primary": [
-        43,
-        96,
-        56
-      ],
-      "primaryForeground": [
-        48,
-        11,
-        9
-      ],
-      "secondary": [
-        50,
-        5,
-        22
-      ],
-      "secondaryForeground": [
-        214,
-        32,
-        91
-      ],
-      "shadow": [
-        0,
-        0,
-        0
-      ],
-      "third": [
-        22,
-        78,
-        26
-      ],
-      "thirdForeground": [
-        48,
-        97,
-        77
-      ]
+      "accent": null,
+      "accentForeground": null,
+      "background": null,
+      "border": null,
+      "card": null,
+      "cardForeground": null,
+      "foreground": null,
+      "muted": null,
+      "mutedForeground": null,
+      "primary": null,
+      "primaryForeground": null,
+      "secondary": null,
+      "secondaryForeground": null,
+      "shadow": null,
+      "third": null,
+      "thirdForeground": null
     },
     "light": {
-      "accent": [
-        38,
-        92,
-        50
-      ],
-      "accentForeground": [
-        48,
-        11,
-        9
-      ],
-      "background": [
-        48,
-        11,
-        9
-      ],
-      "border": [
-        50,
-        5,
-        22
-      ],
-      "card": [
-        50,
-        8,
-        15
-      ],
-      "cardForeground": [
-        214,
-        32,
-        91
-      ],
-      "foreground": [
-        214,
-        32,
-        91
-      ],
-      "muted": [
-        50,
-        8,
-        15
-      ],
-      "mutedForeground": [
-        46,
-        97,
-        65
-      ],
-      "primary": [
-        43,
-        96,
-        56
-      ],
-      "primaryForeground": [
-        48,
-        11,
-        9
-      ],
-      "secondary": [
-        50,
-        5,
-        22
-      ],
-      "secondaryForeground": [
-        214,
-        32,
-        91
-      ],
-      "shadow": [
-        0,
-        0,
-        0
-      ],
-      "third": [
-        22,
-        78,
-        26
-      ],
-      "thirdForeground": [
-        48,
-        97,
-        77
-      ]
+      "accent": null,
+      "accentForeground": null,
+      "background": null,
+      "border": null,
+      "card": null,
+      "cardForeground": null,
+      "foreground": null,
+      "muted": null,
+      "mutedForeground": null,
+      "primary": null,
+      "primaryForeground": null,
+      "secondary": null,
+      "secondaryForeground": null,
+      "shadow": null,
+      "third": null,
+      "thirdForeground": null
     }
   },
   "recordSaveTargetMode": "current",
