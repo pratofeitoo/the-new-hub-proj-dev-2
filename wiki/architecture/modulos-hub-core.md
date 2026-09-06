@@ -7,8 +7,7 @@ source_paths:
   - 02-review/02-reconciliacao-blueprint/HUB_Blueprint_Arquitetura_Tecnologica.md
   - 03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB 3.md
 verified_at: 2026-09-06
-open_questions:
-  - Detalhamento físico dos módulos permanece sujeito a DAT-001/003 e gates P03.
+open_questions: Detalhamento físico dos módulos permanece sujeito a DAT-001/003 e gates P03.
 ---
 
 # Arquitetura — Módulos HUB Core e Fronteiras de Dados
