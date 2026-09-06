@@ -12,7 +12,7 @@
   "textToSpeechMode": "auto",
   "commitModel": "note-gen-chat",
   "editorModel": "note-gen-chat",
-  "editorContentWidth": "standard",
+  "editorContentWidth": "wide",
   "editorLineHeight": "comfortable",
   "currentPromptId": "0",
   "recordSaveTargetMode": "current",
