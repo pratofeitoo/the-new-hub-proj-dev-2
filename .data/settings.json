@@ -302,7 +302,7 @@
   ],
   "canvasMinimapVisible": true,
   "canvasDefaultZoom": 1,
-  "enableOutline": false,
+  "enableOutline": true,
   "canvasSnapToGrid": false,
   "githubImageAccessToken": "",
   "jsdelivr": true,
