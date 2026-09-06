@@ -6,7 +6,7 @@
   "gitlabUsername": "",
   "githubCustomImageRepo": "",
   "currentTagId": 1,
-  "markDescModel": "note-gen-chat",
+  "markDescModel": "note-gen-vlm",
   "canvasGridStyle": "dots",
   "chatToolbarConfigMobile": [
     {
@@ -43,6 +43,7 @@
   "enableOutline": true,
   "canvasMinimapVisible": true,
   "autoSync": "5",
+  "syncStaticAssets": false,
   "giteaInstanceType": "gitea.com",
   "canvasManagerViewMode": "grid",
   "editorViewMode": "visual",
@@ -73,8 +74,18 @@
   "giteaCustomUrl": "",
   "gitlabAutoSync": "disabled",
   "sttModel": "note-gen-free-note-gen-stt",
+  "ragAgentStrategy": "balanced",
+  "ragAutomaticSearchEnabled": true,
+  "ragEnabledSourceTypes": [
+    "article",
+    "record",
+    "canvas"
+  ],
+  "ragSimilarityThreshold": 0.4,
+  "ragGlobalSemanticSearchEnabled": true,
   "recordTextSize": "sm",
   "version": "0.36.0",
+  "ragRerankThreshold": 0.25,
   "editorModel": "note-gen-chat",
   "autoPullOnOpen": true,
   "placeholderModel": "",
@@ -104,6 +115,7 @@
   "recordCompletionBehavior": "highlight",
   "commitModel": "note-gen-chat",
   "globalSearchFilter": "all",
+  "ragChunkOverlap": 200,
   "canvasManagerSortMode": "updated",
   "darkMode": "system",
   "chatToolbarConfigPc": [
@@ -139,9 +151,11 @@
     }
   ],
   "showEditorUndoRedo": true,
+  "ragResultCount": 6,
   "speechToTextMode": "auto",
   "showEditorStats": true,
   "showSourceLineNumbers": true,
+  "ragChunkSize": 1700,
   "customThemeColors": {
     "dark": {
       "accent": null,
@@ -195,6 +209,7 @@
   "agentCorePromptVersion": 4,
   "primaryModel": "note-gen-chat",
   "condenseMaxLength": 100,
+  "ragKnowledgeIndexPaused": false,
   "canvasGridGap": 20,
   "agentPermissionMode": "ask",
   "canvasGridVisible": true,
@@ -236,6 +251,12 @@
       "id": "todo",
       "order": 6
     }
+  ],
+  "ragExcludedPaths": [
+    ".git",
+    ".trash",
+    "node_modules",
+    "skills"
   ],
   "centeredContent": true,
   "editorLineHeight": "comfortable",
