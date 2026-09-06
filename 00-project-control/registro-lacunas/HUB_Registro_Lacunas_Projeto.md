@@ -40,7 +40,7 @@ project component
 ### Tipos de lacuna
 
 | Tipo | Significado |
-|---|---|
+| --- | --- |
 | `definition` | O comportamento, escopo ou limite pretendido não está especificado. |
 | `connection` | O elemento existe, mas está desconectado dos componentes relacionados do projeto. |
 | `evidence` | Uma afirmação, premissa, cálculo ou resultado carece de suporte suficiente. |
@@ -62,7 +62,7 @@ Use os status do framework do projeto: `blueprint`, `refining`, `conditionally-a
 ## 2. Resumo de lacunas
 
 | Domínio | Críticas | Altas | Médias | Principal risco |
-|---|---:|---:|---:|---|
+| --- | ---: | ---: | ---: | --- |
 | Estratégia e modelo de negócios | 3 | 4 | 1 | A visão completa ainda não tem uma espinha dorsal comercial e operacional única e coerente. |
 | Produto e operações | 2 | 5 | 1 | A jornada da plataforma é especificada conceitualmente, mas sem limites operacionais. |
 | Dados e inteligência | 4 | 5 | 1 | A arquitetura semântica está à frente dos contratos físicos de dados e da linhagem. |
@@ -79,7 +79,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 3. Estratégia e modelo de negócios
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | STR-001 | Crítica | definition | Visão ampla de ecossistema e quatro unidades conceituais existem. | Uma relação coerente entre unidades do grupo, ofertas, clientes, operações e primitivas da plataforma. | Produzir um modelo operacional de todo o projeto mostrando capacidades compartilhadas e específicas por unidade. | Estratégia, operações, jurídico e finanças aprovam um modelo de sistema consistente. |
 | STR-002 | Crítica | definition | Múltiplas frentes de negócio e motores de receita são propostos. | Arquitetura de ofertas: quem compra o quê, quando, por quê, por qual unidade e com qual movimento recorrente. | Construir a matriz oferta–comprador–capacidade. | Toda oferta de lançamento tem comprador definido, troca de valor, responsável e economia. |
 | STR-003 | Crítica | connection | Visão de longo prazo e sequenciamento de curto prazo estão ambos descritos. | Um roadmap que preserve o sistema completo enquanto mostra como os componentes amadurecem sem se contradizer. | Conectar os roadmaps de produto, negócio, dados, governança e lançamento. | Dependências e critérios de saída de fase são aprovados em todos os domínios. |
@@ -92,7 +92,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 4. Produto e operações
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | PRD-001 | Crítica | definition | Seis módulos e uma jornada ponta a ponta são descritos. | Fronteira do produto: núcleo compartilhado da plataforma, configuração de ofertas e operações de serviço. | Definir taxonomia de capacidades e contratos de módulos. | O escopo do produto é coerente e nenhum módulo tem dependências ocultas. |
 | PRD-002 | Crítica | implementation | Esboços de UX e conceitos de fluxo de trabalho existem. | Produto funcional, console do operador, permissões, limites de tenant e processos de suporte. | Converter a jornada em comportamento de sistema, papéis e critérios de aceite. | O fluxo de trabalho ponta a ponta opera sob condições controladas. |
 | PRD-003 | Alta | definition | Múltiplos tipos de atores e uso white-label são propostos. | Modelo completo de papéis, permissões, tenants, entidades e visibilidade de dados. | Construir uma matriz de autorização e tenancy. | Segurança e governança aprovam o comportamento de acesso para cada ator. |
@@ -105,7 +105,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 5. Dados e inteligência
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | DAT-001 | Crítica | definition | Nós, arestas e tabelas conceituais estão mapeados. | Modelo canônico de entidades com chaves primárias, chaves estrangeiras, cardinalidades e tipos de objetos. | Produzir um modelo de dados lógico e físico aprovado. | A arquitetura de dados valida a semântica de identidade e relacionamentos. |
 | DAT-002 | Crítica | implementation | A resolução de identidade é reconhecida como necessária. | Processo de matching de identidade, merge, alias, survivorship e correção entre sistemas de origem. | Definir serviço de identidade e regras de reconciliação. | Datasets de teste demonstram resolução e reversibilidade aceitáveis. |
 | DAT-003 | Crítica | definition | Eventos e indicadores estão catalogados. | Envelope canônico de eventos, schema registry, versionamento, idempotência e regras temporais. | Especificar contratos de eventos e governança de ciclo de vida. | Produtores e consumidores passam nos testes de contrato e replay. |
@@ -120,7 +120,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 6. Tecnologia e integrações
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | TEC-001 | Crítica | implementation | Panorama de integrações e protocolos são propostos. | Especificações de interface executáveis: payloads, endpoints, autenticação, propriedade e versões. | Criar contratos de integração e uma matriz de system-of-record. | Cada integração de lançamento passa na revisão de contrato e segurança. |
 | TEC-002 | Crítica | governance | Retry, DLQ, replay, quarentena e rollback estão listados. | Metas de confiabilidade, propriedade de falhas, runbooks, alertas e testes de recuperação. | Definir SLOs, propriedade do on-call e procedimentos de recuperação. | Exercícios de recuperação atendem aos limiares aprovados de serviço e integridade de dados. |
 | TEC-003 | Alta | definition | Plataforma HUB, warehouse e motor de inteligência são conceituais. | Arquitetura-alvo, limites de deployment, ambientes e requisitos não funcionais. | Produzir arquitetura de solução e estratégia de ambientes. | A revisão de arquitetura aprova escalabilidade, segurança e manutenibilidade. |
@@ -132,7 +132,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 7. Finanças e valor
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | FIN-001 | Crítica | evidence | O simulador de ROI contém premissas ilustrativas. | Premissas respaldadas por evidências, fontes, aprovações e níveis de confiança. | Criar um registro de premissas com proveniência e responsável. | Nenhuma premissa ilustrativa é apresentada como afirmação validada. |
 | FIN-002 | Crítica | definition | Vários motores de receita são propostos. | Arquitetura de receita primária, secundária e de expansão com regras de reconhecimento. | Construir taxonomia de receita integrada e cenários. | Finanças aprovam a classificação de receita e a lógica de relatórios. |
 | FIN-003 | Crítica | validation | Figuras de ROI, payback e benefício são reproduzíveis, mas inconsistentes. | Metodologia aprovada de timing, ramp, payback de benefício líquido, atribuição e dupla contagem. | Reconstruir o modelo financeiro com cenários conservador, base e otimista. | O modelo financeiro passa por reconciliação e revisão. |
@@ -144,7 +144,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 8. Governança, jurídico e confiança
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | GOV-001 | Crítica | governance | A estrutura jurídica de quatro unidades é conceitual. | Evidências de constituição, propriedade, contas, autoridade, tributos e operações intragrupo. | Contratar arquitetura jurídica/entidades e matriz de responsabilidades. | Jurídico e finanças aprovam a estrutura operacional. |
 | GOV-002 | Crítica | governance | Papéis e direitos sobre dados estão indefinidos. | Papéis de controller/processor, base legal, permissões, direitos sobre dados derivados e comportamento de saída. | Completar mapa de governança de dados fluxo a fluxo. | A revisão de proteção de dados libera todos os fluxos de lançamento. |
 | GOV-003 | Crítica | governance | A independência do Selo é identificada como bloqueador. | Carta de governança independente, regras de avaliadores, conflitos, recursos e processo de desligamento. | Elaborar arquitetura de independência do Selo e controles operacionais. | Revisão independente aprova o modelo do Selo. |
@@ -159,7 +159,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 9. Mercado, GTM e parcerias
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | GTM-001 | Crítica | definition | Múltiplos públicos e rotas institucionais são descritos. | Segmentação no nível de portfólio, papéis de compradores, orçamentos e processos de compra. | Construir arquitetura de compradores e ofertas. | Segmentos de lançamento e propriedade são aprovados. |
 | GTM-002 | Crítica | evidence | Oportunidades candidatas e aplicações de parceiros são hipóteses. | Demanda documentada, acesso, rota de procurement, autoridade dos participantes e caminho de renovação. | Criar log de evidências para cada rota-alvo. | Nenhuma rota é tratada como tração sem evidências. |
 | GTM-003 | Alta | connection | Canais liderados por fundadores, diretos e de parceiros são propostos. | Estratégia de canais sequenciada e fallback que não crie risco de concentração. | Modelar capacidade de canais, conversão e dependência. | O plano de GTM tem rotas diversificadas e mensuráveis. |
@@ -171,7 +171,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 10. Marca e comunicações
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | BRD-001 | Alta | connection | Promessa de marca, visuais da plataforma e frentes de negócio existem. | Uma arquitetura de marca coerente entre unidades do grupo, produtos, parceiros e contextos white-label. | Criar hierarquia de marca e regras de naming. | Governança de marca aprova a arquitetura. |
 | BRD-002 | Alta | evidence | Decks e conceitos de UI mostram prontidão, impacto e valor. | Classificação de evidências no nível de afirmação e status de aprovação. | Construir uma matriz afirmação-evidência. | Nenhuma afirmação visual ou verbal excede seu estado de evidência. |
 | BRD-003 | Alta | definition | White-label é descrito como configurável. | Limites para atribuição, visibilidade, integridade metodológica e customização proibida. | Definir padrões white-label e exceções. | Produto, marca e jurídico aprovam as regras de deployment. |
@@ -180,7 +180,7 @@ As prioridades são uma triagem inicial do blueprint, não decisões finais. Dev
 ## 11. Lançamento e prontidão
 
 | ID | Prioridade | Tipo | Estado atual | Elemento faltante | Ação de refinamento | Condição de aprovação |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | LCH-001 | Crítica | launch | Roadmaps e portões de módulos existem separadamente. | Um checklist integrado de prontidão para lançamento cobrindo negócios, produto, dados, tecnologia, jurídico, finanças, operações e comunicações. | Construir o portão mestre de lançamento e o grafo de dependências. | Todos os portões críticos estão aprovados ou explicitamente aprovados condicionalmente. |
 | LCH-002 | Crítica | launch | Nenhuma implementação de produção, modelo de suporte ou sistema de release está evidenciado. | Produto implantável, ambientes, monitoramento, suporte, resposta a incidentes e rollback. | Criar plano de operações de lançamento e runbook de release. | A revisão de prontidão operacional passa. |
 | LCH-003 | Crítica | validation | Estados de aprovação são definidos conceitualmente. | Autoridade de aprovação, pacote de evidências, cadência de revisão, bloqueadores e regras de reentrada. | Criar workflow de aprovação e templates de pacote de revisão. | A aprovação final pode ser auditada independentemente. |

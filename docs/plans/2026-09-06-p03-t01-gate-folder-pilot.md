@@ -9,13 +9,13 @@ tags:
   - p03-t01
   - pilot
 ---
-# P03-T01 Gate Folder Pilot — Implementation Plan
+## P03-T01 Gate Folder Pilot — Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use `subagent-driven-development` or `executing-plans` to implement this plan task-by-task. Steps use checkbox syntax for tracking.
 
 **Goal:** Create and validate one minimal Open Knowledge gate folder that bounds the P03-T01 Modelo Lógico/Físico task without modifying existing source documents.
 
-**Architecture:** The gate folder is a deep, special-purpose control plane. Its folder properties define the contract; three inherited templates define artifact shapes; four visible subfolders separate working material, evidence, output, and review. Existing P03 source documents remain read-only inputs. The pilot tests one complete run, not a generalized framework.
+**Architecture:** The gate folder is a deep, special-purpose control plane. Its folder properties define the contract; three inherited templates define artifact shapes; four visible subfolders separate working material, evidence, deliverables, and review. Existing P03 source documents remain read-only inputs. The pilot tests one complete run, not a generalized framework.
 
 **Tech Stack:** Open Knowledge folder properties, Open Knowledge templates, Markdown, Git, existing repository source documents, Open Knowledge MCP tools.
 
@@ -43,7 +43,7 @@ Create only these pilot artifacts:
 ├── README.md
 ├── working/
 ├── evidence/
-├── output/
+├── deliverables/
 └── review/
 ```
 
@@ -56,7 +56,7 @@ Responsibilities:
 - `README.md`: human-readable gate brief and operating instructions.
 - `working/`: temporary bounded artifacts; no canonical output.
 - `evidence/`: evidence register instances and supporting verification notes.
-- `output/`: the proposed P03-T01 review package.
+- `deliverables/`: the proposed P03-T01 review package.
 - `review/`: the review record and final gate disposition.
 
 Do not modify the following existing files:
@@ -85,7 +85,7 @@ Do not modify the following existing files:
 
 Use Open Knowledge folder creation for the gate and its four subfolders. Do not create any files outside the gate folder.
 
-Expected result: the folder overview displays `working`, `evidence`, `output`, and `review` as clickable subfolders.
+Expected result: the folder overview displays `working`, `evidence`, `deliverables`, and `review` as clickable subfolders.
 
 - [ ] **Step 2: Add gate properties**
 
@@ -342,7 +342,7 @@ The run record and evidence register exist under the gate folder, and no file ou
 
 **Files:**
 
-- Create: `04-project-management/gates/P03-T01/output/P03-T01-validation-package.md`
+- Create: `04-project-management/gates/P03-T01/deliverables/P03-T01-validation-package.md`
 - Modify: `04-project-management/gates/P03-T01/working/P03-T01-run-001.md`
 
 **Security flag:** none

@@ -9,7 +9,7 @@ tags:
   - p03-t01
   - project-management
 ---
-# P03-T01 Gate Folder Pilot
+## P03-T01 Gate Folder Pilot
 
 ## Summary
 
@@ -60,7 +60,7 @@ The current project uses gates as lifecycle checkpoints, but an agent task run c
 4. The gate contains only these operational subfolders:
    - `working/` for temporary reasoning artifacts and intermediate notes.
    - `evidence/` for source-to-claim mappings and verification material.
-   - `output/` for the proposed task result or review package.
+   - `deliverables/` for the proposed task result or review package.
    - `review/` for the review record and approval decision.
 
 5. Existing repository documents remain inputs. The agent reads them from their original paths and does not copy or edit them as part of the pilot.

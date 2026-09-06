@@ -48,7 +48,7 @@ e qualquer edição dentro de `03-approved/` ou `02-review/`.
 `status:` por fronteira (MUST):
 
 | Pasta | `status:` permitido |
-|---|---|
+| --- | --- |
 | `01-work/` | `rascunho` \| `em-elaboracao` |
 | `02-review/` | `em-revisao` |
 | `03-approved/` | `aprovado` |

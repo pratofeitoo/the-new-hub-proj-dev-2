@@ -51,7 +51,7 @@ o contrato de [[HUB_Framework_Fronteiras_Lifecycle|Fronteiras Lifecycle]] §3–
 ## 2. Referência normativa
 
 | Fonte | Papel |
-|---|---|
+| --- | --- |
 | `.omo/plans/framework-tarefas-executavel-piloto-vs-plataforma.md` Task 1 | Origem deste padrão; define DoD, campos obrigatórios e regra `status == pasta` |
 | `00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md` §2–§3 | Contrato `status == pasta` (única fonte da verdade de lifecycle) |
 | `00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md` § Camada 3 | Filtro de aprovação — evidência e gate antes de lançamento |
@@ -64,7 +64,7 @@ Toda nota de tarefa MUST conter YAML frontmatter válido com os campos abaixo.
 Ausência de qualquer campo = FAIL na auditoria Task 2.
 
 | Campo | Tipo | Regra | Exemplo |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `task_id` | `string` | `P{01-07}-T{NN}` ou `BP-{001-008}`; único no repo | `P03-T01` |
 | `phase` | `string` | `P01`..`P07` ou `BP` | `P03` |
 | `status` | `string` | **MUST obedecer §7 lifecycle-first** | `em-revisao` |
@@ -89,7 +89,7 @@ Campos opcionais mas recomendados: `accountable` (A único quando RACI se aplica
 Toda tarefa MUST conter, nesta ordem, as seções abaixo. Seção ausente = FAIL.
 
 | # | Seção (heading `##`) | Conteúdo mínimo | Falha típica |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | `## Objetivo` | 1–2 frases: o que a tarefa produz e por que existe (link para gap/plano) | Objetivo genérico sem gap |
 | 2 | `## Entregável` | Artefato concreto + `target_file` (path idêntico ao frontmatter) | "Documento a definir" sem path |
 | 3 | `## Critério` ou `## Acceptance criteria` | **2–3 bullets testáveis** — cada bullet verificável por evidência (ver §5) | Critério subjetivo ("qualidade adequada") |
@@ -195,7 +195,7 @@ e por extensão para a **tarefa que o governa**: uma tarefa NUNCA está `conclui
 `target_file` não está na pasta correspondente com gate aprovado.
 
 | Onde está o `target_file` | `status` permitido na tarefa | Significado |
-|---|---|---|
+| --- | --- | --- |
 | `01-work/<tema>/<dominio>/` | `rascunho` \| `em-elaboracao` | Em elaboração — não submetido |
 | `02-review/` (incl. `pacotes/`, `bloqueado/`, `01-blueprint/` etc.) | `em-revisao` | Congelado aguardando gate/decisão |
 | `03-approved/` | `aprovado` | Gate assinado (`DEC-M*` + `## Histórico de aprovação`) |
@@ -220,7 +220,7 @@ Hierarquia fonte da verdade (plano Task 7): `tarefa frontmatter` → `plano de f
 Uma tarefa está **Done** se e somente se TODOS os itens abaixo são PASS. Um único FAIL = não-Done.
 
 | # | Check | Como verificar | Gate |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | D1 | Frontmatter completo (§3) — todos os campos MUST presentes e válidos | `grep -n "^task_id:\|^owner:\|^target_file:\|^evidence_required:\|^status:" tarefas/P03-T01*.md` — zero ausente | Task 1 |
 | D2 | `owner` nominal — sem "a designar" (§9) | `grep -R "a designar" 04-project-management/tarefas/P03-T01*.md` == 0 | Task 4 |
 | D3 | `target_file` existe no vault | `ls <target_file>` sem erro; `test -f` PASS | Task 1 |

@@ -197,7 +197,7 @@ O gráfico nunca deve substituir as evidências subjacentes. Uma pontuação vis
 Rótulos de status sugeridos para artefatos e decisões do projeto:
 
 | Status | Significado |
-|---|---|
+| --- | --- |
 | `blueprint` | Ideia, conceito, premissa ou direção ampla de design em estágio inicial. |
 | `refining` | Sob investigação, teste, prototipagem ou revisão. |
 | `conditionally-approved` | Aceitável com condições explícitas ou controles pendentes. |
