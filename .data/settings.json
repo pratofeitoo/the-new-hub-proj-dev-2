@@ -151,7 +151,7 @@
   "giteaInstanceType": "gitea.com",
   "centeredContent": true,
   "imageMethodModel": "",
-  "editorModel": "",
+  "editorModel": "note-gen-chat",
   "autoUpdate": true,
   "inspirationModel": "note-gen-chat",
   "recordToolbarConfig": [
