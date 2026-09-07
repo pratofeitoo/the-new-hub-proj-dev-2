@@ -31,3 +31,9 @@ audio.mp3
 .obsidian/plugins/text-extractor/
 .obsidian/plugins/webpage-html-export/
 .obsidian/graph.json
+.claude/skills/open-knowledge/
+.cursor/skills/open-knowledge/
+.codex/skills/open-knowledge/
+.github/skills/open-knowledge/
+.opencode/skills/open-knowledge/
+.pi/skills/open-knowledge/

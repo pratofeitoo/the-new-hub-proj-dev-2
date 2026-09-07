@@ -2,7 +2,7 @@
 title: RACI v1 — P02-T06 (rascunho)
 task_id: P02-T06
 phase: P02
-status: rascunho
+status: draft
 gap_ids:
   - GOV-008
   - STR-007
@@ -10,8 +10,10 @@ created: 2026-08-29
 tags:
   - refinement
   - P02
+type: reference
 ---
 
+<!-- markdownlint-disable MD025 -->
 # RACI v1 — Accountable único + autoridade delegada (rascunho)
 
 > **G02.6 / G02.7** · Nenhuma atividade crítica com >1 A ou sem dono. Decisões críticas têm dono não-fundador + escalonamento.
@@ -25,7 +27,7 @@ tags:
 ## 2. Matriz (mínimo)
 
 | Atividade crítica | Responsible | **Accountable** | Consulted | Informed | Direito de decisão | Escalar ao founder quando |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | Definir propósito/método | Strategy/Method Lead | **Strategy Lead** | Produto, Ops, Jurídico | Todos | Strategy Lead | altera promessa/método/arquitetura grupo |
 | Portfólio e prioridades | Portfolio Lead | **Commercial Lead** | Produto, Dados, Governança | Founder | Commercial Lead | altera unit economics/risco marca/rota crítica |
 | Entrega cliente (case) | Delivery Lead + Implementadores | **Delivery Lead** | Cliente, Parceiro, Suporte | Sponsor | Delivery Lead | exposição contratual/reputacional > limite |
@@ -51,5 +53,5 @@ Founder patrocina e desbloqueia excepcional; owners delegados mantêm backlog, g
 
 ## 6. Rastreabilidade
 
-- Tarefa: [[04-project-management/tarefas/P02-T06_RACI_Accountable_Unico|P02-T06]]
-- Gaps: [[00-project-control/registro-lacunas/lacunas/GOV-008]], [[00-project-control/registro-lacunas/lacunas/STR-007]]
+- Tarefa: [P02-T06](file:///04-project-management/tarefas/P02-T06_RACI_Accountable_Unico.md)
+- Gaps: [GOV-008](file:///00-project-control/registro-lacunas/lacunas/GOV-008.md), [STR-007](file:///00-project-control/registro-lacunas/lacunas/STR-007.md)

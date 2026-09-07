@@ -2,7 +2,7 @@
 title: "Decisão 2026-09-06 — Arquitetura de três softwares"
 date: "2026-09-06"
 type: decision
-status: pending
+status: deprecated
 tags:
   - projeto/decisao
   - projeto/gestao
@@ -28,6 +28,8 @@ author:
 How do we stop the growth of data pollution and cross-linked chaos in a single ever-growing repository — a condition that index files and project-mapping notes no longer contain — before the project collapses under its own volume?
 
 ## Contexto
+
+> Superseded for the Ideon role by [Decisão 2026-09-07 — Encerramento do uso do Ideon](./2026-09-07-encerramento-ideon-avaliacao-substitutos.md).
 
 - The project accumulated extensive documentation of progress and challenges. That record became evidence that strict, clear rules alone could not contain the problem.
 - A large volume of tightly connected files produced data pollution affecting dozens of agents.
