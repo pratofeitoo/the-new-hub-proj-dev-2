@@ -1,13 +1,6 @@
 {
-  "keepLatestCount": 4,
-  "currentPromptId": "0",
-  "gitlabUsername": "",
-  "gitlabCustomUrl": "",
-  "canvasManagerViewMode": "grid",
-  "autoDataSyncInitialChoice:github": true,
-  "editorContentWidth": "wide",
-  "jsdelivr": true,
-  "globalSearchFilter": "all",
+  "recordCompletionBehavior": "highlight",
+  "fixedRecordTagId": null,
   "editorWorkspaceLayout:main": {
     "activeGroupId": "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3",
     "groups": {
@@ -28,36 +21,11 @@
     },
     "version": 1
   },
-  "giteeAutoSync": "disabled",
-  "editorSourceWrap": true,
-  "giteaCustomUrl": "",
-  "textToSpeechMode": "auto",
-  "fileManagerTextSize": "sm",
-  "ragGlobalSemanticSearchEnabled": true,
-  "audioModel": "",
-  "embeddingModel": "note-gen-embedding",
-  "systemPrompt": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
-  "recordSortMode": "newest",
-  "currentTagId": 1,
-  "editorViewMode": "visual",
-  "ignoredVersion": "",
-  "canvasSnapToGrid": false,
   "giteaUsername": "",
-  "ragEnabledSourceTypes": [
-    "article",
-    "record",
-    "canvas"
-  ],
-  "showMobileEditorToolbar": true,
   "ragResultCount": 6,
-  "currentAi": "",
-  "showEditorStats": true,
-  "rightSidebarVisible": true,
-  "canvasMinimapVisible": true,
-  "canvasDefaultZoom": 1,
-  "language": "简体中文",
-  "canvasGridGap": 20,
-  "enableOutline": true,
+  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:TaskNotes%2FStart%20Here.md": false,
+  "canvasSnapToGrid": false,
+  "recordSortMode": "newest",
   "customThemeColors": {
     "dark": {
       "accent": null,
@@ -96,35 +64,51 @@
       "thirdForeground": null
     }
   },
-  "shortcuts": [
-    {
-      "key": "openWindow",
-      "value": "CommandOrControl+Shift+W"
-    },
-    {
-      "key": "screenshotRecord",
-      "value": "CommandOrControl+Shift+S"
-    },
-    {
-      "key": "quickRecordText",
-      "value": "CommandOrControl+Shift+T"
-    }
-  ],
-  "autoPullOnOpen": true,
-  "ragChunkOverlap": 250,
+  "placeholderModel": "",
+  "gitlabCustomUrl": "",
+  "sttModel": "note-gen-free-note-gen-stt",
+  "textToSpeechMode": "auto",
   "condenseMaxLength": 100,
-  "autoSync": "5",
-  "editorModel": "note-gen-chat",
-  "commitModel": "note-gen-chat",
+  "ragChunkOverlap": 250,
+  "recordSaveTargetMode": "current",
+  "autoUpdate": true,
+  "giteaAutoSync": "disabled",
+  "canvasDefaultZoom": 1,
+  "ignoredVersion": "",
   "ragExcludedPaths": [
     ".git",
     ".trash",
     "node_modules",
     "skills"
   ],
-  "recordCompletionBehavior": "highlight",
-  "recordTextSize": "sm",
-  "agentSystemPromptExtension": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
+  "canvasGridGap": 20,
+  "systemPrompt": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
+  "giteaCustomUrl": "",
+  "recordViewMode": "list",
+  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:README.md": false,
+  "embeddingModel": "note-gen-embedding",
+  "ragSimilarityThreshold": 0.56,
+  "currentTagId": 1,
+  "inspirationModel": "note-gen-chat",
+  "keepLatestCount": 4,
+  "editorContentWidth": "wide",
+  "previewTheme": "github",
+  "currentAi": "",
+  "editorSourceWrap": true,
+  "outlinePosition": "right",
+  "speechToTextMode": "auto",
+  "language": "简体中文",
+  "editorModel": "note-gen-chat",
+  "promptList": [
+    {
+      "content": "Please act as an intelligent assistant for a note-taking application. You can refer to the recorded content and use Markdown syntax to answer the user's questions.",
+      "id": "0",
+      "isDefault": true,
+      "title": "intelligent assistant for a note-taking application"
+    }
+  ],
+  "primaryModel": "246ebc28-b4ed-4e3e-9896-4d78c04113bd",
+  "audioModel": "",
   "chatToolbarConfigMobile": [
     {
       "enabled": true,
@@ -157,92 +141,15 @@
       "order": 5
     }
   ],
-  "templateList": [
-    {
-      "content": "整理成一篇详细完整的笔记。\n满足以下格式要求：\n- 如果是代码，必须完整保留，不要随意生成。\n- 文字复制的内容尽量不要修改，只处理格式化后的内容。",
-      "id": "0",
-      "range": "all",
-      "status": true,
-      "title": "笔记"
-    },
-    {
-      "content": "最近一周的记录整理成一篇周报，将每条记录形成一句总结，每条不超过50字。",
-      "id": "1",
-      "range": "week",
-      "status": true,
-      "title": "周报"
-    }
-  ],
-  "outlinePosition": "right",
-  "condenseModel": "note-gen-chat",
-  "canvasGridStyle": "dots",
-  "ragStructuredKnowledgeConsent": true,
-  "editorLineHeight": "comfortable",
+  "canvasInsertBehavior": "select",
+  "agentCorePromptVersion": 4,
+  "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479",
+  "completionModel": "note-gen-chat",
   "agentPermissionMode": "ask",
-  "leftSidebarTab": "files",
-  "giteaInstanceType": "gitea.com",
-  "ragAgentStrategy": "balanced",
-  "giteaAutoSync": "disabled",
-  "promptList": [
-    {
-      "content": "Please act as an intelligent assistant for a note-taking application. You can refer to the recorded content and use Markdown syntax to answer the user's questions.",
-      "id": "0",
-      "isDefault": true,
-      "title": "intelligent assistant for a note-taking application"
-    }
-  ],
-  "githubUsername": "pratofeitoo",
-  "newTabSectionVisibility": {
-    "order": [
-      "onboarding",
-      "actions",
-      "activity",
-      "activityDetail"
-    ],
-    "visibility": {
-      "actions": true,
-      "activity": true,
-      "activityDetail": true,
-      "onboarding": false
-    }
-  },
   "enableCondense": true,
-  "chatToolbarConfigPc": [
-    {
-      "enabled": true,
-      "id": "modelSelect",
-      "order": 0
-    },
-    {
-      "enabled": true,
-      "id": "promptSelect",
-      "order": 1
-    },
-    {
-      "enabled": true,
-      "id": "mcpButton",
-      "order": 2
-    },
-    {
-      "enabled": true,
-      "id": "ragSwitch",
-      "order": 3
-    },
-    {
-      "enabled": true,
-      "id": "clipboardMonitor",
-      "order": 4
-    },
-    {
-      "enabled": true,
-      "id": "newChat",
-      "order": 5
-    }
-  ],
+  "codeTheme": "github",
+  "imageMethodModel": "",
   "gitlabAutoSync": "disabled",
-  "placeholderModel": "",
-  "markDescModel": "note-gen-vlm",
-  "ragChunkSize": 1700,
   "editorShortcuts": [
     {
       "id": "undo",
@@ -441,7 +348,42 @@
       "value": "Mod+Alt+-"
     }
   ],
-  "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479",
+  "editorViewMode": "visual",
+  "canvasWheelBehavior": "zoom",
+  "autoSync": "5",
+  "templateList": [
+    {
+      "content": "整理成一篇详细完整的笔记。\n满足以下格式要求：\n- 如果是代码，必须完整保留，不要随意生成。\n- 文字复制的内容尽量不要修改，只处理格式化后的内容。",
+      "id": "0",
+      "range": "all",
+      "status": true,
+      "title": "笔记"
+    },
+    {
+      "content": "最近一周的记录整理成一篇周报，将每条记录形成一句总结，每条不超过50字。",
+      "id": "1",
+      "range": "week",
+      "status": true,
+      "title": "周报"
+    }
+  ],
+  "editorLineHeight": "comfortable",
+  "recordTextSize": "sm",
+  "showSourceLineNumbers": true,
+  "ragChunkSize": 1700,
+  "commitModel": "note-gen-chat",
+  "ragGlobalSemanticSearchEnabled": true,
+  "gitlabInstanceType": "gitlab.com",
+  "githubCustomImageRepo": "",
+  "showEditorStats": true,
+  "autoPullOnSwitch": true,
+  "canvasGridStyle": "dots",
+  "darkMode": "system",
+  "enableImageRecognition": true,
+  "ragAutomaticSearchEnabled": true,
+  "version": "0.36.0",
+  "leftSidebarVisible": true,
+  "condenseModel": "note-gen-chat",
   "recordToolbarConfig": [
     {
       "enabled": true,
@@ -479,38 +421,96 @@
       "order": 6
     }
   ],
-  "canvasManagerSortMode": "updated",
-  "agentCorePromptVersion": 4,
-  "autoUpdate": true,
-  "autoPullOnSwitch": true,
-  "showSourceLineNumbers": true,
-  "recordSaveTargetMode": "current",
-  "showEditorUndoRedo": true,
-  "ragRerankThreshold": 0.25,
-  "canvasInsertBehavior": "select",
-  "speechToTextMode": "auto",
-  "gitlabInstanceType": "gitlab.com",
+  "ragEnabledSourceTypes": [
+    "article",
+    "record",
+    "canvas"
+  ],
+  "autoDataSyncInitialChoice:github": true,
+  "giteaInstanceType": "gitea.com",
   "ragKnowledgeIndexPaused": false,
-  "ragAutomaticSearchEnabled": true,
-  "canvasWheelBehavior": "zoom",
-  "leftSidebarVisible": true,
-  "primaryModel": "246ebc28-b4ed-4e3e-9896-4d78c04113bd",
-  "darkMode": "system",
-  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:TaskNotes%2FStart%20Here.md": false,
-  "githubCustomImageRepo": "",
-  "enableImageRecognition": true,
-  "inspirationModel": "note-gen-chat",
-  "completionModel": "note-gen-chat",
-  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:README.md": false,
-  "centeredContent": true,
-  "syncStaticAssets": false,
-  "codeTheme": "github",
-  "version": "0.36.0",
-  "previewTheme": "github",
+  "canvasMinimapVisible": false,
   "canvasGridVisible": true,
-  "ragSimilarityThreshold": 0.56,
-  "imageMethodModel": "",
-  "sttModel": "note-gen-free-note-gen-stt",
-  "recordViewMode": "list",
-  "fixedRecordTagId": null
+  "leftSidebarTab": "files",
+  "shortcuts": [
+    {
+      "key": "openWindow",
+      "value": "CommandOrControl+Shift+W"
+    },
+    {
+      "key": "screenshotRecord",
+      "value": "CommandOrControl+Shift+S"
+    },
+    {
+      "key": "quickRecordText",
+      "value": "CommandOrControl+Shift+T"
+    }
+  ],
+  "rightSidebarVisible": true,
+  "fileManagerTextSize": "sm",
+  "showMobileEditorToolbar": true,
+  "enableOutline": true,
+  "githubUsername": "pratofeitoo",
+  "newTabSectionVisibility": {
+    "order": [
+      "onboarding",
+      "actions",
+      "activity",
+      "activityDetail"
+    ],
+    "visibility": {
+      "actions": true,
+      "activity": true,
+      "activityDetail": true,
+      "onboarding": false
+    }
+  },
+  "markDescModel": "note-gen-vlm",
+  "showEditorUndoRedo": true,
+  "syncStaticAssets": false,
+  "ragAgentStrategy": "balanced",
+  "agentSystemPromptExtension": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
+  "canvasManagerSortMode": "updated",
+  "canvasManagerViewMode": "grid",
+  "gitlabUsername": "",
+  "chatToolbarConfigPc": [
+    {
+      "enabled": true,
+      "id": "modelSelect",
+      "order": 0
+    },
+    {
+      "enabled": true,
+      "id": "promptSelect",
+      "order": 1
+    },
+    {
+      "enabled": true,
+      "id": "mcpButton",
+      "order": 2
+    },
+    {
+      "enabled": true,
+      "id": "ragSwitch",
+      "order": 3
+    },
+    {
+      "enabled": true,
+      "id": "clipboardMonitor",
+      "order": 4
+    },
+    {
+      "enabled": true,
+      "id": "newChat",
+      "order": 5
+    }
+  ],
+  "jsdelivr": true,
+  "ragStructuredKnowledgeConsent": true,
+  "autoPullOnOpen": true,
+  "globalSearchFilter": "all",
+  "ragRerankThreshold": 0.25,
+  "currentPromptId": "0",
+  "giteeAutoSync": "disabled",
+  "centeredContent": true
 }
