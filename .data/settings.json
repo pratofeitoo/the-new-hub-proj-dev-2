@@ -507,7 +507,7 @@
   ],
   "jsdelivr": true,
   "ragStructuredKnowledgeConsent": true,
-  "autoPullOnOpen": true,
+  "autoPullOnOpen": false,
   "globalSearchFilter": "all",
   "ragRerankThreshold": 0.25,
   "currentPromptId": "0",
