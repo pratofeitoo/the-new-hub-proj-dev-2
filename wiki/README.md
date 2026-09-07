@@ -10,7 +10,7 @@ source_paths:
 verified_at: 2026-09-06
 ---
 
-# Wiki — Purpose, Authority and Rules
+## Wiki — Purpose, Authority and Rules
 
 ## Purpose
 
@@ -71,4 +71,4 @@ Start at [Wiki Index](./index.md). Structure: [concepts/](./concepts/README.md) 
 
 ## Source
 
-- [Open Knowledge Wiki — Implementation Plan](../docs/plans/2026-09-06-open-knowledge-wiki-implementation-plan.md)
+- [Open Knowledge Wiki — Implementation Plan](../System/docs/plans/2026-09-06-open-knowledge-wiki-implementation-plan.md)
