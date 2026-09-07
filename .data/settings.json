@@ -28,40 +28,168 @@
   "recordSortMode": "newest",
   "customThemeColors": {
     "dark": {
-      "accent": null,
-      "accentForeground": null,
-      "background": null,
-      "border": null,
-      "card": null,
-      "cardForeground": null,
-      "foreground": null,
-      "muted": null,
-      "mutedForeground": null,
-      "primary": null,
-      "primaryForeground": null,
-      "secondary": null,
-      "secondaryForeground": null,
-      "shadow": null,
-      "third": null,
-      "thirdForeground": null
+      "accent": [
+        142,
+        69,
+        58
+      ],
+      "accentForeground": [
+        166,
+        51,
+        8
+      ],
+      "background": [
+        166,
+        51,
+        8
+      ],
+      "border": [
+        167,
+        38,
+        16
+      ],
+      "card": [
+        167,
+        37,
+        12
+      ],
+      "cardForeground": [
+        214,
+        32,
+        91
+      ],
+      "foreground": [
+        214,
+        32,
+        91
+      ],
+      "muted": [
+        167,
+        37,
+        12
+      ],
+      "mutedForeground": [
+        142,
+        77,
+        73
+      ],
+      "primary": [
+        142,
+        71,
+        45
+      ],
+      "primaryForeground": [
+        0,
+        0,
+        100
+      ],
+      "secondary": [
+        167,
+        38,
+        16
+      ],
+      "secondaryForeground": [
+        214,
+        32,
+        91
+      ],
+      "shadow": [
+        145,
+        80,
+        10
+      ],
+      "third": [
+        144,
+        61,
+        20
+      ],
+      "thirdForeground": [
+        141,
+        79,
+        85
+      ]
     },
     "light": {
-      "accent": null,
-      "accentForeground": null,
-      "background": null,
-      "border": null,
-      "card": null,
-      "cardForeground": null,
-      "foreground": null,
-      "muted": null,
-      "mutedForeground": null,
-      "primary": null,
-      "primaryForeground": null,
-      "secondary": null,
-      "secondaryForeground": null,
-      "shadow": null,
-      "third": null,
-      "thirdForeground": null
+      "accent": [
+        142,
+        69,
+        58
+      ],
+      "accentForeground": [
+        166,
+        51,
+        8
+      ],
+      "background": [
+        166,
+        51,
+        8
+      ],
+      "border": [
+        167,
+        38,
+        16
+      ],
+      "card": [
+        167,
+        37,
+        12
+      ],
+      "cardForeground": [
+        214,
+        32,
+        91
+      ],
+      "foreground": [
+        214,
+        32,
+        91
+      ],
+      "muted": [
+        167,
+        37,
+        12
+      ],
+      "mutedForeground": [
+        142,
+        77,
+        73
+      ],
+      "primary": [
+        142,
+        71,
+        45
+      ],
+      "primaryForeground": [
+        0,
+        0,
+        100
+      ],
+      "secondary": [
+        167,
+        38,
+        16
+      ],
+      "secondaryForeground": [
+        214,
+        32,
+        91
+      ],
+      "shadow": [
+        145,
+        80,
+        10
+      ],
+      "third": [
+        144,
+        61,
+        20
+      ],
+      "thirdForeground": [
+        141,
+        79,
+        85
+      ]
     }
   },
   "placeholderModel": "",
