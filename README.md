@@ -29,9 +29,9 @@ Depois disso:
 1. Leia [`project-map.md`](project-map.md) para a estrutura atual.
 2. Abra o framework em [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md).
 3. **Agentes: antes de criar, mover ou promover qualquer arquivo**, leia o contrato normativo em [`HUB_Framework_Fronteiras_Lifecycle.md`](00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md) e declare qual transição está executando.
-3. Leia a fundação em [`HUB_Fundacao_Blueprint_Projeto.md`](02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md).
-4. Consulte o registro de lacunas em [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md).
-5. Para a ordem de execução, abra [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md).
+4. Leia a fundação em [`HUB_Fundacao_Blueprint_Projeto.md`](02-review/02-reconciliacao-blueprint/HUB_Fundacao_Blueprint_Projeto.md).
+5. Consulte o registro de lacunas em [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md).
+6. Para a ordem de execução, abra [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md).
 
 ## Fronteiras e pastas principais
 
@@ -47,7 +47,7 @@ flowchart LR
 ```
 
 | Pasta | Função atual |
-|---|---|
+| --- | --- |
 | [`01-work/`](01-work/) | **Tudo que está em elaboração**, por domínio. `status:` só `rascunho \| em-elaboracao`. Inclui `documentos-oficiais/` (shell aspiracional — nada ali é oficial, ver GOV-001). |
 | [`02-review/`](02-review/) | **Pacotes congelados aguardando gate** (`pacotes/`) + bloqueados (`bloqueado/`). `status:` só `em-revisao`. Sem edições aqui. |
 | [`03-approved/`](03-approved/) | **Só finais assinados** (hoje: `cenarios/` P01-S01…S06). `status:` só `aprovado`. Nunca editado no lugar. Espelhado no Drive com paths idênticos. |
@@ -75,7 +75,7 @@ O faseamento completo é: `P01` → `P02` → `P03` (spine de dados) → `P04` �
 ## Arquivos-chave
 
 - [`HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md`](00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md) — processo central.
-- [`HUB_Fundacao_Blueprint_Projeto.md`](02-review/01-blueprint/estrategia/HUB_Fundacao_Blueprint_Projeto.md) — fundação consolidada.
+- [`HUB_Fundacao_Blueprint_Projeto.md`](02-review/02-reconciliacao-blueprint/HUB_Fundacao_Blueprint_Projeto.md) — fundação consolidada.
 - [`HUB_Registro_Lacunas_Projeto.md`](00-project-control/registro-lacunas/HUB_Registro_Lacunas_Projeto.md) — gaps, riscos e pendências.
 - [`HUB_Plano_Fases_v1.md`](04-project-management/planos-mestres/HUB_Plano_Fases_v1.md) — plano diretor P01→P07.
 - [`matriz-fases-tarefas-v1.md`](04-project-management/registro-mestre/matriz-fases-tarefas-v1.md) — coordenação das tarefas de fase.
