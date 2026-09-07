@@ -350,7 +350,7 @@
   ],
   "editorViewMode": "visual",
   "canvasWheelBehavior": "zoom",
-  "autoSync": "5",
+  "autoSync": "30",
   "templateList": [
     {
       "content": "整理成一篇详细完整的笔记。\n满足以下格式要求：\n- 如果是代码，必须完整保留，不要随意生成。\n- 文字复制的内容尽量不要修改，只处理格式化后的内容。",
