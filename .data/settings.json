@@ -1,6 +1,82 @@
 {
-  "recordCompletionBehavior": "highlight",
-  "fixedRecordTagId": null,
+  "accessToken": "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",
+  "canvasManagerSortMode": "updated",
+  "systemPrompt": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
+  "agentSystemPromptExtension": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
+  "autoPullOnOpen": false,
+  "speechToTextMode": "auto",
+  "giteaInstanceType": "gitea.com",
+  "contentTextScale": 107,
+  "giteeAutoSync": "disabled",
+  "keepLatestCount": 4,
+  "giteaAccessToken": "",
+  "globalSearchFilter": "all",
+  "chatToolbarConfigPc": [
+    {
+      "enabled": true,
+      "id": "modelSelect",
+      "order": 0
+    },
+    {
+      "enabled": true,
+      "id": "promptSelect",
+      "order": 1
+    },
+    {
+      "enabled": true,
+      "id": "mcpButton",
+      "order": 2
+    },
+    {
+      "enabled": true,
+      "id": "ragSwitch",
+      "order": 3
+    },
+    {
+      "enabled": true,
+      "id": "clipboardMonitor",
+      "order": 4
+    },
+    {
+      "enabled": true,
+      "id": "newChat",
+      "order": 5
+    }
+  ],
+  "ragRerankThreshold": 0.25,
+  "primaryModel": "246ebc28-b4ed-4e3e-9896-4d78c04113bd",
+  "leftSidebarVisible": true,
+  "audioModel": "",
+  "centeredContent": true,
+  "ragChunkOverlap": 250,
+  "placeholderModel": "",
+  "gitlabAccessToken": "",
+  "shortcuts": [
+    {
+      "key": "openWindow",
+      "value": "CommandOrControl+Shift+W"
+    },
+    {
+      "key": "screenshotRecord",
+      "value": "CommandOrControl+Shift+S"
+    },
+    {
+      "key": "quickRecordText",
+      "value": "CommandOrControl+Shift+T"
+    }
+  ],
+  "canvasGridVisible": true,
+  "completionModel": "note-gen-chat",
+  "giteaCustomUrl": "",
+  "editorModel": "note-gen-chat",
+  "language": "简体中文",
+  "gitlabUsername": "",
+  "syncStaticAssets": false,
+  "canvasInsertBehavior": "keep",
+  "rightSidebarVisible": true,
+  "ragAutomaticSearchEnabled": true,
+  "agentCorePromptVersion": 4,
+  "autoDataSyncInitialChoice:github": true,
   "editorWorkspaceLayout:main": {
     "activeGroupId": "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3",
     "groups": {
@@ -22,10 +98,62 @@
     "version": 1
   },
   "giteaUsername": "",
-  "ragResultCount": 6,
-  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:TaskNotes%2FStart%20Here.md": false,
-  "canvasSnapToGrid": true,
   "recordSortMode": "newest",
+  "gitlabCustomUrl": "",
+  "canvasMinimapVisible": false,
+  "recordToolbarConfig": [
+    {
+      "enabled": true,
+      "id": "text",
+      "order": 0
+    },
+    {
+      "enabled": true,
+      "id": "recording",
+      "order": 1
+    },
+    {
+      "enabled": true,
+      "id": "scan",
+      "order": 2
+    },
+    {
+      "enabled": true,
+      "id": "image",
+      "order": 3
+    },
+    {
+      "enabled": true,
+      "id": "link",
+      "order": 4
+    },
+    {
+      "enabled": true,
+      "id": "file",
+      "order": 5
+    },
+    {
+      "enabled": true,
+      "id": "todo",
+      "order": 6
+    }
+  ],
+  "editorSourceWrap": true,
+  "ragChunkSize": 1700,
+  "inspirationModel": "note-gen-chat",
+  "autoSync": "30",
+  "uiScale": 100,
+  "canvasGridStyle": "dots",
+  "githubImageAccessToken": "",
+  "primaryBackupMethod": "github",
+  "ragGlobalSemanticSearchEnabled": true,
+  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:TaskNotes%2FStart%20Here.md": false,
+  "fileManagerTextSize": "sm",
+  "ragEnabledSourceTypes": [
+    "article",
+    "record",
+    "canvas"
+  ],
   "customThemeColors": {
     "dark": {
       "accent": [
@@ -192,92 +320,9 @@
       ]
     }
   },
-  "placeholderModel": "",
-  "gitlabCustomUrl": "",
-  "sttModel": "note-gen-free-note-gen-stt",
-  "textToSpeechMode": "auto",
-  "condenseMaxLength": 100,
-  "ragChunkOverlap": 250,
-  "recordSaveTargetMode": "current",
-  "autoUpdate": true,
-  "giteaAutoSync": "disabled",
-  "canvasDefaultZoom": 1,
-  "ignoredVersion": "",
-  "ragExcludedPaths": [
-    ".git",
-    ".trash",
-    "node_modules",
-    "skills"
-  ],
-  "canvasGridGap": 20,
-  "systemPrompt": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
-  "giteaCustomUrl": "",
-  "recordViewMode": "list",
-  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:README.md": false,
   "embeddingModel": "note-gen-embedding",
-  "ragSimilarityThreshold": 0.56,
-  "currentTagId": 1,
-  "inspirationModel": "note-gen-chat",
-  "keepLatestCount": 4,
-  "editorContentWidth": "wide",
-  "previewTheme": "github",
-  "currentAi": "",
-  "editorSourceWrap": true,
-  "outlinePosition": "right",
-  "speechToTextMode": "auto",
-  "language": "简体中文",
-  "editorModel": "note-gen-chat",
-  "promptList": [
-    {
-      "content": "Please act as an intelligent assistant for a note-taking application. You can refer to the recorded content and use Markdown syntax to answer the user's questions.",
-      "id": "0",
-      "isDefault": true,
-      "title": "intelligent assistant for a note-taking application"
-    }
-  ],
-  "primaryModel": "246ebc28-b4ed-4e3e-9896-4d78c04113bd",
-  "audioModel": "",
-  "chatToolbarConfigMobile": [
-    {
-      "enabled": true,
-      "id": "modelSelect",
-      "order": 0
-    },
-    {
-      "enabled": true,
-      "id": "promptSelect",
-      "order": 1
-    },
-    {
-      "enabled": true,
-      "id": "mcpButton",
-      "order": 2
-    },
-    {
-      "enabled": true,
-      "id": "ragSwitch",
-      "order": 3
-    },
-    {
-      "enabled": true,
-      "id": "clipboardMonitor",
-      "order": 4
-    },
-    {
-      "enabled": true,
-      "id": "newChat",
-      "order": 5
-    }
-  ],
-  "canvasInsertBehavior": "keep",
-  "agentCorePromptVersion": 4,
-  "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479",
-  "completionModel": "note-gen-chat",
-  "agentPermissionMode": "ask",
-  "enableCondense": true,
-  "codeTheme": "github",
-  "imageMethodModel": "",
-  "gitlabAutoSync": "disabled",
+  "recordTextSize": "sm",
+  "sttModel": "note-gen-free-note-gen-stt",
   "editorShortcuts": [
     {
       "id": "undo",
@@ -476,132 +521,573 @@
       "value": "Mod+Alt+-"
     }
   ],
-  "editorViewMode": "visual",
-  "canvasWheelBehavior": "zoom",
-  "autoSync": "30",
-  "templateList": [
-    {
-      "content": "整理成一篇详细完整的笔记。\n满足以下格式要求：\n- 如果是代码，必须完整保留，不要随意生成。\n- 文字复制的内容尽量不要修改，只处理格式化后的内容。",
-      "id": "0",
-      "range": "all",
-      "status": true,
-      "title": "笔记"
-    },
-    {
-      "content": "最近一周的记录整理成一篇周报，将每条记录形成一句总结，每条不超过50字。",
-      "id": "1",
-      "range": "week",
-      "status": true,
-      "title": "周报"
-    }
-  ],
-  "editorLineHeight": "comfortable",
-  "recordTextSize": "sm",
-  "showSourceLineNumbers": true,
-  "ragChunkSize": 1700,
-  "commitModel": "note-gen-chat",
-  "ragGlobalSemanticSearchEnabled": true,
+  "ragResultCount": 6,
+  "ragStructuredKnowledgeConsent": true,
+  "condenseMaxLength": 100,
+  "currentAi": "",
   "gitlabInstanceType": "gitlab.com",
-  "githubCustomImageRepo": "",
-  "showEditorStats": true,
-  "autoPullOnSwitch": true,
-  "canvasGridStyle": "dots",
-  "darkMode": "system",
-  "enableImageRecognition": true,
-  "ragAutomaticSearchEnabled": true,
-  "version": "0.36.0",
-  "leftSidebarVisible": true,
-  "condenseModel": "note-gen-chat",
-  "recordToolbarConfig": [
+  "editorContentWidth": "wide",
+  "aiModelList": [
     {
-      "enabled": true,
-      "id": "text",
-      "order": 0
+      "apiKeyUrl": "https://platform.openai.com/api-keys",
+      "baseURL": "https://api.openai.com/v1",
+      "icon": "https://s2.loli.net/2025/06/25/cVMf586WTBYAju4.png",
+      "key": "2a424abe-d7d3-42dc-833c-b735a02ca218",
+      "modelType": "chat",
+      "templateKey": "chatgpt",
+      "templateSource": "builtin",
+      "title": "ChatGPT"
     },
     {
-      "enabled": true,
-      "id": "recording",
-      "order": 1
+      "apiKey": "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",
+      "baseURL": "https://openrouter.ai/api/v1/",
+      "key": "dea9dfb1-3c31-4c33-9c2c-8f73078e4a98",
+      "modelType": "chat",
+      "models": [
+        {
+          "enableStream": true,
+          "id": "67bac4e2-08fe-4069-b8b3-dace699cfea3",
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "3f0a06cd-cd1f-4520-8aad-8a7a0dbfc504",
+          "model": "inclusionai/ling-3.0-flash-fin:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "8c67bcdf-18df-42eb-a5b7-30e9270e8920",
+          "model": "nvidia/nemotron-3.5-lightning:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "7b9c32d6-7371-4d24-8c60-e8a05e2e7b4c",
+          "model": "cohere/north-mini-code:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "246ebc28-b4ed-4e3e-9896-4d78c04113bd",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "8cce14f7-598b-493b-a3e9-48c32ca3a6d0",
+          "model": "minimax/minimax-m3:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "5a9f91b7-ac77-4183-8d55-3c747100120f",
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        }
+      ],
+      "temperature": 0.7,
+      "templateSource": "custom",
+      "title": "Openrouter",
+      "topP": 1
     },
     {
-      "enabled": true,
-      "id": "scan",
-      "order": 2
+      "apiKey": "AIzaSyB-RBCLHPnJEUfDD2YikV3o36q3IZ9wAns",
+      "apiKeyUrl": "https://aistudio.google.com/app/apikey",
+      "baseURL": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "icon": "https://s2.loli.net/2025/06/25/JU2jVxLFsW4lB6S.png",
+      "key": "38abe7cf-392a-4e2a-b84e-2937f832f1a4",
+      "modelType": "chat",
+      "models": [
+        {
+          "enableStream": true,
+          "id": "9c40c04d-bf85-445e-9a8b-d3dfb2645a91",
+          "model": "models/gemini-2.5-flash",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "1a4effaf-a38d-4146-9eed-85bb13669840",
+          "model": "models/gemini-flash-lite-latest",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "72690eef-d76d-44ae-858d-2a6e8a992c36",
+          "model": "models/gemini-3-flash-preview",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "d9ba01ab-3607-4202-a8f3-0e3ebe5a20ea",
+          "model": "models/gemini-3.5-flash-lite",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        }
+      ],
+      "templateKey": "gemini",
+      "templateSource": "builtin",
+      "title": "Gemini"
     },
     {
-      "enabled": true,
-      "id": "image",
-      "order": 3
+      "apiKey": "sk-1eaNsBvrfrF4hpwdo6AiQlFzcEtZK7GUpBlOcg03Dm3xunbQ",
+      "baseURL": "https://api.notegen.top/v1",
+      "key": "note-gen-free",
+      "models": [
+        {
+          "enableStream": true,
+          "id": "note-gen-chat",
+          "model": "Qwen/Qwen3-8B",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "id": "note-gen-embedding",
+          "model": "BAAI/bge-m3",
+          "modelType": "embedding"
+        },
+        {
+          "id": "note-gen-vlm",
+          "model": "Qwen/Qwen3.5-4B",
+          "modelType": "chat"
+        },
+        {
+          "id": "note-gen-stt",
+          "model": "FunAudioLLM/SenseVoiceSmall",
+          "modelType": "stt"
+        }
+      ],
+      "title": "NoteGen Free"
     },
     {
-      "enabled": true,
-      "id": "link",
-      "order": 4
+      "baseURL": "http://localhost:11434/v1",
+      "icon": "https://s2.loli.net/2025/06/25/legkEpHACDBQ5Xz.png",
+      "key": "fdb63986-c8c8-49f7-a7b5-bfc751dbf875",
+      "modelType": "chat",
+      "models": [
+        {
+          "enableStream": true,
+          "id": "e402bd43-8c97-4a14-84c9-91ffb307fd0b",
+          "model": "qwen3.5:0.8b",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "54399042-cfc4-48d7-b0d3-e15b3614abf6",
+          "model": "nomic-embed-text:latest",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "48ca519b-d06a-4273-9e16-3379644d60f4",
+          "model": "nomic-embed-text:latest",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "f801cb5e-a0f5-463f-b267-b6aa9e4a34c7",
+          "model": "minicpm-v4.6:q6_K",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "a064cbfb-a272-45ec-ab7f-723c84662e34",
+          "model": "qwen2.5:0.5b",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "0d864a3f-81af-4979-9fe3-d7ce0bf833d7",
+          "model": "embeddinggemma:300m-qat-q8_0",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "7a070f10-3a33-4248-9ddd-18c0c758a479",
+          "model": "hans-tech/bge-reranker-v2-m3:260522",
+          "modelType": "rerank",
+          "temperature": 0.7,
+          "topP": 1
+        }
+      ],
+      "templateKey": "ollama",
+      "templateSource": "builtin",
+      "title": "Ollama"
     },
     {
-      "enabled": true,
-      "id": "file",
-      "order": 5
+      "baseURL": "http://localhost:1234/v1",
+      "icon": "https://s2.loli.net/2025/06/25/IifFV4HTQ9dpGZE.png",
+      "key": "530ff1f8-9507-45c1-8ff1-cbfd8ca9b73b",
+      "modelType": "chat",
+      "models": [
+        {
+          "enableStream": true,
+          "id": "cb91427d-3af0-44fc-b22a-0513c986405e",
+          "model": "vibethinker-3b",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "tokenLimitParam": "max_tokens",
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "41f6c4d5-2ff2-43fe-a124-5e4540b06064",
+          "model": "text-embedding-lfm2.5-embedding-350m",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "c059455f-9e69-4431-9fed-1b6c3fe78c85",
+          "model": "huihui-lfm2.5-1.2b-instruct-abliterated",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "dde24f45-b88c-4c1f-8108-fa9315d590a4",
+          "model": "qwen3.5-2b-uncensored-hauhaucs-aggressive",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "a9696fe9-ce68-4b44-a67f-fbff6585ccdf",
+          "model": "text-embedding-bge-reranker-v2-m3",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "a7b1341d-f6ee-437b-a73b-bff907e7b9c6",
+          "model": "josiefied-lfm2.5-1.2b-instruct-abliterated",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "7f556d90-1002-4b89-8523-e5d52ecb872c",
+          "model": "gemma-3-1b-it-glm-4.7-flash-heretic-uncensored-thinking_gguf",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        }
+      ],
+      "templateKey": "lmstudio",
+      "templateSource": "builtin",
+      "title": "LM Studio"
     },
     {
+      "apiKeyUrl": "https://cloud.siliconflow.cn/i/O2ciJeZw",
+      "baseURL": "https://api.siliconflow.cn/v1",
       "enabled": true,
-      "id": "todo",
-      "order": 6
+      "icon": "https://s2.loli.net/2025/09/09/D8Al2raSvewN5xn.jpg",
+      "key": "6f2b066a-5b5e-4a8d-98d1-ff4d26066683",
+      "modelType": "chat",
+      "templateKey": "siliconflow",
+      "templateSource": "remote",
+      "title": "SiliconFlow"
+    },
+    {
+      "apiKeyUrl": "https://www.infistar.cc/register?aff=G55F2Z5Q&ref_source=link",
+      "baseURL": "https://infistar.cc/v1",
+      "enabled": true,
+      "icon": "https://infistar.cc/favicon.ico",
+      "key": "71e1ac29-e399-40af-a9aa-ce484b2a776f",
+      "modelType": "chat",
+      "promotion": "注册送 $10",
+      "templateKey": "infistar",
+      "templateSource": "remote",
+      "title": "Infistar.cc 无限星河"
+    },
+    {
+      "apiKeyUrl": "https://www.shengsuanyun.com/?from=CH_YZ0Q43T6",
+      "baseURL": "https://router.shengsuanyun.com/api/v1",
+      "enabled": true,
+      "icon": "https://s2.loli.net/2025/09/15/4qjswKyaRfZ8OxW.png",
+      "key": "b4055d79-6a37-43cf-a225-aedafbe0f7de",
+      "modelType": "chat",
+      "templateKey": "shengsuanyun",
+      "templateSource": "remote",
+      "title": "胜算云"
+    },
+    {
+      "apiKeyUrl": "https://bailian.console.aliyun.com/?apiKey=1",
+      "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/bailian-color.svg",
+      "key": "cabdebb9-e69a-433c-9e3a-398977009b74",
+      "modelType": "chat",
+      "templateKey": "bailian",
+      "templateSource": "remote",
+      "title": "阿里云百炼"
+    },
+    {
+      "apiKeyUrl": "https://platform.kimi.com/console/api-keys",
+      "baseURL": "https://api.moonshot.cn/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/kimi-color.svg",
+      "key": "edda453f-e55a-4da2-8371-ae177007899e",
+      "modelType": "chat",
+      "templateKey": "moonshot",
+      "templateSource": "remote",
+      "title": "Kimi"
+    },
+    {
+      "apiKeyUrl": "https://open.bigmodel.cn/apikey/platform",
+      "baseURL": "https://open.bigmodel.cn/api/paas/v4",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/zhipu-color.svg",
+      "key": "8b3db3b5-5e02-4ed8-a9ce-ff944a52b892",
+      "modelType": "chat",
+      "templateKey": "zhipu",
+      "templateSource": "remote",
+      "title": "智谱 GLM"
+    },
+    {
+      "apiKeyUrl": "https://platform.minimaxi.com/subscribe/token-plan?code=1CnznNlJHf&source=link",
+      "baseURL": "https://api.minimaxi.com/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/minimax-color.svg",
+      "key": "d85df4e2-b417-4f49-a91d-57833e66044d",
+      "modelType": "chat",
+      "templateKey": "minimax",
+      "templateSource": "remote",
+      "title": "MiniMax"
+    },
+    {
+      "apiKeyUrl": "https://console.volcengine.com/ark/region:ark+cn-beijing/apikey",
+      "baseURL": "https://ark.cn-beijing.volces.com/api/v3",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/doubao-color.svg",
+      "key": "17799546-5278-4cfc-9852-be9385ff12ad",
+      "modelType": "chat",
+      "templateKey": "volcengine",
+      "templateSource": "remote",
+      "title": "火山方舟"
+    },
+    {
+      "apiKeyUrl": "https://console.bce.baidu.com/iam/#/iam/apikey/list",
+      "baseURL": "https://qianfan.baidubce.com/v2",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/baiducloud-color.svg",
+      "key": "b5b55af4-2d30-43b1-8d70-072a2395eab6",
+      "modelType": "chat",
+      "templateKey": "qianfan",
+      "templateSource": "remote",
+      "title": "百度千帆"
+    },
+    {
+      "apiKeyUrl": "https://console.cloud.tencent.com/tokenhub/apikey",
+      "baseURL": "https://tokenhub.tencentmaas.com/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/tencentcloud-color.svg",
+      "key": "31282912-d60d-4201-a4d2-5739888f3248",
+      "modelType": "chat",
+      "templateKey": "hunyuan",
+      "templateSource": "remote",
+      "title": "腾讯云 TokenHub"
+    },
+    {
+      "apiKeyUrl": "https://platform.stepfun.com/interface-key",
+      "baseURL": "https://api.stepfun.com/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/stepfun-color.svg",
+      "key": "a5fe9ec1-639d-4d2a-8101-8d77edb25c1c",
+      "modelType": "chat",
+      "templateKey": "stepfun",
+      "templateSource": "remote",
+      "title": "阶跃星辰"
+    },
+    {
+      "apiKeyUrl": "https://platform.lingyiwanwu.com/apikeys",
+      "baseURL": "https://api.lingyiwanwu.com/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/yi-color.svg",
+      "key": "48a2789d-5539-4f01-b356-024e53396631",
+      "modelType": "chat",
+      "templateKey": "lingyiwanwu",
+      "templateSource": "remote",
+      "title": "零一万物"
+    },
+    {
+      "apiKeyUrl": "https://console.huaweicloud.com/modelarts/?region=cn-north-4#/maas/overview",
+      "baseURL": "https://api.modelarts-maas.com/openai/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/huaweicloud-color.svg",
+      "key": "fa7fa4ca-6420-4dd9-8f67-8422af454cef",
+      "modelType": "chat",
+      "templateKey": "huaweicloud",
+      "templateSource": "remote",
+      "title": "华为云 MaaS"
+    },
+    {
+      "apiKeyUrl": "https://platform.baichuan-ai.com/",
+      "baseURL": "https://api.baichuan-ai.com/v1",
+      "enabled": true,
+      "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/baichuan-color.svg",
+      "key": "a9d8bf58-5a54-4bba-9a0b-32fe2bda198d",
+      "modelType": "chat",
+      "templateKey": "baichuan",
+      "templateSource": "remote",
+      "title": "百川智能"
+    },
+    {
+      "apiKeyUrl": "https://console.x.ai/",
+      "baseURL": "https://api.x.ai/v1",
+      "enabled": true,
+      "icon": "https://s2.loli.net/2025/06/25/JBZMluaobKq43QE.png",
+      "key": "d9ff0f92-a913-498f-ae3d-804fafd58c75",
+      "modelType": "chat",
+      "templateKey": "grok",
+      "templateSource": "remote",
+      "title": "Grok"
+    },
+    {
+      "apiKeyUrl": "https://platform.deepseek.com/api_keys",
+      "baseURL": "https://api.deepseek.com",
+      "enabled": true,
+      "icon": "https://s2.loli.net/2025/06/25/n39WmsCDbVLQzjr.png",
+      "key": "d67ed325-e15e-43d7-8f01-5888240b513a",
+      "modelType": "chat",
+      "templateKey": "deepseek",
+      "templateSource": "remote",
+      "title": "DeepSeek"
+    },
+    {
+      "apiKeyUrl": "https://openrouter.ai/api-keys",
+      "baseURL": "https://openrouter.ai/api/v1",
+      "enabled": true,
+      "icon": "https://s2.loli.net/2025/06/25/CTjSDHLl4XdvxM5.png",
+      "key": "11514b83-8301-48ba-be11-772b8e5da6b4",
+      "modelType": "chat",
+      "templateKey": "openrouter",
+      "templateSource": "remote",
+      "title": "OpenRouter"
+    },
+    {
+      "apiKeyUrl": "https://s.qiniu.com/v6Bnuu",
+      "baseURL": "https://openai.qiniu.com/v1",
+      "enabled": true,
+      "icon": "https://s2.loli.net/2025/09/15/ALjNPveWrtmsfOY.png",
+      "key": "2de491e7-8001-4286-8ac7-ed9044a232a1",
+      "modelType": "chat",
+      "templateKey": "qiniu",
+      "templateSource": "remote",
+      "title": "七牛云"
+    },
+    {
+      "apiKeyUrl": "https://share.302.ai/jfFrIP",
+      "baseURL": "https://api.302.ai/v1",
+      "enabled": true,
+      "icon": "https://s2.loli.net/2025/06/26/4CJOQ2U9ibvoGpR.png",
+      "key": "a8983f57-3e7a-4891-b0f3-794af675374a",
+      "modelType": "chat",
+      "templateKey": "302",
+      "templateSource": "remote",
+      "title": "302.AI"
+    },
+    {
+      "apiKeyUrl": "https://ai.gitee.com/",
+      "baseURL": "https://ai.gitee.com/v1",
+      "enabled": true,
+      "icon": "https://s2.loli.net/2025/09/15/ih7aTnGPvELFsVc.png",
+      "key": "564ccece-9eb2-4a2d-9e3d-ed110db1bf91",
+      "modelType": "chat",
+      "templateKey": "gitee",
+      "templateSource": "remote",
+      "title": "Gitee AI"
+    },
+    {
+      "apiKeyUrl": "https://www.compshare.cn/coding-plan?ytag=GPU_YY_JL_git_note-gen",
+      "baseURL": "https://api.modelverse.cn/v1",
+      "enabled": true,
+      "icon": "https://files.seeusercontent.com/2026/03/26/L5pg/logo-compshare_.png",
+      "key": "18c182cc-3729-4f8e-8206-4f905684f589",
+      "modelType": "chat",
+      "templateKey": "ucloud",
+      "templateSource": "remote",
+      "title": "优云智算"
+    },
+    {
+      "apiKey": "sk-1eaNsBvrfrF4hpwdo6AiQlFzcEtZK7GUpBlOcg03Dm3xunbQ",
+      "baseURL": "https://api.notegen.top/v1",
+      "key": "note-gen-limited",
+      "models": [
+        {
+          "enableStream": true,
+          "id": "note-gen-limited-deepseek-ai/DeepSeek-V3.2",
+          "model": "deepseek-ai/DeepSeek-V3.2",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        }
+      ],
+      "title": "NoteGen Limited"
     }
   ],
-  "ragEnabledSourceTypes": [
-    "article",
-    "record",
-    "canvas"
-  ],
-  "autoDataSyncInitialChoice:github": true,
-  "giteaInstanceType": "gitea.com",
-  "ragKnowledgeIndexPaused": false,
-  "canvasMinimapVisible": false,
-  "canvasGridVisible": true,
-  "leftSidebarTab": "files",
-  "shortcuts": [
-    {
-      "key": "openWindow",
-      "value": "CommandOrControl+Shift+W"
-    },
-    {
-      "key": "screenshotRecord",
-      "value": "CommandOrControl+Shift+S"
-    },
-    {
-      "key": "quickRecordText",
-      "value": "CommandOrControl+Shift+T"
-    }
-  ],
-  "rightSidebarVisible": true,
-  "fileManagerTextSize": "sm",
+  "imageMethodModel": "",
+  "recordSaveTargetMode": "current",
+  "autoUpdate": true,
   "showMobileEditorToolbar": true,
   "enableOutline": true,
-  "githubUsername": "pratofeitoo",
-  "newTabSectionVisibility": {
-    "order": [
-      "onboarding",
-      "actions",
-      "activity",
-      "activityDetail"
-    ],
-    "visibility": {
-      "actions": true,
-      "activity": true,
-      "activityDetail": true,
-      "onboarding": false
-    }
-  },
-  "markDescModel": "note-gen-vlm",
-  "showEditorUndoRedo": true,
-  "syncStaticAssets": false,
-  "ragAgentStrategy": "balanced",
-  "agentSystemPromptExtension": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
-  "canvasManagerSortMode": "updated",
   "canvasManagerViewMode": "grid",
-  "gitlabUsername": "",
-  "chatToolbarConfigPc": [
+  "jsdelivr": true,
+  "canvasSnapToGrid": true,
+  "recordCompletionBehavior": "highlight",
+  "editorViewMode": "visual",
+  "commitModel": "note-gen-chat",
+  "currentPromptId": "0",
+  "textToSpeechMode": "auto",
+  "fixedRecordTagId": null,
+  "githubCustomImageRepo": "",
+  "codeTheme": "github",
+  "lastOrganizeTemplateId": "0",
+  "gitlabAutoSync": "disabled",
+  "darkMode": "system",
+  "previewTheme": "github",
+  "condenseModel": "note-gen-chat",
+  "chatToolbarConfigMobile": [
     {
       "enabled": true,
       "id": "modelSelect",
@@ -633,12 +1119,77 @@
       "order": 5
     }
   ],
-  "jsdelivr": true,
-  "ragStructuredKnowledgeConsent": true,
-  "autoPullOnOpen": false,
-  "globalSearchFilter": "all",
-  "ragRerankThreshold": 0.25,
-  "currentPromptId": "0",
-  "giteeAutoSync": "disabled",
-  "centeredContent": true
+  "canvasWheelBehavior": "zoom",
+  "agentPermissionMode": "ask",
+  "outlinePosition": "right",
+  "currentTagId": 1,
+  "ignoredVersion": "",
+  "ragAgentStrategy": "balanced",
+  "giteaAutoSync": "disabled",
+  "enableImageRecognition": true,
+  "appFontFamily": "__notegen_system_font__",
+  "giteeAccessToken": "",
+  "templateList": [
+    {
+      "content": "整理成一篇详细完整的笔记。\n满足以下格式要求：\n- 如果是代码，必须完整保留，不要随意生成。\n- 文字复制的内容尽量不要修改，只处理格式化后的内容。",
+      "id": "0",
+      "range": "all",
+      "status": true,
+      "title": "笔记"
+    },
+    {
+      "content": "最近一周的记录整理成一篇周报，将每条记录形成一句总结，每条不超过50字。",
+      "id": "1",
+      "range": "week",
+      "status": true,
+      "title": "周报"
+    }
+  ],
+  "markDescModel": "note-gen-vlm",
+  "autoPullOnSwitch": true,
+  "ragExcludedPaths": [
+    ".git",
+    ".trash",
+    "node_modules",
+    "skills"
+  ],
+  "showEditorStats": true,
+  "ragSimilarityThreshold": 0.56,
+  "recordViewMode": "list",
+  "version": "0.36.0",
+  "newTabSectionVisibility": {
+    "order": [
+      "onboarding",
+      "actions",
+      "activity",
+      "activityDetail"
+    ],
+    "visibility": {
+      "actions": true,
+      "activity": true,
+      "activityDetail": true,
+      "onboarding": false
+    }
+  },
+  "promptList": [
+    {
+      "content": "Please act as an intelligent assistant for a note-taking application. You can refer to the recorded content and use Markdown syntax to answer the user's questions.",
+      "id": "0",
+      "isDefault": true,
+      "title": "intelligent assistant for a note-taking application"
+    }
+  ],
+  "editorLineHeight": "comfortable",
+  "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479",
+  "canvasDefaultZoom": 1,
+  "useImageRepo": false,
+  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:README.md": false,
+  "ragKnowledgeIndexPaused": false,
+  "githubUsername": "pratofeitoo",
+  "showSourceLineNumbers": true,
+  "enableCondense": true,
+  "canvasGridGap": 20,
+  "showEditorUndoRedo": true,
+  "mainImageHosting": "github",
+  "leftSidebarTab": "files"
 }
