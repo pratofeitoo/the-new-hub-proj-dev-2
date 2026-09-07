@@ -10,7 +10,7 @@ source_paths:
 verified_at: 2026-09-06
 ---
 
-# Wiki Index — Project Knowledge Hub
+## Wiki Index — Project Knowledge Hub
 
 > Curated, agent-facing layer. Source documents remain authoritative — see [Wiki Rules](./README.md).
 
@@ -51,4 +51,4 @@ verified_at: 2026-09-06
 
 ## Source
 
-- [Open Knowledge Wiki — Implementation Plan](../docs/plans/2026-09-06-open-knowledge-wiki-implementation-plan.md)
+- [Open Knowledge Wiki — Implementation Plan](../System/docs/plans/2026-09-06-open-knowledge-wiki-implementation-plan.md)
