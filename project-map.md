@@ -18,7 +18,7 @@ com domínios como segundo eixo:
 ## Estrutura atual
 
 | Área | Papel atual |
-|---|---|
+| --- | --- |
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
 | `01-work/` | Elaboração em 3 temas: `produto-e-operacao/` (`refinamento-produto/`), `dados-tech-financas/` (`modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho; CSVs em `05-resources/fontes/`), `pesquisa-e-confianca/` (`pesquisa/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). 9 domínios blueprint submetidos a `02-review/01-blueprint/`. |
 | `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/`, `02-reconciliacao-blueprint/` (6 reconciliadas + mapeamento; submetidas 2026-09-05, `em-revisao`, em espera — v1 aposentada em `99-archive/superado/`). |
@@ -37,7 +37,7 @@ com domínios como segundo eixo:
 
 > Estado no branch `restructure/lifecycle-borders`. Histórico de moves preservado (`git log --follow`).
 
-```
+```text
 .
 ├── .agents/                         — skills e configuração de agentes do projeto
 ├── .logs/                           — logs de subtasks e agentes
@@ -117,7 +117,7 @@ O fluxo de execução é:
 ## Guia de roteamento
 
 | Intenção | Ler | Escrever |
-|---|---|---|
+| --- | --- | --- |
 | Agente antes de mover/promover arquivo | `00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md` (declarar a transição) | conforme a transição declarada |
 | Entender regras e decisões | `00-project-control/` | `decisoes/` ou `registro-lacunas/` |
 | Elaborar conteúdo | `01-work/<tema>/<domínio>/` | subpasta correspondente (`rascunho`/`em-elaboracao`) |
