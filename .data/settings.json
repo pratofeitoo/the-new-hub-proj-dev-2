@@ -68,7 +68,7 @@
     "node_modules",
     "skills"
   ],
-  "ragChunkSize": 2400,
+  "ragChunkSize": 1400,
   "canvasGridStyle": "dots",
   "mainImageHosting": "github",
   "autoUpdate": true,
@@ -101,7 +101,7 @@
   "editorLineHeight": "comfortable",
   "canvasInsertBehavior": "keep",
   "gitlabAccessToken": "",
-  "rerankingModel": "",
+  "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479",
   "agentCorePromptVersion": 4,
   "giteaInstanceType": "gitea.com",
   "editorShortcuts": [
