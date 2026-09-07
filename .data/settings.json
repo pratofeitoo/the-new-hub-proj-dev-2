@@ -141,7 +141,7 @@
       "order": 5
     }
   ],
-  "canvasInsertBehavior": "select",
+  "canvasInsertBehavior": "keep",
   "agentCorePromptVersion": 4,
   "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479",
   "completionModel": "note-gen-chat",
