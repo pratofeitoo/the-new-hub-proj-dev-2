@@ -928,7 +928,7 @@
   "inspirationModel": "note-gen-chat",
   "giteaAutoSync": "disabled",
   "enableCondense": true,
-  "autoSync": "3",
+  "autoSync": "30",
   "editorModel": "note-gen-chat",
   "jsdelivr": true,
   "enableOutline": true,
