@@ -19,168 +19,40 @@
   ],
   "customThemeColors": {
     "dark": {
-      "accent": [
-        142,
-        69,
-        58
-      ],
-      "accentForeground": [
-        166,
-        51,
-        8
-      ],
-      "background": [
-        166,
-        51,
-        8
-      ],
-      "border": [
-        167,
-        38,
-        16
-      ],
-      "card": [
-        167,
-        37,
-        12
-      ],
-      "cardForeground": [
-        214,
-        32,
-        91
-      ],
-      "foreground": [
-        214,
-        32,
-        91
-      ],
-      "muted": [
-        167,
-        37,
-        12
-      ],
-      "mutedForeground": [
-        142,
-        77,
-        73
-      ],
-      "primary": [
-        142,
-        71,
-        45
-      ],
-      "primaryForeground": [
-        0,
-        0,
-        100
-      ],
-      "secondary": [
-        167,
-        38,
-        16
-      ],
-      "secondaryForeground": [
-        214,
-        32,
-        91
-      ],
-      "shadow": [
-        145,
-        80,
-        10
-      ],
-      "third": [
-        144,
-        61,
-        20
-      ],
-      "thirdForeground": [
-        141,
-        79,
-        85
-      ]
+      "accent": null,
+      "accentForeground": null,
+      "background": null,
+      "border": null,
+      "card": null,
+      "cardForeground": null,
+      "foreground": null,
+      "muted": null,
+      "mutedForeground": null,
+      "primary": null,
+      "primaryForeground": null,
+      "secondary": null,
+      "secondaryForeground": null,
+      "shadow": null,
+      "third": null,
+      "thirdForeground": null
     },
     "light": {
-      "accent": [
-        142,
-        69,
-        58
-      ],
-      "accentForeground": [
-        166,
-        51,
-        8
-      ],
-      "background": [
-        166,
-        51,
-        8
-      ],
-      "border": [
-        167,
-        38,
-        16
-      ],
-      "card": [
-        167,
-        37,
-        12
-      ],
-      "cardForeground": [
-        214,
-        32,
-        91
-      ],
-      "foreground": [
-        214,
-        32,
-        91
-      ],
-      "muted": [
-        167,
-        37,
-        12
-      ],
-      "mutedForeground": [
-        142,
-        77,
-        73
-      ],
-      "primary": [
-        142,
-        71,
-        45
-      ],
-      "primaryForeground": [
-        0,
-        0,
-        100
-      ],
-      "secondary": [
-        167,
-        38,
-        16
-      ],
-      "secondaryForeground": [
-        214,
-        32,
-        91
-      ],
-      "shadow": [
-        145,
-        80,
-        10
-      ],
-      "third": [
-        144,
-        61,
-        20
-      ],
-      "thirdForeground": [
-        141,
-        79,
-        85
-      ]
+      "accent": null,
+      "accentForeground": null,
+      "background": null,
+      "border": null,
+      "card": null,
+      "cardForeground": null,
+      "foreground": null,
+      "muted": null,
+      "mutedForeground": null,
+      "primary": null,
+      "primaryForeground": null,
+      "secondary": null,
+      "secondaryForeground": null,
+      "shadow": null,
+      "third": null,
+      "thirdForeground": null
     }
   },
   "giteaCustomUrl": "",
@@ -196,7 +68,7 @@
     "node_modules",
     "skills"
   ],
-  "ragChunkSize": 1700,
+  "ragChunkSize": 2400,
   "canvasGridStyle": "dots",
   "mainImageHosting": "github",
   "autoUpdate": true,
@@ -204,7 +76,7 @@
   "recordSortMode": "newest",
   "canvasGridGap": 20,
   "showEditorStats": true,
-  "ragSimilarityThreshold": 0.56,
+  "ragSimilarityThreshold": 0.4,
   "markDescModel": "note-gen-vlm",
   "ragChunkOverlap": 250,
   "darkMode": "system",
@@ -225,10 +97,11 @@
   ],
   "imageMethodModel": "",
   "ragRerankThreshold": 0.25,
+  "outlineWidth": 376,
   "editorLineHeight": "comfortable",
   "canvasInsertBehavior": "keep",
   "gitlabAccessToken": "",
-  "rerankingModel": "7a070f10-3a33-4248-9ddd-18c0c758a479",
+  "rerankingModel": "",
   "agentCorePromptVersion": 4,
   "giteaInstanceType": "gitea.com",
   "editorShortcuts": [
@@ -432,30 +305,90 @@
   "appFontFamily": "__notegen_system_font__",
   "editorViewMode": "visual",
   "canvasWheelBehavior": "zoom",
-  "recordTextSize": "sm",
+  "recordTextSize": "md",
   "systemPrompt": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
-  "currentTagId": 1,
+  "currentTagId": 4,
   "primaryBackupMethod": "github",
   "accessToken": "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",
   "gitlabInstanceType": "gitlab.com",
   "autoPullOnSwitch": true,
   "aiModelList": [
     {
-      "baseURL": "",
-      "key": "728fabb9-d824-4bf1-9c70-12aa70feb90f",
+      "apiKeyUrl": "https://platform.openai.com/api-keys",
+      "baseURL": "https://api.openai.com/v1",
+      "icon": "https://s2.loli.net/2025/06/25/cVMf586WTBYAju4.png",
+      "key": "2a424abe-d7d3-42dc-833c-b735a02ca218",
       "modelType": "chat",
-      "temperature": 0.7,
-      "templateSource": "custom",
-      "title": "Custom platform",
-      "topP": 1
+      "templateKey": "chatgpt",
+      "templateSource": "builtin",
+      "title": "ChatGPT"
     },
     {
-      "baseURL": "",
-      "key": "fcb03092-e91c-4e21-bb3f-74ab8f254b80",
+      "apiKey": "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",
+      "baseURL": "https://openrouter.ai/api/v1/",
+      "key": "dea9dfb1-3c31-4c33-9c2c-8f73078e4a98",
       "modelType": "chat",
+      "models": [
+        {
+          "enableStream": true,
+          "id": "67bac4e2-08fe-4069-b8b3-dace699cfea3",
+          "model": "inclusionai/ling-3.0-flash-sante:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "3f0a06cd-cd1f-4520-8aad-8a7a0dbfc504",
+          "model": "inclusionai/ling-3.0-flash-fin:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "8c67bcdf-18df-42eb-a5b7-30e9270e8920",
+          "model": "nvidia/nemotron-3.5-lightning:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "7b9c32d6-7371-4d24-8c60-e8a05e2e7b4c",
+          "model": "cohere/north-mini-code:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "246ebc28-b4ed-4e3e-9896-4d78c04113bd",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "8cce14f7-598b-493b-a3e9-48c32ca3a6d0",
+          "model": "minimax/minimax-m3:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "5a9f91b7-ac77-4183-8d55-3c747100120f",
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        }
+      ],
       "temperature": 0.7,
       "templateSource": "custom",
-      "title": "Custom platform",
+      "title": "Openrouter",
       "topP": 1
     },
     {
@@ -468,7 +401,7 @@
       "models": [
         {
           "enableStream": true,
-          "id": "5ee2e949-7199-4603-ba66-576e89e0d9ad",
+          "id": "9c40c04d-bf85-445e-9a8b-d3dfb2645a91",
           "model": "models/gemini-2.5-flash",
           "modelType": "chat",
           "temperature": 0.7,
@@ -476,15 +409,7 @@
         },
         {
           "enableStream": true,
-          "id": "3e6f01c3-223e-4b72-aec2-9741a50101a2",
-          "model": "models/gemini-3.1-flash-lite-preview",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "10c2c13f-dedf-4155-8be2-1b8674a43923",
+          "id": "1a4effaf-a38d-4146-9eed-85bb13669840",
           "model": "models/gemini-flash-lite-latest",
           "modelType": "chat",
           "temperature": 0.7,
@@ -492,40 +417,16 @@
         },
         {
           "enableStream": true,
-          "id": "22c270b1-1a06-488f-9749-65664e85e384",
+          "id": "72690eef-d76d-44ae-858d-2a6e8a992c36",
+          "model": "models/gemini-3-flash-preview",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "d9ba01ab-3607-4202-a8f3-0e3ebe5a20ea",
           "model": "models/gemini-3.5-flash-lite",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "da1c4008-609b-4a5f-b896-f5b2a11aee04",
-          "model": "models/gemini-3.6-flash",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "81ebd2c3-0d87-42de-91d6-d931bf5badbd",
-          "model": "models/gemini-3.7-flash",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "6d590658-fd1b-43f2-ba4b-e4b52164ef5a",
-          "model": "models/gemini-3.8-flash",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "d92dc00e-0e77-47ac-8a41-a843d1079a80",
-          "model": "models/gemini-omni-flash-preview",
           "modelType": "chat",
           "temperature": 0.7,
           "topP": 1
@@ -569,14 +470,62 @@
     {
       "baseURL": "http://localhost:11434/v1",
       "icon": "https://s2.loli.net/2025/06/25/legkEpHACDBQ5Xz.png",
-      "key": "5dd96fb9-7261-419e-ba2b-93a32e57b5fb",
+      "key": "fdb63986-c8c8-49f7-a7b5-bfc751dbf875",
       "modelType": "chat",
       "models": [
         {
           "enableStream": true,
-          "id": "4e4ab778-256d-45fe-8bd2-1848719b87be",
-          "model": "",
+          "id": "e402bd43-8c97-4a14-84c9-91ffb307fd0b",
+          "model": "qwen3.5:0.8b",
           "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "54399042-cfc4-48d7-b0d3-e15b3614abf6",
+          "model": "nomic-embed-text:latest",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "48ca519b-d06a-4273-9e16-3379644d60f4",
+          "model": "nomic-embed-text:latest",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "f801cb5e-a0f5-463f-b267-b6aa9e4a34c7",
+          "model": "minicpm-v4.6:q6_K",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "a064cbfb-a272-45ec-ab7f-723c84662e34",
+          "model": "qwen2.5:0.5b",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "0d864a3f-81af-4979-9fe3-d7ce0bf833d7",
+          "model": "embeddinggemma:300m-qat-q8_0",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "7a070f10-3a33-4248-9ddd-18c0c758a479",
+          "model": "hans-tech/bge-reranker-v2-m3:260522",
+          "modelType": "rerank",
           "temperature": 0.7,
           "topP": 1
         }
@@ -588,13 +537,62 @@
     {
       "baseURL": "http://localhost:1234/v1",
       "icon": "https://s2.loli.net/2025/06/25/IifFV4HTQ9dpGZE.png",
-      "key": "c7bb02e5-efe9-4308-8281-9c1b37703703",
+      "key": "530ff1f8-9507-45c1-8ff1-cbfd8ca9b73b",
       "modelType": "chat",
       "models": [
         {
           "enableStream": true,
-          "id": "2a0778a4-81bd-43ae-b7e9-b05312603993",
-          "model": "",
+          "id": "cb91427d-3af0-44fc-b22a-0513c986405e",
+          "model": "vibethinker-3b",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "tokenLimitParam": "max_tokens",
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "41f6c4d5-2ff2-43fe-a124-5e4540b06064",
+          "model": "text-embedding-lfm2.5-embedding-350m",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "c059455f-9e69-4431-9fed-1b6c3fe78c85",
+          "model": "huihui-lfm2.5-1.2b-instruct-abliterated",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "dde24f45-b88c-4c1f-8108-fa9315d590a4",
+          "model": "qwen3.5-2b-uncensored-hauhaucs-aggressive",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "a9696fe9-ce68-4b44-a67f-fbff6585ccdf",
+          "model": "text-embedding-bge-reranker-v2-m3",
+          "modelType": "embedding",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "a7b1341d-f6ee-437b-a73b-bff907e7b9c6",
+          "model": "josiefied-lfm2.5-1.2b-instruct-abliterated",
+          "modelType": "chat",
+          "temperature": 0.7,
+          "topP": 1
+        },
+        {
+          "enableStream": true,
+          "id": "7f556d90-1002-4b89-8523-e5d52ecb872c",
+          "model": "gemma-3-1b-it-glm-4.7-flash-heretic-uncensored-thinking_gguf",
           "modelType": "chat",
           "temperature": 0.7,
           "topP": 1
@@ -605,23 +603,12 @@
       "title": "LM Studio"
     },
     {
-      "apiKey": "sk-rfqxfxudsjilxipkjeoilffinwekvhalphwqepbvrinatufo",
       "apiKeyUrl": "https://cloud.siliconflow.cn/i/O2ciJeZw",
       "baseURL": "https://api.siliconflow.cn/v1",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/09/09/D8Al2raSvewN5xn.jpg",
-      "key": "85a59b64-488d-471b-adfe-d8db28b30ec6",
+      "key": "6f2b066a-5b5e-4a8d-98d1-ff4d26066683",
       "modelType": "chat",
-      "models": [
-        {
-          "enableStream": true,
-          "id": "243fb6cb-40ca-43bf-8a7b-6f65c40d420c",
-          "model": "",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        }
-      ],
       "templateKey": "siliconflow",
       "templateSource": "remote",
       "title": "SiliconFlow"
@@ -631,7 +618,7 @@
       "baseURL": "https://infistar.cc/v1",
       "enabled": true,
       "icon": "https://infistar.cc/favicon.ico",
-      "key": "5bb9f72d-576c-415f-91c2-1c6bd80a88c1",
+      "key": "71e1ac29-e399-40af-a9aa-ce484b2a776f",
       "modelType": "chat",
       "promotion": "注册送 $10",
       "templateKey": "infistar",
@@ -643,7 +630,7 @@
       "baseURL": "https://router.shengsuanyun.com/api/v1",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/09/15/4qjswKyaRfZ8OxW.png",
-      "key": "32dd6406-a63f-4973-b4d1-223f33ec5246",
+      "key": "b4055d79-6a37-43cf-a225-aedafbe0f7de",
       "modelType": "chat",
       "templateKey": "shengsuanyun",
       "templateSource": "remote",
@@ -654,7 +641,7 @@
       "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/bailian-color.svg",
-      "key": "6e2b634f-8225-4b54-a8f8-fe23158dcae8",
+      "key": "cabdebb9-e69a-433c-9e3a-398977009b74",
       "modelType": "chat",
       "templateKey": "bailian",
       "templateSource": "remote",
@@ -665,7 +652,7 @@
       "baseURL": "https://api.moonshot.cn/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/kimi-color.svg",
-      "key": "53405e72-0a8f-4fe5-b5f7-7c3b107d9e02",
+      "key": "edda453f-e55a-4da2-8371-ae177007899e",
       "modelType": "chat",
       "templateKey": "moonshot",
       "templateSource": "remote",
@@ -676,7 +663,7 @@
       "baseURL": "https://open.bigmodel.cn/api/paas/v4",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/zhipu-color.svg",
-      "key": "ab66b22d-ac8d-4005-a22d-5b2a93be1ea1",
+      "key": "8b3db3b5-5e02-4ed8-a9ce-ff944a52b892",
       "modelType": "chat",
       "templateKey": "zhipu",
       "templateSource": "remote",
@@ -687,7 +674,7 @@
       "baseURL": "https://api.minimaxi.com/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/minimax-color.svg",
-      "key": "a21bdbf8-39cb-4f76-8cb4-cd347a145158",
+      "key": "d85df4e2-b417-4f49-a91d-57833e66044d",
       "modelType": "chat",
       "templateKey": "minimax",
       "templateSource": "remote",
@@ -698,7 +685,7 @@
       "baseURL": "https://ark.cn-beijing.volces.com/api/v3",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/doubao-color.svg",
-      "key": "f82c12b3-212d-4679-b90e-56c9227ddd50",
+      "key": "17799546-5278-4cfc-9852-be9385ff12ad",
       "modelType": "chat",
       "templateKey": "volcengine",
       "templateSource": "remote",
@@ -709,7 +696,7 @@
       "baseURL": "https://qianfan.baidubce.com/v2",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/baiducloud-color.svg",
-      "key": "a1f3beaf-1a4b-4677-a70b-05e2960ff3bd",
+      "key": "b5b55af4-2d30-43b1-8d70-072a2395eab6",
       "modelType": "chat",
       "templateKey": "qianfan",
       "templateSource": "remote",
@@ -720,7 +707,7 @@
       "baseURL": "https://tokenhub.tencentmaas.com/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/tencentcloud-color.svg",
-      "key": "225b8b4a-28e2-427c-a241-013b448a9b1d",
+      "key": "31282912-d60d-4201-a4d2-5739888f3248",
       "modelType": "chat",
       "templateKey": "hunyuan",
       "templateSource": "remote",
@@ -731,7 +718,7 @@
       "baseURL": "https://api.stepfun.com/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/stepfun-color.svg",
-      "key": "79515272-7101-4d58-bd76-dad56bec0312",
+      "key": "a5fe9ec1-639d-4d2a-8101-8d77edb25c1c",
       "modelType": "chat",
       "templateKey": "stepfun",
       "templateSource": "remote",
@@ -742,7 +729,7 @@
       "baseURL": "https://api.lingyiwanwu.com/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/yi-color.svg",
-      "key": "64bf3adb-5a79-49ad-a39c-962d84828482",
+      "key": "48a2789d-5539-4f01-b356-024e53396631",
       "modelType": "chat",
       "templateKey": "lingyiwanwu",
       "templateSource": "remote",
@@ -753,7 +740,7 @@
       "baseURL": "https://api.modelarts-maas.com/openai/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/huaweicloud-color.svg",
-      "key": "eb1d15aa-046b-477d-a1f3-e86252511c66",
+      "key": "fa7fa4ca-6420-4dd9-8f67-8422af454cef",
       "modelType": "chat",
       "templateKey": "huaweicloud",
       "templateSource": "remote",
@@ -764,7 +751,7 @@
       "baseURL": "https://api.baichuan-ai.com/v1",
       "enabled": true,
       "icon": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.94.0/icons/baichuan-color.svg",
-      "key": "69cf50ca-dffe-4888-a3a0-aff4838c88f5",
+      "key": "a9d8bf58-5a54-4bba-9a0b-32fe2bda198d",
       "modelType": "chat",
       "templateKey": "baichuan",
       "templateSource": "remote",
@@ -775,7 +762,7 @@
       "baseURL": "https://api.x.ai/v1",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/06/25/JBZMluaobKq43QE.png",
-      "key": "fc4b8648-ac1f-4642-bc36-268fedcce3ac",
+      "key": "d9ff0f92-a913-498f-ae3d-804fafd58c75",
       "modelType": "chat",
       "templateKey": "grok",
       "templateSource": "remote",
@@ -786,62 +773,19 @@
       "baseURL": "https://api.deepseek.com",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/06/25/n39WmsCDbVLQzjr.png",
-      "key": "714b43c3-91ad-4359-885c-f112881ba3cc",
+      "key": "d67ed325-e15e-43d7-8f01-5888240b513a",
       "modelType": "chat",
       "templateKey": "deepseek",
       "templateSource": "remote",
       "title": "DeepSeek"
     },
     {
-      "apiKey": "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",
       "apiKeyUrl": "https://openrouter.ai/api-keys",
       "baseURL": "https://openrouter.ai/api/v1",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/06/25/CTjSDHLl4XdvxM5.png",
-      "key": "37224968-231e-4bd6-90be-67314a206294",
+      "key": "11514b83-8301-48ba-be11-772b8e5da6b4",
       "modelType": "chat",
-      "models": [
-        {
-          "enableStream": true,
-          "id": "4b0833f9-9c1c-4927-b896-0db9aedf8339",
-          "model": "inclusionai/ling-3.0-flash-sante:free",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "15594c87-1816-4df6-8413-1d63ec886e2a",
-          "model": "nvidia/nemotron-3.5-lightning:free",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "f79c687e-6183-4ebc-976e-156b59784b16",
-          "model": "cohere/north-mini-code:free",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "0230308a-60cf-465c-8900-8b10c3ebcb12",
-          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        },
-        {
-          "enableStream": true,
-          "id": "f162b8f5-9734-47a8-95f4-33c27812f400",
-          "model": "minimax/minimax-m3:free",
-          "modelType": "chat",
-          "temperature": 0.7,
-          "topP": 1
-        }
-      ],
       "templateKey": "openrouter",
       "templateSource": "remote",
       "title": "OpenRouter"
@@ -851,7 +795,7 @@
       "baseURL": "https://openai.qiniu.com/v1",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/09/15/ALjNPveWrtmsfOY.png",
-      "key": "47fea955-ce7a-46da-ad83-743204fd1ad4",
+      "key": "2de491e7-8001-4286-8ac7-ed9044a232a1",
       "modelType": "chat",
       "templateKey": "qiniu",
       "templateSource": "remote",
@@ -862,7 +806,7 @@
       "baseURL": "https://api.302.ai/v1",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/06/26/4CJOQ2U9ibvoGpR.png",
-      "key": "616c94d6-a49b-47c7-aeda-dc3e992f9247",
+      "key": "a8983f57-3e7a-4891-b0f3-794af675374a",
       "modelType": "chat",
       "templateKey": "302",
       "templateSource": "remote",
@@ -873,7 +817,7 @@
       "baseURL": "https://ai.gitee.com/v1",
       "enabled": true,
       "icon": "https://s2.loli.net/2025/09/15/ih7aTnGPvELFsVc.png",
-      "key": "b004090c-4832-4012-bb4a-d5f2fe9f8491",
+      "key": "564ccece-9eb2-4a2d-9e3d-ed110db1bf91",
       "modelType": "chat",
       "templateKey": "gitee",
       "templateSource": "remote",
@@ -884,7 +828,7 @@
       "baseURL": "https://api.modelverse.cn/v1",
       "enabled": true,
       "icon": "https://files.seeusercontent.com/2026/03/26/L5pg/logo-compshare_.png",
-      "key": "4874f5ec-4eb6-4a2a-b514-e7709db221d3",
+      "key": "18c182cc-3729-4f8e-8206-4f905684f589",
       "modelType": "chat",
       "templateKey": "ucloud",
       "templateSource": "remote",
@@ -908,7 +852,7 @@
     }
   ],
   "githubImageAccessToken": "",
-  "ragResultCount": 6,
+  "ragResultCount": 3,
   "showMobileEditorToolbar": true,
   "ragAgentStrategy": "balanced",
   "enableImageRecognition": true,
@@ -917,7 +861,7 @@
   "giteaAccessToken": "",
   "fixedRecordTagId": null,
   "outlinePosition": "right",
-  "uiScale": 100,
+  "uiScale": 103,
   "chatToolbarConfigMobile": [
     {
       "enabled": true,
@@ -955,21 +899,19 @@
   "useImageRepo": false,
   "codeTheme": "github",
   "editorWorkspaceLayout:main": {
-    "activeGroupId": "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3",
+    "activeGroupId": "editor-group-31474c4b-7e72-4186-b2c2-1bd2cb7f4ba5",
     "groups": {
-      "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3": {
-        "activeTabId": "blank-4cc8797a-a7ea-43be-b4d3-2ad97f30600d",
-        "id": "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3",
+      "editor-group-31474c4b-7e72-4186-b2c2-1bd2cb7f4ba5": {
+        "activeTabId": "blank-7e115d21-e7ec-4c5e-ad60-af1a335db73c",
+        "id": "editor-group-31474c4b-7e72-4186-b2c2-1bd2cb7f4ba5",
         "tabIds": [
-          "1788695050173-8fwrb8bn1",
-          "1788695101353-s7bk2bco9",
-          "blank-4cc8797a-a7ea-43be-b4d3-2ad97f30600d"
+          "blank-7e115d21-e7ec-4c5e-ad60-af1a335db73c"
         ]
       }
     },
     "root": {
-      "groupId": "editor-group-6c6af079-5f2e-4b81-8f91-565a817979c3",
-      "id": "editor-node-028ba337-2291-4257-a422-9ad7cc2b645b",
+      "groupId": "editor-group-31474c4b-7e72-4186-b2c2-1bd2cb7f4ba5",
+      "id": "editor-node-db92852b-0f8f-4cae-9179-445fcb0c2e96",
       "type": "group"
     },
     "version": 1
@@ -986,7 +928,7 @@
   "inspirationModel": "note-gen-chat",
   "giteaAutoSync": "disabled",
   "enableCondense": true,
-  "autoSync": "30",
+  "autoSync": "3",
   "editorModel": "note-gen-chat",
   "jsdelivr": true,
   "enableOutline": true,
@@ -997,7 +939,7 @@
   "canvasSnapToGrid": true,
   "embeddingModel": "note-gen-embedding",
   "recordViewMode": "list",
-  "primaryModel": "246ebc28-b4ed-4e3e-9896-4d78c04113bd",
+  "primaryModel": "7b9c32d6-7371-4d24-8c60-e8a05e2e7b4c",
   "gitlabCustomUrl": "",
   "syncStaticAssets": false,
   "ragKnowledgeIndexPaused": false,
@@ -1055,6 +997,7 @@
   "giteeAccessToken": "",
   "globalSearchFilter": "all",
   "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:README.md": false,
+  "outlineOpenByFile:%2FUsers%2Fpaulorezende%2FLibrary%2FMobile%20Documents%2FiCloud~md~obsidian%2FDocuments%2FWork%2FWORK%2FHUB%2FProjects%2F2026%2FThe%20New%20HUB%20dev-2:03-approved%2Fnucleo-inteligencia%2Fespecificacao-conceitual-inteligencia-plataforma%2FEspecificacao_Mestra_Inteligencia_HUB%203.md": false,
   "giteaUsername": "",
   "ragAutomaticSearchEnabled": true,
   "recordSaveTargetMode": "current",
@@ -1090,7 +1033,7 @@
       "order": 5
     }
   ],
-  "rightSidebarVisible": true,
+  "rightSidebarVisible": false,
   "audioModel": "",
   "speechToTextMode": "auto",
   "sttModel": "note-gen-free-note-gen-stt",
@@ -1098,7 +1041,7 @@
   "canvasManagerSortMode": "updated",
   "language": "简体中文",
   "autoPullOnOpen": true,
-  "contentTextScale": 107,
+  "contentTextScale": 117,
   "agentSystemPromptExtension": "Avoid at all costs to use directly or indirectly any other language that english and Portuguese since the user is fluent on both",
   "recordCompletionBehavior": "highlight",
   "completionModel": "note-gen-chat",
@@ -1107,7 +1050,7 @@
   "showSourceLineNumbers": true,
   "keepLatestCount": 4,
   "githubCustomImageRepo": "",
-  "fileManagerTextSize": "sm",
+  "fileManagerTextSize": "md",
   "editorContentWidth": "wide",
   "lastOrganizeTemplateId": "0",
   "ragStructuredKnowledgeConsent": true,
