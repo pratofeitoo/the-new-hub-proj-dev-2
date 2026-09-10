@@ -1,63 +1,69 @@
-# Matriz de Comparação — HUB × Business OS
+# Matriz de Comparação — HUB × Business in a Box (live IA)
 
-> **Correção de escopo:** A = especificação aprovada do HUB. B = wiki/referência visual do Business OS no segundo repositório. As faixas são apenas um formato comum de comparação; elas não afirmam que o Business OS usa a mesma arquitetura de navegação.
-> Branch: `wip/meeting-2026-09-10` | Corrigido em: 2026-09-10
+> **Scope correction v2:** A = approved HUB concept (`03-approved`, 8 modules). B = live authenticated IA of Business in a Box, extracted read-only 2026-09-10 (84 observed routes + 13 switcher apps whose inner nav is not yet dumped).
+> Previous sketch-based comparison (WhatsApp concept images, six-lane Shop/Classifieds/Sell grammar) is **retired** — it compared two concept diagrams, neither of which was a sitemap. Row traceability: `mapping-A.csv` × `mapping-B.csv` (B-01…B-99).
+> Branch: `wip/meeting-2026-09-10`
 
 ## Regra de evidência
 
-- **Definido:** existe na especificação do HUB, mas não significa construído.
-- **Observado:** aparece nas telas/imagens do Business OS, mas não significa produção validada.
-- **Não evidenciado:** não apareceu no material visual analisado. Não significa que não exista.
-- **Sobreposição:** só pode ser marcada quando o conceito é comparável, não apenas porque recebeu o mesmo nome de faixa.
+- **Definido (A):** exists in the HUB technical spec. Means specified, not built.
+- **observed-live (B):** route/label dumped from the logged-in session. Means the page exists in the product, not that it is validated or at scale.
+- **not_dumped (B):** listed in the app switcher but inner nav not yet opened. Means unknown — never a gap, never absent.
+- **Sobreposição:** only when a HUB module and a BIB app/section do the same job for the same persona. Shared words are not enough.
 
 ## Resumo honesto
 
-| Área comparável | HUB A | Business OS B | Leitura segura |
-| --- | --- | --- | --- |
-| Home / Panorama | Definido: HUB Core + Cockpit | Observado: Panorama / Início | Sobreposição conceitual, não equivalência de implementação |
-| Oportunidades / matching | Definido: Pessoas e Talentos | Observado: Oportunidades, recomendações e Match | Sobreposição forte; B tem evidência visual mais concreta |
-| Soluções / inteligência | Definido: HUB Core + Inteligência | Observado: HUB Intelligence + Soluções | Sobreposição forte de conceito |
-| Conexões / ecossistema | Definido: grafo, fornecedores, academia, comunidades | Observado: Conexões, pessoas, fornecedores, especialistas | Sobreposição conceitual |
-| Jornada / execução | Definido: planos de ação, performance, evidências | Observado: Diagnóstico, Plano, Evidências, Selo | Sobreposição forte de fluxo |
-| Impacto / resultados | Definido: Clientes, Receita, HUB Impact, ROI | Observado: cadeias de impacto e resultados executivos | Sobreposição conceitual; não comparar números sem fonte |
-| Governança / dados | Definido: LGPD, consentimento, qualidade, auditoria | Observado: LGPD, consentimento, acesso, dados agregados | Sobreposição de requisitos; maturidade não comprovada |
-| Academy / conteúdo | Definido: Acadêmico + Comunidades | Observado: Academy, Conteúdo, Pesquisas | Sobreposição parcial |
-| E-commerce cart/checkout | Definido: ações/planos, não e-commerce literal | Não evidenciado | Não chamar de lacuna de produto |
-| Blog editorial separado | Definido: Comunidades/Eventos | Não evidenciado | Não chamar de lacuna sem evidência adicional |
+| HUB module (A) | Business in a Box (B, live) | Leitura segura |
+| --- | --- | --- |
+| MOD-01 HUB Core + Cockpit (SCR-01) | Dashboard app: Home, Insights, Classic, Activity, Team overview, 10 departments, reports | Strong overlap on executive home + insights + activity; BIB departments are operational units, not KPI scorecards |
+| MOD-02 Performance | Work app: projects, sprints, goals, tasks, workload, accountability, costs, alignment | Strong overlap on execution; BIB has no HUB-style KPI lineage, keep as functional not metric equivalence |
+| MOD-03 Pessoas e Talentos | Team app: directory, performance, compensation, assets, offboarding + departments HR | Strongest overlap in the whole comparison; hiring/talent ops both sides |
+| MOD-04 Clientes e Receita | Departments Sales/Service + Work costs; no dedicated Clients/Revenue module observed | Partial at best; do not claim coverage |
+| MOD-05 Fornecedores e Compras | Templates library (contracts, policies) + docs; no supplier marketplace observed | Partial; procurement workflow not evidenced |
+| MOD-06 Acadêmico | No Academy app observed; Templates library is the closest surface (3,000+ docs) | Conceptual only; do not equate library with academy |
+| MOD-07 Comunidades e Eventos | Chat, Connect, Calendar, Meetings (Create menu) exist as surfaces; inner nav not dumped | Unknown until dump; promising but unverified |
+| MOD-08 HUB Impact + ROI (SCR-06) | Insights, Team pulse, Priorities, Progress, All reports, Workload | Functional overlap on reporting; attribution method not compared |
+| Personas, perfis, consentimento (N24, GOV) | PF profile, My Profile, Invite Teammate, Time clock, My Timesheet | Overlap on identity/presence; LGPD posture not audited |
+| Eventos/ações (Create model) | Create menu: 16 actions (Task, Project, Goal, Dream, Document, Meeting, Event…) | Strong overlap on action vocabulary; Goals/Dreams have no HUB equivalent named |
+| Jornada (planos, evidências, selo) | Open the box / Set up your box checklists; Departments with open tasks; reports | Overlap on guided setup + task tracking; no Selo equivalent observed |
 
 ## Matriz detalhada com rastreabilidade
 
-| Capability | HUB A | Business OS B | Status da comparação | Evidência |
+| Capability | HUB A | BIB B (live) | Status | Evidência |
 | --- | --- | --- | --- | --- |
-| Dashboard inicial / Panorama | HUB Core + SCR-01 Cockpit | Panorama / Início | 🟡 Comparável conceitualmente | A: Planilha #10; B: `22.11.03.jpeg` |
-| Perfil e contexto | Personas, perfis e dados de pessoa | Meu perfil, 72% completo, frentes ativas | 🟢 Conceito presente nos dois | A: #03/#05; B: `23.49.36.jpeg` |
-| Descoberta de oportunidades | MOD-03 Pessoas e Talentos | Oportunidades + filtros + recomendações | 🟢 Sobreposição forte | A: #02; B: `23.49.36.jpeg` |
-| Matching explicável | Match definido na arquitetura | Match 92%/89% visível | 🟡 B demonstra visualmente; A define tecnicamente | A: FLD-047/#02; B: `23.49.36.jpeg` |
-| Publicação de oportunidade | Fornecedores/Compras e ações | Publicar oportunidade visível | 🟡 Conceito relacionado, fluxo não equivalente | A: MOD-05; B: `23.50.41.jpeg` |
-| Fornecedores | MOD-05 Fornecedores e Compras | Busca/conexões com fornecedores | 🟡 Comparável parcialmente | A: #02; B: `23.50.41.jpeg` |
-| Soluções | HUB Core / módulos técnicos | Soluções / HUB Solutions | 🟢 Sobreposição de conceito | A: #09/#19; B: `22.11.03.jpeg` |
-| Inteligência | Motores HUB Graph/Value/Intelligence | HUB Intelligence diagram | 🟢 Sobreposição de conceito | A: #19; B: `22.11.03.jpeg` |
-| Cadeias de impacto | Receita, margem, risco, valor | Cinco cadeias de impacto visíveis | 🟢 Sobreposição forte | A: #04/#05/#07; B: `22.11.03.jpeg` |
-| Resultados executivos | Cockpit, ROI, indicadores | Custos, produtividade, receita, lucratividade | 🟢 Sobreposição de objetivo | A: SCR-01/SCR-06; B: `22.11.03.jpeg` |
-| Jornada | Planos, performance, evidências | Diagnóstico → plano → evidências → selo | 🟢 Sobreposição forte de fluxo | A: MOD-02/SCR-03; B: `22.11.03.jpeg` |
-| Indicadores | Catálogo KPI governado | Indicadores no menu e impacto em números | 🟡 Conceito presente; profundidade diferente | A: #06; B: `22.11.03.jpeg`; `23.50.41.jpeg` |
-| Medição e atribuição | HUB Impact e ROI | Baseline → intervenção → validação | 🟢 Sobreposição de método | A: #20; B: `22.11.03.jpeg` |
-| LGPD / consentimento | GOV-01..12 e N24 | Área de privacidade e governança | 🟢 Requisito presente nos dois | A: #11; B: `22.11.03.jpeg` |
-| Academy / aprendizagem | MOD-06 Acadêmico | Academy | 🟢 Nome e intenção compatíveis | A: MOD-06; B: `22.11.03.jpeg` |
-| Comunidade | MOD-07 Comunidades/Eventos | Não há tela de comunidade explícita | ⚪ Não evidenciado em B | A: MOD-07; B: nenhum arquivo visual |
-| E-commerce cart/checkout | Não definido como e-commerce literal | Não evidenciado | ⚪ Comparação inválida | Nenhuma evidência equivalente |
+| Executive home | HUB Core + SCR-01 Cockpit | Dashboard Home, greeting, Company pulse | 🟢 Strong | A: Planilha #10; B: B-10 |
+| Insights / analytics | KPI catalog, scorecards | Insights, Classic, Activity | 🟡 Functional | A: MOD-01; B: B-11…B-13 |
+| Departments / business units | Personas per area | 10 departments with open-task cards | 🟢 Strong | B: B-15…B-25 |
+| Task / project execution | Performance, action plans | Work: tasks, projects, sprints, goals, dreams | 🟢 Strong | B: B-30…B-49 |
+| People / talent | MOD-03 | Team: directory, performance, compensation, offboarding | 🟢 Strongest | B: B-50…B-69 |
+| Time tracking | (implied in performance) | Time clock, My Timesheet, team Timesheet | 🟢 B concrete | B: B-06, B-54, B-61 |
+| Templates / documents | Glossary, dictionary (FLD) | Templates library, 16 sections, doc pages | 🟡 Adjacent | B: B-71…B-86 |
+| Reports | ROI, HUB-04 | Pulse, Priorities, Progress, All reports, Workload | 🟡 Functional | B: B-26…B-29, B-43…B-45 |
+| Goals / dreams vocabulary | (no equivalent named) | Goals, Dreams as first-class nav | 🟡 B-only concept | B: B-37, B-38 |
+| Community / events | MOD-07 | Chat, Connect, Calendar, New Meeting/Event/Channel | ⚪ Unknown | B: B-87, B-88, B-90, B-03 |
+| Clients / revenue | MOD-04 | Sales/Service departments, Costs | 🟡 Partial | B: B-23, B-24, B-47 |
+| Suppliers / procurement | MOD-05, SCR-08 | Templates contracts; no marketplace observed | 🟡 Partial | B: B-72…B-78 |
+| Academy / learning | MOD-06 | No Academy surface; library closest | ⚪ Not observed | B: B-71 (closest) |
+| Account / billing | Personas/permissions | Account app, Upgrade, Invite (inner nav not dumped) | ⚪ Unknown | B: B-98, B-06 |
+| BI layer (Drive/Docs/Sheets) | Dicionário, integrações | Drive, Docs, Sheets apps (inner nav not dumped) | ⚪ Unknown | B: B-92…B-94 |
 
-## Conclusão corrigida
+## O que mudou nesta versão
 
-1. O material permite dizer que o HUB e o Business OS compartilham uma **visão de plataforma de inteligência, oportunidades, conexões, jornada e impacto**.
-2. O Business OS possui **evidência visual de fluxos e telas**; o HUB possui **especificação técnica e governança**. Isso não permite declarar que um está “à frente” em implementação.
-3. A comparação mais útil é: **o que o HUB já especificou que o Business OS demonstra visualmente; o que o Business OS demonstra que o HUB ainda não transformou em fluxo/tela; e o que permanece não evidenciado.**
-4. Não há base para afirmar “6 meses atrás”, “Business OS já tem usuários”, “quatro faixas iguais” ou qualquer ROI validado.
-5. A decisão segura para a próxima conversa é escolher quais fluxos observados do Business OS devem virar telas/fluxos equivalentes do HUB: **Oportunidades/Match, Jornada, Inteligência/Impacto ou Governança**.
+1. B is no longer concept art. Every B claim resolves to a route in `mapping-B.csv`.
+2. The six comparison lanes are gone. Apps are the structure.
+3. Shared routes (`/work/reports/*` under Dashboard and Work) are real cross-links, not mapping errors.
+4. Route/label mismatches are recorded, not hidden: Administration → `management`, Products → `product`.
+5. Thirteen apps remain `not_dumped`. The honest next step is a second 20-minute dump pass, not a verdict.
 
 ## O que não dizer na reunião
 
-- Não dizer que os dois produtos são iguais.
-- Não dizer que o Business OS tem ou não tem uma funcionalidade que não aparece nas fontes.
-- Não apresentar os números do HUB como resultados do Business OS.
-- Não tratar sitemap visual como prova de produto construído.
+- Não dizer que os produtos são iguais — sobreposição funcional não é equivalência.
+- Não dizer que o BIB não tem algo que está apenas `not_dumped` (Calendar, Chat, Connect, BizAI, Drive, Docs, Sheets, Notes, Links, Contacts, Account, Plan, Inbox).
+- Não apresentar especificação HUB como funcionalidade construída.
+- Não tratar este sitemap como auditoria de escala, usuários, receita ou maturidade LGPD — é IA de navegação, nada além disso.
+
+## Próximo passo proposto
+
+1. Dump pass 2 (20 min, same read-only method): Calendar, Chat, Inbox, Connect, BizAI, Drive, Docs, Sheets, Notes, Links, Contacts, Account, Plan + Search-palette results + Team Settings.
+2. Then map HUB screens (SCR-01…SCR-09) 1:1 against BIB routes and mark build/buy/adapt per screen.
+3. Only then estimate effort. No timeline claim until step 2 is done.

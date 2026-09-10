@@ -1,26 +1,27 @@
-# Sitemaps — Toe-to-Toe Harmonization (3h Sprint)
+# Sitemaps — HUB × Business in a Box (live IA)
 
-> **Goal:** Both specimens sharing the **same physical form** for binary yes/no filtering before the meeting.
+> **Method v2 (2026-09-10):** Specimen B is the live authenticated IA of `app.business-in-a-box.com`, extracted read-only. The old six-lane comparison grammar is retired.
 > Branch: `wip/meeting-2026-09-10`
 
 ## Files (in order to read)
 
-1. [sitemap-grammar.md](sitemap-grammar.md) — lane grammar cloned from image-1.png (locked)
-2. [sitemap-specimen-A-inventory.md](sitemap-specimen-A-inventory.md) — dev-2 (27 nodes, lane-complete)
-3. [sitemap-specimen-B-inventory.md](sitemap-specimen-B-inventory.md) — Business OS visual/product inventory (observed screens only)
-4. [mapping-A.csv](mapping-A.csv) — 16 HUB concept mappings with source sections
-5. [mapping-B.csv](mapping-B.csv) — 29 Business OS mappings with evidence status
-6. [sitemap-A.html](sitemap-A.html) — render A (open in browser / Obsidian)
-7. [sitemap-B.html](sitemap-B.html) — render B (same visual grammar, dashed orphans)
-8. [overlap-matrix.md](overlap-matrix.md) — the yes/no filter + 5-line executive decision
-9. [BusinessOS-reference.md](BusinessOS-reference.md) — drop screenshot/link here
+1. [sitemap-B.html](sitemap-B.html) — **Specimen B, authoritative**: hierarchical sitemap from the live session (84 observed routes + 13 apps marked NOT DUMPED)
+2. [mapping-B.csv](mapping-B.csv) — 99 rows (B-01…B-99): every live route with evidence status; `not_dumped` means unknown, never a gap
+3. [overlap-matrix.md](overlap-matrix.md) — HUB modules × live BIB apps, honest version with traceability
+4. [sitemap-A.html](sitemap-A.html) — Specimen A (HUB approved concept); lane rendering kept for reference, method retired
+5. [mapping-A.csv](mapping-A.csv) — 16 HUB concept mappings with source sections
+6. [sitemap-specimen-B-inventory.md](sitemap-specimen-B-inventory.md) — SUPERSEDED sketch inventory, historical reference only
+7. [sitemap-grammar.md](sitemap-grammar.md) — RETIRED lane grammar, archaeology only
+8. [BusinessOS-reference.md](BusinessOS-reference.md) — drop screenshot/link here
 
 ## How to present (60 seconds)
 
-Open A + B side-by-side in the browser. Point to the lanes as comparison containers:
+Open `sitemap-B.html`. Point at the tree:
 
-> "A is the approved HUB concept. B is the observed Business OS interface. The useful comparison is not who is ahead; it is where the concepts overlap, where B has a visible flow that A still needs to turn into a screen, and where the supplied evidence is still unknown."
+> "This is the actual product, every route observed logged in. HUB overlaps strongest on Team/talent and Work/execution. Thirteen apps are still unopened — that's our next 20-minute pass, not a verdict."
 
-## Next commit
+## Next steps
 
-After the meeting, promote the chosen orphan lane to `01-work/` → `02-review/` as a decision.
+1. Dump pass 2: Calendar, Chat, Inbox, Connect, BizAI, Drive, Docs, Sheets, Notes, Links, Contacts, Account, Plan + Search-palette results + Team Settings (same read-only Safari method).
+2. Map HUB screens SCR-01…SCR-09 1:1 against BIB routes; mark build/buy/adapt per screen.
+3. No timeline or effort claim until step 2 is done.

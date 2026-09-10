@@ -1,4 +1,6 @@
-# Sitemap Grammar — Locked Spec (clone of image-1.png)
+# Sitemap Grammar — RETIRED 2026-09-10 (clone of image-1.png)
+
+> **Retired.** The six-lane Shop/Classifieds/Sell grammar forced both specimens into a comparison container that was never either product's navigation. It produced capability diagrams, not sitemaps. Kept for archaeology only — do not use for new comparisons. Specimen B now follows live-IA hierarchy (`sitemap-B.html`).
 
 > Both specimens must obey this or the toe-to-toe comparison fails.
 

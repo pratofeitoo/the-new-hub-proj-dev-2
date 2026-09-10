@@ -1,5 +1,7 @@
 # Specimen B Inventory — Business OS Wiki / Visual Product Evidence
 
+> **SUPERSEDED 2026-09-10.** The sketch-based inventory below is historical reference only. The authoritative Specimen B source is now the live authenticated IA at `app.business-in-a-box.com`, traced row-by-row in `mapping-B.csv` (B-01…B-99) and rendered as a hierarchical sitemap in `sitemap-B.html`. Do not cite sketch screens as IA evidence.
+
 > Source: `../The New HUB/Branch 01/run-01-source/99-assets/UI sketch images/` and the second repo's Business OS reference material.
 > Corrected extraction: 2026-09-10 on `wip/meeting-2026-09-10`.
 >
