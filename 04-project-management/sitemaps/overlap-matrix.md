@@ -13,7 +13,7 @@
 ## Resumo honesto
 
 | Área comparável | HUB A | Business OS B | Leitura segura |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Home / Panorama | Definido: HUB Core + Cockpit | Observado: Panorama / Início | Sobreposição conceitual, não equivalência de implementação |
 | Oportunidades / matching | Definido: Pessoas e Talentos | Observado: Oportunidades, recomendações e Match | Sobreposição forte; B tem evidência visual mais concreta |
 | Soluções / inteligência | Definido: HUB Core + Inteligência | Observado: HUB Intelligence + Soluções | Sobreposição forte de conceito |
@@ -28,7 +28,7 @@
 ## Matriz detalhada com rastreabilidade
 
 | Capability | HUB A | Business OS B | Status da comparação | Evidência |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Dashboard inicial / Panorama | HUB Core + SCR-01 Cockpit | Panorama / Início | 🟡 Comparável conceitualmente | A: Planilha #10; B: `22.11.03.jpeg` |
 | Perfil e contexto | Personas, perfis e dados de pessoa | Meu perfil, 72% completo, frentes ativas | 🟢 Conceito presente nos dois | A: #03/#05; B: `23.49.36.jpeg` |
 | Descoberta de oportunidades | MOD-03 Pessoas e Talentos | Oportunidades + filtros + recomendações | 🟢 Sobreposição forte | A: #02; B: `23.49.36.jpeg` |

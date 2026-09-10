@@ -10,7 +10,7 @@
 Evidence: `WhatsApp Image 2026-08-13 at 22.11.03.jpeg`, `22.15.14.jpeg`, `23.49.36.jpeg`, `23.50.41.jpeg`.
 
 | Observed item | Evidence | Comparison container |
-|---|---|---|
+| --- | --- | --- |
 | Panorama / Início | 22.11.03; 22.15.14 | Home |
 | Diagnóstico | 22.11.03 | Support / governance |
 | Jornada | 22.11.03; 23.50.41 | Home / execution |
@@ -25,7 +25,7 @@ Evidence: `WhatsApp Image 2026-08-13 at 22.11.03.jpeg`, `22.15.14.jpeg`, `23.49.
 ## 2. Observed Business OS capabilities
 
 | Capability | Visible evidence | Sitemap node |
-|---|---|---|
+| --- | --- | --- |
 | Individual opportunity discovery | Personalized recommendations; tabs Todas/Carreira/Serviços/Conteúdo/Pesquisas | Oportunidades |
 | Organization opportunity discovery | Search talents, suppliers, specialists, research, and solutions | Oportunidades / Conexões |
 | Publishing an opportunity | `Publicar oportunidade` button | Publicar oportunidade |
