@@ -1,0 +1,59 @@
+source_id,candidate_name,grammar_lane,grammar_parent,node_type,status,notes
+MOD-01,HUB Core (data graph / intelligence),Home,Home,hub page,mapped,Root engine + Home dashboard
+SCR-01,Cockpit executivo,Home,Home,page,mapped,Executive dashboard under Home
+TOP-01,My Account,Top bar,Home,page,mapped,Pink disconnected top bar
+TOP-02,Login,Top bar,Home,page,mapped,Pink top bar
+TOP-03,Create an Account,Top bar,Home,page,mapped,Gate entry
+TOP-04,Social Media,Top bar,Home,page,mapped,Pink top bar
+MOD-02,Performance (metas → financeiros),Shop,Home,lane root,mapped,Teal lane — transactional core
+SCR-02,Painel do gestor,Shop,Shop / Performance,page,mapped,Under Shop — hierarchy gate
+SCR-03,Minha jornada,Shop,Shop / Performance,page,mapped,Own-data gate
+PERF-01,Atingimento de metas,Shop,Shop / Product List,page attribute,mapped,Shown on scorecards
+PERF-02,Qualidade da meta,Shop,Shop / Product Detail,gate check,mapped,Pre-publish gate ALT-04
+ALO-01,Alocação faturável,Shop,Shop / Product List,metric,mapped,
+SRC-06,Alocação PSA/Timesheet,Shop,Shop / Cart,data source,mapped,
+FIN-01,Margem bruta projeto,Shop,Shop / Product Detail,metric,mapped,
+GATE-01,Not Logged In → Log In/Register,Shop,Shop / Cart,yellow gate,mapped,Appears twice as in image
+GATE-02,Logged In,Shop,Shop / Cart,yellow gate,mapped,
+SCR-03-CART,Cart = Action Cart,Shop,Shop / Cart,page,mapped,Selected recommendations
+SCR-03-CHK,Checkout = Confirm Action Plan,Shop,Shop / Checkout,terminal,mapped,HUB Action approved
+MOD-03,Pessoas e Talentos (marketplace talent),Classifieds,Home,lane root,mapped,Blue lane
+CLS-01,Classifieds = Vaga / Talent listing,Classifieds,Classifieds,page,mapped,
+CLS-02,Success Stories = Cases mobilidade,Classifieds,Classifieds,page,mapped,
+CLS-03,Post a Classified = Publicar vaga/oferta,Classifieds,Classifieds,page,mapped,Has auth gate branching
+GATE-03,Not Logged In → Log In/Register (classifieds),Classifieds,Post a Classified,yellow gate,mapped,Blue lane gate
+GATE-04,Logged In (classifieds),Classifieds,Post a Classified,yellow gate,mapped,
+CLS-04,Post Classified Template,Classifieds,Post a Classified,page,mapped,
+CLS-05,Confirmation Email Sent to Poster,Classifieds,Post Classified Template,email leaf,mapped,
+GATE-05,Post Rejected,Classifieds,Confirmation Email Sent,yellow gate,mapped,
+GATE-06,Post Approved,Classifieds,Confirmation Email Sent,yellow gate,mapped,
+CLS-06,Rejected Post Email Sent,Classifieds,Post Rejected,terminal,mapped,
+CLS-07,Classified Posted Approval Email Sent,Classifieds,Post Approved,terminal,mapped,
+MOD-05,Fornecedores e Compras,Sell,Home,lane root,mapped,Olive lane
+SCR-08,Marketplace fornecedor,Sell,Sell,page,mapped,Under Sell
+SELL-01,Sellers Account = Supplier Account,Sell,Sell,page,mapped,
+SELL-02,Template = Demand/Offer Template,Sell,Sellers Account,page,mapped,
+SELL-03,Confirmation Email Sent to Poster,Sell,Template,email leaf,mapped,
+GATE-07,Post Rejected (sell),Sell,Confirmation Email Sent,yellow gate,mapped,
+GATE-08,Post Approved (sell),Sell,Confirmation Email Sent,yellow gate,mapped,
+SELL-04,Rejected Post email Sent,Sell,Post Rejected,terminal,mapped,
+SELL-05,Classified Posted Approval Email Sent,Sell,Post Approved,terminal,mapped,
+GATE-09,Not Logged In / Logged into Sellers Account,Sell,Sell,yellow gate,mapped,Top of Sell lane (dual entry as in image)
+GATE-10,Log In / Register (sell),Sell,Not Logged In,page,mapped,
+MOD-01-ABOUT,About Us (HUB narrative),About Us,Home,page,mapped,Purple lane vertical
+ABT-02,Testimonials,About Us,About Us,page,mapped,
+ABT-03,Glossary = Dicionário canônico FLD,About Us,About Us,page,mapped,Purple vertical stack
+MOD-08,HUB Impact (ROI),Customer Support,Home,lane root,mapped,Salmon lane
+SCR-04,Governança KPI,Customer Support,Customer Support,page,mapped,Under Support
+SCR-05,Central alertas/decisões,Customer Support,Customer Support,page,mapped,
+SCR-06,ROI do HUB,Customer Support,Customer Support,page,mapped,Return Policy equivalent
+SCR-07,Diagnóstico de dados,Customer Support,Customer Support,page,mapped,Shipping Policy equivalent
+SUP-01,Customer Support,Customer Support,Home,page,mapped,Salmon lane root
+SUP-02,Contact Us,Customer Support,Customer Support,page,mapped,
+SUP-03,FAQs,Customer Support,Customer Support,page,mapped,GOV-08 contestação
+SUP-04,Become a Seller,Customer Support,Customer Support,page,mapped,Supplier onboarding
+SUP-05,Return Policy,Customer Support,Customer Support,page,mapped,Data retention / ROI validation
+SUP-06,Shipping Policy,Customer Support,Customer Support,page,mapped,Integration SLAs INT-01..12
+MOD-06,Acadêmico,Blog,Home,lane root,mapped,Lavender lane
+MOD-07,Comunidades e Eventos,Blog,Home,lane root,mapped,Lavender lane collapsed
+BLOG-01,Blog = Community feed,Blog,Blog,page,mapped,

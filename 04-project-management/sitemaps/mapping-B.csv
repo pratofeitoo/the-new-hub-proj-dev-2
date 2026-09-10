@@ -1,0 +1,42 @@
+source_id,candidate_name,grammar_lane,grammar_parent,node_type,status,notes
+00_Leia-me,HUB Mapa inteligência (tese),Home,Home,hub page,mapped,Thickness collapsed to Home thesis
+01_Mapa_Visual,Mapa neural (7 stages),About Us,Home,page,mapped,Neural flow FONTES→VALOR as About Us hero
+07_Visoes,"Visões Dashboard (10 views)",Top bar,Home,page,mapped,Pink top bar — Executiva HUB/cliente etc.
+07a,Executiva HUB (CEO/Conselho),Top bar,Top bar,page,mapped,
+07b,Executiva cliente (CFO/Sponsor),Top bar,Top bar,page,mapped,
+07c,Pessoas/RH vision,Top bar,Top bar,page,mapped,
+07d,Compras vision,Top bar,Top bar,page,mapped,
+07e,Marketing/RevOps vision,Top bar,Top bar,page,mapped,
+04_Master,Indicadores Master (73 catalog),Shop,Home,lane root,mapped,Teal lane root — 73 collapsed to Product List
+04a,Atingimento amostra,Shop,Shop / Product List,page attribute,mapped,
+05_Arvore,Árvore de Valor (12 alavancas),Shop,Shop / Product Detail,page,mapped,Product Detail economics
+06_ROI,Simulador ROI (R$1.22M / 28.42%),Shop,Shop / Cart,page,mapped,Value in Cart
+09_Eventos,Eventos Produto (27 events),Shop,Shop / Checkout,page,mapped,Checkout = event stream commit
+GATE-B01,Logged In? (04/09 personal),Shop,Shop / Cart,yellow gate,mapped,Same yellow gate as A
+02_Nos,Nós de Dados (25 nodes N01-N25),About Us,About Us,page,mapped,Purple vertical — data nodes
+08_Dict,Dicionário Dados (41 fields),About Us,About Us,page,mapped,Glossary equivalent
+03_Conn,Conexões (20 edges E01-E20),About Us,About Us,page,mapped,Graph under About
+14_RACI,RACI roles,About Us,About Us,page,mapped,About Us — who owns what
+12_Road,Roadmap (M0/M1/M2),About Us,About Us,page,mapped,Glossary/Roadmap
+RES-BH,Beachhead research,About Us,About Us,page,mapped,About — where to start
+RES-MKT,Market competitive research,About Us,About Us,page,mapped,Testimonials candidate
+10_Integ,Integrações (17 systems),Sell,Home,lane root,mapped,Olive lane — infrastructure for Sell
+SELL-B01,Sellers Account (via 10_Integ),Sell,Sell,page,mapped,
+SELL-B02,Template demand/offer,Sell,Sellers Account,page,mapped,
+SELL-B03,Confirmation Email,Sell,Template,email leaf,mapped,
+GATE-B02,Post Rejected,Sell,Confirmation Email,yellow gate,mapped,
+GATE-B03,Post Approved,Sell,Confirmation Email,yellow gate,mapped,
+GATE-B04,Not Logged In / Logged In (Sell entry),Sell,Sell,yellow gate,mapped,Matches image Sell gate
+11_Gov,Governança LGPD (gates M0/M1/M2),Customer Support,Home,lane root,mapped,Salmon lane root
+11a,Finalidade / base legal,Customer Support,Customer Support,page,mapped,FAQs
+11b,Consent / N24,Customer Support,Customer Support,gate check,mapped,Become a Seller gate (consent)
+07_Dash,Visões Dashboard DETAIL (10),Customer Support,Customer Support,page,mapped,Contact/FAQ detail layer
+13_Matrix,Matriz Integração,Customer Support,Customer Support,page,mapped,Shipping/Return diagnostic
+10_SLA,Integration SLAs (2s-1h),Customer Support,Customer Support,page,mapped,Shipping Policy
+R-GTM,GTM partnerships research,Customer Support,Customer Support,page,mapped,Become a Seller
+R-GOV,Governance legal research,Customer Support,Customer Support,page,mapped,Return/Contact
+R-FIN,Financial model requirements,Customer Support,Customer Support,page,mapped,ROI page
+02-CLASS,Classifieds lane (talent),Classifieds,Home,lane root,orphan,B has NO strong classifieds — gap vs A MOD-03. Mark orphan.
+02-CLASS-DETAIL,Vaga listing / Talent marketplace,Classifieds,Classifieds,page,orphan,Missing in B — 0 nodes for Classifieds
+BLOG,Blog / Comunidades,Blog,Home,lane root,orphan,B has NO community layer — gap vs A MOD-07. Mark orphan.
+BLOG-DETAIL,Community events/academy,Blog,Blog,page,orphan,Missing — B has only academic as future phase
