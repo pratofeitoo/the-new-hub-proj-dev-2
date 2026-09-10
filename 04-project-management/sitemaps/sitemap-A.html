@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitemap A — HUB dev-2 (Approved)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+body{background:#FAFAFA;padding:24px;color:#222}
+h1{font-size:18px;text-align:center;margin-bottom:4px}
+.subtitle{font-size:11px;text-align:center;color:#777;margin-bottom:16px}
+.top-bar{display:flex;justify-content:center;gap:10px;margin-bottom:8px}
+.top-bar .node{background:#F48FB1;border:1px solid #E5738E;color:#4A1A2B}
+.legend{display:flex;justify-content:center;gap:12px;font-size:9px;color:#777;margin-bottom:18px;flex-wrap:wrap}
+.legend span{display:flex;align-items:center;gap:4px}
+.legend i{width:12px;height:10px;border-radius:2px;display:inline-block;border:1px solid #0001}
+.lanes{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:start}
+.lane{display:flex;flex-direction:column;gap:6px;align-items:center}
+.lane-label{font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#555;margin-bottom:2px}
+.node{width:100%;text-align:center;padding:8px 6px;font-size:10px;line-height:1.25;border-radius:4px;border:1px solid #0001;position:relative}
+.node small{font-size:8px;color:#0009;display:block;margin-top:2px}
+.shop .node{background:#B2DFDB;border-color:#80CBC4}
+.classifieds .node{background:#B3E5FC;border-color:#81D4FA}
+.sell .node{background:#D7CCC8;border-color:#BCAAA4}
+.about .node{background:#E1BEE7;border-color:#CE93D8}
+.support .node{background:#FFCCBC;border-color:#FFAB91}
+.blog .node{background:#D1C4E9;border-color:#B39DDB}
+.yellow{background:#FFECB3!important;border-color:#FFE082!important;color:#5D4037}
+.terminal{background:#A1887F!important;color:#fff;border-color:#8D6E63!important}
+.teal-term{background:#4DB6AC!important;color:#fff}
+.blue-term{background:#64B5F6!important;color:#fff}
+.arrow{font-size:10px;color:#999;line-height:1}
+.gate-row{display:flex;gap:6px;width:100%}
+.gate-row .node{flex:1}
+.home-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:12px}
+#home{background:#F48FB1;border-color:#E5738E;width:140px;font-weight:700}
+.connector{width:1px;height:12px;background:#BBB;margin:0 auto}
+.hline{height:1px;background:#BBB;margin:0 60px 10px 60px}
+.note{margin-top:18px;font-size:9px;color:#888;text-align:center;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.4}
+@media(max-width:860px){.lanes{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<h1>SPECIMEN A — HUB dev-2 <span style="font-weight:400;color:#888">/ 03-approved (8 mods / 9 screens)</span></h1>
+<p class="subtitle">Same grammar as image-1.png — toe-to-toe comparable • MVP: teal/olive/salmon full | Fase 2: lavender collapsed</p>
+
+<div class="top-bar">
+  <div class="node">My Account<br><small>PER-01..13</small></div>
+  <div class="node">Login</div>
+  <div class="node">Create an Account<br><small>N24 consent</small></div>
+  <div class="node">Social Media</div>
+</div>
+
+<div class="home-wrap">
+  <div class="node" id="home">Home<br><small>HUB Core • Cockpit • Intelligence</small></div>
+  <div class="connector"></div>
+</div>
+<div class="hline"></div>
+
+<div class="lanes">
+  <!-- SHOP teal -->
+  <div class="lane shop">
+    <div class="lane-label">Shop — Performance + Clientes</div>
+    <div class="node">Shop<br><small>MOD-02 + MOD-04</small></div>
+    <div class="arrow">↓</div>
+    <div class="node">Product List<br><small>Scorecards • KPI-PERF-01/ALO-01</small></div>
+    <div class="arrow">↓</div>
+    <div class="node">Product Detail Page<br><small>KPI Detail • FIN-01 Margem • lineage</small></div>
+    <div class="arrow">↓</div>
+    <div class="node">Cart<br><small>Action Cart — selected recs</small></div>
+    <div class="gate-row">
+      <div class="node yellow">Not Logged In</div>
+      <div class="node yellow">Logged In</div>
+    </div>
+    <div class="node" style="background:#B2DFDB">Log In / Register<br><small>PER-01/02 gate</small></div>
+    <div class="arrow">↓</div>
+    <div class="node teal-term">Checkout<br><small>Confirm Action Plan</small></div>
+  </div>
+
+  <!-- CLASSIFIEDS blue -->
+  <div class="lane classifieds">
+    <div class="lane-label">Classifieds — Talentos</div>
+    <div class="node">Classifieds<br><small>MOD-03</small></div>
+    <div class="node">Classifieds Success Stories<br><small>Cases mobilidade</small></div>
+    <div class="node">Post a Classified<br><small>Publicar vaga/oferta</small></div>
+    <div class="gate-row">
+      <div class="node yellow">Not Logged In</div>
+      <div class="node yellow">Logged In</div>
+    </div>
+    <div class="node yellow" style="width:100%">Log In / Register</div>
+    <div class="node">Post Classified Template</div>
+    <div class="node">Confirmation Email Sent to Poster</div>
+    <div class="gate-row">
+      <div class="node yellow">Post Rejected</div>
+      <div class="node yellow">Post Approved</div>
+    </div>
+    <div class="gate-row">
+      <div class="node blue-term">Rejected Email Sent</div>
+      <div class="node blue-term">Approval Email Sent</div>
+    </div>
+  </div>
+
+  <!-- SELL olive -->
+  <div class="lane sell">
+    <div class="lane-label">Sell — Fornecedores</div>
+    <div class="node">Sell<br><small>MOD-05</small></div>
+    <div class="gate-row">
+      <div class="node yellow">Not Logged In</div>
+      <div class="node yellow">Logged in as Seller</div>
+    </div>
+    <div class="node">Log In / Register</div>
+    <div class="node">Sellers Account<br><small>Supplier Account • SCR-08</small></div>
+    <div class="node">Template<br><small>Demand / Offer</small></div>
+    <div class="node">Confirmation Email Sent to Poster</div>
+    <div class="gate-row">
+      <div class="node yellow">Post Rejected</div>
+      <div class="node yellow">Post Approved</div>
+    </div>
+    <div class="gate-row">
+      <div class="node terminal">Rejected Email</div>
+      <div class="node terminal">Approval Email</div>
+    </div>
+  </div>
+
+  <!-- ABOUT purple -->
+  <div class="lane about">
+    <div class="lane-label">About — HUB Core Narrative</div>
+    <div class="node">About Us<br><small>MOD-01 • 20 caps thesis</small></div>
+    <div class="node">Testimonials<br><small>Cases Júlia/Renata/Aline</small></div>
+    <div class="node">Glossary<br><small>FLD-001..047 Dicionário</small></div>
+  </div>
+
+  <!-- SUPPORT salmon -->
+  <div class="lane support">
+    <div class="lane-label">Customer Support — Governança & ROI</div>
+    <div class="node">Customer Support<br><small>MOD-08 + GOV</small></div>
+    <div class="node">Contact Us</div>
+    <div class="node">FAQs<br><small>GOV-08 contestação • SCR-04</small></div>
+    <div class="node">Become a Seller<br><small>Onboard fornecedor</small></div>
+    <div class="node">Return Policy<br><small>Retenção / ROI validation</small></div>
+    <div class="node">Shipping Policy<br><small>INT-01..12 SLAs</small></div>
+    <div class="node">Central Alertas<br><small>SCR-05 • HUB-02/03</small></div>
+    <div class="node">ROI do HUB<br><small>SCR-06 • HUB-04</small></div>
+  </div>
+
+  <!-- BLOG lavender -->
+  <div class="lane blog">
+    <div class="lane-label">Blog — Acadêmico + Comunidades</div>
+    <div class="node">Blog<br><small>MOD-06 + MOD-07</small></div>
+    <div class="node">Acadêmico<br><small>Trilhas • Bolsas</small></div>
+    <div class="node">Comunidades<br><small>Eventos • Conexões</small></div>
+  </div>
+</div>
+
+<p class="note">Lane-complete: all 6 lanes populated • Depth 3-4 matches image-1.png • Yellow = auth/approval gate • Dark = terminal email/checkout • Source: <code>03-approved/nucleo-inteligencia/planilha-tecnica 02_MODULOS + 10_TELAS</code></p>
+</body>
+</html>

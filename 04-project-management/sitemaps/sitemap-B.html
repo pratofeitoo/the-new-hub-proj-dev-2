@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitemap B — Deep Wiki (Branch 01)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+body{background:#FAFAFA;padding:24px;color:#222}
+h1{font-size:18px;text-align:center;margin-bottom:4px}
+.subtitle{font-size:11px;text-align:center;color:#777;margin-bottom:16px}
+.top-bar{display:flex;justify-content:center;gap:10px;margin-bottom:8px}
+.top-bar .node{background:#F48FB1;border:1px solid #E5738E;color:#4A1A2B}
+.legend{display:flex;justify-content:center;gap:12px;font-size:9px;color:#777;margin-bottom:18px;flex-wrap:wrap}
+.lanes{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:start}
+.lane{display:flex;flex-direction:column;gap:6px;align-items:center}
+.lane-label{font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#555;margin-bottom:2px}
+.node{width:100%;text-align:center;padding:8px 6px;font-size:10px;line-height:1.25;border-radius:4px;border:1px solid #0001}
+.node small{font-size:8px;color:#0009;display:block;margin-top:2px}
+.shop .node{background:#B2DFDB;border-color:#80CBC4}
+.classifieds .node{background:#B3E5FC;border-color:#81D4FA}
+.sell .node{background:#D7CCC8;border-color:#BCAAA4}
+.about .node{background:#E1BEE7;border-color:#CE93D8}
+.support .node{background:#FFCCBC;border-color:#FFAB91}
+.blog .node{background:#D1C4E9;border-color:#B39DDB}
+.yellow{background:#FFECB3!important;border-color:#FFE082!important;color:#5D4037}
+.terminal{background:#A1887F!important;color:#fff;border-color:#8D6E63!important}
+.teal-term{background:#4DB6AC!important;color:#fff}
+.blue-term{background:#64B5F6!important;color:#fff}
+.arrow{font-size:10px;color:#999;line-height:1}
+.gate-row{display:flex;gap:6px;width:100%}
+.gate-row .node{flex:1}
+.home-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:12px}
+#home{background:#F48FB1;border-color:#E5738E;width:160px;font-weight:700}
+.connector{width:1px;height:12px;background:#BBB;margin:0 auto}
+.hline{height:1px;background:#BBB;margin:0 60px 10px 60px}
+.orphan{border:1.5px dashed #B0BEC5!important;background:#ECEFF1!important;color:#78909C!important}
+.note{margin-top:18px;font-size:9px;color:#888;text-align:center;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.4}
+@media(max-width:860px){.lanes{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<h1>SPECIMEN B — Deep Wiki <span style="font-weight:400;color:#888">/ Branch 01 — 14 tabs + 73 indicators</span></h1>
+<p class="subtitle">Same grammar as A — data-deep, lane-thin • Dashed = orphan/gap vs A • Depth capped at 3-4</p>
+
+<div class="top-bar">
+  <div class="node">My Account<br><small>07 Visões × 5 top</small></div>
+  <div class="node">Login</div>
+  <div class="node">Create an Account<br><small>CMP / N24</small></div>
+  <div class="node">Social Media</div>
+</div>
+
+<div class="home-wrap">
+  <div class="node" id="home">Home<br><small>00_Leia-me thesis • pessoas → impacto financeiro</small></div>
+  <div class="connector"></div>
+</div>
+<div class="hline"></div>
+
+<div class="lanes">
+  <!-- SHOP teal — DATA DEEP -->
+  <div class="lane shop">
+    <div class="lane-label">Shop — Indicators + Value (73 → collapsed)</div>
+    <div class="node">Shop<br><small>04_Indicadores_Master (73)</small></div>
+    <div class="arrow">↓</div>
+    <div class="node">Mapa Visual<br><small>01 — 7 stages FONTES→VALOR</small></div>
+    <div class="arrow">↓</div>
+    <div class="node">Árvore de Valor<br><small>05 — 12 levers × causal chain</small></div>
+    <div class="arrow">↓</div>
+    <div class="node">Simulador ROI<br><small>06 — R$1.22M / 28.4% / 9.3m</small></div>
+    <div class="arrow">↓</div>
+    <div class="node">Eventos Produto<br><small>09 — 27 events stream</small></div>
+    <div class="gate-row">
+      <div class="node yellow">Not Logged In</div>
+      <div class="node yellow">Logged In</div>
+    </div>
+    <div class="node teal-term">Checkout<br><small>Event commit</small></div>
+  </div>
+
+  <!-- CLASSIFIEDS blue — ORPHAN -->
+  <div class="lane classifieds">
+    <div class="lane-label">Classifieds — ⚠️ GAP</div>
+    <div class="node orphan">Classifieds<br><small>NO listing — 0 nodes in B</small></div>
+    <div class="node orphan">Classifieds Success Stories<br><small>—</small></div>
+    <div class="node orphan">Post a Classified<br><small>NO — vs A MOD-03</small></div>
+    <div class="node orphan" style="font-style:italic">→ vs Specimen A: talent marketplace exists (MOD-03) but B has 0 coverage</div>
+  </div>
+
+  <!-- SELL olive -->
+  <div class="lane sell">
+    <div class="lane-label">Sell — Integrações (17)</div>
+    <div class="node">Sell<br><small>10_Integrações</small></div>
+    <div class="gate-row">
+      <div class="node yellow">Not Logged In</div>
+      <div class="node yellow">Logged as Seller</div>
+    </div>
+    <div class="node">Log In / Register</div>
+    <div class="node">Sellers Account</div>
+    <div class="node">Template<br><small>Demand / Offer</small></div>
+    <div class="node">Confirmation Email Sent</div>
+    <div class="gate-row">
+      <div class="node yellow">Post Rejected</div>
+      <div class="node yellow">Post Approved</div>
+    </div>
+    <div class="gate-row">
+      <div class="node terminal">Rejected Email</div>
+      <div class="node terminal">Approval Email</div>
+    </div>
+    <div class="node" style="background:#FFF3E0;font-size:8px">SLA 2s–1h realtime (ATS/LMS) vs daily batch (HRIS/ERP)</div>
+  </div>
+
+  <!-- ABOUT purple — DATA DENSE -->
+  <div class="lane about">
+    <div class="lane-label">About — Data Dictionary (66 entities)</div>
+    <div class="node">About Us<br><small>00 thesis + Beachhead + Market research</small></div>
+    <div class="node">Nós de Dados<br><small>02 — 25 nodes (N01-N25) • 13 camadas</small></div>
+    <div class="node">Conexões<br><small>03 — 20 edges E01-E20 • 32 types</small></div>
+    <div class="node">Dicionário<br><small>08 — 41 fields • 16 tabelas</small></div>
+    <div class="node">Roadmap<br><small>12 — M0/M1/M2 gates</small></div>
+    <div class="node">RACI<br><small>14 — roles</small></div>
+  </div>
+
+  <!-- SUPPORT salmon -->
+  <div class="lane support">
+    <div class="lane-label">Customer Support — Governança & Dashboards</div>
+    <div class="node">Customer Support<br><small>11_Governança LGPD</small></div>
+    <div class="node">Contact Us<br><small>LGPD rights</small></div>
+    <div class="node">FAQs<br><small>Finalidade / base legal</small></div>
+    <div class="node">Become a Seller<br><small>11 + GTM research</small></div>
+    <div class="node">Return Policy<br><small>11 gates M0/M1/M2</small></div>
+    <div class="node">Shipping Policy<br><small>10 — 17 systems SLAs</small></div>
+    <div class="node">Visões Dashboard<br><small>07 — 10 views</small></div>
+    <div class="node">Matriz Integração<br><small>13</small></div>
+  </div>
+
+  <!-- BLOG lavender — ORPHAN -->
+  <div class="lane blog">
+    <div class="lane-label">Blog — ⚠️ GAP</div>
+    <div class="node orphan">Blog<br><small>NO community — 0 nodes in B</small></div>
+    <div class="node orphan">Acadêmico<br><small>Future phase only</small></div>
+    <div class="node orphan">Comunidades<br><small>NO — vs A MOD-07</small></div>
+    <div class="node orphan" style="font-style:italic">→ vs A: A has MOD-06/07 built; B has only research</div>
+  </div>
+</div>
+
+<p class="note">Lane-thin: Classifieds + Blog dashed = gaps vs A (talent marketplace + communities) • Lane-deep: About/Support overbuilt with 25+73+41 artifacts — collapse proved necessary • Source: <code>Branch 01 / 01-tabs-csv analysis + 02-research</code></p>
+</body>
+</html>
