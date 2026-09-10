@@ -1,6 +1,6 @@
 # Matriz de Comparação — HUB × Business in a Box (live IA)
 
-> **Scope correction v2:** A = approved HUB concept (`03-approved`, 8 modules). B = live authenticated IA of Business in a Box, extracted read-only 2026-09-10 (84 observed routes + 13 switcher apps whose inner nav is not yet dumped).
+> **Scope correction v2:** A = approved HUB concept (`03-approved`, 8 modules). B = live authenticated IA of Business in a Box, extracted read-only 2026-09-10 (83 observed routes + 13 switcher apps whose inner nav is not yet dumped).
 > Previous sketch-based comparison (WhatsApp concept images, six-lane Shop/Classifieds/Sell grammar) is **retired** — it compared two concept diagrams, neither of which was a sitemap. Row traceability: `mapping-A.csv` × `mapping-B.csv` (B-01…B-99).
 > Branch: `wip/meeting-2026-09-10`
 

@@ -5,7 +5,7 @@
 
 ## Files (in order to read)
 
-1. [sitemap-B.html](sitemap-B.html) — **Specimen B, authoritative**: hierarchical sitemap from the live session (84 observed routes + 13 apps marked NOT DUMPED)
+1. [sitemap-B.html](sitemap-B.html) — **Specimen B, authoritative**: hierarchical sitemap from the live session (83 observed routes + 13 apps marked NOT DUMPED)
 2. [mapping-B.csv](mapping-B.csv) — 99 rows (B-01…B-99): every live route with evidence status; `not_dumped` means unknown, never a gap
 3. [overlap-matrix.md](overlap-matrix.md) — HUB modules × live BIB apps, honest version with traceability
 4. [sitemap-A.html](sitemap-A.html) — Specimen A (HUB approved concept); lane rendering kept for reference, method retired
