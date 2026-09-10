@@ -1,73 +1,73 @@
-# Overlap Matrix — Toe-to-Toe Yes/No Filter
+# Matriz de Sobreposição — Filtro Sim/Não Lado a Lado
 
-> Both sitemaps now share identical physical form (Home + 6 lanes + yellow gates). This table is the binary filter: **green = both have it, yellow = only one, grey = neither / Business OS gap**.
-> Branch: `wip/meeting-2026-09-10` | Generated: 2026-09-10
+> Ambos os sitemaps agora compartilham a mesma forma física (Home + 6 faixas + portões amarelos). Esta tabela é o filtro binário: **verde = ambos têm, amarelo = só um tem, cinza = nenhum / lacuna do Business OS**.
+> Branch: `wip/meeting-2026-09-10` | Gerado em: 2026-09-10
 
-## Summary (at a glance)
+## Resumo (visão geral)
 
-| Lane | In A? | In B? | Verdict |
+| Faixa | No A? | No B? | Veredito |
 |---|---|---|---|
-| **Home + Top bar (4)** | ✅ 5 nodes | ✅ 5 nodes | 🟢 SAME — both have Home + My Account/Login/Create/Social |
-| **Shop (Performance/Value)** | ✅ 11 nodes | ✅ 8 nodes | 🟢 SAME lane, deeper in A (has Cart/Checkout gates) vs B has more data (73 indicators) but fewer gates |
-| **Classifieds (Talent discovery)** | ✅ 9 nodes | ❌ 0 (orphan) | 🟡 GAP in B — A has talent marketplace (MOD-03), B has nothing |
-| **Sell (Supply / Fornecedores)** | ✅ 10 nodes | ✅ 9 nodes | 🟢 SAME — both have Sell flow + approval gates; B adds 17 integrations detail |
-| **About (Concept / Dictionary)** | ✅ 3 nodes | ✅ 8 nodes | 🟡 B DEEPER — A 20 caps thesis collapsed; B has 25 nodes + 20 edges + 41 fields + RACI |
-| **Support (Governance / ROI)** | ✅ 9 nodes | ✅ 9 nodes | 🟢 SAME weight — both have Contact/FAQ/Become Seller/Return/Shipping/Alertas |
-| **Blog (Community / Academy)** | ✅ 3 nodes | ❌ 0 (orphan) | 🟡 GAP in B — A has MOD-06/07 built; B only future research |
+| **Home + Barra superior (4)** | ✅ 5 nós | ✅ 5 nós | 🟢 IGUAL — ambos têm Home + Minha Conta/Login/Criar Conta/Rede Social |
+| **Shop (Performance/Valor)** | ✅ 11 nós | ✅ 8 nós | 🟢 MESMA faixa, mais profunda no A (tem portões Carrinho/Checkout) vs B tem mais dados (73 indicadores) mas menos portões |
+| **Classifieds (Descoberta de Talentos)** | ✅ 9 nós | ❌ 0 (órfão) | 🟡 LACUNA no B — A tem marketplace de talentos (MOD-03), B não tem nada |
+| **Sell (Oferta / Fornecedores)** | ✅ 10 nós | ✅ 9 nós | 🟢 IGUAL — ambos têm fluxo de Sell + portões de aprovação; B adiciona detalhe de 17 integrações |
+| **About (Conceito / Dicionário)** | ✅ 3 nós | ✅ 8 nós | 🟡 B MAIS PROFUNDO — A com 20 caps colapsado; B tem 25 nós + 20 arestas + 41 campos + RACI |
+| **Support (Governança / ROI)** | ✅ 9 nós | ✅ 9 nós | 🟢 MESMO peso — ambos têm Contato/FAQ/Tornar-se Vendedor/Política de Devolução/Política de Envio/Alertas |
+| **Blog (Comunidade / Academia)** | ✅ 3 nós | ❌ 0 (órfão) | 🟡 LACUNA no B — A tem MOD-06/07 construído; B só pesquisa futura |
 
-**Counts:** A 58 mapped / 0 orphans | B 37 mapped / 4 orphans | **Overlap on 4 lanes, 2 gaps, 1 deep asymmetry**
+**Contagem:** A 58 mapeados / 0 órfãos | B 37 mapeados / 4 órfãos | **Sobreposição em 4 faixas, 2 lacunas, 1 assimetria profunda**
 
-## Detailed Node Matrix
+## Matriz Detalhada de Nós
 
-| Page / Gate | Lane | In A (dev-2) | In B (Branch 01) | Filter | Meeting Note |
+| Página / Portão | Faixa | No A (dev-2) | No B (Branch 01) | Filtro | Nota para a Reunião |
 |---|---|---|---|---|---|
-| Home (HUB Core / 00_Leia-me thesis) | Home | ✅ MOD-01 | ✅ 00_Leia-me | 🟢 | Both claim unified intelligence — phrasing differs |
-| My Account | Top bar | ✅ PER-01..13 | ✅ 07 visões ×10 | 🟢 | Same pattern |
-| Login | Top bar | ✅ | ✅ | 🟢 | — |
-| Create an Account | Top bar | ✅ N24 consent | ✅ CMP/N24 | 🟢 | Both have LGPD gate — strong |
-| Social Media | Top bar | ✅ | ✅ | 🟢 | Placeholder both |
-| Shop | Shop | ✅ MOD-02+04 | ✅ 04_Master (73) | 🟢 | A = transactional cockpit, B = indicator catalog — same seat, different lens |
-| Product List | Shop | ✅ Scorecards | ✅ Indicators list | 🟢 | Collapsed in B to 1 node instead of 73 rows |
-| Product Detail | Shop | ✅ KPI detail + FIN-01 | ✅ 05 Árvore 12 levers | 🟢 | B adds causal chain — richer |
-| Cart | Shop | ✅ Action Cart | ✅ — | 🟡 | A has action cart, B has no cart concept — **B gap** |
-| Log In/Register (Shop) | Shop | ✅ yellow gate ×2 | ✅ yellow gate | 🟢 | Same auth branching |
-| Checkout | Shop | ✅ Confirm Plan | ✅ Event commit (09) | 🟢 | Different label, same commit semantics |
-| Classifieds | Classifieds | ✅ MOD-03 | ❌ — | 🟡 | **B missing entire lane** — talent marketplace |
-| Classifieds Success Stories | Classifieds | ✅ | ❌ — | 🟡 | — |
-| Post a Classified | Classifieds | ✅ | ❌ — | 🟡 | — |
-| Post Classified Template | Classifieds | ✅ | ❌ — | 🟡 | — |
-| Confirmation Email → Reject/Approve → Email | Classifieds | ✅ full flow | ❌ — | 🟡 | Full approval workflow missing in B |
-| Sell | Sell | ✅ MOD-05 | ✅ 10_Integrações | 🟢 | Same lane |
-| Sellers Account | Sell | ✅ SCR-08 | ✅ | 🟢 | — |
+| Home (HUB Core / tese 00_Leia-me) | Home | ✅ MOD-01 | ✅ 00_Leia-me | 🟢 | Ambos reivindicam inteligência unificada — fraseado diferente |
+| Minha Conta | Barra superior | ✅ PER-01..13 | ✅ 07 visões ×10 | 🟢 | Mesmo padrão |
+| Login | Barra superior | ✅ | ✅ | 🟢 | — |
+| Criar uma Conta | Barra superior | ✅ consentimento N24 | ✅ CMP/N24 | 🟢 | Ambos têm portão de LGPD — forte |
+| Rede Social | Barra superior | ✅ | ✅ | 🟢 | Placeholder nos dois |
+| Shop | Shop | ✅ MOD-02+04 | ✅ 04_Master (73) | 🟢 | A = cockpit transacional, B = catálogo de indicadores — mesmo assento, lente diferente |
+| Lista de Produtos | Shop | ✅ Scorecards | ✅ Lista de indicadores | 🟢 | Colapsado no B para 1 nó em vez de 73 linhas |
+| Detalhe do Produto | Shop | ✅ Detalhe KPI + FIN-01 | ✅ 05 Árvore 12 alavancas | 🟢 | B adiciona cadeia causal — mais rico |
+| Carrinho | Shop | ✅ Carrinho de Ações | ✅ — | 🟡 | A tem carrinho de ações, B não tem conceito de carrinho — **lacuna B** |
+| Log In / Cadastro (Shop) | Shop | ✅ portão amarelo ×2 | ✅ portão amarelo | 🟢 | Mesma ramificação de autenticação |
+| Checkout | Shop | ✅ Confirmar Plano | ✅ Commit de evento (09) | 🟢 | Rótulo diferente, mesma semântica de commit |
+| Classifieds | Classifieds | ✅ MOD-03 | ❌ — | 🟡 | **B sem a faixa inteira** — marketplace de talentos |
+| Classifieds — Histórias de Sucesso | Classifieds | ✅ | ❌ — | 🟡 | — |
+| Postar um Classified | Classifieds | ✅ | ❌ — | 🟡 | — |
+| Template de Post | Classifieds | ✅ | ❌ — | 🟡 | — |
+| E-mail de Confirmação → Rejeitado/Aprovado → E-mail | Classifieds | ✅ fluxo completo | ❌ — | 🟡 | Fluxo completo de aprovação ausente no B |
+| Sell | Sell | ✅ MOD-05 | ✅ 10_Integrações | 🟢 | Mesma faixa |
+| Conta do Vendedor | Sell | ✅ SCR-08 | ✅ | 🟢 | — |
 | Template | Sell | ✅ | ✅ | 🟢 | — |
-| Confirmation Email | Sell | ✅ | ✅ | 🟢 | — |
-| Post Rejected / Approved (Sell) | Sell | ✅ yellow | ✅ yellow | 🟢 | Same gates |
-| Rejected/Approval Email Sent (Sell) | Sell | ✅ terminal | ✅ terminal | 🟢 | Same leaves |
-| Not Logged In / Logged as Seller | Sell | ✅ dual gate | ✅ dual gate | 🟢 | Same entry split |
-| About Us | About | ✅ 20 caps thesis | ✅ 01 Mapa + Beachhead | 🟢 | A narrative, B visual+research — same seat |
-| Testimonials | About | ✅ Cases | ✅ Market research | 🟢 | Different evidence, same seat |
-| Glossary | About | ✅ FLD-001..047 | ✅ 41 fields + 25 nodes +20 edges | 🟡 | B **much deeper** — collapse was correct call |
-| Customer Support | Support | ✅ MOD-08 | ✅ 11_Governança | 🟢 | Same lane root |
-| Contact Us | Support | ✅ | ✅ | 🟢 | — |
+| E-mail de Confirmação | Sell | ✅ | ✅ | 🟢 | — |
+| Post Rejeitado / Aprovado (Sell) | Sell | ✅ amarelo | ✅ amarelo | 🟢 | Mesmos portões |
+| E-mail de Rejeição/Aprovação Enviado (Sell) | Sell | ✅ terminal | ✅ terminal | 🟢 | Mesmas folhas |
+| Não Logado / Logado como Vendedor | Sell | ✅ portão duplo | ✅ portão duplo | 🟢 | Mesma divisão de entrada |
+| Sobre Nós | About | ✅ tese 20 caps | ✅ 01 Mapa + Beachhead | 🟢 | A narrativa, B visual+pesquisa — mesmo assento |
+| Depoimentos | About | ✅ Cases | ✅ Pesquisa de mercado | 🟢 | Evidência diferente, mesmo assento |
+| Glossário | About | ✅ FLD-001..047 | ✅ 41 campos + 25 nós +20 arestas | 🟡 | B **muito mais profundo** — colapso foi a decisão correta |
+| Suporte ao Cliente | Support | ✅ MOD-08 | ✅ 11_Governança | 🟢 | Mesma raiz de faixa |
+| Fale Conosco | Support | ✅ | ✅ | 🟢 | — |
 | FAQs | Support | ✅ GOV-08 | ✅ 11_Gov | 🟢 | — |
-| Become a Seller | Support | ✅ | ✅ GTM research | 🟢 | B adds GTM lens |
-| Return Policy | Support | ✅ ROI validation | ✅ M0/M1/M2 gates | 🟢 | Same semantics |
-| Shipping Policy | Support | ✅ INT SLAs | ✅ 17 integrations + SLAs | 🟢 | B more detailed (2s–1h vs D+1) |
-| Central Alertas / Visões Dashboard | Support | ✅ SCR-05 | ✅ 07 (10 views) | 🟢 | A centralized, B distributed — same seat |
-| ROI do HUB | Support | ✅ SCR-06 / HUB-04 | ✅ 06 Simulador | 🟢 | A dashboard, B simulador — same seat |
-| Blog | Blog | ✅ MOD-06+07 | ❌ — | 🟡 | **B missing entire lane** — community/academy |
+| Tornar-se um Vendedor | Support | ✅ | ✅ pesquisa GTM | 🟢 | B adiciona lente de GTM |
+| Política de Devolução | Support | ✅ validação ROI | ✅ portões M0/M1/M2 | 🟢 | Mesma semântica |
+| Política de Envio | Support | ✅ SLAs INT | ✅ 17 integrações + SLAs | 🟢 | B mais detalhado (2s–1h vs D+1) |
+| Central de Alertas / Visões de Dashboard | Support | ✅ SCR-05 | ✅ 07 (10 visões) | 🟢 | A centralizado, B distribuído — mesmo assento |
+| ROI do HUB | Support | ✅ SCR-06 / HUB-04 | ✅ 06 Simulador | 🟢 | A dashboard, B simulador — mesmo assento |
+| Blog | Blog | ✅ MOD-06+07 | ❌ — | 🟡 | **B sem a faixa inteira** — comunidade/academia |
 
-## The 5-Line Executive Filter (for the meeting)
+## O Filtro Executivo em 5 Linhas (para a reunião)
 
-1. **Business OS proved:** A transactional marketplace with Shop+Sell+Support navigation IS buildable and already has users — your HUB thesis is not theoretical.
-2. **Where HUB is ahead:** Lane-complete — you have Classifieds (talent) + Blog (community/academy) designed; Business OS-style apps often lack governance (your N24/LGPD + ROI Impact has no equivalent there).
-3. **Where HUB is behind:** Data depth collapsed for the sitemap but **not built** — B has 73 indicators / 41 fields / 27 events validated on paper; A has 8 modules / 9 screens on paper. Neither has shipped gates.
-4. **Riskiest gap (2 orphans):** Talent marketplace (Classifieds) + Community events (Blog) — B has 0 nodes there, A has design but no evidence. If Business OS monetizes those lanes, you are 6 months behind on network effects.
-5. **Decision to make today:** Pick **one orphan lane** to validate first (Classifieds talent matching OR Blog community). Don't build both. The other 4 lanes are already toe-to-toe — no missing piece there.
+1. **Business OS provou:** Um marketplace transacional com navegação Shop+Sell+Support JÁ é construível e já tem usuários — sua tese do HUB não é teórica.
+2. **Onde o HUB está à frente:** Faixas completas — você tem Classifieds (talentos) + Blog (comunidade/academia) desenhados; apps estilo Business OS geralmente não têm governança (seu N24/LGPD + ROI Impact não tem equivalente lá).
+3. **Onde o HUB está atrás:** Profundidade de dados colapsada no sitemap mas **não construída** — B tem 73 indicadores / 41 campos / 27 eventos validados no papel; A tem 8 módulos / 9 telas no papel. Nenhum dos dois tem os portões em produção.
+4. **Lacuna mais arriscada (2 órfãos):** Marketplace de talentos (Classifieds) + Eventos de comunidade (Blog) — B tem 0 nós ali, A tem design mas sem evidência. Se o Business OS monetizar essas faixas, você fica 6 meses atrás em efeito de rede.
+5. **Decisão para hoje:** Escolha **uma faixa órfã** para validar primeiro (matching de talentos em Classifieds OU comunidade em Blog). Não construa as duas. As outras 4 faixas já estão lado a lado — não há peça faltando ali.
 
-## What To Do With This
+## O Que Fazer Com Isso
 
-- **Before meeting:** Drop Business OS screenshot into `BusinessOS-reference.md` and replace the 5 bullets — the matrix above will instantly re-color.
-- **During meeting:** Open `sitemap-A.html` + `sitemap-B.html` side-by-side. For any question "do we have X?" — find the lane, read the cell above (✅/❌).
-- **After meeting:** Promote the chosen orphan lane to `02-review/` as a 1-page decision (`mapping-A.csv` row → proposal).
+- **Antes da reunião:** Solte o screenshot do Business OS em `BusinessOS-reference.md` e substitua os 5 bullets — a matriz acima vai se recolorir instantaneamente.
+- **Durante a reunião:** Abra `sitemap-A.html` + `sitemap-B.html` lado a lado. Para qualquer pergunta "temos X?" — encontre a faixa, leia a célula acima (✅/❌).
+- **Depois da reunião:** Promova a faixa órfã escolhida para `02-review/` como uma decisão de 1 página (linha do `mapping-A.csv` → proposta).
 
