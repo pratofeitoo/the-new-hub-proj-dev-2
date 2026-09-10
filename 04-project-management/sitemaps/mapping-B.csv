@@ -1,42 +1,30 @@
-source_id,candidate_name,grammar_lane,grammar_parent,node_type,status,notes
-00_Leia-me,HUB Mapa inteligência (tese),Home,Home,hub page,mapped,Thickness collapsed to Home thesis
-01_Mapa_Visual,Mapa neural (7 stages),About Us,Home,page,mapped,Neural flow FONTES→VALOR as About Us hero
-07_Visoes,"Visões Dashboard (10 views)",Top bar,Home,page,mapped,Pink top bar — Executiva HUB/cliente etc.
-07a,Executiva HUB (CEO/Conselho),Top bar,Top bar,page,mapped,
-07b,Executiva cliente (CFO/Sponsor),Top bar,Top bar,page,mapped,
-07c,Pessoas/RH vision,Top bar,Top bar,page,mapped,
-07d,Compras vision,Top bar,Top bar,page,mapped,
-07e,Marketing/RevOps vision,Top bar,Top bar,page,mapped,
-04_Master,Indicadores Master (73 catalog),Shop,Home,lane root,mapped,Teal lane root — 73 collapsed to Product List
-04a,Atingimento amostra,Shop,Shop / Product List,page attribute,mapped,
-05_Arvore,Árvore de Valor (12 alavancas),Shop,Shop / Product Detail,page,mapped,Product Detail economics
-06_ROI,Simulador ROI (R$1.22M / 28.42%),Shop,Shop / Cart,page,mapped,Value in Cart
-09_Eventos,Eventos Produto (27 events),Shop,Shop / Checkout,page,mapped,Checkout = event stream commit
-GATE-B01,Logged In? (04/09 personal),Shop,Shop / Cart,yellow gate,mapped,Same yellow gate as A
-02_Nos,Nós de Dados (25 nodes N01-N25),About Us,About Us,page,mapped,Purple vertical — data nodes
-08_Dict,Dicionário Dados (41 fields),About Us,About Us,page,mapped,Glossary equivalent
-03_Conn,Conexões (20 edges E01-E20),About Us,About Us,page,mapped,Graph under About
-14_RACI,RACI roles,About Us,About Us,page,mapped,About Us — who owns what
-12_Road,Roadmap (M0/M1/M2),About Us,About Us,page,mapped,Glossary/Roadmap
-RES-BH,Beachhead research,About Us,About Us,page,mapped,About — where to start
-RES-MKT,Market competitive research,About Us,About Us,page,mapped,Testimonials candidate
-10_Integ,Integrações (17 systems),Sell,Home,lane root,mapped,Olive lane — infrastructure for Sell
-SELL-B01,Sellers Account (via 10_Integ),Sell,Sell,page,mapped,
-SELL-B02,Template demand/offer,Sell,Sellers Account,page,mapped,
-SELL-B03,Confirmation Email,Sell,Template,email leaf,mapped,
-GATE-B02,Post Rejected,Sell,Confirmation Email,yellow gate,mapped,
-GATE-B03,Post Approved,Sell,Confirmation Email,yellow gate,mapped,
-GATE-B04,Not Logged In / Logged In (Sell entry),Sell,Sell,yellow gate,mapped,Matches image Sell gate
-11_Gov,Governança LGPD (gates M0/M1/M2),Customer Support,Home,lane root,mapped,Salmon lane root
-11a,Finalidade / base legal,Customer Support,Customer Support,page,mapped,FAQs
-11b,Consent / N24,Customer Support,Customer Support,gate check,mapped,Become a Seller gate (consent)
-07_Dash,Visões Dashboard DETAIL (10),Customer Support,Customer Support,page,mapped,Contact/FAQ detail layer
-13_Matrix,Matriz Integração,Customer Support,Customer Support,page,mapped,Shipping/Return diagnostic
-10_SLA,Integration SLAs (2s-1h),Customer Support,Customer Support,page,mapped,Shipping Policy
-R-GTM,GTM partnerships research,Customer Support,Customer Support,page,mapped,Become a Seller
-R-GOV,Governance legal research,Customer Support,Customer Support,page,mapped,Return/Contact
-R-FIN,Financial model requirements,Customer Support,Customer Support,page,mapped,ROI page
-02-CLASS,Classifieds lane (talent),Classifieds,Home,lane root,orphan,B has NO strong classifieds — gap vs A MOD-03. Mark orphan.
-02-CLASS-DETAIL,Vaga listing / Talent marketplace,Classifieds,Classifieds,page,orphan,Missing in B — 0 nodes for Classifieds
-BLOG,Blog / Comunidades,Blog,Home,lane root,orphan,B has NO community layer — gap vs A MOD-07. Mark orphan.
-BLOG-DETAIL,Community events/academy,Blog,Blog,page,orphan,Missing — B has only academic as future phase
+source_id,candidate_name,comparison_lane,comparison_parent,node_type,evidence_status,evidence_file,notes
+B-01,Panorama / Início,Home,Home,page,observed,22.11.03.jpeg;22.15.14.jpeg,Observed left navigation and dashboard home
+B-02,Meu perfil / perfil 72%,Top bar,Home,page,observed,23.49.36.jpeg,Individual account view
+B-03,Organização / Firjan Lab do Futuro,Top bar,Home,page,observed,23.50.41.jpeg,Organization account view
+B-04,Notificações / Mensagens,Top bar,Home,utility,observed,23.49.36.jpeg;23.50.41.jpeg,Header utilities
+B-05,Oportunidades,Classifieds,Home,lane root,observed,23.49.36.jpeg;23.50.41.jpeg,Core discovery surface
+B-06,Todas / Carreira / Serviços / Conteúdo / Pesquisas,Classifieds,Oportunidades,filter,observed,23.49.36.jpeg,Visible tabs
+B-07,Recomendações para você,Classifieds,Oportunidades,page,observed,23.49.36.jpeg,Personalized recommendations
+B-08,Match 92% / 89%,Classifieds,Recomendações,metric,observed,23.49.36.jpeg;23.50.41.jpeg,Visible matching scores
+B-09,Publicar oportunidade,Sell,Home,action,observed,23.50.41.jpeg,Visible organization CTA
+B-10,Buscar talentos fornecedores especialistas soluções,Sell,Publicar oportunidade,search,observed,23.50.41.jpeg,Visible organization search
+B-11,Conexões recomendadas,Sell,Conexões,page,observed,23.49.36.jpeg;23.50.41.jpeg,Visible connection results
+B-12,Soluções,Shop,Home,lane root,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation
+B-13,HUB Intelligence,Shop,Soluções,page,observed,22.11.03.jpeg,Observed intelligence diagram
+B-14,Cadeias de impacto,Shop,Soluções,page,observed,22.11.03.jpeg,Five visible impact chains
+B-15,Resultados executivos,Shop,Soluções,page,observed,22.11.03.jpeg,Costs/productivity/revenue/profitability
+B-16,Reconhecimento / Selo HUB,About,Home,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation and journey stage
+B-17,Academy,About,Home,page,observed,22.11.03.jpeg,Observed navigation
+B-18,Evidências,About,Jornada,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed journey and intelligence diagram
+B-19,Diagnóstico,Support,Home,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation/journey
+B-20,Jornada,Support,Home,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation/journey
+B-21,Indicadores,Support,Diagnóstico,page,observed,23.50.41.jpeg,Observed navigation
+B-22,Medição e atribuição,Support,Indicadores,page,observed,22.11.03.jpeg,Observed six-step model
+B-23,Privacidade e governança / LGPD,Support,Diagnóstico,page,observed,22.11.03.jpeg,Observed footer controls
+B-24,Suporte,Support,Home,page,observed,23.50.41.jpeg,Observed navigation
+B-25,Conteúdo,Blog,Home,page,observed,23.49.36.jpeg,Observed opportunity tab
+B-26,Pesquisas,Blog,Home,page,observed,23.49.36.jpeg,Observed opportunity tab
+B-27,Classifieds separado,Classifieds,Home,gap,not_evidenced,,Do not claim absent from product; absent only from supplied screens
+B-28,Carrinho / Checkout,Shop,Home,gap,not_evidenced,,Not visible in supplied screens
+B-29,Blog editorial separado,Blog,Home,gap,not_evidenced,,Not visible in supplied screens
