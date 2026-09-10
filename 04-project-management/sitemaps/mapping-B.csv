@@ -1,30 +1,97 @@
 source_id,candidate_name,comparison_lane,comparison_parent,node_type,evidence_status,evidence_file,notes
-B-01,Panorama / Início,Home,Home,page,observed,22.11.03.jpeg;22.15.14.jpeg,Observed left navigation and dashboard home
-B-02,Meu perfil / perfil 72%,Top bar,Home,page,observed,23.49.36.jpeg,Individual account view
-B-03,Organização / Firjan Lab do Futuro,Top bar,Home,page,observed,23.50.41.jpeg,Organization account view
-B-04,Notificações / Mensagens,Top bar,Home,utility,observed,23.49.36.jpeg;23.50.41.jpeg,Header utilities
-B-05,Oportunidades,Classifieds,Home,lane root,observed,23.49.36.jpeg;23.50.41.jpeg,Core discovery surface
-B-06,Todas / Carreira / Serviços / Conteúdo / Pesquisas,Classifieds,Oportunidades,filter,observed,23.49.36.jpeg,Visible tabs
-B-07,Recomendações para você,Classifieds,Oportunidades,page,observed,23.49.36.jpeg,Personalized recommendations
-B-08,Match 92% / 89%,Classifieds,Recomendações,metric,observed,23.49.36.jpeg;23.50.41.jpeg,Visible matching scores
-B-09,Publicar oportunidade,Sell,Home,action,observed,23.50.41.jpeg,Visible organization CTA
-B-10,Buscar talentos fornecedores especialistas soluções,Sell,Publicar oportunidade,search,observed,23.50.41.jpeg,Visible organization search
-B-11,Conexões recomendadas,Sell,Conexões,page,observed,23.49.36.jpeg;23.50.41.jpeg,Visible connection results
-B-12,Soluções,Shop,Home,lane root,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation
-B-13,HUB Intelligence,Shop,Soluções,page,observed,22.11.03.jpeg,Observed intelligence diagram
-B-14,Cadeias de impacto,Shop,Soluções,page,observed,22.11.03.jpeg,Five visible impact chains
-B-15,Resultados executivos,Shop,Soluções,page,observed,22.11.03.jpeg,Costs/productivity/revenue/profitability
-B-16,Reconhecimento / Selo HUB,About,Home,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation and journey stage
-B-17,Academy,About,Home,page,observed,22.11.03.jpeg,Observed navigation
-B-18,Evidências,About,Jornada,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed journey and intelligence diagram
-B-19,Diagnóstico,Support,Home,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation/journey
-B-20,Jornada,Support,Home,page,observed,22.11.03.jpeg;23.50.41.jpeg,Observed navigation/journey
-B-21,Indicadores,Support,Diagnóstico,page,observed,23.50.41.jpeg,Observed navigation
-B-22,Medição e atribuição,Support,Indicadores,page,observed,22.11.03.jpeg,Observed six-step model
-B-23,Privacidade e governança / LGPD,Support,Diagnóstico,page,observed,22.11.03.jpeg,Observed footer controls
-B-24,Suporte,Support,Home,page,observed,23.50.41.jpeg,Observed navigation
-B-25,Conteúdo,Blog,Home,page,observed,23.49.36.jpeg,Observed opportunity tab
-B-26,Pesquisas,Blog,Home,page,observed,23.49.36.jpeg,Observed opportunity tab
-B-27,Classifieds separado,Classifieds,Home,gap,not_evidenced,,Do not claim absent from product; absent only from supplied screens
-B-28,Carrinho / Checkout,Shop,Home,gap,not_evidenced,,Not visible in supplied screens
-B-29,Blog editorial separado,Blog,Home,gap,not_evidenced,,Not visible in supplied screens
+B-01,Business in a Box home,Global,Root,app_entry,observed-live,https://app.business-in-a-box.com/dashboard,"Authenticated entry point; greeting + Time clock + Open the box + Company pulse"
+B-02,App switcher (17 apps),Global,Root,nav,observed-live,Apps panel,"Home Work Calendar Chat Inbox Connect BizAI Drive Docs Sheets Notes Links Contacts Templates Team Account Plan"
+B-03,Create menu (16 actions),Global,Root,action,observed-live,Create dropdown,"New Task Note Message Event Meeting Document Sheet AI Chat Channel Project Folder Contact Link Goal Dream Invite Teammate"
+B-04,Search palette,Global,Root,utility,observed-live,Header Search,"Command-palette entry point; result list not dumped"
+B-05,Notifications inbox,Global,Root,page,observed-live,https://app.business-in-a-box.com/inbox/notifications,"Open browser tab W1T12; bell with unread badge"
+B-06,Account Upgrade Invite,Global,Root,utility,observed-live,Header,"PF profile Upgrade Invite Clock In; read-only, nothing clicked"
+B-10,Dashboard Home,Dashboard,Root,app_root,observed-live,/dashboard,"Good morning PF; Time clock; Open the box; Set up your box; Company pulse; Departments"
+B-11,Insights,Dashboard,Dashboard Home,page,observed-live,/dashboard/insights,Aside nav
+B-12,Classic dashboard,Dashboard,Dashboard Home,page,observed-live,/dashboard/classic,"Aside nav; Customize via /dashboard/classic?panel=customize"
+B-13,Activity,Dashboard,Dashboard Home,page,observed-live,/dashboard/activity,Aside nav
+B-14,Team overview,Dashboard,Dashboard Home,page,observed-live,/dashboard/team,Aside nav
+B-15,Departments,Dashboard,Dashboard Home,section,observed-live,/dashboard/departments/*,"10 department pages; cards show open tasks not moving"
+B-16,Management (Administration),Dashboard,Departments,page,observed-live,/dashboard/departments/management,"Card labeled Administration; 2 open tasks"
+B-17,Finance,Dashboard,Departments,page,observed-live,/dashboard/departments/finance,"Card; 2 open tasks"
+B-18,Human Resources,Dashboard,Departments,page,observed-live,/dashboard/departments/hr,"Card; 2 open tasks"
+B-19,Legal,Dashboard,Departments,page,observed-live,/dashboard/departments/legal,"Card; 2 open tasks"
+B-20,Marketing,Dashboard,Departments,page,observed-live,/dashboard/departments/marketing,"Card; 2 open tasks"
+B-21,Operations,Dashboard,Departments,page,observed-live,/dashboard/departments/operations,"Card; 2 open tasks"
+B-22,Product (Products),Dashboard,Departments,page,observed-live,/dashboard/departments/product,"Card labeled Products; route uses singular product"
+B-23,Sales,Dashboard,Departments,page,observed-live,/dashboard/departments/sales,"Card; 2 open tasks"
+B-24,Service,Dashboard,Departments,page,observed-live,/dashboard/departments/service,"Card; 2 open tasks"
+B-25,Technology,Dashboard,Departments,page,observed-live,/dashboard/departments/technology,"Card; 2 open tasks"
+B-26,Team pulse,Dashboard,Dashboard Home,page,observed-live,/work/reports/pulse,Aside nav under Reports
+B-27,Priorities and workload,Dashboard,Dashboard Home,page,observed-live,/work/reports/priorities,"Aside nav; badge 4"
+B-28,Progress,Dashboard,Dashboard Home,page,observed-live,/work/reports/progress,Aside nav
+B-29,All reports,Dashboard,Dashboard Home,page,observed-live,/work/reports,Aside nav
+B-30,Work dashboard,Work,Root,app_root,observed-live,/work/dashboard,"App opened via Apps panel; full aside dumped"
+B-31,My Tasks,Work,Work dashboard,page,observed-live,/work/my-tasks,Work aside
+B-32,Work Calendar,Work,Work dashboard,page,observed-live,/work/calendar,Work aside
+B-33,Work Inbox,Work,Work dashboard,page,observed-live,/work/inbox,Work aside
+B-34,Favorites,Work,Work dashboard,page,observed-live,/work/favorites,Work aside
+B-35,Projects,Work,Work dashboard,page,observed-live,/work/projects,"Work aside; also linked as View All from Dashboard Recent Projects"
+B-36,Sprints,Work,Work dashboard,page,observed-live,/work/sprints,Work aside
+B-37,Goals,Work,Work dashboard,page,observed-live,/work/goals,Work aside
+B-38,Dreams,Work,Work dashboard,page,observed-live,/work/dreams,Work aside
+B-39,Work Templates,Work,Work dashboard,page,observed-live,/work/templates,Work aside
+B-40,People,Work,Work dashboard,page,observed-live,/work/people,Work aside
+B-41,Tasks,Work,Work dashboard,page,observed-live,/work/tasks,Work aside
+B-42,Briefing,Work,Work dashboard,page,observed-live,/work/briefing,Work aside
+B-43,Priorities,Work,Work dashboard,page,observed-live,/work/reports/priorities,"Shared with Dashboard aside; same route"
+B-44,Reports,Work,Work dashboard,page,observed-live,/work/reports,"Shared with Dashboard aside; same route"
+B-45,Workload,Work,Work dashboard,page,observed-live,/work/workload,Work aside
+B-46,Accountability,Work,Work dashboard,page,observed-live,/work/accountability,Work aside
+B-47,Costs,Work,Work dashboard,page,observed-live,/work/costs,Work aside
+B-48,Alignment,Work,Work dashboard,page,observed-live,/work/alignment,Work aside
+B-49,Import,Work,Work dashboard,page,observed-live,/work/import,Work aside
+B-50,Team dashboard,Team,Root,app_root,observed-live,/team/dashboard,"App opened via Apps panel; full aside dumped"
+B-51,My Profile,Team,Team dashboard,page,observed-live,/team/my-profile,Team aside
+B-52,Team Calendar,Team,Team dashboard,page,observed-live,/team/calendar,Team aside
+B-53,Holidays,Team,Team dashboard,page,observed-live,/team/holidays,Team aside
+B-54,My Timesheet,Team,Team dashboard,page,observed-live,/team/attendance/my-timesheet,"Team aside; also linked from Dashboard Time clock card"
+B-55,My Leaves,Team,Team dashboard,page,observed-live,/team/time-off,Team aside
+B-56,My Assets,Team,Team dashboard,page,observed-live,/team/assets/my,Team aside
+B-57,My Reviews,Team,Team dashboard,page,observed-live,/team/assessments/my,Team aside
+B-58,My Benefits,Team,Team dashboard,page,observed-live,/team/benefits/enrollment,Team aside
+B-59,My Salary,Team,Team dashboard,page,observed-live,/team/salary/my,Team aside
+B-60,Directory,Team,Team dashboard,page,observed-live,/team/directory,Team aside
+B-61,Timesheet (team),Team,Team dashboard,page,observed-live,/team/attendance/team,Team aside
+B-62,Leaves (team),Team,Team dashboard,page,observed-live,/team/time-off/team,Team aside
+B-63,Performance,Team,Team dashboard,page,observed-live,/team/assessments,Team aside
+B-64,Assets,Team,Team dashboard,page,observed-live,/team/assets,Team aside
+B-65,Offboarding,Team,Team dashboard,page,observed-live,/team/offboarding,Team aside
+B-66,Compensation,Team,Team dashboard,page,observed-live,/team/compensation,Team aside
+B-67,Benefits,Team,Team dashboard,page,observed-live,/team/benefits,Team aside
+B-68,Team Reports,Team,Team dashboard,page,observed-live,/team/reports,Team aside
+B-69,Team Settings,Team,Team dashboard,page,observed-live,/team/settings,"Team aside; contents not opened"
+B-70,Open in Team,Team,Team dashboard,action,observed-live,Dashboard Time clock card,"Deep link from Dashboard into Team; label observed"
+B-71,Templates home,Templates,Root,app_root,observed-live,/templates,"App opened via Apps panel; full aside dumped"
+B-72,Administration templates,Templates,Templates home,page,observed-live,/templates/business-administration,Templates aside
+B-73,Business Plan kit,Templates,Templates home,page,observed-live,/templates/business-plan-kit,Templates aside
+B-74,Finance and Accounting,Templates,Templates home,page,observed-live,/templates/finance-accounting,Templates aside
+B-75,Human Resources templates,Templates,Templates home,page,observed-live,/templates/human-resources,"Templates aside; Dashboard recommends HR docs"
+B-76,Legal Agreements,Templates,Templates home,page,observed-live,/templates/business-legal-agreements,Templates aside
+B-77,Product and Operations,Templates,Templates home,page,observed-live,/templates/production-operations,Templates aside
+B-78,Sales and Marketing,Templates,Templates home,page,observed-live,/templates/sales-marketing,Templates aside
+B-79,Start a Business,Templates,Templates home,page,observed-live,/templates/starting-a-business,Templates aside
+B-80,Favorites,Templates,Templates home,page,observed-live,/templates/favorites,Templates aside
+B-81,Free Templates,Templates,Templates home,page,observed-live,/templates/free,Templates aside
+B-82,Top 50 Templates,Templates,Templates home,page,observed-live,/templates/top-50,Templates aside
+B-83,Document Types,Templates,Templates home,page,observed-live,/templates/document-types,Templates aside
+B-84,Business Industries,Templates,Templates home,page,observed-live,/templates/business-industries,Templates aside
+B-85,Recently Added,Templates,Templates home,page,observed-live,/templates/recently-added,Templates aside
+B-86,Document page example,Templates,Templates home,page,observed-live,/templates/doc/human-resource-policy-D13494,"Dashboard Recent Projects links doc pages; HR policy example"
+B-87,Calendar app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-88,Chat app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-89,Inbox app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; /inbox/notifications observed as open tab but aside not dumped"
+B-90,Connect app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-91,BizAI app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; AI Employee prompts observed on Dashboard but app aside not dumped"
+B-92,Drive app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-93,Docs app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-94,Sheets app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-95,Notes app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-96,Links app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-97,Contacts app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-98,Account app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel; inner nav not dumped"
+B-99,Plan app,Unmapped,App switcher,app_root,not_dumped,,"Listed in Apps panel as Plan; Business Plan kit lives under Templates; app aside not dumped"
