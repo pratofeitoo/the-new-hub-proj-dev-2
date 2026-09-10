@@ -1,73 +1,63 @@
-# Matriz de Sobreposição — Filtro Sim/Não Lado a Lado
+# Matriz de Comparação — HUB × Business OS
 
-> Ambos os sitemaps agora compartilham a mesma forma física (Home + 6 faixas + portões amarelos). Esta tabela é o filtro binário: **verde = ambos têm, amarelo = só um tem, cinza = nenhum / lacuna do Business OS**.
-> Branch: `wip/meeting-2026-09-10` | Gerado em: 2026-09-10
+> **Correção de escopo:** A = especificação aprovada do HUB. B = wiki/referência visual do Business OS no segundo repositório. As faixas são apenas um formato comum de comparação; elas não afirmam que o Business OS usa a mesma arquitetura de navegação.
+> Branch: `wip/meeting-2026-09-10` | Corrigido em: 2026-09-10
 
-## Resumo (visão geral)
+## Regra de evidência
 
-| Faixa | No A? | No B? | Veredito |
+- **Definido:** existe na especificação do HUB, mas não significa construído.
+- **Observado:** aparece nas telas/imagens do Business OS, mas não significa produção validada.
+- **Não evidenciado:** não apareceu no material visual analisado. Não significa que não exista.
+- **Sobreposição:** só pode ser marcada quando o conceito é comparável, não apenas porque recebeu o mesmo nome de faixa.
+
+## Resumo honesto
+
+| Área comparável | HUB A | Business OS B | Leitura segura |
 |---|---|---|---|
-| **Home + Barra superior (4)** | ✅ 5 nós | ✅ 5 nós | 🟢 IGUAL — ambos têm Home + Minha Conta/Login/Criar Conta/Rede Social |
-| **Shop (Performance/Valor)** | ✅ 11 nós | ✅ 8 nós | 🟢 MESMA faixa, mais profunda no A (tem portões Carrinho/Checkout) vs B tem mais dados (73 indicadores) mas menos portões |
-| **Classifieds (Descoberta de Talentos)** | ✅ 9 nós | ❌ 0 (órfão) | 🟡 LACUNA no B — A tem marketplace de talentos (MOD-03), B não tem nada |
-| **Sell (Oferta / Fornecedores)** | ✅ 10 nós | ✅ 9 nós | 🟢 IGUAL — ambos têm fluxo de Sell + portões de aprovação; B adiciona detalhe de 17 integrações |
-| **About (Conceito / Dicionário)** | ✅ 3 nós | ✅ 8 nós | 🟡 B MAIS PROFUNDO — A com 20 caps colapsado; B tem 25 nós + 20 arestas + 41 campos + RACI |
-| **Support (Governança / ROI)** | ✅ 9 nós | ✅ 9 nós | 🟢 MESMO peso — ambos têm Contato/FAQ/Tornar-se Vendedor/Política de Devolução/Política de Envio/Alertas |
-| **Blog (Comunidade / Academia)** | ✅ 3 nós | ❌ 0 (órfão) | 🟡 LACUNA no B — A tem MOD-06/07 construído; B só pesquisa futura |
+| Home / Panorama | Definido: HUB Core + Cockpit | Observado: Panorama / Início | Sobreposição conceitual, não equivalência de implementação |
+| Oportunidades / matching | Definido: Pessoas e Talentos | Observado: Oportunidades, recomendações e Match | Sobreposição forte; B tem evidência visual mais concreta |
+| Soluções / inteligência | Definido: HUB Core + Inteligência | Observado: HUB Intelligence + Soluções | Sobreposição forte de conceito |
+| Conexões / ecossistema | Definido: grafo, fornecedores, academia, comunidades | Observado: Conexões, pessoas, fornecedores, especialistas | Sobreposição conceitual |
+| Jornada / execução | Definido: planos de ação, performance, evidências | Observado: Diagnóstico, Plano, Evidências, Selo | Sobreposição forte de fluxo |
+| Impacto / resultados | Definido: Clientes, Receita, HUB Impact, ROI | Observado: cadeias de impacto e resultados executivos | Sobreposição conceitual; não comparar números sem fonte |
+| Governança / dados | Definido: LGPD, consentimento, qualidade, auditoria | Observado: LGPD, consentimento, acesso, dados agregados | Sobreposição de requisitos; maturidade não comprovada |
+| Academy / conteúdo | Definido: Acadêmico + Comunidades | Observado: Academy, Conteúdo, Pesquisas | Sobreposição parcial |
+| E-commerce cart/checkout | Definido: ações/planos, não e-commerce literal | Não evidenciado | Não chamar de lacuna de produto |
+| Blog editorial separado | Definido: Comunidades/Eventos | Não evidenciado | Não chamar de lacuna sem evidência adicional |
 
-**Contagem:** A 58 mapeados / 0 órfãos | B 37 mapeados / 4 órfãos | **Sobreposição em 4 faixas, 2 lacunas, 1 assimetria profunda**
+## Matriz detalhada com rastreabilidade
 
-## Matriz Detalhada de Nós
+| Capability | HUB A | Business OS B | Status da comparação | Evidência |
+|---|---|---|---|---|
+| Dashboard inicial / Panorama | HUB Core + SCR-01 Cockpit | Panorama / Início | 🟡 Comparável conceitualmente | A: Planilha #10; B: `22.11.03.jpeg` |
+| Perfil e contexto | Personas, perfis e dados de pessoa | Meu perfil, 72% completo, frentes ativas | 🟢 Conceito presente nos dois | A: #03/#05; B: `23.49.36.jpeg` |
+| Descoberta de oportunidades | MOD-03 Pessoas e Talentos | Oportunidades + filtros + recomendações | 🟢 Sobreposição forte | A: #02; B: `23.49.36.jpeg` |
+| Matching explicável | Match definido na arquitetura | Match 92%/89% visível | 🟡 B demonstra visualmente; A define tecnicamente | A: FLD-047/#02; B: `23.49.36.jpeg` |
+| Publicação de oportunidade | Fornecedores/Compras e ações | Publicar oportunidade visível | 🟡 Conceito relacionado, fluxo não equivalente | A: MOD-05; B: `23.50.41.jpeg` |
+| Fornecedores | MOD-05 Fornecedores e Compras | Busca/conexões com fornecedores | 🟡 Comparável parcialmente | A: #02; B: `23.50.41.jpeg` |
+| Soluções | HUB Core / módulos técnicos | Soluções / HUB Solutions | 🟢 Sobreposição de conceito | A: #09/#19; B: `22.11.03.jpeg` |
+| Inteligência | Motores HUB Graph/Value/Intelligence | HUB Intelligence diagram | 🟢 Sobreposição de conceito | A: #19; B: `22.11.03.jpeg` |
+| Cadeias de impacto | Receita, margem, risco, valor | Cinco cadeias de impacto visíveis | 🟢 Sobreposição forte | A: #04/#05/#07; B: `22.11.03.jpeg` |
+| Resultados executivos | Cockpit, ROI, indicadores | Custos, produtividade, receita, lucratividade | 🟢 Sobreposição de objetivo | A: SCR-01/SCR-06; B: `22.11.03.jpeg` |
+| Jornada | Planos, performance, evidências | Diagnóstico → plano → evidências → selo | 🟢 Sobreposição forte de fluxo | A: MOD-02/SCR-03; B: `22.11.03.jpeg` |
+| Indicadores | Catálogo KPI governado | Indicadores no menu e impacto em números | 🟡 Conceito presente; profundidade diferente | A: #06; B: `22.11.03.jpeg`; `23.50.41.jpeg` |
+| Medição e atribuição | HUB Impact e ROI | Baseline → intervenção → validação | 🟢 Sobreposição de método | A: #20; B: `22.11.03.jpeg` |
+| LGPD / consentimento | GOV-01..12 e N24 | Área de privacidade e governança | 🟢 Requisito presente nos dois | A: #11; B: `22.11.03.jpeg` |
+| Academy / aprendizagem | MOD-06 Acadêmico | Academy | 🟢 Nome e intenção compatíveis | A: MOD-06; B: `22.11.03.jpeg` |
+| Comunidade | MOD-07 Comunidades/Eventos | Não há tela de comunidade explícita | ⚪ Não evidenciado em B | A: MOD-07; B: nenhum arquivo visual |
+| E-commerce cart/checkout | Não definido como e-commerce literal | Não evidenciado | ⚪ Comparação inválida | Nenhuma evidência equivalente |
 
-| Página / Portão | Faixa | No A (dev-2) | No B (Branch 01) | Filtro | Nota para a Reunião |
-|---|---|---|---|---|---|
-| Home (HUB Core / tese 00_Leia-me) | Home | ✅ MOD-01 | ✅ 00_Leia-me | 🟢 | Ambos reivindicam inteligência unificada — fraseado diferente |
-| Minha Conta | Barra superior | ✅ PER-01..13 | ✅ 07 visões ×10 | 🟢 | Mesmo padrão |
-| Login | Barra superior | ✅ | ✅ | 🟢 | — |
-| Criar uma Conta | Barra superior | ✅ consentimento N24 | ✅ CMP/N24 | 🟢 | Ambos têm portão de LGPD — forte |
-| Rede Social | Barra superior | ✅ | ✅ | 🟢 | Placeholder nos dois |
-| Shop | Shop | ✅ MOD-02+04 | ✅ 04_Master (73) | 🟢 | A = cockpit transacional, B = catálogo de indicadores — mesmo assento, lente diferente |
-| Lista de Produtos | Shop | ✅ Scorecards | ✅ Lista de indicadores | 🟢 | Colapsado no B para 1 nó em vez de 73 linhas |
-| Detalhe do Produto | Shop | ✅ Detalhe KPI + FIN-01 | ✅ 05 Árvore 12 alavancas | 🟢 | B adiciona cadeia causal — mais rico |
-| Carrinho | Shop | ✅ Carrinho de Ações | ✅ — | 🟡 | A tem carrinho de ações, B não tem conceito de carrinho — **lacuna B** |
-| Log In / Cadastro (Shop) | Shop | ✅ portão amarelo ×2 | ✅ portão amarelo | 🟢 | Mesma ramificação de autenticação |
-| Checkout | Shop | ✅ Confirmar Plano | ✅ Commit de evento (09) | 🟢 | Rótulo diferente, mesma semântica de commit |
-| Classifieds | Classifieds | ✅ MOD-03 | ❌ — | 🟡 | **B sem a faixa inteira** — marketplace de talentos |
-| Classifieds — Histórias de Sucesso | Classifieds | ✅ | ❌ — | 🟡 | — |
-| Postar um Classified | Classifieds | ✅ | ❌ — | 🟡 | — |
-| Template de Post | Classifieds | ✅ | ❌ — | 🟡 | — |
-| E-mail de Confirmação → Rejeitado/Aprovado → E-mail | Classifieds | ✅ fluxo completo | ❌ — | 🟡 | Fluxo completo de aprovação ausente no B |
-| Sell | Sell | ✅ MOD-05 | ✅ 10_Integrações | 🟢 | Mesma faixa |
-| Conta do Vendedor | Sell | ✅ SCR-08 | ✅ | 🟢 | — |
-| Template | Sell | ✅ | ✅ | 🟢 | — |
-| E-mail de Confirmação | Sell | ✅ | ✅ | 🟢 | — |
-| Post Rejeitado / Aprovado (Sell) | Sell | ✅ amarelo | ✅ amarelo | 🟢 | Mesmos portões |
-| E-mail de Rejeição/Aprovação Enviado (Sell) | Sell | ✅ terminal | ✅ terminal | 🟢 | Mesmas folhas |
-| Não Logado / Logado como Vendedor | Sell | ✅ portão duplo | ✅ portão duplo | 🟢 | Mesma divisão de entrada |
-| Sobre Nós | About | ✅ tese 20 caps | ✅ 01 Mapa + Beachhead | 🟢 | A narrativa, B visual+pesquisa — mesmo assento |
-| Depoimentos | About | ✅ Cases | ✅ Pesquisa de mercado | 🟢 | Evidência diferente, mesmo assento |
-| Glossário | About | ✅ FLD-001..047 | ✅ 41 campos + 25 nós +20 arestas | 🟡 | B **muito mais profundo** — colapso foi a decisão correta |
-| Suporte ao Cliente | Support | ✅ MOD-08 | ✅ 11_Governança | 🟢 | Mesma raiz de faixa |
-| Fale Conosco | Support | ✅ | ✅ | 🟢 | — |
-| FAQs | Support | ✅ GOV-08 | ✅ 11_Gov | 🟢 | — |
-| Tornar-se um Vendedor | Support | ✅ | ✅ pesquisa GTM | 🟢 | B adiciona lente de GTM |
-| Política de Devolução | Support | ✅ validação ROI | ✅ portões M0/M1/M2 | 🟢 | Mesma semântica |
-| Política de Envio | Support | ✅ SLAs INT | ✅ 17 integrações + SLAs | 🟢 | B mais detalhado (2s–1h vs D+1) |
-| Central de Alertas / Visões de Dashboard | Support | ✅ SCR-05 | ✅ 07 (10 visões) | 🟢 | A centralizado, B distribuído — mesmo assento |
-| ROI do HUB | Support | ✅ SCR-06 / HUB-04 | ✅ 06 Simulador | 🟢 | A dashboard, B simulador — mesmo assento |
-| Blog | Blog | ✅ MOD-06+07 | ❌ — | 🟡 | **B sem a faixa inteira** — comunidade/academia |
+## Conclusão corrigida
 
-## O Filtro Executivo em 5 Linhas (para a reunião)
+1. O material permite dizer que o HUB e o Business OS compartilham uma **visão de plataforma de inteligência, oportunidades, conexões, jornada e impacto**.
+2. O Business OS possui **evidência visual de fluxos e telas**; o HUB possui **especificação técnica e governança**. Isso não permite declarar que um está “à frente” em implementação.
+3. A comparação mais útil é: **o que o HUB já especificou que o Business OS demonstra visualmente; o que o Business OS demonstra que o HUB ainda não transformou em fluxo/tela; e o que permanece não evidenciado.**
+4. Não há base para afirmar “6 meses atrás”, “Business OS já tem usuários”, “quatro faixas iguais” ou qualquer ROI validado.
+5. A decisão segura para a próxima conversa é escolher quais fluxos observados do Business OS devem virar telas/fluxos equivalentes do HUB: **Oportunidades/Match, Jornada, Inteligência/Impacto ou Governança**.
 
-1. **Business OS provou:** Um marketplace transacional com navegação Shop+Sell+Support JÁ é construível e já tem usuários — sua tese do HUB não é teórica.
-2. **Onde o HUB está à frente:** Faixas completas — você tem Classifieds (talentos) + Blog (comunidade/academia) desenhados; apps estilo Business OS geralmente não têm governança (seu N24/LGPD + ROI Impact não tem equivalente lá).
-3. **Onde o HUB está atrás:** Profundidade de dados colapsada no sitemap mas **não construída** — B tem 73 indicadores / 41 campos / 27 eventos validados no papel; A tem 8 módulos / 9 telas no papel. Nenhum dos dois tem os portões em produção.
-4. **Lacuna mais arriscada (2 órfãos):** Marketplace de talentos (Classifieds) + Eventos de comunidade (Blog) — B tem 0 nós ali, A tem design mas sem evidência. Se o Business OS monetizar essas faixas, você fica 6 meses atrás em efeito de rede.
-5. **Decisão para hoje:** Escolha **uma faixa órfã** para validar primeiro (matching de talentos em Classifieds OU comunidade em Blog). Não construa as duas. As outras 4 faixas já estão lado a lado — não há peça faltando ali.
+## O que não dizer na reunião
 
-## O Que Fazer Com Isso
-
-- **Antes da reunião:** Solte o screenshot do Business OS em `BusinessOS-reference.md` e substitua os 5 bullets — a matriz acima vai se recolorir instantaneamente.
-- **Durante a reunião:** Abra `sitemap-A.html` + `sitemap-B.html` lado a lado. Para qualquer pergunta "temos X?" — encontre a faixa, leia a célula acima (✅/❌).
-- **Depois da reunião:** Promova a faixa órfã escolhida para `02-review/` como uma decisão de 1 página (linha do `mapping-A.csv` → proposta).
-
+- Não dizer que os dois produtos são iguais.
+- Não dizer que o Business OS tem ou não tem uma funcionalidade que não aparece nas fontes.
+- Não apresentar os números do HUB como resultados do Business OS.
+- Não tratar sitemap visual como prova de produto construído.
