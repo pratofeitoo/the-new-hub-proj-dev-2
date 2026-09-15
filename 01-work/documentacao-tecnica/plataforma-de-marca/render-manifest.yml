@@ -1,0 +1,45 @@
+renderer: local-html-css-pilot
+renderer_status: experimental; official Open Design production remains a separate gate
+design: 01-work/documentacao-tecnica/plataforma-de-marca/DESIGN.md
+design_version: alpha
+lifecycle: pilot
+
+sources:
+  - 01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-marca.md
+  - 01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-ofertas-e-produtos.md
+  - 01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/nomenclatura-e-taxonomia.md
+  - 01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/principios-de-white-label-e-endosso.md
+  - 01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/proposito-promessa-e-posicionamento.md
+  - 01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/publicos-e-contextos-de-mensagem.md
+
+outline:
+  - source: arquitetura-de-marca.md
+    role: ecosystem architecture and boundaries
+  - source: arquitetura-de-ofertas-e-produtos.md
+    role: portfolio layers and naming rules
+  - source: nomenclatura-e-taxonomia.md
+    role: vocabulary and taxonomy guardrails
+  - source: principios-de-white-label-e-endosso.md
+    role: attribution and white-label constraints
+  - source: proposito-promessa-e-posicionamento.md
+    role: provisional strategic narrative
+  - source: publicos-e-contextos-de-mensagem.md
+    role: audiences and message contexts
+
+provenance:
+  required_fields: [source, period, definition, unit, status, method, limitation, owner]
+  source_status: provisional; no source is promoted by rendering
+
+qa:
+  format: 16:9 landscape
+  visible_status_labels: required
+  accessible_contrast: required
+  text_alternative_for_complex_visuals: required
+  source_files_mutated: false
+
+outputs:
+  html: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html
+  pdf: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf
+
+notes:
+  - Sources are unchanged.

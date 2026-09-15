@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arquitetura de marca — HUB</title>
+  <style>
+    :root {
+      --ink: #17151f;
+      --muted: #6f6a7a;
+      --paper: #fbfaf8;
+      --surface: #ffffff;
+      --violet: #6f3cff;
+      --violet-dark: #321b7a;
+      --violet-soft: #eee9ff;
+      --line: #ddd8e8;
+      --warning: #9a5b00;
+      --warning-soft: #fff3d9;
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #24202f; color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { padding: 2rem 0; }
+    .deck { width: min(1280px, calc(100vw - 4rem)); margin: 0 auto; }
+    .slide { position: relative; aspect-ratio: 16 / 9; margin: 0 0 2rem; padding: 7.2% 8%; overflow: hidden; background: var(--paper); page-break-after: always; break-after: page; }
+    .slide::after { content: attr(data-number); position: absolute; right: 8%; bottom: 5%; color: var(--muted); font-size: 0.75rem; letter-spacing: .14em; }
+    .kicker { color: var(--violet); font-size: .75rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 850px; margin: 1.2rem 0 1.3rem; color: var(--violet-dark); font-size: clamp(2.6rem, 6vw, 5.8rem); line-height: .98; letter-spacing: -.06em; }
+    h2 { max-width: 850px; margin: .7rem 0 1.4rem; color: var(--violet-dark); font-size: clamp(2rem, 3.7vw, 4rem); line-height: 1; letter-spacing: -.045em; }
+    h3 { margin-bottom: .45rem; color: var(--violet-dark); font-size: 1.12rem; }
+    p, li { font-size: clamp(.9rem, 1.28vw, 1.25rem); line-height: 1.42; }
+    .lede { max-width: 760px; color: #3d3849; font-size: clamp(1.1rem, 1.8vw, 1.7rem); line-height: 1.3; }
+    .meta { position: absolute; left: 8%; right: 8%; bottom: 5%; display: flex; justify-content: space-between; gap: 2rem; color: var(--muted); font-size: .76rem; }
+    .meta strong { color: var(--ink); }
+    .hero { display: flex; flex-direction: column; justify-content: center; background: radial-gradient(circle at 85% 20%, #a892ff 0, #7152e9 13%, transparent 38%), linear-gradient(135deg, #fbfaf8 0 53%, #eee9ff 53%); }
+    .hero .orb { position: absolute; right: 10%; bottom: 14%; width: 25%; aspect-ratio: 1; border: 1px solid rgba(111,60,255,.35); border-radius: 50%; box-shadow: 0 0 0 22px rgba(111,60,255,.06), 0 0 0 45px rgba(111,60,255,.04); }
+    .hero .orb::before, .hero .orb::after { content: ""; position: absolute; inset: 22%; border: 1px solid rgba(111,60,255,.4); border-radius: 50%; }
+    .hero .orb::after { inset: 44%; background: var(--violet); border: 0; box-shadow: 0 0 36px rgba(111,60,255,.55); }
+    .callout { max-width: 850px; padding: 1rem 1.2rem; border-left: 5px solid var(--violet); background: var(--violet-soft); color: #3a2c70; }
+    .callout.warning { border-left-color: #e6a52f; background: var(--warning-soft); color: #6f4300; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .card { padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: 0 12px 35px rgba(43, 29, 88, .07); }
+    .card p { margin-bottom: 0; font-size: 1rem; }
+    .card small { color: var(--muted); }
+    .node { position: relative; padding: 1rem; border: 1px solid #c7bbef; border-radius: 18px; background: #f4f0ff; text-align: center; }
+    .node strong { display: block; color: var(--violet-dark); font-size: 1.1rem; }
+    .node span { display: block; margin-top: .35rem; color: var(--muted); font-size: .86rem; }
+    .arrow { display: flex; align-items: center; justify-content: center; color: var(--violet); font-size: 1.6rem; font-weight: 800; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); font-size: .83rem; }
+    th, td { padding: .75rem .8rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: var(--violet-dark); color: #fff; font-size: .77rem; letter-spacing: .05em; text-transform: uppercase; }
+    tr:last-child td { border-bottom: 0; }
+    td:first-child { width: 20%; color: var(--violet-dark); font-weight: 800; }
+    ul { margin: .2rem 0 0; padding-left: 1.25rem; }
+    li + li { margin-top: .45rem; }
+    .status { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .65rem; border-radius: 999px; background: var(--warning-soft); color: var(--warning); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .status::before { content: ""; width: .45rem; height: .45rem; border-radius: 50%; background: #e6a52f; }
+    .source { color: var(--muted); font-size: .72rem; }
+    @media (max-width: 800px) { body { padding: 0; } .deck { width: 100%; } .slide { min-height: 100vh; aspect-ratio: auto; margin: 0; padding: 3rem 1.5rem 5rem; } .grid-2, .grid-3 { grid-template-columns: 1fr; } .meta { left: 1.5rem; right: 1.5rem; } .slide::after { right: 1.5rem; } .hero .orb { right: 8%; width: 30%; } }
+    @page { size: 16in 9in; margin: 0; }
+    @media print { html, body { width: 16in; height: 9in; background: #fff; } body { padding: 0; } .deck { width: 16in; margin: 0; } .slide { width: 16in; height: 9in; aspect-ratio: auto; margin: 0; } }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-label="Apresentação: Arquitetura de marca — HUB">
+    <section class="slide hero" data-number="01">
+      <div class="orb" aria-hidden="true"></div>
+      <div class="kicker">Plataforma de Marca HUB</div>
+      <h1>Arquitetura<br>de marca</h1>
+      <p class="lede">Uma proposta provisória para organizar ecossistema, produto, serviço, impacto, método e reconhecimento — sem transformar hipótese em autorização.</p>
+      <div class="meta"><span><strong>Documento de origem:</strong> arquitetura-de-marca.md</span><span><strong>Status:</strong> provisório</span></div>
+    </section>
+
+    <section class="slide" data-number="02">
+      <div class="kicker">Leitura do documento</div>
+      <h2>O ponto de partida é governança, não apenas nomenclatura.</h2>
+      <div class="grid-2">
+        <div class="card"><h3>Evidências observadas</h3><ul><li>Existem quatro frentes conceituais: marca/estratégia, Plataforma HUB, HUB Negócios e Instituto HUB.</li><li>BRD-001 e BRD-003 permanecem abertos.</li><li>HUB, CAOS e Selo continuam tratados como hipóteses.</li></ul></div>
+        <div class="card"><h3>Limite explícito</h3><p>O documento não aprova nomes, titularidade, licenças, certificações, claims ou estrutura societária.</p><div class="callout warning" style="margin-top:1rem"><strong>Regra de leitura:</strong> proposta de sistema ≠ decisão oficial.</div></div>
+      </div>
+      <div class="meta"><span class="source">Fonte: seção 1 e aviso de escopo do documento</span><span>evidência antes de estética</span></div>
+    </section>
+
+    <section class="slide" data-number="03">
+      <div class="kicker">Modelo recomendado</div>
+      <h2>Seis níveis, seis funções — uma hierarquia a validar.</h2>
+      <div class="grid-3">
+        <div class="node"><strong>HUB</strong><span>marca-mãe / ecossistema</span></div>
+        <div class="node"><strong>Plataforma HUB</strong><span>software, dados e workflows</span></div>
+        <div class="node"><strong>HUB Negócios</strong><span>serviços e implementação</span></div>
+        <div class="node"><strong>Instituto HUB</strong><span>frente de impacto</span></div>
+        <div class="node"><strong>Método C.A.O.S.</strong><span>lógica operacional</span></div>
+        <div class="node"><strong>Selo HUB</strong><span>reconhecimento baseado em evidências</span></div>
+      </div>
+      <div class="callout" style="margin-top:1.25rem"><strong>Hipótese central:</strong> uma arquitetura endossada pode organizar a narrativa, desde que atribuição jurídica, visual e metodológica seja aprovada separadamente.</div>
+    </section>
+
+    <section class="slide" data-number="04">
+      <div class="kicker">Função e limite</div>
+      <h2>O mesmo nome pode orientar; não pode provar.</h2>
+      <table>
+        <thead><tr><th>Nível</th><th>Função estratégica</th><th>O que não se deve inferir</th></tr></thead>
+        <tbody>
+          <tr><td>HUB</td><td>Tese, padrões e narrativa do ecossistema.</td><td>Titularidade jurídica ou entidade única.</td></tr>
+          <tr><td>Plataforma HUB</td><td>Software, dados, workflows e capacidade tecnológica.</td><td>Todos os serviços HUB.</td></tr>
+          <tr><td>HUB Negócios</td><td>Serviços comerciais e implementação.</td><td>CNPJ, faturamento ou propriedade de PI.</td></tr>
+          <tr><td>Instituto HUB</td><td>Frente missionária/restrita.</td><td>Constituição como OSC ou elegibilidade.</td></tr>
+          <tr><td>Método C.A.O.S.</td><td>Contexto → Arquitetura → Operação → Sustentação.</td><td>Registro, licença ou exclusividade.</td></tr>
+          <tr><td>Selo HUB</td><td>Reconhecimento baseado em evidências.</td><td>Certificação, acreditação ou produto liberado.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="slide" data-number="05">
+      <div class="kicker">Regras de coerência</div>
+      <h2>Uma linguagem consistente reduz risco de atribuição.</h2>
+      <div class="grid-2">
+        <div class="card"><h3>Quando usar</h3><ul><li><strong>HUB:</strong> narrativa do ecossistema e padrões comuns.</li><li><strong>Plataforma HUB:</strong> software, dados e workflows.</li><li><strong>HUB Negócios:</strong> serviço comercial ou implementação.</li><li><strong>Instituto HUB:</strong> iniciativa de impacto compatível com governança e funding.</li></ul></div>
+        <div class="card"><h3>Quando bloquear</h3><ul><li>Não misturar receita comercial com funding restrito sem regra aprovada.</li><li>Não apresentar o Selo como certificação.</li><li>Não transformar o Método C.A.O.S. em titularidade ou licença confirmada.</li><li>Não perder proveniência ou status de maturidade em aplicações derivadas.</li></ul></div>
+      </div>
+      <div class="meta"><span class="source">Fonte: seção 3 — regras de coerência propostas</span><span class="status">não aprovado</span></div>
+    </section>
+
+    <section class="slide" data-number="06">
+      <div class="kicker">Decisões pendentes</div>
+      <h2>Antes de escalar, precisamos decidir o que a arquitetura pode prometer.</h2>
+      <div class="grid-2">
+        <div class="card"><h3>Identidade e responsabilidade</h3><ul><li>Qual é o nome oficial da marca-mãe?</li><li>Qual entidade responde por cada nome, PI, contrato e publicação?</li><li>Qual é o grau de endosso entre HUB, produtos, programas e parceiros?</li></ul></div>
+        <div class="card"><h3>Expressão e reconhecimento</h3><ul><li>Como método, produto e reconhecimento serão diferenciados visualmente?</li><li>Como evitar uma certificação implícita no Selo?</li><li>Quando BRD-001 e BRD-003 podem ser formalmente aprovados?</li></ul></div>
+      </div>
+      <div class="callout warning" style="margin-top:1.25rem"><strong>Gate:</strong> decisões de governança devem preceder a promoção desta arquitetura para uma camada oficial.</div>
+    </section>
+
+    <section class="slide" data-number="07">
+      <div class="kicker">Próximo teste</div>
+      <h2>Aplicar a arquitetura em um artefato real — e medir o custo.</h2>
+      <div class="grid-3">
+        <div class="card"><h3>1 · Conteúdo</h3><p>Validar nomes, atribuições, rótulos de hipótese e referências no deck.</p></div>
+        <div class="card"><h3>2 · Design</h3><p>Aplicar tokens provisórios a slides, tabelas, cards e diagramas.</p></div>
+        <div class="card"><h3>3 · Verificação</h3><p>Conferir proveniência, acessibilidade, maturidade e limites de claim.</p></div>
+      </div>
+      <div class="callout" style="margin-top:1.25rem"><strong>Resultado esperado:</strong> um PDF apresentável, um HTML navegável e uma medição simples de tempo, dependências e falhas da pipeline.</div>
+      <div class="meta"><span><strong>Saída:</strong> HTML + PDF</span><span><strong>Origem:</strong> arquitetura-de-marca.md</span></div>
+    </section>
+  </main>
+</body>
+</html>
