@@ -2,7 +2,7 @@
 
 > **Status:** rascunho de trabalho / provisório  
 > **Local:** `01-work/documentacao-tecnica/plataforma-de-marca/`  
-> **Base:** revisão de marketing e marca realizada no worktree `codex/plataforma-de-marca`  
+> **Base:** revisão de marketing e marca realizada na branch principal `main`
 > **Regra:** este plano orienta a criação dos padrões; não aprova marca, claim, identidade visual ou material de publicação.
 
 ## 1. Objetivo
@@ -178,26 +178,27 @@ A primeira versão do sistema será considerada pronta para revisão quando:
 - materiais históricos não forem confundidos com templates vigentes;
 - o conjunto estiver pronto para revisão humana antes de qualquer promoção a `03-approved/`.
 
-## 7. Decisões pendentes
+## 7. Decisões direcionais registradas
 
-1. Qual é o nome oficial da marca-mãe: `HUB`, `HUB Plataforma`, `HUB Negócios` ou outro?
-2. Qual é a relação entre HUB, HUB Negócios, Instituto HUB, Plataforma HUB, CAOS e Selo?
-3. O Selo é certificação, reconhecimento, marca de programa, produto comercial ou ainda uma hipótese?
-4. Qual público prioritário deve orientar o primeiro sistema de apresentações?
-5. Existe identidade visual externa aprovada ou o sistema será proposto do zero?
-6. O sistema visual será único ou permitirá identidades derivadas por produto, programa ou parceiro?
-7. O white-label é uma capacidade comercial central? O que permanece obrigatoriamente atribuído à HUB?
-8. Quais claims de impacto, ROI, inteligência, matching, rede, certificação, moat, dados e benchmarks podem ser usados agora?
-9. Quais decks históricos ainda são referências válidas de narrativa ou estética?
-10. Qual primeiro output deve receber prioridade: plataforma de marca, identidade visual, template de deck, biblioteca de slides, dashboards ou claim registry?
+As respostas abaixo foram registradas como direção de trabalho para a próxima fase. Elas não substituem aprovação formal, validação jurídica, governança de claims ou promoção para `03-approved/`.
+
+1. **Nome oficial da marca-mãe:** `HUB`.
+2. **Relação entre HUB, HUB Negócios, Instituto HUB, Plataforma HUB, CAOS e Selo:** frentes diferentes, porém conectáveis, que compõem o ecossistema da plataforma.
+3. **Selo:** permanece uma hipótese; sua direção futura é mais próxima de certificação ou reconhecimento, sem autorização de uso público até definição de critérios, independência e governança.
+4. **Público prioritário para apresentações:** público geral.
+5. **Identidade visual externa aprovada:** não existe. O sistema será proposto a partir dos rascunhos visuais encontrados no arquivo de referências em `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/`.
+6. **Identidades derivadas:** permitidas para produtos e programas, com derivação suave e alterações mínimas em relação ao sistema HUB.
+7. **White-label:** capacidade e atribuições obrigatórias permanecem indefinidas; este ponto continua pendente de decisão específica.
+8. **Claims:** a direção é cobrir claims de impacto, ROI, inteligência, matching, rede, certificação, moat, dados e benchmarks. A autorização de cada claim continua condicionada a fonte, owner, nível de evidência, validade e gate aplicável.
+9. **Referência histórica prioritária:** `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/Decks atualizados/Apresentação - NESST.pdf`.
+10. **Prioridade de outputs:** primeiro identidade visual; em seguida, plataforma de marca.
 
 ## 8. Próxima ação recomendada
 
-Revisar este plano com o usuário e confirmar as decisões da seção 7 antes de criar os documentos normativos. Após a confirmação, iniciar por:
+Com as direções acima registradas, iniciar a próxima fase sem promover os materiais automaticamente para padrão aprovado. Priorizar:
 
 1. `00-controle/README.md`;
 2. `00-controle/matriz-fontes-e-autoridade.md`;
-3. `01-plataforma-estrategica/arquitetura-de-marca.md`;
-4. `02-identidade-verbal/claims-registry.md`;
-5. `03-identidade-visual/sistema-visual.md`.
-
+3. `03-identidade-visual/sistema-visual.md` e seus módulos de identidade derivados;
+4. `01-plataforma-estrategica/arquitetura-de-marca.md`;
+5. `02-identidade-verbal/claims-registry.md`, mantendo os gates de evidência e aprovação.

@@ -12,22 +12,27 @@ escopo: decisões estratégicas de marca
 
 | ID | Tema | Estado atual | Evidência | Decisão efetiva |
 |---|---|---|---|---|
-| PM-001 | Arquitetura de marca | proposta para revisão | `01-plataforma-estrategica/arquitetura-de-marca.md`; `00-project-control/registro-lacunas/lacunas/BRD-001.md` | Pendente de governança de marca. |
-| PM-002 | Posicionamento | hipótese de trabalho | `01-plataforma-estrategica/proposito-promessa-e-posicionamento.md`; `02-review/01-mvps/LEIAME-origem-inbox.md` | Pendente de escolha de público, caso e claim registry. |
-| PM-003 | Públicos prioritários | mapa de hipóteses | `01-plataforma-estrategica/publicos-e-contextos-de-mensagem.md`; `03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/README.md` | Pendente de priorização humana. |
+| PM-001 | Arquitetura de marca | direção registrada; formalização pendente | `01-plataforma-estrategica/arquitetura-de-marca.md`; `00-project-control/registro-lacunas/lacunas/BRD-001.md` | Marca-mãe definida como `HUB`; as demais frentes são conectáveis dentro do ecossistema. Formalização e aprovação permanecem pendentes. |
+| PM-002 | Posicionamento | hipótese de trabalho | `01-plataforma-estrategica/proposito-promessa-e-posicionamento.md`; `02-review/01-mvps/LEIAME-origem-inbox.md` | Público prioritário definido como público geral; posicionamento e claims continuam sujeitos a revisão. |
+| PM-003 | Públicos prioritários | direção registrada | `01-plataforma-estrategica/publicos-e-contextos-de-mensagem.md`; `03-approved/matriz-de-oferta-e-comprador-cenarios/cenarios/README.md` | O primeiro sistema de apresentações deve orientar-se ao público geral. |
 | PM-004 | Portfólio e módulos | mapa estratégico | `01-plataforma-estrategica/arquitetura-de-ofertas-e-produtos.md`; `wiki/architecture/modulos-hub-core.md` | Pendente de relação entre módulos, ofertas e lançamentos. |
-| PM-005 | Nomenclatura | proposta para revisão | `01-plataforma-estrategica/nomenclatura-e-taxonomia.md`; documentos de PI e operação indicados no arquivo | Pendente de nome oficial, PI e governança. |
-| PM-006 | White-label/endosso | princípios provisórios | `01-plataforma-estrategica/principios-de-white-label-e-endosso.md`; `00-project-control/registro-lacunas/lacunas/BRD-003.md` | Bloqueado até regras e aprovações Produto + Marca + Jurídico. |
-| PM-007 | Selo HUB | hipótese bloqueada | `01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md`; `04-project-management/tarefas/P04-T03_Charter_Selo_Independencia.md` | Não tratar como certificação nem liberar para GTM sem GOV-003. |
+| PM-005 | Nomenclatura | direção registrada; proposta para revisão | `01-plataforma-estrategica/nomenclatura-e-taxonomia.md`; documentos de PI e operação indicados no arquivo | Marca-mãe definida como `HUB`; relações e nomenclaturas derivadas ainda exigem formalização. |
+| PM-006 | White-label/endosso | indefinido / princípios provisórios | `01-plataforma-estrategica/principios-de-white-label-e-endosso.md`; `00-project-control/registro-lacunas/lacunas/BRD-003.md` | Capacidade comercial e atribuições obrigatórias permanecem indefinidas; bloqueado até regras e aprovações Produto + Marca + Jurídico. |
+| PM-007 | Selo HUB | hipótese bloqueada | `01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md`; `04-project-management/tarefas/P04-T03_Charter_Selo_Independencia.md` | Direção futura mais próxima de certificação ou reconhecimento; não tratar como certificado nem liberar para GTM sem GOV-003. |
 | PM-008 | Método C.A.O.S. | método operacional provisório | `01-work/pesquisa-e-confianca/documentos-oficiais/13-operacoes-processos/13.01-SOPs-fluxos-CAOS.md`; `01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md` | Pendente de definição de titularidade/licença e forma de uso. |
+| PM-009 | Identidade visual | direção registrada; proposta para revisão | `03-identidade-visual/sistema-visual.md`; `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/` | Não existe identidade visual externa aprovada. Propor o sistema a partir dos rascunhos encontrados, permitindo derivações suaves por produto e programa. |
+| PM-010 | Referência de deck | referência histórica prioritária | `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/Decks atualizados/Apresentação - NESST.pdf` | Usar como referência de narrativa/estética após classificação; não tratar como template vigente. |
+| PM-011 | Prioridade de outputs | direção registrada | `plano-de-implementacao-plataforma-de-marca.md` | Priorizar identidade visual e, em seguida, plataforma de marca. |
+| PM-012 | Escopo de claims | direção de cobertura; aprovação pendente | `02-identidade-verbal/claims-registry.md`; `06-governanca-e-publicacao/fluxo-de-aprovacao-de-claims.md` | Cobrir as categorias de impacto, ROI, inteligência, matching, rede, certificação, moat, dados e benchmarks, sempre mantendo fonte, owner, evidência, validade e gate por claim. |
 
 ## Próximas decisões necessárias
 
-1. Confirmar ou corrigir a arquitetura proposta em PM-001.
-2. Escolher o primeiro público/caso da narrativa e o nível de evidência permitido.
-3. Definir a relação entre marca-mãe, Plataforma HUB, HUB Negócios e Instituto HUB.
-4. Nomear responsáveis por BRD-001, BRD-003, GOV-003 e claims públicos.
-5. Definir se os documentos devem avançar para revisão ou permanecer em hipótese.
+1. Formalizar a arquitetura proposta em PM-001 e nomear os owners.
+2. Definir o nível de evidência e os gates para cada categoria de claim.
+3. Resolver white-label/endosso, incluindo o que permanece obrigatoriamente atribuído à HUB.
+4. Definir os responsáveis por BRD-001, BRD-003, GOV-003 e claims públicos.
+5. Classificar o deck NESST e os demais rascunhos antes de reutilizá-los.
+6. Definir quais documentos podem avançar para revisão e quais permanecem em hipótese.
 
 ## Critério de fechamento
 

@@ -4,33 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e787596a92678b34",
+        "id": "47c7c85a2d0d5b11",
         "type": "tabs",
         "children": [
           {
-            "id": "8f416cef3f87ebda",
+            "id": "856b56ccf64ae33a",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "TaskNotes/Views/kanban-default.base",
-                "viewName": "Kanban Board"
+                "file": "01-work/documentacao-tecnica/plataforma-de-marca/plano-de-implementacao-plataforma-de-marca.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "tasknotes-simple",
-              "title": "kanban-default"
+              "icon": "lucide-file",
+              "title": "plano-de-implementacao-plataforma-de-marca"
             }
           },
           {
-            "id": "f66429da5596f57c",
+            "id": "8a1ce41ed755c135",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "TaskNotes/Views/calendar-default.base",
-                "viewName": "Calendar"
+                "file": "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-marca.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "tasknotes-simple",
-              "title": "calendar-default"
+              "icon": "lucide-file",
+              "title": "arquitetura-de-marca"
             }
           }
         ]
@@ -95,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.34765625
+    "width": 316.68359375
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -220,19 +222,34 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "8f416cef3f87ebda",
+  "active": "aa7b9d1bda30d77d",
   "lastOpenFiles": [
-    "TaskNotes/Views/calendar-default.base",
+    "01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/inventario-de-visuais.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-marca.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/99-referencias",
+    "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/nomenclatura-e-taxonomia.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-ofertas-e-produtos.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/00-controle/registro-de-progresso.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/plano-de-implementacao-plataforma-de-marca.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/00-controle/registro-de-decisoes.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/00-controle/README.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/00-controle/matriz-fontes-e-autoridade.md",
     "TaskNotes/Views/kanban-default.base",
+    "05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/[FIRJAN] Deck - Plataforma HUB.pdf",
+    "05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/Decks atualizados/Apresentação - NESST.pdf",
+    "05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/Decks atualizados",
+    "05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/untitled folder",
+    "01-work/documentacao-tecnica/plataforma-de-marca/DESIGN.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/06-governanca-e-publicacao/fluxo-de-aprovacao-de-claims.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/05-sistema-de-produto-e-dashboards/tokens-de-interface.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/03-identidade-visual/sistema-visual.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/regras-de-graficos-e-tabelas.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf",
+    "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.pdf",
+    "01-work/documentacao-tecnica/plataforma-de-marca/02-identidade-verbal/claims-registry.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/principios-de-white-label-e-endosso.md",
+    "TaskNotes/Views/calendar-default.base",
     "TaskNotes/Views/documentacao-oficial.base",
-    "TaskNotes/Views/mini-calendar-default.base",
-    "TaskNotes/Views/agenda-default.base",
-    "wiki/wiki-folder-map.md.tmp.3eb3161c-7daf-4b01-83e8-ff188c744281",
-    "00-project-control/registro-lacunas/lacunas/DAT-010.md.tmp.a15d82ef-a3d9-4f6a-ab79-a9435533b672",
-    "00-project-control/registro-lacunas/lacunas/DAT-009.md.tmp.a9d14849-cbb1-4e5f-b2e3-baff8ef7a34e",
-    "00-project-control/registro-lacunas/lacunas/DAT-008.md.tmp.133effe1-f89e-42ba-894e-def9a5ba01d6",
-    "00-project-control/registro-lacunas/lacunas/DAT-007.md.tmp.7778fbf5-e95b-477c-9b19-f1976e8d9f41",
-    "00-project-control/registro-lacunas/lacunas/DAT-006.md.tmp.d2097e04-95fd-4cf8-826b-bd00ecc39ea3",
     "04-project-management/registros-trabalho/logs-progresso/2026-09-06-registro-progresso-open-knowledge-e-gate-P03-T01.md",
     "wiki/wiki-folder-map.md",
     "04-project-management/gates/P03-T01/review/P03-T01-review-001.md",
@@ -243,21 +260,6 @@
     "docs/plans/2026-09-06-p03-t01-gate-folder-pilot.md",
     "specs/p03-t01-gate-folder/PRODUCT.md",
     "docs/specs/2026-09-05-monks-dry-run-evidence-design.md",
-    "docs/specs/2026-09-05-reconciliacao-fonte-aprovada-design.md",
-    "docs/plans/2026-09-05-reconciliacao-fonte-aprovada.md",
-    "docs/plans/2026-09-05-monks-dry-run-evidence.md",
-    "wiki/architecture/modulos-hub-core.md",
-    "wiki/concepts/plataforma-inteligencia-hub.md",
-    "wiki/evidence/pilot-evidence-detail.md",
-    "wiki/concepts/reconciliacao-fonte-aprovada.md",
-    "wiki/decisions/2026-09-05-fronteiras-lifecycle.md",
-    "wiki/workflows/wiki-maintenance.md",
-    "System/docs 2/specs/2026-09-05-reconciliacao-fonte-aprovada-design.md",
-    "System/docs 2/specs/2026-09-05-monks-dry-run-evidence-design.md",
-    "System/docs 2/plans/2026-09-05-reconciliacao-fonte-aprovada.md",
-    "System/docs 2/plans/2026-09-05-monks-dry-run-evidence.md",
-    "wiki/decisions/2026-09-05-agrupamento-tematico-01-work.md",
-    "wiki/evidence/evidence-register.md",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.canvas",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "02-review/02-visao-plataforma/Exemplo de Deck/visuais/ChatGPT Image 29 de ago. de 2026, 12_09_50.png",

@@ -21,12 +21,14 @@ Este documento separa deliberadamente:
 | `02-review/02-visao-plataforma/visuais/Visão geral.jpeg` | Variante cromática com azul-petróleo escuro, amarelo-lima, navy, cartões claros e ilustrações lineares; título serifado de alto contraste. | `02-review`; conflita com a referência violeta e não deve ser misturada automaticamente. |
 | `02-review/01-mvps/README.md` e `02-review/02-visao-plataforma/README.md` | Os dois conjuntos são descritos como congelados para gate, com saída aprovada ou rejeitada. | Evidência de maturidade e localização, não aprovação visual. |
 | `05-resources/inbox/Plataforma HUB/README.md` | `visuais/` reúne imagens, diagramas e referências; `99-arquivo/` preserva histórico. | A própria organização exige ligação entre visual, fonte original e cartão de processamento. |
+| `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/ChatGPT Image 29 de ago. de 2026, 12_47_53.png` | Moodboard “HUB / SISTEMA VIVO”: wordmark HUB, símbolo de círculos sobrepostos, navy, teal, violeta, coral/vermelho, laranja/amarelo, Sora para títulos, Inter para corpo, ícones lineares, dashboards, aplicações e fotografia humana. | Rascunho visual histórico; baseline provisório para prototipagem, sem aprovação de logo, paleta, fontes ou assets. Ver [inventário](../99-referencias/inventario-de-visuais.md). |
+| `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/Decks atualizados/Apresentação - NESST.pdf` | Deck de 64 páginas em 16:9; narrativa de pessoas, oportunidade, performance, conexão, dados e impacto; composição editorial com creme, navy, teal, terracota/laranja e fotografias recortadas. | Referência histórica narrativa e estética; não é template vigente, prova factual ou identidade aprovada. Ver [inventário](../99-referencias/inventario-de-visuais.md). |
 | `01-work/pesquisa-e-confianca/documentos-oficiais/12-comercial-GTM/12.03-brand-guidelines-claim-registry.md` | Registro de marca/claims está com `status: hipotese`, sem dono, data de aprovação ou PDF. | Não há diretriz externa aprovada disponível nesta evidência. |
 | `01-work/documentacao-tecnica/plataforma-de-marca/plano-de-implementacao-plataforma-de-marca.md` | Declara que ainda não existe sistema integrado aprovado para logo, paleta, tipografia, grid, templates, tokens ou dashboards. | Fonte de planejamento; confirma o caráter provisório desta entrega. |
 
 ### 2.1 Observações não convertidas em regra
 
-Não foram encontrados, nesta leitura, valores oficiais de cor, arquivos-mestre de logotipo, nomes/licenças de fontes, biblioteca de ícones, regras de fotografia, tokens implementados ou matriz de contraste aprovada. A aparência recorrente das imagens é uma pista de direção, não uma autorização para copiar ou fixar valores.
+Não foram encontrados, nesta leitura, valores oficiais de cor, arquivos-mestre de logotipo, nomes/licenças confirmados de fontes, biblioteca de ícones, regras de fotografia, tokens implementados ou matriz de contraste aprovada. A aparência recorrente das imagens é uma pista de direção, não uma autorização para copiar ou fixar valores. O moodboard “HUB / SISTEMA VIVO” e o deck NESST apresentam direções parcialmente diferentes; para prototipagem, o primeiro será o baseline visual provisório e o segundo uma referência narrativa/editorial complementar.
 
 ## 3. Princípios recomendados
 
@@ -41,11 +43,11 @@ Não foram encontrados, nesta leitura, valores oficiais de cor, arquivos-mestre 
 
 ### Cor
 
-Usar os tokens provisórios em [tokens-de-interface.md](../05-sistema-de-produto-e-dashboards/tokens-de-interface.md). A hipótese mínima é: neutros para estrutura; violeta para ação/ênfase de marca; azul, verde, âmbar e vermelho somente para semântica ou categorias explicitamente legendadas. A paleta azul-petróleo/lima observada deve permanecer como referência alternativa até a decisão de identidade.
+Usar os tokens provisórios em [tokens-de-interface.md](../05-sistema-de-produto-e-dashboards/tokens-de-interface.md). A direção de prototipagem atual usa navy como base estrutural e teal, violeta, coral/vermelho e laranja/amarelo como acentos; neutros sustentam a leitura. Azul, verde, âmbar e vermelho devem continuar semânticos ou explicitamente legendados. Os valores do moodboard não são ainda uma paleta aprovada nem substituem testes de contraste.
 
 ### Tipografia
 
-Usar uma família sans-serif de interface com boa leitura em português e numerais tabulares quando houver métrica. Reservar uma eventual serif display para títulos editoriais somente depois de confirmar fonte, licença e coerência entre produto e apresentações. Ver escala provisória nos tokens.
+Usar uma família sans-serif de interface com boa leitura em português e numerais tabulares quando houver métrica. A hipótese observada no moodboard é `Sora` para títulos e `Inter` para corpo; confirmar licença, disponibilidade, pesos e coerência antes de fixá-las. Reservar uma eventual serif display para títulos editoriais somente depois de confirmar fonte, licença e coerência entre produto e apresentações. Ver escala provisória nos tokens.
 
 ### Grid, composição e espaçamento
 
@@ -86,13 +88,14 @@ Cada asset ou referência visual deve registrar: `asset_id`, caminho original, t
 
 ## 7. Decisões de identidade ainda abertas
 
-1. Nome oficial e arquitetura entre HUB, Plataforma HUB, HUB Negócios, Instituto HUB, CAOS e Selo.
-2. Se o eixo principal será violeta/escuro, azul-petróleo/lima, ou outro sistema aprovado.
+1. Como formalizar a arquitetura entre HUB, Plataforma HUB, HUB Negócios, Instituto HUB, CAOS e Selo.
+2. Se a direção provisória navy + teal/violeta/coral/laranja será aprovada, ajustada ou substituída.
 3. Logo, assinaturas, área de proteção, usos permitidos e arquivo-mestre.
 4. Família tipográfica, licenças, pesos e eventual papel de uma serif display.
 5. Personalidade visual de produtos, programas, parceiros e white-label.
 6. Owner de marca, gate de aprovação e registro de versões.
+7. Quais elementos do deck NESST serão reutilizáveis como narrativa e quais devem permanecer apenas históricos.
 
 ## 8. Próxima validação
 
-Antes de promover qualquer regra: escolher uma direção cromática, obter os ativos/fontes oficiais, testar os pares de contraste, aplicar os tokens a um slide, um dashboard e uma tabela reais, e registrar a decisão no controle do projeto. Até lá, este documento permanece hipótese de trabalho.
+Antes de promover qualquer regra: obter os ativos/fontes oficiais, testar os pares de contraste da direção navy + teal/violeta/coral/laranja, aplicar os tokens a um slide, um dashboard e uma tabela reais, classificar o NESST e registrar a decisão no controle do projeto. Até lá, este documento permanece hipótese de trabalho.
