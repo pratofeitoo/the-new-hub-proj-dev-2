@@ -154,19 +154,19 @@ Foi executado um teste longo usando `01-plataforma-estrategica/arquitetura-de-ma
 
 O PDF foi corrigido para proporção 16:9. A verificação confirmou sete páginas em formato paisagem 16:9 e inspeção visual em resolução 1920×1080. Foi observado um pequeno conflito visual entre a numeração da capa e a linha de status; esse artefato não deve ser tratado como saída final aprovada.
 
-## 9. Correção de processo: Open Design
+## 9. Critério de execução revisado
 
-Foi esclarecido que as apresentações finais devem ser produzidas com o plugin Open Design.
+O critério que exigia o uso do plugin Open Design para a produção das apresentações finais foi cancelado. O plugin não é mais requisito de execução, nem condição para considerar uma apresentação apta à revisão.
 
-O diagnóstico posterior mostrou:
+O diagnóstico anterior registrou, como contexto histórico:
 
 - Open Design está instalado no sistema;
 - o registro MCP `open-design` está habilitado;
 - o app Open Design está disponível no computador;
 - a fotografia inicial de ferramentas do task não expôs as operações do Open Design;
-- o runtime do Codex Slides também apresentou falha independente (`next: command not found`), mas isso não justifica substituir Open Design pelo fallback.
+- o runtime do Codex Slides também apresentou falha independente (`next: command not found`).
 
-Conclusão operacional: o HTML/PDF local é apenas um artefato de teste e comparação. A produção oficial deve aguardar a disponibilidade do Open Design no contexto ativo, possivelmente exigindo um novo task para atualizar a fotografia de ferramentas.
+Essas observações não bloqueiam mais a execução. HTML, PDF, Codex Slides ou outras ferramentas podem ser usados conforme adequação técnica, disponibilidade e critérios de qualidade do artefato. A escolha do renderer deve ser registrada quando afetar a reprodutibilidade, a qualidade ou a rastreabilidade; nenhum renderer específico é obrigatório.
 
 ## 10. Estado atual
 
@@ -178,7 +178,7 @@ Conclusão operacional: o HTML/PDF local é apenas um artefato de teste e compar
 - cards correspondentes registrados para acompanhamento manual no Kanbots;
 - verificação documental executada;
 - teste de apresentação de arquivo único produzido como fallback técnico;
-- necessidade de Open Design estabelecida como requisito para a saída final.
+- critério de execução revisado: o uso do Open Design não é obrigatório.
 - inventário visual e classificação inicial do deck NESST concluídos;
 - baseline visual provisório consolidado no documento de sistema visual.
 - seção de identidade verbal criada com voz/tom, vocabulário, mensagens, regras de evidência e exemplos provisórios.
@@ -188,8 +188,8 @@ Conclusão operacional: o HTML/PDF local é apenas um artefato de teste e compar
 ### Em aberto
 
 - criar o commit de checkpoint documental;
-- iniciar novo task com Open Design efetivamente exposto e executar novamente o teste de arquivo único;
-- comparar tempo, custo, qualidade visual e limitações entre o teste local e a execução Open Design;
+- executar novamente o teste de arquivo único com o renderer mais adequado e disponível;
+- comparar tempo, custo, qualidade visual e limitações entre as opções de renderer utilizadas;
 - revisar e decidir o conteúdo provisório com participação humana;
 - definir o que será promovido de provisório para aprovado.
 - classificar individualmente os demais decks históricos;
@@ -208,14 +208,14 @@ Antes de retomar a produção:
 2. preservar os artefatos HTML/PDF como experimento técnico, sem classificá-los como finais;
 3. classificar os decks históricos restantes e registrar o uso permitido;
 4. preparar os primeiros templates provisórios de deck, usando o sistema visual como hipótese não validada;
-5. abrir um novo task com Open Design explicitamente anexado;
-6. executar novamente um arquivo-fonte único e registrar custos, tempos e limitações;
+5. escolher o renderer para a próxima execução conforme disponibilidade e adequação técnica;
+6. executar novamente um arquivo-fonte único e registrar renderer, custos, tempos e limitações;
 7. retomar o pacote de validação visual quando essa etapa for autorizada.
 
 ## 12. Princípios de rastreabilidade
 
 - Não misturar documentação estratégica provisória com aprovação formal.
-- Não apresentar fallback local como geração Open Design.
+- Identificar honestamente o renderer utilizado em cada artefato; não atribuir a uma ferramenta uma geração feita por outra.
 - Manter sessões de agentes visíveis e rastreáveis quando houver delegação.
 - Fazer commits pequenos, com escopo e mensagem explícitos.
 - Verificar artefatos por evidência observável antes de declarar uma etapa concluída.

@@ -12,7 +12,7 @@ fontes:
 
 # Templates de deck — HUB
 
-> São especificações provisórias para orientar protótipos. Os decks históricos e os PDFs locais não são templates oficiais. A produção final deve usar Open Design quando o runtime estiver disponível.
+> São especificações provisórias para orientar protótipos. Os decks históricos e os PDFs locais não são templates oficiais. A produção pode usar qualquer renderer ou ferramenta que atenda aos critérios de qualidade, rastreabilidade e revisão definidos para o artefato.
 
 ## 1. Sistema comum
 

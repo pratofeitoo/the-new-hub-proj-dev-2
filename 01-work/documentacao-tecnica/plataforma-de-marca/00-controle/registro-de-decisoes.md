@@ -24,6 +24,7 @@ escopo: decisões estratégicas de marca
 | PM-010 | Referência de deck | referência histórica prioritária | `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/Decks atualizados/Apresentação - NESST.pdf` | Usar como referência de narrativa/estética após classificação; não tratar como template vigente. |
 | PM-011 | Prioridade de outputs | direção registrada | `plano-de-implementacao-plataforma-de-marca.md` | Priorizar identidade visual e, em seguida, plataforma de marca. |
 | PM-012 | Escopo de claims | direção de cobertura; aprovação pendente | `02-identidade-verbal/claims-registry.md`; `06-governanca-e-publicacao/fluxo-de-aprovacao-de-claims.md` | Cobrir as categorias de impacto, ROI, inteligência, matching, rede, certificação, moat, dados e benchmarks, sempre mantendo fonte, owner, evidência, validade e gate por claim. |
+| PM-013 | Renderer de apresentações | critério revisado | `00-controle/registro-de-progresso.md`; `04-sistema-de-apresentacoes/templates-de-deck.md`; `render-manifest.yml` | O uso do plugin Open Design não é obrigatório. O renderer deve ser escolhido conforme disponibilidade, adequação técnica, qualidade, rastreabilidade e revisão do artefato. |
 
 ## Próximas decisões necessárias
 

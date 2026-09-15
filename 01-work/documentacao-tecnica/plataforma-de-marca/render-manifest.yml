@@ -1,5 +1,5 @@
 renderer: local-html-css-pilot
-renderer_status: experimental; official Open Design production remains a separate gate
+renderer_status: experimental; renderer choice is open and Open Design is optional
 design: 01-work/documentacao-tecnica/plataforma-de-marca/DESIGN.md
 design_version: alpha
 lifecycle: pilot
