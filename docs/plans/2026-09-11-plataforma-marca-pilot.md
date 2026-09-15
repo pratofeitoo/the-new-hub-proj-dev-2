@@ -27,10 +27,10 @@
 
 **Security flag:** none
 
-- [ ] Add YAML front matter with `version: alpha`, `name`, colors, typography, rounded, spacing, and component tokens.
-- [ ] Add the canonical ordered sections and explicitly mark all values as provisional.
-- [ ] Include accessibility, chart/table, and provisional-content rules in the prose.
-- [ ] Verify the file has balanced front-matter fences and no unresolved token references.
+- [x] Add YAML front matter with `version: alpha`, `name`, colors, typography, rounded, spacing, and component tokens.
+- [x] Add the canonical ordered sections and explicitly mark all values as provisional.
+- [x] Include accessibility, chart/table, and provisional-content rules in the prose.
+- [x] Verify the file has balanced front-matter fences and no unresolved token references.
 
 Verification:
 
@@ -47,10 +47,10 @@ Expected: exit code 0, or a documented tool-unavailable result followed by struc
 
 **Security flag:** none
 
-- [ ] List all six strategic Markdown sources with exact relative paths.
-- [ ] Reference the shared `DESIGN.md` explicitly.
-- [ ] Declare HTML and PDF output paths, renderer metadata, `design_version`, and provisional lifecycle status.
-- [ ] Validate YAML parsing and verify every listed source exists.
+- [x] List all six strategic Markdown sources with exact relative paths.
+- [x] Reference the shared `DESIGN.md` explicitly.
+- [x] Declare HTML and PDF output paths, renderer metadata, `design_version`, and provisional lifecycle status.
+- [x] Validate YAML parsing and verify every listed source exists.
 
 Verification:
 
@@ -75,11 +75,11 @@ Expected: `manifest sources and design: OK`.
 
 **Security flag:** none
 
-- [ ] Render one navigable chapter per source file in manifest order.
-- [ ] Preserve headings, lists, tables, source paths, and provisional-status labels.
-- [ ] Apply DESIGN.md tokens through CSS variables rather than unrelated hard-coded styling.
-- [ ] Include print-safe page breaks and a visible provenance footer.
-- [ ] Keep the HTML self-contained with no external network dependency.
+- [x] Render one navigable chapter per source file in manifest order.
+- [x] Preserve headings, lists, tables, source paths, and provisional-status labels.
+- [x] Apply DESIGN.md tokens through CSS variables rather than unrelated hard-coded styling.
+- [x] Include print-safe page breaks and a visible provenance footer.
+- [x] Keep the HTML self-contained with no external network dependency.
 
 Verification:
 
@@ -103,9 +103,9 @@ Expected: `HTML pilot structure: OK`.
 
 **Security flag:** none
 
-- [ ] Generate the PDF from the pilot HTML, not from a separate manually maintained layout.
-- [ ] Confirm the PDF is non-empty and landscape.
-- [ ] Inspect representative first, middle, and final pages for clipping, contrast, and visible status/provenance.
+- [x] Generate the PDF from the pilot HTML, not from a separate manually maintained layout.
+- [x] Confirm the PDF is non-empty and landscape.
+- [x] Inspect representative first, middle, and final pages for clipping, contrast, and visible status/provenance.
 
 Verification:
 
@@ -122,10 +122,10 @@ Expected: a non-zero page count, landscape page dimensions, and successful metad
 
 **Security flag:** none
 
-- [ ] Confirm `git diff --name-only` contains no source-file modifications.
-- [ ] Confirm all six source titles appear in HTML and PDF text extraction.
-- [ ] Open the HTML in a browser and inspect the rendered navigation and chapters.
-- [ ] Record any renderer limitation without changing source content.
+- [x] Confirm `git diff --name-only` contains no source-file modifications.
+- [x] Confirm all six source titles appear in HTML and PDF text extraction.
+- [x] Open the HTML in a browser and inspect the rendered navigation and chapters.
+- [x] Record any renderer limitation without changing source content.
 
 Verification:
 
