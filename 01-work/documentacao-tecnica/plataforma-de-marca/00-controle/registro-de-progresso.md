@@ -119,6 +119,9 @@ As sessões permanecem disponíveis para inspeção no ambiente Codex.
 - `00-controle/README.md`
 - `00-controle/matriz-fontes-e-autoridade.md`
 - `99-referencias/inventario-de-visuais.md`
+- `99-referencias/inventario-de-decks-historicos.md`
+- `99-referencias/inventario-de-fontes-e-direitos.md`
+- `99-referencias/mapeamento-para-fontes-aprovadas.md`
 - `plano-de-implementacao-plataforma-de-marca.md`
 
 O conteúdo permanece provisório e sujeito a revisão e decisões humanas. Em particular, a arquitetura de marca registra limites explícitos: não aprova nomes, titularidade, licenças, certificações, claims ou estrutura societária.
@@ -136,7 +139,7 @@ Foi realizada uma verificação read-only do conjunto documental, incluindo:
 
 Resultado registrado na execução:
 
-- 55 arquivos Markdown encontrados no escopo documental após a implementação das seções de produto, dashboards, governança e publicação;
+- 59 arquivos Markdown encontrados no escopo documental após a implementação das seções de produto, dashboards, governança, publicação e referências;
 - nenhuma referência Markdown relativa quebrada identificada;
 - cercas de código consistentes;
 - nenhuma alteração em área protegida;
@@ -229,6 +232,9 @@ Essas observações não bloqueiam mais a execução. HTML, PDF, Codex Slides ou
 - validar os gates de decks, protótipos e dashboards em casos reais;
 - associar pessoas ou entidades aos papéis do RACI;
 - registrar as primeiras decisões e versões no changelog.
+- revisar o índice documental e os inventários com owners reais;
+- preencher o mapeamento de cada claim, métrica e asset usado em artefatos;
+- classificar e revisar os decks históricos individualmente.
 
 ## 11. Próximo checkpoint recomendado
 
