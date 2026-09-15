@@ -79,6 +79,28 @@ As sessões permanecem disponíveis para inspeção no ambiente Codex.
 - `03-identidade-visual/sistema-visual.md`
 - `05-sistema-de-produto-e-dashboards/tokens-de-interface.md`
 
+### Sistema de produto e dashboards
+
+- `05-sistema-de-produto-e-dashboards/principios-de-interface.md`
+- `05-sistema-de-produto-e-dashboards/tokens-de-interface.md`
+- `05-sistema-de-produto-e-dashboards/componentes-base.md`
+- `05-sistema-de-produto-e-dashboards/estados-e-feedback.md`
+- `05-sistema-de-produto-e-dashboards/padroes-de-dashboard.md`
+- `05-sistema-de-produto-e-dashboards/hierarquia-de-metricas.md`
+- `05-sistema-de-produto-e-dashboards/regras-de-visualizacao-de-dados.md`
+- `05-sistema-de-produto-e-dashboards/acessibilidade-de-interface.md`
+- `05-sistema-de-produto-e-dashboards/protocolo-de-prototipo.md`
+
+### Governança e publicação
+
+- `06-governanca-e-publicacao/status-e-rotulos-de-maturidade.md`
+- `06-governanca-e-publicacao/fluxo-de-aprovacao-de-claims.md`
+- `06-governanca-e-publicacao/fluxo-de-aprovacao-de-decks.md`
+- `06-governanca-e-publicacao/fluxo-de-aprovacao-de-prototipos.md`
+- `06-governanca-e-publicacao/fluxo-de-aprovacao-de-dashboards.md`
+- `06-governanca-e-publicacao/raci-de-marca.md`
+- `06-governanca-e-publicacao/controle-de-versoes-e-changelog.md`
+
 ### Apresentações
 
 - `04-sistema-de-apresentacoes/principios-de-narrativa.md`
@@ -114,7 +136,7 @@ Foi realizada uma verificação read-only do conjunto documental, incluindo:
 
 Resultado registrado na execução:
 
-- 16 arquivos Markdown encontrados no escopo documental;
+- 55 arquivos Markdown encontrados no escopo documental após a implementação das seções de produto, dashboards, governança e publicação;
 - nenhuma referência Markdown relativa quebrada identificada;
 - cercas de código consistentes;
 - nenhuma alteração em área protegida;
@@ -184,6 +206,7 @@ Essas observações não bloqueiam mais a execução. HTML, PDF, Codex Slides ou
 - seção de identidade verbal criada com voz/tom, vocabulário, mensagens, regras de evidência e exemplos provisórios.
 - seção de identidade visual desenvolvida com logo, paleta, tipografia, grid, iconografia, acessibilidade e proveniência.
 - seção de apresentações desenvolvida com narrativa, famílias de templates, notas de evidência e checklist de publicação.
+- seção de produto e dashboards desenvolvida com princípios de interface, tokens, componentes, estados, padrões de dashboard, hierarquia de métricas, visualização de dados, acessibilidade e protocolo de protótipo.
 
 ### Em aberto
 
@@ -199,6 +222,13 @@ Essas observações não bloqueiam mais a execução. HTML, PDF, Codex Slides ou
 - definir owners e gates para revisão da identidade verbal;
 - preencher fichas individuais de assets e confirmar direitos, fontes, logo e owners.
 - revisar mensagens e exemplos antes de qualquer uso público.
+- validar a seção de produto e dashboards com fluxos, dados e protótipos reais;
+- definir owners e gates específicos para componentes, métricas, dashboards e protótipos;
+- testar acessibilidade, responsividade, densidade e proveniência em implementações reais.
+- revisar a governança com os owners competentes;
+- validar os gates de decks, protótipos e dashboards em casos reais;
+- associar pessoas ou entidades aos papéis do RACI;
+- registrar as primeiras decisões e versões no changelog.
 
 ## 11. Próximo checkpoint recomendado
 

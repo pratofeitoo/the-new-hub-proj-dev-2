@@ -1,3 +1,17 @@
+---
+titulo: Tokens de interface — HUB
+status: rascunho / provisório / não aprovado
+escopo: tokens compartilhados para produto, protótipo, dashboard e apresentação
+owner: Design System + Produto — a confirmar
+fontes:
+  - ../03-identidade-visual/sistema-visual.md
+  - ../03-identidade-visual/acessibilidade-e-contraste.md
+  - ../04-sistema-de-apresentacoes/templates-de-deck.md
+dependencias:
+  - principios-de-interface.md
+  - componentes-base.md
+---
+
 # Tokens de interface — HUB Plataforma de Marca
 
 > **Status:** rascunho de trabalho / provisório / não aprovado  

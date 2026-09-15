@@ -5,6 +5,12 @@ status: "hipotese"
 versao: "v0.1"
 owner: "Governança verbal — a confirmar"
 nao-aprovado: true
+fontes:
+  - ../02-identidade-verbal/claims-registry.md
+  - ../02-identidade-verbal/regras-para-evidencia-e-incerteza.md
+  - ../00-controle/matriz-fontes-e-autoridade.md
+dependencias:
+  - status-e-rotulos-de-maturidade.md
 ---
 
 # Fluxo de aprovação de claims
