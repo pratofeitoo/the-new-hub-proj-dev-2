@@ -4,6 +4,7 @@ audio.mp3
 *.mp4
 .mdbase/cache.sqlite
 .logs/
+.worktrees/
 
 # Inactive Obsidian themes (active: March) — reinstall from marketplace
 .obsidian/themes/Blossom/
@@ -37,3 +38,4 @@ audio.mp3
 .github/skills/open-knowledge/
 .opencode/skills/open-knowledge/
 .pi/skills/open-knowledge/
+.kanbots/
