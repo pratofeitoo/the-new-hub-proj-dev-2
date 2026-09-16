@@ -29,6 +29,21 @@ O baseline de trabalho usa navy como estrutura e cores vivas como acentos de con
 
 ## 2. Tokens provisórios
 
+## 2.1 Paleta observada nas imagens de referência
+
+A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) apresenta uma paleta explicitamente rotulada, que passa a ser registrada como amostra de referência visual:
+
+| Amostra observada | Hex exibido na referência | Papel provisório |
+|---|---|---|
+| Navy profundo | `#0D1322` | base estrutural e fundo escuro |
+| Ameixa escura | `#2B1433` | profundidade e superfície secundária |
+| Violeta | `#5A2D6E` | conexão, agrupamento e acento |
+| Magenta | `#B23A6B` | trajetória e energia de rede |
+| Coral/vermelho | `#E15A4F` | ponto, ação ou ênfase controlada |
+| Teal | `#2A6A7E` | conexão, informação ou resultado |
+
+Os valores acima são observados na imagem, não extraídos de arquivo-mestre nem validados para contraste. Devem informar protótipos e testes, sem substituir a aprovação da paleta.
+
 Os componentes devem consumir tokens semânticos, não hex diretamente:
 
 ```yaml

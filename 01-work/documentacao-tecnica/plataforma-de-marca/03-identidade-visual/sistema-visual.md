@@ -14,6 +14,12 @@ Este documento separa deliberadamente:
 
 ## 2. Referências inventariadas
 
+### 2.1 Referência visual prioritária desta rodada
+
+Por orientação do usuário, o conjunto [WhatsApp (2)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(2).jpeg), [WhatsApp (3)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(3).jpeg), [WhatsApp (4)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(4).jpeg) e [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) passa a ser a referência visual prioritária para a próxima rodada de prototipagem. O conjunto mostra símbolo geométrico entrelaçado, wordmark `HUB` com ponto coral/vermelho, versões positiva e negativa, aplicações impressas e digitais, trajetórias com nós e órbitas, paleta rotulada e `Sora`/`Inter`.
+
+Esta referência substitui o moodboard anterior como prioridade de exploração visual, mas não como autoridade aprovada. Logo, paleta, assinaturas, tipografia, aplicações, Selo e assets continuam sujeitos a validação, direitos, contraste e aprovação humana.
+
 | Evidência | O que foi observado | Status / limite |
 |---|---|---|
 | `02-review/02-visao-plataforma/Exemplo de Deck/visuais/ChatGPT Image 29 de ago. de 2026, 12_09_50.png` | Montagem de 12 slides; capa escura com logo HUB em branco, rede luminosa violeta e texto claro; interiores claros; marcador numérico violeta; diagramas radiais, círculos, linhas e ícones lineares; cards com cantos arredondados; violeta como acento recorrente. | `02-review`, em revisão; referência visual, não template aprovado. |

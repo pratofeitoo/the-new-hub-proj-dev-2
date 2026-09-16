@@ -192,6 +192,7 @@ As respostas abaixo foram registradas como direção de trabalho para a próxima
 8. **Claims:** a direção é cobrir claims de impacto, ROI, inteligência, matching, rede, certificação, moat, dados e benchmarks. A autorização de cada claim continua condicionada a fonte, owner, nível de evidência, validade e gate aplicável.
 9. **Referência histórica prioritária:** `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/Decks atualizados/Apresentação - NESST.pdf`.
 10. **Prioridade de outputs:** primeiro identidade visual; em seguida, plataforma de marca.
+11. **Referência visual prioritária desta rodada:** conjunto de quatro imagens fornecido pelo usuário em `01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/`, registrado como direção provisória para símbolo, wordmark, paleta, tipografia, sistema gráfico e aplicações.
 
 ## 8. Próxima ação recomendada
 
@@ -202,3 +203,14 @@ Com as direções acima registradas, iniciar a próxima fase sem promover os mat
 3. `03-identidade-visual/sistema-visual.md` e seus módulos de identidade derivados;
 4. `01-plataforma-estrategica/arquitetura-de-marca.md`;
 5. `02-identidade-verbal/claims-registry.md`, mantendo os gates de evidência e aprovação.
+
+### 8.1 Validação do novo conjunto visual
+
+Antes de promover qualquer elemento do conjunto fornecido pelo usuário:
+
+1. confirmar autoria, titularidade, direitos e arquivo-mestre do símbolo e do wordmark;
+2. confirmar licenças, pesos e distribuição de `Sora` e `Inter`;
+3. testar a paleta candidata em pares claro/escuro, texto, controles, gráficos e projeção;
+4. aplicar a direção em um slide, um dashboard e uma tabela reais;
+5. validar que trajetórias, nós e texturas não sugerem evidência inexistente;
+6. registrar a decisão, owner, versão e escopo de uso antes de qualquer promoção.

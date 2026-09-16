@@ -23,6 +23,12 @@ Essas famílias não devem ser combinadas ou tratadas como versões oficiais sem
 
 ## 2. Direção provisória de prototipagem
 
+### 2.1 Referência visual fornecida pelo usuário
+
+As imagens [WhatsApp (2)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(2).jpeg), [WhatsApp (3)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(3).jpeg), [WhatsApp (4)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(4).jpeg) e [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) passam a ser a referência visual prioritária desta rodada. Elas apresentam um símbolo geométrico modular de aparência entrelaçada, wordmark `HUB` em caixa alta e ponto coral/vermelho como terminal. A referência inclui versões positiva, negativa, isolada, circular e aplicada em materiais impressos e plataforma digital.
+
+Isso define uma direção de exploração mais específica, mas não confirma que o símbolo ou o wordmark sejam arquivos-mestre, registráveis ou aprovados para publicação.
+
 Enquanto não houver arquivo-mestre aprovado:
 
 - usar `HUB` como nome da marca-mãe;

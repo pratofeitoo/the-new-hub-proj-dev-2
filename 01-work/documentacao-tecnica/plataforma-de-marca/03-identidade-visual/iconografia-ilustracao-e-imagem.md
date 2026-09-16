@@ -23,6 +23,12 @@ fontes:
 
 ## 2. Ilustrações e símbolos
 
+## 2.1 Sistema gráfico observado na referência fornecida
+
+As imagens fornecidas apresentam um sistema gráfico composto por: ponto focal, trajetórias curvas, nós coloridos, órbitas circulares, linhas finas, campos de textura e concentrações cromáticas que sugerem um sistema vivo. Esses elementos podem orientar capas, separadores, diagramas e estados de conexão, desde que não sejam usados para sugerir quantidade, causalidade, inteligência ou impacto sem evidência correspondente.
+
+O símbolo geométrico entrelaçado deve ser tratado como referência de marca principal; o status de logo oficial, autoria, titularidade e arquivo-mestre permanece pendente.
+
 Os círculos sobrepostos, nós e linhas observados nos rascunhos podem representar conexão, diversidade, fluxo e possibilidade. Em protótipos:
 
 - usar essas formas como linguagem editorial ou estrutural;

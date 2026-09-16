@@ -147,14 +147,20 @@ Resultado registrado na execução:
 
 ## 7. Inventário visual e consolidação provisória
 
+### 7.1 Nova referência visual prioritária
+
+Em 2026-09-16, o usuário forneceu quatro imagens em `01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/` para orientar a próxima rodada da identidade visual: versões clara e escura da marca principal, aplicações editoriais e digitais, símbolo geométrico entrelaçado, wordmark `HUB.` com ponto coral/vermelho, trajetórias com nós e órbitas, paleta rotulada e tipografia `Sora`/`Inter`.
+
+O conjunto fornecido passa a ser a referência visual prioritária de prototipagem. O moodboard `HUB / SISTEMA VIVO` permanece como referência histórica complementar e o deck NESST como referência narrativa/editorial. A nova referência não foi promovida a logo, paleta, fonte, asset ou template aprovado; autoria, direitos, contraste e arquivo-mestre continuam pendentes.
+
 Foi inventariado o arquivo `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/` sem alterar os originais:
 
 - 45 imagens, 6 PDFs e 1 PPTX criativos/documentais;
 - 1 arquivo `.DS_Store`, excluído da análise visual;
 - 9 grupos de hashes duplicados, totalizando 18 arquivos em pares duplicados;
 - deck NESST classificado como referência histórica narrativa/editorial, não como template vigente;
-- moodboard `HUB / SISTEMA VIVO` registrado como baseline visual provisório para prototipagem;
-- sistema visual atualizado para registrar navy, teal, violeta, coral/vermelho, laranja/amarelo, círculos sobrepostos, Sora/Inter como hipóteses e derivações suaves por produto/programa.
+- moodboard `HUB / SISTEMA VIVO` registrado como referência visual histórica complementar;
+- sistema visual atualizado para registrar o novo conjunto fornecido pelo usuário, navy, teal, violeta, coral/vermelho, laranja/amarelo, círculos/órbitas, Sora/Inter como hipóteses e derivações suaves por produto/programa.
 
 O inventário completo está em `99-referencias/inventario-de-visuais.md`. Nenhuma imagem, fonte, logo, claim ou deck foi promovido a padrão aprovado.
 

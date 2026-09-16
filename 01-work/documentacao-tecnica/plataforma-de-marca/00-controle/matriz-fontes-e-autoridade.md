@@ -31,6 +31,12 @@ owner: Coordenação do projeto — a confirmar
 
 ## 3. Classificação por tipo de fonte
 
+### 3.1 Conjunto visual fornecido pelo usuário
+
+As quatro imagens WhatsApp de 2026-08-29 armazenadas em `01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/` são classificadas como **referência visual prioritária / direção provisória**. Elas podem informar análise e prototipagem do símbolo, wordmark, paleta, tipografia, assinaturas e aplicações, mas não constituem fonte normativa aprovada, arquivo-mestre, prova de autoria, licença ou autorização de publicação.
+
+Qualquer elemento extraído dessas imagens deve receber ficha de proveniência própria e permanecer em `em revisão`, `ilustrativo` ou `não validado` até decisão identificável do gate competente.
+
 | Tipo | Exemplos | Pergunta de validação | Tratamento na plataforma de marca |
 |---|---|---|---|
 | Fonte normativa aprovada | documento em `03-approved/` com escopo explícito | Está vigente, aprovado e dentro do escopo? | Pode fundamentar regra, desde que citada. |

@@ -51,6 +51,12 @@ Foram identificados 9 grupos de hashes duplicados entre as imagens, totalizando 
 
 ## 4. Sinais visuais recorrentes
 
+### 4.1 Conjunto de referência fornecido pelo usuário
+
+As imagens [WhatsApp (2)](WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(2).jpeg), [WhatsApp (3)](WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(3).jpeg), [WhatsApp (4)](WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(4).jpeg) e [WhatsApp (5)](WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) foram fornecidas pelo usuário como referência prioritária para a identidade visual. O conjunto mostra versões clara e escura da marca principal, símbolo geométrico modular, wordmark `HUB`, ponto coral/vermelho, aplicações editoriais, plataforma digital, assinaturas de `HUB Negócios`, `Instituto HUB`, `Plataforma HUB` e `Selo HUB`, além de paleta rotulada e tipografia `Sora`/`Inter`.
+
+**Classificação:** referência visual prioritária / direção provisória; não é aprovação de logo, paleta, assinaturas, Selo, fonte, autoria ou direitos de uso.
+
 Observações sustentadas pelo moodboard `ChatGPT Image 29 de ago. de 2026, 12_47_53.png`, pelo deck NESST e pela coleção de decks:
 
 - `HUB` aparece como palavra central, em composição tipográfica de alto impacto.
@@ -61,6 +67,8 @@ Observações sustentadas pelo moodboard `ChatGPT Image 29 de ago. de 2026, 12_4
 - Há preferência por layouts editoriais com bastante espaço, títulos fortes, cards e diagramas.
 - Ícones lineares e ilustrações simples aparecem como suporte semântico.
 - O moodboard propõe `Sora` para títulos e `Inter` para corpo; isso é uma hipótese de referência, não uma licença ou decisão tipográfica.
+- O conjunto fornecido pelo usuário explicita uma direção mais concentrada em navy profundo, ameixa, violeta, magenta, coral/vermelho e teal, com ponto focal e trajetórias de conexão.
+- A referência apresenta aplicações em papel, capa institucional, cartões, sistema gráfico e dashboard; essas aplicações são exemplos de direção, não templates aprovados.
 
 ## 5. Duplicatas e tratamento
 
@@ -84,6 +92,10 @@ Para prototipagem da Plataforma de Marca, usar como baseline provisório a dire�
 - derivações de produto/programa limitadas a acentos, composição ou aplicação, preservando a leitura HUB.
 
 O NESST deve complementar essa direção com narrativa e composição editorial, mas não deve substituir automaticamente o símbolo, o wordmark, a paleta ou a tipografia do baseline provisório.
+
+### 6.1 Atualização da direção prioritária
+
+Para a próxima rodada de prototipagem, priorizar o conjunto fornecido pelo usuário como referência principal: símbolo geométrico entrelaçado, wordmark `HUB` com ponto terminal, navy profundo como base, acentos violeta/magenta/coral/teal, trajetórias com nós e órbitas, textura concentrada nas bordas e composição modular para aplicações editoriais e digitais. A direção deve ser testada em fundo claro e escuro, sem converter os exemplos em especificação final antes da validação de arquivo-mestre, direitos, contraste e uso real.
 
 ## 7. Validações adiadas e pendências
 

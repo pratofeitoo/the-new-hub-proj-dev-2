@@ -56,6 +56,19 @@ Cada logo, fonte, fotografia, ilustração, ícone, vídeo, gráfico ou elemento
 
 ## 4. Modelo de ficha
 
+## 4.1 Fichas do conjunto visual fornecido pelo usuário
+
+As imagens abaixo entram no inventário como referências visuais, não como assets liberados:
+
+| Asset ID | Arquivo | Conteúdo observado | Fonte/autoria | Licença/uso | Status |
+|---|---|---|---|---|---|
+| `REF-VIS-2026-08-29-12-47-42-02` | `99-referencias/WhatsApp Image 2026-08-29 at 12.47.42 (2).jpeg` | Marca principal, símbolo, wordmark, versão clara e aplicações | Fornecido pelo usuário; autoria a confirmar | Referência interna/prototipagem; publicação a confirmar | `em revisão` |
+| `REF-VIS-2026-08-29-12-47-42-03` | `99-referencias/WhatsApp Image 2026-08-29 at 12.47.42 (3).jpeg` | Versão escura, assinaturas, aplicações e sistema gráfico | Fornecido pelo usuário; autoria a confirmar | Referência interna/prototipagem; publicação a confirmar | `em revisão` |
+| `REF-VIS-2026-08-29-12-47-42-04` | `99-referencias/WhatsApp Image 2026-08-29 at 12.47.42 (4).jpeg` | Versão clara e aplicações editoriais | Fornecido pelo usuário; autoria a confirmar | Referência interna/prototipagem; publicação a confirmar | `em revisão` |
+| `REF-VIS-2026-08-29-12-47-42-05` | `99-referencias/WhatsApp Image 2026-08-29 at 12.47.42 (5).jpeg` | Paleta, tipografia, sistema gráfico, dashboard e assinaturas | Fornecido pelo usuário; autoria a confirmar | Referência interna/prototipagem; publicação a confirmar | `em revisão` |
+
+As imagens contêm representações de logo, símbolo, assinaturas, tipografia e aplicações. Não reconstruir ou distribuir esses elementos como arquivos oficiais sem confirmar titularidade, licença, formato-mestre, direitos de terceiros e aprovação.
+
 ```yaml
 asset_id: ASSET-000
 source_path: ""

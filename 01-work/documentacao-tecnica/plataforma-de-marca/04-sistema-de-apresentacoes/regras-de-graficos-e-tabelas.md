@@ -33,6 +33,12 @@ Diagramas radiais podem ser usados quando o centro e as relações circulares s�
 
 ## 4. Escala, cor e anotação
 
+### 4.1 Motivos gráficos da referência visual
+
+Trajetórias, nós, órbitas e pontos podem estruturar um gráfico quando representam relações, etapas ou categorias realmente definidas. Também podem atuar como elementos editoriais de apoio, desde que não pareçam dados. Nunca usar densidade de linhas, brilho, saturação ou concentração de nós para sugerir escala, inteligência, causalidade, desempenho ou impacto sem fonte e definição explícitas.
+
+Na prototipagem, testar a paleta candidata `#0D1322`, `#2B1433`, `#5A2D6E`, `#B23A6B`, `#E15A4F` e `#2A6A7E` como cores limitadas e legendadas. Ela permanece distinta dos tokens de status e não está aprovada.
+
 - Eixo quantitativo começa em zero para barras; qualquer exceção deve ser marcada no eixo e na nota.
 - Não usar gradiente para representar uma ordem sem definir escala e extremos.
 - Série categórica usa uma paleta limitada e legendada. Série semântica usa os tokens `success`, `warning`, `danger` e `info`, com texto/ícone auxiliar.

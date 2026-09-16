@@ -51,4 +51,8 @@ dependencias:
 
 ## 4. Itens ainda não aprovados
 
+### 4.1 Referência visual prioritária adicionada
+
+O conjunto de quatro imagens WhatsApp de 2026-08-29 em `../99-referencias/` é a referência visual prioritária da próxima rodada. Sua interpretação está registrada em [sistema-visual.md](../03-identidade-visual/sistema-visual.md), [logo-e-assinaturas.md](../03-identidade-visual/logo-e-assinaturas.md), [paleta-de-cores.md](../03-identidade-visual/paleta-de-cores.md), [tipografia.md](../03-identidade-visual/tipografia.md), [iconografia-ilustracao-e-imagem.md](../03-identidade-visual/iconografia-ilustracao-e-imagem.md) e [inventario-de-visuais.md](../99-referencias/inventario-de-visuais.md). O conjunto continua em revisão e não é uma fonte normativa aprovada.
+
 Nenhum documento deste pacote está em `03-approved/`. Este índice também não autoriza publicação, certificação, claim público ou uso de referência histórica como template.

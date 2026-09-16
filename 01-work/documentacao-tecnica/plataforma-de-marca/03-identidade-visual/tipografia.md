@@ -24,6 +24,10 @@ Essa combinação deve ser tratada como hipótese até confirmação de licença
 
 ## 2. Hierarquia provisória
 
+## 2.1 Referência tipográfica fornecida
+
+A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) explicita `Sora` para títulos e `Inter` para corpo, números e interface. Isso reforça a hipótese tipográfica já registrada e passa a ser tratado como referência fornecida para a direção visual. Licença, pesos, suporte ao português, disponibilidade e desempenho em produto, apresentação e impressão continuam pendentes.
+
 | Papel | Família | Uso | Regra |
 |---|---|---|---|
 | Display | Sora | capa e mensagem principal | uma ideia forte por superfície; evitar títulos longos demais |

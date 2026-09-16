@@ -71,6 +71,10 @@ components:
 
 ## Visão geral
 
+### Referência visual prioritária
+
+O conjunto de quatro imagens fornecido pelo usuário em `01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/` passa a informar esta direção visual: símbolo geométrico entrelaçado, wordmark `HUB.` com ponto coral/vermelho, versões clara e escura, trajetórias com nós e órbitas, aplicações editoriais e digitais e paleta candidata navy/plum/violeta/magenta/coral/teal. A referência é provisória e não substitui arquivo-mestre, direitos, testes de contraste ou aprovação humana.
+
 ### Norte criativo
 
 O HUB deve parecer uma sala de inteligência serena: um sistema editorial preciso em que contexto disperso se transforma em um caminho visível até uma decisão humana. A assinatura é a **porta de conexão** — três perspectivas sobrepostas formando um centro protegido e aberto — usada como motivo contido em marcas, diagramas, sobreposições de imagem e transições.
@@ -90,6 +94,8 @@ O HUB deve parecer uma sala de inteligência serena: um sistema editorial precis
 ## Cores
 
 Navy e ink estabelecem estrutura, texto e autoridade serena. Paper e branco fornecem superfícies de leitura. Violeta é a direção primária de ênfase/ação; teal expressa conexão e relacionamento; coral é energia controlada, não uma cor genérica de alerta. Cores de status são semânticas e devem sempre vir acompanhadas de rótulo, ícone, padrão ou posição.
+
+Os valores observados na referência visual são `#0D1322` (navy), `#2B1433` (plum), `#5A2D6E` (violeta), `#B23A6B` (magenta), `#E15A4F` (coral) e `#2A6A7E` (teal). Tratá-los como candidatos de teste; os papéis semânticos e a acessibilidade prevalecem sobre a reprodução literal.
 
 Não use violeta, coral, amarelo ou verde-claro em texto pequeno sobre superfícies claras sem medir o contraste. Busque WCAG 2.2 AA, incluindo 4,5:1 para texto normal. Mudanças de tema podem remapear primitivos, mas devem preservar papéis semânticos. Gráficos exigem legenda, definição, unidade, período, fonte e resumo textual acessível quando esses dados forem relevantes.
 

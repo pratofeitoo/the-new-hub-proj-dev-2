@@ -22,6 +22,8 @@ dependencias:
 
 As referências em `02-review/02-visao-plataforma/` repetem branco, quase-preto/navy, violeta intenso, ícones lineares e cards arredondados. `02-review/02-visao-plataforma/visuais/Visão geral.jpeg` acrescenta azul-petróleo e amarelo-lima. Os arquivos estão em revisão e a fonte de marca `12.03-brand-guidelines-claim-registry.md` está com status `hipotese`; portanto nenhum valor é tratado como oficial.
 
+O conjunto visual fornecido pelo usuário acrescenta uma paleta candidata explicitamente rotulada: `#0D1322`, `#2B1433`, `#5A2D6E`, `#B23A6B`, `#E15A4F` e `#2A6A7E`. Esses valores devem ser tratados como referências de teste e reconciliados com os primitivos abaixo, sem substituir os tokens semânticos ou a validação de contraste.
+
 ## 2. Convenções
 
 - Nomes semânticos (`bg`, `text`, `action`, `status`) devem ser usados por componentes; valores primitivos ficam centralizados.
@@ -50,6 +52,19 @@ As referências em `02-review/02-visao-plataforma/` repetem branco, quase-preto/
 | `color.success.700` | `#166534` | sucesso/texto | combinar com ícone e label |
 | `color.warning.700` | `#92400E` | alerta/texto | fundo claro, nunca amarelo claro como texto |
 | `color.danger.700` | `#B91C1C` | erro/destrutivo | combinar com mensagem explícita |
+
+### Cor — referência candidata desta rodada
+
+| Token de referência | Valor observado | Papel provisório |
+|---|---|---|
+| `color.reference.navy` | `#0D1322` | base estrutural/fundo escuro |
+| `color.reference.plum` | `#2B1433` | profundidade/superfície secundária |
+| `color.reference.violet` | `#5A2D6E` | conexão/agrupamento |
+| `color.reference.magenta` | `#B23A6B` | trajetória/energia |
+| `color.reference.coral` | `#E15A4F` | ponto/ênfase controlada |
+| `color.reference.teal` | `#2A6A7E` | conexão/informação/resultado |
+
+Os tokens `reference.*` não devem ser usados como status semântico por inferência nem tratados como paleta final. A fonte visual é o conjunto de referências fornecido pelo usuário, registrado no [inventário de visuais](../99-referencias/inventario-de-visuais.md).
 
 ### Cor — papéis semânticos
 

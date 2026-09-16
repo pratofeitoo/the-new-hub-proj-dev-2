@@ -26,6 +26,12 @@ fontes:
 
 ## 2. Contraste e cor
 
+### 2.1 Matriz de teste para a nova referência
+
+O conjunto visual fornecido apresenta versões clara e escura e a seguinte paleta candidata: `#0D1322`, `#2B1433`, `#5A2D6E`, `#B23A6B`, `#E15A4F` e `#2A6A7E`. Antes de qualquer promoção, medir os pares reais em texto normal, títulos, controles, badges, gráficos, logo e fundos de apresentação. Registrar resultado, tamanho, peso, contexto, modo claro/escuro e projetor.
+
+Priorizar os testes `#0D1322`/branco, `#0D1322`/creme, branco/`#0D1322`, `#E15A4F`/`#0D1322`, `#2A6A7E`/branco, `#5A2D6E`/branco e `#B23A6B`/branco. Nenhum par é considerado aprovado apenas por aparecer na referência.
+
 - testar o par real de foreground/background, incluindo estados hover, disabled e focus;
 - não usar amarelo, verde claro, coral ou violeta como texto pequeno sobre branco sem medição;
 - não usar cinza claro para corpo, placeholder ou informação essencial;

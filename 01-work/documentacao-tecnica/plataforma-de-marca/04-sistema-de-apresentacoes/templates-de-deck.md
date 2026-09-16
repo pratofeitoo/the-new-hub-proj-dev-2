@@ -27,6 +27,10 @@ Todos os templates devem compartilhar:
 - rodapé com versão e estado do documento;
 - contraste e alternativa textual segundo as regras de acessibilidade.
 
+### Direção visual de referência
+
+Na próxima rodada de prototipagem, os templates podem explorar as versões clara e escura do conjunto visual fornecido pelo usuário: capa navy ou superfície creme, símbolo geométrico e wordmark `HUB.` com ponto coral/vermelho, trajetórias com nós/órbitas e tipografia provisória `Sora`/`Inter`. Essas referências não são templates finais nem autorizam o uso público de logo, fonte, imagem ou assinatura.
+
 ## 2. Famílias de template
 
 | Template | Objetivo | Público inicial | Estrutura |
