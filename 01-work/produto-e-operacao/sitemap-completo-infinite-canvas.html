@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sitemap completo · Plataforma HUB</title>
+  <style>
+    :root { --bg:#f5f6f8; --ink:#19212b; --muted:#66717f; --line:#cbd2db; --panel:#ffffff; --blue:#2e6b9f; --green:#287a65; --amber:#a36519; --gray:#6b7280; --shadow:0 12px 30px rgba(26,38,52,.10); }
+    * { box-sizing:border-box; }
+    html, body { width:100%; height:100%; margin:0; overflow:hidden; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); }
+    button, input { font:inherit; }
+    .app { height:100%; display:grid; grid-template-rows:auto 1fr; }
+    header { z-index:5; display:flex; align-items:center; gap:22px; min-height:72px; padding:14px 22px; background:rgba(255,255,255,.94); border-bottom:1px solid #e1e5ea; box-shadow:0 2px 14px rgba(22,34,48,.05); }
+    .brand { min-width:230px; }
+    .brand h1 { margin:0; font-size:17px; letter-spacing:-.02em; }
+    .brand p { margin:4px 0 0; font-size:12px; color:var(--muted); }
+    .toolbar { display:flex; align-items:center; gap:8px; flex:1; flex-wrap:wrap; }
+    .search { width:min(290px, 32vw); padding:9px 12px; border:1px solid #d3d9e1; border-radius:9px; outline:none; background:#fbfcfd; color:var(--ink); }
+    .search:focus { border-color:#6d9bc1; box-shadow:0 0 0 3px rgba(46,107,159,.12); }
+    button, select { border:1px solid #d3d9e1; border-radius:8px; padding:8px 10px; color:#344150; background:#fff; cursor:pointer; }
+    button:hover, select:hover { border-color:#9eabb9; background:#f8fafc; }
+    .zoom-readout { min-width:50px; text-align:center; font-size:12px; color:var(--muted); }
+    .workspace { position:relative; overflow:hidden; background-color:#f7f8fa; background-image:radial-gradient(#d8dee6 .8px, transparent .8px); background-size:24px 24px; }
+    #canvas { width:100%; height:100%; display:block; cursor:grab; user-select:none; touch-action:none; }
+    #canvas.dragging { cursor:grabbing; }
+    .edge { fill:none; stroke:#aeb8c3; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); opacity:.8; }
+    .edge.future { stroke-dasharray:6 5; opacity:.65; }
+    .edge.hidden, .node.hidden { opacity:0; pointer-events:none; }
+    .group { fill:rgba(255,255,255,.38); stroke:#d7dde5; stroke-width:1; stroke-dasharray:6 6; }
+    .group-title { fill:#6e7987; font-size:13px; font-weight:700; letter-spacing:.02em; }
+    .node { cursor:pointer; transition:opacity .2s; }
+    .node rect { stroke-width:1.2; filter:drop-shadow(0 5px 7px rgba(35,48,64,.08)); }
+    .node text { pointer-events:none; }
+    .node .title { font-size:13px; font-weight:700; }
+    .node .meta { font-size:10px; fill:currentColor; opacity:.72; }
+    .node.global rect { fill:#edf5fb; stroke:#75a2c4; } .node.global { color:#214e73; }
+    .node.mvp rect { fill:#e9f5f0; stroke:#64a38e; } .node.mvp { color:#1e604e; }
+    .node.proposed rect { fill:#fbf1df; stroke:#d1a365; } .node.proposed { color:#7d511a; }
+    .node.future rect { fill:#f0f1f3; stroke:#a9b0b9; } .node.future { color:#59616b; }
+    .node.selected rect { stroke:#172b3d; stroke-width:2.2; }
+    .node.match rect { stroke:#2e6b9f; stroke-width:2.3; }
+    .hud { position:absolute; left:18px; bottom:16px; display:flex; gap:10px; align-items:center; padding:9px 12px; background:rgba(255,255,255,.92); border:1px solid #e0e5ea; border-radius:10px; box-shadow:var(--shadow); font-size:12px; color:var(--muted); }
+    .dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; vertical-align:-1px; } .dot.global{background:#75a2c4}.dot.mvp{background:#64a38e}.dot.proposed{background:#d1a365}.dot.future{background:#a9b0b9}
+    .help { position:absolute; right:18px; bottom:16px; padding:9px 12px; background:rgba(255,255,255,.88); border:1px solid #e0e5ea; border-radius:10px; color:var(--muted); font-size:11px; }
+    .inspector { position:absolute; right:18px; top:18px; width:268px; padding:16px; background:rgba(255,255,255,.96); border:1px solid #e0e5ea; border-radius:13px; box-shadow:var(--shadow); }
+    .inspector h2 { margin:0 0 8px; font-size:16px; line-height:1.25; }
+    .inspector p { margin:6px 0; color:var(--muted); font-size:12px; line-height:1.45; }
+    .tag { display:inline-block; margin:0 4px 6px 0; padding:3px 7px; border-radius:999px; background:#edf0f3; color:#536170; font-size:10px; }
+    .empty { color:var(--muted); font-size:13px; line-height:1.5; }
+    #mini { position:absolute; right:18px; bottom:62px; width:180px; height:112px; padding:5px; background:rgba(255,255,255,.92); border:1px solid #e0e5ea; border-radius:10px; box-shadow:var(--shadow); }
+    #minimap { width:100%; height:100%; }
+    #minimap rect { fill:#edf0f3; stroke:#c4ccd5; }
+    @media (max-width:800px) { header{gap:10px;padding:10px 12px;min-height:108px;align-items:flex-start}.brand{min-width:160px}.toolbar{gap:5px}.search{width:100%;order:4}.inspector{right:10px;top:10px;width:235px}.help{display:none}.hud{left:10px;bottom:10px}.node .title{font-size:12px} }
+  </style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand"><h1>Sitemap completo</h1><p>Plataforma HUB · canvas navegável</p></div>
+    <div class="toolbar">
+      <input id="search" class="search" type="search" placeholder="Buscar tela, ID ou rota…" aria-label="Buscar tela">
+      <select id="filter" aria-label="Filtrar camada"><option value="all">Todas as camadas</option><option value="global">Global</option><option value="mvp">MVP</option><option value="proposed">Proposta</option><option value="future">MVP+1</option></select>
+      <button id="fit" type="button">Ajustar à tela</button><button id="reset" type="button">Reiniciar</button>
+      <span id="zoom" class="zoom-readout">100%</span>
+    </div>
+  </header>
+  <main class="workspace" id="workspace">
+    <svg id="canvas" viewBox="0 0 1800 1120" role="img" aria-label="Sitemap completo da plataforma HUB">
+      <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#aeb8c3" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <g id="world"></g>
+    </svg>
+    <aside class="inspector" id="inspector"><div class="empty">Selecione uma tela para ver seu ID, rota, escopo e conexões.</div></aside>
+    <div id="mini"><svg id="minimap" viewBox="0 0 1800 1120" aria-hidden="true"></svg></div>
+    <div class="hud"><span><i class="dot global"></i>Global</span><span><i class="dot mvp"></i>MVP</span><span><i class="dot proposed"></i>Proposta</span><span><i class="dot future"></i>MVP+1</span></div>
+    <div class="help">Arraste para mover · roda para zoom · clique em uma tela</div>
+  </main>
+</div>
+<script>
+  const nodes = [
+    ['hub','Plataforma HUB','root',''],
+    ['auth','Autenticação','group',''],['a1','Login / SSO','global',''],['a2','MFA','global',''],['a3','Seleção de organização / tenant','global',''],['a4','Acesso negado / sessão expirada','global',''],
+    ['shell','Shell global','group',''],['b1','Navegação principal','global',''],['b2','Seletor de organização','global',''],['b3','Seletor de período e escopo','global',''],['b4','Busca global','global','/busca'],['b5','Notificações','global','/notificacoes'],['b6','Ajuda / explicabilidade','global','/ajuda'],['b7','Perfil do usuário','global',''],['b8','Breadcrumbs de auditoria','global',''],
+    ['mvp','Telas oficiais do MVP','group',''],['c1','SCR-01 · Cockpit executivo','mvp','WF-01 · /cockpit'],['c2','SCR-02 · Painel do gestor','mvp','WF-02 · /gestao'],['c3','SCR-03 · Minha jornada','mvp','WF-06 · /minha-jornada'],['c4','SCR-04 · Governança de KPIs','mvp','WF-04'],['c5','SCR-05 · Alertas e decisões','mvp','WF-03 · /alertas'],['c6','SCR-06 · ROI do HUB','mvp','WF-05 · /roi'],['c7','SCR-07 · Diagnóstico de dados','mvp','WF-07 · /dados'],
+    ['details','Telas de detalhe e ação propostas','group',''],['d1','Detalhe de KPI','proposed',''],['d2','Análise de drivers','proposed',''],['d3','Simulador de cenário','proposed',''],['d4','Detalhe de cliente','proposed',''],['d5','Evidência de ROI','proposed',''],['d6','Detalhe da equipe','proposed',''],['d7','Detalhe da pessoa','proposed',''],['d8','Detalhe da meta','proposed',''],['d9','Detalhe de capacidade','proposed',''],['d10','Detalhe do alerta','proposed',''],['d11','Editor de plano de ação','proposed',''],['d12','Editor de check-in','proposed',''],['d13','Detalhe de feedback','proposed',''],['d14','Perfil de skills','proposed',''],['d15','Plano de desenvolvimento','proposed',''],['d16','Formulário de contestação','proposed',''],['d17','Criar KPI / editar rascunho','proposed',''],['d18','Enviar para aprovação','proposed',''],['d19','Aprovar / rejeitar','proposed',''],['d20','Comparar versões','proposed',''],['d21','Visualizar lineage','proposed',''],['d22','Explicar alerta','proposed',''],['d23','Atribuir responsável','proposed',''],['d24','Registrar decisão','proposed',''],['d25','Criar ação / escalar / encerrar','proposed',''],['d26','Trilha de auditoria','proposed',''],['d27','Detalhe do benefício','proposed',''],['d28','Anexar evidência','proposed',''],['d29','Validar valor financeiro','proposed',''],['d30','Ajustar premissa','proposed',''],['d31','Comparar estimado e realizado','proposed',''],['d32','Detalhe da fonte','proposed',''],['d33','Detalhe da execução do job','proposed',''],['d34','Detalhe de rejeições','proposed',''],['d35','Confirmar reprocessamento','proposed',''],['d36','Relatório de qualidade','proposed',''],
+    ['functional','Telas funcionais globais','group',''],['e1','Administração de usuários','global','/admin/usuarios'],['e2','Administração de tenants','global','/admin/tenants'],['e3','Visor de auditoria','global','/admin/auditoria'],['e4','Consentimento e privacidade','global','/privacidade/finalidades'],['e5','Detalhe de notificação','global','/alertas/:id'],['e6','Ajuda por tópico','global','/ajuda/:topico'],
+    ['future','MVP+1 · contrato/rotas','group',''],['f1','SCR-08 · Marketplace de fornecedores','future',''],['f2','SCR-09 · API de indicadores','future','']
+  ].map(([id,label,kind,meta])=>({id,label,kind,meta}));
+  const edges = [
+    ['hub','auth'],['hub','shell'],['hub','mvp'],['hub','functional'],['hub','future','future'],['a1','a2'],['a2','a3'],['a3','a4','future'],
+    ['shell','b1'],['shell','b2'],['shell','b3'],['shell','b4'],['shell','b5'],['shell','b6'],['shell','b7'],['shell','b8'],
+    ['mvp','c1'],['mvp','c2'],['mvp','c3'],['mvp','c4'],['mvp','c5'],['mvp','c6'],['mvp','c7'],['functional','e1'],['functional','e2'],['functional','e3'],['functional','e4'],['functional','e5'],['functional','e6'],['future','f1','future'],['future','f2','future'],
+    ['c1','d1'],['d1','d2'],['d2','d3'],['c1','d4'],['c1','d5'],['c2','d6'],['c2','d7'],['d7','d8'],['c2','d9'],['c2','d10'],['d10','d11'],['c3','d8'],['c3','d12'],['d12','d13'],['c3','d14'],['d14','d15'],['c3','d16'],['c4','d17'],['d17','d18'],['d18','d19'],['c4','d20'],['c4','d21'],['c5','d10'],['c5','d22'],['d22','d23'],['d23','d24'],['d24','d25'],['c5','d26'],['c6','d27'],['d27','d28'],['d28','d29'],['c6','d30'],['c6','d31'],['c7','d32'],['c7','d33'],['d33','d34'],['d34','d35'],['c7','d36'],['b5','e5'],['b6','e6'],['c1','c5','future'],['c2','c5','future'],['c5','c6','future'],['c4','c7','future']
+  ].map(([from,to,type])=>({from,to,type:type||'normal'}));
+  const pos = {
+    hub:[870,34], auth:[80,125], shell:[560,125], mvp:[1040,125], functional:[1460,125], future:[1460,360],
+    a1:[80,205],a2:[80,275],a3:[80,345],a4:[80,415], b1:[560,205],b2:[560,275],b3:[560,345],b4:[560,415],b5:[560,485],b6:[560,555],b7:[560,625],b8:[560,695],
+    c1:[1040,205],c2:[1040,275],c3:[1040,345],c4:[1040,415],c5:[1040,485],c6:[1040,555],c7:[1040,625], f1:[1460,440],f2:[1460,510], e1:[1460,205],e2:[1460,275],e3:[1460,345],e4:[1460,415],e5:[1460,585],e6:[1460,655]
+  };
+  const detailIds = nodes.filter(n=>n.id.startsWith('d')).map(n=>n.id);
+  detailIds.forEach((id,i)=>{ const col=i%3, row=Math.floor(i/3); pos[id]=[870+col*220, 800+row*68]; });
+  const byId = Object.fromEntries(nodes.map(n=>[n.id,n]));
+  const world = document.getElementById('world'), canvas=document.getElementById('canvas'), workspace=document.getElementById('workspace');
+  const W=180, H=50;
+  const groupBoxes={auth:[55,105,300,390],shell:[535,105,300,650],mvp:[1015,105,300,610],functional:[1435,105,300,610],future:[1435,340,300,260],details:[790,750,760,420]};
+  function esc(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+  function card(n){let [x,y]=pos[n.id], w=n.id==='hub'?210:W; return `<g class="node ${n.kind}" data-id="${n.id}" transform="translate(${x},${y})"><rect width="${w}" height="${n.id==='hub'?58:H}" rx="10"></rect><text class="title" x="${w/2}" y="${n.id==='hub'?22:20}" text-anchor="middle">${esc(n.label)}</text>${n.meta?`<text class="meta" x="${w/2}" y="38" text-anchor="middle">${esc(n.meta)}</text>`:''}</g>`;}
+  function center(id){let [x,y]=pos[id], w=id==='hub'?210:W; return [x+w/2,y+(id==='hub'?29:25)];}
+  function edge(e){let [x1,y1]=center(e.from),[x2,y2]=center(e.to); let d=`M ${x1} ${y1} C ${x1} ${(y1+y2)/2}, ${x2} ${(y1+y2)/2}, ${x2} ${y2}`; return `<path class="edge ${e.type==='future'?'future':''}" data-from="${e.from}" data-to="${e.to}" d="${d}"></path>`;}
+  function render(){let groups=Object.entries(groupBoxes).map(([id,[x,y,w,h]])=>`<g class="group-wrap"><rect class="group" x="${x}" y="${y}" width="${w}" height="${h}" rx="16"></rect><text class="group-title" x="${x+18}" y="${y+25}">${esc(byId[id].label)}</text></g>`).join(''); world.innerHTML=groups+edges.map(edge).join('')+nodes.filter(n=>n.kind!=='group').map(card).join('')+`<g class="node root" data-id="hub" transform="translate(${pos.hub[0]},${pos.hub[1]})"><rect width="210" height="58" rx="12"></rect><text class="title" x="105" y="25" text-anchor="middle">Plataforma HUB</text><text class="meta" x="105" y="43" text-anchor="middle">sitemap completo</text></g>`; updateVisibility(); renderMini();}
+  let scale=1, tx=0, ty=0, dragging=false, last=[0,0];
+  function apply(){world.setAttribute('transform',`translate(${tx} ${ty}) scale(${scale})`);document.getElementById('zoom').textContent=Math.round(scale*100)+'%';}
+  function fit(){const r=workspace.getBoundingClientRect(), sx=r.width/1800, sy=r.height/1120; scale=Math.min(sx,sy)*.92; tx=(r.width-1800*scale)/2; ty=(r.height-1120*scale)/2; apply();}
+  function zoomAt(next,cx,cy){const old=scale;scale=Math.max(.32,Math.min(2.2,next));tx=cx-(cx-tx)*(scale/old);ty=cy-(cy-ty)*(scale/old);apply();}
+  function select(id){document.querySelectorAll('.node').forEach(x=>x.classList.toggle('selected',x.dataset.id===id)); const n=byId[id]; if(!n||n.kind==='group')return; const inbound=edges.filter(e=>e.to===id).map(e=>byId[e.from]?.label), outbound=edges.filter(e=>e.from===id).map(e=>byId[e.to]?.label); document.getElementById('inspector').innerHTML=`<span class="tag">${n.kind==='proposed'?'Proposta':n.kind==='future'?'MVP+1':n.kind==='mvp'?'MVP':'Global'}</span><h2>${esc(n.label)}</h2>${n.meta?`<p><strong>Rota / referência</strong><br>${esc(n.meta)}</p>`:''}<p><strong>Conexões</strong><br>${inbound.length?'Entrada: '+inbound.join(', '):'Sem entrada direta'}<br>${outbound.length?'Saída: '+outbound.join(', '):'Sem telas filhas'}</p>`;}
+  function updateVisibility(){const q=document.getElementById('search').value.trim().toLowerCase(), f=document.getElementById('filter').value; document.querySelectorAll('.node').forEach(el=>{const n=byId[el.dataset.id];const ok=n&&(f==='all'||n.kind===f)&&(n.label.toLowerCase().includes(q)||n.id.toLowerCase().includes(q)||n.meta.toLowerCase().includes(q));el.classList.toggle('hidden',!ok&&!!q);el.classList.toggle('match',!!q&&ok);});document.querySelectorAll('.edge').forEach(el=>{const from=document.querySelector(`.node[data-id="${el.dataset.from}"]`),to=document.querySelector(`.node[data-id="${el.dataset.to}"]`);el.classList.toggle('hidden',from?.classList.contains('hidden')||to?.classList.contains('hidden'));});}
+  function renderMini(){const mini=document.getElementById('minimap');mini.innerHTML=nodes.filter(n=>n.kind!=='group').map(n=>{let[x,y]=pos[n.id];return `<rect x="${x}" y="${y}" width="${n.id==='hub'?210:W}" height="${n.id==='hub'?58:H}" rx="3" class="${n.kind}"></rect>`}).join('');}
+  document.getElementById('search').addEventListener('input',updateVisibility);document.getElementById('filter').addEventListener('change',updateVisibility);document.getElementById('fit').addEventListener('click',fit);document.getElementById('reset').addEventListener('click',()=>{scale=1;tx=0;ty=0;apply();select('');document.querySelectorAll('.node').forEach(x=>x.classList.remove('match'));});
+  canvas.addEventListener('pointerdown',e=>{dragging=true;last=[e.clientX,e.clientY];canvas.classList.add('dragging');canvas.setPointerCapture(e.pointerId);});canvas.addEventListener('pointermove',e=>{if(!dragging)return;tx+=e.clientX-last[0];ty+=e.clientY-last[1];last=[e.clientX,e.clientY];apply();});canvas.addEventListener('pointerup',()=>{dragging=false;canvas.classList.remove('dragging');});canvas.addEventListener('wheel',e=>{e.preventDefault();const r=canvas.getBoundingClientRect();zoomAt(scale*(e.deltaY<0?1.1:.9),e.clientX-r.left,e.clientY-r.top);},{passive:false});
+  world.addEventListener('click',e=>{const n=e.target.closest('.node');if(n)select(n.dataset.id);});
+  render(); requestAnimationFrame(fit); window.addEventListener('resize',fit);
+</script>
+</body>
+</html>

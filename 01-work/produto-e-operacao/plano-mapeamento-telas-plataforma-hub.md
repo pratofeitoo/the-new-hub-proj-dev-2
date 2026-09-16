@@ -32,6 +32,141 @@ Produzir três artefatos conectados:
 2. **Matriz de acesso** — o que cada perfil pode visualizar e executar.
 3. **Fluxos principais** — especialmente `sinal → explicação → decisão → ação → valor medido`.
 
+### Sitemap completo (diagrama de apoio; proposta)
+
+O diagrama abaixo reúne todas as telas mapeadas neste plano: autenticação, shell global, telas funcionais, telas oficiais do MVP, detalhes e ações propostas, além das telas MVP+1. Ele não cria rotas novas nem altera a classificação MVP/MVP+1; serve como índice visual para a leitura das seções seguintes.
+
+```mermaid
+flowchart TD
+    HUB[Plataforma HUB]
+
+    subgraph AUTH[Autenticação]
+        A1[Login / SSO]
+        A2[MFA]
+        A3[Seleção de organização / tenant]
+        A4[Acesso negado / sessão expirada]
+        A1 --> A2 --> A3
+        A3 -. falha .-> A4
+    end
+
+    subgraph SHELL[Shell global]
+        B1[Navegação principal]
+        B2[Seletor de organização]
+        B3[Seletor de período e escopo]
+        B4[Busca global<br/>/busca]
+        B5[Notificações<br/>/notificacoes]
+        B6[Ajuda / explicabilidade<br/>/ajuda]
+        B7[Perfil do usuário]
+        B8[Breadcrumbs de auditoria]
+    end
+
+    subgraph MVP[Telas oficiais do MVP]
+        C1[SCR-01 Cockpit executivo<br/>WF-01 · /cockpit]
+        C2[SCR-02 Painel do gestor<br/>WF-02 · /gestao]
+        C3[SCR-03 Minha jornada<br/>WF-06 · /minha-jornada]
+        C4[SCR-04 Governança de KPIs<br/>WF-04]
+        C5[SCR-05 Alertas e decisões<br/>WF-03 · /alertas]
+        C6[SCR-06 ROI do HUB<br/>WF-05 · /roi]
+        C7[SCR-07 Diagnóstico de dados<br/>WF-07 · /dados]
+    end
+
+    subgraph DETAILS[Telas de detalhe e ação propostas]
+        D1[Detalhe de KPI]
+        D2[Análise de drivers]
+        D3[Simulador de cenário]
+        D4[Detalhe de cliente]
+        D5[Evidência de ROI]
+        D6[Detalhe da equipe]
+        D7[Detalhe da pessoa]
+        D8[Detalhe da meta]
+        D9[Detalhe de capacidade]
+        D10[Detalhe do alerta]
+        D11[Editor de plano de ação]
+        D12[Editor de check-in]
+        D13[Detalhe de feedback]
+        D14[Perfil de skills]
+        D15[Plano de desenvolvimento]
+        D16[Formulário de contestação]
+        D17[Criar KPI / editar rascunho]
+        D18[Enviar para aprovação]
+        D19[Aprovar / rejeitar]
+        D20[Comparar versões]
+        D21[Visualizar lineage]
+        D22[Explicar alerta]
+        D23[Atribuir responsável]
+        D24[Registrar decisão]
+        D25[Criar ação / escalar / encerrar]
+        D26[Trilha de auditoria]
+        D27[Detalhe do benefício]
+        D28[Anexar evidência]
+        D29[Validar valor financeiro]
+        D30[Ajustar premissa]
+        D31[Comparar estimado e realizado]
+        D32[Detalhe da fonte]
+        D33[Detalhe da execução do job]
+        D34[Detalhe de rejeições]
+        D35[Confirmar reprocessamento]
+        D36[Relatório de qualidade]
+    end
+
+    subgraph FUNCTIONAL[Telas funcionais globais]
+        E1[Administração de usuários<br/>/admin/usuarios]
+        E2[Administração de tenants<br/>/admin/tenants]
+        E3[Visor de auditoria<br/>/admin/auditoria]
+        E4[Consentimento e privacidade<br/>/privacidade/finalidades]
+        E5[Detalhe de notificação<br/>/alertas/:id]
+        E6[Ajuda por tópico<br/>/ajuda/:topico]
+    end
+
+    subgraph FUTURE[MVP+1 · contrato/rotas, sem wireframe completo]
+        F1[SCR-08 Marketplace de fornecedores]
+        F2[SCR-09 API de indicadores]
+    end
+
+    HUB --> AUTH
+    AUTH --> SHELL
+    SHELL --> MVP
+    SHELL --> FUNCTIONAL
+    SHELL -. MVP+1 .-> FUTURE
+
+    C1 --> D1 --> D2 --> D3
+    C1 --> D4
+    C1 --> D5
+    C2 --> D6
+    C2 --> D7 --> D8
+    C2 --> D9
+    C2 --> D10 --> D11
+    C3 --> D12 --> D13
+    C3 --> D8
+    C3 --> D14 --> D15
+    C3 --> D16
+    C4 --> D17 --> D18 --> D19
+    C4 --> D20
+    C4 --> D21
+    C5 --> D10
+    C5 --> D22 --> D23 --> D24 --> D25
+    C5 --> D26
+    C6 --> D27 --> D28 --> D29
+    C6 --> D30
+    C6 --> D31
+    C7 --> D32
+    C7 --> D33 --> D34 --> D35
+    C7 --> D36
+    B5 --> E5
+    B6 --> E6
+
+    classDef root fill:#e8e5f8,stroke:#534ab7,color:#26215c;
+    classDef global fill:#e6f1fb,stroke:#185fa5,color:#042c53;
+    classDef mvp fill:#e1f5ee,stroke:#0f6e56,color:#04342c;
+    classDef proposed fill:#faeeda,stroke:#854f0b,color:#412402;
+    classDef future fill:#f1efe8,stroke:#5f5e5a,color:#444441;
+    class HUB root;
+    class A1,A2,A3,A4,B1,B2,B3,B4,B5,B6,B7,B8,E1,E2,E3,E4,E5,E6 global;
+    class C1,C2,C3,C4,C5,C6,C7 mvp;
+    class D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D25,D26,D27,D28,D29,D30,D31,D32,D33,D34,D35,D36 proposed;
+    class F1,F2 future;
+```
+
 ## 1. Camada global da aplicação
 
 Estas áreas são compartilhadas por todos os perfis e devem ser desenhadas antes das telas de domínio:
@@ -282,6 +417,35 @@ Esta matriz é inicial e precisa ser reconciliada com a matriz formal de RBAC/AB
 
 **Ramos de exceção obrigatórios:** rejeição de aprovação (com motivo), timeout de SLA → escalação automática, contestação do colaborador → correção → revalidação, falha de reprocessamento, supressão → reabertura de alerta.
 
+### Modelo comum de decisão e mensuração (diagrama de apoio; proposta)
+
+Este é o fluxo transversal que conecta as telas e orienta a composição dos wireframes. A etapa de valor deve manter separado o que é estimado do que foi validado como realizado.
+
+```mermaid
+flowchart LR
+    S[Sinal ou KPI] --> X[Explicação<br/>regra · período · fonte · confiança]
+    X --> D{Decisão humana}
+    D -->|Aprovar| A[Ação com responsável e SLA]
+    D -->|Rejeitar| R[Motivo registrado<br/>e revisão posterior]
+    D -->|Escalar| E[Escalação<br/>com histórico]
+    A --> M[Resultado medido]
+    M --> V{Validação de valor}
+    V -->|Estimado| P[Premissa explícita]
+    V -->|Realizado| ROI[ROI do HUB<br/>evidência auditável]
+    P -. reavaliar .-> M
+    R -. contestar / corrigir .-> X
+    E -. nova decisão .-> D
+
+    classDef signal fill:#e6f1fb,stroke:#185fa5,color:#042c53;
+    classDef decision fill:#faeeda,stroke:#854f0b,color:#412402;
+    classDef action fill:#e1f5ee,stroke:#0f6e56,color:#04342c;
+    classDef audit fill:#f1efe8,stroke:#5f5e5a,color:#444441;
+    class S,X signal;
+    class D,V decision;
+    class A,M,ROI action;
+    class R,E,P audit;
+```
+
 ### Fluxo executivo
 
 ```text
@@ -366,6 +530,51 @@ Alerta gerado (regra ALT)
 → Financeiro valida valor realizado + evidência (SCR-06)
 → Sponsor aprova no Cockpit (SCR-01)
 → Valor medido publicado no ROI
+```
+
+### Handoff entre perfis (diagrama de apoio; proposta)
+
+Use este diagrama para verificar, em cada wireframe, quem recebe o contexto, qual ação é permitida e qual evidência precisa seguir adiante.
+
+```mermaid
+sequenceDiagram
+    participant HUB as Gestor HUB
+    participant G as Gestor
+    participant C as Colaborador
+    participant F as Financeiro
+    participant S as Sponsor
+
+    HUB->>HUB: Assume alerta e registra explicação
+    HUB->>G: Encaminha contexto e hipótese
+    G->>G: Decide e cria ação com SLA
+    G->>C: Solicita execução ou contexto
+    C-->>G: Executa, responde ou contesta
+    G->>F: Envia resultado e evidência
+    F->>F: Valida valor realizado
+    F->>S: Disponibiliza benefício validado
+    S->>S: Aprova no Cockpit
+    S-->>HUB: Publica valor no ROI
+
+    Note over HUB,S: Cada decisão, transição, motivo e evidência gera audit log.
+```
+
+### Ciclo de vida do alerta (diagrama de apoio; proposta)
+
+As transições abaixo tornam visíveis os estados obrigatórios e os caminhos de exceção já descritos no plano. Toda transição deve registrar ator, motivo, regra e timestamp.
+
+```mermaid
+stateDiagram-v2
+    [*] --> NaoAtribuido: alerta gerado
+    NaoAtribuido --> EmAndamento: assumir
+    EmAndamento --> AguardandoFinanceiro: há valor a validar
+    EmAndamento --> Encerrado: decisão + evidência
+    EmAndamento --> Escalado: timeout SLA ou escalação manual
+    Escalado --> EmAndamento: novo responsável
+    AguardandoFinanceiro --> Encerrado: valor validado
+    AguardandoFinanceiro --> EmAndamento: valor rejeitado / corrigir
+    EmAndamento --> Suprimido: suprimir com motivo
+    Suprimido --> EmAndamento: reabrir com motivo
+    Encerrado --> [*]
 ```
 
 > SCR-08 (Marketplace) e SCR-09 (API) ficam deferidos para MVP+1: mapear apenas contrato/rotas nesta rodada, sem wireframes completos.
