@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preview estrutural · Arquitetura HUB</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f7f6f2; --panel:#fff; --ink:#26215c; --muted:#5f5e5a; --line:#d3d1c7; --accent:#534ab7; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#1d1c19; --panel:#2c2c2a; --ink:#eeedfe; --muted:#b4b2a9; --line:#5f5e5a; --accent:#afa9ec; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui,-apple-system,sans-serif; }
+    main { max-width:1440px; margin:0 auto; padding:32px; }
+    h1 { margin:0 0 6px; font-size:28px; }
+    h2 { margin:0 0 12px; font-size:18px; }
+    p { color:var(--muted); margin:0 0 20px; }
+    .meta { display:flex; gap:8px; flex-wrap:wrap; margin:18px 0 26px; }
+    .tag { border:1px solid var(--line); border-radius:999px; padding:5px 10px; color:var(--muted); background:var(--panel); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    article { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px; min-height:280px; overflow:auto; }
+    article.structural { border-top:4px solid #534ab7; }
+    article.flow { border-top:4px solid #0f6e56; }
+    article.sequence { border-top:4px solid #854f0b; }
+    article.state { border-top:4px solid #185fa5; }
+    .legend { margin-top:18px; padding:18px; border:1px dashed var(--line); border-radius:14px; background:var(--panel); }
+    code { color:var(--accent); }
+    .mermaid { min-width:650px; }
+    @media (max-width:900px) { main { padding:18px; } .grid { grid-template-columns:1fr; } article { min-height:0; } }
+  </style>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad:true, securityLevel:'strict', theme:'neutral' });
+  </script>
+</head>
+<body>
+<main>
+  <h1>Arquitetura HUB</h1>
+  <p>Preview estrutural dos quatro diagramas Mermaid. O conteúdo é provisório e usa a arquitetura descrita no plano de mapeamento.</p>
+  <div class="meta"><span class="tag">MVP: SCR-01..07</span><span class="tag">MVP+1: SCR-08..09</span><span class="tag">Detalhes: proposta</span><span class="tag">Dados: sintéticos</span></div>
+  <section class="grid">
+    <article class="structural"><h2>1 · Estrutura</h2><pre class="mermaid">flowchart TD
+    HUB[Plataforma HUB] --> AUTH[Autenticação]
+    AUTH --> SHELL[Shell global]
+    SHELL --> MVP[Telas MVP SCR-01..07]
+    SHELL -. contrato/rotas .-> FUTURE[MVP+1 SCR-08..09]
+    MVP --> DETAIL[Detalhes propostos da primeira rodada]</pre></article>
+    <article class="flow"><h2>2 · Fluxo de valor</h2><pre class="mermaid">flowchart LR
+    SRC[Fontes] --> ING[Ingestão e qualidade] --> KPI[KPI Engine]
+    KPI --> SIGNAL[Sinal] --> DECISION[Decisão humana] --> ACTION[Ação]
+    ACTION --> FIN[Validação financeira] --> ROI[ROI do HUB]
+    DECISION -.-> AUDIT[Audit log]</pre></article>
+    <article class="sequence"><h2>3 · Handoff</h2><pre class="mermaid">sequenceDiagram
+    participant D as Dados
+    participant H as Gestor HUB
+    participant G as Gestor
+    participant F as Financeiro
+    D->>H: Sinal explicado
+    H->>G: Contexto sem causa inferida
+    G->>F: Resultado + evidência
+    F-->>H: Valor validado</pre></article>
+    <article class="state"><h2>4 · Estados</h2><pre class="mermaid">stateDiagram-v2
+    [*] --> NaoAtribuido
+    NaoAtribuido --> EmAndamento
+    EmAndamento --> Escalado
+    EmAndamento --> AguardandoFinanceiro
+    AguardandoFinanceiro --> Encerrado
+    EmAndamento --> Encerrado
+    EmAndamento --> Suprimido
+    Suprimido --> EmAndamento</pre></article>
+  </section>
+  <div class="legend"><strong>Validação atual:</strong> estrutura e relações foram conferidas contra o plano; renderização visual depende do carregamento do Mermaid. Handoff, RBAC/ABAC, pentest e aprovação institucional continuam gates externos.</div>
+</main>
+</body>
+</html>
