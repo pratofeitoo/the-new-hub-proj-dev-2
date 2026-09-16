@@ -32,6 +32,12 @@ Não foram encontrados, nesta leitura, valores oficiais de cor, arquivos-mestre 
 
 ## 3. Princípios recomendados
 
+## 3.1 Implicações visuais do modelo de inteligência
+
+As superfícies da HUB devem tornar legíveis a origem do sinal, o nível de evidência, a confiança, a limitação, o responsável e o ponto de aprovação humana. Recomendações, alertas e resultados precisam de estados explícitos e rastreáveis; nenhuma composição visual deve sugerir certeza, causalidade, autonomia ou impacto validado apenas por cor, escala, destaque ou elevação.
+
+Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md).
+
 1. **Clareza antes de ornamentação:** cada elemento visual deve ajudar a orientar, agrupar, comparar, explicar ou reforçar a marca.
 2. **Hierarquia em três níveis:** uma mensagem primária, suporte secundário e metadados/limitações terciários. Cor nunca deve ser o único sinal.
 3. **Alinhamento e ritmo:** usar eixos compartilhados, grid consistente e espaçamento previsível; evitar ajustes ópticos não documentados.

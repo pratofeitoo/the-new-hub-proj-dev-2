@@ -25,6 +25,9 @@ dependencias:
 - **Produto/Operação:** capacidade disponível, fluxos, owners de uso e critérios de sucesso.
 - **Dados/Inteligência:** definições, métodos, qualidade, métricas e limitações.
 - **Jurídico/Financeiro/Privacidade:** pareceres competentes por risco.
+- **Segurança:** acesso, isolamento, autenticação, auditoria e proteção operacional.
+- **Ética:** revisão de vieses, usos proibidos, contestação e decisão humana.
+- **Gestão HUB:** responsável pelo contexto de uso, adoção, valor e aprovação operacional.
 
 ## Matriz inicial
 
@@ -39,6 +42,8 @@ dependencias:
 | dashboard/métrica | A | I | C | C | R | R | C |
 | publicação | A | C | C | C | R | C | C |
 | Selo/ certificação | A | C | C | I | C | C | R |
+
+> Os papéis de Produto, Dados, Financeiro, RH, Segurança, DPO/Jurídico, Ética e Gestão HUB são informados pela arquitetura técnica aprovada. Atribuir pessoas reais, substituir os “a confirmar” e definir o gate competente continua pendente.
 
 Legenda: **R** executa, **A** responde e aprova o gate, **C** é consultado, **I** é informado. Cada linha deve ter exatamente um `A` após validação organizacional.
 

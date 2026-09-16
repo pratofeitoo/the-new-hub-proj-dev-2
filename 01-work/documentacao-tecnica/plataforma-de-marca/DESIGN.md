@@ -1,17 +1,19 @@
 ---
 version: alpha
-name: HUB Brand Platform Pilot
-description: Provisional visual token system for the HUB brand-platform pilot. It supports evidence-led, status-aware communication while the brand architecture, visual direction, and source-of-truth tokens remain under review.
+name: Contexto de Design HUB
+description: Contexto visual e de interação provisório para a marca, plataforma, produto, dashboards e superfícies de apresentação orientadas por evidências do HUB.
 colors:
   primary: "#6D28D9"
   primary-strong: "#4C1D95"
-  primary-subtle: "#EDE9FE"
+  secondary: "#0F8C8C"
+  accent: "#E76F51"
+  dark: "#17151D"
+  ink: "#282431"
   background: "#F8F7FB"
   surface: "#FFFFFF"
-  text: "#17151D"
+  border: "#E2DFEA"
   text-secondary: "#3B3745"
   text-muted: "#6B6675"
-  border: "#E2DFEA"
   status-success: "#166534"
   status-warning: "#92400E"
   status-danger: "#B91C1C"
@@ -37,6 +39,11 @@ typography:
     fontSize: "14px"
     fontWeight: 600
     lineHeight: 1.43
+  mono:
+    fontFamily: "SFMono-Regular, Roboto Mono, ui-monospace, monospace"
+    fontSize: "13px"
+    fontWeight: 400
+    lineHeight: 1.5
 rounded:
   sm: "6px"
   md: "10px"
@@ -51,178 +58,96 @@ spacing:
   xl: "32px"
   xxl: "48px"
   xxxl: "64px"
-  huge: "96px"
 components:
-  button:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.surface}"
-    typography: "{typography.label}"
-    rounded: "{rounded.md}"
-    padding: 8px
-  card:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.text}"
-    typography: "{typography.body}"
-    rounded: "{rounded.md}"
-    padding: 16px
-  badge:
-    backgroundColor: "{colors.primary-subtle}"
-    textColor: "{colors.primary-strong}"
-    typography: "{typography.label}"
-    rounded: "{rounded.pill}"
-    padding: 4px
-  input:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.text}"
-    typography: "{typography.body}"
-    rounded: "{rounded.sm}"
-    padding: 8px
-  table:
-    backgroundColor: "{colors.background}"
-    textColor: "{colors.text-secondary}"
-    typography: "{typography.body}"
-    rounded: "{rounded.sm}"
-    padding: 8px
-  caption:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.text-muted}"
-    typography: "{typography.label}"
-    rounded: "{rounded.sm}"
-    padding: 4px
-  divider:
-    backgroundColor: "{colors.border}"
-    textColor: "{colors.text}"
-    rounded: "{rounded.sm}"
-  status-success:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.status-success}"
-    typography: "{typography.label}"
-    rounded: "{rounded.pill}"
-    padding: 4px
-  status-warning:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.status-warning}"
-    typography: "{typography.label}"
-    rounded: "{rounded.pill}"
-    padding: 4px
-  status-danger:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.status-danger}"
-    typography: "{typography.label}"
-    rounded: "{rounded.pill}"
-    padding: 4px
-  status-info:
-    backgroundColor: "{colors.primary-subtle}"
-    textColor: "{colors.status-info}"
-    typography: "{typography.label}"
-    rounded: "{rounded.pill}"
-    padding: 4px
-  feature-panel:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.text}"
-    typography: "{typography.heading}"
-    rounded: "{rounded.lg}"
-    padding: 32px
-  page-section:
-    backgroundColor: "{colors.background}"
-    textColor: "{colors.text}"
-    typography: "{typography.body}"
-    rounded: "{rounded.md}"
-    padding: 48px
-  hairline:
-    backgroundColor: "{colors.border}"
-    textColor: "{colors.text}"
-    rounded: "{rounded.sm}"
-    padding: 4px
+  button: { radius: "10px", minHeight: "44px" }
+  card: { radius: "10px", border: "#E2DFEA", shadow: "none" }
+  dialog: { radius: "16px", focusTrap: true }
+  input: { radius: "6px", minHeight: "44px" }
+  table: { radius: "6px", border: "#E2DFEA" }
+  badge: { radius: "999px", requiresText: true }
 ---
 
-# HUB Brand Platform Pilot
+# Contexto de Design HUB
 
-## Overview
+## Visão geral
 
-This is an **alpha, provisional** design system for the HUB brand-platform pilot. It translates the current token recommendations into a shared visual vocabulary for strategy, product, presentation, and dashboard experiments.
+### Norte criativo
 
-The system uses a provisional violet action direction over neutral surfaces, while the broader visual baseline remains navy-led with teal, violet, coral/red, and orange/yellow accents under review. Sora for display/headings and Inter for body, controls, tables, and metrics are hypotheses subject to license and availability checks. The system uses a 4px base with recurring 8px intervals, accessible contrast, and explicit evidence/status labels. It does not establish approved brand, legal, certification, ownership, or product claims. Treat every token and component as a proposal until the relevant governance review approves it.
+O HUB deve parecer uma sala de inteligência serena: um sistema editorial preciso em que contexto disperso se transforma em um caminho visível até uma decisão humana. A assinatura é a **porta de conexão** — três perspectivas sobrepostas formando um centro protegido e aberto — usada como motivo contido em marcas, diagramas, sobreposições de imagem e transições.
 
-## Colors
+### Contexto do produto e registro
 
-- **Primary direction:** `colors.primary` for interactive emphasis and `colors.primary-strong` for high-contrast emphasis. Navy, teal, coral/red, and orange/yellow remain provisional visual directions and are not assigned fixed tokens here until a source palette is approved.
-- **Surfaces:** `colors.surface` for content surfaces, `colors.background` for application backgrounds, and `colors.border` for borders and dividers.
-- **Text:** `colors.text` for primary text, `colors.text-secondary` for secondary text, and `colors.text-muted` for supporting text only when contrast remains accessible.
-- **Status:** `colors.status-success`, `colors.status-warning`, `colors.status-danger`, and `colors.status-info` are status cues, not decorative accents. Pair every color cue with text or an icon.
-- **Contrast:** verify foreground/background pairs in the consuming product. Never use color as the sole indicator of evidence maturity or action state.
+- **Público e trabalho principal:** Pessoas e organizações que trabalham com relações, capacidades, oportunidades, dados, decisões e resultados; a superfície do produto deve ajudar a orientar, compreender evidências, escolher a próxima ação e preservar aprendizados.
+- **Mercado(s)-alvo e evidências:** O escopo de mercado ainda não foi finalizado. Use a plataforma HUB e a especificação aprovada de inteligência como evidência de domínios e conceitos operacionais, não como autorização para inventar claims de mercado.
+- **Locale(s) e política de idioma:** O português (Brasil) é o idioma atual da documentação. A interface deve usar pt-BR simples por padrão; preserve rótulos e terminologia das fontes ao citar evidências. Revisão no idioma nativo é obrigatória antes da publicação. Outros locales não estão especificados.
+- **Cena de uso:** Estratégia, produto, dashboards e apresentações pensados primeiro para desktop, com suporte responsivo a mobile; a densidade varia por rota. Evidências e limitações devem permanecer legíveis com zoom e em larguras estreitas.
+- **Registro:** Híbrido. Superfícies de marca e apresentação podem ser editoriais e atmosféricas; superfícies de produto e dashboard priorizam clareza, familiaridade construída, conclusão da tarefa e cobertura de estados.
+- **Assinatura memorável:** A porta de conexão e um único caminho dominante por superfície.
+- **Contenção:** Não transforme toda superfície em moodboard, diagrama de rede, gradiente ou grade de cards. Deixe estrutura, texto e evidência carregarem o significado.
+- **Antirreferências:** Neon genérico de IA, otimismo corporativo de banco de imagens, excesso de dashboards brilhantes, linguagem falsa de certificação/selo e decoração densa que faça evidência provisória parecer autoridade.
+- **Mapeamento de propriedade dos tokens/runtime:** Neste repositório, `DESIGN.md` é a fonte documental provisória do contrato visual compartilhado. Nenhum pacote único de tokens de runtime foi estabelecido na raiz. A orientação-piloto em `01-work/documentacao-tecnica/plataforma-de-marca/DESIGN.md` continua sendo a referência mais específica do piloto e deve ser reconciliada antes da implementação. Tokens futuros devem ser gerados ou adaptados a partir de uma única fonte canônica e então verificados contra drift.
 
-## Typography
+## Cores
 
-Use `typography.display` and `typography.heading` for titles only when Sora is available; otherwise use their Inter fallback. Use `typography.body` for reading text and `typography.label` for controls and status labels. Confirm licenses, weights, Portuguese character support, numerals, and availability before distribution.
+Navy e ink estabelecem estrutura, texto e autoridade serena. Paper e branco fornecem superfícies de leitura. Violeta é a direção primária de ênfase/ação; teal expressa conexão e relacionamento; coral é energia controlada, não uma cor genérica de alerta. Cores de status são semânticas e devem sempre vir acompanhadas de rótulo, ícone, padrão ou posição.
 
-Suggested hierarchy:
+Não use violeta, coral, amarelo ou verde-claro em texto pequeno sobre superfícies claras sem medir o contraste. Busque WCAG 2.2 AA, incluindo 4,5:1 para texto normal. Mudanças de tema podem remapear primitivos, mas devem preservar papéis semânticos. Gráficos exigem legenda, definição, unidade, período, fonte e resumo textual acessível quando esses dados forem relevantes.
 
-- Display: `typography.display`.
-- Heading: `typography.heading`.
-- Body: `typography.body`.
-- Label: `typography.label`.
+## Tipografia
+
+Sora é a voz provisória de display: use-a em títulos curtos, frases de capa e números em destaque. Inter é a voz utilitária provisória: use-a em prosa, controles, rótulos, tabelas, métricas e notas de evidência. Use a família mono apenas para comandos, identificadores e valores técnicos. Confirme licenciamento, pesos, suporte ao português e distribuição antes da publicação. Use sentence case por padrão; evite caixa alta para informações essenciais.
+
+Mantenha o corpo em 16 px ou mais sempre que possível, com line-height de 1,5. Não comprima a tipografia para preservar um layout. Dados numéricos devem usar formatação consistente e numerais tabulares quando disponíveis. Não invente comportamento de localização para locales ainda não especificados.
 
 ## Layout
 
-- Build spacing from `spacing.xs`; use `spacing.sm` as the default small gap and `spacing.md` as the default content gap.
-- Use `spacing.lg`, `spacing.xl`, and `spacing.xxl` for section separation rather than arbitrary values.
-- Use `spacing.xxxl` and `spacing.huge` for presentation margins or major page separation only when the consuming layout needs them.
-- Use a 12-column desktop, 8-column tablet, and 4-column mobile grid as a starting point; use 16px mobile and 24px desktop gutters, and validate the container width with real content.
-- Prefer a 44px minimum control height for interactive targets and do not fix card heights when text or errors can wrap.
-- Prefer a clear reading column, generous whitespace, and one primary action per view.
-- Keep evidence, owner, and status close to the claim or item they qualify. Do not separate caveats into inaccessible footnotes.
-- Use responsive layouts that preserve hierarchy on narrow screens; avoid dense multi-column layouts when labels or evidence qualifiers would wrap ambiguously.
+Use um ritmo-base de 4 px com intervalos recorrentes de 8, 16, 24, 32 e 48 px. Comece com 12 colunas no desktop, 8 no tablet e 4 no mobile; use breakpoints orientados pelo conteúdo e preserve uma medida de leitura confortável. Prefira gutters de 24 px no desktop e 16 px no mobile. Mantenha controles primários com pelo menos 44 px de altura.
 
-## Elevation & Depth
+Boards de marca podem usar gutters marcados, canvas escuro e composição editorial assimétrica. Superfícies de produto devem usar geometria de página estável, colunas de leitura claras, hierarquia explícita e propriedade independente de overflow para tabelas ou painéis longos. Reserve espaço para erros, textos de ajuda, loaders, mídia e barras de rolagem para que o feedback não mova os controles principais.
 
-Depth is restrained and functional. Prefer borders using `colors.border` and surface changes using `colors.background` over heavy shadows. When elevation is necessary, use `0 1px 2px rgba(23,21,29,.08)` for low elevation or `0 8px 24px rgba(23,21,29,.12)` for an overlaid panel, and preserve visible focus states. Never use elevation to imply approval, authority, certification, or evidence quality.
+## Elevação e profundidade
 
-## Shapes
+Prefira camadas tonais e bordas sutis a sombras. Cards estáticos são planos por padrão. Use baixa elevação apenas em overlays ou interações que realmente precisem de separação; nunca use elevação, blur, badges ou cor para sugerir aprovação, autoridade, certificação ou qualidade da evidência.
 
-- Use `rounded.sm` for fields, compact controls, and small containers.
-- Use `rounded.md` for cards, panels, and primary controls.
-- Use `rounded.lg` sparingly for feature panels or prominent surfaces.
-- Use `rounded.pill` only for badges, filters, and status labels.
-- Keep shape choices consistent within a surface; do not mix rounded and sharp treatments without a clear hierarchy.
+## Formas
 
-## Components
+Use 6 px para campos e controles compactos, 10 px para cards e controles primários, 16 px para painéis de destaque e pills apenas para tags, filtros e rótulos de status explícitos. Mantenha containers de ícones e divisores opticamente consistentes. A marca HUB exige área de proteção e não deve ser alterada, esticada, recolorida ou aplicada sobre imagem complexa sem fundo controlado.
 
-### Actions
+## Componentes
 
-Primary actions use `colors.primary` with `colors.surface` text and `rounded.md`. Secondary actions use neutral surfaces and a `colors.border` border. Provide a visible focus ring of at least 2px using `colors.primary-strong` against both adjacent surfaces; include hover, pressed, disabled, loading, error, and success states where applicable. Never rely on color change alone.
+### Estados visuais fundamentais
 
-### Evidence and status labels
+Todo componente interativo precisa de tratamento para default, hover, focus-visible, active/pressed, selected, disabled, busy, success, warning e error, conforme aplicável. O foco deve ser visível com tratamento autoral mínimo de 2 px e não pode depender apenas de cor. Controles busy mantêm sua geometria e impedem submissões duplicadas.
 
-Status labels must use explicit words such as **hipótese**, **ilustrativo**, **em revisão**, **observado**, **validado**, or **aprovado** only when the underlying workflow defines that state. Pair the label with a short source, period, owner, or limitation where applicable. Use `colors.primary-subtle` as a neutral informational tint with `colors.status-info`, and reserve the success, warning, and danger tokens for states whose meaning is defined by the consuming workflow.
+### Botões e ações
 
-### Cards and panels
+Use ênfase × intenção: solid de marca para a ação primária, outline/ghost para ações secundárias e danger apenas para ações destrutivas ou sensíveis à segurança. Use verbos reais (`Salvar alterações`, `Excluir`, `Continuar`). Ofereça ícone e rótulo quando a ação não for universalmente compreendida. Separe ações perigosas das ações primárias seguras.
 
-Cards use `colors.surface` on `colors.background`, with `colors.border` borders and `rounded.md`. A card should communicate one decision, evidence item, or task. Avoid card grids that make unvalidated hypotheses look like equivalent approved products.
+### Navegação e exibição de dados
 
-### Tables and dashboards
+A navegação deve expor a localização atual e preservar o contexto da rota. Dados orientados à leitura usam tabelas semânticas; comportamento semelhante a planilha exige um modelo deliberado de teclado. Busca, filtros, ordenação, página e tamanho de página devem poder ser restaurados quando o produto oferecer esses recursos. Não publique tabela sem limite ou gráfico que esconda sua fonte e limitação.
 
-Tables use `colors.text` for headings, `colors.text-secondary` for supporting text, and `colors.border` separators. Include a status/evidence column where maturity affects interpretation. Dashboard metrics must show definition, period, source, and limitation when those details are material.
+### Formulários e overlays
 
-## Do's and Don'ts
+Use controles semânticos nativos sempre que possível. A validação combina orientação no campo com resumo acessível para formulários com vários erros. Dialogs são controlados pelo app, têm rótulo, prendem o foco quando modais, podem ser fechados com Escape quando seguro e restauram o foco ao fechar. Toasts são compartilhados, deduplicados e anunciados em live region; nunca substituem erros inline críticos.
 
-### Do
+### Iconografia
 
-- Do label the system and its tokens as provisional until governance approval.
-- Do use `colors.primary` as a directional accent, not as proof of an approved identity.
-- Do preserve accessible contrast and provide non-color status cues.
-- Do use the 4px/8px rhythm through `spacing.xs`, `spacing.sm`, and `spacing.md`.
-- Do use the current provisional visual baseline deliberately: navy as structure and teal, violet, coral/red, and orange/yellow as accents only when their semantics and contrast are defined.
-- Do treat Sora/Inter, the expanded spacing scale, radii, shadows, and interaction states as provisional implementation guidance pending validation.
-- Do distinguish observed evidence from hypotheses, illustrations, validation, and approval.
-- Do keep claims scoped to their source, period, owner, and current status.
+Use uma família linear simples com stroke, peso óptico e bounding box consistentes. Ícones apoiam rótulos; não substituem rótulos para ações ou status críticos. A porta de conexão pode ser usada como motivo, mas não como badge de status ou certificação implícita.
 
-### Don't
+### Movimento
 
-- Don't invent legal, ownership, certification, accreditation, exclusivity, or performance claims.
-- Don't present a prototype, MVP, blueprint, or recognition concept as a validated product or certification.
-- Don't use violet, elevation, or a badge to imply approval or authority.
-- Don't treat the navy/teal/coral/orange direction, Sora, or any unmeasured color pairing as an approved identity system.
-- Don't use color alone to communicate status, priority, error, or evidence maturity.
-- Don't substitute arbitrary spacing, typography, or color values when a token exists.
-- Don't collapse HUB, Plataforma HUB, HUB Negócios, Instituto HUB, Método C.A.O.S., or Selo HUB into one undifferentiated claim.
+O movimento é escasso e intencional: revela hierarquia, confirma uma mudança de estado ou mostra uma relação. Use transições curtas e interrompíveis; não anime dados rotineiros nem crie movimento ambiente que concorra com a evidência. Respeite `prefers-reduced-motion`, removendo movimento não essencial e preservando a mudança de estado por opacidade, posição ou texto explícito.
+
+### Conteúdo e visualização de dados
+
+Use linguagem clara, humana, precisa e responsável. Prefira `pode apoiar`, `em desenvolvimento`, `hipótese`, `observado` e `em validação` quando a evidência for provisória. Mantenha sujeito, ação, escopo, período, fonte, owner e limitação perto de claims e métricas. Nunca use “garante”, “certifica”, “comprova impacto” ou “gera ROI” sem registro de claim aprovado.
+
+## Faça e não faça
+
+- **Faça:** Faça cada superfície responder a uma pergunta e expor a próxima ação útil.
+- **Faça:** Reutilize a porta de conexão, o contraste navy/paper e o vocabulário explícito de evidências como assinatura reconhecível do sistema.
+- **Faça:** Preserve a distinção entre evidência observada, hipótese, ilustração, validação e aprovação.
+- **Não faça:** Apresente o board de marca gerado ou qualquer protótipo como identidade, produto, certificação ou resultado aprovado.
+- **Não faça:** Deixe cor, profundidade, densidade ou presença do logo sugerirem autoridade ou impacto.
+- **Não faça:** Crie variantes locais do comportamento compartilhado sem registrar uma razão nomeada pelo negócio em `UX-CONTRACT.md`.

@@ -108,6 +108,21 @@ Família recomendada provisoriamente: `Inter, ui-sans-serif, system-ui, -apple-s
 
 ## 4. Componentes mínimos
 
+## 4.1 Estados semânticos da inteligência
+
+Para refletir o modelo aprovado, adicionar aos tokens semânticos, ainda provisórios:
+
+| Papel | Semântica mínima |
+|---|---|
+| `evidence.level` | documental, observado, validado ou realizado, conforme o escopo |
+| `confidence` | confiança ou qualidade do sinal, sempre acompanhada de explicação |
+| `recommendation.status` | preparada, em revisão, aprovada, ajustada, recusada ou executada |
+| `human.review` | revisão necessária, aprovada, contestada ou encerrada |
+| `limitation` | lacuna, restrição, indisponibilidade ou validade expirada |
+| `status.warning` / `status.blocked` | atenção ou impedimento, sempre com label e recuperação |
+
+Esses tokens expressam semântica de produto e não definem a paleta final da marca. Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md).
+
 ### Card
 
 `surface.card` + `border.default`, `radius.md`, padding `space.6`; sem sombra por padrão. Variante destacada usa uma única diferença de hierarquia e mantém heading, valor, unidade e período próximos.

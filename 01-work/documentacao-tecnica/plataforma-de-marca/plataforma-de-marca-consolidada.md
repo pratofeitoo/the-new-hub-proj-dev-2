@@ -59,6 +59,12 @@ Separe sempre **observado**, **recomendado**, **ilustrativo**, **validado** e **
 
 Os valores abaixo são um ponto de partida para prototipagem, não uma identidade aprovada.
 
+## Fundação de produto e inteligência incorporada
+
+Os documentos aprovados de inteligência passam a fundamentar esta plataforma nos seguintes pontos: o HUB conecta contexto, dados, pessoas, capacidades, decisões e ações; a narrativa operacional percorre sinais → diagnóstico → recomendação → decisão humana → ação → resultado → aprendizado; e a inteligência deve ser explicável, auditável e transparente sobre confiança, fonte e limitações.
+
+Essa fundação informa estratégia, mensagens, interfaces, dashboards e apresentações, mas não aprova automaticamente nomes comerciais, claims públicos, logo, paleta, tipografia ou assets. Ver [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md) e [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+
 | Categoria | Baseline |
 |---|---|
 | Cor estrutural | `#17151D` / navy-900 |
@@ -805,10 +811,8 @@ Uma decisão só pode sair de `pendente` quando houver responsável, fonte/ata o
 
 </details>
 
-<details>
-<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/00-controle/registro-de-progresso.md</code></summary>
 
-````
+
 # Registro de progresso — Plataforma de marca
 
 > Registro operacional da execução até 15 de setembro de 2026.

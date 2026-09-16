@@ -29,6 +29,12 @@ dependencias:
 
 ## 2. Anatomia de uma tela
 
+## 2.1 Inteligência explicável e controle humano
+
+Interfaces de inteligência devem mostrar por que uma recomendação, alerta ou score aparece, quais dados e regras o sustentam, qual é a confiança e quais são os limites. A pessoa deve poder revisar, aprovar, ajustar, recusar, corrigir ou contestar quando aplicável; o sistema deve preservar histórico e auditoria. Esses princípios vêm dos documentos aprovados e permanecem sujeitos à validação dos fluxos reais.
+
+Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md) e [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+
 Toda tela relevante deve declarar, quando aplicável:
 
 - contexto: produto, módulo, público, período e escopo;

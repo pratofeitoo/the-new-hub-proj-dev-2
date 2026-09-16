@@ -33,6 +33,12 @@ fontes:
 
 ## 3. Checklist de novos nomes
 
+## 3.1 Vocabulário funcional informado pelos documentos aprovados
+
+Os documentos aprovados usam **HUB Core**, **HUB Intelligence**, **HUB Action**, **HUB Impact**, **Connect** e **Performance** para descrever capacidades, módulos ou camadas do sistema. Neste documento, esses termos devem ser tratados como vocabulário funcional observado e candidatos de nomenclatura, não como arquitetura de sub-marcas aprovada.
+
+Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md) e [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+
 - O nível é marca, unidade, produto, módulo, método, programa ou reconhecimento?
 - Há conflito com nome existente no repositório?
 - Quem usa, quem compra e quem responde pela entrega?
@@ -46,4 +52,3 @@ fontes:
 - Nome oficial da marca-mãe e padrão de composição dos produtos.
 - Escopo semântico e futuro status do Selo.
 - Busca e proteção de nomes, sob responsabilidade jurídica competente.
-

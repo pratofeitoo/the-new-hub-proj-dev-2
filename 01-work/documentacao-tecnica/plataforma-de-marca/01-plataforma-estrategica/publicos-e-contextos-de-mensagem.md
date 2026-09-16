@@ -35,6 +35,12 @@ Para uma primeira narrativa, escolher **um contexto comprador + um caso com evid
 
 ## 3. Mensagem por estágio de decisão
 
+## 3.1 Públicos e papéis do produto
+
+Além das famílias de contexto acima, a especificação técnica identifica papéis de uso que devem orientar mensagens e jornadas: executivo/sponsor, gestor, RH, financeiro, comercial/Customer Success, colaborador, candidato, fornecedor, universidade/estudante, comunidade e parceiro. Esses papéis são evidência de desenho do produto, não prova de mercado validado nem autorização para tratar todos como públicos prioritários equivalentes.
+
+Fonte: [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+
 | Estágio | Mensagem recomendada | Evidência mínima |
 |---|---|---|
 | Exploração | “A HUB está testando como conectar contexto, dados, capacidades e ações.” | Tese e escopo do experimento. |
@@ -49,4 +55,3 @@ Para uma primeira narrativa, escolher **um contexto comprador + um caso com evid
 - Comprador, usuário, beneficiário e aprovador por contexto.
 - Casos autorizados para referência nominal.
 - Mensagens específicas para HUB, Plataforma HUB, HUB Negócios e Instituto HUB.
-

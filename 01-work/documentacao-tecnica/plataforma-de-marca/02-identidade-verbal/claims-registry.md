@@ -25,6 +25,12 @@ Uma linha do registro é uma ficha de controle, não uma frase pronta para marke
 
 Ausência de fonte, owner, validade ou gate mantém o item em `não validado`. `01-work/` não é uma fonte aprovada.
 
+## Fundação aprovada de inteligência para os claims
+
+Os documentos aprovados de inteligência fundamentam guardrails para claims sobre inteligência, matching, recomendações, ROI, impacto, fairness, explicabilidade e decisão humana. A formulação deve deixar claro que a IA prepara e recomenda, enquanto pessoas revisam e aprovam decisões sensíveis; deve distinguir correlação de causalidade e expor fonte, período, confiança e limitações. Essas fontes apoiam as regras do registro, mas não aprovam nenhum claim público automaticamente.
+
+Fontes: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md) e [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+
 ## Níveis de evidência e rótulos
 
 | Nível | Significado operacional | Uso enquanto provisório |

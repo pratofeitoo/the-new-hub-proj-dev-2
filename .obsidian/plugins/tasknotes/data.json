@@ -556,13 +556,13 @@
     "defaultReminderMinutes": null
   },
   "enableDebugLogging": false,
-  "lastSeenVersion": "4.12.5",
+  "lastSeenVersion": "4.13.1",
   "lastNotifiedReleaseVersion": "4.13.1",
   "pomodoroState": {
     "isRunning": false,
     "timeRemaining": 1500
   },
-  "lastPomodoroDate": "2026-09-01",
+  "lastPomodoroDate": "2026-09-15",
   "autoArchiveQueue": [],
   "googleCalendarEventIndex": [
     {
@@ -757,5 +757,6 @@
     "TaskNotes/Archive/Solucionar o live sync do obsidian vault PF e Tamara.md": "{\"title\":\"Solucionar o live sync do obsidian vault PF e Tamara\",\"status\":\"concluido\",\"priority\":\"low\",\"archived\":true,\"scheduled\":null,\"due\":null,\"timeEstimate\":null,\"recurrence\":null,\"recurrence_anchor\":null,\"complete_instances\":[],\"skipped_instances\":[],\"reminders\":[],\"tags\":[\"task\",\"archived\"],\"contexts\":[\"@obsidian\"],\"projects\":[\"[[Gestão de Projeto e Governança]]\"]}"
   },
   "googleCalendarDeletionQueue": [],
-  "googleCalendarSyncQueue": []
+  "googleCalendarSyncQueue": [],
+  "completionMenuAsSubmenu": true
 }

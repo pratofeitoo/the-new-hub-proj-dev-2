@@ -11,6 +11,12 @@ fontes:
 
 # Regras para evidência e incerteza — HUB
 
+## Fundação aprovada de inteligência
+
+Os documentos aprovados confirmam as seguintes regras de comunicação: correlação não é causalidade; recomendações relevantes exigem explicação e revisão humana; métricas devem apresentar fonte, período, definição, unidade, confiança e limitações; e decisões sensíveis não devem ser automatizadas. Essas regras complementam, mas não substituem, o gate de aprovação de claims.
+
+Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md) e [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+
 > O objetivo é tornar a força e o limite de cada afirmação visíveis. Um rótulo de incerteza não transforma uma hipótese em fato nem substitui uma fonte.
 
 ## 1. Níveis de evidência

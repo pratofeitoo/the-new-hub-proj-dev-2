@@ -39,6 +39,12 @@ Esta é uma recomendação de sistema, não uma decisão. A relação jurídica,
 
 ## 3. Regras de coerência propostas
 
+## 3.1 Mapa de produto informado pela especificação aprovada
+
+O mapa funcional aprovado acrescenta ao modelo de arquitetura os seguintes domínios de produto: **HUB Core**, **Performance**, **Pessoas e Talentos**, **Clientes e Receita**, **Fornecedores e Compras**, **Acadêmico**, **Comunidades e Eventos** e **HUB Impact**. Eles são módulos/capacidades funcionais documentados; a decisão sobre quais nomes terão tratamento de produto, sub-marca ou simples módulo permanece pendente.
+
+Fonte: [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+
 1. Usar **HUB** para a narrativa do ecossistema e para padrões comuns somente quando o contexto não exigir identificar a entidade responsável.
 2. Usar **Plataforma HUB** quando a afirmação for sobre software, dados, workflows, ambientes ou capacidade tecnológica.
 3. Usar **HUB Negócios** quando a afirmação for sobre serviço comercial, implementação ou relação contratual — após validação da entidade responsável.
@@ -54,4 +60,3 @@ Esta é uma recomendação de sistema, não uma decisão. A relação jurídica,
 - Grau de endosso entre HUB e cada produto, programa ou parceiro.
 - Tratamento visual de método, produto e reconhecimento sem criar uma certificação implícita.
 - Aprovação formal de BRD-001 e BRD-003.
-

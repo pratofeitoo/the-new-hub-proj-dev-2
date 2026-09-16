@@ -38,6 +38,12 @@ O posicionamento evita afirmar, sem prova, que a HUB já entrega impacto causal,
 
 ## 3. Diferenciação a investigar
 
+## 3.1 Fundação aprovada de produto
+
+A especificação aprovada reforça que a proposta de valor do HUB está em conectar dados, relações e sinais a decisões e ações acompanháveis, mantendo a aprovação humana em decisões sensíveis. Esta evidência sustenta a direção estratégica acima; não transforma a formulação em posicionamento público aprovado.
+
+Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md).
+
 | Hipótese | Evidência atual | Prova necessária |
 |---|---|---|
 | Integração entre diagnóstico e ação | Jornadas e MVPs descrevem o fluxo ponta a ponta. | Casos documentados com decisão, ação e acompanhamento. |
@@ -58,4 +64,3 @@ O posicionamento evita afirmar, sem prova, que a HUB já entrega impacto causal,
 - Qual MVP/case pode ser citado publicamente e com qual autorização.
 - Quais categorias de mercado e alternativas competitivas serão assumidas na comunicação.
 - Quem aprova linguagem pública e em que gate.
-

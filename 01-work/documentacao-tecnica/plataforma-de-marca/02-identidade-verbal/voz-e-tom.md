@@ -60,6 +60,12 @@ Em uma escala de extremos, a HUB deve ser:
 
 ## 5. Fórmula de mensagem
 
+## 5.1 Princípios de inteligência responsável na voz
+
+Com base nos documentos aprovados, a voz da HUB deve tornar explícitos critérios, fontes, confiança, limitações e responsabilidade humana. Deve explicar relações sem assumir causalidade, apresentar recomendações como apoio à decisão e reconhecer contestação, correção e revisão. A linguagem pode ser confiante sobre o método de trabalho, mas nunca autoritária sobre pessoas, resultados ou decisões sensíveis.
+
+Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md).
+
 Quando apropriado, organizar a mensagem nesta ordem:
 
 **Contexto → conexão/problema → ação da HUB → evidência disponível → limite ou próximo passo.**

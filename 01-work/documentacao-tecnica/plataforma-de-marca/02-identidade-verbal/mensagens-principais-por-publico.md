@@ -16,6 +16,12 @@ fontes:
 
 ## 1. Mensagem-mãe para o público geral
 
+### 1.1 Narrativa funcional do produto
+
+Quando aplicável, organizar a mensagem em: **sinal → diagnóstico → recomendação → decisão humana → ação → resultado → aprendizado**. Essa sequência descreve o modelo operacional da inteligência HUB e deve ser adaptada ao público e ao estágio de evidência; não é uma promessa de resultado automático.
+
+Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md).
+
 **A HUB conecta pessoas, dados, capacidades e oportunidades para apoiar decisões e ações mais acompanháveis.**
 
 Versão curta:

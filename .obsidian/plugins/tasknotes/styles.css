@@ -5401,6 +5401,24 @@ body.is-mobile .tasknotes-plugin .task-card--layout-inline .task-card__context-m
     cursor: grabbing;
 }
 
+/* =================================================================
+   INLINE LAYOUT: NO TRAILING CONTEXT-MENU BOX
+   ================================================================= */
+
+/*
+ * The context-menu affordance is `opacity: 0` until its card is hovered. That hides
+ * it but keeps its 14px box in layout. In the card layouts it costs nothing, because
+ * it sits at the end of a row of its own and `margin-left: auto` parks it against the
+ * edge. Inline, it leaves 14px of dead space plus the row's gap after every task
+ * link, in the middle of running prose - and `margin-left: auto` does nothing there.
+ *
+ * Removed rather than hidden-on-hover: an invisible target inside a sentence cannot
+ * be aimed for, and the link still has its right-click menu.
+ */
+.tasknotes-plugin .task-card--layout-inline .task-card__context-menu {
+    display: none;
+}
+
 
 /* ===== NOTE-CARD-BEM.CSS ===== */
 /* =================================================================
@@ -12546,6 +12564,21 @@ body.is-mobile .tasknotes-plugin .reminder-modal__action-btn svg {
     margin-inline: auto;
 }
 
+/*
+ * Reading mode nests the widget inside `.mod-header.mod-ui`, after the properties
+ * block, so that Obsidian's virtualisation cannot delete it (see
+ * MarkdownWidgetInsertion and #2255). That host spaces differently from sitting
+ * between sections. Keep the native properties spacing and add a paragraph-sized
+ * gap between the widget and the note body, without broad :has invalidation.
+ */
+
+.markdown-preview-view .mod-header .task-card-note-widget {
+    margin-block-start: 0;
+    /* The note's own gap between blocks, so the widget sits in the same vertical
+       rhythm as a paragraph rather than on a value of our choosing. */
+    margin-block-end: var(--p-spacing);
+}
+
 .task-card-note-widget__card {
     /* Reset margins for the inner task card */
     margin: 0;
@@ -17249,6 +17282,7 @@ body.is-mobile .tasknotes-plugin .kanban-view__swimlane-column {
 
 /* Timer Display */
 .tasknotes-plugin .pomodoro-view__timer-display {
+    pointer-events: auto;
     font-size: 3.5rem;
     color: var(--tn-text-normal);
     text-align: center;
@@ -17273,6 +17307,7 @@ body.is-mobile .tasknotes-plugin .kanban-view__swimlane-column {
 }
 
 .tasknotes-plugin .pomodoro-view__timer-input {
+    pointer-events: auto;
     width: 5.5em;
     border: none;
     border-radius: var(--tn-radius-sm);
@@ -19371,10 +19406,27 @@ body.is-mobile .tasknotes-plugin .kanban-view__swimlane-column {
 
 
 /* ===== RELEASE-NOTES-VIEW.CSS ===== */
+.tasknotes-release-notes-view .release-notes-announcement,
 .tasknotes-release-notes-view .release-notes-version-content {
     font-family: var(--font-text);
     font-size: var(--font-text-size);
     line-height: var(--line-height-normal);
+}
+
+.tasknotes-release-notes-view .release-notes-announcement {
+    margin-bottom: var(--size-4-5);
+    padding: var(--size-4-4);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    background: var(--background-secondary);
+}
+
+.tasknotes-release-notes-view .release-notes-announcement > :first-child {
+    margin-top: 0;
+}
+
+.tasknotes-release-notes-view .release-notes-announcement > :last-child {
+    margin-bottom: 0;
 }
 
 
