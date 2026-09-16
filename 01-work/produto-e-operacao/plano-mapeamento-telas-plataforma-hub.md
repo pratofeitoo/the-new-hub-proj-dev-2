@@ -656,31 +656,76 @@ O mapa estará pronto para a próxima etapa quando:
 - cada wireframe WF-01..WF-07 possuir rota proposta (§7) e tier de estados declarado (§6);
 - SCR-08/09 possuírem contrato/rotas e marcação MVP+1 explícita (sem wireframe completo nesta rodada).
 
+## Resoluções técnicas desta rodada
+
+As decisões abaixo resolvem tecnicamente cinco pendências do plano. Elas são propostas de produto/arquitetura derivadas da fonte aprovada e ainda não equivalem à aprovação do plano nem à validação do piloto.
+
+### Navegação e nomenclatura
+
+- A navegação principal do MVP seguirá a ordem: **Cockpit** (`/cockpit`), **Gestão** (`/gestao`), **Minha jornada** (`/minha-jornada`), **KPIs** (`/kpis`), **Alertas** (`/alertas`), **ROI** (`/roi`) e **Dados** (`/dados`).
+- **Administração**, **Busca**, **Notificações**, **Ajuda** e **Privacidade** serão acessadas como áreas globais, condicionadas ao perfil, sem ocupar a navegação primária de todos os usuários.
+- A nomenclatura visível será: “Cockpit executivo”, “Painel do gestor”, “Minha jornada”, “Governança de KPIs”, “Alertas e decisões”, “ROI do HUB” e “Diagnóstico de dados”.
+- A navegação deve ocultar destinos sem permissão e preservar deep-links autorizados; acesso negado, sessão expirada e tenant inválido permanecem estados explícitos.
+
+### Dados sintéticos de exemplo
+
+Os wireframes usarão exclusivamente dados sintéticos, sem nomes, e-mails, identificadores ou valores reais. O conjunto mínimo será composto por:
+
+- dois tenants (`Acme Brasil` e `Beta Serviços`), três áreas e três projetos;
+- quatro perfis de usuário: Executivo, Gestor, Colaborador e Financeiro;
+- seis pessoas sintéticas, duas equipes e metas com progresso, ciclo, peso e KPI relacionado;
+- quatro alertas demonstrativos: queda persistente, risco por ociosidade, margem em risco e meta mal definida;
+- dois benefícios de ROI, sempre separados entre estimado e validado, com evidência sintética;
+- duas fontes, três execuções de job, uma rejeição e um exemplo de dado desatualizado.
+
+Cada fixture deverá exibir `DADO SINTÉTICO`, `atualizado em`, fonte fictícia, tenant, período e estado de confiança. Nenhum fixture poderá ser interpretado como baseline, meta aprovada ou evidência financeira real.
+
+### Telas de detalhe da primeira rodada
+
+Entram na primeira rodada apenas os detalhes necessários para os fluxos de KPI, alerta, ação, ROI e diagnóstico de dados:
+
+`D1` Detalhe de KPI; `D2` Análise de drivers; `D3` Simulador de cenário; `D10` Detalhe do alerta; `D11` Editor de plano de ação; `D22` Explicar alerta; `D23` Atribuir responsável; `D24` Registrar decisão; `D25` Criar ação / escalar / encerrar; `D27` Detalhe do benefício; `D28` Anexar evidência; `D29` Validar valor financeiro; `D31` Comparar estimado e realizado; `D32` Detalhe da fonte; `D33` Detalhe da execução do job; `D34` Detalhe de rejeições; `D35` Confirmar reprocessamento.
+
+Ficam fora da primeira rodada, para uma etapa posterior: detalhe de cliente, detalhe da equipe, detalhe da pessoa, detalhe da meta, detalhe de capacidade, detalhe de feedback, perfil de skills, plano de desenvolvimento, formulário de contestação, criar KPI/editar rascunho, enviar para aprovação, aprovar/rejeitar, comparar versões, visualizar lineage, trilha de auditoria e relatório de qualidade. Esses itens continuam mapeados como propostas e não são cancelados.
+
+### Política proposta para a API `SCR-09`
+
+- Versionamento por URL: `/api/v1`; mudanças incompatíveis exigem uma nova versão maior. Mudanças compatíveis usam a mesma versão e devem aparecer em metadados/documentação.
+- Resposta de sucesso: envelope `{ "data": [...], "meta": { "api_version", "source", "freshness", "lineage" }, "pagination": { "next_cursor", "has_more" } }`.
+- Paginação por cursor, com `limit=50` por padrão e máximo de `200`; o cursor é opaco e vinculado ao tenant, filtros e versão consultados.
+- Erros usam `application/problem+json`, com `type`, `title`, `status`, `detail`, `code`, `request_id` e, quando aplicável, `retry_after`.
+- Códigos mínimos: `400` filtro/paginação inválida, `401` não autenticado, `403` sem escopo, `404` recurso inexistente, `409` conflito de versão, `429` limite excedido e `503` fonte indisponível.
+- Respostas `429` e `503` devem incluir `Retry-After`; todo consumo registra tenant, consumidor, endpoint, versão, filtros não sensíveis, status, latência e `request_id`, sem registrar tokens ou dados sensíveis.
+
+### Apêndice A fechado para a cobertura desta rodada
+
+O Apêndice A foi preenchido com o rastreamento disponível na fonte aprovada e no backlog inicial. Onde a fonte não especifica um ID único, o plano conserva a indicação `a confirmar` em vez de inventar cobertura.
+
 ## Pendências abertas
 
-- [ ] Confirmar a navegação principal e a nomenclatura final.
+- [x] Confirmar a navegação principal e a nomenclatura final — proposta técnica registrada acima; validação de Produto permanece necessária.
 - [ ] Validar a matriz RBAC/ABAC por perfil, tenant, hierarquia e sensibilidade.
 - [ ] Selecionar os alertas prioritários do MVP.
 - [ ] Confirmar thresholds e metas ilustrativas com o piloto.
-- [ ] Definir dados de exemplo para os wireframes.
-- [ ] Confirmar quais telas de detalhe entram na primeira rodada.
+- [x] Definir dados de exemplo para os wireframes — fixtures sintéticos e limites de uso registrados acima.
+- [x] Confirmar quais telas de detalhe entram na primeira rodada — recorte técnico registrado acima; priorização final permanece necessária.
 - [ ] Validar o fluxo de ROI com Financeiro.
 - [ ] Registrar aprovação antes de promover este plano para uma especificação de interface.
-- [ ] Definir política de versionamento da API (SCR-09) e padrão de erro/paginação.
+- [x] Definir política de versionamento da API (SCR-09) e padrão de erro/paginação — política proposta registrada acima; aprovação técnica permanece necessária.
 - [ ] Confirmar regra de dupla aprovação financeira e máscaras de sensibilidade por campo.
-- [ ] Fechar Apêndice A (cobertura completa WF × SCR × MOD × KPI/ALT × Backlog) antes da Fase 3.
+- [x] Fechar Apêndice A (cobertura completa WF × SCR × MOD × KPI/ALT × Backlog) antes da Fase 3 — cobertura preenchida abaixo; itens `a confirmar` continuam dependentes de validação.
 
 ## Apêndice A — Cobertura completa (preencher antes da Fase 3)
 
 | Tela §2–§3 | WF | MOD | KPI/Regra | Backlog | Status |
 |---|---|---|---|---|---|
-| SCR-01 Cockpit | WF-01 | MOD-01 | FIN-01, ALO-01, PEO-01, HUB-04 | a mapear (12_BACKLOG) | MVP |
-| SCR-02 Painel gestor | WF-02 | MOD-02 | ALT a selecionar (3–5) | a mapear | MVP |
-| SCR-03 Minha jornada | WF-06 | MOD-02 | — | a mapear | MVP |
-| SCR-04 Governança KPIs | WF-04 | — (06_KPIS, 05_DICIONARIO) | 16 KPIs (fórmulas a aprovar) | a mapear | MVP |
-| SCR-05 Alertas/decisões | WF-03 | MOD-01/08 | ALT-01..08 → priorizar | a mapear | MVP |
-| SCR-06 ROI | WF-05 | MOD-08 | 14_ROI_HUB | a mapear | MVP |
-| SCR-07 Dados | WF-07 | — (04/05/08) | 12 fontes, jobs, qualidade | a mapear | MVP |
-| SCR-08 Marketplace | — (contrato) | MOD-05 | TCO/risco/justificativa | a mapear | MVP+1 |
-| SCR-09 API | — (contrato) | 08_INTEGRACOES | versionamento/logs/limites | a mapear | MVP+1 |
-| Detalhes/ações §3 | herdado do WF pai | idem pai | idem pai | — | proposta |
+| SCR-01 Cockpit | WF-01 | MOD-01 | FIN-01, ALO-01, PEO-01, HUB-04 | BL-007, BL-013 | MVP |
+| SCR-02 Painel gestor | WF-02 | MOD-02 | KPI-PERF-01/02, ALO-01/02 | BL-007, BL-008, BL-012 | MVP |
+| SCR-03 Minha jornada | WF-06 | MOD-02 | Performance, skills, plano | BL-003, BL-009, BL-017 | MVP |
+| SCR-04 Governança KPIs | WF-04 | MOD-01/02 | 16 KPIs; fórmulas e metas a aprovar | BL-006, BL-008, BL-016 | MVP |
+| SCR-05 Alertas/decisões | WF-03 | MOD-01/08 | ALT-01..08; 3–5 a selecionar | BL-010, BL-011, BL-016 | MVP |
+| SCR-06 ROI | WF-05 | MOD-08 | KPI-HUB-04; estimado vs. validado | BL-005, BL-011, BL-014, BL-015 | MVP |
+| SCR-07 Dados | WF-07 | MOD-01/08 | 12 fontes, jobs, qualidade e lineage | BL-002, BL-003, BL-004, BL-005, BL-007 | MVP |
+| SCR-08 Marketplace | — (contrato) | MOD-05 | TCO/risco/justificativa | BL-018 | MVP+1 |
+| SCR-09 API | — (contrato) | 08_INTEGRACOES | versionamento/logs/limites | BL-001, BL-006, BL-016; política proposta acima | MVP+1 |
+| Detalhes/ações §3 | herdado do WF pai | idem pai | idem pai | BL-006, BL-010, BL-011, BL-015, BL-017 | proposta |
