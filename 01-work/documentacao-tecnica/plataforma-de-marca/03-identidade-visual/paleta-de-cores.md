@@ -1,6 +1,6 @@
 ---
 titulo: Paleta de cores — HUB
-status: rascunho / provisório / não aprovado
+status: selecionada pelo usuário / especificação operacional pendente
 escopo: direção cromática para protótipos, apresentações, produto e dashboards
 owner: Identidade visual — a confirmar
 fontes:
@@ -11,13 +11,13 @@ fontes:
 
 # Paleta de cores — HUB
 
-> Os valores abaixo são uma direção provisória de prototipagem derivada dos rascunhos. Não constituem paleta oficial nem dispensam testes de contraste.
+> A paleta abaixo foi selecionada pelo usuário a partir das imagens de referência fornecidas. A seleção visual está definida; a especificação operacional, os testes de contraste e os direitos de uso continuam pendentes.
 
 ## 1. Direção cromática
 
-O baseline de trabalho usa navy como estrutura e cores vivas como acentos de conexão, categoria ou estado:
+O sistema selecionado usa navy como estrutura e cores vivas como acentos de conexão, categoria ou estado:
 
-| Função | Direção provisória | Uso recomendado |
+| Função | Cor selecionada | Uso recomendado |
 |---|---|---|
 | Estrutura | navy / azul muito escuro | texto forte, navegação, capas, superfícies institucionais |
 | Superfície | creme, branco e neutros claros | fundos e áreas de leitura |
@@ -27,13 +27,13 @@ O baseline de trabalho usa navy como estrutura e cores vivas como acentos de con
 | Oportunidade | laranja/amarelo | categoria, chamada ou ponto de atenção; testar contraste |
 | Estado | verde, âmbar, vermelho | somente com semântica definida e rótulo textual |
 
-## 2. Tokens provisórios
+## 2. Tokens de implementação
 
 ## 2.1 Paleta observada nas imagens de referência
 
-A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) apresenta uma paleta explicitamente rotulada, que passa a ser registrada como amostra de referência visual:
+A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) apresenta a paleta explicitamente rotulada abaixo. Esses valores passam a ser a paleta cromática selecionada para a identidade visual HUB:
 
-| Amostra observada | Hex exibido na referência | Papel provisório |
+| Cor selecionada | Hex definido na referência | Papel no sistema |
 |---|---|---|
 | Navy profundo | `#0D1322` | base estrutural e fundo escuro |
 | Ameixa escura | `#2B1433` | profundidade e superfície secundária |
@@ -42,7 +42,7 @@ A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%201
 | Coral/vermelho | `#E15A4F` | ponto, ação ou ênfase controlada |
 | Teal | `#2A6A7E` | conexão, informação ou resultado |
 
-Os valores acima são observados na imagem, não extraídos de arquivo-mestre nem validados para contraste. Devem informar protótipos e testes, sem substituir a aprovação da paleta.
+Os valores acima são a seleção cromática registrada a partir da imagem fornecida. Ainda precisam ser aplicados em tokens de runtime, testados nos pares reais de contraste e documentados para impressão, estados e superfícies antes da publicação.
 
 Os componentes devem consumir tokens semânticos, não hex diretamente:
 
@@ -60,7 +60,7 @@ color:
   status-danger: red.700
 ```
 
-Os valores exatos permanecem no documento de tokens e precisam de contraste medido no par real.
+Os valores exatos permanecem neste documento e no documento de tokens; todos os pares precisam de contraste medido no contexto real.
 
 ## 3. Regras de combinação
 
@@ -79,10 +79,10 @@ Os valores exatos permanecem no documento de tokens e precisam de contraste medi
 - gradientes ou cores saturadas para sugerir escala, causalidade ou certeza;
 - paleta NESST e paleta do moodboard misturadas como se fossem uma única especificação.
 
-## 5. Pendências
+## 5. Pendências operacionais
 
-- extrair valores finais de uma fonte-mestre, se existir;
 - testar contraste em texto, controles, gráficos e estados;
 - decidir nomes semânticos e escala de cada cor;
 - documentar versões claro/escuro e impressão;
-- aprovar a paleta e suas regras de derivação.
+- confirmar arquivo-mestre, ownership e direitos de uso;
+- registrar a paleta selecionada no sistema de tokens de runtime.

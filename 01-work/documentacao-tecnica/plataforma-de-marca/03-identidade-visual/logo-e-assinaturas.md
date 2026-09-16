@@ -1,6 +1,6 @@
 ---
 titulo: Logo e assinaturas — HUB
-status: rascunho / provisório / não aprovado
+status: direção selecionada pelo usuário / arquivo-mestre pendente
 escopo: diretrizes de trabalho para logo, wordmark e assinaturas
 owner: Identidade visual — a confirmar
 fontes:
@@ -10,28 +10,28 @@ fontes:
 
 # Logo e assinaturas — HUB
 
-> Este documento organiza referências e regras de prototipagem. Não confirma titularidade, arquivo-mestre, registro de marca ou autorização de uso.
+> O sistema de logo abaixo foi selecionado pelo usuário a partir das imagens fornecidas. A direção de identidade está definida; arquivo-mestre, titularidade, registro e autorização de uso continuam pendentes.
 
 ## 1. Evidências observadas
 
-Os rascunhos apresentam pelo menos duas famílias visuais:
+Os materiais históricos apresentam famílias visuais diferentes, mas a seleção atual é inequívoca nas imagens fornecidas:
 
-- wordmark `HUB` em navy, associado a círculos sobrepostos em teal, violeta e coral/vermelho;
-- assinatura histórica `HUB.` com símbolo geométrico multicolorido, observada no deck NESST.
+- sistema selecionado: símbolo geométrico entrelaçado, wordmark `HUB` em caixa alta e ponto coral/vermelho terminal;
+- aplicações selecionadas: símbolo isolado, lockup principal, versão negativa e aplicações editorial/digital.
 
-Essas famílias não devem ser combinadas ou tratadas como versões oficiais sem decisão de identidade e verificação de titularidade.
+O wordmark `HUB.` com o ponto coral/vermelho e o símbolo entrelaçado são a referência selecionada para a identidade principal. A assinatura histórica do deck NESST permanece apenas como referência histórica quando divergir deste sistema.
 
-## 2. Direção provisória de prototipagem
+## 2. Sistema de logo selecionado
 
 ### 2.1 Referência visual fornecida pelo usuário
 
 As imagens [WhatsApp (2)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(2).jpeg), [WhatsApp (3)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(3).jpeg), [WhatsApp (4)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(4).jpeg) e [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) passam a ser a referência visual prioritária desta rodada. Elas apresentam um símbolo geométrico modular de aparência entrelaçada, wordmark `HUB` em caixa alta e ponto coral/vermelho como terminal. A referência inclui versões positiva, negativa, isolada, circular e aplicada em materiais impressos e plataforma digital.
 
-Isso define uma direção de exploração mais específica, mas não confirma que o símbolo ou o wordmark sejam arquivos-mestre, registráveis ou aprovados para publicação.
+Isso define o sistema visual selecionado para a identidade HUB. Ainda não substitui o arquivo-mestre vetorial, a verificação de titularidade, o registro de versão ou a autorização de publicação.
 
-Enquanto não houver arquivo-mestre aprovado:
+Enquanto o arquivo-mestre não estiver disponível:
 
-- usar `HUB` como nome da marca-mãe;
+- usar `HUB.` como nome/wordmark da marca-mãe;
 - preservar o wordmark e o símbolo como elementos separados em protótipos;
 - preferir o wordmark de maior legibilidade em tamanhos pequenos;
 - usar círculos sobrepostos como recurso de conexão, não como prova de pertencimento ou certificação;
@@ -42,7 +42,7 @@ Enquanto não houver arquivo-mestre aprovado:
 
 | Situação | Estrutura de trabalho | Estado |
 |---|---|---|
-| Marca-mãe | `HUB` | Direção registrada; arquivo oficial pendente. |
+| Marca-mãe | `HUB.` | Sistema selecionado; arquivo oficial pendente. |
 | Produto | `HUB` + nome do produto | Derivação permitida, com mudança mínima. |
 | Programa | `HUB` + nome do programa | Derivação permitida, preservando atribuição HUB. |
 | Instituto | `Instituto HUB` | Relação e uso jurídico pendentes. |
@@ -59,10 +59,9 @@ Enquanto não houver arquivo-mestre aprovado:
 - não usar uma assinatura histórica como se fosse a versão vigente;
 - não tratar presença do logo como evidência de qualidade ou impacto.
 
-## 5. Pendências
+## 5. Pendências operacionais
 
-- confirmar arquivo-mestre, versões, formatos e titularidade;
-- decidir entre as famílias `HUB` e `HUB.` ou criar uma terceira solução;
+- obter e confirmar arquivo-mestre, versões, formatos e titularidade;
 - definir área de proteção, tamanho mínimo, fundos e monocromia;
 - revisar assinaturas de produtos, programas, Instituto, Negócios e Selo;
 - registrar owner, aprovação, versão e data de vigência.

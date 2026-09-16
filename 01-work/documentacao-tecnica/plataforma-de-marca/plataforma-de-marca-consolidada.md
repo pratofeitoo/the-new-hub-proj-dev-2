@@ -1,21 +1,21 @@
 # Plataforma de marca HUB — referência de design
 
-> Guia de consulta rápida para criar interfaces, dashboards, apresentações e protótipos coerentes com o pacote provisório de Plataforma de Marca HUB.
+> Guia de consulta rápida para criar interfaces, dashboards, apresentações e protótipos coerentes com o sistema visual HUB selecionado e a plataforma de marca em desenvolvimento.
 
-**Status:** provisório / rascunho de trabalho / não aprovado  
+**Status:** sistema visual selecionado pelo usuário / estratégia e implementação ainda em desenvolvimento
 **Escopo:** estratégia de marca, identidade verbal e visual, sistema de apresentação, produto, dashboards e governança  
 **Fonte:** arquivos existentes em `01-work/documentacao-tecnica/plataforma-de-marca/`  
-**Gerado em:** 2026-09-15
+**Atualizado em:** 2026-09-16
 
 ## Como usar este documento
 
-Comece pelo resumo e pelos blocos de decisão abaixo. Consulte o índice para encontrar a especificação detalhada. O apêndice mantém o conteúdo original de cada arquivo dentro de seções recolhíveis, preservando rastreabilidade sem transformar a leitura principal em uma sequência de dumps.
+Comece pelo resumo e pelos blocos de decisão abaixo. Consulte o índice para encontrar a especificação detalhada. O apêndice mantém um snapshot do conteúdo incorporado na consolidação; para o estado corrente, prevalecem os arquivos-fonte vinculados e suas decisões mais recentes.
 
 ### Hierarquia de autoridade
 
 1. **Aprovado:** somente documentos em `03-approved/` e decisões formalmente registradas como aprovadas.
 2. **Em revisão:** referências em `02-review/`; podem orientar análise, mas não são templates vigentes.
-3. **Provisório:** todo este pacote em `01-work/`; tokens, claims, nomes, paleta, tipografia e componentes são hipóteses de trabalho.
+3. **Selecionado ou provisório:** todo este pacote em `01-work/`; logo, paleta e tipografia selecionados estão registrados, enquanto tokens de runtime, claims, nomes, componentes e regras detalhadas ainda podem exigir gate próprio.
 4. **Histórico:** materiais em `99-archive/` ou decks antigos; servem para contexto, não para reutilização automática.
 
 ### Regra de leitura
@@ -24,11 +24,11 @@ Separe sempre **observado**, **recomendado**, **ilustrativo**, **validado** e **
 
 ## Resumo para criação de designs
 
-### Direção visual provisória
+### Sistema visual selecionado
 
-- Base neutra clara, navy/azul muito escuro para estrutura e texto forte.
-- Acentos de conexão e ênfase em teal e violeta; coral/vermelho e laranja/amarelo somente com semântica clara.
-- Tipografia provisória: Inter para leitura, controles, tabelas e métricas; Sora para títulos, sujeita a licença e decisão final.
+- Logo selecionado: símbolo geométrico entrelaçado, wordmark `HUB.` com ponto coral/vermelho e versões positiva, negativa, isolada, circular, editorial e digital.
+- Paleta selecionada: `#0D1322` navy, `#2B1433` plum, `#5A2D6E` violeta, `#B23A6B` magenta, `#E15A4F` coral e `#2A6A7E` teal.
+- Tipografia selecionada: `Sora` para display e headings; `Inter` para leitura, controles, tabelas, métricas e interface.
 - Ritmo de 4 px, com recorrência de 8 px; grid inicial de 12 colunas desktop, 8 tablet e 4 mobile.
 - Superfícies com bordas sutis, raios moderados e sombra baixa ou nenhuma.
 - Uma mensagem principal por superfície; preservar espaço, alinhamento e leitura.
@@ -57,24 +57,28 @@ Separe sempre **observado**, **recomendado**, **ilustrativo**, **validado** e **
 
 ## Baseline técnico de tokens
 
-Os valores abaixo são um ponto de partida para prototipagem, não uma identidade aprovada.
+Os valores abaixo são a seleção visual registrada para orientar documentos e protótipos. A implementação final ainda depende de tokens canônicos, contraste, direitos e regras de uso.
 
 ## Fundação de produto e inteligência incorporada
 
 Os documentos aprovados de inteligência passam a fundamentar esta plataforma nos seguintes pontos: o HUB conecta contexto, dados, pessoas, capacidades, decisões e ações; a narrativa operacional percorre sinais → diagnóstico → recomendação → decisão humana → ação → resultado → aprendizado; e a inteligência deve ser explicável, auditável e transparente sobre confiança, fonte e limitações.
 
-Essa fundação informa estratégia, mensagens, interfaces, dashboards e apresentações, mas não aprova automaticamente nomes comerciais, claims públicos, logo, paleta, tipografia ou assets. Ver [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md) e [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md).
+Essa fundação informa estratégia, mensagens, interfaces, dashboards e apresentações. A seleção visual do usuário está registrada nos documentos de identidade visual; a fundação de inteligência, por si só, não aprova nomes comerciais, claims públicos, assets ou regras de uso. Ver [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md), [Planilha Técnica de Desenvolvimento HUB](../../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md) e [DESIGN.md](DESIGN.md).
 
 | Categoria | Baseline |
 |---|---|
-| Cor estrutural | `#17151D` / navy-900 |
-| Ação / ênfase | violeta `#6D28D9`, com `#4C1D95` para contraste |
+| Cor estrutural | `#0D1322` / navy |
+| Profundidade | `#2B1433` / plum |
+| Ação / ênfase | `#5A2D6E` / violeta |
+| Trajetória | `#B23A6B` / magenta |
+| Ponto / energia | `#E15A4F` / coral |
+| Conexão / informação | `#2A6A7E` / teal |
 | Fundo | `#FFFFFF` e `#F8F7FB` |
 | Borda | `#E2DFEA` |
 | Texto secundário | `#3B3745`; texto muted `#6B6675`, validar no contexto |
 | Status | sucesso `#166534`, alerta `#92400E`, perigo `#B91C1C`, sempre com label |
 | Corpo | 16 / 24 px, Inter ou fallback system sans |
-| Títulos | 32 / 40 px; display 40 / 48 px |
+| Títulos | Sora; 32 / 40 px; display 40 / 48 px |
 | Espaçamento | escala de 4 px; gaps recorrentes de 8, 16, 24, 32 e 48 px |
 | Raios | 6 px controle, 10 px card, 16 px painel, pill apenas para badge/tag |
 | Controle | 44 px preferencial; foco visível de pelo menos 2 px |

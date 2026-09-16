@@ -1,6 +1,6 @@
 ---
 titulo: Tipografia — HUB
-status: rascunho / provisório / não aprovado
+status: selecionada pelo usuário / especificação operacional pendente
 escopo: tipografia para apresentações, produto, dashboards e comunicação
 owner: Identidade visual — a confirmar
 fontes:
@@ -11,22 +11,22 @@ fontes:
 
 # Tipografia — HUB
 
-> Este documento registra uma hipótese tipográfica para prototipagem. Não confirma licenças, disponibilidade, arquivo de fonte ou decisão final de identidade.
+> Sora e Inter foram selecionadas pelo usuário a partir da referência fornecida. A escolha tipográfica está definida; licenças, arquivos, pesos, distribuição e validação de uso continuam pendentes.
 
-## 1. Hipótese de famílias
+## 1. Famílias selecionadas
 
-O moodboard `HUB / SISTEMA VIVO` sugere:
+A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) explicita a seguinte divisão:
 
 - `Sora` para títulos, números de destaque e chamadas;
 - `Inter` para corpo, controles, tabelas e leitura contínua.
 
-Essa combinação deve ser tratada como hipótese até confirmação de licença, pesos, suporte ao português, numerais e disponibilidade nos ambientes de apresentação e produto.
+Essa combinação passa a ser a seleção tipográfica da identidade HUB. A validação de licença, pesos, suporte ao português, numerais e disponibilidade nos ambientes de apresentação e produto continua sendo uma etapa de implementação.
 
-## 2. Hierarquia provisória
+## 2. Hierarquia selecionada
 
 ## 2.1 Referência tipográfica fornecida
 
-A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) explicita `Sora` para títulos e `Inter` para corpo, números e interface. Isso reforça a hipótese tipográfica já registrada e passa a ser tratado como referência fornecida para a direção visual. Licença, pesos, suporte ao português, disponibilidade e desempenho em produto, apresentação e impressão continuam pendentes.
+A imagem [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) explicita `Sora` para títulos e `Inter` para corpo, números e interface. Ela registra a seleção tipográfica da identidade HUB; licença, pesos, suporte ao português, disponibilidade e desempenho em produto, apresentação e impressão continuam pendentes.
 
 | Papel | Família | Uso | Regra |
 |---|---|---|---|
@@ -62,10 +62,10 @@ Não reduzir corpo ou label abaixo do necessário para encaixar conteúdo em um 
 - incluir fallback no código ou no template de apresentação;
 - confirmar licença antes de distribuir arquivos ou incorporar fontes.
 
-## 5. Pendências
+## 5. Pendências operacionais
 
-- confirmar se `Sora` e `Inter` podem ser usadas no projeto;
 - definir pesos, arquivos, licença e método de distribuição;
 - testar leitura em slides, dashboards, mobile e impressão;
-- decidir se haverá serif display editorial;
-- registrar a família aprovada no sistema de tokens.
+- confirmar suporte ao português e desempenho nos ambientes reais;
+- registrar as famílias selecionadas no sistema de tokens;
+- manter eventual serif display editorial fora do sistema até decisão específica.

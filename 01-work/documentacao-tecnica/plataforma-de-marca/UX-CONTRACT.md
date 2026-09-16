@@ -7,7 +7,7 @@
 - **Público:** Pessoas e organizações que coordenam contexto, relações, capacidades, oportunidades, decisões, ação e aprendizado.
 - **Trabalhos principais:** Compreender uma situação, inspecionar evidências e limitações, identificar prioridades, coordenar próximos passos responsáveis, registrar resultados e reutilizar aprendizados.
 - **Mercado(s)-alvo:** Ainda não finalizado; não inferir claims de cliente, setor, ROI ou impacto somente a partir da documentação.
-- **Locales ativos:** Documentação em pt-BR e direção de interface provisória. Outros locales de interface não estão especificados.
+- **Locales ativos:** Documentação em pt-BR e direção de interface alinhada ao sistema visual HUB selecionado; implementação de produto ainda provisória. Outros locales de interface não estão especificados.
 - **Idioma/registro de conteúdo e revisão nativa:** pt-BR simples, direto, humano e atento às evidências; revisão nativa obrigatória antes da publicação.
 - **Política de fuso/calendário:** Não especificada; implementações de produto devem defini-la antes de fluxos sensíveis a datas.
 - **Meta de acessibilidade:** WCAG 2.2 AA.
@@ -18,7 +18,7 @@
 |---|---|---|---|
 | Propósito e posicionamento do produto | `01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/proposito-promessa-e-posicionamento.md` | Estratégia provisória | 2026-09-15 |
 | Arquitetura e nomenclatura de marca | `01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-marca.md` | Arquitetura provisória | 2026-09-15 |
-| Direção visual e verbal | `01-work/documentacao-tecnica/plataforma-de-marca/plataforma-de-marca-consolidada.md` | Referência de marca provisória | 2026-09-15 |
+| Direção visual e verbal | `01-work/documentacao-tecnica/plataforma-de-marca/DESIGN.md`; `plataforma-de-marca-consolidada.md` | Sistema visual selecionado; aplicação verbal provisória | 2026-09-16 |
 | Conceitos de inteligência e responsabilidade humana | `03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/` | Especificação aprovada | 2026-09-15 |
 | Ciclo de vida e autoridade dos artefatos | `README.md`, `00-project-control/framework/HUB_Framework_Fronteiras_Lifecycle.md` | Política de ciclo de vida do repositório | 2026-09-15 |
 | Permissões, privacidade, cobrança, retenção e texto jurídico | Não identificados no contexto atual do produto | Fonte obrigatória antes da implementação | — |
@@ -27,13 +27,21 @@ Documentos de negócio são evidências para o comportamento do produto, não in
 
 ## Contrato visual
 
-- **`DESIGN.md` do projeto:** Este arquivo.
-- **Modelo de propriedade dos tokens:** `DESIGN.md` é a fonte documental provisória; a propriedade canônica no runtime ainda não foi estabelecida na raiz.
+- **`DESIGN.md` do projeto:** Fonte documental do sistema visual HUB selecionado; este contrato define sua aplicação comportamental em superfícies de produto.
+- **Modelo de propriedade dos tokens:** `DESIGN.md` é a fonte documental canônica da direção visual; a propriedade canônica no runtime ainda não foi estabelecida na raiz.
 - **Fonte de tokens/design system no runtime:** Nenhuma identificada na raiz. O guia-piloto aninhado é uma referência relacionada, não um adapter de runtime verificado.
 - **Mapeamento/exportação/adapters:** Definir quando um runtime de produto for introduzido; não duplicar valores brutos entre CSS, configuração de tema e componentes.
 - **Gate de drift de tokens:** `designmd lint DESIGN.md`, seguido de comparação com o runtime quando os tokens existirem.
 - **Temas suportados:** Direções clara e escura são permitidas pelo sistema visual; a hierarquia semântica deve permanecer igual. Comportamento de alto contraste é obrigatório.
 - **Owner/revisão do contexto de design:** Owner de identidade visual / design de produto a confirmar; promoção exige revisão humana e registro no ciclo de vida.
+
+### Seleção visual vigente
+
+- **Logo:** símbolo geométrico entrelaçado com wordmark `HUB.` e ponto coral/vermelho terminal; versões positiva, negativa, isolada, circular, editorial e digital são as aplicações selecionadas nas referências fornecidas.
+- **Paleta:** `#0D1322` navy, `#2B1433` plum, `#5A2D6E` violeta, `#B23A6B` magenta, `#E15A4F` coral e `#2A6A7E` teal.
+- **Tipografia:** `Sora` para display e headings; `Inter` para corpo, labels, controles, tabelas e métricas; família mono somente para comandos, identificadores e valores técnicos.
+- **Regra de implementação:** usar os valores selecionados por meio de tokens semânticos e preservar seus papéis em temas claro, escuro e alto contraste; não aplicar HEX diretamente em componentes quando um token semântico existir.
+- **Gates ainda necessários:** obter arquivos-mestre do logo, confirmar titularidade/direitos e licenças tipográficas, medir contraste e definir área de proteção, tamanho mínimo, monocromia e usos proibidos.
 
 ## Mapa de UI canônica
 

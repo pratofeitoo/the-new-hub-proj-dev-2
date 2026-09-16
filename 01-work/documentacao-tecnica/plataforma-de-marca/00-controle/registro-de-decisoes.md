@@ -26,6 +26,7 @@ escopo: decisões estratégicas de marca
 | PM-012 | Escopo de claims | direção de cobertura; aprovação pendente | `02-identidade-verbal/claims-registry.md`; `06-governanca-e-publicacao/fluxo-de-aprovacao-de-claims.md` | Cobrir as categorias de impacto, ROI, inteligência, matching, rede, certificação, moat, dados e benchmarks, sempre mantendo fonte, owner, evidência, validade e gate por claim. |
 | PM-013 | Renderer de apresentações | critério revisado | `00-controle/registro-de-progresso.md`; `04-sistema-de-apresentacoes/templates-de-deck.md`; `render-manifest.yml` | O uso do plugin Open Design não é obrigatório. O renderer deve ser escolhido conforme disponibilidade, adequação técnica, qualidade, rastreabilidade e revisão do artefato. |
 | PM-014 | Fundação de produto e inteligência para a marca | evidência aprovada incorporada; aplicação da marca ainda provisória | `03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB 3.md`; `03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md` | Os documentos aprovados fundamentam o território de valor, o vocabulário de módulos, a narrativa sinal → diagnóstico → recomendação → decisão humana → ação → resultado → aprendizado e os princípios de explicabilidade, evidência, contestação e auditoria. Isso não aprova identidade visual, nomes comerciais ou claims públicos. |
+| PM-015 | Seleção visual da identidade HUB | seleção visual registrada pelo usuário; implementação pendente | `03-identidade-visual/logo-e-assinaturas.md`; `03-identidade-visual/paleta-de-cores.md`; `03-identidade-visual/tipografia.md`; `03-identidade-visual/sistema-visual.md`; imagens fornecidas em `99-referencias/` | O usuário selecionou o símbolo entrelaçado, o wordmark `HUB.` com ponto coral/vermelho, as versões positiva/negativa e aplicações mostradas, a paleta `#0D1322`, `#2B1433`, `#5A2D6E`, `#B23A6B`, `#E15A4F`, `#2A6A7E` e Sora/Inter. Permanecem pendentes arquivo-mestre, titularidade/direitos, licenças, contraste, área de proteção, tamanho mínimo, usos detalhados e implementação em tokens/artefatos reais. |
 
 ## Próximas decisões necessárias
 
@@ -35,6 +36,7 @@ escopo: decisões estratégicas de marca
 4. Definir os responsáveis por BRD-001, BRD-003, GOV-003 e claims públicos.
 5. Classificar o deck NESST e os demais rascunhos antes de reutilizá-los.
 6. Definir quais documentos podem avançar para revisão e quais permanecem em hipótese.
+7. Obter os arquivos-mestre e completar os gates operacionais da seleção visual registrada em PM-015.
 
 ## Critério de fechamento
 

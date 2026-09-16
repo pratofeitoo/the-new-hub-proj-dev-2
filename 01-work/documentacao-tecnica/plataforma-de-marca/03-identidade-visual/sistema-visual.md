@@ -1,15 +1,16 @@
 # Sistema visual mínimo — HUB Plataforma de Marca
 
-> **Status:** rascunho de trabalho / provisório / não aprovado  
+> **Status:** sistema visual selecionado pelo usuário / implementação pendente
 > **Escopo:** referências visuais, princípios e recomendações mínimas para apresentações, produto e dashboards.  
-> **Regra de maturidade:** nada neste documento autoriza publicação, uso de logotipo, claim, asset ou paleta como identidade oficial.
+> **Regra de maturidade:** a seleção de logo, paleta e tipografia está registrada; publicação exige ainda arquivos-mestre, direitos, contraste, especificação de uso e aprovação dos artefatos derivados.
 
 ## 1. Como ler este documento
 
 Este documento separa deliberadamente:
 
 - **Observado:** descrição de materiais existentes e de seu status no repositório. Não é regra vigente.
-- **Recomendado:** hipótese de sistema mínimo para prototipar e alinhar os próximos documentos. Precisa de validação humana, contraste, licenças e decisão de arquitetura de marca.
+- **Selecionado:** decisão visual registrada pelo usuário a partir das referências fornecidas; precisa de especificação operacional, direitos, contraste e implementação.
+- **Recomendado:** regra de sistema para orientar aplicações além do que foi explicitamente selecionado. Precisa de validação humana e testes no contexto.
 - **Pendente:** decisão que não deve ser resolvida por inferência visual.
 
 ## 2. Referências inventariadas
@@ -18,7 +19,7 @@ Este documento separa deliberadamente:
 
 Por orientação do usuário, o conjunto [WhatsApp (2)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(2).jpeg), [WhatsApp (3)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(3).jpeg), [WhatsApp (4)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(4).jpeg) e [WhatsApp (5)](../99-referencias/WhatsApp%20Image%202026-08-29%20at%2012.47.42%20(5).jpeg) passa a ser a referência visual prioritária para a próxima rodada de prototipagem. O conjunto mostra símbolo geométrico entrelaçado, wordmark `HUB` com ponto coral/vermelho, versões positiva e negativa, aplicações impressas e digitais, trajetórias com nós e órbitas, paleta rotulada e `Sora`/`Inter`.
 
-Esta referência substitui o moodboard anterior como prioridade de exploração visual, mas não como autoridade aprovada. Logo, paleta, assinaturas, tipografia, aplicações, Selo e assets continuam sujeitos a validação, direitos, contraste e aprovação humana.
+Esta referência substitui o moodboard anterior como autoridade visual para a seleção de logo, paleta e tipografia desta rodada. A seleção está registrada; arquivos-mestre, direitos, contraste, regras detalhadas de uso, assinaturas derivadas, Selo e assets continuam sujeitos a validação operacional e aprovação dos gates competentes.
 
 | Evidência | O que foi observado | Status / limite |
 |---|---|---|
@@ -32,9 +33,9 @@ Esta referência substitui o moodboard anterior como prioridade de exploração 
 | `01-work/pesquisa-e-confianca/documentos-oficiais/12-comercial-GTM/12.03-brand-guidelines-claim-registry.md` | Registro de marca/claims está com `status: hipotese`, sem dono, data de aprovação ou PDF. | Não há diretriz externa aprovada disponível nesta evidência. |
 | `01-work/documentacao-tecnica/plataforma-de-marca/plano-de-implementacao-plataforma-de-marca.md` | Declara que ainda não existe sistema integrado aprovado para logo, paleta, tipografia, grid, templates, tokens ou dashboards. | Fonte de planejamento; confirma o caráter provisório desta entrega. |
 
-### 2.1 Observações não convertidas em regra
+### 2.1 Observações ainda não convertidas em regra operacional
 
-Não foram encontrados, nesta leitura, valores oficiais de cor, arquivos-mestre de logotipo, nomes/licenças confirmados de fontes, biblioteca de ícones, regras de fotografia, tokens implementados ou matriz de contraste aprovada. A aparência recorrente das imagens é uma pista de direção, não uma autorização para copiar ou fixar valores. O moodboard “HUB / SISTEMA VIVO” e o deck NESST apresentam direções parcialmente diferentes; para prototipagem, o primeiro será o baseline visual provisório e o segundo uma referência narrativa/editorial complementar.
+As imagens fornecem a seleção visual de cor, tipografia e logo, mas não entregam arquivos-mestre vetoriais, direitos, licença, biblioteca de ícones, regras de fotografia, tokens implementados ou matriz de contraste aprovada. O moodboard “HUB / SISTEMA VIVO” e o deck NESST permanecem referências históricas complementares quando divergirem do sistema selecionado.
 
 ## 3. Princípios recomendados
 
@@ -55,11 +56,11 @@ Fonte: [Especificação Mestra de Inteligência HUB](../../../03-approved/nucleo
 
 ### Cor
 
-Usar os tokens provisórios em [tokens-de-interface.md](../05-sistema-de-produto-e-dashboards/tokens-de-interface.md). A direção de prototipagem atual usa navy como base estrutural e teal, violeta, coral/vermelho e laranja/amarelo como acentos; neutros sustentam a leitura. Azul, verde, âmbar e vermelho devem continuar semânticos ou explicitamente legendados. Os valores do moodboard não são ainda uma paleta aprovada nem substituem testes de contraste.
+Usar os valores selecionados em [paleta-de-cores.md](paleta-de-cores.md) e os tokens de implementação em [tokens-de-interface.md](../05-sistema-de-produto-e-dashboards/tokens-de-interface.md). A identidade usa `#0D1322`, `#2B1433`, `#5A2D6E`, `#B23A6B`, `#E15A4F` e `#2A6A7E`; status operacionais continuam semânticos e devem ser explicitamente legendados. Os valores selecionados ainda exigem testes de contraste nos pares reais.
 
 ### Tipografia
 
-Usar uma família sans-serif de interface com boa leitura em português e numerais tabulares quando houver métrica. A hipótese observada no moodboard é `Sora` para títulos e `Inter` para corpo; confirmar licença, disponibilidade, pesos e coerência antes de fixá-las. Reservar uma eventual serif display para títulos editoriais somente depois de confirmar fonte, licença e coerência entre produto e apresentações. Ver escala provisória nos tokens.
+Usar `Sora` para títulos e `Inter` para corpo, controles, tabelas e métricas, conforme seleção registrada na referência. Confirmar licença, disponibilidade, pesos, suporte ao português e coerência entre produto e apresentações. Reservar eventual serif display editorial para decisão específica. Ver escala de implementação nos tokens.
 
 ### Grid, composição e espaçamento
 
@@ -101,13 +102,13 @@ Cada asset ou referência visual deve registrar: `asset_id`, caminho original, t
 ## 7. Decisões de identidade ainda abertas
 
 1. Como formalizar a arquitetura entre HUB, Plataforma HUB, HUB Negócios, Instituto HUB, CAOS e Selo.
-2. Se a direção provisória navy + teal/violeta/coral/laranja será aprovada, ajustada ou substituída.
-3. Logo, assinaturas, área de proteção, usos permitidos e arquivo-mestre.
-4. Família tipográfica, licenças, pesos e eventual papel de uma serif display.
+2. Arquivo-mestre, titularidade e direitos de uso do logo e símbolo.
+3. Área de proteção, tamanho mínimo, fundos, monocromia e usos permitidos.
+4. Licenças, pesos, arquivos, suporte ao português e distribuição de Sora/Inter.
 5. Personalidade visual de produtos, programas, parceiros e white-label.
 6. Owner de marca, gate de aprovação e registro de versões.
 7. Quais elementos do deck NESST serão reutilizáveis como narrativa e quais devem permanecer apenas históricos.
 
 ## 8. Próxima validação
 
-Antes de promover qualquer regra: obter os ativos/fontes oficiais, testar os pares de contraste da direção navy + teal/violeta/coral/laranja, aplicar os tokens a um slide, um dashboard e uma tabela reais, classificar o NESST e registrar a decisão no controle do projeto. Até lá, este documento permanece hipótese de trabalho.
+Antes da publicação: obter os ativos/fontes oficiais, testar os pares de contraste da paleta selecionada, aplicar os tokens a um slide, um dashboard e uma tabela reais, definir regras de logo e registrar a decisão no controle do projeto. A seleção visual está definida; a implementação permanece condicionada a esses gates.

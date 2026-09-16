@@ -1,14 +1,20 @@
 ---
 version: alpha
 name: Contexto de Design HUB
-description: Contexto visual e de interação provisório para a marca, plataforma, produto, dashboards e superfícies de apresentação orientadas por evidências do HUB.
+description: Contexto visual e de interação da identidade HUB selecionada e de suas aplicações em marca, plataforma, produto, dashboards e superfícies de apresentação orientadas por evidências.
+brandStatus: sistema visual selecionado pelo usuário / implementação pendente
 colors:
-  primary: "#6D28D9"
-  primary-strong: "#4C1D95"
-  secondary: "#0F8C8C"
-  accent: "#E76F51"
-  dark: "#17151D"
-  ink: "#282431"
+  primary: "#5A2D6E"
+  primary-strong: "#2B1433"
+  secondary: "#2A6A7E"
+  accent: "#E15A4F"
+  dark: "#0D1322"
+  ink: "#0D1322"
+  magenta: "#B23A6B"
+  plum: "#2B1433"
+  violet: "#5A2D6E"
+  coral: "#E15A4F"
+  teal: "#2A6A7E"
   background: "#F8F7FB"
   surface: "#FFFFFF"
   border: "#E2DFEA"
@@ -73,7 +79,7 @@ components:
 
 ### Referência visual prioritária
 
-O conjunto de quatro imagens fornecido pelo usuário em `01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/` passa a informar esta direção visual: símbolo geométrico entrelaçado, wordmark `HUB.` com ponto coral/vermelho, versões clara e escura, trajetórias com nós e órbitas, aplicações editoriais e digitais e paleta candidata navy/plum/violeta/magenta/coral/teal. A referência é provisória e não substitui arquivo-mestre, direitos, testes de contraste ou aprovação humana.
+O conjunto de quatro imagens fornecido pelo usuário em `01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/` define a seleção visual desta identidade: símbolo geométrico entrelaçado, wordmark `HUB.` com ponto coral/vermelho, versões clara e escura, trajetórias com nós e órbitas, aplicações editoriais e digitais e paleta navy/plum/violeta/magenta/coral/teal. A seleção está registrada; arquivo-mestre, direitos, testes de contraste e regras detalhadas de uso continuam pendentes.
 
 ### Norte criativo
 
@@ -93,15 +99,15 @@ O HUB deve parecer uma sala de inteligência serena: um sistema editorial precis
 
 ## Cores
 
-Navy e ink estabelecem estrutura, texto e autoridade serena. Paper e branco fornecem superfícies de leitura. Violeta é a direção primária de ênfase/ação; teal expressa conexão e relacionamento; coral é energia controlada, não uma cor genérica de alerta. Cores de status são semânticas e devem sempre vir acompanhadas de rótulo, ícone, padrão ou posição.
+Navy e ink estabelecem estrutura, texto e autoridade serena. Paper e branco fornecem superfícies de leitura. Violeta é a cor selecionada de ênfase/ação; teal expressa conexão e relacionamento; magenta expressa trajetória e energia de rede; coral é energia controlada, não uma cor genérica de alerta; plum cria profundidade. Cores de status são semânticas e devem sempre vir acompanhadas de rótulo, ícone, padrão ou posição.
 
-Os valores observados na referência visual são `#0D1322` (navy), `#2B1433` (plum), `#5A2D6E` (violeta), `#B23A6B` (magenta), `#E15A4F` (coral) e `#2A6A7E` (teal). Tratá-los como candidatos de teste; os papéis semânticos e a acessibilidade prevalecem sobre a reprodução literal.
+Os valores selecionados na referência visual são `#0D1322` (navy), `#2B1433` (plum), `#5A2D6E` (violeta), `#B23A6B` (magenta), `#E15A4F` (coral) e `#2A6A7E` (teal). Usá-los como valores canônicos da direção visual nos documentos e protótipos; os papéis semânticos e a acessibilidade prevalecem sobre a aplicação literal quando houver conflito.
 
 Não use violeta, coral, amarelo ou verde-claro em texto pequeno sobre superfícies claras sem medir o contraste. Busque WCAG 2.2 AA, incluindo 4,5:1 para texto normal. Mudanças de tema podem remapear primitivos, mas devem preservar papéis semânticos. Gráficos exigem legenda, definição, unidade, período, fonte e resumo textual acessível quando esses dados forem relevantes.
 
 ## Tipografia
 
-Sora é a voz provisória de display: use-a em títulos curtos, frases de capa e números em destaque. Inter é a voz utilitária provisória: use-a em prosa, controles, rótulos, tabelas, métricas e notas de evidência. Use a família mono apenas para comandos, identificadores e valores técnicos. Confirme licenciamento, pesos, suporte ao português e distribuição antes da publicação. Use sentence case por padrão; evite caixa alta para informações essenciais.
+Sora é a família selecionada de display: use-a em títulos curtos, frases de capa e números em destaque. Inter é a família selecionada utilitária: use-a em prosa, controles, rótulos, tabelas, métricas e notas de evidência. Use a família mono apenas para comandos, identificadores e valores técnicos. Confirme licenciamento, pesos, suporte ao português e distribuição antes da publicação. Use sentence case por padrão; evite caixa alta para informações essenciais.
 
 Mantenha o corpo em 16 px ou mais sempre que possível, com line-height de 1,5. Não comprima a tipografia para preservar um layout. Dados numéricos devem usar formatação consistente e numerais tabulares quando disponíveis. Não invente comportamento de localização para locales ainda não especificados.
 
@@ -117,7 +123,7 @@ Prefira camadas tonais e bordas sutis a sombras. Cards estáticos são planos po
 
 ## Formas
 
-Use 6 px para campos e controles compactos, 10 px para cards e controles primários, 16 px para painéis de destaque e pills apenas para tags, filtros e rótulos de status explícitos. Mantenha containers de ícones e divisores opticamente consistentes. A marca HUB exige área de proteção e não deve ser alterada, esticada, recolorida ou aplicada sobre imagem complexa sem fundo controlado.
+Use 6 px para campos e controles compactos, 10 px para cards e controles primários, 16 px para painéis de destaque e pills apenas para tags, filtros e rótulos de status explícitos. Mantenha containers de ícones e divisores opticamente consistentes. O logo HUB. exige área de proteção e não deve ser alterado, esticado, recolorido ou aplicado sobre imagem complexa sem fundo controlado. Tamanho mínimo, monocromia e demais regras detalhadas dependem do arquivo-mestre.
 
 ## Componentes
 
@@ -154,6 +160,6 @@ Use linguagem clara, humana, precisa e responsável. Prefira `pode apoiar`, `em 
 - **Faça:** Faça cada superfície responder a uma pergunta e expor a próxima ação útil.
 - **Faça:** Reutilize a porta de conexão, o contraste navy/paper e o vocabulário explícito de evidências como assinatura reconhecível do sistema.
 - **Faça:** Preserve a distinção entre evidência observada, hipótese, ilustração, validação e aprovação.
-- **Não faça:** Apresente o board de marca gerado ou qualquer protótipo como identidade, produto, certificação ou resultado aprovado.
+- **Não faça:** Apresente o board de referência ou qualquer protótipo derivado como arquivo-mestre, certificação, produto ou resultado validado.
 - **Não faça:** Deixe cor, profundidade, densidade ou presença do logo sugerirem autoridade ou impacto.
 - **Não faça:** Crie variantes locais do comportamento compartilhado sem registrar uma razão nomeada pelo negócio em `UX-CONTRACT.md`.
