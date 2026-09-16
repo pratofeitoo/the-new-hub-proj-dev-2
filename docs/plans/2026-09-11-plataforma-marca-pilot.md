@@ -14,8 +14,8 @@
 
 - Create `01-work/documentacao-tecnica/plataforma-de-marca/DESIGN.md` — shared visual contract.
 - Create `01-work/documentacao-tecnica/plataforma-de-marca/render-manifest.yml` — explicit pipeline inputs and outputs.
-- Create `04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html` — rendered demonstration.
-- Create `04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf` — PDF counterpart.
+- Create `04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html` — rendered demonstration.
+- Create `04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf` — PDF counterpart.
 - Create `docs/specs/2026-09-11-plataforma-marca-pilot-design.md` — approved design record.
 - Create `docs/plans/2026-09-11-plataforma-marca-pilot.md` — this implementation plan.
 - Do not modify the six files under `01-plataforma-estrategica/`.
@@ -71,7 +71,7 @@ Expected: `manifest sources and design: OK`.
 ### Task 3: Generate the HTML pilot
 
 **Files:**
-- Create: `04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html`
+- Create: `04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html`
 
 **Security flag:** none
 
@@ -86,7 +86,7 @@ Verification:
 ```bash
 python3 - <<'PY'
 from pathlib import Path
-html = Path('04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html').read_text()
+html = Path('04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html').read_text()
 assert html.count('<article') == 6
 assert 'provisório' in html or 'provisorio' in html
 assert 'DESIGN.md' in html
@@ -99,7 +99,7 @@ Expected: `HTML pilot structure: OK`.
 ### Task 4: Generate and inspect the PDF
 
 **Files:**
-- Create: `04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf`
+- Create: `04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf`
 
 **Security flag:** none
 
@@ -110,7 +110,7 @@ Expected: `HTML pilot structure: OK`.
 Verification:
 
 ```bash
-pdfinfo 04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf
+pdfinfo 04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf
 ```
 
 Expected: a non-zero page count, landscape page dimensions, and successful metadata output.
@@ -131,7 +131,7 @@ Verification:
 
 ```bash
 git diff --name-only -- 01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica
-pdftotext 04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf - | wc -l
+pdftotext 04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf - | wc -l
 ```
 
 Expected: no output from the first command and a positive line count from the second.

@@ -174,8 +174,8 @@ Foi executado um teste longo usando `01-plataforma-estrategica/arquitetura-de-ma
 
 ### Artefatos produzidos
 
-- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.html`
-- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.pdf`
+- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.html`
+- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.pdf`
 
 O PDF foi corrigido para proporção 16:9. A verificação confirmou sete páginas em formato paisagem 16:9 e inspeção visual em resolução 1920×1080. Foi observado um pequeno conflito visual entre a numeração da capa e a linha de status; esse artefato não deve ser tratado como saída final aprovada.
 

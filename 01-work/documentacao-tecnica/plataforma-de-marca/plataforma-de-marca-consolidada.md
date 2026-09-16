@@ -123,10 +123,10 @@ O inventário abaixo lista todos os arquivos incorporados. PDFs têm texto extra
 | `01-work/documentacao-tecnica/plataforma-de-marca/03-identidade-visual/tipografia.md` | Unicode text, UTF-8 text | 2928 bytes | conteúdo integral abaixo |
 | `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/.DS_Store` | Apple Desktop Services Store | 6148 bytes | metadados binários registrados abaixo |
 | `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/checklist-de-publicacao.md` | Unicode text, UTF-8 text | 3391 bytes | conteúdo integral abaixo |
-| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.html` | HTML document text, Unicode text, UTF-8 text, with very long lines (378) | 12814 bytes | conteúdo integral abaixo |
-| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.pdf` | PDF document, version 1.4, 7 pages | 673010 bytes | texto extraído abaixo + arquivo original preservado |
-| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html` | HTML document text, Unicode text, UTF-8 text, with very long lines (1219) | 32152 bytes | conteúdo integral abaixo |
-| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf` | PDF document, version 1.4, 8 pages | 521316 bytes | texto extraído abaixo + arquivo original preservado |
+| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.html` | HTML document text, Unicode text, UTF-8 text, with very long lines (378) | 12814 bytes | conteúdo integral abaixo |
+| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.pdf` | PDF document, version 1.4, 7 pages | 673010 bytes | texto extraído abaixo + arquivo original preservado |
+| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html` | HTML document text, Unicode text, UTF-8 text, with very long lines (1219) | 32152 bytes | conteúdo integral abaixo |
+| `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf` | PDF document, version 1.4, 8 pages | 521316 bytes | texto extraído abaixo + arquivo original preservado |
 | `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/principios-de-narrativa.md` | Unicode text, UTF-8 text | 2953 bytes | conteúdo integral abaixo |
 | `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/regras-de-graficos-e-tabelas.md` | Unicode text, UTF-8 text, with very long lines (396) | 7084 bytes | conteúdo integral abaixo |
 | `01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/regras-de-notas-de-evidencia.md` | Unicode text, UTF-8 text | 2672 bytes | conteúdo integral abaixo |
@@ -985,8 +985,8 @@ Foi executado um teste longo usando `01-plataforma-estrategica/arquitetura-de-ma
 
 ### Artefatos produzidos
 
-- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.html`
-- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.pdf`
+- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.html`
+- `04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.pdf`
 
 O PDF foi corrigido para proporção 16:9. A verificação confirmou sete páginas em formato paisagem 16:9 e inspeção visual em resolução 1920×1080. Foi observado um pequeno conflito visual entre a numeração da capa e a linha de status; esse artefato não deve ser tratado como saída final aprovada.
 
@@ -2710,7 +2710,7 @@ Bloquear a publicação se faltar fonte, owner, validade, licença, autorizaçã
 </details>
 
 <details>
-<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.html</code></summary>
+<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.html</code></summary>
 
 ````
 <!doctype html>
@@ -2868,7 +2868,7 @@ Bloquear a publicação se faltar fonte, owner, validade, licença, autorizaçã
 </details>
 
 <details>
-<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca-hub.pdf</code></summary>
+<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.pdf</code></summary>
 
 > Texto extraído do PDF com `pdftotext -layout`. Consulte também o PDF original no mesmo caminho para elementos visuais.
 
@@ -3010,7 +3010,7 @@ Saída: HTML + PDF                                                              
 </details>
 
 <details>
-<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html</code></summary>
+<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html</code></summary>
 
 ````
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Plataforma Estratégica — Pilot</title><meta name="description" content="Piloto provisório da plataforma estratégica HUB, gerado com renderer local HTML/CSS; Open Design é opcional."><style>
@@ -3546,7 +3546,7 @@ code { padding:2px 5px; background:var(--color-primary-subtle); border-radius:va
 </details>
 
 <details>
-<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf</code></summary>
+<summary><code>01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf</code></summary>
 
 > Texto extraído do PDF com `pdftotext -layout`. Consulte também o PDF original no mesmo caminho para elementos visuais.
 
@@ -6525,8 +6525,8 @@ qa:
   source_files_mutated: false
 
 outputs:
-  html: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html
-  pdf: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf
+  html: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html
+  pdf: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf
 
 notes:
   - Sources are unchanged.

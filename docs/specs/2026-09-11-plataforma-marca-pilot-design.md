@@ -26,9 +26,9 @@ Six strategic Markdown files
   `DESIGN.md` alpha-compatible visual contract.
 - `01-work/documentacao-tecnica/plataforma-de-marca/render-manifest.yml`:
   source, design, output, renderer, and status metadata.
-- `04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html`:
+- `04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html`:
   self-contained browser demonstration with one chapter per source.
-- `04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf`:
+- `04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf`:
   landscape PDF generated from the same presentation source.
 
 ## Design contract

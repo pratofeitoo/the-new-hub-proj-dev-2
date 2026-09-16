@@ -38,8 +38,8 @@ qa:
   source_files_mutated: false
 
 outputs:
-  html: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.html
-  pdf: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica-pilot.pdf
+  html: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html
+  pdf: 01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf
 
 notes:
   - Sources are unchanged.
