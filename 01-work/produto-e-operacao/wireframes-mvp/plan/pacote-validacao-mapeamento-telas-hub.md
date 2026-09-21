@@ -15,9 +15,9 @@ status: plano-provisorio
 
 ## Objetivo e critério de saída
 
-Consolidar as validações necessárias antes da Fase 3 do [Plano de Mapeamento das Telas da Plataforma HUB](../plano-mapeamento-telas-plataforma-hub.md). O pacote estará pronto para promoção quando cada decisão abaixo tiver responsável, evidência, data e resultado registrado, e quando as divergências estiverem encaminhadas para [02-review/](../../02-review/).
+Consolidar as validações necessárias antes da Fase 3 do [Plano de Mapeamento das Telas da Plataforma HUB](plano-mapeamento-telas-plataforma-hub.md). O pacote estará pronto para promoção quando cada decisão abaixo tiver responsável, evidência, data e resultado registrado, e quando as divergências estiverem encaminhadas para [02-review/](../../02-review/).
 
-Fontes de referência: [Planilha Técnica de Desenvolvimento HUB](../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md), [Matriz de autorização e tenancy](./refinamento-produto/matriz-autorizacao-tenancy.md) e [RACI de Produto](./refinamento-produto/RACI_v1.md).
+Fontes de referência: [Planilha Técnica de Desenvolvimento HUB](Planilha_Tecnica_Desenvolvimento_HUB.md), [Matriz de autorização e tenancy](matriz-autorizacao-tenancy.md) e [RACI de Produto](01-work/produto-e-operacao/refinamento-produto/RACI_v1.md).
 
 ## 1. Segurança/LGPD + Admin
 
@@ -66,7 +66,7 @@ Para permitir o avanço do trabalho de interface, os gates restantes ficam defin
 
 ### Resultado da revisão documental
 
-A revisão confirma que o desenho deve adotar deny-by-default, isolamento por tenant, menor privilégio, finalidade explícita, separação de funções e auditabilidade. A fonte técnica também exige bloqueio de leitura de dados sensíveis sem `consent_id + purpose + legal_basis` válido, propagação de revogação para derivados em até cinco minutos e log imutável de leituras sensíveis, alterações e decisões. Esses requisitos permanecem critérios de aceite; não são evidência de que a implementação já os cumpre. [Fonte técnica, Segurança e LGPD](../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md#11--segurança-e-lgpd--governança).
+A revisão confirma que o desenho deve adotar deny-by-default, isolamento por tenant, menor privilégio, finalidade explícita, separação de funções e auditabilidade. A fonte técnica também exige bloqueio de leitura de dados sensíveis sem `consent_id + purpose + legal_basis` válido, propagação de revogação para derivados em até cinco minutos e log imutável de leituras sensíveis, alterações e decisões. Esses requisitos permanecem critérios de aceite; não são evidência de que a implementação já os cumpre. [Fonte técnica, Segurança e LGPD](Planilha_Tecnica_Desenvolvimento_HUB.md#11--segurança-e-lgpd--governança).
 
 ### Casos mínimos de teste para a validação
 
@@ -90,7 +90,7 @@ A revisão confirma que o desenho deve adotar deny-by-default, isolamento por te
 
 ## 2. Piloto Monks — alertas, thresholds e metas
 
-**Responsáveis pela validação:** Gestor HUB, Produto/Dados e piloto Monks. A fonte técnica mantém `ALT-01`, `ALT-02`, `ALT-03`, `ALT-06`, `ALT-07` e `ALT-08` como propostos para validação, enquanto `ALT-04` e `ALT-05` permanecem no MVP. [Fonte técnica, regras de alerta](../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md#9--regras-de-alerta).
+**Responsáveis pela validação:** Gestor HUB, Produto/Dados e piloto Monks. A fonte técnica mantém `ALT-01`, `ALT-02`, `ALT-03`, `ALT-06`, `ALT-07` e `ALT-08` como propostos para validação, enquanto `ALT-04` e `ALT-05` permanecem no MVP. [Fonte técnica, regras de alerta](Planilha_Tecnica_Desenvolvimento_HUB.md#9--regras-de-alerta).
 
 ### Recorte recomendado para a primeira rodada
 
@@ -114,7 +114,7 @@ A revisão confirma que o desenho deve adotar deny-by-default, isolamento por te
 
 ## 3. Financeiro + Sponsor — ROI e aprovação financeira
 
-**Responsáveis pela validação:** Financeiro e Sponsor. O fluxo deve separar valor estimado de valor realizado validado, exigir evidência financeira e manter o ledger deduplicado; sem baseline do piloto, o ROI permanece zero/ilustrativo. [Fonte técnica, ROI HUB](../../03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md#14--roi-hub).
+**Responsáveis pela validação:** Financeiro e Sponsor. O fluxo deve separar valor estimado de valor realizado validado, exigir evidência financeira e manter o ledger deduplicado; sem baseline do piloto, o ROI permanece zero/ilustrativo. [Fonte técnica, ROI HUB](Planilha_Tecnica_Desenvolvimento_HUB.md#14--roi-hub).
 
 - [ ] Confirmar estados `Potencial → Influenciado → Validado → Realizado`.
 - [ ] Confirmar evidência mínima para cada benefício e quem pode anexar, revisar, rejeitar e corrigir.
@@ -144,7 +144,7 @@ A revisão confirma que o desenho deve adotar deny-by-default, isolamento por te
 ## 5. Aprovação e promoção
 
 - [x] Consolidar o baseline provisório e as divergências conhecidas das quatro frentes.
-- [ ] Atualizar o [plano de mapeamento](../plano-mapeamento-telas-plataforma-hub.md), mantendo como pendentes as decisões sem evidência.
+- [ ] Atualizar o [plano de mapeamento](plano-mapeamento-telas-plataforma-hub.md), mantendo como pendentes as decisões sem evidência.
 - [x] Registrar autorização provisória para iniciar a especificação de interface, limitada a wireframes com dados sintéticos.
 - [ ] Se aprovado, criar o material de revisão em [02-review/](../../02-review/) e preservar este pacote em `01-work/` como registro de elaboração.
 

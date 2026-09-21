@@ -4,79 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "3566e718b79cdba2",
+        "id": "41353486871fc6f7",
         "type": "tabs",
         "children": [
           {
-            "id": "49e6f8bdf900ac48",
+            "id": "34d23f6b8acd3a1b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "01-work/documentacao-tecnica/plataforma-de-marca/02-identidade-verbal/exemplos-de-mensagem-aprovada.md",
-                "mode": "source",
-                "source": false
+                "file": "TaskNotes/Views/kanban-default.base",
+                "viewName": "Kanban Board"
               },
-              "icon": "lucide-file",
-              "title": "exemplos-de-mensagem-aprovada"
+              "icon": "tasknotes-simple",
+              "title": "kanban-default"
             }
           },
           {
-            "id": "7b293657181e8bf7",
+            "id": "64a30f89b58c0c53",
             "type": "leaf",
             "state": {
-              "type": "omni-viewer.excelViewer",
+              "type": "bases",
               "state": {
-                "file": "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.xlsx"
+                "file": "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
+                "viewName": "Blueprint Task Register"
               },
-              "icon": "sheet",
-              "title": "Planilha_Tecnica_Desenvolvimento_HUB.xlsx"
+              "icon": "lucide-table",
+              "title": "HUB_Tarefas_Projeto"
             }
           },
           {
-            "id": "6f6c57953bcef5f7",
+            "id": "a0f9e42d44877af2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md",
-                "mode": "source",
-                "source": false
+                "file": "TaskNotes/Views/documentacao-oficial.base",
+                "viewName": "Kanban — por Status"
               },
-              "icon": "lucide-file",
-              "title": "Planilha_Tecnica_Desenvolvimento_HUB"
-            }
-          },
-          {
-            "id": "cf763862eb3b5732",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-work/produto-e-operacao/plano-mapeamento-telas-plataforma-hub.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "plano-mapeamento-telas-plataforma-hub"
-            }
-          },
-          {
-            "id": "ea894d0c50e34cd5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-work/documentacao-tecnica/plataforma-de-marca/plataforma-de-marca-consolidada.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "plataforma-de-marca-consolidada"
+              "icon": "tasknotes-simple",
+              "title": "documentacao-oficial"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.34763717651367
+    "width": 301.73762130737305
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -263,18 +234,26 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "ea894d0c50e34cd5",
+  "active": "a0f9e42d44877af2",
   "lastOpenFiles": [
+    "TaskNotes/Views/kanban-default.base",
+    "04-project-management/tarefas/HUB_Tarefas_Projeto.base",
+    "01-work/produto-e-operacao/wireframes-mvp/plan/pacote-validacao-mapeamento-telas-hub.md",
+    "01-work/produto-e-operacao/arquitetura-hub-multidiagramas-mermaid.md",
+    "01-work/produto-e-operacao/wireframes-mvp/preview-arquitetura-hub-mermaid.html",
+    "01-work/produto-e-operacao/wireframes-mvp/arquitetura-hub-multidiagramas-mermaid.md",
+    "01-work/produto-e-operacao/wireframes-mvp/sitemap",
+    "01-work/produto-e-operacao/wireframes-mvp/plan",
+    "01-work/produto-e-operacao/wireframes-mvp/plan/plano-mapeamento-telas-plataforma-hub.md",
+    "01-work/produto-e-operacao/wireframes-mvp/sitemap/sitemap.svg",
+    "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md",
+    "01-work/documentacao-tecnica/plataforma-de-marca/plataforma-de-marca-consolidada.md",
     "01-work/produto-e-operacao/wireframes-mvp/index.html",
     "01-work/produto-e-operacao/wireframes-mvp/README.md",
     "01-work/produto-e-operacao/wireframes-mvp",
     "03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB 3.md",
     "01-work/produto-e-operacao/preview-arquitetura-hub-mermaid.html",
-    "01-work/produto-e-operacao/arquitetura-hub-multidiagramas-mermaid.md",
-    "01-work/produto-e-operacao/pacote-validacao-mapeamento-telas-hub.md",
-    "01-work/produto-e-operacao/sitemap-completo-infinite-canvas.html",
-    "01-work/produto-e-operacao/plano-mapeamento-telas-plataforma-hub.md",
-    "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.md",
+    "01-work/produto-e-operacao/wireframes-mvp/sitemap/sitemap-completo-infinite-canvas.html",
     "03-approved/nucleo-inteligencia/planilha-tecnica-completa-desenvolvimento/01-source/Planilha_Tecnica_Desenvolvimento_HUB.xlsx",
     "01-work/documentacao-tecnica/plataforma-de-marca/02-identidade-verbal/exemplos-de-mensagem-aprovada.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/99-referencias/inventario-de-decks-historicos.md",
@@ -286,25 +265,18 @@
     "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/nomenclatura-e-taxonomia.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-ofertas-e-produtos.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/01-plataforma-estrategica/arquitetura-de-marca.md",
-    "TaskNotes/Views/kanban-default.base",
     "03-approved/README.md",
-    "01-work/documentacao-tecnica/plataforma-de-marca/plataforma-de-marca-consolidada.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/README.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit/exec-c5692c7e-1173-4f0f-b079-a00bb938b76d.png",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit/hub-brand-kit-working-direction.png",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit/hub-brand-kit-working-direction.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit",
-    "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.pdf",
-    "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica/plataforma-estrategica-pilot.html",
-    "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/plataforma-estrategica",
-    "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/arquitetura-de-marca/arquitetura-de-marca-hub.pdf",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/exec-c5692c7e-1173-4f0f-b079-a00bb938b76d.png",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/exec-8f0e3081-6b42-400e-ae7b-b41485df750b.png",
     "01-work/documentacao-tecnica/plataforma-de-marca/UX-CONTRACT.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/plano-de-implementacao-plataforma-de-marca.md",
     "01-work/documentacao-tecnica/plataforma-de-marca/DESIGN.md",
     "UX-CONTRACT.md",
-    "DESIGN.md",
     "04-project-management/tarefas/HUB_Tarefas_Projeto.canvas",
     "00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",
     "02-review/02-visao-plataforma/Exemplo de Deck/visuais/ChatGPT Image 29 de ago. de 2026, 12_09_50.png",
@@ -312,7 +284,6 @@
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.29 (1).jpeg",
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30.jpeg",
     "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (3).jpeg",
-    "02-review/01-mvps/MVP - Eventos/Ativações/visuais/WhatsApp Image 2026-08-29 at 12.42.30 (2).jpeg",
     "00-project-control/registro-lacunas/HUB_Gaps.canvas",
     "04-project-management/registros-trabalho/HUB_Execucao_P01-P07.canvas",
     "quartz-site/content/00-project-control/escopo/fases-projeto/Fases_Projeto.canvas",

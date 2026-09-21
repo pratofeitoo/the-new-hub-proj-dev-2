@@ -11,7 +11,7 @@ status: plano-provisorio
 
 # Arquitetura HUB — Multidiagramas Mermaid
 
-> **Status:** provisório para validação estrutural. As telas oficiais `SCR-01..09`, os wireframes `WF-01..07` e os detalhes propostos preservam a classificação do [plano de mapeamento](./plano-mapeamento-telas-plataforma-hub.md). Este documento não aprova rotas, regras de acesso ou produção.
+> **Status:** provisório para validação estrutural. As telas oficiais `SCR-01..09`, os wireframes `WF-01..07` e os detalhes propostos preservam a classificação do [plano de mapeamento](plano-mapeamento-telas-plataforma-hub.md). Este documento não aprova rotas, regras de acesso ou produção.
 
 ## Como ler
 

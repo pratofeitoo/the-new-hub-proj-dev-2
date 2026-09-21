@@ -10,7 +10,7 @@ status: plano-provisorio
 
 # Wireframes MVP HUB
 
-Esta pasta contém a primeira composição visual navegável das telas MVP. O arquivo [index.html](./index.html) usa dados sintéticos, não representa uma implementação funcional e não substitui a validação do [plano de mapeamento](../plano-mapeamento-telas-plataforma-hub.md).
+Esta pasta contém a primeira composição visual navegável das telas MVP. O arquivo [index.html](./index.html) usa dados sintéticos, não representa uma implementação funcional e não substitui a validação do [plano de mapeamento](plano-mapeamento-telas-plataforma-hub.md).
 
 ## Telas incluídas
 

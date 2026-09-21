@@ -704,15 +704,15 @@ O Apêndice A foi preenchido com o rastreamento disponível na fonte aprovada e 
 ## Pendências abertas
 
 - [x] Confirmar a navegação principal e a nomenclatura final — proposta técnica registrada acima; validação de Produto permanece necessária.
-- [ ] Validar a matriz RBAC/ABAC por perfil, tenant, hierarquia e sensibilidade — baseline provisório para wireframes registrado no [pacote de validação](./pacote-validacao-mapeamento-telas-hub.md); aceite final pendente.
+- [ ] Validar a matriz RBAC/ABAC por perfil, tenant, hierarquia e sensibilidade — baseline provisório para wireframes registrado no [pacote de validação](pacote-validacao-mapeamento-telas-hub.md); aceite final pendente.
 - [ ] Selecionar os alertas prioritários do MVP.
 - [ ] Confirmar thresholds e metas ilustrativas com o piloto.
 - [x] Definir dados de exemplo para os wireframes — fixtures sintéticos e limites de uso registrados acima.
 - [x] Confirmar quais telas de detalhe entram na primeira rodada — recorte técnico registrado acima; priorização final permanece necessária.
 - [ ] Validar o fluxo de ROI com Financeiro.
-- [ ] Registrar aprovação antes de promover este plano para uma especificação de interface — autorização provisória limitada a wireframes sintéticos registrada no [pacote de validação](./pacote-validacao-mapeamento-telas-hub.md).
+- [ ] Registrar aprovação antes de promover este plano para uma especificação de interface — autorização provisória limitada a wireframes sintéticos registrada no [pacote de validação](pacote-validacao-mapeamento-telas-hub.md).
 - [x] Definir política de versionamento da API (SCR-09) e padrão de erro/paginação — política proposta registrada acima; aprovação técnica permanece necessária.
-- [ ] Confirmar regra de dupla aprovação financeira e máscaras de sensibilidade por campo — baseline provisório registrado no [pacote de validação](./pacote-validacao-mapeamento-telas-hub.md); ratificação institucional pendente.
+- [ ] Confirmar regra de dupla aprovação financeira e máscaras de sensibilidade por campo — baseline provisório registrado no [pacote de validação](pacote-validacao-mapeamento-telas-hub.md); ratificação institucional pendente.
 - [x] Fechar Apêndice A (cobertura completa WF × SCR × MOD × KPI/ALT × Backlog) antes da Fase 3 — cobertura preenchida abaixo; itens `a confirmar` continuam dependentes de validação.
 
 ## Apêndice A — Cobertura completa (preencher antes da Fase 3)
