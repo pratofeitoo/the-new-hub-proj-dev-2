@@ -2,14 +2,14 @@
 title: P04-T01 — Arquitetura de entidades (4 unidades) + acordos intragrupo
 task_id: P04-T01
 phase: P04
-status: pendente
+status: on-hold
 priority: critica
 area: governance-legal
 layer: refining
 owner:
   - PF Rezende (interino)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Jurídico — GOV-001"
+blocked_reason: aguardando nomeação Jurídico — GOV-001
 blocked_until: 2026-10-15
 gap_ids:
   - GOV-001
@@ -23,11 +23,11 @@ related_notes:
   - "[[04-project-management/marcos/marcos-fases-v1#M04 — Governança & Confiança Aprovada]]"
   - "[[01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1]]"
 evidence_required:
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.01-contrato-social-HUB-Negocios.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/07-fiscal-contabil/07.01-regime-tributario.md
+  - 01-work/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md
+  - 01-work/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md
+  - 01-work/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md
+  - 01-work/documentos-oficiais/01-atos-constitutivos/01.01-contrato-social-HUB-Negocios.md
+  - 01-work/documentos-oficiais/07-fiscal-contabil/07.01-regime-tributario.md
   - 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
 created: 2026-08-26
 tags:
@@ -35,7 +35,7 @@ tags:
   - fase-P04
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:44:36.051-03:00
 ---
 
 # P04-T01 — Arquitetura de entidades (4 unidades) + acordos intragrupo
@@ -44,7 +44,7 @@ dateModified: 2026-09-05T00:00:00.000-03:00
 Definir, como proposta para refinamento, constituição, propriedade, contas, tributos e acordos intragrupo (HUB marca, Negócios, Instituto, Plataforma), para posterior revisão jurídica e financeira — desbloqueia GOV-001.
 
 ## Entregável
-Matriz de entidades + minutas de acordos em `01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/` (02-decisao-GOV-001 + 03-matriz-CNPJ) + `01-atos-constitutivos/01.01` + `04-contratos-fundamentais/04.06` + `07-fiscal-contabil/07.01`, com espelho em `99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md` como insumo Blueprint→Refining. Parecer jurídico/financeiro é evidência para Camada 3, não aprovação nesta tarefa.
+Matriz de entidades + minutas de acordos em `01-work/documentos-oficiais/00-controle-drive/` (02-decisao-GOV-001 + 03-matriz-CNPJ) + `01-atos-constitutivos/01.01` + `04-contratos-fundamentais/04.06` + `07-fiscal-contabil/07.01`, com espelho em `99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md` como insumo Blueprint→Refining. Parecer jurídico/financeiro é evidência para Camada 3, não aprovação nesta tarefa.
 
 ## Acceptance criteria (G04.1 — GOV-001)
 
@@ -56,18 +56,18 @@ Matriz de entidades + minutas de acordos em `01-work/pesquisa-e-confianca/docume
 
 ## Evidence required
 
-- `01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md` (opção A/B/C/D + critérios decisão + ata — bloqueador; ver danger 80% docs)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md` (§ matriz oferta→CNPJ→receita + cenários A/B + pendências GOV-001)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md` (transfer pricing preliminar + política partes relacionadas `09.06`)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.01-contrato-social-HUB-Negocios.md` + `01.04-licenca-marca-metodo-CAOS.md` + `07-fiscal-contabil/07.01-regime-tributario.md` (constituição, PI, tributos por CNPJ)
+- `01-work/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md` (opção A/B/C/D + critérios decisão + ata — bloqueador; ver danger 80% docs)
+- `01-work/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md` (§ matriz oferta→CNPJ→receita + cenários A/B + pendências GOV-001)
+- `01-work/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md` (transfer pricing preliminar + política partes relacionadas `09.06`)
+- `01-work/documentos-oficiais/01-atos-constitutivos/01.01-contrato-social-HUB-Negocios.md` + `01.04-licenca-marca-metodo-CAOS.md` + `07-fiscal-contabil/07.01-regime-tributario.md` (constituição, PI, tributos por CNPJ)
 - `99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md` (espelho blueprint — não constitui aprovação)
 - `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §1/§3 (subset piloto 12 entidades + consentimento condicional — diferenciação pilot vs full)
 
 ## Verification
 
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md 01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md && grep -c "GOV-001\|hipotese\|CNPJ" 01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md | awk '{print ($1>=3)?"PASS matriz GOV-001":"FAIL"}' && grep -c "CNPJ faturador\|HUB Negócios.*Instituto\|Cenário A.*Cenário B" 01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md | awk '{print ($1>=2)?"PASS 4 unidades matriz":"FAIL"}'`
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md 01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.01-contrato-social-HUB-Negocios.md 01-work/pesquisa-e-confianca/documentos-oficiais/07-fiscal-contabil/07.01-regime-tributario.md && grep -c "hipotese\|a desi""gnar\|revisado por advogado" 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md | awk '{print ($1>=1)?"CHECK rascunho hipotese (esperado)":"FAIL"}'`
-- [ ] `grep -c "BLOQUEADOR\|não protocolar\|80%.*hipotese" 01-work/pesquisa-e-confianca/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md | awk '{print ($1>=1)?"PASS blocking preservado":"FAIL"}' && ls 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md 2>&1 | head -1`
+- [ ] `ls 01-work/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md 01-work/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md && grep -c "GOV-001\|hipotese\|CNPJ" 01-work/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md | awk '{print ($1>=3)?"PASS matriz GOV-001":"FAIL"}' && grep -c "CNPJ faturador\|HUB Negócios.*Instituto\|Cenário A.*Cenário B" 01-work/documentos-oficiais/00-controle-drive/03-matriz-CNPJ-oferta-receita.md | awk '{print ($1>=2)?"PASS 4 unidades matriz":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md 01-work/documentos-oficiais/01-atos-constitutivos/01.01-contrato-social-HUB-Negocios.md 01-work/documentos-oficiais/07-fiscal-contabil/07.01-regime-tributario.md && grep -c "hipotese\|a desi""gnar\|revisado por advogado" 01-work/documentos-oficiais/04-contratos-fundamentais/04.06-contrato-intercompany.md | awk '{print ($1>=1)?"CHECK rascunho hipotese (esperado)":"FAIL"}'`
+- [ ] `grep -c "BLOQUEADOR\|não protocolar\|80%.*hipotese" 01-work/documentos-oficiais/00-controle-drive/02-decisao-GOV-001-estrutura-societaria.md | awk '{print ($1>=1)?"PASS blocking preservado":"FAIL"}' && ls 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md 2>&1 | head -1`
 
 ## Dependências
 

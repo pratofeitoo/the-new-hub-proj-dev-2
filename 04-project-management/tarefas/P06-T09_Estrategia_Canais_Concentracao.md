@@ -2,14 +2,15 @@
 title: P06-T09 — Estratégia de canais + limites de concentração
 task_id: P06-T09
 phase: P06
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: gtm
 layer: refining
 owner:
   - Tamara // blocked: aguardando nomeação GTM até 2026-10-15
   - PF Rezende // blocked: aguardando nomeação Governança até 2026-10-15
-blocked_reason: "aguardando nomeação GTM e Governança — GTM-003/006"
+blocked_reason: aguardando nomeação GTM e Governança — GTM-003/006
 blocked_until: 2026-10-15
 accountable: Tamara
 gap_ids:
@@ -33,7 +34,7 @@ tags:
   - fase-P06
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:24.669-03:00
 ---
 
 # P06-T09 — Estratégia de canais + limites de concentração

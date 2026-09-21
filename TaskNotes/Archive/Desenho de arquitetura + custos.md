@@ -4,7 +4,7 @@ task_type: operational
 status: done
 priority: normal
 projects:
-  - "[[Definir arquitetura financeira]]"
+  - "[[arquitetura financeira]]"
 dateCreated: 2026-09-01T23:33:04.987-03:00
 dateModified: 2026-09-05T17:26:05.437-03:00
 tags:

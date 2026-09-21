@@ -2,14 +2,15 @@
 title: P04-T03 — Charter independência do Selo HUB + controles operacionais
 task_id: P04-T03
 phase: P04
-status: pendente
+status:
+  - on-hold
 priority: critica
 area: governance-legal
 layer: refining
 owner:
   - PF Rezende (interino — Jurídico)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Jurídico — GOV-003"
+blocked_reason: aguardando nomeação Jurídico — GOV-003
 blocked_until: 2026-10-15
 gap_ids:
   - GOV-003
@@ -22,9 +23,9 @@ related_notes:
   - "[[04-project-management/marcos/marcos-fases-v1#M04 — Governança & Confiança Aprovada]]"
   - "[[01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1]]"
 evidence_required:
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/03-licencas-autorizacoes/03.05-selo-certificacao-INMETRO.md
+  - 01-work/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md
+  - 01-work/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md
+  - 01-work/documentos-oficiais/03-licencas-autorizacoes/03.05-selo-certificacao-INMETRO.md
   - 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
   - 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md
 created: 2026-08-26
@@ -33,7 +34,7 @@ tags:
   - fase-P04
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:55:54.839-03:00
 ---
 
 # P04-T03 — Charter independência do Selo HUB + controles operacionais
@@ -42,7 +43,7 @@ dateModified: 2026-09-05T00:00:00.000-03:00
 Elaborar carta de governança independente: nomeação/pagamento avaliadores, conflitos, recursos, desligamento, regras de alegação pública, segregação receita comercial — com Selo permanecendo `bloqueado` até aprovação independente (GOV-003).
 
 ## Entregável
-Rascunho de Charter em `01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md` + espelho em `99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md` § Selo, com controles operacionais (nomeação, pagamento, impedimentos, recursos, validade/renovação, comunicação); até aprovação Camada 3, Selo permanece bloqueado e não entra em GTM.
+Rascunho de Charter em `01-work/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md` + espelho em `99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md` § Selo, com controles operacionais (nomeação, pagamento, impedimentos, recursos, validade/renovação, comunicação); até aprovação Camada 3, Selo permanece bloqueado e não entra em GTM.
 
 ## Acceptance criteria (G04.3 — GOV-003)
 
@@ -54,17 +55,17 @@ Rascunho de Charter em `01-work/pesquisa-e-confianca/documentos-oficiais/04-cont
 
 ## Evidence required
 
-- `01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md` (charter rascunho — 6 cláusulas + status hipotese)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md` (nomeação/pagamento avaliadores — desacoplado vendas)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/03-licencas-autorizacoes/03.05-selo-certificacao-INMETRO.md` (certificação — hipotese, não protocolar até GOV-003)
+- `01-work/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md` (charter rascunho — 6 cláusulas + status hipotese)
+- `01-work/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md` (nomeação/pagamento avaliadores — desacoplado vendas)
+- `01-work/documentos-oficiais/03-licencas-autorizacoes/03.05-selo-certificacao-INMETRO.md` (certificação — hipotese, não protocolar até GOV-003)
 - `99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md` § Selo (espelho blueprint — não aprovação)
 - `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §4 (Selo deferred piloto — diferenciação pilot vs full)
 
 ## Verification
 
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md && grep -c "Charter\|independência\|avaliador.*pagamento\|conflito\|recurso\|desligamento\|alegação pública" 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md | awk '{print ($1>=4)?"PASS charter 6 cláusulas":"FAIL"}' && grep -c "não controlado por vendas\|independente.*vendas\|segregação.*receita" 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md | awk '{print ($1>=1)?"PASS independência vendas":"FAIL"}'`
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md && grep -c "avaliador\|nomeação\|pagamento" 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md | awk '{print ($1>=2)?"PASS controles operacionais":"FAIL"}'`
-- [ ] `grep -c "bloqueado\|blueprint.*GOV-003\|não.*GTM.*Selo" 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md | awk '{print ($1>=1)?"PASS Selo bloqueado preservado":"FAIL"}' && grep -c "deferred.*Selo\|Selo.*deferred" 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md | awk '{print ($1>=1)?"PASS pilot deferred":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md && grep -c "Charter\|independência\|avaliador.*pagamento\|conflito\|recurso\|desligamento\|alegação pública" 01-work/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md | awk '{print ($1>=4)?"PASS charter 6 cláusulas":"FAIL"}' && grep -c "não controlado por vendas\|independente.*vendas\|segregação.*receita" 01-work/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md | awk '{print ($1>=1)?"PASS independência vendas":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md && grep -c "avaliador\|nomeação\|pagamento" 01-work/documentos-oficiais/04-contratos-fundamentais/04.05-contrato-fornecedores-avaliadores.md | awk '{print ($1>=2)?"PASS controles operacionais":"FAIL"}'`
+- [ ] `grep -c "bloqueado\|blueprint.*GOV-003\|não.*GTM.*Selo" 01-work/documentos-oficiais/04-contratos-fundamentais/04.08-termos-Selo-HUB.md | awk '{print ($1>=1)?"PASS Selo bloqueado preservado":"FAIL"}' && grep -c "deferred.*Selo\|Selo.*deferred" 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md | awk '{print ($1>=1)?"PASS pilot deferred":"FAIL"}'`
 
 ## Dependências
 

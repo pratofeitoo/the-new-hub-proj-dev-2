@@ -2,7 +2,8 @@
 title: P01-T01 — Matriz 4 Unidades (capacidades compartilhadas vs específicas)
 task_id: P01-T01
 phase: P01
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: business-model
 layer: blueprint
@@ -23,7 +24,7 @@ tags:
   - fase-P01
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:44:59.408-03:00
+dateModified: 2026-09-21T17:42:56.235-03:00
 ---
 
 # P01-T01 — Matriz 4 Unidades (capacidades compartilhadas vs específicas)

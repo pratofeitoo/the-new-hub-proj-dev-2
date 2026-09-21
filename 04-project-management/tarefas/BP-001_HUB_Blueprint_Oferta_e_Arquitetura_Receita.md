@@ -1,7 +1,8 @@
 ---
 task_id: BP-001
 task_type: blueprint
-status: em-revisao
+status:
+  - em-revisao
 priority: critica
 phase: P01
 layer: blueprint
@@ -24,7 +25,7 @@ created: 2026-08-20
 updated: 2026-08-21
 tags:
   - task
-dateModified: 2026-09-01T20:12:20.410-03:00
+dateModified: 2026-09-21T17:42:41.807-03:00
 tasknotes_manual_order: tnvririririo
 projects:
   - "[[Refinar os dados do Blueprint]]"

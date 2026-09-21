@@ -22,7 +22,7 @@ dependencias:
 |---|---|---|---|
 | Arquitetura e módulos | `wiki/architecture/modulos-hub-core.md` e documentos oficiais indicados | síntese + fonte a confirmar | Marca + coordenação |
 | Ofertas e cenários | `03-approved/matriz-de-oferta-e-comprador-cenarios/` | fonte aprovada dentro do escopo | Produto/Marca |
-| Claims e diretrizes | `01-work/pesquisa-e-confianca/documentos-oficiais/12-comercial-GTM/12.03-brand-guidelines-claim-registry.md` | oficial em elaboração | Governança verbal + owner |
+| Claims e diretrizes | `01-work/documentos-oficiais/12-comercial-GTM/12.03-brand-guidelines-claim-registry.md` | oficial em elaboração | Governança verbal + owner |
 | CAOS e licença | documentos oficiais de SOPs e licença em `01-work/pesquisa-e-confianca/` | hipótese/provisório | Jurídico + owner |
 | Selo | termos do Selo e charter de independência | hipótese bloqueada | GOV-003 + Jurídico |
 | Visual histórico | `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/` | referência histórica | Design + direitos |

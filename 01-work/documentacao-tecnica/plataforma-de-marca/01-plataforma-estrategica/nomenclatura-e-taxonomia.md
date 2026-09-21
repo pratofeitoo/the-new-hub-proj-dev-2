@@ -3,8 +3,8 @@ titulo: Nomenclatura e taxonomia — HUB
 status: provisório / proposta para revisão
 fontes:
   - wiki/architecture/modulos-hub-core.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md
+  - 01-work/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md
+  - 01-work/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md
   - 04-project-management/tarefas/P02-T04_SOPs_CAOS.md
   - 04-project-management/tarefas/P04-T03_Charter_Selo_Independencia.md
 ---

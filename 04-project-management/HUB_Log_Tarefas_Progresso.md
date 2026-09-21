@@ -145,6 +145,19 @@ tags:
 
 > Append-only. Entradas mais recentes no topo. Formato: `### YYYY-MM-DD — resumo curto`.
 
+### 2026-09-21 — TaskNotes, Documentação Oficial e reorganização do vault (2 cards + move + bulk fix)
+
+- **TaskNotes projects:** auditado `taskIdentificationMethod=tag` + `taskTag=task` + `fieldMapping.projects→type` (`data.json`: `projectAutosuggest.propertyKey=type / propertyValue=task-project`). Resultado: **3 projetos canônicos** com `type: task-project` — `[[Ajustes Jurídicos]]`, `[[Gestão de Projeto e Governança]]`, `[[arquitetura financeira]]`. Criado `TaskNotes/Views/projects-overview.base` (11 → 4 views após correção canônica): `Overview — Canonical Projects` (table, `groupBy: projects`, filtra OR dos 3) + 3 `tasknotesTaskList` por projeto (`groupBy: status`, `sort: urgencyScore DESC`, fórmulas `priorityWeight`, `daysUntilDue`, `urgencyScore`, `dueIn`). Filtro robusto `list(projects).contains(link) || list(type).contains(link)` cobre `fieldMapping` + legado `projects:`.
+- **Documentação Oficial — 5 → 2 cards:** rejeitados `dependency` e `horizon` como agrupamento. `Archive 3 + rewrite 2` — arquivados em `TaskNotes/Archive/` (`status:done` + `completedDate:2026-09-21` + `tags:archived`): `GOV-001 — Decidir estrutura societária`, `Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ` (7 itens `⏰ AGORA` incorporados ao Card 2), `Documentação Oficial — Epic Vault Isolado HUB (01-14)`. Reescritos:
+  - `TaskNotes/Tasks/Docs Oficiais - obrigatórios.md` (`OPS-009`, `projects: [[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]`, `due:2026-09-30`, `blockedBy: []`) — **42 ☐** (01:5, 02:5, 03:5, 04:8, 05:5, 06:5, 07:5, 08:4, Fonte `GOV-MAP-001`).
+  - `TaskNotes/Tasks/Docs Não-Obrigatórios.md` (`OPS-008`, `projects: [[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]`, `due:2026-10-15`) — **32 ☐** (09:6, 10:6, 11:6, 12:5, 13:4, 14:5) com `⏰ AGORA` = 09.01, 09.02, 10.01, 10.02, 11.01, 11.04, 12.01 (Fonte `GOV-MAP-002`). Cada `- [ ]` é Tier-1 inline checklist — clique no `☐` altera `file.tasks` (`12/42`) sem mudar `status`.
+- **Base `TaskNotes/Views/documentacao-oficial.base` 6 → 2 views:** removidos `Kanban por Horizonte`, `Lista AGORA`, `Bloqueados`, `Epic + Subtasks`, `Canvas` (zona fantasma `bloqueado`). Novo: `tasknotesTaskList "Documentação — 2 cards"` (`groupBy: status`, `hideEmptyColumns:true`, `order: status/priority/due/file.tasks`) + `table "Checklist — progresso"` (`formula.checklistProgress = file.tasks.filter(checked).length + "/" + file.tasks.length`). Filtro: `file.hasTag("documentacao-oficial") && status!="done" && !hasTag("archived")` — só os 2 cards ativos.
+- **Reorganização física:** `01-work/pesquisa-e-confianca/documentos-oficiais` → `01-work/documentos-oficiais` (`mv`, 15 pastas + `_controle` + `00-controle-drive`, verificado `HUB_Mapa_Documentos_Oficiais_v1.md` existe em novo path). `01-work/pesquisa-e-confianca/` agora só com `pesquisa/`.
+- **Bulk fix links:** `01-work/pesquisa-e-confianca/documentos-oficiais` → `01-work/documentos-oficiais` em **40 arquivos, 194 ocorrências** (`TaskNotes/Tasks` 2 cards + `plataforma-de-marca/*`, `planos-fase/P03-P06`, `tarefas/P04-*` (79 refs), `HUB_Mapa_*`, `HUB_Instrucao_*`). Restava 1 ref histórica em `01-work/README.md:4` → atualizado com `(movido de pesquisa-e-confianca/documentos-oficiais/ em 2026-09-21)`. `grep -r old → 0` (fora histórico), `new → 194`.
+- **Evidência e registro:** `grep -c "- [ ]" Docs Oficiais - obrigatórios.md == 42`, `Docs Não-Obrigatórios.md == 32`; `yaml.safe_load` em ambos `.base` OK; `TaskNotes/Tasks` com `documentacao-oficial` → 2 ativos / 3 arquivados; `ls 01-work/documentos-oficiais/_controle/` OK.
+- **Próximos:** validar `07.04 IBS/CBS` com CRC e `06.01 ROPA` fluxo a fluxo, preencher `HUB_Documentos_Oficiais/00-controle/` com evidências, promover para `02-review/` quando `file.tasks` = `42/42` + `32/32`; `GOV-001` juridicamente bloqueante mantido como `00-controle/03-decisao-GOV-001-estrutura-societaria.md` (Selo 3.05/4.08 bloqueado até `GOV-003`).
+- **Logs:** `04-project-management/registros-trabalho/logs-progresso/2026-09-21-registro-progresso-tasknotes-documentacao-vault-e-reorganizacao.md` criado com detalhamento completo.
+
 ### 2026-09-05 — Evidências mínimas P03-T08/P03-T09 executadas como dry-run
 
 - **P03-T08:** criada evidência sintética determinística `propagation-pilot-evidence-2026-09-05.md` para `consent.revoked → quarantine` (45s, 7 destinos, 7 IDs de quarentena, replay idempotente) e `CMP-DSAR-manual-pilot-2026-09-05.md` com 3 casos DSAR manuais. O resultado é `DRY-RUN / NÃO EXECUTADO`; não mede runtime real nem encerra `DAT-008`.
@@ -235,7 +248,7 @@ tags:
 ### 2026-08-29 — P03-T08 kick-off — Matriz Dados-Finalidade LGPD iniciada
 
 - **O que mudou:** `P03-T08` passou de `pendente` para `em-revisao`. Dependência `P03-T01` já `em-revisao`.
-- **Entregável alvo:** matriz `campo→finalidade→base legal→retenção→propagação→exclusão` por fluxo em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` (G03.C4 parcial — LGPD ponta a ponta para Camada 3).
+- **Entregável alvo:** matriz `campo→finalidade→base legal→retenção→propagação→exclusão` por fluxo em `01-work/documentos-oficiais/_controle/` (G03.C4 parcial — LGPD ponta a ponta para Camada 3).
 
 
 ### 2026-08-29 — P03-T07 kick-off — Taxonomia Estados Valor iniciada

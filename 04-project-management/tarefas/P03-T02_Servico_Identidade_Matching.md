@@ -2,14 +2,15 @@
 title: P03-T02 — Serviço de identidade (matching/merging/survivorship)
 task_id: P03-T02
 phase: P03
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: data-intelligence
 layer: refining
 owner:
   - PF Rezende (interino)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Dados"
+blocked_reason: aguardando nomeação Dados
 blocked_until: 2026-10-15
 gap_ids:
   - DAT-002
@@ -31,7 +32,7 @@ tags:
   - fase-P03
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:43:16.127-03:00
 ---
 
 # P03-T02 — Serviço de identidade (matching/merging/survivorship)

@@ -2,7 +2,8 @@
 title: P03-T08 — Matriz dados-finalidade + ciclo de vida (LGPD)
 task_id: P03-T08
 phase: P03
-status: em-revisao
+status:
+  - on-hold
 priority: alta
 area: data-intelligence
 layer: refining
@@ -10,13 +11,13 @@ owner:
   - PF Rezende (interino — Dados)
   - PF Rezende (interino — Jurídico LGPD)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Jurídico LGPD/DPO — LGPD"
+blocked_reason: aguardando nomeação Jurídico LGPD/DPO — LGPD
 blocked_until: 2026-10-10
 gap_ids:
   - DAT-008
 dependencies:
   - P03-T01
-target_file: 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/
+target_file: 01-work/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P03_Dados_Canonicos]]"
   - "[[00-project-control/registro-lacunas/lacunas/DAT-008]]"
@@ -24,7 +25,7 @@ related_notes:
   - "[[01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1]]"
 evidence_required:
   - 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/
+  - 01-work/documentos-oficiais/_controle/
   - 01-work/dados-tech-financas/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1.md
   - 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md
 created: 2026-08-26
@@ -33,7 +34,7 @@ tags:
   - fase-P03
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:43:26.527-03:00
 ---
 
 # P03-T08 — Matriz dados-finalidade + ciclo de vida (LGPD)
@@ -44,7 +45,7 @@ Construir matriz `campo → finalidade → base legal → retenção → propaga
 
 ## Entregável
 
-`01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md` (§1 5 fluxos + §2 matriz 41 campos + §3 propagação + §4 retenção/DSAR) com cópia/controle em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` para revisão LGPD/Gov Dados; eventual aprovação em `00-project-control/decisoes/DEC-P03-T08.md` fica para Camada 3. Paths idênticos a `target_file` e `evidence_required`.
+`01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md` (§1 5 fluxos + §2 matriz 41 campos + §3 propagação + §4 retenção/DSAR) com cópia/controle em `01-work/documentos-oficiais/_controle/` para revisão LGPD/Gov Dados; eventual aprovação em `00-project-control/decisoes/DEC-P03-T08.md` fica para Camada 3. Paths idênticos a `target_file` e `evidence_required`.
 
 ## Acceptance criteria (G03.C4 — DAT-008)
 
@@ -57,7 +58,7 @@ Construir matriz `campo → finalidade → base legal → retenção → propaga
 ## Evidence required
 
 - `01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md` (§1 5 fluxos com finalidade/base legal + §2 tabela 10 famílias exemplares + 41 campos completos em `08_Dicionario_Dados.csv` + §3 regra propagação `consent_id+purpose+version` + §4 retenção/portabilidade + §6 pareceres LGPD)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` (cópia/controle da matriz para revisão LGPD — `governance-control-register.csv` + eventual `acordo-cooperacao-SEBRAE-HUB-2026-10-15.md` com base legal piloto)
+- `01-work/documentos-oficiais/_controle/` (cópia/controle da matriz para revisão LGPD — `governance-control-register.csv` + eventual `acordo-cooperacao-SEBRAE-HUB-2026-10-15.md` com base legal piloto)
 - `01-work/dados-tech-financas/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1.md` — 41 campos fonte + `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/propagation-test-E20-v1.md` + `CMP-log-E20-v1.md` (SPECs rascunho propagação ≤5 min / CMP log)
 - `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §1/§3 (subset piloto 12 entidades + `consentimento_id` condicional — diferenciação pilot vs full)
 
@@ -65,7 +66,7 @@ Construir matriz `campo → finalidade → base legal → retenção → propaga
 
 - [ ] `ls 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md && grep -c "Onboarding\|Diagnóstico\|Matching\|Medição\|Comercial" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=5)?"PASS 5 fluxos":"FAIL"}' && grep -c "dim_person\|fact_person_skill\|fact_event\|consent_status\|purpose" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md`
 - [ ] `grep -c "≤5 min\|<=5 min\|quarantine\|CMP log\|propagation test\|consent\.revoked\|purpose.*version" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=3)?"PASS propagação ≤5min+quarentena+CMP":"FAIL"}' && ls 01-work/dados-tech-financas/refinamento-modelo-dados/06-relatorios-validacao/propagation-test-E20-v1.md 01-work/dados-tech-financas/refinamento-modelo-dados/06-relatorios-validacao/CMP-log-E20-v1.md 2>&1 | head -3`
-- [ ] `grep -c "identity_alias\|DSAR\|portabilidade\|aliases" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=2)?"PASS DSAR aliases":"FAIL"}' && grep -c "Jurídico.*Refinar\|Governança.*Refinar\|Refinar com condições" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=2)?"PASS pareceres LGPD":"FAIL"}' && ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/ 2>&1 | head -5`
+- [ ] `grep -c "identity_alias\|DSAR\|portabilidade\|aliases" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=2)?"PASS DSAR aliases":"FAIL"}' && grep -c "Jurídico.*Refinar\|Governança.*Refinar\|Refinar com condições" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=2)?"PASS pareceres LGPD":"FAIL"}' && ls 01-work/documentos-oficiais/_controle/ 2>&1 | head -5`
 
 ## Dependências
 

@@ -1,18 +1,14 @@
 filters:
   and:
     - file.hasTag("documentacao-oficial")
+    - status != "done"
+    - status != "concluido"
+    - '!file.hasTag("archived")'
 formulas:
-  priorityWeight: if(priority=="none",0,if(priority=="low",1,if(priority=="normal",2,if(priority=="high",3,999))))
-  daysUntilDue: if((due.isEmpty() == false), ((number(date(due)) - number(today())) / 86400000).floor(), null)
-  dueIn: if(due.isEmpty(), "", if(formula.daysUntilDue == 0, "Today", if(formula.daysUntilDue == 1, "1 day", if(formula.daysUntilDue > 1, formula.daysUntilDue + " days", if(formula.daysUntilDue == -1, "1 day overdue", formula.daysUntilDue * -1 + " days overdue")))))
-  horizon: if(priority=="high","AGORA — antes do CNPJ",if(priority=="normal" && due.format("YYYY-MM-DD") <= (today() + "30 days").format("YYYY-MM-DD"),"0-6M — empresa operando",if(priority=="normal","6-18M — captação/escala","Sem horizonte")))
-  horizonWeight: if(formula.horizon=="AGORA — antes do CNPJ",3,if(formula.horizon=="0-6M — empresa operando",2,if(formula.horizon=="6-18M — captação/escala",1,0)))
-  isBlocked: blockedBy.isEmpty() == false && list(blockedBy).filter(file(if(value.isType("object"), value.uid, value)).properties.status != "done" && file(if(value.isType("object"), value.uid, value)).properties.status != "concluido").length > 0
-  blockedByTitles: if(blockedBy.isEmpty(),"—",list(blockedBy).map(file(if(value.isType("object"), value.uid, value)).properties.title).join(", "))
-  urgencyScore: if(due.isEmpty() && scheduled.isEmpty(), formula.priorityWeight, formula.priorityWeight + max(0, 10 - if(formula.daysUntilDue, formula.daysUntilDue, 0)))
+  checklistProgress: 'file.tasks.filter(value.checked).length + "/" + file.tasks.length'
 views:
-  - type: tasknotesKanban
-    name: Kanban — por Status
+  - type: tasknotesTaskList
+    name: "Documentação — 2 cards"
     groupBy:
       property: status
       direction: ASC
@@ -20,165 +16,24 @@ views:
       - status
       - priority
       - due
-      - scheduled
-      - projects
-      - contexts
-      - blockedBy
       - file.tasks
-      - owner
-      - tags
+      - file.name
     sort:
-      - property: formula.urgencyScore
-        direction: DESC
+      - property: due
+        direction: ASC
     config:
-      columnWidth: 300
-      hideEmptyColumns: false
-    columnOrder: '{"note.status":["open","pendente","in-progress","em-revisao","done","concluido","none"]}'
-  - type: tasknotesKanban
-    name: Kanban — por Horizonte
-    groupBy:
-      property: formula.horizon
-      direction: DESC
+      columnWidth: 420
+      hideEmptyColumns: true
+
+  - type: table
+    name: Checklist — progresso
     order:
+      - file.name
       - status
       - priority
       - due
-      - scheduled
-      - projects
-      - contexts
-      - blockedBy
       - file.tasks
-      - owner
+      - formula.checklistProgress
     sort:
-      - property: formula.urgencyScore
-        direction: DESC
-    config:
-      columnWidth: 320
-      hideEmptyColumns: false
-    columnOrder: '{"formula.horizon":["AGORA — antes do CNPJ","0-6M — empresa operando","6-18M — captação/escala","Sem horizonte"]}'
-  - type: tasknotesTaskList
-    name: Lista — Prioridade AGORA primeiro
-    groupBy:
-      property: formula.horizon
-      direction: DESC
-    order:
-      - status
-      - priority
-      - due
-      - scheduled
-      - projects
-      - contexts
-      - blockedBy
-      - file.tasks
-      - owner
-    sort:
-      - property: formula.horizonWeight
-        direction: DESC
-      - property: due
+      - property: file.name
         direction: ASC
-  - type: tasknotesTaskList
-    name: Bloqueados — precisa liberar GOV-001
-    filters:
-      and:
-        - file.hasTag("documentacao-oficial")
-        - formula.isBlocked == true
-    groupBy:
-      property: formula.blockedByTitles
-      direction: ASC
-    order:
-      - status
-      - priority
-      - due
-      - blockedBy
-      - projects
-    sort:
-      - property: due
-        direction: ASC
-  - type: tasknotesTaskList
-    name: Epic + Subtasks
-    groupBy:
-      property: projects
-      direction: ASC
-    order:
-      - status
-      - priority
-      - due
-      - scheduled
-      - contexts
-      - blockedBy
-    sort:
-      - property: due
-        direction: ASC
-  - type: canvas-bases
-    name: Canvas — Documentação Oficial
-    groupBy:
-      property: status
-      direction: ASC
-    order:
-      - status
-      - priority
-      - due
-      - scheduled
-      - projects
-      - contexts
-      - blockedBy
-      - file.tasks
-      - owner
-    sort:
-      - property: formula.urgencyScore
-        direction: DESC
-    canvasBasesLayout: columns
-    canvasBasesEdgeMode: properties
-    canvasBasesEdgeProperties: blockedBy
-    canvasBasesShowBodyEditor: false
-    canvasBasesNodeWidth: 360
-    canvasBasesNodeHeight: 200
-    canvasBasesPreservePositions: true
-    canvasBasesRemoveMissingNodes: true
-    canvasBasesLinkedCanvasPath: TaskNotes/Views/documentacao-oficial.canvas
-    canvasBasesZones:
-      - origin: bases
-        action: set-property
-        property: note.status
-        value: open
-        updateMode: replace
-        valueType: string
-      - origin: bases
-        action: set-property
-        property: note.status
-        value: pendente
-        updateMode: replace
-        valueType: string
-      - origin: bases
-        action: set-property
-        property: note.status
-        value: in-progress
-        updateMode: replace
-        valueType: string
-      - origin: bases
-        action: set-property
-        property: note.status
-        value: em-revisao
-        updateMode: replace
-        valueType: string
-      - origin: bases
-        action: set-property
-        property: note.status
-        value: done
-        updateMode: replace
-        valueType: string
-      - origin: bases
-        action: set-property
-        property: note.status
-        value: concluido
-        updateMode: replace
-        valueType: string
-      - origin: custom
-        id: bloqueado
-        label: ⛔ Bloqueado
-        action: set-property
-        property: note.status
-        value: bloqueado
-        updateMode: replace
-        valueType: string
-        color: "#ef4444"

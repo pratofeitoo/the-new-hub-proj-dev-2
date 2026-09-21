@@ -2,7 +2,8 @@
 title: P01-T07 — Roadmap P01→P07 com dependências e gates
 task_id: P01-T07
 phase: P01
-status: em-revisao
+status:
+  - on-hold
 priority: alta
 area: launch-vision
 layer: governance
@@ -25,7 +26,7 @@ tags:
   - fase-P01
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:26.971-03:00
+dateModified: 2026-09-21T17:43:04.660-03:00
 ---
 
 # P01-T07 — Roadmap P01→P07 com dependências e gates

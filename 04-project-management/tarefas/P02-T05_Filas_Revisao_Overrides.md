@@ -2,7 +2,8 @@
 title: P02-T05 — Filas de revisão + overrides + trilha auditoria
 task_id: P02-T05
 phase: P02
-status: em-revisao
+status:
+  - on-hold
 priority: alta
 area: operations
 layer: refining
@@ -24,7 +25,7 @@ tags:
   - fase-P02
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:48.305-03:00
+dateModified: 2026-09-21T17:43:11.621-03:00
 ---
 
 # P02-T05 — Filas de revisão + overrides + trilha auditoria

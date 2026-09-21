@@ -2,7 +2,8 @@
 title: P07-T02 — Plano operações de lançamento + runbook release
 task_id: P07-T02
 phase: P07
-status: pendente
+status:
+  - on-hold
 priority: critica
 area: launch-vision
 layer: approval
@@ -33,7 +34,7 @@ tags:
   - fase-P07
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:30.370-03:00
 ---
 
 # P07-T02 — Plano operações de lançamento + runbook release

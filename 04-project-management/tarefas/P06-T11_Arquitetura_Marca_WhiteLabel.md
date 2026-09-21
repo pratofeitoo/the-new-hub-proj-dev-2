@@ -2,14 +2,15 @@
 title: P06-T11 — Arquitetura de marca + regras white-label
 task_id: P06-T11
 phase: P06
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: brand-market
 layer: blueprint
 owner:
   - PF Rezende // blocked: aguardando nomeação Marca/Mercado até 2026-10-15
   - PF Rezende // blocked: aguardando nomeação Jurídico até 2026-10-15
-blocked_reason: "aguardando nomeação Marca/Mercado e Jurídico — BRD-001/003"
+blocked_reason: aguardando nomeação Marca/Mercado e Jurídico — BRD-001/003
 blocked_until: 2026-10-15
 accountable: PF Rezende
 gap_ids:
@@ -25,7 +26,7 @@ related_notes:
   - "[[04-project-management/marcos/marcos-fases-v1#M06 — Economia & GTM com Evidência Aprovados]]"
 evidence_required:
   - 02-review/01-blueprint/marca-mercado/arquitetura-marca-whitelabel-P06-T11-v1.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md
+  - 01-work/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md
   - 00-project-control/decisoes/DEC-P06-T11-v1.md
 created: 2026-08-26
 tags:
@@ -33,7 +34,7 @@ tags:
   - fase-P06
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:26.868-03:00
 ---
 
 # P06-T11 — Arquitetura de marca + regras white-label
@@ -44,7 +45,7 @@ Definir hierarquia marca-produto-grupo + limites white-label (atribuição, visi
 
 ## Entregável
 
-`02-review/01-blueprint/marca-mercado/arquitetura-marca-whitelabel-P06-T11-v1.md` + parecer em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` — proposta para governança marca + Produto/Jurídico. Path idêntico ao frontmatter `target_file` (corrigido de `99-archive/superado/` para `02-review/01-blueprint/` pós-M06).
+`02-review/01-blueprint/marca-mercado/arquitetura-marca-whitelabel-P06-T11-v1.md` + parecer em `01-work/documentos-oficiais/_controle/` — proposta para governança marca + Produto/Jurídico. Path idêntico ao frontmatter `target_file` (corrigido de `99-archive/superado/` para `02-review/01-blueprint/` pós-M06).
 
 ## Acceptance criteria (G06.11 — BRD-001/003)
 
@@ -55,13 +56,13 @@ Definir hierarquia marca-produto-grupo + limites white-label (atribuição, visi
 ## Evidence required
 
 - `02-review/01-blueprint/marca-mercado/arquitetura-marca-whitelabel-P06-T11-v1.md` (§1 hierarquia + §2 visibilidade/atribuição + §3 regras white-label + §4 integridade metodológica)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md` (parecer Produto+Marca+Jurídico — 3 assinaturas)
+- `01-work/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md` (parecer Produto+Marca+Jurídico — 3 assinaturas)
 - `00-project-control/decisoes/DEC-P06-T11-v1.md` (decisão governança marca — gate G06.11)
 
 ## Verification
 
 - [ ] `ls 02-review/01-blueprint/marca-mercado/arquitetura-marca-whitelabel-P06-T11-v1.md && grep -c "hierarquia\|white-label\|atribuição" 02-review/01-blueprint/marca-mercado/arquitetura-marca-whitelabel-P06-T11-v1.md | awk '{print ($1>=3)?"PASS arquitetura":"FAIL"}'`
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md && grep -c "Produto\|Marca\|Jurídico" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md | awk '{print ($1>=3)?"PASS 3 aprovações":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md && grep -c "Produto\|Marca\|Jurídico" 01-work/documentos-oficiais/_controle/parecer-marca-whitelabel-P06-T11-v1.md | awk '{print ($1>=3)?"PASS 3 aprovações":"FAIL"}'`
 - [ ] `ls 00-project-control/decisoes/DEC-P06-T11-v1.md && echo "PASS decisão marca" || echo "FAIL G06.11 bloqueado"`
 
 ## Dependências

@@ -19,7 +19,7 @@ fields:
   status:
     type: enum
     required: true
-    values: [none, open, pendente, in-progress, em-revisao, done, concluido]
+    values: [none, open, pendente, in-progress, em-revisao, done, concluido, on-hold]
     tn_completed_values: [done, concluido]
     default: none
     tn_role: status
@@ -39,7 +39,7 @@ fields:
     tn_role: contexts
     items:
       type: string
-  projects:
+  type:
     type: list
     description: "Wikilinks to related project notes."
     tn_role: projects
@@ -188,6 +188,10 @@ fields:
     items:
       type: date
   owner:
+    type: list
+    items:
+      type: string
+  type:
     type: list
     items:
       type: string

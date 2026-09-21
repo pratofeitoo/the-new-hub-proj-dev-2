@@ -1,17 +1,18 @@
 ---
 ops_id: OPS-010
 task_type: operational
-status: open
+status: done
 priority: high
-dateCreated: 2026-09-02T18:32:00.000-03:00
+dateCreated: 2026-09-02 18:32:00-03:00
 tags:
   - task
   - documentacao-oficial
   - vault-isolado
   - AGORA
+  - archived
 projects:
-  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
-  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
+  - "[[HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
+  - "[[HUB_Mapa_Documentos_Oficiais_v1]]"
   - "[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]"
 contexts:
   - "@juridico"
@@ -20,9 +21,10 @@ timeEstimate: 240
 blockedBy:
   - uid: "[[TaskNotes/Tasks/GOV-001 — Decidir estrutura societária (quantos CNPJs)]]"
     reltype: FINISHTOSTART
-dateModified: 2026-09-06T11:32:45.480-03:00
+dateModified: 2026-09-21T19:30:00.000-03:00
 due: 2026-09-30
 googleCalendarEventId: ahnkk7ui66nbcges24uku6d7hs
+completedDate: 2026-09-21
 ---
 
 # Docs Oficiais AGORA — 7 documentos críticos antes do CNPJ

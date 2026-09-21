@@ -56,7 +56,7 @@ e qualquer edição dentro de `03-approved/` ou `02-review/`.
 
 Exceções documentadas (SHOULD NOT estender sem registro):
 
-- `01-work/pesquisa-e-confianca/documentos-oficiais/` usa o vocabulário herdado do shell (`hipotese | em_elaboracao | ...`),
+- `01-work/documentos-oficiais/` usa o vocabulário herdado do shell (`hipotese | em_elaboracao | ...`),
   sempre abaixo de aprovado. Nada ali é oficial (bloqueador GOV-001). Cada saída exige evidência
   legal individual via `02-review/`.
 - `layer:` (`cross-cutting | governance | refining | blueprint | approval | ...`) é taxonomia de

@@ -11,4 +11,4 @@
 1. Edite livremente. Dúvida, hipótese e número ilustrativo são bem-vindos — desde que rotulados.
 2. Nada sai daqui para o time como "final". Promoção = congelar + mover para `02-review/` (ver `02-review/README.md`).
 3. Ao mover para fora, deixe nota-ponteiro no path antigo por um ciclo.
-4. `pesquisa-e-confianca/documentos-oficiais/` aqui é **modelo futuro / rascunho** — nada ali é oficial. Ver GOV-001.
+4. `documentos-oficiais/` aqui é **modelo futuro / rascunho** — nada ali é oficial. Ver GOV-001. (movido de `pesquisa-e-confianca/documentos-oficiais/` em 2026-09-21)

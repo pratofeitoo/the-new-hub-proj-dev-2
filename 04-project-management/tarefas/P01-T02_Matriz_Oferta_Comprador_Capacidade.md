@@ -2,7 +2,8 @@
 title: P01-T02 — Matriz oferta × comprador × capacidade (v1)
 task_id: P01-T02
 phase: P01
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: business-model
 layer: blueprint
@@ -24,7 +25,7 @@ tags:
   - fase-P01
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:04.324-03:00
+dateModified: 2026-09-21T17:42:57.545-03:00
 ---
 
 # P01-T02 — Matriz oferta × comprador × capacidade (v1)

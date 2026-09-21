@@ -1,28 +1,30 @@
 ---
 ops_id: OPS-013
 task_type: operational
-status: open
+status: done
 priority: high
-dateCreated: 2026-09-02T18:31:00.000-03:00
+dateCreated: 2026-09-02 18:31:00-03:00
 tags:
   - task
   - documentacao-oficial
   - vault-isolado
   - GOV-001
   - bloqueador
+  - archived
 projects:
-  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
-  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]"
+  - "[[HUB_Mapa_Documentos_Oficiais_v1]]"
+  - "[[HUB_Instrucao_Vault_Documentos_Oficiais]]"
   - "[[TaskNotes/Tasks/Documentação Oficial — Epic Vault Isolado HUB (01-14)]]"
 contexts:
   - "@juridico"
   - "@fiscal"
 timeEstimate: 120
-due: 2026-09-30
-scheduled: 2026-09-03
 blockedBy: []
-dateModified: 2026-09-06T11:32:03.762-03:00
+dateModified: 2026-09-21T19:30:00.000-03:00
 googleCalendarEventId: i5gjbl89v21vn3hd3qmpnaknu0
+type:
+  - "[[Ajustes Jurídicos]]"
+completedDate: 2026-09-21
 ---
 
 # GOV-001 — Decidir estrutura societária (quantos CNPJs)

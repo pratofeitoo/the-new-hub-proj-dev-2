@@ -4,7 +4,7 @@ instruction_id: VAULT-OFICIAL-002
 status: rascunho
 created: 2026-09-02
 updated: 2026-09-02
-origem: "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]] + [[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
+origem: "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]] + [[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
 destino_vault: "HUB_Documentos_Oficiais (vault separado, sem vínculo com The New HUB dev-2)"
 finalidade: "Evitar contaminação de dados — 01-08 obrigatórios + 09-14 não-obrigatórios mas requeridos para virar empresa"
 versao: "2.0 - completo (59+ docs)"
@@ -291,9 +291,9 @@ OBJETIVO: Criar a estrutura COMPLETA de pastas e arquivos para documentação 01
 DATA BASE: 2026-09-02, Brasil.
 
 REFERÊNCIAS CANÔNICAS (vault de projeto):
-- 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md (GOV-MAP-001) → 01-08, 32 docs OBRIGATÓRIOS
-- 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md (GOV-MAP-002) → 09-14, 27 docs NÃO-OBRIGATÓRIOS MAS REQUERIDOS
-- 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md (esta instrução, v2)
+- 01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md (GOV-MAP-001) → 01-08, 32 docs OBRIGATÓRIOS
+- 01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md (GOV-MAP-002) → 09-14, 27 docs NÃO-OBRIGATÓRIOS MAS REQUERIDOS
+- 01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md (esta instrução, v2)
 
 ESTRUTURA A CRIAR (15 pastas + 64 arquivos):
 
@@ -345,6 +345,6 @@ find HUB_Documentos_Oficiais -type f -name "*.md" | wc -l  # deve retornar 69 (5
 tree HUB_Documentos_Oficiais -L 2
 ```
 
-> Instrução v2 salva em: `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md` (substitui v1)
+> Instrução v2 salva em: `01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais.md` (substitui v1)
 > Mapa obrigatório: `HUB_Mapa_Documentos_Oficiais_v1.md` (GOV-MAP-001, 01-08)
 > Mapa não-obrigatório: `HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` (GOV-MAP-002, 09-14)

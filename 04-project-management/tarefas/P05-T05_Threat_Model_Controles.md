@@ -2,14 +2,15 @@
 title: P05-T05 — Threat model + controles tenancy/IAM/secrets/auditoria
 task_id: P05-T05
 phase: P05
-status: pendente
+status:
+  - on-hold
 priority: critica
 area: technology
 layer: refining
 owner:
   - PF Rezende // blocked: aguardando nomeação Tech até 2026-10-15
   - PF Rezende // blocked: aguardando nomeação Jurídico até 2026-10-15
-blocked_reason: "aguardando nomeação Tech e Jurídico"
+blocked_reason: aguardando nomeação Tech e Jurídico
 blocked_until: 2026-10-15
 accountable: PF Rezende
 gap_ids:
@@ -17,14 +18,14 @@ gap_ids:
 dependencies:
   - P04-T02
   - P02-T03
-target_file: 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md
+target_file: 01-work/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P05_Tecnologia_Contratual]]"
   - "[[00-project-control/registro-lacunas/lacunas/TEC-004]]"
   - "[[04-project-management/marcos/marcos-fases-v1#M05 — Tecnologia Contratual Aprovada]]"
 evidence_required:
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv
+  - 01-work/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md
+  - 01-work/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv
   - 02-review/pacotes/P05-Tecnologia.md
 created: 2026-08-26
 tags:
@@ -32,7 +33,7 @@ tags:
   - fase-P05
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:10.368-03:00
 ---
 
 # P05-T05 — Threat model + controles tenancy/IAM/secrets/auditoria
@@ -43,7 +44,7 @@ Completar threat model, tenancy isolation, IAM, secrets rotation, logs auditoria
 
 ## Entregável
 
-`01-work/pesquisa-e-confianca/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md` (§1 threat model STRIDE + §2 tenancy/IAM + §3 secrets rotation + §4 auditoria/incidentes) + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv` (controle × risco × dono × status × evidência remediação). Paths idênticos a `target_file` e `evidence_required`.
+`01-work/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md` (§1 threat model STRIDE + §2 tenancy/IAM + §3 secrets rotation + §4 auditoria/incidentes) + `01-work/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv` (controle × risco × dono × status × evidência remediação). Paths idênticos a `target_file` e `evidence_required`.
 
 ## Acceptance criteria (G05.5 — TEC-004)
 
@@ -53,15 +54,15 @@ Completar threat model, tenancy isolation, IAM, secrets rotation, logs auditoria
 
 ## Evidence required
 
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md` (§1 STRIDE + §2 tenancy/IAM + §3 secrets + §4 auditoria/incidentes + plano remediação)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv` (header `controle,risco,dono,status,evidencia_remediacao` + ≥5 linhas críticas com status preenchido)
+- `01-work/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md` (§1 STRIDE + §2 tenancy/IAM + §3 secrets + §4 auditoria/incidentes + plano remediação)
+- `01-work/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv` (header `controle,risco,dono,status,evidencia_remediacao` + ≥5 linhas críticas com status preenchido)
 - `02-review/pacotes/P05-Tecnologia.md` §G05.5 (parecer Segurança/Jurídico — aprovação threat model + remediações)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` — logs evidência remediação (`teste-isolamento-tenant-P05-T05.log`, `rotação-secrets-P05-T05.log` quando existirem)
+- `01-work/documentos-oficiais/_controle/` — logs evidência remediação (`teste-isolamento-tenant-P05-T05.log`, `rotação-secrets-P05-T05.log` quando existirem)
 
 ## Verification
 
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md && grep -c "STRIDE\|tenancy\|IAM\|secrets\|auditoria" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md | awk '{print ($1>=4)?"PASS controles":"FAIL"}' && grep -c "tenant_id\|RBAC\|vault\|rotação" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md`
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv && head -1 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv | grep -q "controle.*risco.*dono.*status" && echo "PASS matriz header" || echo "FAIL"; grep -c "implementado\|mitigado\|aceito" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv | awk '{print ($1>=3)?"PASS remediações":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md && grep -c "STRIDE\|tenancy\|IAM\|secrets\|auditoria" 01-work/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md | awk '{print ($1>=4)?"PASS controles":"FAIL"}' && grep -c "tenant_id\|RBAC\|vault\|rotação" 01-work/documentos-oficiais/_controle/threat-model-controles-P05-T05-v1.md`
+- [ ] `ls 01-work/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv && head -1 01-work/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv | grep -q "controle.*risco.*dono.*status" && echo "PASS matriz header" || echo "FAIL"; grep -c "implementado\|mitigado\|aceito" 01-work/documentos-oficiais/_controle/matriz-controles-seguranca-P05-T05-v1.csv | awk '{print ($1>=3)?"PASS remediações":"FAIL"}'`
 - [ ] `grep -c "G05.5\|TEC-004" 02-review/pacotes/P05-Tecnologia.md && grep -E "Segurança|Jurídico|aprova" 02-review/pacotes/P05-Tecnologia.md | head -2`
 
 ## Dependências

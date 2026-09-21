@@ -1,13 +1,13 @@
 ---
 title: converter XLSX para MD
-status: pendente
+status: on-hold
 priority: normal
 contexts:
   - "@mvp-fornecedores"
 projects:
   - "[[Desenvolvimento do MVP]]"
 dateCreated: 2026-09-05T17:35:01.320-03:00
-dateModified: 2026-09-05T17:35:01.320-03:00
+dateModified: 2026-09-21T17:58:58.409-03:00
 tags:
   - task
 owner:

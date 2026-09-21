@@ -2,14 +2,15 @@
 title: P06-T04 — Separação comercial vs instituto restrito
 task_id: P06-T04
 phase: P06
-status: pendente
+status:
+  - on-hold
 priority: critica
 area: business-model
 layer: refining
 owner:
   - PF Rezende // blocked: aguardando nomeação Finanças até 2026-10-15
   - PF Rezende // blocked: aguardando nomeação Jurídico até 2026-10-15
-blocked_reason: "aguardando nomeação Finanças e Jurídico — FIN-005 separação restrito"
+blocked_reason: aguardando nomeação Finanças e Jurídico — FIN-005 separação restrito
 blocked_until: 2026-10-15
 accountable: PF Rezende
 gap_ids:
@@ -23,7 +24,7 @@ related_notes:
   - "[[04-project-management/marcos/marcos-fases-v1#M06 — Economia & GTM com Evidência Aprovados]]"
 evidence_required:
   - 01-work/dados-tech-financas/modelos-financeiros/separacao-comercial-restrito-P06-T04-v1.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md
+  - 01-work/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md
   - 00-project-control/decisoes/DEC-P06-T04-v1.md
 created: 2026-08-26
 tags:
@@ -31,7 +32,7 @@ tags:
   - fase-P06
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:20.869-03:00
 ---
 
 # P06-T04 — Separação comercial vs instituto restrito
@@ -42,7 +43,7 @@ Definir alocação por entidade, transfer pricing, controles fundos restritos e 
 
 ## Entregável
 
-`01-work/dados-tech-financas/modelos-financeiros/separacao-comercial-restrito-P06-T04-v1.md` — minuta de política + parecer triplo (Jurídico+Finanças+Governança) em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/`. Path idêntico ao frontmatter `target_file`.
+`01-work/dados-tech-financas/modelos-financeiros/separacao-comercial-restrito-P06-T04-v1.md` — minuta de política + parecer triplo (Jurídico+Finanças+Governança) em `01-work/documentos-oficiais/_controle/`. Path idêntico ao frontmatter `target_file`.
 
 ## Acceptance criteria (G06.4 — FIN-005)
 
@@ -53,13 +54,13 @@ Definir alocação por entidade, transfer pricing, controles fundos restritos e 
 ## Evidence required
 
 - `01-work/dados-tech-financas/modelos-financeiros/separacao-comercial-restrito-P06-T04-v1.md` (§1 alocação entidade + §2 transfer pricing + §3 controles fundos restritos + §4 relatórios segregados)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md` (parecer jurídico + finanças + governança — 3 assinaturas)
+- `01-work/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md` (parecer jurídico + finanças + governança — 3 assinaturas)
 - `00-project-control/decisoes/DEC-P06-T04-v1.md` (decisão tripla aprovando separação — gate G06.4)
 
 ## Verification
 
 - [ ] `ls 01-work/dados-tech-financas/modelos-financeiros/separacao-comercial-restrito-P06-T04-v1.md && grep -c "transfer pricing\|fundo restrito" 01-work/dados-tech-financas/modelos-financeiros/separacao-comercial-restrito-P06-T04-v1.md | awk '{print ($1>=2)?"PASS controles":"FAIL"}'`
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md && grep -c "Jurídico\|Finanças\|Governança" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md | awk '{print ($1>=3)?"PASS 3 aprovações":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md && grep -c "Jurídico\|Finanças\|Governança" 01-work/documentos-oficiais/_controle/parecer-separacao-P06-T04-v1.md | awk '{print ($1>=3)?"PASS 3 aprovações":"FAIL"}'`
 - [ ] `ls 00-project-control/decisoes/DEC-P06-T04-v1.md && echo "PASS decisão tripla" || echo "FAIL G06.4 bloqueado"`
 
 ## Dependências

@@ -2,7 +2,8 @@
 title: BP-005 — Blueprint do Modelo Operacional do HUB
 task_id: BP-005
 task_type: blueprint
-status: em-revisao
+status:
+  - em-revisao
 priority: alta
 phase: P02
 layer: blueprint
@@ -28,7 +29,7 @@ updated: 2026-08-21
 tags:
   - task
 tasknotes_manual_order: tniririririq
-dateModified: 2026-09-01T20:12:10.783-03:00
+dateModified: 2026-09-21T17:42:49.872-03:00
 projects:
   - "[[Refinar os dados do Blueprint]]"
 ---

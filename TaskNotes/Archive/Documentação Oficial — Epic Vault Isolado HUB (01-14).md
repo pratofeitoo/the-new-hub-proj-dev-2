@@ -1,25 +1,27 @@
 ---
 ops_id: OPS-011
 task_type: operational
-status: open
+status: done
 priority: high
-dateCreated: 2026-09-02T18:30:00.000-03:00
+dateCreated: 2026-09-02 18:30:00-03:00
 tags:
   - task
   - documentacao-oficial
   - vault-isolado
   - epic
+  - archived
 projects:
-  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
-  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
-  - "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]"
+  - "[[HUB_Mapa_Documentos_Oficiais_v1]]"
+  - "[[HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
+  - "[[HUB_Instrucao_Vault_Documentos_Oficiais]]"
 contexts:
   - "@juridico"
   - "@governanca"
 timeEstimate: 480
 due: 2026-09-30
-dateModified: 2026-09-06T11:31:43.727-03:00
+dateModified: 2026-09-21T19:30:00.000-03:00
 googleCalendarEventId: 788oqvmsbcl7r7sai16stmo4n8
+completedDate: 2026-09-21
 ---
 
 # Documentação Oficial — Epic Vault Isolado HUB (01-14)
@@ -27,9 +29,9 @@ googleCalendarEventId: 788oqvmsbcl7r7sai16stmo4n8
 Epic para tracking de toda documentação oficial no vault isolado `HUB_Documentos_Oficiais`.
 
 **Fonte da verdade:**
-- `GOV-MAP-001` → `01-08` (32 docs obrigatórios) → `[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]`
-- `GOV-MAP-002` → `09-14` (27 docs não-obrigatórios mas requeridos) → `[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]`
-- Instrução visual v2 → `[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]`
+- `GOV-MAP-001` → `01-08` (32 docs obrigatórios) → `[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]`
+- `GOV-MAP-002` → `09-14` (27 docs não-obrigatórios mas requeridos) → `[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]`
+- Instrução visual v2 → `[[01-work/documentos-oficiais/_controle/HUB_Instrucao_Vault_Documentos_Oficiais]]`
 
 **Estrutura destino:** `HUB_Documentos_Oficiais/00-controle` + `01-08` + `09-14` + `99-arquivo` = 15 pastas, 59 docs + 5 controle
 

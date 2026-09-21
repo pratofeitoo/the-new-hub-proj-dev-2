@@ -129,10 +129,10 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 
 | Artefato | Onde criar | Depende de |
 |---|---|---|
-| `HUB_Contrato_Social_v0.md` (minuta) | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` → promover | Linha 1.01 + parecer societário |
-| `HUB_Estatuto_Instituto_v0.md` | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` → promover | Linha 1.02 + parecer terceiro setor |
-| `HUB_DPA_Template_v0.md` | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | Linha 4.04 + matriz P03-T08 |
-| `HUB_Politica_Privacidade_v0.md` | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | Linha 6.02 |
+| `HUB_Contrato_Social_v0.md` (minuta) | `01-work/documentos-oficiais/_controle/` → promover | Linha 1.01 + parecer societário |
+| `HUB_Estatuto_Instituto_v0.md` | `01-work/documentos-oficiais/_controle/` → promover | Linha 1.02 + parecer terceiro setor |
+| `HUB_DPA_Template_v0.md` | `01-work/documentos-oficiais/_controle/` | Linha 4.04 + matriz P03-T08 |
+| `HUB_Politica_Privacidade_v0.md` | `01-work/documentos-oficiais/_controle/` | Linha 6.02 |
 | `HUB_Matriz_Oferta_CNPJ_Receita.md` | `04-project-management/tarefas/` + `02-review/01-blueprint/modelo-negocio/` | GOV-001 + BP-001 §2.1 |
 
 ---
@@ -142,4 +142,4 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 - 2026-09-02 v1 — esqueleto inicial com 32 linhas obrigatórias mapeadas na base legal de 2026-09-02. Criado a partir de `HUB_Blueprint_Governanca_e_Juridico.md` (BP-006) e `HUB_Blueprint_Oferta_e_Arquitetura_Receita.md` (BP-001). Pendente validação profissional.
 
 > [!note] Onde esta nota vive
-> `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md` — refinamento, não evidência aprovada. Quando aprovado, promover cópia para `02-review/aprovado/` e distribuir em `03-approved/governanca/`.
+> `01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md` — refinamento, não evidência aprovada. Quando aprovado, promover cópia para `02-review/aprovado/` e distribuir em `03-approved/governanca/`.

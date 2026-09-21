@@ -1,12 +1,12 @@
 ---
-status: pendente
+status: on-hold
 priority: normal
 contexts:
   - "@mvp-academico"
 projects:
   - "[[Desenvolvimento do MVP]]"
 dateCreated: 2026-09-05T17:27:00.939-03:00
-dateModified: 2026-09-05T17:27:00.939-03:00
+dateModified: 2026-09-21T17:59:03.048-03:00
 tags:
   - task
 owner:

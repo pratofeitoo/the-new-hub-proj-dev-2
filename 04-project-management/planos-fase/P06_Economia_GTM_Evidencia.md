@@ -115,7 +115,7 @@ Produzir economia verificável, modelo de mercado bottom-up, estratégia GTM seq
 | Modelo mercado bottom-up + testes cenários | `01-work/pesquisa-e-confianca/pesquisa/` + `05-resources/conjuntos-dados/` | refining |
 | Log evidências GTM por rota | `01-work/pesquisa-e-confianca/pesquisa/` | refining |
 | Matriz alternativa buyer-ranked | mesmo | refining |
-| Arquitetura marca + matriz afirmação-evidência + glossário | `02-review/01-blueprint/marca-mercado/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | blueprint→refining |
+| Arquitetura marca + matriz afirmação-evidência + glossário | `02-review/01-blueprint/marca-mercado/` + `01-work/documentos-oficiais/_controle/` | blueprint→refining |
 | Decks/pitch reconciliados com evidência | `05-resources/apresentacoes/` → `02-review/pacotes/` | approval |
 | Pacote revisão P06 | `02-review/pacotes/P06-Economia-GTM.md` | approval |
 

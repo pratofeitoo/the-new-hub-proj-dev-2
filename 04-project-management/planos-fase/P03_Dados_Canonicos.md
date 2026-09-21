@@ -97,7 +97,7 @@ Produzir o modelo canônico de dados, eventos, métricas e valor do HUB — com 
 | Envelope evento canônico + schema registry | mesmo | refining |
 | Catálogo métricas canônico + grafo dependências | mesmo + `sintese-entre-abas/` | refining |
 | Taxonomia estados valor | mesmo | refining |
-| Matriz dados-finalidade + fluxos DSAR/replay | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` (linkado) | refining |
+| Matriz dados-finalidade + fluxos DSAR/replay | `01-work/documentos-oficiais/_controle/` (linkado) | refining |
 | XLSX validado (reconstruído a partir dos `03-csv-corrigido/` validados) | `02-review/bloqueado/.../indicadores-xlsx/` → `02-review/pacotes/P03-Dados-Canonicos.md` → `02-review/aprovado/` | approval |
 | Pacote revisão P03 | `02-review/pacotes/P03-Dados-Canonicos.md` | approval |
 

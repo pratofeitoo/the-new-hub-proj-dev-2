@@ -137,7 +137,7 @@ print('task_id 64 únicos OK')
 | P03-T05 | Dados (a designar) | **FAIL** | `01-work/.../catalogo-metricas-grafo-P03-T05-v1.md` | PASS body | FAIL | PASS | em-revisao | PASS | PASS DAT-005 | 2 |
 | P03-T06 | Dados (a designar) | **FAIL** | `01-work/.../templates-linhagem-evidencias-P03-T06-v1.md` | PASS body | FAIL | PASS | em-revisao | PASS | PASS DAT-004 | 2 |
 | P03-T07 | Dados (a designar); Finanças (a designar) | **FAIL** 2× | `01-work/.../taxonomia-estados-valor-P03-T07-v1.md` | PASS body | FAIL | PASS | em-revisao | PASS | PASS DAT-006 | 3 |
-| P03-T08 | Dados (a designar); Jurídico (a designar) | **FAIL** 2× | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | PASS body | FAIL (frase LGPD `Mapa revisado ponta a ponta…` sem bullets) | PASS | em-revisao | PASS (01-work) | PASS DAT-008 **blocking LGPD** | 3 |
+| P03-T08 | Dados (a designar); Jurídico (a designar) | **FAIL** 2× | `01-work/documentos-oficiais/_controle/` | PASS body | FAIL (frase LGPD `Mapa revisado ponta a ponta…` sem bullets) | PASS | em-revisao | PASS (01-work) | PASS DAT-008 **blocking LGPD** | 3 |
 | P03-T09 | Dados (a designar); Tech (apoio) | **FAIL** | `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/` | PASS body | FAIL | PASS | em-revisao | PASS (02-review) | PASS DAT-009/DAT-010 | 2 |
 
 > **Nota P03-T01:** único com `target_file` divergente entre frontmatter (`99-archive`) e corpo (`01-work/.../modelo-logico-fisico-P03-T01-v1.md`). Auditado como FAIL alvo superado — correção Task 5 migra para `01-work/...` conforme padrão §10.1.
@@ -147,13 +147,13 @@ print('task_id 64 únicos OK')
 | task_id | owner | Owner | Target_file | Evidence | Criteria | Verification | Status | Gaps | Fails |
 |---------|-------|-------|-------------|----------|----------|--------------|--------|------|-------|
 | P04-T01 | Jurídico (a designar); PF Rezende | **FAIL** | `99-archive/superado/.../HUB_Blueprint_Governanca_e_Juridico.md` | FAIL | FAIL frase `pontos a serem revisados por assessoria…` | FAIL | pendente | PASS GOV-001 **bloqueador** | 6 |
-| P04-T02 | Jurídico (a designar); Dados (a designar) | **FAIL** 2× | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-002 | 5 |
+| P04-T02 | Jurídico (a designar); Dados (a designar) | **FAIL** 2× | `01-work/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-002 | 5 |
 | P04-T03 | Jurídico (a designar) | **FAIL** | `99-archive/superado/.../HUB_Blueprint_Governanca_e_Juridico.md` | FAIL | FAIL | FAIL | pendente | PASS GOV-003 | 6 |
-| P04-T04 | Jurídico (a designar) | **FAIL** | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-004 | 5 |
-| P04-T05 | Jurídico (a designar) | **FAIL** | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-006 | 5 |
-| P04-T06 | Jurídico (a designar); Tech (apoio) | **FAIL** | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-007 | 5 |
+| P04-T04 | Jurídico (a designar) | **FAIL** | `01-work/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-004 | 5 |
+| P04-T05 | Jurídico (a designar) | **FAIL** | `01-work/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-006 | 5 |
+| P04-T06 | Jurídico (a designar); Tech (apoio) | **FAIL** | `01-work/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-007 | 5 |
 | P04-T07 | Jurídico (a designar); PF Rezende | **FAIL** | `99-archive/superado/.../HUB_Blueprint_Governanca_e_Juridico.md` | FAIL | FAIL | FAIL | pendente | PASS GOV-008; STR-007 | 6 |
-| P04-T08 | Dados (a designar); Jurídico (a designar) | **FAIL** 2× | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-009; GOV-005 | 5 |
+| P04-T08 | Dados (a designar); Jurídico (a designar) | **FAIL** 2× | `01-work/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS GOV-009; GOV-005 | 5 |
 
 ### 3.5 P05 — Tecnologia Contratual (7)
 
@@ -163,7 +163,7 @@ print('task_id 64 únicos OK')
 | P05-T02 | Tech (a designar) | **FAIL** | `01-work/dados-tech-financas/refinamento-modelo-dados/` | FAIL | FAIL | FAIL | pendente | PASS TEC-001 | 5 |
 | P05-T03 | Tech (a designar); Dados (a designar) | **FAIL** 2× | `01-work/dados-tech-financas/refinamento-modelo-dados/` | FAIL | FAIL | FAIL | pendente | PASS TEC-006 | 5 |
 | P05-T04 | Tech (a designar) | **FAIL** | `01-work/dados-tech-financas/modelos-financeiros/` | FAIL | FAIL | FAIL | pendente | PASS TEC-005 **blocking baseline** | 5 |
-| P05-T05 | Tech (a designar); Jurídico (apoio) | **FAIL** | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS TEC-004 | 5 |
+| P05-T05 | Tech (a designar); Jurídico (apoio) | **FAIL** | `01-work/documentos-oficiais/_controle/` | FAIL | FAIL | FAIL | pendente | PASS TEC-004 | 5 |
 | P05-T06 | Tech (a designar) | **FAIL** | `01-work/produto-e-operacao/refinamento-produto/` | FAIL | FAIL | FAIL | pendente | PASS TEC-002 | 5 |
 | P05-T07 | Tech (a designar) | **FAIL** | `99-archive/superado/.../HUB_Blueprint_Lancamento_e_Evolucao.md` | FAIL | FAIL | FAIL | pendente | PASS TEC-007 **blocking release** | 6 |
 
@@ -180,7 +180,7 @@ print('task_id 64 únicos OK')
 | P06-T07 | GTM (a designar) | **FAIL** | `01-work/pesquisa-e-confianca/pesquisa/` | PASS body | FAIL | FAIL | pendente | PASS GTM-005 | 4 |
 | P06-T08 | GTM (a designar) | **FAIL** | `01-work/pesquisa-e-confianca/pesquisa/log-evidencias-GTM.md` | PASS body | FAIL | FAIL | pendente | PASS GTM-002/004 | 4 |
 | P06-T09 | GTM (a designar); Governança (a designar) | **FAIL** 2× | `01-work/pesquisa-e-confianca/pesquisa/` | PASS body | FAIL | FAIL | pendente | PASS GTM-003/006 | 5 |
-| P06-T10 | GTM (a designar); Jurídico (a designar) | **FAIL** 2× | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | PASS body | FAIL frase `nenhuma afirmação excede a evidência` sem bullets testáveis | FAIL | pendente | PASS BRD-002; GTM-007 **claims** | 5 |
+| P06-T10 | GTM (a designar); Jurídico (a designar) | **FAIL** 2× | `01-work/documentos-oficiais/_controle/` | PASS body | FAIL frase `nenhuma afirmação excede a evidência` sem bullets testáveis | FAIL | pendente | PASS BRD-002; GTM-007 **claims** | 5 |
 | P06-T11 | Marca/Mercado (a designar); Jurídico (a designar) | **FAIL** 2× | `99-archive/superado/.../HUB_Blueprint_Marca_e_Mercado.md` | PASS body | FAIL | FAIL | pendente | PASS BRD-001/003 | 5 |
 | P06-T12 | PF Rezende; GTM (a designar) | **FAIL** | `01-work/pesquisa-e-confianca/pesquisa/` | PASS body | FAIL | FAIL | pendente | PASS STR-004/005/006 | 4 |
 

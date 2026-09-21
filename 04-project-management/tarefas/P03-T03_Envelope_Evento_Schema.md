@@ -2,7 +2,8 @@
 title: P03-T03 — Envelope canônico de evento + schema registry (M03.B)
 task_id: P03-T03
 phase: P03
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: data-intelligence
 layer: refining
@@ -10,7 +11,7 @@ owner:
   - PF Rezende (interino)
   - PF Rezende (interino — Tech)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Dados/Tech"
+blocked_reason: aguardando nomeação Dados/Tech
 blocked_until: 2026-10-15
 gap_ids:
   - DAT-003
@@ -32,7 +33,7 @@ tags:
   - fase-P03
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:43:17.459-03:00
 ---
 
 # P03-T03 — Envelope canônico de evento + schema registry (M03.B)

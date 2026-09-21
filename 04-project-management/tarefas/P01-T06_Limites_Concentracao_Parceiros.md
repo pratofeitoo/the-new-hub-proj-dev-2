@@ -2,7 +2,8 @@
 title: P01-T06 — Limites de concentração de parceiros (thresholds)
 task_id: P01-T06
 phase: P01
-status: em-revisao
+status:
+  - on-hold
 priority: alta
 area: gtm
 layer: governance
@@ -24,7 +25,7 @@ tags:
   - fase-P01
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:22.873-03:00
+dateModified: 2026-09-21T17:43:03.355-03:00
 ---
 
 # P01-T06 — Limites de concentração de parceiros (thresholds)

@@ -2,7 +2,8 @@
 title: P02-T03 — Matriz autorização & tenancy (ator×permissão)
 task_id: P02-T03
 phase: P02
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: product
 layer: refining
@@ -25,7 +26,7 @@ tags:
   - fase-P02
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:39.439-03:00
+dateModified: 2026-09-21T17:43:08.906-03:00
 ---
 
 # P02-T03 — Matriz autorização & tenancy (ator×permissão)

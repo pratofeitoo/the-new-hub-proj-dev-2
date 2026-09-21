@@ -49,6 +49,11 @@
           "type": "file",
           "ctime": 1788381568937,
           "path": "TaskNotes/Views/documentacao-oficial.base"
+        },
+        {
+          "type": "file",
+          "ctime": 1790028654000,
+          "path": "TaskNotes/Views/projects-overview.base"
         }
       ],
       "title": "Bases"

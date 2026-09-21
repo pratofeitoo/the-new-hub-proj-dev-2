@@ -2,7 +2,8 @@
 title: P01-T05 — Log de evidências por rota GTM (hipótese vs tração)
 task_id: P01-T05
 phase: P01
-status: em-revisao
+status:
+  - on-hold
 priority: alta
 area: gtm
 layer: refinement
@@ -24,7 +25,7 @@ tags:
   - fase-P01
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:17.124-03:00
+dateModified: 2026-09-21T17:43:01.986-03:00
 ---
 
 # P01-T05 — Log de evidências por rota GTM (hipótese vs tração)

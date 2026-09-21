@@ -93,13 +93,13 @@ Definir e validar a arquitetura de entidades, governança de dados, propriedade 
 
 | Artefato | Onde vive | Camada |
 |---|---|---|
-| Matriz entidades + acordos intragrupo | `02-review/01-blueprint/governanca-juridico/` + `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | blueprint→refining |
+| Matriz entidades + acordos intragrupo | `02-review/01-blueprint/governanca-juridico/` + `01-work/documentos-oficiais/_controle/` | blueprint→refining |
 | Mapa governança dados fluxo a fluxo | mesmo | refining |
 | Carta independência Selo + controles operacionais | mesmo + `02-review/01-blueprint/governanca-juridico/` | refining |
 | Matriz responsabilidade + seguros | mesmo | refining |
 | Registro PI + acordos | mesmo | refining |
 | RACI v2 + matriz direitos decisão | `02-review/01-blueprint/governanca-juridico/` + `00-project-control/registro-lacunas/lacunas/GOV-008.md` | refining |
-| Testes de controle (evidência operação) | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` + `02-review/evidencias/` | refining→approval |
+| Testes de controle (evidência operação) | `01-work/documentos-oficiais/_controle/` + `02-review/evidencias/` | refining→approval |
 | Pacote revisão P04 | `02-review/pacotes/P04-Governanca-Confianca.md` | approval |
 
 ## 6. Critérios de saída (gate P04)

@@ -2,14 +2,15 @@
 title: P06-T10 — Matriz afirmação-evidência + governança de claims (BRD)
 task_id: P06-T10
 phase: P06
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: brand-market
 layer: refining
 owner:
   - Tamara // provisional GTM — bloqueado até nomeação definitiva 2026-10-15
   - PF Rezende // provisional Jurídico — bloqueado até nomeação definitiva 2026-10-15
-blocked_reason: "aguardando nomeação GTM e Jurídico — BRD-002/GTM-007 claims"
+blocked_reason: aguardando nomeação GTM e Jurídico — BRD-002/GTM-007 claims
 blocked_until: 2026-10-15
 accountable: Tamara
 gap_ids:
@@ -17,15 +18,15 @@ gap_ids:
   - GTM-007
 dependencies:
   - P06-T01
-target_file: 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md
+target_file: 01-work/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md
 related_notes:
   - "[[04-project-management/planos-fase/P06_Economia_GTM_Evidencia]]"
   - "[[00-project-control/registro-lacunas/lacunas/BRD-002]]"
   - "[[00-project-control/registro-lacunas/lacunas/GTM-007]]"
   - "[[04-project-management/marcos/marcos-fases-v1#M06 — Economia & GTM com Evidência Aprovados]]"
 evidence_required:
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/glossario-controlado-P06-T10-v1.md
+  - 01-work/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md
+  - 01-work/documentos-oficiais/_controle/glossario-controlado-P06-T10-v1.md
   - 05-resources/apresentacoes/pitch-decks/RECONCILIADO_P06-T10/
 created: 2026-08-26
 tags:
@@ -33,7 +34,7 @@ tags:
   - fase-P06
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:25.719-03:00
 ---
 
 # P06-T10 — Matriz afirmação-evidência + governança de claims (BRD)
@@ -44,7 +45,7 @@ Mapear cada afirmação externa a evidência + status aprovação; reconciliar d
 
 ## Entregável
 
-`01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md` + `glossario-controlado-P06-T10-v1.md` + decks reconciliados em `05-resources/apresentacoes/pitch-decks/RECONCILIADO_P06-T10/`. Path idêntico ao frontmatter `target_file`.
+`01-work/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md` + `glossario-controlado-P06-T10-v1.md` + decks reconciliados em `05-resources/apresentacoes/pitch-decks/RECONCILIADO_P06-T10/`. Path idêntico ao frontmatter `target_file`.
 
 ## Acceptance criteria (G06.10 — BRD-002/GTM-007 — blocking: yes)
 
@@ -54,14 +55,14 @@ Mapear cada afirmação externa a evidência + status aprovação; reconciliar d
 
 ## Evidence required
 
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md` (§1 matriz afirmação→evidência/nível/status + §2 reconciliação P06-T01 + §3 bloqueios BRD-002/GTM-007)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/glossario-controlado-P06-T10-v1.md` (termos controlados — permitido vs proibido + substitutos ilustrativos)
+- `01-work/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md` (§1 matriz afirmação→evidência/nível/status + §2 reconciliação P06-T01 + §3 bloqueios BRD-002/GTM-007)
+- `01-work/documentos-oficiais/_controle/glossario-controlado-P06-T10-v1.md` (termos controlados — permitido vs proibido + substitutos ilustrativos)
 - `05-resources/apresentacoes/pitch-decks/RECONCILIADO_P06-T10/` (decks reconciliados — cada afirmação com footnote nível evidência + carimbo Jurídico/GTM)
 
 ## Verification
 
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md && grep -c "BRD-002\|GTM-007" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md | awk '{print ($1>=2)?"PASS blocking":"FAIL"}'`
-- [ ] `grep -c "Ilustrativo\|Hipótese\|Comprovado" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md | awk '{print ($1>=3)?"PASS níveis":"FAIL"}' && ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/glossario-controlado-P06-T10-v1.md`
+- [ ] `ls 01-work/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md && grep -c "BRD-002\|GTM-007" 01-work/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md | awk '{print ($1>=2)?"PASS blocking":"FAIL"}'`
+- [ ] `grep -c "Ilustrativo\|Hipótese\|Comprovado" 01-work/documentos-oficiais/_controle/matriz-afirmacao-evidencia-P06-T10-v1.md | awk '{print ($1>=3)?"PASS níveis":"FAIL"}' && ls 01-work/documentos-oficiais/_controle/glossario-controlado-P06-T10-v1.md`
 - [ ] `ls 05-resources/apresentacoes/pitch-decks/RECONCILIADO_P06-T10/ && grep -R "Ilustrativo — não validado" 05-resources/apresentacoes/pitch-decks/RECONCILIADO_P06-T10/ | wc -l | awk '{print ($1>=1)?"PASS decks rotulados":"FAIL"}'`
 
 ## Dependências

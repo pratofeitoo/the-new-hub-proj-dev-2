@@ -2,7 +2,8 @@
 title: P04-T08 — Revisão inteligência responsável (model cards/fairness/drift)
 task_id: P04-T08
 phase: P04
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: governance-legal
 layer: refining
@@ -10,14 +11,14 @@ owner:
   - PF Rezende (interino — Dados)
   - PF Rezende (interino — Jurídico)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Dados/Jurídico — GOV-009/GOV-005"
+blocked_reason: aguardando nomeação Dados/Jurídico — GOV-009/GOV-005
 blocked_until: 2026-10-15
 gap_ids:
   - GOV-009
   - GOV-005
 dependencies:
   - P04-T02
-target_file: 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/
+target_file: 01-work/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-009]]"
@@ -28,7 +29,7 @@ evidence_required:
   - 01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md
   - 01-work/dados-tech-financas/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1.md
   - 02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md
+  - 01-work/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md
   - 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md
 created: 2026-08-26
 tags:
@@ -36,7 +37,7 @@ tags:
   - fase-P04
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:04.016-03:00
 ---
 
 # P04-T08 — Revisão inteligência responsável (model cards/fairness/drift)
@@ -45,7 +46,7 @@ dateModified: 2026-09-05T00:00:00.000-03:00
 Definir processo com model cards, grupos protegidos, limiares drift/fairness, explicabilidade, amostragem e trilha auditável — com controles testáveis e portão governança sem lacuna crítica (GOV-009 + GOV-005).
 
 ## Entregável
-Processo proposto + model cards rascunho + testes controle evidência em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` + `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/` (ou `02-review/evidencias/` quando criado) como insumo refining; controles aprovados + portão sem lacuna é Camada 3.
+Processo proposto + model cards rascunho + testes controle evidência em `01-work/documentos-oficiais/_controle/` + `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/` (ou `02-review/evidencias/` quando criado) como insumo refining; controles aprovados + portão sem lacuna é Camada 3.
 
 ## Acceptance criteria (G04.8 / G04.9 — GOV-009 / GOV-005)
 
@@ -57,17 +58,17 @@ Processo proposto + model cards rascunho + testes controle evidência em `01-wor
 
 ## Evidence required
 
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` (processo inteligência responsável — rascunho com model cards template + limiares drift/fairness)
+- `01-work/documentos-oficiais/_controle/` (processo inteligência responsável — rascunho com model cards template + limiares drift/fairness)
 - `01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md` (73 métricas — base fairness por métrica)
 - `01-work/dados-tech-financas/refinamento-modelo-dados/taxonomia-estados-valor-P03-T07-v1.md` (estados `potencial/influenciado/validado/realizado` + atribuição)
 - `02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/` (testes controle — rascunho manual piloto + SPECs automáticos plataforma)
-- `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §4 (IA deferred piloto — diferenciação pilot vs full) + `01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md` (base legal dados modelo)
+- `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §4 (IA deferred piloto — diferenciação pilot vs full) + `01-work/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md` (base legal dados modelo)
 
 ## Verification
 
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/ 2>&1 | head -5 && grep -c "model card\|fairness\|drift\|grupos protegidos\|explicabilidade" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/*.md 2>/dev/null | awk -F: '{s+=$2} END {print (s>=3)?"PASS processo inteligência":"CHECK "s}' && grep -c "human review\|override\|rollback\|trilha auditável\|run_id" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/*.md 2>/dev/null | awk -F: '{s+=$2} END {print (s>=2)?"PASS controles":"CHECK"}'`
+- [ ] `ls 01-work/documentos-oficiais/_controle/ 2>&1 | head -5 && grep -c "model card\|fairness\|drift\|grupos protegidos\|explicabilidade" 01-work/documentos-oficiais/_controle/*.md 2>/dev/null | awk -F: '{s+=$2} END {print (s>=3)?"PASS processo inteligência":"CHECK "s}' && grep -c "human review\|override\|rollback\|trilha auditável\|run_id" 01-work/documentos-oficiais/_controle/*.md 2>/dev/null | awk -F: '{s+=$2} END {print (s>=2)?"PASS controles":"CHECK"}'`
 - [ ] `ls 02-review/bloqueado/modelo-indicadores/rascunho-nao-aprovado-v2/indicadores-xlsx/06-relatorios-validacao/ | wc -l | awk '{print ($1>=3)?"PASS evidências retidas":"CHECK"}' && grep -c "deferred.*IA\|IA.*deferred\|match manual" 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md | awk '{print ($1>=1)?"PASS pilot IA deferred":"FAIL"}'`
-- [ ] `grep -c "hipotese\|rascunho\|Refinar com condições" 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/*.md 2>/dev/null | awk -F: '{s+=$2} END {print (s>=1)?"PASS rascunho não aprovado (esperado)":"CHECK"}'`
+- [ ] `grep -c "hipotese\|rascunho\|Refinar com condições" 01-work/documentos-oficiais/_controle/*.md 2>/dev/null | awk -F: '{s+=$2} END {print (s>=1)?"PASS rascunho não aprovado (esperado)":"CHECK"}'`
 
 ## Dependências
 

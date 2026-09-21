@@ -2,7 +2,8 @@
 title: P07-T06 — Checklist lançamento comercial (onboarding/contratos/preço)
 task_id: P07-T06
 phase: P07
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: launch-vision
 layer: approval
@@ -25,7 +26,7 @@ related_notes:
 evidence_required:
   - 02-review/portao-lancamento/checklist-comercial-v1.md
   - 01-work/dados-tech-financas/modelos-financeiros/modelo-financeiro-3-cenarios-P06-T02-v1.xlsx
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/
+  - 01-work/documentos-oficiais/_controle/
   - 02-review/portao-lancamento/portao-mestre-v1.md
 created: 2026-08-26
 tags:
@@ -33,7 +34,7 @@ tags:
   - fase-P07
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:34.370-03:00
 ---
 
 # P07-T06 — Checklist lançamento comercial (onboarding/contratos/preço)
@@ -49,20 +50,20 @@ Formalizar onboarding cliente, contratos, precificação com base P06, aviso pri
 ## Acceptance criteria (G07.6 — LCH-006)
 
 - [ ] **Checklist por oferta com base P06+P04:** `checklist-comercial-v1.md` §1–§5 cobre `onboarding cliente + contratos + precificação com base `P06-T02` (modelo 3 cenários reconciliado, sem dupla contagem, `ledger ARR/MRR` G06.2/G06.6) + aviso privacidade com base `P04-T02` (base legal + finalidade-campo + retenção LGPD)` — todo preço tem `fonte P06 evidenciada`; `grep -c "P06-T02\|modelo-financeiro\|ARR\|MRR" 02-review/portao-lancamento/checklist-comercial-v1.md` ≥ 3; aviso privacidade linka `P04-T02` + `P04-T08` (DSAR)
-- [ ] **Alegações limitadas a evidência P06:** `suporte + alegações comerciais` em §6 do `target_file` limitadas a `evidência P06` — `grep -c "evidência P06\|evidence P06\|BRD-002\|GTM-007" 02-review/portao-lancamento/checklist-comercial-v1.md` ≥ 5; decks/pitches em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` `P06-T10` reconciliados — `nenhuma afirmação excede evidência` (P06-T10) — `gap LCH-006` sem violação claims
+- [ ] **Alegações limitadas a evidência P06:** `suporte + alegações comerciais` em §6 do `target_file` limitadas a `evidência P06` — `grep -c "evidência P06\|evidence P06\|BRD-002\|GTM-007" 02-review/portao-lancamento/checklist-comercial-v1.md` ≥ 5; decks/pitches em `01-work/documentos-oficiais/_controle/` `P06-T10` reconciliados — `nenhuma afirmação excede evidência` (P06-T10) — `gap LCH-006` sem violação claims
 - [ ] **Lançamento só se aprovado sem TBD:** checklist marcado `aprovado` só com `M06+M04` aprovados (P07 depende de M06+M04) + `G07.6` em `marcos-fases-v1.md#M07` PASS; `grep -i "TBD\|a definir\|a designar" 02-review/portao-lancamento/checklist-comercial-v1.md | wc -l` == 0; `03-approved/lancamento/` vazio até `DEC-M07` (G07.7 LCH-007 blocking: yes)
 
 ## Evidence required
 
 - `02-review/portao-lancamento/checklist-comercial-v1.md` (§1 onboarding + §2 contratos + §3 precificação base P06-T02 + §4 aviso privacidade base P04-T02/GOV-002 + §5 suporte + §6 alegações limitadas a evidência)
 - `01-work/dados-tech-financas/modelos-financeiros/modelo-financeiro-3-cenarios-P06-T02-v1.xlsx` + `01-work/dados-tech-financas/modelos-financeiros/registro-premissas-v0.md` (base preço P06-T02 reconciliada § P06 G06.2)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` (matriz `P06-T10` afirmação→evidência `BRD-002/GTM-007` + aviso privacidade `P04-T02` mapeado `finalidade-campo`)
+- `01-work/documentos-oficiais/_controle/` (matriz `P06-T10` afirmação→evidência `BRD-002/GTM-007` + aviso privacidade `P04-T02` mapeado `finalidade-campo`)
 - `02-review/portao-lancamento/portao-mestre-v1.md` (`G07.6` marcado `aprovado/condicional/bloqueado` por oferta/mercado) + `04-project-management/marcos/marcos-fases-v1.md#M07`
 
 ## Verification
 
 - [ ] `ls 02-review/portao-lancamento/checklist-comercial-v1.md && grep -c "onboarding\|contrato\|preço\|preco\|privacidade\|suporte\|alegação" 02-review/portao-lancamento/checklist-comercial-v1.md | awk '{print ($1>=6)?"PASS G07.6":"FAIL"}' && grep -c "P06-T02\|P04-T02" 02-review/portao-lancamento/checklist-comercial-v1.md | awk '{print ($1>=2)?"PASS base P06+P04":"FAIL"}'`
-- [ ] `grep -c "evidência P06\|evidence\|BRD-002\|GTM-007" 02-review/portao-lancamento/checklist-comercial-v1.md | awk '{print ($1>=5)?"PASS alegações limitadas":"FAIL"}' && ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/ | head -3`
+- [ ] `grep -c "evidência P06\|evidence\|BRD-002\|GTM-007" 02-review/portao-lancamento/checklist-comercial-v1.md | awk '{print ($1>=5)?"PASS alegações limitadas":"FAIL"}' && ls 01-work/documentos-oficiais/_controle/ | head -3`
 - [ ] `grep -i "TBD\|a definir\|a designar" 02-review/portao-lancamento/checklist-comercial-v1.md | wc -l | awk '{print ($1==0)?"PASS sem TBD":"FAIL"}' && test -z "$(ls 03-approved/lancamento/ 2>/dev/null)" && echo "PASS 03-approved bloqueado até DEC-M07" || echo "PENDENTE"`
 
 ## Dependências

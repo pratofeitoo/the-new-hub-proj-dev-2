@@ -1,10 +1,10 @@
 ---
 ops_id: OPS-007
 task_type: operational
-status: em-revisao
+status: on-hold
 priority: high
 dateCreated: 2026-08-26T17:14:02.443-03:00
-dateModified: 2026-09-02T00:06:23.843-03:00
+dateModified: 2026-09-21T18:00:57.492-03:00
 tags:
   - task
   - project

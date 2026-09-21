@@ -2,13 +2,14 @@
 title: P06-T08 — Log evidências GTM + análise alternativas (buyer-ranked)
 task_id: P06-T08
 phase: P06
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: gtm
 layer: refining
 owner:
   - Tamara // blocked: aguardando nomeação GTM até 2026-10-15
-blocked_reason: "aguardando nomeação GTM — GTM-002/004"
+blocked_reason: aguardando nomeação GTM — GTM-002/004
 blocked_until: 2026-10-15
 accountable: Tamara
 gap_ids:
@@ -32,7 +33,7 @@ tags:
   - fase-P06
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:23.566-03:00
 ---
 
 # P06-T08 — Log evidências GTM + análise alternativas (buyer-ranked)

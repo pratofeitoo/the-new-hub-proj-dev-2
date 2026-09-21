@@ -130,7 +130,7 @@ O fluxo de execução é:
 
 ## Regras de manutenção
 
-- `status:` deve ser igual ao da pasta (`01-work`: rascunho/em-elaboracao; `02-review`: em-revisao; `03-approved`: aprovado; `99-archive`: superado/rejeitado/descontinuado). Exceção documentada: `01-work/pesquisa-e-confianca/documentos-oficiais/` usa o vocabulário próprio herdado (`hipotese|em_elaboracao|...`), sempre abaixo de aprovado.
+- `status:` deve ser igual ao da pasta (`01-work`: rascunho/em-elaboracao; `02-review`: em-revisao; `03-approved`: aprovado; `99-archive`: superado/rejeitado/descontinuado). Exceção documentada: `01-work/documentos-oficiais/` usa o vocabulário próprio herdado (`hipotese|em_elaboracao|...`), sempre abaixo de aprovado.
 - Não edite aprovados no lugar; não arquive P03 enquanto estiver em elaboração ativa.
 - Atualize este mapa e o `README.md` quando a estrutura de pastas mudar.
 - Arquivos compilados de plugins não devem ser editados manualmente.

@@ -2,7 +2,7 @@
 title: P04-T02 — Mapa governança de dados fluxo a fluxo (LGPD)
 task_id: P04-T02
 phase: P04
-status: pendente
+status: on-hold
 priority: critica
 area: governance-legal
 layer: refining
@@ -10,14 +10,14 @@ owner:
   - PF Rezende (interino — Jurídico LGPD)
   - PF Rezende (interino — DPO)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Jurídico LGPD/DPO — LGPD"
+blocked_reason: aguardando nomeação Jurídico LGPD/DPO — LGPD
 blocked_until: 2026-10-10
 gap_ids:
   - GOV-002
 dependencies:
   - P03-T08
   - P02-T03
-target_file: 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/
+target_file: 01-work/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-002]]"
@@ -25,10 +25,10 @@ related_notes:
   - "[[01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1]]"
 evidence_required:
   - 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.02-politica-privacidade-DPO.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.03-RIPD-impacto.md
+  - 01-work/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md
+  - 01-work/documentos-oficiais/06-conformidade-LGPD/06.02-politica-privacidade-DPO.md
+  - 01-work/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md
+  - 01-work/documentos-oficiais/06-conformidade-LGPD/06.03-RIPD-impacto.md
   - 01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md
 created: 2026-08-26
 tags:
@@ -36,7 +36,7 @@ tags:
   - fase-P04
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:44:39.863-03:00
 ---
 
 # P04-T02 — Mapa governança de dados fluxo a fluxo (LGPD)
@@ -45,7 +45,7 @@ dateModified: 2026-09-05T00:00:00.000-03:00
 Completar `fluxo → campo → finalidade → base legal → controller/processor → retenção → consentimento → exclusão` por fluxo de lançamento — com controller/processor, base legal e retenção documentados para liberação LGPD (GOV-002).
 
 ## Entregável
-Mapa LGPD fluxo a fluxo em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` + `06-conformidade-LGPD/` (ROPA 06.01, política 06.02, RIPD 06.03, DPA 04.04) reconciliado com `matriz-dados-finalidade-P03-T08-v1.md` (5 fluxos × 41 campos + 12 piloto) como rascunho refinamento; liberação LGPD é Camada 3.
+Mapa LGPD fluxo a fluxo em `01-work/documentos-oficiais/_controle/` + `06-conformidade-LGPD/` (ROPA 06.01, política 06.02, RIPD 06.03, DPA 04.04) reconciliado com `matriz-dados-finalidade-P03-T08-v1.md` (5 fluxos × 41 campos + 12 piloto) como rascunho refinamento; liberação LGPD é Camada 3.
 
 ## Acceptance criteria (G04.2 — GOV-002)
 
@@ -58,17 +58,17 @@ Mapa LGPD fluxo a fluxo em `01-work/pesquisa-e-confianca/documentos-oficiais/_co
 ## Evidence required
 
 - `01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md` (§1 5 fluxos + §2 41 campos + §3 propagação ≤5 min + §4 retenção/DSAR — fonte spine LGPD)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md` (art.37 — minuta hipotese v0.1 + checklist evidência)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md` (controller/processor por fluxo + sub-processors + quarentena)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.02-politica-privacidade-DPO.md` + `06.03-RIPD-impacto.md` (DPO + impacto alto risco)
+- `01-work/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md` (art.37 — minuta hipotese v0.1 + checklist evidência)
+- `01-work/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md` (controller/processor por fluxo + sub-processors + quarentena)
+- `01-work/documentos-oficiais/06-conformidade-LGPD/06.02-politica-privacidade-DPO.md` + `06.03-RIPD-impacto.md` (DPO + impacto alto risco)
 - `01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md` §1/§3 (12 entidades + envelope mínimo + `consentimento_id` condicional — diferenciação pilot vs full)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` / `00-controle-drive/` (cópia/controle matriz + `acordo-cooperacao-SEBRAE-HUB-2026-10-15.md` base legal piloto quando aplicável)
+- `01-work/documentos-oficiais/_controle/` / `00-controle-drive/` (cópia/controle matriz + `acordo-cooperacao-SEBRAE-HUB-2026-10-15.md` base legal piloto quando aplicável)
 
 ## Verification
 
 - [ ] `ls 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md && grep -c "Onboarding\|Diagnóstico\|Matching\|Medição\|Comercial" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=5)?"PASS 5 fluxos":"FAIL"}' && grep -c "controller\|processor\|base legal\|retenção\|purpose" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=5)?"PASS LGPD campos":"FAIL"}'`
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md && grep -c "ROPA\|DPA\|controller\|processor" 01-work/pesquisa-e-confianca/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md | awk '{print ($1>=2)?"PASS ROPA+DPA":"FAIL"}' && grep -c "≤5 min\|quarantine\|consent\.revoked" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=2)?"PASS propagação":"FAIL"}'`
-- [ ] `grep -c "hipotese\|Refinar com condições\|blocking.*yes" 01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md | awk '{print ($1>=1)?"CHECK rascunho LGPD (esperado bloqueado)":"FAIL"}' && ls 01-work/pesquisa-e-confianca/documentos-oficiais/06-conformidade-LGPD/06.03-RIPD-impacto.md 2>&1 | head -1`
+- [ ] `ls 01-work/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md 01-work/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md && grep -c "ROPA\|DPA\|controller\|processor" 01-work/documentos-oficiais/04-contratos-fundamentais/04.04-DPA-cronograma-fluxos.md | awk '{print ($1>=2)?"PASS ROPA+DPA":"FAIL"}' && grep -c "≤5 min\|quarantine\|consent\.revoked" 01-work/dados-tech-financas/refinamento-modelo-dados/matriz-dados-finalidade-P03-T08-v1.md | awk '{print ($1>=2)?"PASS propagação":"FAIL"}'`
+- [ ] `grep -c "hipotese\|Refinar com condições\|blocking.*yes" 01-work/documentos-oficiais/06-conformidade-LGPD/06.01-ROPA-registro-operacoes.md | awk '{print ($1>=1)?"CHECK rascunho LGPD (esperado bloqueado)":"FAIL"}' && ls 01-work/documentos-oficiais/06-conformidade-LGPD/06.03-RIPD-impacto.md 2>&1 | head -1`
 
 ## Dependências
 

@@ -87,7 +87,7 @@ Definir a arquitetura-alvo, contratos de integração, requisitos não funcionai
 | Contratos integração + matriz system-of-record | `01-work/testes-experimentos/` ou `tecnologia/` | refining |
 | Mapa identidade entre sistemas | mesmo + link para P03 | refining |
 | Modelo capacidade técnica (custo/latência/volume) | `01-work/dados-tech-financas/modelos-financeiros/` (insumo para P06) | refining |
-| Threat model + matriz controles segurança | `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` | refining |
+| Threat model + matriz controles segurança | `01-work/documentos-oficiais/_controle/` | refining |
 | SLOs + runbooks + plano recuperação | `02-review/01-blueprint/tecnologia/` + `01-work/testes-experimentos/` | refining |
 | Processo release + runbook lançamento | `02-review/01-blueprint/visao-lancamento/` + `04-project-management/planos-fase/` | refining |
 | Pacote revisão P05 | `02-review/pacotes/P05-Tecnologia.md` | approval |

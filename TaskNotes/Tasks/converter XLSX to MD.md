@@ -1,12 +1,12 @@
 ---
-status: pendente
+status: on-hold
 priority: normal
 contexts:
   - "@mvp-eventos"
 projects:
   - "[[Desenvolvimento do MVP]]"
 dateCreated: 2026-09-05T17:34:04.575-03:00
-dateModified: 2026-09-05T17:34:04.575-03:00
+dateModified: 2026-09-21T17:59:07.014-03:00
 tags:
   - task
 owner:

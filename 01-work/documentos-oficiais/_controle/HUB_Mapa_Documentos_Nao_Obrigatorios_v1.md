@@ -1,5 +1,5 @@
 ---
-title: "HUB — Mapa de Documentos Não Obrigatórios mas Requeridos v1"
+title: HUB — Mapa de Documentos Não Obrigatórios mas Requeridos v1
 map_id: GOV-MAP-002
 status: rascunho
 layer: refinement
@@ -10,10 +10,30 @@ updated: 2026-09-02
 base_legal_data: 2026-09-02
 jurisdicao: Brasil - prática de mercado + legislação de referência em 2026-09-02
 blueprint_ref: "[[02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
-map_obrigatorio_ref: "[[01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
-gap_ids: [GOV-001, GOV-004, GOV-005, GOV-006, GOV-008, GOV-009, STR-001, STR-002, STR-003, FIN-002, GTM-001]
-tarefas_ref: [P04-T01, P04-T03, P06-T02, P06-T04]
-tags: [governanca, nao-obrigatorio, empresa, escala, brasil-2026]
+map_obrigatorio_ref: "[[HUB_Mapa_Documentos_Oficiais_v1]]"
+gap_ids:
+  - GOV-001
+  - GOV-004
+  - GOV-005
+  - GOV-006
+  - GOV-008
+  - GOV-009
+  - STR-001
+  - STR-002
+  - STR-003
+  - FIN-002
+  - GTM-001
+tarefas_ref:
+  - P04-T01
+  - P04-T03
+  - P06-T02
+  - P06-T04
+tags:
+  - governanca
+  - nao-obrigatorio
+  - empresa
+  - escala
+  - brasil-2026
 ---
 
 # HUB — Mapa de Documentos Não Obrigatórios mas Requeridos v1
@@ -118,4 +138,4 @@ tags: [governanca, nao-obrigatorio, empresa, escala, brasil-2026]
 
 - 2026-09-02 v1 — 27 linhas não-obrigatórias mapeadas (09.01-14.05) como extensão do GOV-MAP-001. Pendente validação com jurídico/financeiro/RH.
 
-> Onde esta nota vive: `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` — refinamento, não evidência aprovada.
+> Onde esta nota vive: `01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1.md` — refinamento, não evidência aprovada.

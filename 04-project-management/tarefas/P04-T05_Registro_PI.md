@@ -2,38 +2,39 @@
 title: P04-T05 — Registro PI + acordos de contribuidores
 task_id: P04-T05
 phase: P04
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: governance-legal
 layer: refining
 owner:
   - PF Rezende (interino — Jurídico)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Jurídico — GOV-006"
+blocked_reason: aguardando nomeação Jurídico — GOV-006
 blocked_until: 2026-10-15
 gap_ids:
   - GOV-006
 dependencies:
   - P04-T01
-target_file: 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/
+target_file: 01-work/documentos-oficiais/_controle/
 related_notes:
   - "[[04-project-management/planos-fase/P04_Governanca_Confianca]]"
   - "[[00-project-control/registro-lacunas/lacunas/GOV-006]]"
   - "[[04-project-management/marcos/marcos-fases-v1#M04 — Governança & Confiança Aprovada]]"
 evidence_required:
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.02-cessao-PI-empregados.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.03-registro-software.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.04-inventario-PI-open-source.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.05-dominios-registro-br.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md
+  - 01-work/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md
+  - 01-work/documentos-oficiais/05-propriedade-intelectual/05.02-cessao-PI-empregados.md
+  - 01-work/documentos-oficiais/05-propriedade-intelectual/05.03-registro-software.md
+  - 01-work/documentos-oficiais/05-propriedade-intelectual/05.04-inventario-PI-open-source.md
+  - 01-work/documentos-oficiais/05-propriedade-intelectual/05.05-dominios-registro-br.md
+  - 01-work/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md
 created: 2026-08-26
 tags:
   - task
   - fase-P04
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:55:59.818-03:00
 ---
 
 # P04-T05 — Registro PI + acordos de contribuidores
@@ -42,7 +43,7 @@ dateModified: 2026-09-05T00:00:00.000-03:00
 Mapear titularidade de marca, C.A.O.S., conteúdo, software, schemas, dados/derivados + acordos de contribuidores — com cadeia exigível (GOV-006).
 
 ## Entregável
-Registro PI em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` + inventário `05-propriedade-intelectual/` (05.01 marcas, 05.02 cessão, 05.03 software, 05.04 OSS, 05.05 domínios) + licença `01.04-CAOS` + cessão `04.07` e `08.04` como rascunho hipotese; cadeia completa é Camada 3.
+Registro PI em `01-work/documentos-oficiais/_controle/` + inventário `05-propriedade-intelectual/` (05.01 marcas, 05.02 cessão, 05.03 software, 05.04 OSS, 05.05 domínios) + licença `01.04-CAOS` + cessão `04.07` e `08.04` como rascunho hipotese; cadeia completa é Camada 3.
 
 ## Acceptance criteria (G04.5 — GOV-006)
 
@@ -54,17 +55,17 @@ Registro PI em `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` + i
 
 ## Evidence required
 
-- `01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md` (INPI — classes, titular por CNPJ hipotese, busca pendente)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.02-cessao-PI-empregados.md` + `08.02-contratos-PJ.md` + `04.07-termo-voluntariado-cessao.md` (cessão contribuidores)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.03-registro-software.md` + `05.04-inventario-PI-open-source.md` + `05.05-dominios-registro-br.md` (software + OSS + domínios)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md` (licença CAOS por CNPJ)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/_controle/` (registro PI consolidado — rascunho com lacunas)
+- `01-work/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md` (INPI — classes, titular por CNPJ hipotese, busca pendente)
+- `01-work/documentos-oficiais/05-propriedade-intelectual/05.02-cessao-PI-empregados.md` + `08.02-contratos-PJ.md` + `04.07-termo-voluntariado-cessao.md` (cessão contribuidores)
+- `01-work/documentos-oficiais/05-propriedade-intelectual/05.03-registro-software.md` + `05.04-inventario-PI-open-source.md` + `05.05-dominios-registro-br.md` (software + OSS + domínios)
+- `01-work/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md` (licença CAOS por CNPJ)
+- `01-work/documentos-oficiais/_controle/` (registro PI consolidado — rascunho com lacunas)
 
 ## Verification
 
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.0*.md 01-work/pesquisa-e-confianca/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md && grep -c "marca\|C.A.O.S.\|software\|dados.*derivados\|domínio" 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md | awk '{print ($1>=2)?"PASS inventário PI":"FAIL"}' && grep -c "INPI\|registro.*software\|cessão" 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.02-cessao-PI-empregados.md | awk '{print ($1>=1)?"PASS cadeia titularidade":"FAIL"}'`
-- [ ] `grep -c "hipotese\|a desi""gnar\|pendente.*assinatura" 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md | awk '{print ($1>=1)?"PASS rascunho não exigível (esperado)":"FAIL"}' && ls 01-work/pesquisa-e-confianca/documentos-oficiais/_controle/ 2>&1 | head -5`
-- [ ] `grep -c "GOV-001\|titular.*CNPJ\|hipótese.*CNPJ" 01-work/pesquisa-e-confianca/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md | awk '{print ($1>=1)?"PASS titularidade por CNPJ":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/05-propriedade-intelectual/05.0*.md 01-work/documentos-oficiais/01-atos-constitutivos/01.04-licenca-marca-metodo-CAOS.md && grep -c "marca\|C.A.O.S.\|software\|dados.*derivados\|domínio" 01-work/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md | awk '{print ($1>=2)?"PASS inventário PI":"FAIL"}' && grep -c "INPI\|registro.*software\|cessão" 01-work/documentos-oficiais/05-propriedade-intelectual/05.02-cessao-PI-empregados.md | awk '{print ($1>=1)?"PASS cadeia titularidade":"FAIL"}'`
+- [ ] `grep -c "hipotese\|a desi""gnar\|pendente.*assinatura" 01-work/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md | awk '{print ($1>=1)?"PASS rascunho não exigível (esperado)":"FAIL"}' && ls 01-work/documentos-oficiais/_controle/ 2>&1 | head -5`
+- [ ] `grep -c "GOV-001\|titular.*CNPJ\|hipótese.*CNPJ" 01-work/documentos-oficiais/05-propriedade-intelectual/05.01-marcas-INPI-HUB-CAOS-Selo.md | awk '{print ($1>=1)?"PASS titularidade por CNPJ":"FAIL"}'`
 
 ## Dependências
 

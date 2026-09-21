@@ -2,14 +2,15 @@
 title: P03-T06 — Templates de linhagem + registro de evidências
 task_id: P03-T06
 phase: P03
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: data-intelligence
 layer: refining
 owner:
   - PF Rezende (interino)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Dados"
+blocked_reason: aguardando nomeação Dados
 blocked_until: 2026-10-15
 gap_ids:
   - DAT-004
@@ -31,7 +32,7 @@ tags:
   - fase-P03
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:43:23.909-03:00
 ---
 
 # P03-T06 — Templates de linhagem + registro de evidências

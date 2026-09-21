@@ -26,7 +26,7 @@ O repositório possui material estratégico, visual e de dados relevante:
 
 - separação de maturidade entre `01-work/`, `02-review/`, `03-approved/` e `99-archive/`;
 - orientação e registro de evidências em `wiki/`;
-- registro de diretrizes de marca e claims em `01-work/pesquisa-e-confianca/documentos-oficiais/12-comercial-GTM/12.03-brand-guidelines-claim-registry.md`;
+- registro de diretrizes de marca e claims em `01-work/documentos-oficiais/12-comercial-GTM/12.03-brand-guidelines-claim-registry.md`;
 - documentos de propriedade intelectual, licenciamento, Selo e CAOS;
 - materiais de visão da plataforma e referências de deck em `02-review/02-visao-plataforma/`;
 - decks históricos em `05-resources/inbox/Plataforma HUB/99-arquivo/Rascunhos iniciais/decks iniciais/`;

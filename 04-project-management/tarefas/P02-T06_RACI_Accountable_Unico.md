@@ -2,7 +2,8 @@
 title: P02-T06 — RACI v1 com accountable único + autoridade delegada
 task_id: P02-T06
 phase: P02
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: operations
 layer: blueprint
@@ -28,7 +29,7 @@ tags:
   - fase-P02
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:53.138-03:00
+dateModified: 2026-09-21T17:43:12.976-03:00
 ---
 
 # P02-T06 — RACI v1 com accountable único + autoridade delegada

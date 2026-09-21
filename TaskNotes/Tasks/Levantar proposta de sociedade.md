@@ -1,10 +1,10 @@
 ---
 ops_id: OPS-015
 task_type: operational
-status: em-revisao
+status: in-progress
 priority: normal
 dateCreated: 2026-09-01T23:36:28.641-03:00
-dateModified: 2026-09-06T11:34:55.663-03:00
+dateModified: 2026-09-21T19:58:57.439-03:00
 tags:
   - task
 owner:
@@ -15,8 +15,9 @@ projects:
   - "[[Ajustes Jurídicos]]"
 contexts:
   - "@juridico"
-due: 2026-09-21
 googleCalendarEventId: 3m1mecr5vjk9tmer4oa9cuq918
+type:
+  - "[[Ajustes Jurídicos]]"
 ---
 
 Levantar proposta de sociedade + faixa salarial (mín/méd/máx) com 1/2/3 clientes** — @Tamara + @Marcos + @PF — **após SEBRAE**

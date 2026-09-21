@@ -2,7 +2,8 @@
 title: BP-002 — Blueprint de Produto e Capacidades do HUB
 task_id: BP-002
 task_type: blueprint
-status: em-revisao
+status:
+  - em-revisao
 priority: critica
 phase: P02
 layer: blueprint
@@ -28,7 +29,7 @@ updated: 2026-08-21
 tags:
   - task
 tasknotes_manual_order: tnririririrg
-dateModified: 2026-09-01T20:12:17.494-03:00
+dateModified: 2026-09-21T17:42:43.528-03:00
 projects:
   - "[[Refinar os dados do Blueprint]]"
 ---

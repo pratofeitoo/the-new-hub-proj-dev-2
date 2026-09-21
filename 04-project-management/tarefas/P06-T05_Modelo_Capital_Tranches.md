@@ -2,13 +2,14 @@
 title: P06-T05 — Modelo de capital (tranches/runway/downside)
 task_id: P06-T05
 phase: P06
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: business-model
 layer: refining
 owner:
   - PF Rezende // blocked: aguardando nomeação Finanças até 2026-10-15
-blocked_reason: "aguardando nomeação Finanças — FIN-006"
+blocked_reason: aguardando nomeação Finanças — FIN-006
 blocked_until: 2026-10-15
 accountable: PF Rezende
 gap_ids:
@@ -30,7 +31,7 @@ tags:
   - fase-P06
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:19.651-03:00
 ---
 
 # P06-T05 — Modelo de capital (tranches/runway/downside)

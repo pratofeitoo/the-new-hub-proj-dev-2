@@ -2,7 +2,8 @@
 title: P02-T02 — Jornada estados/eventos + trilha de auditoria
 task_id: P02-T02
 phase: P02
-status: em-revisao
+status:
+  - on-hold
 priority: critica
 area: product
 layer: blueprint
@@ -26,7 +27,7 @@ tags:
   - fase-P02
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-01T19:45:35.638-03:00
+dateModified: 2026-09-21T17:43:07.444-03:00
 ---
 
 # P02-T02 — Jornada estados/eventos + trilha de auditoria

@@ -1,0 +1,126 @@
+filters:
+  and:
+    - file.hasTag("task")
+formulas:
+  priorityWeight: if(priority=="none",0,if(priority=="low",1,if(priority=="normal",2,if(priority=="high",3,999))))
+  daysUntilDue: if((due.isEmpty() == false), ((number(date(due)) - number(today())) / 86400000).floor(), null)
+  daysUntilScheduled: if((scheduled.isEmpty() == false), ((number(date(scheduled)) - number(today())) / 86400000).floor(), null)
+  nextDate: if((due.isEmpty() == false) && (scheduled.isEmpty() == false), if(date(due) < date(scheduled), due, scheduled), if((due.isEmpty() == false), due, scheduled))
+  daysUntilNext: if((due.isEmpty() == false) && (scheduled.isEmpty() == false), min(formula.daysUntilDue, formula.daysUntilScheduled), if((due.isEmpty() == false), formula.daysUntilDue, formula.daysUntilScheduled))
+  urgencyScore: if(due.isEmpty() && scheduled.isEmpty(), formula.priorityWeight, formula.priorityWeight + max(0, 10 - if(formula.daysUntilNext, formula.daysUntilNext, 0)) + (1 - ((number(date(formula.nextDate)) - number(date(date(formula.nextDate).format("YYYY-MM-DD")))) / 86400000)))
+  dueIn: if(due.isEmpty(), "", if(formula.daysUntilDue == 0, "Today", if(formula.daysUntilDue == 1, "1 day", if(formula.daysUntilDue > 1, formula.daysUntilDue + " days", if(formula.daysUntilDue == -1, "1 day overdue", formula.daysUntilDue * -1 + " days overdue")))))
+properties:
+  status:
+    displayName: Status
+  priority:
+    displayName: Priority
+  due:
+    displayName: Due
+  scheduled:
+    displayName: Scheduled
+  file.name:
+    displayName: Task
+  formula.urgencyScore:
+    displayName: Urgency
+  formula.dueIn:
+    displayName: Due in
+views:
+  - type: table
+    name: "Overview — Canonical Projects"
+    filters:
+      and:
+        - or:
+            - 'list(projects).contains(link("Ajustes Jurídicos")) || list(type).contains(link("Ajustes Jurídicos"))'
+            - 'list(projects).contains(link("Gestão de Projeto e Governança")) || list(type).contains(link("Gestão de Projeto e Governança"))'
+            - 'list(projects).contains(link("arquitetura financeira")) || list(type).contains(link("arquitetura financeira"))'
+    groupBy:
+      property: projects
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - priority
+      - due
+      - scheduled
+      - projects
+      - type
+      - contexts
+      - owner
+      - formula.urgencyScore
+      - formula.dueIn
+    sort:
+      - property: formula.urgencyScore
+        direction: DESC
+
+  # ── Canonical TaskNotes Projects (type: task-project) ──
+  # Selection verified via .obsidian/plugins/tasknotes/data.json → projectAutosuggest.propertyKey=type / propertyValue=task-project
+  # Only 3 notes carry type: task-project in TaskNotes/Tasks/
+
+  - type: tasknotesTaskList
+    name: "Ajustes Jurídicos"
+    filters:
+      and:
+        - 'list(projects).contains(link("Ajustes Jurídicos")) || list(type).contains(link("Ajustes Jurídicos"))'
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - status
+      - priority
+      - due
+      - scheduled
+      - projects
+      - type
+      - contexts
+      - owner
+      - file.name
+      - formula.dueIn
+    sort:
+      - property: formula.urgencyScore
+        direction: DESC
+
+  - type: tasknotesTaskList
+    name: "Gestão de Projeto e Governança"
+    filters:
+      and:
+        - 'list(projects).contains(link("Gestão de Projeto e Governança")) || list(type).contains(link("Gestão de Projeto e Governança"))'
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - status
+      - priority
+      - due
+      - scheduled
+      - projects
+      - type
+      - contexts
+      - owner
+      - file.name
+      - formula.dueIn
+    sort:
+      - property: formula.urgencyScore
+        direction: DESC
+
+  - type: tasknotesTaskList
+    name: "arquitetura financeira"
+    filters:
+      and:
+        - 'list(projects).contains(link("arquitetura financeira")) || list(type).contains(link("arquitetura financeira"))'
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - status
+      - priority
+      - due
+      - scheduled
+      - projects
+      - type
+      - contexts
+      - owner
+      - file.name
+      - formula.dueIn
+    sort:
+      - property: formula.urgencyScore
+        direction: DESC

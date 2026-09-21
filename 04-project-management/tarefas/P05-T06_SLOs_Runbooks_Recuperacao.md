@@ -2,13 +2,14 @@
 title: P05-T06 — SLOs + on-call + runbooks + testes de recuperação
 task_id: P05-T06
 phase: P05
-status: pendente
+status:
+  - on-hold
 priority: alta
 area: technology
 layer: refining
 owner:
   - PF Rezende // blocked: aguardando nomeação Tech até 2026-10-15
-blocked_reason: "aguardando nomeação Tech"
+blocked_reason: aguardando nomeação Tech
 blocked_until: 2026-10-15
 accountable: PF Rezende
 gap_ids:
@@ -30,7 +31,7 @@ tags:
   - fase-P05
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:11.565-03:00
 ---
 
 # P05-T06 — SLOs + on-call + runbooks + testes de recuperação

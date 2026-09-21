@@ -2,7 +2,8 @@
 title: P07-T01 — Portão mestre + grafo de dependências (LCH-001)
 task_id: P07-T01
 phase: P07
-status: pendente
+status:
+  - on-hold
 priority: critica
 area: launch-vision
 layer: approval
@@ -30,7 +31,7 @@ tags:
   - fase-P07
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:29.067-03:00
 ---
 
 # P07-T01 — Portão mestre + grafo de dependências (LCH-001)

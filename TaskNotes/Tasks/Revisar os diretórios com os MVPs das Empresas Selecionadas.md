@@ -1,10 +1,10 @@
 ---
 ops_id: OPS-018
 task_type: operational
-status: em-revisao
+status: pendente
 priority: high
 dateCreated: 2026-08-26T17:25:22.051-03:00
-dateModified: 2026-09-06T11:36:23.114-03:00
+dateModified: 2026-09-21T19:58:44.806-03:00
 tags:
   - project
   - task
@@ -14,8 +14,9 @@ owner:
   - Tamara
 projects:
   - "[[Desenvolvimento do MVP]]"
-due: 2026-09-15
 googleCalendarEventId: j8vguas6pqrhaem4ocuk2a2d54
+type:
+  - "[[Gestão de Projeto e Governança]]"
 ---
 
 # Obsidian Vault

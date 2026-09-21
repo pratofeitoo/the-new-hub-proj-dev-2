@@ -2,7 +2,8 @@
 title: P04-T07 — RACI v2 + matriz direitos de decisão + incidentes
 task_id: P04-T07
 phase: P04
-status: pendente
+status:
+  - on-hold
 priority: critica
 area: governance-legal
 layer: refining
@@ -10,7 +11,7 @@ owner:
   - PF Rezende
   - PF Rezende (interino — Jurídico)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Jurídico — GOV-008"
+blocked_reason: aguardando nomeação Jurídico — GOV-008
 blocked_until: 2026-10-15
 gap_ids:
   - GOV-008
@@ -28,8 +29,8 @@ evidence_required:
   - 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md
   - 00-project-control/registro-lacunas/lacunas/GOV-008.md
   - 00-project-control/registro-lacunas/lacunas/STR-007.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.03-board-advisory-charter.md
-  - 01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md
+  - 01-work/documentos-oficiais/09-governanca-corporativa/09.03-board-advisory-charter.md
+  - 01-work/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md
   - 04-project-management/tarefas/P02-T06_RACI_Accountable_Unico.md
 created: 2026-08-26
 tags:
@@ -37,7 +38,7 @@ tags:
   - fase-P04
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:56:02.566-03:00
 ---
 
 # P04-T07 — RACI v2 + matriz direitos de decisão + incidentes
@@ -60,15 +61,15 @@ RACI v2 proposto em `99-archive/superado/01-blueprint-v1-submissao-superada/gove
 
 - `99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md` § RACI (§ RACI v2 — 1 A por atividade + stewards fonte + incidentes)
 - `00-project-control/registro-lacunas/lacunas/GOV-008.md` (gap RACI — status open) + `00-project-control/registro-lacunas/lacunas/STR-007.md` (sucessão fundador)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.03-board-advisory-charter.md` (board/advisory — fórum decisão)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md` (matriz alcadas — dono não-fundador + escalonamento)
+- `01-work/documentos-oficiais/09-governanca-corporativa/09.03-board-advisory-charter.md` (board/advisory — fórum decisão)
+- `01-work/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md` (matriz alcadas — dono não-fundador + escalonamento)
 - `04-project-management/tarefas/P02-T06_RACI_Accountable_Unico.md` (RACI v1 P02 — base para v2)
-- `01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.01-cap-table-vesting-cliff.md` + `09.02-acordo-socios-completo.md` (cap table + acordo sócios — sucessão)
+- `01-work/documentos-oficiais/09-governanca-corporativa/09.01-cap-table-vesting-cliff.md` + `09.02-acordo-socios-completo.md` (cap table + acordo sócios — sucessão)
 
 ## Verification
 
 - [ ] `ls 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md && grep -c "RACI\|Accountable\|Responsible" 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md | awk '{print ($1>=2)?"PASS RACI v2":"FAIL"}' && grep -c " A .*|" 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md | awk '{print ($1>=5)?"PASS A único por atividade":"CHECK"}'`
-- [ ] `ls 01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md && grep -c "não-fundador\|não fundador\|PF Rezende.*interino\|escalonamento\|board" 01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md | awk '{print ($1>=2)?"PASS direitos decisão":"FAIL"}' && grep -c "STR-007\|sucessão\|delegada" 01-work/pesquisa-e-confianca/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md | awk '{print ($1>=1)?"PASS STR-007":"FAIL"}'`
+- [ ] `ls 01-work/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md && grep -c "não-fundador\|não fundador\|PF Rezende.*interino\|escalonamento\|board" 01-work/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md | awk '{print ($1>=2)?"PASS direitos decisão":"FAIL"}' && grep -c "STR-007\|sucessão\|delegada" 01-work/documentos-oficiais/09-governanca-corporativa/09.04-registro-decisoes-matriz-alcadas.md | awk '{print ($1>=1)?"PASS STR-007":"FAIL"}'`
 - [ ] `grep -c "a desi""gnar\|accountable.*ausente\|2×A" 99-archive/superado/01-blueprint-v1-submissao-superada/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico.md | awk '{print ($1==0)?"PASS sem ambiguidade":"FAIL ambiguidade " $1}' && ls 00-project-control/registro-lacunas/lacunas/GOV-008.md 00-project-control/registro-lacunas/lacunas/STR-007.md 2>&1 | head -3`
 
 ## Dependências

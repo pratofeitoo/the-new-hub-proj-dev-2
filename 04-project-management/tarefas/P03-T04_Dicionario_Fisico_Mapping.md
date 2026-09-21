@@ -2,14 +2,15 @@
 title: P03-T04 — Dicionário físico (≈41 campos) mapeado para entidades canônicas
 task_id: P03-T04
 phase: P03
-status: em-revisao
+status:
+  - on-hold
 priority: alta
 area: data-intelligence
 layer: refining
 owner:
   - PF Rezende (interino)
 accountable: PF Rezende
-blocked_reason: "aguardando nomeação Dados — DAT-010"
+blocked_reason: aguardando nomeação Dados — DAT-010
 blocked_until: 2026-10-15
 gap_ids:
   - DAT-010
@@ -33,7 +34,7 @@ tags:
   - fase-P03
 projects:
   - "[[Fases 01-07]]"
-dateModified: 2026-09-05T00:00:00.000-03:00
+dateModified: 2026-09-21T17:43:18.877-03:00
 ---
 
 # P03-T04 — Dicionário físico (≈41 campos) mapeado para entidades canônicas
