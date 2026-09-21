@@ -26,13 +26,13 @@ properties:
     displayName: Due in
 views:
   - type: table
-    name: "Overview — Canonical Projects"
+    name: Overview — Canonical Projects
     filters:
       and:
         - or:
-            - 'list(projects).contains(link("Ajustes Jurídicos")) || list(type).contains(link("Ajustes Jurídicos"))'
-            - 'list(projects).contains(link("Gestão de Projeto e Governança")) || list(type).contains(link("Gestão de Projeto e Governança"))'
-            - 'list(projects).contains(link("arquitetura financeira")) || list(type).contains(link("arquitetura financeira"))'
+            - list(projects).contains(link("Ajustes Jurídicos")) || list(type).contains(link("Ajustes Jurídicos"))
+            - list(projects).contains(link("Gestão de Projeto e Governança")) || list(type).contains(link("Gestão de Projeto e Governança"))
+            - list(projects).contains(link("arquitetura financeira")) || list(type).contains(link("arquitetura financeira"))
     groupBy:
       property: projects
       direction: ASC
@@ -51,16 +51,11 @@ views:
     sort:
       - property: formula.urgencyScore
         direction: DESC
-
-  # ── Canonical TaskNotes Projects (type: task-project) ──
-  # Selection verified via .obsidian/plugins/tasknotes/data.json → projectAutosuggest.propertyKey=type / propertyValue=task-project
-  # Only 3 notes carry type: task-project in TaskNotes/Tasks/
-
-  - type: tasknotesTaskList
-    name: "Ajustes Jurídicos"
+  - type: tasknotesKanban
+    name: Ajustes Jurídicos
     filters:
       and:
-        - 'list(projects).contains(link("Ajustes Jurídicos")) || list(type).contains(link("Ajustes Jurídicos"))'
+        - list(projects).contains(link("Ajustes Jurídicos")) || list(type).contains(link("Ajustes Jurídicos"))
     groupBy:
       property: status
       direction: ASC
@@ -78,12 +73,11 @@ views:
     sort:
       - property: formula.urgencyScore
         direction: DESC
-
-  - type: tasknotesTaskList
-    name: "Gestão de Projeto e Governança"
+  - type: tasknotesKanban
+    name: Gestão de Projeto e Governança
     filters:
       and:
-        - 'list(projects).contains(link("Gestão de Projeto e Governança")) || list(type).contains(link("Gestão de Projeto e Governança"))'
+        - list(projects).contains(link("Gestão de Projeto e Governança")) || list(type).contains(link("Gestão de Projeto e Governança"))
     groupBy:
       property: status
       direction: ASC
@@ -101,12 +95,11 @@ views:
     sort:
       - property: formula.urgencyScore
         direction: DESC
-
-  - type: tasknotesTaskList
-    name: "arquitetura financeira"
+  - type: tasknotesKanban
+    name: arquitetura financeira
     filters:
       and:
-        - 'list(projects).contains(link("arquitetura financeira")) || list(type).contains(link("arquitetura financeira"))'
+        - list(projects).contains(link("arquitetura financeira")) || list(type).contains(link("arquitetura financeira"))
     groupBy:
       property: status
       direction: ASC

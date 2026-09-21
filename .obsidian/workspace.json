@@ -41,7 +41,7 @@
               "type": "bases",
               "state": {
                 "file": "TaskNotes/Views/projects-overview.base",
-                "viewName": "Gestão de Projeto e Governança"
+                "viewName": "arquitetura financeira"
               },
               "icon": "tasknotes-simple",
               "title": "projects-overview"
@@ -60,8 +60,7 @@
               "title": "documentacao-oficial"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 463.74895095825195
+    "width": 303.9359016418457
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -248,12 +247,14 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "aa7b9d1bda30d77d",
+  "active": "34d23f6b8acd3a1b",
   "lastOpenFiles": [
+    "04-project-management/HUB_Log_Tarefas_Progresso.md",
+    "TaskNotes/Views/projects-overview.base",
+    "TaskNotes/Views/documentacao-oficial.base",
+    "TaskNotes/Views/kanban-default.base",
     "04-project-management/atas-reuniao/template",
     "04-project-management/registros-trabalho/logs-progresso/2026-09-21-registro-progresso-tasknotes-documentacao-vault-e-reorganizacao.md",
-    "TaskNotes/Views/kanban-default.base",
-    "TaskNotes/Views/projects-overview.base",
     "01-work/documentos-oficiais/00-controle-drive/_templates/template-documento-oficial.md",
     "01-work/documentos-oficiais/13-operacoes-processos/13.04-politica-compras-reembolso.md",
     "01-work/documentos-oficiais/13-operacoes-processos/13.03-gestao-fornecedores-SLA.md",
@@ -277,15 +278,12 @@
     "01-work/documentos-oficiais/07-fiscal-contabil/07.01-regime-tributario.md",
     "01-work/documentos-oficiais/_controle/relatorio-excecoes-idioma-pt-BR.md",
     "01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1.md",
-    "01-work/documentos-oficiais/_controle/project-map.md",
     "01-work/documentos-oficiais/00-controle-drive/_templates",
     "01-work/documentos-oficiais/13-operacoes-processos",
     "01-work/documentos-oficiais/14-tecnologia-produto",
     "01-work/documentos-oficiais/_controle",
     "01-work/documentos-oficiais/12-comercial-GTM",
     "01-work/documentos-oficiais/11-pessoas-cultura",
-    "01-work/documentos-oficiais/07-fiscal-contabil",
-    "01-work/documentos-oficiais/10-financeiro-estrategia",
     "01-work/produto-e-operacao/wireframes-mvp/sitemap/sitemap.svg",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit/exec-c5692c7e-1173-4f0f-b079-a00bb938b76d.png",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit/hub-brand-kit-working-direction.png",
