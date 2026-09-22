@@ -640,12 +640,6 @@
       "updatedAt": 1788705205019
     },
     {
-      "taskPath": "TaskNotes/Tasks/Levantar proposta de sociedade.md",
-      "calendarId": "pfrezendehs@gmail.com",
-      "eventId": "3m1mecr5vjk9tmer4oa9cuq918",
-      "updatedAt": 1788705297475
-    },
-    {
       "taskPath": "TaskNotes/Tasks/Revisar os diretórios com os MVPs das Empresas Selecionadas.md",
       "calendarId": "pfrezendehs@gmail.com",
       "eventId": "j8vguas6pqrhaem4ocuk2a2d54",
@@ -686,6 +680,12 @@
       "calendarId": "pfrezendehs@gmail.com",
       "eventId": "6fcgia5v030j5ou3ihj6o82f8k",
       "updatedAt": 1788705254992
+    },
+    {
+      "taskPath": "TaskNotes/Tasks/Definir proposta de sociedade.md",
+      "calendarId": "pfrezendehs@gmail.com",
+      "eventId": "3m1mecr5vjk9tmer4oa9cuq918",
+      "updatedAt": 1788705297475
     }
   ],
   "googleCalendarTaskFingerprints": {
@@ -856,7 +856,7 @@
       "eventId": "3l8v5ghn3q6ejnp9qrubs30npo",
       "createdAt": 1790031505866,
       "attempts": 0,
-      "lastError": "Google Calendar sync is not ready"
+      "lastError": "Indexed task no longer meets calendar sync criteria"
     },
     {
       "taskPath": "TaskNotes/Tasks/cruzar os dados das duas planilhas - analise de similaridade.md",
@@ -891,7 +891,7 @@
       "lastError": "Indexed task no longer meets calendar sync criteria"
     },
     {
-      "taskPath": "TaskNotes/Tasks/Levantar proposta de sociedade.md",
+      "taskPath": "TaskNotes/Tasks/Definir proposta de sociedade.md",
       "calendarId": "pfrezendehs@gmail.com",
       "eventId": "3m1mecr5vjk9tmer4oa9cuq918",
       "createdAt": 1790031537452,
