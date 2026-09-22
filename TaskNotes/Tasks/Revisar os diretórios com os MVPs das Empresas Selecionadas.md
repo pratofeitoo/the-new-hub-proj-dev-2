@@ -1,10 +1,10 @@
 ---
 ops_id: OPS-018
 task_type: operational
-status: pendente
+status: open
 priority: high
 dateCreated: 2026-08-26T17:25:22.051-03:00
-dateModified: 2026-09-21T19:58:44.806-03:00
+dateModified: 2026-09-21T22:02:46.597-03:00
 tags:
   - project
   - task

@@ -5,10 +5,10 @@ filters:
     - status != "concluido"
     - '!file.hasTag("archived")'
 formulas:
-  checklistProgress: 'file.tasks.filter(value.checked).length + "/" + file.tasks.length'
+  checklistProgress: file.tasks.filter(value.checked).length + "/" + file.tasks.length
 views:
-  - type: tasknotesTaskList
-    name: "Documentação — 2 cards"
+  - type: tasknotesKanban
+    name: Documentação — 2 cards
     groupBy:
       property: status
       direction: ASC
@@ -24,7 +24,6 @@ views:
     config:
       columnWidth: 420
       hideEmptyColumns: true
-
   - type: table
     name: Checklist — progresso
     order:

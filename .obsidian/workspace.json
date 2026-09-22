@@ -4,90 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "41353486871fc6f7",
+        "id": "d3ec0ab15b36e4f7",
         "type": "tabs",
         "children": [
           {
-            "id": "34d23f6b8acd3a1b",
+            "id": "b24aa8881d95c091",
             "type": "leaf",
             "state": {
-              "type": "bases",
-              "state": {
-                "file": "TaskNotes/Views/kanban-default.base",
-                "viewName": "Kanban Board"
-              },
-              "icon": "tasknotes-simple",
-              "title": "kanban-default"
-            }
-          },
-          {
-            "id": "89130c4496ce71f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-review/02-reconciliacao-blueprint/03_Conexoes_analise.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "03_Conexoes_analise"
-            }
-          },
-          {
-            "id": "1bbdf43e24d0c32d",
-            "type": "leaf",
-            "state": {
-              "type": "omni-viewer.wordViewer",
-              "state": {
-                "file": "02-review/02-visao-plataforma/Estrutura de Liderança e Atribuições/fontes/Estrutura e Atribuições.docx"
-              },
-              "icon": "file-type",
-              "title": "Estrutura e Atribuições.docx"
-            }
-          },
-          {
-            "id": "ac7ea0bc7f9f993b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-project-management/HUB_Log_Tarefas_Progresso.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HUB_Log_Tarefas_Progresso"
-            }
-          },
-          {
-            "id": "64a30f89b58c0c53",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "TaskNotes/Views/projects-overview.base",
-                "viewName": "arquitetura financeira"
-              },
-              "icon": "tasknotes-simple",
-              "title": "projects-overview"
-            }
-          },
-          {
-            "id": "a0f9e42d44877af2",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "TaskNotes/Views/documentacao-oficial.base",
-                "viewName": "Documentação — 2 cards"
-              },
-              "icon": "tasknotes-simple",
-              "title": "documentacao-oficial"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.6127510070801
+    "width": 276.86357498168945
   },
   "right": {
     "id": "f9c070ced9273fdc",
@@ -274,26 +204,31 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "1bbdf43e24d0c32d",
+  "active": "aa7b9d1bda30d77d",
   "lastOpenFiles": [
-    "02-review/02-visao-plataforma/Estrutura de Liderança e Atribuições/fontes/Estrutura e Atribuições.md",
-    "02-review/02-reconciliacao-blueprint/03_Conexoes_analise.md",
-    "02-review/02-reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md",
-    "02-review/02-reconciliacao-blueprint/README.md",
-    "02-review/01-acordo-parceria/Acordo_Parceria_Tecnologica_DiverCidade_HUB.md",
     "TaskNotes/Views/kanban-default.base",
-    "TaskNotes/Tasks/Ajustes Jurídicos.md",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/09_Estimativa_96_Telas.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/12_Dashboard_Custos.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/11_OPEX_Mensal.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/10_CAPEX_por_Modulo.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/10_CAPEX_por_Modulo.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/08_Premissas_Custos.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/07_Base_Para_Precificacao.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/06_Cenarios_Implantacao.csv",
-    "02-review/02-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/05_Fluxos_Diretos.csv",
-    "02-review/02-visao-plataforma/Financeiro/Modelo Financeiro para Investidores/README.md",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/11_OPEX_Mensal.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/10_CAPEX_por_Modulo.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/02_Inventario_96_Telas.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos/_data/09_Estimativa_96_Telas.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/12_Dashboard_Custos.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/06_Cenarios_Implantacao.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/11_OPEX_Mensal.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/10_CAPEX_por_Modulo.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/09_Estimativa_96_Telas.csv",
+    "02-review/03-visao-plataforma/Financeiro/Projeção de arquitetura e custos - Plataforma/Arquitetura-Custos_FullFidelity/_data/08_Premissas_Custos.csv",
+    "02-review/03-visao-plataforma/Financeiro/Modelo Financeiro para Investidores/README.md",
+    "02-review/03-visao-plataforma/Estrutura de Liderança e Atribuições/fontes/Estrutura e Atribuições.md",
+    "02-review/03-visao-plataforma/README.md",
+    "TaskNotes/Tasks/Migrar Tasks do Obsidian para o ProjectBoard.md",
+    "02-review/01-acordo-parceria/Acordo_Parceria_Tecnologica_DiverCidade_HUB.md",
     "04-project-management/HUB_Log_Tarefas_Progresso.md",
+    "02-review/02-reconciliacao-blueprint/README.md",
+    "02-review/02-reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md",
+    "02-review/02-reconciliacao-blueprint/03_Conexoes_analise.md",
+    "02-review/02-visao-plataforma/Estrutura de Liderança e Atribuições/fontes/Estrutura e Atribuições.md",
+    "TaskNotes/Tasks/Ajustes Jurídicos.md",
+    "02-review/02-visao-plataforma/Financeiro/Modelo Financeiro para Investidores/README.md",
     "04-project-management/registros-trabalho/logs-progresso/2026-09-21-registro-progresso-tasknotes-documentacao-vault-e-reorganizacao.md",
     "01-work/documentos-oficiais/00-controle-drive/_templates/template-documento-oficial.md",
     "01-work/documentos-oficiais/13-operacoes-processos/13.04-politica-compras-reembolso.md",
@@ -307,11 +242,6 @@
     "01-work/documentos-oficiais/10-financeiro-estrategia/10.03-orcamento-forecast-fluxo-caixa-13s.md",
     "01-work/documentos-oficiais/10-financeiro-estrategia/10.01-business-plan-strategic-memo.md",
     "01-work/documentos-oficiais/14-tecnologia-produto/14.05-roadmap-produto-criterios-release.md",
-    "01-work/documentos-oficiais/14-tecnologia-produto/14.04-plano-backup-DRP-teste-restauracao.md",
-    "01-work/documentos-oficiais/14-tecnologia-produto/14.03-model-cards-fairness-explicabilidade.md",
-    "01-work/documentos-oficiais/14-tecnologia-produto/14.02-politica-seguranca-IAM.md",
-    "01-work/documentos-oficiais/14-tecnologia-produto/14.01-arquitetura-tecnica-diagrama-dados.md",
-    "01-work/documentos-oficiais/07-fiscal-contabil/07.05-politica-reconhecimento-receita.md",
     "01-work/produto-e-operacao/wireframes-mvp/sitemap/sitemap.svg",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit/exec-c5692c7e-1173-4f0f-b079-a00bb938b76d.png",
     "01-work/documentacao-tecnica/plataforma-de-marca/04-sistema-de-apresentacoes/outputs/brand-kit/hub-brand-kit-working-direction.png",

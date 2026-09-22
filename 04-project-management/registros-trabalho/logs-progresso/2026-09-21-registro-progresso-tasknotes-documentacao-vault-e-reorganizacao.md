@@ -2,7 +2,7 @@
 title: Registro de Progresso — TaskNotes, Documentação Oficial e Reorganização do Vault
 description: Consolida todas as intervenções recentes no Obsidian vault — simplificação TaskNotes, 2 cards com checklists clicáveis, arquivamento, criação de projects-overview.base e reorganização física de documentos-oficiais.
 type: log
-status: stable
+status: none
 date: 2026-09-21
 phase: P04-P05
 tags:
@@ -13,6 +13,7 @@ tags:
   - bases
   - reorganizacao
   - GOV-001
+  - task
 related_notes:
   - "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Oficiais_v1]]"
   - "[[01-work/documentos-oficiais/_controle/HUB_Mapa_Documentos_Nao_Obrigatorios_v1]]"
@@ -22,6 +23,8 @@ related_notes:
   - "[[TaskNotes/Tasks/Docs Oficiais - obrigatórios]]"
   - "[[TaskNotes/Tasks/Docs Não-Obrigatórios]]"
   - "[[04-project-management/04-project-management]]"
+priority: none
+dateModified: 2026-09-21T21:43:32.174-03:00
 ---
 
 # Registro de Progresso — TaskNotes, Documentação e Reorganização (2026-09-21)
