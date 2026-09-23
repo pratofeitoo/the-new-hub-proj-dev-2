@@ -27,5 +27,5 @@ Automação (roteamento, lembretes, validação) só após gate documentado: qua
 
 ## Sources
 
-- [Blueprint — Arquitetura Tecnológica](../../02-review/02-reconciliacao-blueprint/HUB_Blueprint_Arquitetura_Tecnologica.md)
+- [Blueprint — Arquitetura Tecnológica](04_HUB_Blueprint_Arquitetura_Tecnologica.md)
 - [Especificação Mestra](../../03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB%203.md)

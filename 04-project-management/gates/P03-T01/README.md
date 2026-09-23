@@ -32,7 +32,7 @@ Before acting, the agent must:
 - [P03-T02 identity specification](/01-work/dados-tech-financas/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1.md)
 - [P03-T03 event envelope](/01-work/dados-tech-financas/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1.md)
 - [P03-T05 metrics catalog](/01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md)
-- [Blueprint de Dados e Inteligência](/02-review/02-reconciliacao-blueprint/HUB_Blueprint_Dados_e_Inteligencia.md)
+- [Blueprint de Dados e Inteligência](03_HUB_Blueprint_Dados_e_Inteligencia.md)
 
 ### Entry criteria
 

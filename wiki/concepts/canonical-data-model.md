@@ -68,4 +68,4 @@ The pilot operates a 12-entity spine; the full 25-entity model remains mandatory
 
 - [Modelo Lógico/Físico v1 — P03-T01](../../01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1.md)
 - [Spine Piloto Mínimo v1](../../01-work/dados-tech-financas/refinamento-modelo-dados/spine-piloto-minimo-v1.md)
-- [HUB Blueprint — Dados e Inteligência](../../02-review/02-reconciliacao-blueprint/HUB_Blueprint_Dados_e_Inteligencia.md)
+- [HUB Blueprint — Dados e Inteligência](03_HUB_Blueprint_Dados_e_Inteligencia.md)

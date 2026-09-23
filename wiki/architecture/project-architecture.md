@@ -37,5 +37,5 @@ P03 refinements (envelope/schema registry, identity matching, metric graph, line
 ## Sources
 
 - [Framework — Três Camadas](../../00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md)
-- [Blueprint — Dados e Inteligência](../../02-review/02-reconciliacao-blueprint/HUB_Blueprint_Dados_e_Inteligencia.md)
-- [Blueprint — Arquitetura Tecnológica](../../02-review/02-reconciliacao-blueprint/HUB_Blueprint_Arquitetura_Tecnologica.md)
+- [Blueprint — Dados e Inteligência](03_HUB_Blueprint_Dados_e_Inteligencia.md)
+- [Blueprint — Arquitetura Tecnológica](04_HUB_Blueprint_Arquitetura_Tecnologica.md)
