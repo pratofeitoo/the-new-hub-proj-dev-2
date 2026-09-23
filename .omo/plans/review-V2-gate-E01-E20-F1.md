@@ -1,7 +1,7 @@
 # Implementation Plan: Revisão V2 e Veredito do Gate — E01–E20 + Contratos Fundacionais F1 (E02, E20, E01)
 
 ## Overview
-Revisar o pacote V2 em `02-review/02-reconciliacao-blueprint/` (7 arquivos congelados), validar o mapeamento E01–E20 vs inventário aprovado `03-approved/nucleo-inteligencia/` (FLD-001–047, N01–N26, REL-01–12), auditar os contratos fundacionais F1 (E02, E20, E01) em `01-work/dados-tech-financas/refinamento-modelo-dados/contratos-fundacao-F1-E02-E20-E01-v1.md`, e emitir o veredito formal do Gate V2 com condições, bloqueios e sequência autorizada (F0→F4). O veredito já possui rascunho em `04-project-management/registros-trabalho/logs-progresso/2026-09-05-matriz-status-E01-E20-gate-V2.md` — este plano consolida a revisão humana exigida no gate e fecha F0.
+Revisar o pacote V2 em `03-approved/reconciliacao-blueprint/` (7 arquivos congelados), validar o mapeamento E01–E20 vs inventário aprovado `03-approved/nucleo-inteligencia/` (FLD-001–047, N01–N26, REL-01–12), auditar os contratos fundacionais F1 (E02, E20, E01) em `01-work/dados-tech-financas/refinamento-modelo-dados/contratos-fundacao-F1-E02-E20-E01-v1.md`, e emitir o veredito formal do Gate V2 com condições, bloqueios e sequência autorizada (F0→F4). O veredito já possui rascunho em `04-project-management/registros-trabalho/logs-progresso/2026-09-05-matriz-status-E01-E20-gate-V2.md` — este plano consolida a revisão humana exigida no gate e fecha F0.
 
 ## Architecture Decisions
 - **Fonte de verdade imutável:** `03-approved` nunca é editado no gate; V2 apenas reconcilia camadas — sem criar REL-* fictício.
@@ -13,8 +13,8 @@ Revisar o pacote V2 em `02-review/02-reconciliacao-blueprint/` (7 arquivos conge
 ```
 03-approved (FLD, N, REL)  ← base imutável
         │
-        ├── 02-review/02-reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md (E→REL, UNVERIFIED)
-        ├── 02-review/02-reconciliacao-blueprint/matriz-status-E01-E20-v1.md (status, pendência, fase)
+        ├── 03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md (E→REL, UNVERIFIED)
+        ├── 03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1.md (status, pendência, fase)
         ├── 04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint.md (esforço/prioridade)
         │
         ├── 01-work/dados-tech-financas/refinamento-modelo-dados/contratos-fundacao-F1-E02-E20-E01-v1.md
@@ -38,13 +38,13 @@ Revisar o pacote V2 em `02-review/02-reconciliacao-blueprint/` (7 arquivos conge
 - [ ] 5 parciais (E01,E03,E05,E07,E09) + 3 hipóteses (E04,E14,E15) + 12 futuras validados contra Matriz_Convergencia
 
 **Verification:**
-- [ ] `grep -n "UNVERIFIED" 02-review/02-reconciliacao-blueprint/*.md` + cross-check com 03-approved
+- [ ] `grep -n "UNVERIFIED" 03-approved/reconciliacao-blueprint/*.md` + cross-check com 03-approved
 - [ ] Diff matriz vs classificação: totais batem
 
 **Dependencies:** None
 **Files likely touched (read-only):**
-- `02-review/02-reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md`
-- `02-review/02-reconciliacao-blueprint/matriz-status-E01-E20-v1.md`
+- `03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md`
+- `03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1.md`
 - `03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md`
 **Estimated scope:** S (2–3 files, leitura + anotação)
 
@@ -118,7 +118,7 @@ Revisar o pacote V2 em `02-review/02-reconciliacao-blueprint/` (7 arquivos conge
 **Files likely touched:**
 - `04-project-management/registros-trabalho/logs-progresso/2026-09-05-matriz-status-E01-E20-gate-V2.md`
 - `04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint.md`
-- `02-review/02-reconciliacao-blueprint/matriz-status-E01-E20-v1.md`
+- `03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1.md`
 **Estimated scope:** M (3–5 files)
 
 ### Checkpoint: After Tasks 1–5 (F0)

@@ -5,8 +5,8 @@ type: architecture
 status: current
 source_paths:
   - 00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md
-  - 02-review/02-reconciliacao-blueprint/HUB_Blueprint_Dados_e_Inteligencia.md
-  - 02-review/02-reconciliacao-blueprint/HUB_Blueprint_Arquitetura_Tecnologica.md
+  - 03-approved/reconciliacao-blueprint/HUB_Blueprint_Dados_e_Inteligencia.md
+  - 03-approved/reconciliacao-blueprint/HUB_Blueprint_Arquitetura_Tecnologica.md
 verified_at: 2026-09-06
 open_questions:
   - Proposed vs implemented distinction requires review of P03 refinement promotion gates.
@@ -18,11 +18,11 @@ open_questions:
 
 - **Three-layer lifecycle:** `01-work` (active) → `02-review` (frozen gate) → `03-approved` (approved) per framework. Lifecycle and task gates defined in [Framework — Três Camadas](../../00-project-control/framework/HUB_Framework_Desenvolvimento_Projeto_Tres_Camadas.md).
 - **Canonical model in refinement:** 25 entities in `01-work/dados-tech-financas/refinamento-modelo-dados/` at `status: rascunho` — not yet promoted.
-- **Blueprint under reconciliation:** data/intelligence and tech blueprints in `02-review/02-reconciliacao-blueprint/` with crosswalk analyses.
+- **Blueprint under reconciliation:** data/intelligence and tech blueprints in `03-approved/reconciliacao-blueprint/` with crosswalk analyses.
 
 ## Approved architecture
 
-Framework and frozen blueprints that have passed review gates. See `02-review/02-reconciliacao-blueprint/` and `03-approved/` (when populated). The reconciliation matrices track E01–E20 coverage.
+Framework and frozen blueprints that have passed review gates. See `03-approved/reconciliacao-blueprint/` and `03-approved/` (when populated). The reconciliation matrices track E01–E20 coverage.
 
 ## Proposed future architecture
 

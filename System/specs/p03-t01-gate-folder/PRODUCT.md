@@ -70,7 +70,7 @@ The current project uses gates as lifecycle checkpoints, but an agent task run c
    - `01-work/dados-tech-financas/refinamento-modelo-dados/especificacao-identidade-P03-T02-v1.md`
    - `01-work/dados-tech-financas/refinamento-modelo-dados/envelope-evento-schema-P03-T03-v1.md`
    - `01-work/dados-tech-financas/refinamento-modelo-dados/catalogo-metricas-grafo-P03-T05-v1.md`
-   - `02-review/02-reconciliacao-blueprint/HUB_Blueprint_Dados_e_Inteligencia.md`
+   - `03-approved/reconciliacao-blueprint/HUB_Blueprint_Dados_e_Inteligencia.md`
 
 7. The gate exposes three document templates:
    - `gate-run` for the run record.

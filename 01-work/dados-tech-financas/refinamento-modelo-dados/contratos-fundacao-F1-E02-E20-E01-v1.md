@@ -10,7 +10,7 @@ tags:
   - fundacao
   - dados-canonicos
 related_notes:
-  - "[[02-review/02-reconciliacao-blueprint/matriz-status-E01-E20-v1]]"
+  - "[[03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1]]"
   - "[[04-project-management/registros-trabalho/logs-progresso/2026-09-05-matriz-status-E01-E20-gate-V2]]"
   - "[[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1]]"
   - "[[01-work/dados-tech-financas/refinamento-modelo-dados/dicionario-fisico-mapping-P03-T04-v1]]"

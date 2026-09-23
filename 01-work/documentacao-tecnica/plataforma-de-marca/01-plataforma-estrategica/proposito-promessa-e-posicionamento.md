@@ -3,7 +3,7 @@ titulo: Propósito, promessa e posicionamento — HUB
 status: provisório / hipótese estratégica
 fontes:
   - 02-review/01-mvps/LEIAME-origem-inbox.md
-  - 02-review/02-reconciliacao-blueprint/HUB_Fundacao_Blueprint_Projeto.md
+  - 03-approved/reconciliacao-blueprint/HUB_Fundacao_Blueprint_Projeto.md
   - 03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB 3.md
   - 01-work/documentos-oficiais/12-comercial-GTM/12.03-brand-guidelines-claim-registry.md
 ---

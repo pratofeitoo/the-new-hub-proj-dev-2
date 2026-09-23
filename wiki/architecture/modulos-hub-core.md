@@ -4,7 +4,7 @@ description: Seis módulos conceituais, estágios C.A.O.S., e separação HUB Ne
 type: architecture
 status: current
 source_paths:
-  - 02-review/02-reconciliacao-blueprint/HUB_Blueprint_Arquitetura_Tecnologica.md
+  - 03-approved/reconciliacao-blueprint/HUB_Blueprint_Arquitetura_Tecnologica.md
   - 03-approved/nucleo-inteligencia/especificacao-conceitual-inteligencia-plataforma/Especificacao_Mestra_Inteligencia_HUB 3.md
 verified_at: 2026-09-06
 open_questions: Detalhamento físico dos módulos permanece sujeito a DAT-001/003 e gates P03.
@@ -14,7 +14,7 @@ open_questions: Detalhamento físico dos módulos permanece sujeito a DAT-001/00
 
 ## Seis módulos conceituais
 
-HUB Intelligence, Journey, Solutions, Connections, Academy, Recognition — com estágios C.A.O.S. (regras de promoção em `02-review/02-reconciliacao-blueprint/`).
+HUB Intelligence, Journey, Solutions, Connections, Academy, Recognition — com estágios C.A.O.S. (regras de promoção em `03-approved/reconciliacao-blueprint/`).
 
 ## Fronteiras
 

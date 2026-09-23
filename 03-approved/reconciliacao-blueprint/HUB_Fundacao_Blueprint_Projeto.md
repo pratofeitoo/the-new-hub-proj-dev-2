@@ -157,7 +157,7 @@ A arquitetura atual de indicadores descreve os nós conceituais (pessoa, empresa
 - coorte, benchmark, risco/controle, conteúdo/campanha;
 - consentimento e versão de modelo.
 
-O modelo de relacionamentos contém 20 arestas na camada-fonte conceitual (identidade, habilidades, oportunidades, recomendações, jornadas, programas, resultados, fornecedores, matches, contratos, transações, diagnóstico, riscos, métricas, coortes, modelos e consentimento); o contrato refinado aprovado é `REL-01`–`REL-12`, com a equivalência E→REL em `02-review/02-reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md`.
+O modelo de relacionamentos contém 20 arestas na camada-fonte conceitual (identidade, habilidades, oportunidades, recomendações, jornadas, programas, resultados, fornecedores, matches, contratos, transações, diagnóstico, riscos, métricas, coortes, modelos e consentimento); o contrato refinado aprovado é `REL-01`–`REL-12`, com a equivalência E→REL em `03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md`.
 
 O dicionário físico aprovado define **47 campos** (`FLD-001`–`FLD-047`), com escopo técnico `N01`–`N26` (incluindo `N26` Decisão), abrangendo dimensões para pessoas, empresas, entidades, habilidades, coortes e versões de modelo, além de fatos para avaliações, eventos, oportunidades, matches, participação, contratos, transações e métricas de negócio/financeiras — ver planilha técnica aba `05_DICIONARIO` e matriz de convergência.
 
@@ -223,7 +223,7 @@ O projeto deve distinguir receita comercial, receita de implementação, receita
 
 ### Economia — valores aprovados
 
-A aba `14_ROI` aprovada da planilha técnica está **zerada** (custos, benefícios e ROI `0,0%`), aguardando o baseline Monks: *"Sem baseline Monks, ROI permanece zero/ilustrativo."* O simulador histórico abaixo é exemplo ilustrativo superado — mantido apenas como registro do exercício original, sem valor de decisão. Ver auditoria reconciliada em `02-review/02-reconciliacao-blueprint/06_Simulador_ROI_analise.md`.
+A aba `14_ROI` aprovada da planilha técnica está **zerada** (custos, benefícios e ROI `0,0%`), aguardando o baseline Monks: *"Sem baseline Monks, ROI permanece zero/ilustrativo."* O simulador histórico abaixo é exemplo ilustrativo superado — mantido apenas como registro do exercício original, sem valor de decisão. Ver auditoria reconciliada em `03-approved/reconciliacao-blueprint/06_Simulador_ROI_analise.md`.
 
 ## 9. Fundação de governança, jurídico e confiança
 
