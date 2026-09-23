@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: aprovado
 ---
 
 # Auditoria — `06_Simulador_ROI`
@@ -239,3 +239,10 @@ Criar uma matriz de alavancas com população/escopo, mecanismo causal, métrica
 - Foram recalculadas manualmente as fórmulas de H8:H20, I26:L28 e K36:K41; os resultados publicados acima correspondem às fórmulas literais e aos valores atuais.
 - Único arquivo criado: `01-tabs-csv/06_Simulador_ROI/06_Simulador_ROI_analise.md`.
 - Nenhum outro arquivo foi modificado.
+
+## Histórico de aprovação
+
+- Data: 2026-09-23
+- Decisão: decisão direta do usuário (promoção 02-review → 03-approved)
+- Aprovador: Paulo Rezende
+- Commit: ver mensagem do commit de promoção no git log

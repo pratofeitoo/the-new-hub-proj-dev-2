@@ -1,7 +1,7 @@
 ---
 title: Blueprint de Dados e Inteligência do HUB
 blueprint_id: BP-003
-status: em-revisao
+status: aprovado
 layer: blueprint
 area: data-intelligence
 source_task: "[[04-project-management/tarefas/BP-003_HUB_Blueprint_Dados_e_Inteligencia]]"
@@ -164,3 +164,10 @@ Todas as premissas permanecem em aberto até que a definição, dependência, ev
 * **Alimenta os blueprints de lançamento e aprovação:** pacotes de evidências, gates de publicação de métricas/modelos, testes de direitos sobre dados, dashboards operacionais e critérios integrados de prontidão.
 
 Até que essas dependências sejam resolvidas, esta nota define apenas o contrato semântico e os caminhos de evidência pretendidos. Ela não autoriza implementação em produção, alegações públicas, decisões do Selo HUB, certificação financeira ou lançamento.
+
+## Histórico de aprovação
+
+- Data: 2026-09-23
+- Decisão: decisão direta do usuário (promoção 02-review → 03-approved)
+- Aprovador: Paulo Rezende
+- Commit: ver mensagem do commit de promoção no git log

@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: aprovado
 ---
 
 # Análise — Conexões do mapa neural
@@ -171,3 +171,10 @@ O inventário é suficientemente claro para orientar um modelo de grafo/relacion
 - Saída criada exclusivamente em:
   `01-tabs-csv/03_Conexoes/03_Conexoes_analise.md`
 - Nenhum outro arquivo foi modificado.
+
+## Histórico de aprovação
+
+- Data: 2026-09-23
+- Decisão: decisão direta do usuário (promoção 02-review → 03-approved)
+- Aprovador: Paulo Rezende
+- Commit: ver mensagem do commit de promoção no git log

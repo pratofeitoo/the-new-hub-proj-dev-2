@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: aprovado
 title: "Matriz de Status E01–E20 — cobertura, evidência, pendência e responsável"
 date: 2026-09-05
 tags:
@@ -8,7 +8,7 @@ tags:
   - dados-canonicos
   - reconciliacao
 related_notes:
-  - "[[02-review/02-reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1]]"
+  - "[[03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1]]"
   - "[[03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8]]"
   - "[[04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint]]"
   - "[[04-project-management/registros-trabalho/logs-progresso/2026-09-05-matriz-status-E01-E20-gate-V2]]"
@@ -52,3 +52,10 @@ Legenda de status:
 | **E20** | Consentimento autoriza finalidade para Pessoa | **futura** | Incremental / P0 | `consent_id`/`purpose`/`legal_basis` FLD-024–026 + FLD-005→007/040/041 (N24 parcial crítico) | Contrato ternário titular/finalidade/base legal; bloqueio de sensíveis sem consentimento; revogação/propagação executável; auditoria; gate LGPD | LGPD/DPO + Arquitetura de Dados | F1 fundação (bloqueador) — 5–10 dias contrato + 3–6 semanas; aprovação gate LGPD antes de F2 |
 
 Totais: **0 cobertas · 5 parciais (E01, E03, E05, E07, E09) · 3 hipóteses (E04, E14, E15) · 12 futuras**.
+
+## Histórico de aprovação
+
+- Data: 2026-09-23
+- Decisão: decisão direta do usuário (promoção 02-review → 03-approved)
+- Aprovador: Paulo Rezende
+- Commit: ver mensagem do commit de promoção no git log

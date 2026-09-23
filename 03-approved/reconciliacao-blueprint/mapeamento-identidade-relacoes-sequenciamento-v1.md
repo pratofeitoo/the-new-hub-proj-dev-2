@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: aprovado
 ---
 
 # Mapeamento de identidade, relações e sequenciamento v1
@@ -61,3 +61,10 @@ Fonte aprovada: `Planilha_Tecnica_Desenvolvimento_HUB.md`, abas 05, 07 e 08; `Ma
 | Consentimento | INT-08 SSO/IAM; FLD-024–026/N24 — gate LGPD P0 F0. |
 | Entidade/identidade | INT-01 Workday/HCM + INT-05 CRM; FLD-001/002/019. |
 | Backbone do warehouse | INT-03 ERP/Financeiro + INT-04 PSA/Timesheet + INT-06 Payroll; SRC-05 ERP/FP&A, SRC-06 PSA/Timesheet, SRC-08 Payroll — prioridades piloto. |
+
+## Histórico de aprovação
+
+- Data: 2026-09-23
+- Decisão: decisão direta do usuário (promoção 02-review → 03-approved)
+- Aprovador: Paulo Rezende
+- Commit: ver mensagem do commit de promoção no git log

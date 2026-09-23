@@ -9,7 +9,7 @@ tags:
   - project-foundation
   - business-model
   - product-strategy
-status: em-revisao
+status: aprovado
 layer: blueprint
 ---
 
@@ -366,3 +366,10 @@ Esta nota deve se tornar o ponto de referência para construir a próxima camada
 - manter o modelo completo do projeto visível enquanto componentes individuais amadurecem.
 
 Esta fundação é intencionalmente aberta a melhorias. Seu papel é dar a todo plano, tarefa, teste, decisão e aprovação futuros um lugar compartilhado no projeto HUB completo.
+
+## Histórico de aprovação
+
+- Data: 2026-09-23
+- Decisão: decisão direta do usuário (promoção 02-review → 03-approved)
+- Aprovador: Paulo Rezende
+- Commit: ver mensagem do commit de promoção no git log

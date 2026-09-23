@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: aprovado
 ---
 
 # Análise — Indicadores Master
@@ -215,3 +215,10 @@ Não transformar todos os M0 em compromissos de release único: separar uma fati
 - Distribuições conferidas: 8 vertentes, 20 M0, 27 M1, 26 M2; 56 polaridades “Maior”, 15 “Menor”, 1 “Contextual” e 1 “Faixa ótima”.
 - Saída criada exatamente em:
   `/Users/paulorezende/Library/Mobile Documents/iCloud~md~obsidian/Documents/Work/WORK/HUB/Projects/2026/The New HUB/run-01-source/99-assets/Indicadores XLSX/01-tabs-csv/04_Indicadores_Master/04_Indicadores_Master_analise.md`
+
+## Histórico de aprovação
+
+- Data: 2026-09-23
+- Decisão: decisão direta do usuário (promoção 02-review → 03-approved)
+- Aprovador: Paulo Rezende
+- Commit: ver mensagem do commit de promoção no git log
