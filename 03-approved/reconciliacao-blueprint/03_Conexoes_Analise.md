@@ -7,7 +7,7 @@ status: aprovado
 ## Escopo e evidência analisada
 
 - **Arquivo:** `01-tabs-csv/03_Conexoes/03_Conexoes.csv`
-- **Linhas:** 25 no total; 4 linhas de cabeçalho/título/descrição e 20 registros de conexão (`E01` a `E20`) na camada conceitual. A equivalência contratual refinada (`REL-01`–`REL-12`, incluindo REL-10–12 adicionadas na Wave 2) está consolidada em [[mapeamento-identidade-relacoes-sequenciamento-v1]].
+- **Linhas:** 25 no total; 4 linhas de cabeçalho/título/descrição e 20 registros de conexão (`E01` a `E20`) na camada conceitual. A equivalência contratual refinada (`REL-01`–`REL-12`, incluindo REL-10–12 adicionadas na Wave 2) está consolidada em [[Mapeamento_Identidade_Relacoes_Sequenciamento_V1]].
 - **Domínio:** relações entre pessoas, empresas, entidades, competências, oportunidades, programas, outcomes, indicadores, fornecedores, contratos, transações, modelos e consentimentos.
 - **Evidência primária:** a própria linha de cada conexão informa origem, relação, destino, direção, peso/score, janela temporal, fonte de evidência, indicadores derivados, uso de negócio e regra de qualidade.
 - **Limitação:** não há chaves técnicas dos nós, timestamps, valores de score, versões de fonte, cardinalidade explícita ou amostras de fatos relacionais; portanto a análise valida o desenho conceitual, não a integridade de uma instância operacional.
@@ -16,7 +16,7 @@ status: aprovado
 
 O cabeçalho efetivo está na linha 5, com 11 colunas: `ID`, `Nó origem`, `Relação`, `Nó destino`, `Direção`, `Peso / score`, `Janela temporal`, `Evidência`, `Indicadores derivados`, `Uso de negócio` e `Regra de qualidade`. A linha 1 funciona como título, a linha 3 como descrição e as linhas 2 e 4 são separadores vazios (` ,`), o que exige tratamento específico na importação.
 
-Os 20 IDs são únicos e sequenciais (`E01`–`E20`). O conjunto contém 20 arestas dirigidas, sem conexão explicitamente bidirecional. Há 32 tipos de nó nominal (incluindo variantes com barra, como `Programa / projeto`, `Fornecedor / solução` e `Conteúdo / campanha`) e 20 verbos/relacionamentos distintos. **Leitura reconciliada:** 20 é a camada-fonte conceitual; o contrato aprovado é REL-01–REL-12, com nível de evidência na aba 07. A tabela E→REL completa está em [[mapeamento-identidade-relacoes-sequenciamento-v1]].
+Os 20 IDs são únicos e sequenciais (`E01`–`E20`). O conjunto contém 20 arestas dirigidas, sem conexão explicitamente bidirecional. Há 32 tipos de nó nominal (incluindo variantes com barra, como `Programa / projeto`, `Fornecedor / solução` e `Conteúdo / campanha`) e 20 verbos/relacionamentos distintos. **Leitura reconciliada:** 20 é a camada-fonte conceitual; o contrato aprovado é REL-01–REL-12, com nível de evidência na aba 07. A tabela E→REL completa está em [[Mapeamento_Identidade_Relacoes_Sequenciamento_V1]].
 
 ### Inventário por função
 

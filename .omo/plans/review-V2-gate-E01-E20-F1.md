@@ -13,8 +13,8 @@ Revisar o pacote V2 em `03-approved/reconciliacao-blueprint/` (7 arquivos congel
 ```
 03-approved (FLD, N, REL)  ← base imutável
         │
-        ├── 03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md (E→REL, UNVERIFIED)
-        ├── 03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1.md (status, pendência, fase)
+        ├── 03-approved/reconciliacao-blueprint/Mapeamento_Identidade_Relacoes_Sequenciamento_V1.md (E→REL, UNVERIFIED)
+        ├── 03-approved/reconciliacao-blueprint/Matriz_Status_E01_E20_V1.md (status, pendência, fase)
         ├── 04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint.md (esforço/prioridade)
         │
         ├── 01-work/dados-tech-financas/refinamento-modelo-dados/contratos-fundacao-F1-E02-E20-E01-v1.md
@@ -30,7 +30,7 @@ Revisar o pacote V2 em `03-approved/reconciliacao-blueprint/` (7 arquivos congel
 
 ### Phase 0 — F0: Fechamento documental (1–3 dias, este plano cobre)
 #### Task 1: Auditoria do mapeamento E01–E20 vs aprovado
-**Description:** Ler `mapeamento-identidade-relacoes-sequenciamento-v1.md` + `matriz-status-E01-E20-v1.md` + `Matriz_Convergencia_73_16_25_23_12_8` + `REL-01–12` e verificar: cada E tem contraparte aprovada correta, UNVERIFIED qualificado sem inferência, parciais apontam REL-*/FLD/N exato, hipóteses/futuras com fase e sem compromisso MVP, e totais 0/5/3/12 consistentes.
+**Description:** Ler `Mapeamento_Identidade_Relacoes_Sequenciamento_V1.md` + `Matriz_Status_E01_E20_V1.md` + `Matriz_Convergencia_73_16_25_23_12_8` + `REL-01–12` e verificar: cada E tem contraparte aprovada correta, UNVERIFIED qualificado sem inferência, parciais apontam REL-*/FLD/N exato, hipóteses/futuras com fase e sem compromisso MVP, e totais 0/5/3/12 consistentes.
 
 **Acceptance criteria:**
 - [ ] Cada E01–E20 tem linha na matriz com status = coberta|parcial|hipótese|futura e evidência FLD/N/REL citada
@@ -43,8 +43,8 @@ Revisar o pacote V2 em `03-approved/reconciliacao-blueprint/` (7 arquivos congel
 
 **Dependencies:** None
 **Files likely touched (read-only):**
-- `03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1.md`
-- `03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1.md`
+- `03-approved/reconciliacao-blueprint/Mapeamento_Identidade_Relacoes_Sequenciamento_V1.md`
+- `03-approved/reconciliacao-blueprint/Matriz_Status_E01_E20_V1.md`
 - `03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8.md`
 **Estimated scope:** S (2–3 files, leitura + anotação)
 
@@ -118,7 +118,7 @@ Revisar o pacote V2 em `03-approved/reconciliacao-blueprint/` (7 arquivos congel
 **Files likely touched:**
 - `04-project-management/registros-trabalho/logs-progresso/2026-09-05-matriz-status-E01-E20-gate-V2.md`
 - `04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint.md`
-- `03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1.md`
+- `03-approved/reconciliacao-blueprint/Matriz_Status_E01_E20_V1.md`
 **Estimated scope:** M (3–5 files)
 
 ### Checkpoint: After Tasks 1–5 (F0)

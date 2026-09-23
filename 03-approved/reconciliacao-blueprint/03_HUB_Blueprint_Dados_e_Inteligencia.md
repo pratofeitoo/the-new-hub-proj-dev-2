@@ -34,7 +34,7 @@ O sistema de dados representa a cadeia `fontes → identidades → sinais → in
 
 Todo objeto canônico possui um `canonical_id` globalmente único e imutável, um `object_type`, `tenant_id` ou escopo do ecossistema quando aplicável, `created_at`, `updated_at`, `valid_from`, `valid_to`, `record_status` e uma referência de proveniência. Os identificadores de origem permanecem anexados como aliases com namespace (`source_system`, `source_object_type`, `source_id`) e nunca são promovidos silenciosamente a identidade canônica. Um relacionamento é, por si só, um objeto de primeira classe quando possui uma função, evidência, status, datas de vigência ou permissões.
 
-**Mapeamento físico aprovado (sem redesenho):** `canonical_id` de Pessoa é `person_id`/FLD-001; `workday_id` é alias namespaced (`source_system=Workday`, `source_id`)/FLD-002; `client_id` é FLD-019; o envelope de evento é FLD-042–045; consentimento é FLD-024–026; e decisão é N26 com FLD-021–023. `object_type` permanece um tipo abstrato do contrato lógico, sem FLD direto. A tabela completa canonical→FLD/entidade está em [[mapeamento-identidade-relacoes-sequenciamento-v1]].
+**Mapeamento físico aprovado (sem redesenho):** `canonical_id` de Pessoa é `person_id`/FLD-001; `workday_id` é alias namespaced (`source_system=Workday`, `source_id`)/FLD-002; `client_id` é FLD-019; o envelope de evento é FLD-042–045; consentimento é FLD-024–026; e decisão é N26 com FLD-021–023. `object_type` permanece um tipo abstrato do contrato lógico, sem FLD direto. A tabela completa canonical→FLD/entidade está em [[Mapeamento_Identidade_Relacoes_Sequenciamento_V1]].
 
 As regras de chave lógica são:
 
@@ -53,7 +53,7 @@ O modelo separa **tempo de validade** (quando um fato é verdadeiro no mundo rep
 
 Este contrato lógico aborda [[00-project-control/registro-lacunas/lacunas/DAT-001|DAT-001]], mas não afirma que chaves primárias, chaves estrangeiras, índices ou tabelas de armazenamento físicas estejam aprovados. O entregável de refinamento é um modelo lógico e físico aprovado; a aprovação da arquitetura de dados continua pendente.
 
-> **Refinamento P03-T01 (M03.A):** proposta detalhada com 25 entidades (PK estável), 12 relacionamentos com cardinalidade/temporalidade, tipos de objeto e diagrama ER em [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — atende G03.A1 para revisão Dados+Tech. **Qualificação:** 25/12 é contagem da camada conceitual; o escopo técnico aprovado inclui N01–N26 (N26 Decisão adicionado), conforme a matriz de convergência. Ver tabela reconciliada em [[mapeamento-identidade-relacoes-sequenciamento-v1]].
+> **Refinamento P03-T01 (M03.A):** proposta detalhada com 25 entidades (PK estável), 12 relacionamentos com cardinalidade/temporalidade, tipos de objeto e diagrama ER em [[01-work/dados-tech-financas/refinamento-modelo-dados/modelo-logico-fisico-P03-T01-v1|modelo-logico-fisico-P03-T01-v1.md]] — atende G03.A1 para revisão Dados+Tech. **Qualificação:** 25/12 é contagem da camada conceitual; o escopo técnico aprovado inclui N01–N26 (N26 Decisão adicionado), conforme a matriz de convergência. Ver tabela reconciliada em [[Mapeamento_Identidade_Relacoes_Sequenciamento_V1]].
 
 ## 2. Arquitetura de indicadores de origem conectada às capacidades do produto e aos resultados de negócio
 

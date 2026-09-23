@@ -56,7 +56,7 @@ A fronteira de integração contém adaptadores, validação de contratos, mapea
 
 ## Matriz de sequenciamento — M0 arquitetural × MVP/piloto
 
-Esta matriz relaciona, sem repriorizar, os cinco candidatos arquiteturais de M0 às integrações técnicas INT-01–INT-12 e às prioridades de piloto aprovadas. O mapeamento completo e suas citações estão em [[mapeamento-identidade-relacoes-sequenciamento-v1]].
+Esta matriz relaciona, sem repriorizar, os cinco candidatos arquiteturais de M0 às integrações técnicas INT-01–INT-12 e às prioridades de piloto aprovadas. O mapeamento completo e suas citações estão em [[Mapeamento_Identidade_Relacoes_Sequenciamento_V1]].
 
 | candidato arquitetural | integração MVP/piloto |
 |---|---|

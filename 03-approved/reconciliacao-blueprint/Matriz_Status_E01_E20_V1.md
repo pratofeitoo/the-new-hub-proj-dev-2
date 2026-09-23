@@ -8,7 +8,7 @@ tags:
   - dados-canonicos
   - reconciliacao
 related_notes:
-  - "[[03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1]]"
+  - "[[03-approved/reconciliacao-blueprint/Mapeamento_Identidade_Relacoes_Sequenciamento_V1]]"
   - "[[03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8]]"
   - "[[04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint]]"
   - "[[04-project-management/registros-trabalho/logs-progresso/2026-09-05-matriz-status-E01-E20-gate-V2]]"

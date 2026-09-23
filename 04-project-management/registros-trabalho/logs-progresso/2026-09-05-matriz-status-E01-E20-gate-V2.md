@@ -10,20 +10,20 @@ tags:
   - dados-canonicos
   - gate-V2
 related_notes:
-  - "[[03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1]]"
+  - "[[03-approved/reconciliacao-blueprint/Matriz_Status_E01_E20_V1]]"
   - "[[04-project-management/registros-trabalho/logs-progresso/2026-09-05-classificacao-20-relacoes-blueprint]]"
 ---
 
 # Veredito Gate V2 — 20 Relações Blueprint
 
 > [!abstract] Leitura executiva
-> V2 **aprovada condicionalmente como plano de reconciliação; contratos F1 ainda não aprovados**. Matriz dedicada: [[03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1|Matriz de Status E01–E20]].
+> V2 **aprovada condicionalmente como plano de reconciliação; contratos F1 ainda não aprovados**. Matriz dedicada: [[03-approved/reconciliacao-blueprint/Matriz_Status_E01_E20_V1|Matriz de Status E01–E20]].
 > Resultado: **0 cobertas · 5 parciais · 3 hipóteses · 12 futuras**; E02, E20 e E01 falharam o aceite físico/documental F1.
 > `03-approved` permanece imutável. Nenhum `REL-*` fictício foi criado.
 
 ## 1. Matriz (nota dedicada)
 
-Ver [[03-approved/reconciliacao-blueprint/matriz-status-E01-E20-v1|Matriz de Status E01–E20]] — cobertura, evidência, pendência, responsável e fase por relação.
+Ver [[03-approved/reconciliacao-blueprint/Matriz_Status_E01_E20_V1|Matriz de Status E01–E20]] — cobertura, evidência, pendência, responsável e fase por relação.
 
 Resumo: **0 cobertas · 5 parciais (E01, E03, E05, E07, E09) · 3 hipóteses (E04, E14, E15) · 12 futuras**.
 

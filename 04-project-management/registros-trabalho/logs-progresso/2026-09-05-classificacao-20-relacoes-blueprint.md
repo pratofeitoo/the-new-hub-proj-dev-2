@@ -11,7 +11,7 @@ tags:
   - relacionamentos
   - planejamento
 related_notes:
-  - "[[03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1]]"
+  - "[[03-approved/reconciliacao-blueprint/Mapeamento_Identidade_Relacoes_Sequenciamento_V1]]"
   - "[[03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8]]"
   - "[[04-project-management/registros-trabalho/logs-progresso/P03-entregaveis-dados-canonicos-spine-2026-08-29]]"
 ---
@@ -29,7 +29,7 @@ related_notes:
 O blueprint contém 20 relações conceituais dirigidas (`E01`–`E20`). O inventário aprovado contém
 relações refinadas (`REL-01`–`REL-12`) com níveis de evidência, mas não possui uma contraparte
 direta para todas as relações conceituais. A ausência de contraparte é chamada `UNVERIFIED` no
-[[03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1|mapeamento V2]].
+[[03-approved/reconciliacao-blueprint/Mapeamento_Identidade_Relacoes_Sequenciamento_V1|mapeamento V2]].
 
 `UNVERIFIED` significa **não pareável sem inferência**; não significa automaticamente que a relação
 esteja errada. Cada item precisa ser classificado como relação coberta, hipótese conceitual adiada,
@@ -129,7 +129,7 @@ revisão e testes; executar o grupo não é a soma literal de todos os dias indi
 
 ## 6. Arquivos conectados
 
-- [[03-approved/reconciliacao-blueprint/mapeamento-identidade-relacoes-sequenciamento-v1|Mapa V2 E→REL, canonical→FLD e M0×MVP]].
+- [[03-approved/reconciliacao-blueprint/Mapeamento_Identidade_Relacoes_Sequenciamento_V1|Mapa V2 E→REL, canonical→FLD e M0×MVP]].
 - [[03-approved/nucleo-inteligencia/analises-processadas/Matriz_Convergencia_73_16_25_23_12_8|Matriz de convergência aprovada]].
 - [[03-approved/nucleo-inteligencia/analises-processadas/Relatorio_CrossReview_Blueprint_vs_Especificacao_Planilha_HUB|Cross-review aprovado]].
 - [[03-approved/nucleo-inteligencia/analises-processadas/Relatorio_Consistencia_Especificacao_vs_Planilha_HUB|Relatório de consistência aprovado]].
