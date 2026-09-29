@@ -1,7 +1,7 @@
 ---
 title: Blueprint de Marca e Mercado do HUB
 blueprint_id: BP-007
-status: em-revisao
+status: rascunho
 layer: blueprint
 area: brand-market
 source_task: "[[04-project-management/tarefas/BP-007_HUB_Blueprint_Marca_e_Mercado]]"

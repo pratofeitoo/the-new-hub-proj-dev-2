@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: rascunho
 ---
 
 # Governança e Jurídico — direitos, contratos e LGPD

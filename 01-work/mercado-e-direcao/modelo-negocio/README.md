@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: rascunho
 ---
 
 # Modelo de Negócio — oferta, receita e quem paga

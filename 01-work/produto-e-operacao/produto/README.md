@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: rascunho
 ---
 
 # Produto — capacidades, jornadas e fronteiras da plataforma

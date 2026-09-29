@@ -1,7 +1,7 @@
 ---
 title: Arquitetura de Ofertas e Receita do HUB
 blueprint_id: BP-001
-status: em-revisao
+status: rascunho
   - active
 layer: blueprint
 area: business-model

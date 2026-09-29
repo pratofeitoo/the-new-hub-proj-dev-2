@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: rascunho
 ---
 
 # Marca e Mercado — posicionamento e o que pode ser afirmado

@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: rascunho
 ---
 
 # Operações — entrega repetível (C.A.O.S. em execução)

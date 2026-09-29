@@ -1,7 +1,7 @@
 ---
 title: "Blueprint de Governança e Jurídico do HUB"
 blueprint_id: BP-006
-status: em-revisao
+status: rascunho
 layer: blueprint
 area: governance-legal
 source_task: "[[04-project-management/tarefas/BP-006_HUB_Blueprint_Governanca_e_Juridico]]"

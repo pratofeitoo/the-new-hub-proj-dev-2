@@ -1,7 +1,7 @@
 ---
 title: "HUB Blueprint de Produto e Capacidades"
 blueprint_id: BP-002
-status: em-revisao
+status: rascunho
 layer: blueprint
 area: product
 source_task: "[[04-project-management/tarefas/BP-002_HUB_Blueprint_Produto_e_Capacidades]]"

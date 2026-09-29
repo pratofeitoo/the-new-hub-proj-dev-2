@@ -1,7 +1,7 @@
 ---
 title: "Blueprint do Modelo Operacional HUB"
 blueprint_id: BP-005
-status: em-revisao
+status: rascunho
 layer: blueprint
 area: operations
 source_task: "[[04-project-management/tarefas/BP-005_HUB_Blueprint_Modelo_Operacional]]"

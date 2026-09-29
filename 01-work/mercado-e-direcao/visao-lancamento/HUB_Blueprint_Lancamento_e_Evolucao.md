@@ -1,7 +1,7 @@
 ---
 title: "BP-008 — Blueprint de Lançamento e Evolução do HUB"
 blueprint_id: BP-008
-status: em-revisao
+status: rascunho
 layer: blueprint
 area: launch-vision
 source_task: "[[04-project-management/tarefas/BP-008_HUB_Blueprint_Lancamento_e_Evolucao]]"

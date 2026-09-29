@@ -1,5 +1,5 @@
-<!-- branch: restructure/lifecycle-borders -->
-<!-- last-synced: 2026-09-05 -->
+<!-- branch: main -->
+<!-- last-synced: 2026-09-29 -->
 
 # Mapa do Projeto
 
@@ -20,12 +20,12 @@ com domínios como segundo eixo:
 | Área | Papel atual |
 | --- | --- |
 | `00-project-control/` | Framework, escopo, decisões, gaps e registros de mudança (incl. `2026-09-05-reestruturacao-fronteiras-lifecycle.md`). |
-| `01-work/` | Elaboração em 3 temas: `produto-e-operacao/` (`refinamento-produto/`), `dados-tech-financas/` (`modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho; CSVs em `05-resources/fontes/`), `pesquisa-e-confianca/` (`pesquisa/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001). 9 domínios blueprint submetidos a `02-review/01-blueprint/`. |
-| `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/`, `02-reconciliacao-blueprint/` (6 reconciliadas + mapeamento; submetidas 2026-09-05, `em-revisao`, em espera — v1 aposentada em `99-archive/superado/`). |
-| `03-approved/` | `matriz-de-oferta-e-comprador-cenarios/cenarios/` P01-S01…S06, `nucleo-inteligencia/` (conceito + inventário + prova, gate 2026-09-05, `aprovado` + histórico). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
+| `01-work/` | Elaboração em 3 temas: `produto-e-operacao/` (`produto/`, `operacoes/`, `refinamento-produto/`), `dados-tech-financas/` (`modelos-financeiros/`, `refinamento-modelo-dados/` com spine P03 + gate, todos rascunho; CSVs em `05-resources/fontes/`), `pesquisa-e-confianca/` (`pesquisa/`, `governanca-juridico/`, `documentos-oficiais/` shell 01–14 + `_controle/`, tudo rascunho/hipótese — ver GOV-001), `mercado-e-direcao/` (`modelo-negocio/`, `marca-mercado/`, `visao-lancamento/`, `estrategia/` — 6 domínios blueprint retornados de `99-archive/` em 2026-09-29, rascunho). |
+| `02-review/` | `pacotes/` (aceite P01), `bloqueado/` (indicadores), `01-mvps/`, `02-visao-plataforma/`, `01-acordo-parceria/`. |
+| `03-approved/` | `matriz-de-oferta-e-comprador-cenarios/cenarios/` P01-S01…S06, `nucleo-inteligencia/` (conceito + inventário + prova, gate 2026-09-05, `aprovado` + histórico), `reconciliacao-blueprint/` (6 versões reconciliadas + mapeamento + matriz status, promovidas 2026-09-23). Espelho Drive em `THE NEW HUB/03-approved/` com paths idênticos. |
 | `04-project-management/` | Planos mestre e de fase P01–P07, tarefas de fase + BP, matriz canônica, marcos, cronogramas, atas, planos unificados e logs de progresso. |
 | `05-resources/` | `inbox/` (fila de triagem; MVPs, visão e acordo submetidos a `02-review/` em 2026-09-05) e `fontes/modelo-indicadores/` (CSVs-fonte). Matéria-prima, nunca evidência. |
-| `99-archive/` | `origens/primeiro-rascunho-projeto/`, `backups/`, `documentos-oficiais/` (descontinuado/rejeitado/superado), `instantaneos-historicos/`, `superado/`. |
+| `99-archive/` | `origens/primeiro-rascunho-projeto/`, `backups/`, `documentos-oficiais/` (descontinuado/rejeitado/superado), `instantaneos-historicos/`, `superado/01-blueprint-v1-submissao-superada/` (3 domínios: `estrategia/`, `dados-inteligencia/`, `tecnologia/` — v1 testemunha, 2026-09-05). |
 | `01-blueprint/`, `02-refinement/` | Aposentadas em 2026-09-05, stubs removidos; ver `git log --follow`. |
 | `TaskNotes/` | Notas operacionais, `Archive/` e visualizações Bases. |
 | `System/` | Documentação local de plugins em 5 famílias. `attachments/` é local e não rastreado. |
@@ -35,7 +35,7 @@ com domínios como segundo eixo:
 
 ## Árvore de diretórios versionada
 
-> Estado no branch `restructure/lifecycle-borders`. Histórico de moves preservado (`git log --follow`).
+> Estado atualizado 2026-09-29. Histórico de moves preservado (`git log --follow`).
 
 ```text
 .
@@ -49,25 +49,27 @@ com domínios como segundo eixo:
 │   ├── framework/                   — framework das três camadas
 │   ├── registro-lacunas/lacunas/    — gaps BRD/DAT/FIN/GOV/TEC e registros
 │   └── registro-mudancas/           — registros estruturais e decisórios (incl. lifecycle 2026-09-05 + censos)
-├── 01-work/                         — ELABORAÇÃO (rascunho | em-elaboracao), 3 temas
-│   ├── produto-e-operacao/          — refinamento-produto/ (produto/ e operacoes/ submetidos ao gate)
+├── 01-work/                         — ELABORAÇÃO (rascunho | em-elaboracao), 4 temas
+│   ├── mercado-e-direcao/           — estrategia/, modelo-negocio/, marca-mercado/, visao-lancamento/
+│   │                                  (6 domínios blueprint retornados de 99-archive/ em 2026-09-29, rascunho)
+│   ├── produto-e-operacao/          — produto/, operacoes/, refinamento-produto/
 │   ├── dados-tech-financas/         — modelos-financeiros/
 │   │                                  refinamento-modelo-dados/ (spine P03-T01..T09 + gate M0, rascunho)
-│   └── pesquisa-e-confianca/        — pesquisa/
+│   └── pesquisa-e-confianca/        — pesquisa/, governanca-juridico/
 │                                      documentos-oficiais/ (shell 01–14 + _controle/, nada oficial)
 ├── 02-review/                       — REVISÃO (em-revisao, congelado)
 │   ├── pacotes/                     — pacotes para stakeholders
 │   ├── bloqueado/                   — modelo de indicadores e derivados de validação
 │   ├── 01-mvps/                     — 6 MVPs + Comunidades, submetido 2026-09-05
 │   ├── 02-visao-plataforma/         — tese de longo prazo, submetida 2026-09-05
-│   ├── 01-acordo-parceria/          — acordo DiverCidade×HUB, submetido 2026-09-05
-│   └── 02-reconciliacao-blueprint/  — 6 versões reconciliadas + mapeamento, submetidas 2026-09-05, em espera (v1 aposentada em 99-archive/superado/)
+│   └── 01-acordo-parceria/          — acordo DiverCidade×HUB, submetido 2026-09-05
 ├── 03-approved/                     — APROVADO (aprovado, imutável; espelhado no Drive)
 │   ├── matriz-de-oferta-e-comprador-cenarios/cenarios/ — P01-S01…S06 assinados
 │   ├── nucleo-inteligencia/         — conceito + inventário + prova, gate 2026-09-05
 │   │   ├── especificacao-conceitual-inteligencia-plataforma/ — especificação v1.0 (.md + .docx)
 │   │   ├── planilha-tecnica-completa-desenvolvimento/ — fonte + planejamento + validações
 │   │   └── analises-processadas/    — matriz de convergência + relatórios
+│   └── reconciliacao-blueprint/     — 6 versões reconciliadas + mapeamento + matriz status, promovidas 2026-09-23
 ├── 04-project-management/           — execução P01→P07
 │   ├── atas-reuniao/                — atas estruturadas e templates
 │   ├── cronogramas/                 — cronograma Bases
@@ -83,7 +85,8 @@ com domínios como segundo eixo:
 │   └── fontes/modelo-indicadores/   — CSVs-fonte do workbook
 ├── 99-archive/                      — histórico
 │   ├── origens/primeiro-rascunho-projeto/
-│   ├── backups/  documentos-oficiais/  instantaneos-historicos/  superado/
+│   ├── backups/  documentos-oficiais/  instantaneos-historicos/
+│   └── superado/01-blueprint-v1-submissao-superada/ — 3 domínios (estrategia/, dados-inteligencia/, tecnologia/), testemunha v1
 ├── 01-blueprint/ 02-refinement/      — removidas em 2026-09-05 (era stubs; conteúdo em 01-work/)
 ├── System/Plugins docs/             — 5 famílias de docs locais (69 arquivos)
 ├── System/attachments/              — anexos locais ignorados pelo Git
@@ -107,7 +110,7 @@ O fluxo de execução é:
 
 `P01 Oferta & Negócio` → `P02 Produto & Operação` → `P03 Dados Canônicos` → `P04 Governança` ↔ `P05 Tecnologia` → `P06 Economia & GTM` → `P07 Portão de Lançamento`.
 
-- P01: 7 tarefas **`em-revisao`** (reclassificadas 2026-09-05 de `concluido`; **M01 não aprovado — sem `DEC-M01` nem `02-review/pacotes/P01-Oferta-Negocio.md`** até gate). Artefatos em `01-work/`+`01-work/pesquisa-e-confianca/` (rascunho) e `99-archive/superado/` (blueprint v1 superado); cenários S01…S06 permanecem `hypothesis` em `03-approved/` (única exceção pré-lifecycle), não conferem gate.
+- P01: 7 tarefas **`em-revisao`** (reclassificadas 2026-09-05 de `concluido`; **M01 não aprovado — sem `DEC-M01` nem `02-review/pacotes/P01-Oferta-Negocio.md`** até gate). Artefatos em `01-work/mercado-e-direcao/` (rascunho, 6 domínios retornados de `99-archive/` em 2026-09-29); cenários S01…S06 permanecem `hypothesis` em `03-approved/` (única exceção pré-lifecycle), não conferem gate.
 - P02: 6 tarefas **`em-revisao`** (reclassificadas 2026-09-05; **M02 não aprovado — sem `DEC-M02` nem `02-review/pacotes/P02-Produto-Operacao.md`**). Depende de **M01**. Rascunhos em `01-work/produto-e-operacao/refinamento-produto/` aguardando revisão Segurança/Governança (G02.3/G02.6/G02.7).
 - P03: 9 itens + gate em elaboração em `01-work/dados-tech-financas/refinamento-modelo-dados/` (todos `rascunho`/`em-revisao`; M03.A/B/C pendentes).
 - P04–P07: 34 tarefas `pendente`. **Hierarquia canônica:** `matriz-fases-tarefas-v1.md` § Hierarquia: task → plano fase → marcos → log → matriz; `status: concluido` só após `DEC-M*` (ver `marcos-fases-v1.md` M01/M02 + auditoria 2026-09-05 §7).

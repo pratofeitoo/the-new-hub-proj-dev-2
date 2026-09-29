@@ -1,5 +1,5 @@
 ---
-status: em-revisao
+status: rascunho
 ---
 
 # Visão de Lançamento — releases, gates e evolução M0–M4
