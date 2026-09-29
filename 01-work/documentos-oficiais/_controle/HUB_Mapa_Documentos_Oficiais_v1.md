@@ -1,7 +1,8 @@
 ---
-title: "HUB — Mapa de Documentos Oficiais v1"
+title: HUB — Mapa de Documentos Oficiais v1
 map_id: GOV-MAP-001
-status: rascunho
+status:
+  - em-revisao
 layer: refinement
 area: governance-legal
 version: "1.0"
@@ -10,9 +11,28 @@ updated: 2026-09-02
 base_legal_data: 2026-09-02
 jurisdicao: Brasil - legislação federal vigente em 2026-09-02
 blueprint_ref: "[[02-review/01-blueprint/governanca-juridico/HUB_Blueprint_Governanca_e_Juridico]]"
-gap_ids: [GOV-001, GOV-002, GOV-003, GOV-004, GOV-005, GOV-006, GOV-007, GOV-008, GOV-009, STR-001, FIN-002]
-tarefas_ref: [P04-T01, P04-T02, P05-T01]
-tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
+gap_ids:
+  - GOV-001
+  - GOV-002
+  - GOV-003
+  - GOV-004
+  - GOV-005
+  - GOV-006
+  - GOV-007
+  - GOV-008
+  - GOV-009
+  - STR-001
+  - FIN-002
+tarefas_ref:
+  - P04-T01
+  - P04-T02
+  - P05-T01
+tags:
+  - governanca
+  - juridico
+  - documentos-oficiais
+  - fundacional
+  - brasil-2026
 ---
 
 # HUB — Mapa de Documentos Oficiais v1
@@ -34,22 +54,22 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 
 ## 1. Atos Constitutivos — sem isso nada existe
 
-| # | Documento | Natureza | Entidade dona (hipótese) | Órgão / Base legal 2026-09-02 | Gatilho — quando vira obrigatório | Status | Gap ID | Evidência / Arquivo |
-|---|---|---|---|---|---|---|---|
-| 1.01 | Contrato Social (ou Estatuto se S/A) + alterações consolidadas | Constitutivo | HUB Negócios (e Plataforma se CNPJ separado) | Junta Comercial do estado + REDESIM | Antes de pedir CNPJ | hipótese | GOV-001, STR-001 |  |
-| 1.02 | Estatuto Social + Ata de Fundação + Ata de Eleição da Diretoria | Constitutivo | Instituto HUB | Cartório RTD Pessoa Jurídica | Antes de pedir CNPJ do Instituto | hipótese | GOV-001, STR-001 |  |
-| 1.03 | Acordo de Sócios / Acionistas (vesting, lock-up, tag along, deadlock) | Contratual fundacional | Marca HUB (sócios do grupo) | Privado - não registra na Junta (pode averbar) | Antes de integralizar capital | hipótese | GOV-001, GOV-004 |  |
-| 1.04 | Acordo de Cotitularidade / Licença de Marca e Método C.A.O.S. | Contratual fundacional | Marca HUB → licencia para Negócios/Instituto/Plataforma | Privado | Antes de qualquer unidade usar "HUB" comercialmente | hipótese | GOV-001, GOV-006 |  |
-| 1.05 | Livro de Registro de Sócios/Ações (se S/A ou LTDA com acordo) | Societário | HUB Negócios | Junta / próprio | Na constituição | hipótese | GOV-001 |  |
+| #        | Documento                                                             | Natureza               | Entidade dona (hipótese)                                | Órgão / Base legal 2026-09-02                  | Gatilho — quando vira obrigatório                   | Status       | Gap ID               | Evidência / Arquivo |
+| -------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------- | ---------------------------------------------- | --------------------------------------------------- | ------------ | -------------------- | ------------------- |
+| **1.01** | **Contrato Social (ou Estatuto se S/A) + alterações consolidadas**    | **Constitutivo**       | **HUB Negócios (e Plataforma se CNPJ separado)**        | **Junta Comercial do estado + REDESIM**        | **Antes de pedir CNPJ**                             | **hipótese** | **GOV-001, STR-001** |                     |
+| 1.02     | Estatuto Social + Ata de Fundação + Ata de Eleição da Diretoria       | Constitutivo           | Instituto HUB                                           | Cartório RTD Pessoa Jurídica                   | Antes de pedir CNPJ do Instituto                    | hipótese     | GOV-001, STR-001     |                     |
+| **1.03**     | **Acordo de Sócios / Acionistas (vesting, lock-up, tag along, deadlock)** | **Contratual fundacional** | **Marca HUB (sócios do grupo)**                             | **Privado - não registra na Junta (pode averbar)** | **Antes de integralizar capital**                       | **hipótese**     | **GOV-001, GOV-004**     |                     |
+| **1.04**     | **Acordo de Cotitularidade / Licença de Marca e Método C.A.O.S.**         | **Contratual fundacional** | **Marca HUB → licencia para Negócios/Instituto/Plataforma** | **Privado**                                        | **Antes de qualquer unidade usar "HUB" comercialmente** | **hipótese**     | **GOV-001, GOV-006**     |                     |
+| **1.05**     | **Livro de Registro de Sócios/Ações (se S/A ou LTDA com acordo)**         | **Societário**             | **HUB Negócios**                                            | **Junta / próprio**                                | **Na constituição**                                     | **hipótese**     | **GOV-001**              |                     |
 
 ## 2. Registros Governamentais — existência fiscal
 
 | # | Documento | Natureza | Entidade dona | Órgão / Base legal 2026-09-02 | Gatilho | Status | Gap ID | Evidência |
-|---|---|---|---|---|---|---|---|
-| 2.01 | CNPJ + DBE + NIRE | Registro | Cada CNPJ | Receita Federal / Junta via REDESIM | Após ato constitutivo | hipótese | GOV-001 |  |
-| 2.02 | Inscrição Municipal + Alvará de Localização e Funcionamento | Registro | Cada CNPJ com sede | Prefeitura (Empresa Fácil / REDESIM) | Antes de operar/faturar no município | hipótese | GOV-001 |  |
+|---|---|---|---|---|---|---|---|---|
+| **2.01** | **CNPJ + DBE + NIRE** | **Registro** | **Cada CNPJ** | **Receita Federal / Junta via REDESIM** | **Após ato constitutivo** | **hipótese** | **GOV-001** |  |
+| **2.02** | **Inscrição Municipal + Alvará de Localização e Funcionamento** | **Registro** | **Cada CNPJ com sede** | **Prefeitura (Empresa Fácil / REDESIM)** | **Antes de operar/faturar no município** | **hipótese** | **GOV-001** |  |
 | 2.03 | Inscrição Estadual | Registro | Só se vender mercadoria/transporte/comunicação | SEFAZ estadual | Se objeto incluir circulação de bens | n/a por enquanto | FIN-002 |  |
-| 2.04 | Certificado Digital e-CNPJ A1/A3 | Habilitação | Cada CNPJ | ICP-Brasil | Para emitir NFSe/NFe e assinar | hipótese | GOV-005 |  |
+| **2.04** | **Certificado Digital e-CNPJ A1/A3** | **Habilitação** | **Cada CNPJ** | **ICP-Brasil** | **Para emitir NFSe/NFe e assinar** | **hipótese** | **GOV-005** |  |
 | 2.05 | Inscrição no INSS / CEIS / CNO (se obra) | Registro | Cada CNPJ | Receita | Se tiver obra ou contratação | condicional | GOV-001 |  |
 
 ## 3. Licenças e Autorizações Operacionais — condicionais à oferta (BP-001)
@@ -64,46 +84,46 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 
 ## 4. Contratos Fundamentais — arquitetura modular (BP-006 §2)
 
-| # | Documento | Natureza | Entidade dona | Base legal 2026-09-02 | Gatilho | Status | Gap ID |
-|---|---|---|---|---|---|---|---|
-| 4.01 | Acordo-Quadro de Serviços (MSA) cliente/instituição | Contrato | HUB Negócios | Código Civil + CDC quando aplicável | Antes do primeiro cliente | hipótese | GOV-004 |
-| 4.02 | Statement of Work / Ordem de Jornada (escopo, entregáveis, aceitação) | Contrato | HUB Negócios | Código Civil | A cada projeto | hipótese | GOV-004 |
-| 4.03 | Termos de Uso da Plataforma + SLA + Política de Uso Aceitável | Contrato | Plataforma HUB | Marco Civil + LGPD + CDC | Antes de provisionar tenant | hipótese | GOV-004, GOV-002 |
-| 4.04 | DPA + Cronograma de Fluxos (categorias, base legal, suboperadores, retenção) | Contrato | Plataforma HUB + Cliente (controlador) | LGPD art. 39-40 + Regulamento ANPD 2024 | Antes de tratar dado pessoal | hipótese | GOV-002, GOV-007 |
-| 4.05 | Contrato com Fornecedores / Avaliadores / Especialistas | Contrato | HUB Negócios | Código Civil | Antes de qualificar fornecedor | hipótese | GOV-004 |
-| 4.06 | Contrato Intercompany / Preço de Transferência (se +1 CNPJ) | Contrato | Entre CNPJs do grupo | Código Civil + IN RFB 1.312 + EC 132/2023 | Se houver compartilhamento de custo/receita | condicional | GOV-001, FIN-002 |
-| 4.07 | Termo de Voluntariado / Cessão de Direitos (para Instituto) | Contrato | Instituto HUB | Lei 9.608/98 + Lei 9.610/98 | Se usar voluntário ou conteúdo de terceiro | condicional | GOV-006 |
-| 4.08 | Termos do Selo HUB (critérios, taxas, recurso, licença de marca) | Contrato | Selo HUB (governança independente) | Código Civil + CDC | Só após GOV-003 aprovado - uso comercial bloqueado até lá | bloqueado | GOV-003, GOV-004 |
+| #        | Documento                                                                        | Natureza     | Entidade dona                              | Base legal 2026-09-02                       | Gatilho                                                   | Status       | Gap ID               |
+| -------- | -------------------------------------------------------------------------------- | ------------ | ------------------------------------------ | ------------------------------------------- | --------------------------------------------------------- | ------------ | -------------------- |
+| **4.01** | **Acordo-Quadro de Serviços (MSA) cliente/instituição**                          | **Contrato** | **HUB Negócios**                           | **Código Civil + CDC quando aplicável**     | **Antes do primeiro cliente**                             | **hipótese** | **GOV-004**          |
+| **4.02** | **Statement of Work / Ordem de Jornada (escopo, entregáveis, aceitação)**        | **Contrato** | **HUB Negócios**                           | **Código Civil**                            | **A cada projeto**                                        | **hipótese** | **GOV-004**          |
+| **4.03** | **Termos de Uso da Plataforma + SLA + Política de Uso Aceitável**                | **Contrato** | **Plataforma HUB**                         | **Marco Civil + LGPD + CDC**                | **Antes de provisionar tenant**                           | **hipótese** | **GOV-004, GOV-002** |
+| **4.04** | **DPA + Cronograma de Fluxos (categorias, base legal, suboperadores, retenção)** | **Contrato** | **Plataforma HUB + Cliente (controlador)** | **LGPD art. 39-40 + Regulamento ANPD 2024** | **Antes de tratar dado pessoal**                          | **hipótese** | **GOV-002, GOV-007** |
+| **4.05**     | **Contrato com Fornecedores / Avaliadores / Especialistas**                          | **Contrato**     | **HUB Negócios**                               | **Código Civil**                                | **Antes de qualificar fornecedor**                            | **hipótese**     | **GOV-004**              |
+| **4.06**     | **Contrato Intercompany / Preço de Transferência (se +1 CNPJ)**                      | **Contrato**     | **Entre CNPJs do grupo**                       | **Código Civil + IN RFB 1.312 + EC 132/2023**   | **Se houver compartilhamento de custo/receita**               | **condicional**  | **GOV-001, FIN-002**     |
+| 4.07     | Termo de Voluntariado / Cessão de Direitos (para Instituto)                      | Contrato     | Instituto HUB                              | Lei 9.608/98 + Lei 9.610/98                 | Se usar voluntário ou conteúdo de terceiro                | condicional  | GOV-006              |
+| 4.08     | Termos do Selo HUB (critérios, taxas, recurso, licença de marca)                 | Contrato     | Selo HUB (governança independente)         | Código Civil + CDC                          | Só após GOV-003 aprovado - uso comercial bloqueado até lá | bloqueado    | GOV-003, GOV-004     |
 
 ## 5. Propriedade Intelectual e Ativos Intangíveis
 
-| # | Documento | Natureza | Entidade dona | Órgão / Base legal 2026-09-02 | Gatilho | Status | Gap ID |
-|---|---|---|---|---|---|---|---|
-| 5.01 | Pedido de Registro de Marca "HUB" + "C.A.O.S." + "Selo HUB" (classe por classe) | Registro | Marca HUB | INPI (Lei 9.279/96) | Antes de licenciar uso - 9 a 18 meses de fila | hipótese | GOV-006 |
-| 5.02 | Registro de PI: Contratos de Cessão de empregados/contratados + cláusula de PI | Contratual | Cada CNPJ empregador | Lei 9.610/98 + Lei 9.279/96 | Na contratação | hipótese | GOV-006 |
-| 5.03 | Registro de Software / Código (opcional, prova de autoria) | Registro | Plataforma HUB | INPI - Diretoria de Software | Ao fechar release | adiado | GOV-006 |
-| 5.04 | Inventário de PI + Matriz open-source / terceiros | Governança | Marca HUB | Interno | Antes do primeiro release | hipótese | GOV-006, GOV-005 |
-| 5.05 | Domínios .com.br / .app + contas | Registro | Marca HUB | Registro.br | Imediato | hipótese | GOV-006 |
+| #        | Documento                                                                           | Natureza       | Entidade dona            | Órgão / Base legal 2026-09-02    | Gatilho                                           | Status       | Gap ID           |
+| -------- | ----------------------------------------------------------------------------------- | -------------- | ------------------------ | -------------------------------- | ------------------------------------------------- | ------------ | ---------------- |
+| **5.01** | **Pedido de Registro de Marca "HUB" + "C.A.O.S." + "Selo HUB" (classe por classe)** | **Registro**   | **Marca HUB**            | **INPI (Lei 9.279/96)**          | **Antes de licenciar uso - 9 a 18 meses de fila** | **hipótese** | **GOV-006**      |
+| **5.02** | **Cessão de PI — Empregados/Contratados (cláusula de PI em contrato)**              | **Contratual** | **Cada CNPJ empregador** | **Lei 9.610/98 + Lei 9.279/96**  | **Na contratação**                                | **hipótese** | **GOV-006**      |
+| **5.03** | **Registro de Software / Código (opcional, prova de autoria)**                      | **Registro**   | **Plataforma HUB**       | **INPI - Diretoria de Software** | **Ao fechar release**                             | **adiado**   | **GOV-006**      |
+| **5.04**     | **Inventário de PI + Matriz open-source / terceiros**                                   | **Governança**     | **Marca HUB**                | **Interno**                          | **Antes do primeiro release**                         | **hipótese**     | **GOV-006, GOV-005** |
+| **5.05** | **Domínios .com.br / .app + contas**                                                | **Registro**   | **Marca HUB**            | **Registro.br**                  | **Imediato**                                      | **hipótese** | **GOV-006**      |
 
 ## 6. Conformidade — LGPD / ANPD / Segurança
 
-| # | Documento | Natureza | Entidade | Órgão / Base legal 2026-09-02 | Gatilho | Status | Gap ID |
-|---|---|---|---|---|---|---|---|
-| 6.01 | Registro de Operações de Tratamento (ROPA) - inventário fluxo a fluxo | Governança | Cada controlador (cliente + unidades HUB) | LGPD art. 37 + Regulamento ANPD 02/2024 | Antes de tratar dado pessoal | hipótese | GOV-002, GOV-007 |
-| 6.02 | Política de Privacidade + Aviso de Cookies + Canal do Encarregado (DPO) | Governança | Plataforma HUB | LGPD art. 41 + Guia ANPD | Antes de coletar dado | hipótese | GOV-002 |
-| 6.03 | Relatório de Impacto (RIPD) - para dados sensíveis / alto risco | Governança | Controlador | LGPD art. 38 + Regulamento ANPD | Se tratar dado sensível, criança/adolescente ou risco | condicional | GOV-002, GOV-009 |
-| 6.04 | Política de Segurança da Informação + Plano de Resposta a Incidentes | Governança | Plataforma HUB | LGPD art. 46-48 + ISO 27001 (referência) | Antes de operar | hipótese | GOV-005 |
-| 6.05 | Notificação de Incidente (se houver) | Obrigação | Controlador | ANPD - Resolução 15/2024 (prazo 3 dias úteis) | Se houver incidente relevante | n/a | GOV-002 |
+| #        | Documento                                                                 | Natureza       | Entidade                                      | Órgão / Base legal 2026-09-02                 | Gatilho                                               | Status       | Gap ID               |
+| -------- | ------------------------------------------------------------------------- | -------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------------------------------- | ------------ | -------------------- |
+| **6.01** | **Registro de Operações de Tratamento (ROPA) - inventário fluxo a fluxo** | **Governança** | **Cada controlador (cliente + unidades HUB)** | **LGPD art. 37 + Regulamento ANPD 02/2024**   | **Antes de tratar dado pessoal**                      | **hipótese** | **GOV-002, GOV-007** |
+| **6.02**     | **Política de Privacidade + Aviso de Cookies + Canal do Encarregado (DPO)**   | **Governança**     | **Plataforma HUB**                                | **LGPD art. 41 + Guia ANPD**                      | **Antes de coletar dado**                                 | **hipótese**     | **GOV-002**              |
+| **6.03**     | **Relatório de Impacto (RIPD) - para dados sensíveis / alto risco**           | **Governança**     | **Controlador**                                   | **LGPD art. 38 + Regulamento ANPD**               | **Se tratar dado sensível, criança/adolescente ou risco** | **condicional**  | **GOV-002, GOV-009**     |
+| **6.04**     | **Política de Segurança da Informação + Plano de Resposta a Incidentes**      | **Governança**     | **Plataforma HUB**                                | **LGPD art. 46-48 + ISO 27001 (referência)**      | **Antes de operar**                                       | **hipótese**     | **GOV-005**              |
+| **6.05**     | **Notificação de Incidente (se houver)**                                      | **Obrigação**      | **Controlador**                                   | **ANPD - Resolução 15/2024 (prazo 3 dias úteis)** | **Se houver incidente relevante**                         | **n/a**          | **GOV-002**              |
 
 ## 7. Fiscal-Contábil — Reforma Tributária em transição
 
-| # | Documento | Natureza | Entidade | Órgão / Base legal 2026-09-02 | Gatilho | Status | Gap ID |
-|---|---|---|---|---|---|---|---|
-| 7.01 | Opção de Regime Tributário (Simples/Lucro Presumido/Real) + Inscrição | Registro | Cada CNPJ | Receita Federal (LC 123/06 + RIR) | Na abertura - definirá IBS/CBS futuro | hipótese | FIN-002 |
-| 7.02 | Emissão de NFS-e (padrão nacional) / NFe | Obrigação | Cada CNPJ faturador | Prefeitura + SEFAZ + NFS-e Nacional (2023-) | Ao faturar | hipótese | FIN-002 |
-| 7.03 | Escriturações: ECD, ECF, EFD-Reinf, DCTFWeb, PGDAS/DEFIS | Obrigação | Cada CNPJ | Receita Federal | Mensal/anual após CNPJ ativo | hipótese | FIN-002 |
-| 7.04 | Mapeamento IBS/CBS (EC 132/2023) - teste 2026: CBS 0,9% + IBS 0,1% | Planejamento | Todos | EC 132/2023 + LC 214/2025 (regulamentação) | Já em 2026 para ERP e preço - obrigatório 2027 | em transição | FIN-002 |
-| 7.05 | Política de Reconhecimento de Receita (ARR vs implementação vs restrito) | Governança | HUB Negócios / Instituto | CPC 47 (IFRS 15) + BP-001 §3.1 | Antes de reconhecer 1 real - FIN-002 | hipótese | FIN-002 |
+| #        | Documento                                                                 | Natureza      | Entidade                 | Órgão / Base legal 2026-09-02                   | Gatilho                                        | Status       | Gap ID      |
+| -------- | ------------------------------------------------------------------------- | ------------- | ------------------------ | ----------------------------------------------- | ---------------------------------------------- | ------------ | ----------- |
+| **7.01** | **Opção de Regime Tributário (Simples/Lucro Presumido/Real) + Inscrição** | **Registro**  | **Cada CNPJ**            | **Receita Federal (LC 123/06 + RIR)**           | **Na abertura - definirá IBS/CBS futuro**      | **hipótese** | **FIN-002** |
+| **7.02** | **Emissão de NFS-e (padrão nacional) / NFe**                              | **Obrigação** | **Cada CNPJ faturador**  | **Prefeitura + SEFAZ + NFS-e Nacional (2023-)** | **Ao faturar**                                 | **hipótese** | **FIN-002** |
+| **7.03** | **Escriturações: ECD, ECF, EFD-Reinf, DCTFWeb, PGDAS/DEFIS**              | **Obrigação** | **Cada CNPJ**            | **Receita Federal**                             | **Mensal/anual após CNPJ ativo**               | **hipótese** | **FIN-002** |
+| **7.04**     | **Mapeamento IBS/CBS (EC 132/2023) - teste 2026: CBS 0,9% + IBS 0,1%**        | **Planejamento**  | **Todos**                    | **EC 132/2023 + LC 214/2025 (regulamentação)**      | **Já em 2026 para ERP e preço - obrigatório 2027** | **em transição** | **FIN-002**     |
+| **7.05**     | **Política de Reconhecimento de Receita (ARR vs implementação vs restrito)**  | **Governança**    | **HUB Negócios / Instituto** | **CPC 47 (IFRS 15) + BP-001 §3.1**                  | **Antes de reconhecer 1 real - FIN-002**           | **hipótese**     | **FIN-002**     |
 
 ## 8. Trabalhista e Previdenciário
 
@@ -112,7 +132,7 @@ tags: [governanca, juridico, documentos-oficiais, fundacional, brasil-2026]
 | 8.01 | Registro de Empregados + eSocial + FGTS (CAIXA) | Obrigação | Cada CNPJ empregador | CLT + Decreto 8.373/14 (eSocial) | Ao contratar 1 CLT | condicional | GOV-008 |
 | 8.02 | Contratos PJ / Prestador + Due diligence anti-pejotização | Contrato | Cada CNPJ contratante | CLT art. 3º + Reforma Trabalhista 13.467/17 | Se usar PJ em vez de CLT | condicional | GOV-004, GOV-008 |
 | 8.03 | PPRA/PGR + PCMSO + LTCAT (segurança do trabalho) | Obrigação | Cada CNPJ com empregado | NR-01, NR-07, Lei 8.213/91 | Com empregado | condicional | GOV-008 |
-| 8.04 | Acordo de Confidencialidade + Não Concorrência (quando cabível) | Contrato | Cada CNPJ | CLT + Código Civil | Na contratação | hipótese | GOV-004, GOV-006 |
+| **8.04** | **Acordo de Confidencialidade + Não Concorrência (quando cabível)** | **Contrato** | **Cada CNPJ** | **CLT + Código Civil** | **Na contratação** | **hipótese** | **GOV-004, GOV-006** |
 
 ---
 
